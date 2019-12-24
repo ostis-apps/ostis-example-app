@@ -23,7 +23,6 @@ include_kb()
 include_kpm()
 {
   cd sc-machine
-  echo 'add_subdirectory(${SC_MACHINE_ROOT}/../../problem-solver/cxx ${SC_MACHINE_ROOT}/bin)' >> ./CMakeLists.txt
 	cd ./scripts
 	./make_all.sh
 	cd ../..

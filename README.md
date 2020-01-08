@@ -37,8 +37,6 @@ Place for knowledge base of your app. Put your **.scs** and **.gwf** files here.
 ### problem-solver
 Place for problem solver of your app. Put your agents here.
 
-*Now support only platform independent agents(SCP).*
-
 ### interface
 
 Place for your interface modules.

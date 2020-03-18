@@ -21,8 +21,11 @@ class Keynodes : public ScObject
 
 public:
 
-  SC_PROPERTY(Keynode("question_test"), ForceCreate)
-  static ScAddr question_test;
+  SC_PROPERTY(Keynode("question_find_subdividing"), ForceCreate)
+  static ScAddr question_find_subdividing;
+
+  SC_PROPERTY(Keynode("nrel_subdividing"), ForceCreate)
+  static ScAddr nrel_subdividing;
 };
 
 } // namespace exampleModule

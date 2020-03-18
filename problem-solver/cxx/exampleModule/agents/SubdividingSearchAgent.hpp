@@ -9,14 +9,14 @@
 #include <sc-memory/cpp/kpm/sc_agent.hpp>
 
 #include "keynodes/keynodes.hpp"
-#include "AHelloWorld.generated.hpp"
+#include "SubdividingSearchAgent.generated.hpp"
 
 namespace exampleModule
 {
 
-class AHelloWorld : public ScAgent
+class SubdividingSearchAgent : public ScAgent
 {
-  SC_CLASS(Agent, Event(Keynodes::question_test, ScEvent::Type::AddOutputEdge))
+  SC_CLASS(Agent, Event(Keynodes::question_find_subdividing, ScEvent::Type::AddOutputEdge))
   SC_GENERATED_BODY()
 };
 

@@ -40,7 +40,7 @@ Place for problem solver of your app. Put your agents here.
 *Use **master** branch for development of agents on SCP.*  
 *Use **0.5.0** branch for development of agents on C++.*
 
-####Agents on C++
+#### Agents on C++
 Some tips:
 - Store your modules with c++ agents in *problem-solver/cxx*;
 - After update c++ code you need to rebuild sc-machine. Just run:  

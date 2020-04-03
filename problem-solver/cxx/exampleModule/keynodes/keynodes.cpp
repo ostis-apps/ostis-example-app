@@ -6,8 +6,6 @@
 
 #include "keynodes.hpp"
 
-#include <sc-memory/cpp/sc_memory.hpp>
-
 namespace exampleModule
 {
 

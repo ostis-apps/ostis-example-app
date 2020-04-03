@@ -1,22 +1,10 @@
-set(SC_EXAMPLE_MODULE_SRC "${PROBLEM_SOLVER_ROOT}/exampleModule")
+file(GLOB_RECURSE SOURCES "*.cpp" "*.hpp")
 
-set(SOURCES
-		"exampleModule.cpp"
-		"keynodes/keynodes.cpp"
-		"agents/SubdividingSearchAgent.cpp"
-		)
+add_library (exampleModule SHARED ${SOURCES})
 
-set(HEADERS
-		"exampleModule.hpp"
-		"keynodes/keynodes.hpp"
-		"agents/SubdividingSearchAgent.hpp"
-		)
+target_include_directories(exampleModule PRIVATE ${SC_MEMORY_SRC})
+target_link_libraries(exampleModule sc-memory sc-core sc-kpm-common sc-agents-common)
 
-include_directories(${SC_EXAMPLE_MODULE_SRC} ${SC_MEMORY_SRC} ${GLIB2_INCLUDE_DIRS})
+add_dependencies(exampleModule sc-memory sc-core sc-kpm-common sc-agents-common)
 
-add_library(exampleModule SHARED ${SOURCES} ${HEADERS})
-add_dependencies(exampleModule sc-memory-cpp sc-kpm-common sc-agents-common)
-target_link_libraries(exampleModule sc-memory-cpp sc-kpm-common sc-agents-common)
-
-sc_codegen(exampleModule ${SC_EXAMPLE_MODULE_SRC})
-
+sc_codegen(exampleModule ${CMAKE_CURRENT_LIST_DIR})

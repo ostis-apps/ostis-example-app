@@ -3,8 +3,6 @@
 prepare_platform()
 {
 		cd scripts
-		sudo apt-get update
-		sudo apt-get install nodejs-dev node-gyp libssl1.0-dev
 		./prepare.sh
 		cd ..
 }
@@ -38,9 +36,9 @@ if [ -d "ostis" ];
 		prepare_platform
 	else
 		echo -en "Install OSTIS platform\n"
-		git clone https://github.com/ShunkevichDV/ostis.git
+		git clone https://github.com/MikhailSadovsky/ostis.git
 		cd ostis
-    git checkout 0.5.0
+    git checkout 0.6.0
 		prepare_platform
 		include_kb
 		include_kpm

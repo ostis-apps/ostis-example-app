@@ -8,7 +8,6 @@ ui_start_sc_element
     (* <- lang_en;; *);
 
 <= nrel_project_decomposition: {
-	set;
-	relation;
+	sheaf;
 	nrel_mapping
 };;

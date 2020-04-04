@@ -1,3 +1,9 @@
+## Version 0.6.0
+
+This version allows usage of [JSON-based Websocket protocol](http://ostis-dev.github.io/sc-machine/http/websocket/) to communicate with knowledge base.
+New version of web interface implemented to show usage of **sc-server** (runner of two-side JSON protocol).
+
+You can still use [sctp protocol](http://ostis-dev.github.io/sc-machine/net/sctp/) with sc-web version of web interface in parallel.
 
 ## Installation
 
@@ -16,6 +22,20 @@ cd {project-name}/ostis/scripts
 ```
 
 ## Run
+
+There are 2 possible options to run:
+### Option 1. Run sc-server 
+Run on Linux:
+```sh
+cd {project-name}/ostis/scripts
+./run_sc_server.sh
+```
+
+Then open localhost:8090 in your browser
+![](https://i.imgur.com/wibISSV.png)
+Current interface version allows node creation with system identifier and search main identifier by given system identifier. Functionality can be extended.
+### Option 2. Run sctp-server & sc-web
+Please note that JSON Websocket protocol will be available as well after run.
 Run on Linux:
 ```sh
 #Terminal 1
@@ -27,7 +47,11 @@ cd {project-name}/ostis/scripts
 ./run_scweb.sh
 ```
 
-Then open localhost:8000 in your browser
+Then open localhost:8000 in your browser.
+![](https://i.imgur.com/6SehI5s.png)
+*Please note that search field functionalities are limited. You can do a search by english identifier only. Search identifiers hint results shown by interface not consistentent with knowledge base in current version*
+
+You can open localhost:8090 in your browser as well to see new web interface version.
 
 ## Project Structure
 
@@ -38,7 +62,6 @@ Place for knowledge base of your app. Put your **.scs** and **.gwf** files here.
 Place for problem solver of your app. Put your agents here.
 
 *Use **master** branch for development of agents on SCP.*  
-*Use **0.5.0** branch for development of agents on C++.*
 
 #### Agents on C++
 Some tips:
@@ -57,6 +80,8 @@ cd {project-name}/ostis/sc-machine/scripts
 ### interface
 
 Place for your interface modules.
+
+To learn more about web components creation for new web interface version please follow this [link](https://github.com/MikhailSadovsky/sc-machine/tree/example/web/client)
 
 #### sc-web-extensions
 Place for your extensions of standard **IMS interface(sc-web)**. 

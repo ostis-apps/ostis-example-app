@@ -1,6 +1,7 @@
 ## Version 0.6.0
 
 This version allows usage of [JSON-based Websocket protocol](http://ostis-dev.github.io/sc-machine/http/websocket/) to communicate with knowledge base.
+
 New version of web interface implemented to show usage of **sc-server** (runner of two-side JSON protocol).
 
 You can still use [sctp protocol](http://ostis-dev.github.io/sc-machine/net/sctp/) with sc-web version of web interface in parallel.

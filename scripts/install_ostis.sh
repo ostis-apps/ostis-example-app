@@ -36,7 +36,7 @@ if [ -d "ostis" ];
 		prepare_platform
 	else
 		echo -en "Install OSTIS platform\n"
-		git clone https://github.com/MikhailSadovsky/ostis.git
+		git clone https://github.com/ShunkevichDV/ostis.git
 		cd ostis
     git checkout 0.6.0
 		prepare_platform

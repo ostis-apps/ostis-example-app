@@ -7,5 +7,3 @@ lib_component_ui_menu_subdividing_search
 
 <- library_of_platform_independent_reusable_components;
 <- library_of_atomic_reusable_components;;
-
-lib_component_ui_menu_subdividing_search = [*^"file://ui_menu_subdividing_search.scsi"*];;

@@ -6,9 +6,9 @@
 
 #pragma once
 
-#include <sc-memory/cpp/kpm/sc_agent.hpp>
+#include <sc-memory/kpm/sc_agent.hpp>
 
-#include "keynodes/keynodes.hpp"
+#include "../keynodes/keynodes.hpp"
 #include "SubdividingSearchAgent.generated.hpp"
 
 namespace exampleModule

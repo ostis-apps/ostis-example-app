@@ -62,7 +62,8 @@ Place for knowledge base of your app. Put your **.scs** and **.gwf** files here.
 ### problem-solver
 Place for problem solver of your app. Put your agents here.
 
-*Use **master** branch for development of agents on SCP.*  
+*Use **scp_stable** branch for development of agents on SCP.*  
+*Use **0.5.0** or **0.6.0** branch for development of agents on C++.*
 
 #### Agents on C++
 Some tips:

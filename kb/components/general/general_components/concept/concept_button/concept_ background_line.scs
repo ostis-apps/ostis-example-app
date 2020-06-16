@@ -1,0 +1,7 @@
+concept_background_line<-sc_node_not_relation;
+=>nrel_main_idtf:
+[линия фона]
+(*<-lang_ru;;*);
+[background line]
+(*<-lang_en;;*);;
+

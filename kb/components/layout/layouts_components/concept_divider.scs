@@ -1,0 +1,27 @@
+concept_divider<-sc_node_not_relation;
+=>nrel_main_idtf:
+[разделитель]
+(*<-lang_ru;;*);
+[divider]
+(*<-lang_en;;*);;
+
+concept_divider=> nrel_property: concept_name;concept_orientation;concept_style;concept_type;
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		... (* -> [Разделительная линия разделяет различное содержимое.Ипользуется для разделения разделы статьи, разделения встроенного текста и ссылки.] (* <- lang_ru;; *);; *);;
+	*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		... (* -> [A divider line separates different content.Use divide sections of article, divide inline text and links.] (* <- lang_en;; *);; *);;
+	*);;
+
+

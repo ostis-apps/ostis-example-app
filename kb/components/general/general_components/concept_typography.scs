@@ -1,0 +1,31 @@
+concept_typography<-sc_node_not_relation;
+=>nrel_main_idtf:
+[редактирование текста]
+(*<-lang_ru;;*);
+[typography]
+(*<-lang_en;;*);;
+
+concept_typography => nrel_type_text: concept_list; concept_link;concept_text;;
+concept_typography => nrel_properties: concept_size; concept_color;
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		... (* -> [Написание основного текста, включая заголовки, основной текст, списки и многое другое.] (* <- lang_ru;; *);; *);;
+	*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		... (* -> [Basic text writing, including headings, body text, lists, and more.] (* <- lang_en;; *);; *);;
+	*);;
+
+
+
+

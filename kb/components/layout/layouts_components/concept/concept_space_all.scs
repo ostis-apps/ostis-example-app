@@ -1,0 +1,27 @@
+concept_align<-sc_node_not_relation;
+=>nrel_main_idtf:
+[выравнивание блоков]
+(*<-lang_ru;;*);
+[align]
+(*<-lang_en;;*);;
+
+concept_direction<-sc_node_not_relation;
+=>nrel_main_idtf:
+[направление блоков]
+(*<-lang_ru;;*);
+[direction]
+(*<-lang_en;;*);;
+
+concept_size<-sc_node_not_relation;
+=>nrel_main_idtf:
+[расстояние между блоками]
+(*<-lang_ru;;*);
+[size]
+(*<-lang_en;;*);;
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+concept_filled<-sc_node_not_relation;
+=>nrel_main_idtf:
+[заполненный]
+(*<-lang_ru;;*);
+[filled]
+(*<-lang_en;;*);;
+

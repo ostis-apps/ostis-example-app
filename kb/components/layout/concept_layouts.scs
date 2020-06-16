@@ -1,0 +1,25 @@
+concept_layouts<-sc_node_not_relation;
+=>nrel_main_idtf:
+[компоненты размещения]
+(*<-lang_ru;;*);
+[layout components]
+(*<-lang_en;;*);
+
+=> nrel_inclusion: concept_divider; concept_grid; concept_layout;concept_space;
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		... (* -> [Используйте этот блок компонетов, если вам нужны такие компоненты, как Divider, Grid, Layout, Space] (* <- lang_ru;; *);; *);;
+	*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		... (* -> [Use this component block, if you need components such as Divider, Grid, Layout, Space] (* <- lang_en;; *);; *);;
+	*);;

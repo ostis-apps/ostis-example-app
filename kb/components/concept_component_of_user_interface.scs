@@ -1,0 +1,28 @@
+concept_component_of_user_interface<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Компоненты пользовательского интерфейса]
+(*<-lang_ru;;*);
+[Component of user interface]
+(*<-lang_en;;*);
+
+=> nrel_inclusion: concept_general; concept_layouts; concept_data_entry;
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		... (* -> [Примитив графического интерфейса пользователя, имеющий стандартный внешний вид и выполняющий стандартные действия. Другие названия: элемент управления, виджет] (* <- lang_ru;; *);; *);;
+	*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		... (* -> [A primitive graphical user interface that has a standard appearance and performs standard actions. Other names: control, widget] (* <- lang_en;; *);; *);;
+	*);;
+
+
+

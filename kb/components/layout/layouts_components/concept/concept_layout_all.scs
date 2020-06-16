@@ -1,0 +1,27 @@
+concept_header<-sc_node_not_relation;
+=>nrel_main_idtf:
+[заголовок]
+(*<-lang_ru;;*);
+[layout]
+(*<-lang_en;;*);;
+
+concept_footer<-sc_node_not_relation;
+=>nrel_main_idtf:
+[нижний колонтитул]
+(*<-lang_ru;;*);
+[footer]
+(*<-lang_en;;*);;
+
+concept_content<-sc_node_not_relation;
+=>nrel_main_idtf:
+[контент]
+(*<-lang_ru;;*);
+[content]
+(*<-lang_en;;*);;
+
+concept_sider<-sc_node_not_relation;
+=>nrel_main_idtf:
+[боковая панель]
+(*<-lang_ru;;*);
+[sider]
+(*<-lang_en;;*);;

@@ -1,0 +1,30 @@
+nrel_row_property
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[свойство строки*]
+	(*
+	<- lang_ru;;
+	*);
+=> nrel_main_idtf:
+	[row property*]
+	(*
+	<- lang_en;;
+	*);;
+
+
+nrel_col_property
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[свойство колонки*]
+	(*
+	<- lang_ru;;
+	*);
+=> nrel_main_idtf:
+	[col property*]
+	(*
+	<- lang_en;;
+	*);;
+
+
+
+

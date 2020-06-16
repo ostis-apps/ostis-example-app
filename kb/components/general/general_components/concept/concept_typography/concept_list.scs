@@ -1,0 +1,7 @@
+concept_list<-sc_node_not_relation;
+=>nrel_main_idtf:
+[список]
+(*<-lang_ru;;*);
+[list]
+(*<-lang_en;;*);;
+

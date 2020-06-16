@@ -1,0 +1,7 @@
+concept_text<-sc_node_not_relation;
+=>nrel_main_idtf:
+[текст]
+(*<-lang_ru;;*);
+[text]
+(*<-lang_en;;*);;
+

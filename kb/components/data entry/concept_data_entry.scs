@@ -1,0 +1,25 @@
+concept_data_entry<-sc_node_not_relation;
+=>nrel_main_idtf:
+[компоненты ввода данных]
+(*<-lang_ru;;*);
+[data entry]
+(*<-lang_en;;*);
+
+=> nrel_inclusion: concept_input; concept_select;
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		... (* -> [Используйте этот блок компонетов, если вам нужны такие компоненты, как Input, Select.] (* <- lang_ru;; *);; *);;
+	*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		... (* -> [Use this component block, if you need components such as Input, Select.] (* <- lang_en;; *);; *);;
+	*);;

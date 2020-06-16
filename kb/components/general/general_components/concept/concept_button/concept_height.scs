@@ -1,0 +1,7 @@
+concept_height<-sc_node_not_relation;
+=>nrel_main_idtf:
+[высота]
+(*<-lang_ru;;*);
+[height]
+(*<-lang_en;;*);;
+

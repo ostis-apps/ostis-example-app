@@ -1,0 +1,7 @@
+concept_context_color<-sc_node_not_relation;
+=>nrel_main_idtf:
+[цвет контекста]
+(*<-lang_ru;;*);
+[context color]
+(*<-lang_en;;*);;
+

@@ -1,0 +1,20 @@
+nrel_properties
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[свойства*]
+	(*
+	<- lang_ru;;
+	*);
+=> nrel_main_idtf:
+	[properties*]
+	(*
+	<- lang_en;;
+	*);;
+
+
+
+
+
+
+
+

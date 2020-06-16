@@ -1,0 +1,7 @@
+concept_color<-sc_node_not_relation;
+=>nrel_main_idtf:
+[цвет]
+(*<-lang_ru;;*);
+[color]
+(*<-lang_en;;*);;
+

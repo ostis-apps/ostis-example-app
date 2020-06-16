@@ -1,0 +1,28 @@
+concept_grid<-sc_node_not_relation;
+=>nrel_main_idtf:
+[сетка]
+(*<-lang_ru;;*);
+[grid]
+(*<-lang_en;;*);;
+
+concept_grid => nrel_row_property: concept_align; concept_gutter;concept_justify;;
+concept_grid => nrel_col_property: concept_flex; concept_offset;concept_order;concept_pull;concept_push;concept_span;concept_xs;concept_sm;concept_md;concept_lg;concept_xl;concept_xxl;
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		... (* -> [Ant Design решает множество проблем хранения информации в пределах области проектирования, поэтому, основываясь на системе 12 сеток, разделяется область проектирования на 24 секции.] (* <- lang_ru;; *);; *);;
+	*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		... (* -> [Ant Design needs to solve a lot of information storage problems within the design area, so based on 12 Grids System, we divided the design area into 24 sections.] (* <- lang_en;; *);; *);;
+	*);;
+
+

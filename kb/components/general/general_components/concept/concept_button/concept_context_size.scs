@@ -1,0 +1,7 @@
+concept_context_size<-sc_node_not_relation;
+=>nrel_main_idtf:
+[размер контекста]
+(*<-lang_ru;;*);
+[context size]
+(*<-lang_en;;*);;
+

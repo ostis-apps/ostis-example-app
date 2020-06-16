@@ -1,0 +1,29 @@
+concept_space<-sc_node_not_relation;
+=>nrel_main_idtf:
+[расстояние между компонентами]
+(*<-lang_ru;;*);
+[space]
+(*<-lang_en;;*);;
+
+concept_space => nrel_properties: concept_align; concept_direction;concept_size;
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		... (* -> [Установливает расстояние между компонентами.] (* <- lang_ru;; *);; *);;
+	*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		... (* -> [Set components spacing.] (* <- lang_en;; *);; *);;
+	*);;
+
+
+
+

@@ -1,0 +1,10 @@
+concept_subject_domain_of_user_interface_components<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Предметная область компонентов пользовательских интерфейсов]
+(*<-lang_ru;;*);
+[subject domain of user interface components]
+(*<-lang_en;;*);
+
+<=nrel_private_subject_domain: concept_subject_domain_of_user_interface;;
+
+concept_subject_domain_of_user_interface_components->rrel_maximum_studied_object_class:concept_component_of_user_interface;;

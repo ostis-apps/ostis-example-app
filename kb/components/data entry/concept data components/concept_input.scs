@@ -1,0 +1,28 @@
+concept_input<-sc_node_not_relation;
+=>nrel_main_idtf:
+[ввод]
+(*<-lang_ru;;*);
+[input]
+(*<-lang_en;;*);;
+
+concept_input=> nrel_text_properties: concept_type_text; concept_size_text; concept_text_color; concept_style_text;;
+concept_input=> nrel_block_properties: concept_width_block; concept_height_block;
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		... (* -> [Основным виджетом для получения пользовательского ввода является текстовое поле. Клавиатура и мышь могут использоваться для предоставления или изменения данных.] (* <- lang_ru;; *);; *);;
+	*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		... (* -> [A basic widget for getting the user input is a text field. Keyboard and mouse can be used for providing or changing data.] (* <- lang_en;; *);; *);;
+	*);;
+
+

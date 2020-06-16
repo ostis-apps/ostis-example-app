@@ -1,0 +1,30 @@
+concept_button<-sc_node_not_relation;
+=>nrel_main_idtf:
+[кнопка]
+(*<-lang_ru;;*);
+[button]
+(*<-lang_en;;*);;
+
+concept_button=> nrel_context: concept_text; concept_img; concept_link;;
+concept_button=> nrel_context_property: concept_context_size; concept_context_color;;
+concept_button=> nrel_size: concept_width; concept_height;;
+concept_button=> nrel_background_property: concept_background_color;concept_background_line;
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		... (* -> [Кнопка означает операцию (или серию операций). Нажатие кнопки активирует соответствующую бизнес-логику.] (* <- lang_ru;; *);; *);;
+	*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		... (* -> [A button means an operation (or a series of operations). Clicking a button will trigger corresponding business logic.] (* <- lang_en;; *);; *);;
+	*);;
+
+

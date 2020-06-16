@@ -1,0 +1,27 @@
+concept_icon<-sc_node_not_relation;
+=>nrel_main_idtf:
+[значки]
+(*<-lang_ru;;*);
+[icon]
+(*<-lang_en;;*);;
+
+concept_icon => nrel_type: concept_outlined; concept_filled;concept_two_tone;
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		... (* -> [Семантическая векторная графика.] (* <- lang_ru;; *);; *);;
+	*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		... (* -> [Semantic vector graphics.] (* <- lang_en;; *);; *);;
+	*);;
+
+

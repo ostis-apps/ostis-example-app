@@ -1,0 +1,47 @@
+concept_type_text<-sc_node_not_relation;
+=>nrel_main_idtf:
+[тип текста]
+(*<-lang_ru;;*);
+[type text]
+(*<-lang_en;;*);;
+
+concept_size_text<-sc_node_not_relation;
+=>nrel_main_idtf:
+[размер текста]
+(*<-lang_ru;;*);
+[size text]
+(*<-lang_en;;*);;
+
+
+concept_text_color<-sc_node_not_relation;
+=>nrel_main_idtf:
+[цвет текста]
+(*<-lang_ru;;*);
+[text color]
+(*<-lang_en;;*);;
+
+
+concept_style_text<-sc_node_not_relation;
+=>nrel_main_idtf:
+[стиль текста]
+(*<-lang_ru;;*);
+[style text]
+(*<-lang_en;;*);;
+
+
+
+concept_width_block<-sc_node_not_relation;
+=>nrel_main_idtf:
+[ширина блока]
+(*<-lang_ru;;*);
+[width block]
+(*<-lang_en;;*);;
+
+
+concept_height_block<-sc_node_not_relation;
+=>nrel_main_idtf:
+[высота блока]
+(*<-lang_ru;;*);
+[height block]
+(*<-lang_en;;*);;
+

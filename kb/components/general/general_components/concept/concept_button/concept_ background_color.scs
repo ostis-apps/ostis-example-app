@@ -1,0 +1,7 @@
+concept_background_color<-sc_node_not_relation;
+=>nrel_main_idtf:
+[цвет фона]
+(*<-lang_ru;;*);
+[background color]
+(*<-lang_en;;*);;
+

@@ -6,16 +6,16 @@
 
 #include "hwModule.hpp"
 
-SC_IMPLEMENT_MODULE(HelloWorldModule)
+SC_IMPLEMENT_MODULE(HelloAgentModule)
 
-sc_result HelloWorldModule::InitializeImpl()
+sc_result HelloAgentModule::InitializeImpl()
 {
-  m_hwService.reset(new HelloWorldPythonService("HelloWorld/SayHello.py"));
+  m_hwService.reset(new HelloAgentPythonService("HelloAgent/HelloModule.py"));
   m_hwService->Run();
   return SC_RESULT_OK;
 }
 
-sc_result HelloWorldModule::ShutdownImpl()
+sc_result HelloAgentModule::ShutdownImpl()
 {
   m_hwService->Stop();
   m_hwService.reset();

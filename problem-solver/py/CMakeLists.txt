@@ -10,5 +10,5 @@ foreach( OUTPUTCONFIG ${CMAKE_CONFIGURATION_TYPES} )
     set( CMAKE_LIBRARY_OUTPUT_DIRECTORY_${OUTPUTCONFIG} "${SC_BIN_PATH}/extensions")
 endforeach( OUTPUTCONFIG CMAKE_CONFIGURATION_TYPES )
 
-add_subdirectory(HelloService)
-add_subdirectory(HelloModule)
+add_subdirectory(HelloAgent)
+add_subdirectory(HelloScript)

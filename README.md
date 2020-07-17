@@ -83,8 +83,8 @@ cd {project-name}/ostis/sc-machine/scripts
 #### Agents on Python
 Some tips:
 - Store your modules with python agents in *problem-solver/py*;
-- After update python code you don't need to rebuild sc-machine.
-- Look example modules using python [here](problem-solver/py/README.md). 
+- After update python code you don't need to rebuild sc-machine;
+- Look example modules using python [here](problem-solver/py). 
 
 ### interface
 

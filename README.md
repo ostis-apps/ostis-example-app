@@ -63,7 +63,8 @@ Place for knowledge base of your app. Put your **.scs** and **.gwf** files here.
 Place for problem solver of your app. Put your agents here.
 
 *Use **scp_stable** branch for development of agents on SCP.*  
-*Use **0.5.0** or **0.6.0** branch for development of agents on C++.*
+*Use **0.5.0** or **0.6.0** branch for development of agents on C++.*  
+*Use **0.6.0** branch for development of agents on python.*  
 
 #### Agents on C++
 Some tips:
@@ -78,6 +79,12 @@ cd {project-name}/ostis/sc-machine/scripts
     to *{project-name}/ostis/sc-machine/CMakeLists.txt* file;
     * rebuild sc-machine.
 - Look example module with C++ agent [here](problem-solver/cxx/exampleModule/README.md).
+
+#### Agents on Python
+Some tips:
+- Store your modules with python agents in *problem-solver/py*;
+- After update python code you don't need to rebuild sc-machine;
+- Look example modules using python [here](problem-solver/py). 
 
 ### interface
 

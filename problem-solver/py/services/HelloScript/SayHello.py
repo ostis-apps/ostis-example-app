@@ -1,2 +1,2 @@
-# This script execute while loading python services
+# This script executes on python services loading
 print("I say hello one time while initializing modules")

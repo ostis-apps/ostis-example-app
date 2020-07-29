@@ -33,7 +33,7 @@ include_kpm()
 	echo 'modules_path = ${SC_MACHINE_ROOT}/sc-kpm/sc-python/services;${SC_MACHINE_ROOT}/../../problem-solver/py/services' >> ./config.ini.in
 	cd ..
 	
-	cd ./scripts	
+	cd ./scripts
 	./make_all.sh
 	cat ../bin/config.ini >> ../../config/sc-web.ini
 	cd ../..

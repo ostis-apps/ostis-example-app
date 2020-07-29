@@ -35,6 +35,7 @@ include_kpm()
 	
 	cd ./scripts
 	./make_all.sh
+	cat ../bin/config.ini >> ../../config/sc-web.ini
 	cd ../..
 }
 

@@ -6,6 +6,7 @@
 
 #include <sc-memory/cpp/sc_stream.hpp>
 #include <sc-kpm/sc-agents-common/utils/IteratorUtils.hpp>
+#include <sc-kpm/sc-agents-common/utils/GenerationUtils.hpp>
 #include <sc-kpm/sc-agents-common/utils/AgentUtils.hpp>
 
 #include "SubdividingSearchAgent.hpp"
@@ -38,7 +39,7 @@ SC_AGENT_IMPLEMENTATION(SubdividingSearchAgent)
     ms_context->CreateEdge(ScType::EdgeAccessConstPosPerm, answer, iterator5->Get(1));
     ms_context->CreateEdge(ScType::EdgeAccessConstPosPerm, answer, sheaf);
     ms_context->CreateEdge(ScType::EdgeAccessConstPosPerm, answer, iterator5->Get(3));
-    IteratorUtils::addSetToOutline(ms_context.get(), sheaf, answer);
+    GenerationUtils::addSetToOutline(ms_context.get(), sheaf, answer);
   }
 
   AgentUtils::finishAgentWork(ms_context.get(), questionNode, answer);

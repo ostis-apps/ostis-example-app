@@ -8,7 +8,7 @@
 
 #include <sc-memory/kpm/sc_agent.hpp>
 
-#include "../keynodes/keynodes.hpp"
+#include "keynodes/keynodes.hpp"
 #include "SubdividingSearchAgent.generated.hpp"
 
 namespace exampleModule

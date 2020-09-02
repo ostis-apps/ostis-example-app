@@ -1,5 +1,3 @@
-set(EXAMPLE_MODULE_SRC "${PROBLEM_SOLVER_ROOT}/exampleModule")
-
 file(GLOB_RECURSE SOURCES "*.cpp" "*.hpp")
 
 include_directories(${EXAMPLE_MODULE_SRC} ${SC_MEMORY_SRC} ${SC_KPM_SRC})

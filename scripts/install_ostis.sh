@@ -4,7 +4,6 @@ prepare_platform()
 {
 		cd scripts
 		sudo apt-get update
-		sudo apt-get install nodejs-dev node-gyp libssl1.0-dev
 		./prepare.sh
 		cd ..
 }
@@ -23,7 +22,7 @@ include_kb()
 include_kpm()
 {
   cd sc-machine
-  echo 'add_subdirectory(${SC_MACHINE_ROOT}/../../problem-solver/cxx ${SC_MACHINE_ROOT}/bin)' >> ./CMakeLists.txt
+  echo 'add_subdirectory(${SC_MACHINE_ROOT}/../../problem-solver/cxx ${SC_MACHINE_ROOT}/build/problem-solver)' >> ./CMakeLists.txt
 	cd ./scripts
 	./make_all.sh
 	cd ../..
@@ -40,7 +39,7 @@ if [ -d "ostis" ];
 		echo -en "Install OSTIS platform\n"
 		git clone https://github.com/ShunkevichDV/ostis.git
 		cd ostis
-    git checkout 0.5.0
+		git checkout 0.5.0
 		prepare_platform
 		include_kb
 		include_kpm

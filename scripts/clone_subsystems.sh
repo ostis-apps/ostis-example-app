@@ -12,5 +12,6 @@ cd subsystems
 rm -rf *
 
 while IFS= read -r subsystem; do
-    git clone $subsystem
+	[[ $subsystem =~ ^#.* ]] && continue
+	git clone $subsystem
 done < ../subsystems.txt

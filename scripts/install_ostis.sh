@@ -10,7 +10,7 @@ prepare_platform()
 prepare_platform_without_build()
 {
 		cd scripts
-		./prepare.sh no_kb_build no_make
+		./prepare.sh no_build_kb no_build_sc_machine
 		cd ..
 }
 
@@ -31,8 +31,6 @@ include_kpm()
 	sed -i '\|bin/cxx|d' ./CMakeLists.txt
 	sed -i '\|bin/py|d' ./CMakeLists.txt
 	cat ../../scripts/sc_machine_cmake_file_ext.txt >> ./CMakeLists.txt
-	echo 'add_subdirectory(${SC_MACHINE_ROOT}/../../problem-solver/cxx ${SC_MACHINE_ROOT}/bin/cxx)' >> ./CMakeLists.txt
-	echo 'add_subdirectory(${SC_MACHINE_ROOT}/../../problem-solver/py ${SC_MACHINE_ROOT}/bin/py)' >> ./CMakeLists.txt
 	
 	cd config
 	sed -i '/python/d' ./config.ini.in

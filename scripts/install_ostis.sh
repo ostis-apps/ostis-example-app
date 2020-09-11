@@ -3,7 +3,14 @@
 prepare_platform()
 {
 		cd scripts
-		./prepare.sh
+		./prepare.sh 
+		cd ..
+}
+
+prepare_platform_without_build()
+{
+		cd scripts
+		./prepare.sh no_build_kb no_build_sc_machine
 		cd ..
 }
 
@@ -23,8 +30,7 @@ include_kpm()
 	cd sc-machine
 	sed -i '\|bin/cxx|d' ./CMakeLists.txt
 	sed -i '\|bin/py|d' ./CMakeLists.txt
-	echo 'add_subdirectory(${SC_MACHINE_ROOT}/../../problem-solver/cxx ${SC_MACHINE_ROOT}/bin/cxx)' >> ./CMakeLists.txt
-	echo 'add_subdirectory(${SC_MACHINE_ROOT}/../../problem-solver/py ${SC_MACHINE_ROOT}/bin/py)' >> ./CMakeLists.txt
+	cat ../../scripts/sc_machine_cmake_file_ext.txt >> ./CMakeLists.txt
 	
 	cd config
 	sed -i '/python/d' ./config.ini.in
@@ -45,14 +51,16 @@ if [ -d "ostis" ];
 		echo -en "Update OSTIS platform\n"
 		cd ostis
 		git pull
+		./../scripts/clone_subsystems.sh
 		prepare_platform
 	else
 		echo -en "Install OSTIS platform\n"
 		git clone https://github.com/ShunkevichDV/ostis.git
 		cd ostis
-    git checkout 0.6.0
-		prepare_platform
-		include_kb
+    		git checkout 0.6.0
+		./../scripts/clone_subsystems.sh
+		prepare_platform_without_build
 		include_kpm
+		include_kb
 fi
 

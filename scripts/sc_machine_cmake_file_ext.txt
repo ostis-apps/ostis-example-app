@@ -1,5 +1,5 @@
-add_subdirectory(${SC_MACHINE_ROOT}/../../problem-solver/cxx ${SC_MACHINE_ROOT}/bin/cxx)
-add_subdirectory(${SC_MACHINE_ROOT}/../../problem-solver/py ${SC_MACHINE_ROOT}/bin/py)
+add_subdirectory(${SC_MACHINE_ROOT}/../../problem-solver/cxx ${SC_MACHINE_ROOT}/build/problem-solver/cxx)
+add_subdirectory(${SC_MACHINE_ROOT}/../../problem-solver/py ${SC_MACHINE_ROOT}/build/problem-solver/py)
 
 set(SC_SUBSYSTEMS_ROOT "${SC_MACHINE_ROOT}/../../subsystems")
 if (EXISTS ${SC_SUBSYSTEMS_ROOT})

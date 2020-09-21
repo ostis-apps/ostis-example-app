@@ -2,16 +2,16 @@
 
 prepare_platform()
 {
-		cd scripts
-		./prepare.sh 
-		cd ..
+	cd scripts
+	./prepare.sh
+	cd ..
 }
 
 prepare_platform_without_build()
 {
-		cd scripts
-		./prepare.sh no_build_kb no_build_sc_machine
-		cd ..
+	cd scripts
+	./prepare.sh no_build_kb no_build_sc_machine
+	cd ..
 }
 
 include_kb()

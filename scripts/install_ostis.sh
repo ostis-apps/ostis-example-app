@@ -16,13 +16,13 @@ prepare_platform_without_build()
 
 include_kb()
 {
-  rm ./ims.ostis.kb/ui/ui_start_sc_element.scs
-  rm -rf ./kb/menu
-  echo "../kb" >> ./repo.path
-  echo "../problem-solver" >> ./repo.path
-  cd scripts
-  ./build_kb.sh
-  cd ..
+	rm ./ims.ostis.kb/ui/ui_start_sc_element.scs
+	rm -rf ./kb/menu
+	echo "../kb" >> ./repo.path
+	echo "../problem-solver" >> ./repo.path
+	cd scripts
+	./build_kb.sh
+	cd ..
 }
 
 include_kpm()

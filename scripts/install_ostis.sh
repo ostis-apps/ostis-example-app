@@ -28,8 +28,8 @@ include_kb()
 include_kpm()
 {
 	cd sc-machine
-	sed -i '\|bin/cxx|d' ./CMakeLists.txt
-	sed -i '\|bin/py|d' ./CMakeLists.txt
+	sed -i '\|build/problem-solver/cxx|d' ./CMakeLists.txt
+	sed -i '\|build/problem-solver/py|d' ./CMakeLists.txt
 	cat ../../scripts/sc_machine_cmake_file_ext.txt >> ./CMakeLists.txt
 	
 	cd config
@@ -57,7 +57,7 @@ if [ -d "ostis" ];
 		echo -en "Install OSTIS platform\n"
 		git clone https://github.com/ShunkevichDV/ostis.git
 		cd ostis
-    		git checkout 0.6.0
+		git checkout 0.6.0
 		./../scripts/clone_subsystems.sh
 		prepare_platform_without_build
 		include_kpm

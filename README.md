@@ -4,6 +4,7 @@
 Linux:
 ```sh
 git clone https://github.com/ostis-apps/ostis-example-app.git
+git checkout scp_stable
 cd {project-name}/scripts
 ./install_ostis.sh
 ```

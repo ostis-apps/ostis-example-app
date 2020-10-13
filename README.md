@@ -11,6 +11,7 @@ You can still use [sctp protocol](http://ostis-dev.github.io/sc-machine/net/sctp
 Linux:
 ```sh
 git clone https://github.com/ostis-apps/ostis-example-app.git
+git checkout 0.6.0
 cd {project-name}/scripts
 ./install_ostis.sh
 ```

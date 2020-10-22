@@ -11,7 +11,7 @@ cd {project-name}/scripts
 ## Build knowledge base
 Linux:
 ```sh
-cd {project-name}/ostis/scripts
+cd {project-name}/ostis-web-platform/scripts
 ./build_kb.sh
 ```
 
@@ -19,11 +19,11 @@ cd {project-name}/ostis/scripts
 Run on Linux:
 ```sh
 #Terminal 1
-cd {project-name}/ostis/scripts
+cd {project-name}/ostis-web-platform/scripts
 ./run_sctp.sh
 
 #Terminal 2
-cd {project-name}/ostis/scripts
+cd {project-name}/ostis-web-platform/scripts
 ./run_scweb.sh
 ```
 
@@ -45,12 +45,12 @@ Some tips:
 - Store your modules with c++ agents in *problem-solver/cxx*;
 - After update c++ code you need to rebuild sc-machine. Just run:  
 ```
-cd {project-name}/ostis/sc-machine/scripts
+cd {project-name}/ostis-web-platform/sc-machine/scripts
 ./make_all.sh
 ```
 - For enable debug:
     * add *SET(CMAKE_BUILD_TYPE Debug)* line 
-    to *{project-name}/ostis/sc-machine/CMakeLists.txt* file;
+    to *{project-name}/ostis-web-platform/sc-machine/CMakeLists.txt* file;
     * rebuild sc-machine.
 - Look example module with C++ agent [here](problem-solver/cxx/exampleModule/README.md).
 

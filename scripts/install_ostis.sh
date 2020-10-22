@@ -1,5 +1,8 @@
 #!/bin/bash
 
+PLATFORM_REPO="https://github.com/ostis-dev/ostis-web-platform.git"
+PLATFORM_FOLDER="ostis-web-platform"
+
 prepare_platform()
 {
 		cd scripts
@@ -29,16 +32,16 @@ include_kpm()
 }
 
 cd ..
-if [ -d "ostis" ]; 
+if [ -d ${PLATFORM_FOLDER} ]; 
 	then
 		echo -en "Update OSTIS platform\n"
-		cd ostis
+		cd ${PLATFORM_FOLDER}
 		git pull
 		prepare_platform
 	else
 		echo -en "Install OSTIS platform\n"
-		git clone https://github.com/ShunkevichDV/ostis.git
-		cd ostis
+		git clone ${PLATFORM_REPO}
+		cd ${PLATFORM_FOLDER}
     git checkout master
 		prepare_platform
 		include_kb

@@ -3,7 +3,7 @@
 
 ./clone_subsystems.sh
 
-cd ../ostis/sc-machine/scripts
+cd ../ostis-web-platform/sc-machine/scripts
 ./make_all.sh
 
 cd ../../scripts

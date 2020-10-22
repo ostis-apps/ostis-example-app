@@ -5,7 +5,7 @@ cd ..
 if [ ! -d "./subsystems" ]
   then
     mkdir subsystems
-    echo "../subsystems" >> ./ostis/repo.path
+    echo "../subsystems" >> ./ostis-web-platform/repo.path
 fi
 
 cd subsystems

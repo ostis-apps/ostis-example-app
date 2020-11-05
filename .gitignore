@@ -1,4 +1,6 @@
 .idea
 .vscode
 *.scs~
-ostis
+ostis-web-platform
+
+__pycache__

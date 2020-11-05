@@ -58,7 +58,7 @@ You can open localhost:8090 in your browser as well to see new web interface ver
 ## Project Structure
 
 ### kb
-Place for knowledge base of your app. Put your **.scs** and **.gwf** files here.
+Place for knowledge base of your app. Put your **.scs** files here.
 
 ### problem-solver
 Place for problem solver of your app. Put your agents here.

@@ -32,21 +32,16 @@ include_kb()
 	cd "${PLATFORM_PATH}"
 }
 
-include_kpm()
+include_problem_solver()
 {
-	cd "${PLATFORM_PATH}"/sc-machine
-	sed -i '\|build/problem-solver/cxx|d' ./CMakeLists.txt
-	sed -i '\|build/problem-solver/py|d' ./CMakeLists.txt
-	cat "${APP_ROOT_PATH}"/scripts/sc_machine_cmake_file_ext.txt >> ./CMakeLists.txt
-	
 	if ! grep -q "${PYTHON_PATH}" "${PLATFORM_PATH}/sc-machine/config/config.ini.in";
 	then
 		PYTHON_PATH_ESCAPED="$(echo "${PYTHON_PATH}" | sed -e 's/[/]/\\&/g')"
 		sed -i "/modules_path/ s/$/;${PYTHON_PATH_ESCAPED}/" "${PLATFORM_PATH}/sc-machine/config/config.ini.in"
 	fi
 
-	cd scripts
-	./make_all.sh
+	cd "${APP_ROOT_PATH}"/scripts
+	./build_problem_solver.sh
 	cat "${PLATFORM_PATH}"/sc-machine/bin/config.ini >> "${PLATFORM_PATH}"/config/sc-web.ini
 	cd "${PLATFORM_PATH}"
 }
@@ -66,7 +61,7 @@ if [ -d "${PLATFORM_PATH}" ];
 		git checkout 0.6.0
 		"${APP_ROOT_PATH}"/scripts/clone_subsystems.sh
 		prepare_platform_without_build
-		include_kpm
+		include_problem_solver
 		include_kb
 fi
 

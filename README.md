@@ -70,15 +70,15 @@ Place for problem solver of your app. Put your agents here.
 #### Agents on C++
 Some tips:
 - Store your modules with c++ agents in *problem-solver/cxx*;
-- After update c++ code you need to rebuild sc-machine. Just run:  
+- After update c++ code you need to rebuild problem-solver. Just run:  
 ```
-cd {project-name}/ostis-web-platform/sc-machine/scripts
-./make_all.sh
+cd {project-name}/scripts
+./build_problem_solver.sh
 ```
 - For enable debug:
     * add *SET(CMAKE_BUILD_TYPE Debug)* line 
-    to *{project-name}/ostis-web-platform/sc-machine/CMakeLists.txt* file;
-    * rebuild sc-machine.
+    to *{project-name}/CMakeLists.txt* file;
+    * rebuild problem-solver.
 - Look example module with C++ agent [here](problem-solver/cxx/exampleModule/README.md).
 
 #### Agents on Python

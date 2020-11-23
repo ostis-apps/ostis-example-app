@@ -47,7 +47,7 @@ include_kpm()
 
 	cd scripts
 	./make_all.sh
-	cat "${PLATFORM_PATH}"/bin/config.ini >> "${PLATFORM_PATH}"/config/sc-web.ini
+	cat "${PLATFORM_PATH}"/sc-machine/bin/config.ini >> "${PLATFORM_PATH}"/config/sc-web.ini
 	cd "${PLATFORM_PATH}"
 }
 

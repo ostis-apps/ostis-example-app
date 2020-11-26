@@ -8,8 +8,7 @@ WORKING_PATH=$(pwd)
 cd "${APP_ROOT_PATH}"/scripts
 ./clone_subsystems.sh
 
-cd "${PLATFORM_PATH}"/sc-machine/scripts
-./make_all.sh
+./build_problem_solver.sh
 
 cd "${PLATFORM_PATH}"/scripts
 ./build_kb.sh

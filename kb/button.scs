@@ -1,0 +1,85 @@
+concept_button
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[кнопка]
+	(* <- lang_ru;; *);
+	[button]
+	(* <- lang_en;; *);;
+
+
+nrel_color
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[цвет*] (* <- lang_ru;; *);
+	[color*] (* <- lang_en;; *);
+<- binary_relation;;
+
+nrel_content
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[содержание*] (* <- lang_ru;; *);
+	[content*] (* <- lang_en;; *);
+<- binary_relation;;
+
+nrel_border
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[граница*] (* <- lang_ru;; *);
+	[border*] (* <- lang_en;; *);
+<- binary_relation;;
+
+nrel_background_color
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[цвет фона*] (* <- lang_ru;; *);
+	[background color*] (* <- lang_en;; *);
+<- binary_relation;;
+
+nrel_font_size
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[размер шрифта*] (* <- lang_ru;; *);
+	[font size*] (* <- lang_en;; *);
+<- binary_relation;;
+
+nrel_border_radius
+<- sc_node_norole_relation;
+=> nrel_main_idtf:	
+	[border radius*] (* <- lang_en;; *);
+	[радиус границы*] (* <- lang_ru;; *);
+<- binary_relation;;
+
+nrel_text_align
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[text align*] (* <- lang_en;; *);
+	[выравнивание текста*] (* <- lang_ru;; *);
+<- binary_relation;;
+
+button_1<-concept_button;
+=> nrel_main_idtf:
+	[кнопка_1]
+	(* <- lang_ru;; *);
+	[button_1]
+	(* <- lang_en;; *);	
+=> nrel_content:
+	[Hello] (* <- lang_en;; *);
+=> nrel_background_color:
+	[#4CAF90] (* <- lang_en;; *);
+=> nrel_font_size:
+	[16px] (* <- lang_en;; *);
+=> nrel_border:
+	[none] (* <- lang_en;; *);
+=> nrel_text_align:
+	[center] (* <- lang_en;; *);
+=> nrel_border_radius:
+	[50%] (* <- lang_en;; *);
+=>nrel_color:
+	[blue] (* <- lang_en;; *);;
+	
+format_ui_json<-format;
+=>nrel_main_idtf:
+	[формат ui (json)]
+	(* <- lang_ru;; *);
+	[format ui (json)]
+	(* <- lang_en;; *);;

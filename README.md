@@ -1,12 +1,13 @@
 ## Version 0.6.0
 
-This version allows usage of [JSON-based Websocket protocol](http://ostis-dev.github.io/sc-machine/http/websocket/) to communicate with knowledge base.
+This version allows communication with the knowledge base via [JSON-based Websocket protocol](http://ostis-dev.github.io/sc-machine/http/websocket/).
 
-New version of web interface implemented to show usage of **sc-server** (runner of two-side JSON protocol).
+New version of web interface implements to show usage of **sc-server** (runner of two-side JSON protocol).?
+The new version of web interface communicates with **sc-server** using two-way JSON protocol.
 
-You can still use [sctp protocol](http://ostis-dev.github.io/sc-machine/net/sctp/) with sc-web version of web interface in parallel.
+You can still use [sctp protocol](http://ostis-dev.github.io/sc-machine/net/sctp/) with this version of web interface as well.
 
-## Installation
+## Install
 
 Linux:
 ```sh
@@ -35,9 +36,9 @@ cd {project-name}/ostis-web-platform/scripts
 
 Then open localhost:8090 in your browser
 ![](https://i.imgur.com/wibISSV.png)
-Current interface version allows node creation with system identifier and search main identifier by given system identifier. Functionality can be extended.
+Current interface version allows creating nodes with system identifiers and searching for the main identifier by the provided system identifier.
 ### Option 2. Run sctp-server & sc-web
-Please note that JSON Websocket protocol will be available as well after run.
+Please note that JSON Websocket protocol will be available as well after start.
 Run on Linux:
 ```sh
 #Terminal 1
@@ -51,49 +52,48 @@ cd {project-name}/ostis-web-platform/scripts
 
 Then open localhost:8000 in your browser.
 ![](https://i.imgur.com/6SehI5s.png)
-*Please note that search field functionalities are limited. You can do a search by english identifier only. Search identifiers hint results shown by interface not consistentent with knowledge base in current version*
 
-You can open localhost:8090 in your browser as well to see new web interface version.
+You can open localhost:8090 in your browser as well to see the new web interface version.
 
 ## Project Structure
 
 ### kb
-Place for knowledge base of your app. Put your **.scs** files here.
+The place for the knowledge base of your app. Put your **.scs** files here.
 
 ### problem-solver
-Place for problem solver of your app. Put your agents here.
+The place for the problem solver of your app. Put your agents here.
 
-*Use **scp_stable** branch for development of agents on SCP.*  
-*Use **0.5.0** or **0.6.0** branch for development of agents on C++.*  
-*Use **0.6.0** branch for development of agents on python.*  
+*Use **scp_stable** branch for the development of agents on SCP.*  
+*Use **0.5.0** or **0.6.0** branch for the development of agents on C++.*  
+*Use **0.6.0** branch for the development of agents on Python.*  
 
 #### Agents on C++
 Some tips:
-- Store your modules with c++ agents in *problem-solver/cxx*;
-- After update c++ code you need to rebuild problem-solver. Just run:  
+- Store your modules with C++ agents in *problem-solver/cxx*;
+- After updating your C++ code you need to rebuild problem-solver. Just run:  
 ```
 cd {project-name}/scripts
 ./build_problem_solver.sh
 ```
-- For enable debug:
+- To enable debug:
     * add *SET(CMAKE_BUILD_TYPE Debug)* line 
     to *{project-name}/CMakeLists.txt* file;
     * rebuild problem-solver.
-- Look example module with C++ agent [here](problem-solver/cxx/exampleModule/README.md).
+- You can see an example module with a C++ agent [here](problem-solver/cxx/exampleModule/README.md).
 
 #### Agents on Python
 Some tips:
-- Store your modules with python agents in *problem-solver/py*;
-- After update python code you don't need to rebuild sc-machine;
-- Look example modules using python [here](problem-solver/py). 
+- Store your modules with Python agents in *problem-solver/py*;
+- After updating your Python code you don't need to rebuild problem-solver;
+- You can see example modules using Python [here](problem-solver/py). 
 
 ### interface
 
-Place for your interface modules.
+The place for your interface modules.
 
-To learn more about web components creation for new web interface version please follow this [link](https://github.com/MikhailSadovsky/sc-machine/tree/example/web/client)
+To learn more about creating web components for the new web interface version please follow this [link](https://github.com/MikhailSadovsky/sc-machine/tree/example/web/client)
 
 #### sc-web-extensions
-Place for your extensions of standard **IMS interface(sc-web)**. 
+The place for your extensions using **IMS interface(sc-web)** standard. 
 
-*We don't have automatically applying of your extensions to sc-web now. Do it by hand.*
+*Your extensions are not applied to sc-web automatically for now, but you can do it by hand.*

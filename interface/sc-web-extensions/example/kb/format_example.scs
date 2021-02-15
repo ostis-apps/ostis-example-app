@@ -1,0 +1,27 @@
+format_example
+<- sc_node_not_relation;
+<- format;
+=> nrel_main_idtf:
+	[формат примера компонента ПИ]
+	(*
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf:
+	[format of UI component example]
+	(*
+	<- lang_en;;
+	*);
+=> nrel_mimetype:
+	[application/html];;
+
+example_code <- ui_external_languages;
+=> nrel_main_idtf:
+	[Пример компонента интерфейса]
+	(*
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf:
+	[UI component example]
+	(*
+	<- lang_en;;
+	*);;

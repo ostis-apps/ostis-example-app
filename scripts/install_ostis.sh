@@ -17,6 +17,7 @@ include_kb()
 	rm -rf ./kb/menu
 	echo "../kb" >> ./repo.path
 	echo "../problem-solver" >> ./repo.path
+	echo "../interface" >> ./repo.path
 	cd scripts
 	./build_kb.sh
 	cd ..
@@ -28,6 +29,14 @@ include_kpm()
 	echo 'add_subdirectory(${SC_MACHINE_ROOT}/../../problem-solver/cxx ${SC_MACHINE_ROOT}/build/problem-solver)' >> ./CMakeLists.txt
 	cd ./scripts
 	./make_all.sh
+	cd ../..
+}
+
+include_interface()
+{
+	cd ../interface/sc-web-extensions
+	npm install
+	grunt build
 	cd ../..
 }
 
@@ -46,5 +55,6 @@ else
     prepare_platform
     include_kb
     include_kpm
+    include_interface
 fi
 

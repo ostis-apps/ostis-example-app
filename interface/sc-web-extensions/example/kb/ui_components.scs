@@ -1,0 +1,53 @@
+ui_example_text_component <- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Простой пример компонента пользовательского интерфейса.]
+	(*
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf:
+	[This is a simple demo for UI component.]
+	(*
+	<- lang_en;;
+	*);;
+
+ui_example_search_component <- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Что такое...]
+	(*
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf:
+	[What is...]
+	(*
+	<- lang_en;;
+	*);;
+
+ui_example_answer_button <- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Найти ответ!]
+	(*
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf:
+	[Answer!]
+	(*
+	<- lang_en;;
+	*);;
+
+ui_example_info_block <- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Больше примеров вы можете найти в проектах по
+	<a href="https://github.com/ostis-apps/ostis-movies/tree/master/interface/sc-web-extensions">кинофильмам</a>,
+	<a href="https://github.com/ostis-apps/ostis-linguistics/tree/master/interface/sc-web-extensions/ui_components">лингвистике</a>
+	и в следующем <a href="https://github.com/MikhailSadovsky/ostis-UI-component-sample">примере</a>]
+	(*
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf:
+	[You can find more examples of UI components in
+	<a href="https://github.com/ostis-apps/ostis-movies/tree/master/interface/sc-web-extensions">movies</a> and
+     <a href="https://github.com/ostis-apps/ostis-linguistics/tree/master/interface/sc-web-extensions/ui_components">linguistics</a>
+	projects and in next <a href="https://github.com/MikhailSadovsky/ostis-UI-component-sample">sample</a>]
+	(*
+	<- lang_en;;
+	*);;

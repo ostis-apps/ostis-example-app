@@ -75,6 +75,12 @@ Some tips:
 cd {project-name}/scripts
 ./build_problem_solver.sh
 ```
+For a full rebuild with the deleting of the *bin* and *build* folders run:
+```
+cd patient-care/scripts
+./build_problem_solver.sh -f
+```
+
 - To enable debug:
     * add *SET(CMAKE_BUILD_TYPE Debug)* line 
     to *{project-name}/CMakeLists.txt* file;
@@ -97,3 +103,15 @@ To learn more about creating web components for the new web interface version pl
 The place for your extensions using **IMS interface(sc-web)** standard. 
 
 *Your extensions are not applied to sc-web automatically for now, but you can do it by hand.*
+
+### scripts
+The place for scripts of your app.
+
+#### build_problem_solver.sh [-f, --full]
+Build the problem-solver of your app. Use an argument *-f* or *--full* for a complete rebuild of the problem-solver with the deleting of the *ostis-web-platform/sc-machine/bin* and *ostis-web-platform/sc-machine/build* folders.
+
+#### install_ostis.sh
+Install or update the OSTIS platform.
+
+#### install_subsystems.sh
+Building a problem solver and a knowledge base of subsystems.

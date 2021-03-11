@@ -6,11 +6,16 @@ PLATFORM_PATH=${APP_ROOT_PATH}/ostis-web-platform
 WORKING_PATH=$(pwd)
 
 cd "${PLATFORM_PATH}"/sc-machine
-if [ ! -d "./build" ]
+if [ $1 == "--full" ] || [ $1 == "-f" ];
+	then
+		rm -rf build
+		rm -rf bin
+fi
+
+if [ ! -d "./build" ];
 	then
 		mkdir build
 fi
-
 cd build
 cmake "${APP_ROOT_PATH}"
 make

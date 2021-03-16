@@ -42,7 +42,7 @@ if [ -d ${PLATFORM_FOLDER} ];
 		echo -en "Install OSTIS platform\n"
 		git clone ${PLATFORM_REPO}
 		cd ${PLATFORM_FOLDER}
-    git checkout master
+		git checkout scp_stable
 		prepare_platform
 		include_kb
 		include_kpm

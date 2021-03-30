@@ -26,6 +26,9 @@ public:
 
   SC_PROPERTY(Keynode("nrel_subdividing"), ForceCreate)
   static ScAddr nrel_subdividing;
+
+  SC_PROPERTY(Keynode("question_find_isomorphic_structures"), ForceCreate)
+  static ScAddr question_find_isomorphic_structures;
 };
 
 } // namespace exampleModule

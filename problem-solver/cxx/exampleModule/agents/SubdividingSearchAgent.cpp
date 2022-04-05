@@ -7,7 +7,6 @@
 #include "SubdividingSearchAgent.hpp"
 
 #include <sc-agents-common/utils/GenerationUtils.hpp>
-#include <sc-agents-common/utils/IteratorUtils.hpp>
 #include <sc-agents-common/utils/AgentUtils.hpp>
 
 using namespace std;
@@ -22,7 +21,12 @@ SC_AGENT_IMPLEMENTATION(SubdividingSearchAgent)
     return SC_RESULT_ERROR;
 
   ScAddr questionNode = ms_context->GetEdgeTarget(edgeAddr);
-  ScAddr param = IteratorUtils::getFirstFromSet(ms_context.get(), questionNode);
+  ScIterator3Ptr iterator3 = ms_context->Iterator3(questionNode, ScType::EdgeAccessConstPosPerm, ScType::Unknown);
+  ScAddr param;
+  if (iterator3->Next())
+  {
+    param = iterator3->Get(2);
+  }
   if (!param.IsValid())
     return SC_RESULT_ERROR_INVALID_PARAMS;
 
@@ -30,7 +34,7 @@ SC_AGENT_IMPLEMENTATION(SubdividingSearchAgent)
   ms_context->CreateEdge(ScType::EdgeAccessConstPosPerm, answer, param);
   ms_context->CreateEdge(ScType::EdgeAccessConstPosPerm, answer, Keynodes::nrel_subdividing);
 
-  ScIterator5Ptr iterator5 = IteratorUtils::getIterator5(ms_context.get(), param, Keynodes::nrel_subdividing, false);
+  ScIterator5Ptr iterator5 = ms_context->Iterator5(ScType::Unknown, ScType::EdgeDCommonConst, param, ScType::EdgeAccessConstPosPerm, Keynodes::nrel_subdividing);
   while (iterator5->Next())
   {
     ScAddr sheaf = iterator5->Get(0);

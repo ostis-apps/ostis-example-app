@@ -4,8 +4,10 @@
 #include <sc-memory/sc_stream.hpp>
 #include <sc-memory/sc_template_search.cpp>
 
-#include "IsomorphicSearchAgent.hpp"
+#include <sc-agents-common/utils/IteratorUtils.hpp>
 #include <sc-agents-common/utils/AgentUtils.hpp>
+
+#include "IsomorphicSearchAgent.hpp"
 
 using namespace std;
 using namespace utils;
@@ -22,12 +24,7 @@ SC_AGENT_IMPLEMENTATION(IsomorphicSearchAgent)
 
   ScAddr questionNode = ms_context->GetEdgeTarget(edgeAddr);
 
-  ScIterator3Ptr iterator3 = ms_context->Iterator3(questionNode, ScType::EdgeAccessConstPosPerm, ScType::Unknown);
-  ScAddr templateStructNode;
-  if (iterator3->Next())
-  {
-    templateStructNode = iterator3->Get(2);
-  }
+  ScAddr templateStructNode = IteratorUtils::getFirstFromSet(ms_context.get(), questionNode);
 
   if (!templateStructNode.IsValid())
   {

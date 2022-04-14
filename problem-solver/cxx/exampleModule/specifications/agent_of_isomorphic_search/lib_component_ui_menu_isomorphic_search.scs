@@ -1,0 +1,11 @@
+lib_component_ui_menu_isomorphic_search
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команда пользовательского интерфейса поиска структур по заданному шаблону]
+	(* <- lang_ru;; *);
+	[Library component. User interfaces command of search of structures corresponding to request template]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+<- library_of_atomic_reusable_components;;
+
+lib_component_ui_menu_isomorphic_search = [*^"file://ui_menu_isomorphic_search.scsi"*];;

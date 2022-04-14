@@ -4,7 +4,7 @@ APP_ROOT_PATH=$(cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && cd .. &
 PLATFORM_PATH="${APP_ROOT_PATH}/ostis-web-platform"
 WORKING_PATH=$(pwd)
 PYTHON_PATH="${APP_ROOT_PATH}"/problem-solver/py/services
-PLATFORM_REPO="https://github.com/ostis-dev/ostis-web-platform.git"
+PLATFORM_REPO="https://github.com/ostis-ai/ostis-web-platform.git"
 
 prepare_platform()
 {
@@ -58,7 +58,6 @@ if [ -d "${PLATFORM_PATH}" ];
 		echo -en "Install OSTIS platform\n"
 		git clone ${PLATFORM_REPO}
 		cd "${PLATFORM_PATH}"
-		git checkout 0.6.0
 		"${APP_ROOT_PATH}"/scripts/clone_subsystems.sh
 		prepare_platform_without_build
 		include_problem_solver

@@ -1,0 +1,29 @@
+ui_menu_isomorphic_search <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_isomorphic_search 
+=> nrel_main_idtf: 
+	[Какие структуры соответствуют заданному шаблону?]
+	(* <- lang_ru;; *);
+=> nrel_idtf: 
+	[Запрос поиска конструкций по шаблону]
+	(* <- lang_ru;; *);;
+
+ui_menu_isomorphic_search 
+=> nrel_main_idtf: 
+	[What are structures that correspondents to template?]
+	(* <- lang_en;; *);
+=> nrel_idtf: 
+	[Request searches for structures corresponding to template]
+	(* <- lang_en;; *);;
+
+ui_menu_isomorphic_search => ui_nrel_command_template:
+	[*
+		question_find_isomorphic_structures _-> ._question_find_isomorphic_structures_instance
+			(*
+				_-> ui_arg_1;;
+			*);;
+		._question_find_isomorphic_structures_instance _<- question;;
+	*];;
+
+ui_menu_isomorphic_search => ui_nrel_command_lang_template: [Какие структуры соответствуют заданному шаблону $ui_arg_1?] (* <- lang_ru;; *);;
+ui_menu_isomorphic_search => ui_nrel_command_lang_template: [What are structures that correspondents to template $ui_arg_1?] (* <- lang_en;; *);;

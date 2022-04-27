@@ -2,7 +2,7 @@
   "name": "sc-web-extensions",
   "version": "1.0.0",
   "dependencies": {
-    "grunt": "^1.0.1"
+    "grunt": "^1.5.2"
   },
   "devDependencies": {
     "grunt-contrib-concat": "^1.0.1",

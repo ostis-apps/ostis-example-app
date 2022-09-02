@@ -58,6 +58,7 @@ if [ -d "${PLATFORM_PATH}" ];
 		echo -en "Install OSTIS platform\n"
 		git clone ${PLATFORM_REPO}
 		cd "${PLATFORM_PATH}"
+		git checkout 0.6.1
 		"${APP_ROOT_PATH}"/scripts/clone_subsystems.sh
 		prepare_platform_without_build
 		include_problem_solver

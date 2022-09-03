@@ -25,19 +25,6 @@ cd {project-name}/ostis-web-platform/scripts
 ```
 
 ## Run
-
-There are 2 possible options to run:
-### Option 1. Run sc-server 
-Run on Linux:
-```sh
-cd {project-name}/ostis-web-platform/scripts
-./run_sc_server.sh
-```
-
-Then open localhost:8090 in your browser
-![](https://i.imgur.com/wibISSV.png)
-Current interface version allows creating nodes with system identifiers and searching for the main identifier by the provided system identifier.
-### Option 2. Run sctp-server & sc-web
 Please note that JSON Websocket protocol will be available as well after start.
 Run on Linux:
 ```sh

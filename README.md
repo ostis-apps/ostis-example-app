@@ -1,4 +1,4 @@
-## Version 0.6.0
+## Version 0.6.1
 
 This version allows communication with the knowledge base via [JSON-based Websocket protocol](http://ostis-dev.github.io/sc-machine/http/websocket/).
 
@@ -12,7 +12,7 @@ You can still use [sctp protocol](http://ostis-dev.github.io/sc-machine/net/sctp
 Linux:
 ```sh
 git clone https://github.com/ostis-apps/ostis-example-app.git
-git checkout 0.6.0
+git checkout 0.6.1
 cd {project-name}/scripts
 ./install_ostis.sh
 ```

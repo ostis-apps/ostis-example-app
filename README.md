@@ -26,7 +26,9 @@ cd {project-name}/ostis-web-platform/scripts
 
 ## Run
 Please note that JSON Websocket protocol will be available as well after start.
-IMPORTANT: Both terminals run at the same time.
+
+WARNING: Both terminals run at the same time.
+
 Run on Linux:
 ```sh
 #Terminal 1
@@ -41,7 +43,7 @@ cd {project-name}/ostis-web-platform/scripts
 Then open localhost:8000 in your browser.
 ![](https://i.imgur.com/6SehI5s.png)
 
-ALSO IMPORTANT: don't forget to kill sctp process after finishing your work
+WARNING: don't forget to kill sctp process after finishing your work
 
 ## Project Structure
 

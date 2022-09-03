@@ -12,8 +12,8 @@ You can still use [sctp protocol](http://ostis-dev.github.io/sc-machine/net/sctp
 Linux:
 ```sh
 git clone https://github.com/SHtress/ostis-example-app
+cd ostis-example-app/scripts
 git checkout 0.6.1
-cd {project-name}/scripts
 ./install_ostis.sh
 ```
 
@@ -26,6 +26,7 @@ cd {project-name}/ostis-web-platform/scripts
 
 ## Run
 Please note that JSON Websocket protocol will be available as well after start.
+IMPORTANT: Both terminals run at the same time.
 Run on Linux:
 ```sh
 #Terminal 1
@@ -40,7 +41,7 @@ cd {project-name}/ostis-web-platform/scripts
 Then open localhost:8000 in your browser.
 ![](https://i.imgur.com/6SehI5s.png)
 
-You can open localhost:8090 in your browser as well to see the new web interface version.
+ALSO IMPORTANT: don't forget to kill sctp process after finishing your work
 
 ## Project Structure
 

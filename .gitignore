@@ -2,6 +2,10 @@
 .vscode
 *.scs~
 ostis-web-platform
+*.log
+bin/
+build/
+*.bin
 
 __pycache__
 

@@ -22,27 +22,15 @@ prepare_platform_without_build()
 
 include_kb()
 {
-	cd "${PLATFORM_PATH}"
-	rm ./ims.ostis.kb/ui/ui_start_sc_element.scs
-	rm -rf ./kb/menu
-	echo "../kb" >> ./repo.path
-	echo "../problem-solver" >> ./repo.path
-	cd scripts
+	cd "${PLATFORM_PATH}"/scripts
 	./build_kb.sh
 	cd "${PLATFORM_PATH}"
 }
 
 include_problem_solver()
 {
-	if ! grep -q "${PYTHON_PATH}" "${PLATFORM_PATH}/sc-machine/config/config.ini.in";
-	then
-		PYTHON_PATH_ESCAPED="$(echo "${PYTHON_PATH}" | sed -e 's/[/]/\\&/g')"
-		sed -i "/modules_path/ s/$/;${PYTHON_PATH_ESCAPED}/" "${PLATFORM_PATH}/sc-machine/config/config.ini.in"
-	fi
-
 	cd "${APP_ROOT_PATH}"/scripts
 	./build_problem_solver.sh
-	cat "${PLATFORM_PATH}"/sc-machine/bin/config.ini >> "${PLATFORM_PATH}"/config/sc-web.ini
 	cd "${PLATFORM_PATH}"
 }
 
@@ -58,6 +46,7 @@ if [ -d "${PLATFORM_PATH}" ];
 		echo -en "Install OSTIS platform\n"
 		git clone ${PLATFORM_REPO}
 		cd "${PLATFORM_PATH}"
+		git checkout prerelease/0.7.0
 		"${APP_ROOT_PATH}"/scripts/clone_subsystems.sh
 		prepare_platform_without_build
 		include_problem_solver

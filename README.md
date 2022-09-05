@@ -1,49 +1,33 @@
-## Version 0.6.0
+## Version 0.7.0
 
 This version allows communication with the knowledge base via [JSON-based Websocket protocol](http://ostis-dev.github.io/sc-machine/http/websocket/).
 
-New version of web interface implements to show usage of **sc-server** (runner of two-side JSON protocol).?
 The new version of web interface communicates with **sc-server** using two-way JSON protocol.
-
-You can still use [sctp protocol](http://ostis-dev.github.io/sc-machine/net/sctp/) with this version of web interface as well.
 
 ## Install
 
 Linux:
 ```sh
 git clone https://github.com/ostis-apps/ostis-example-app.git
-git checkout 0.6.0
-cd {project-name}/scripts
+cd ostis-example-app/scripts
+git checkout 0.7.0
 ./install_ostis.sh
 ```
 
 ## Build knowledge base
 Linux:
 ```sh
-cd {project-name}/ostis-web-platform/scripts
+cd ostis-example-app/scripts
 ./build_kb.sh
 ```
 
 ## Run
 
-There are 2 possible options to run:
-### Option 1. Run sc-server 
-Run on Linux:
-```sh
-cd {project-name}/ostis-web-platform/scripts
-./run_sc_server.sh
-```
-
-Then open localhost:8090 in your browser
-![](https://i.imgur.com/wibISSV.png)
-Current interface version allows creating nodes with system identifiers and searching for the main identifier by the provided system identifier.
-### Option 2. Run sctp-server & sc-web
-Please note that JSON Websocket protocol will be available as well after start.
-Run on Linux:
+Run on Linux (both terminals or terminal tabs should work at the same time):
 ```sh
 #Terminal 1
 cd {project-name}/ostis-web-platform/scripts
-./run_sctp.sh
+./run_sc_server.sh
 
 #Terminal 2
 cd {project-name}/ostis-web-platform/scripts
@@ -52,8 +36,6 @@ cd {project-name}/ostis-web-platform/scripts
 
 Then open localhost:8000 in your browser.
 ![](https://i.imgur.com/6SehI5s.png)
-
-You can open localhost:8090 in your browser as well to see the new web interface version.
 
 ## Project Structure
 
@@ -64,36 +46,27 @@ The place for the knowledge base of your app. Put your **.scs** files here.
 The place for the problem solver of your app. Put your agents here.
 
 *Use **scp_stable** branch for the development of agents on SCP.*  
-*Use **0.5.0** or **0.6.0** branch for the development of agents on C++.*  
-*Use **0.6.0** branch for the development of agents on Python.*  
+*Use **0.5.0**, **0.6.0** or **0.7.0** branch for the development of agents on C++.*  
+
 
 #### Agents on C++
 Some tips:
 - Store your modules with C++ agents in *problem-solver/cxx*;
 - After updating your C++ code you need to rebuild problem-solver. Just run:  
 ```
-cd {project-name}/scripts
+cd ostis-example-app/scripts
 ./build_problem_solver.sh
 ```
-For a full rebuild with the deleting of the *bin* and *build* folders run:
-```
-cd patient-care/scripts
-./build_problem_solver.sh -f
-```
 
-- To enable debug:
-    * add *SET(CMAKE_BUILD_TYPE Debug)* line 
-    to *{project-name}/CMakeLists.txt* file;
-    * rebuild problem-solver.
+- To enable debug set vars in ostis-example-app.ini:
+    ```sh
+    log_type = Console
+    log_file = sc-memory.log
+    log_level = Debug
+    ```
 - You can see an example module with a C++ agent [here](problem-solver/cxx/exampleModule/README.md).
 
-#### Agents on Python
-Some tips:
-- Store your modules with Python agents in *problem-solver/py*;
-- After updating your Python code you don't need to rebuild problem-solver;
-- You can see example modules using Python [here](problem-solver/py). 
-
-### interface
+### Interface
 
 The place for your interface modules.
 
@@ -112,6 +85,3 @@ Build the problem-solver of your app. Use an argument *-f* or *--full* for a com
 
 #### install_ostis.sh
 Install or update the OSTIS platform.
-
-#### install_subsystems.sh
-Building a problem solver and a knowledge base of subsystems.

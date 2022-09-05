@@ -26,11 +26,11 @@ cd ostis-example-app/scripts
 Run on Linux (both terminals or terminal tabs should work at the same time):
 ```sh
 #Terminal 1
-cd {project-name}/ostis-web-platform/scripts
+cd ostis-example-app/scripts
 ./run_sc_server.sh
 
 #Terminal 2
-cd {project-name}/ostis-web-platform/scripts
+cd ostis-example-app/scripts
 ./run_scweb.sh
 ```
 

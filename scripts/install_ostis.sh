@@ -14,7 +14,7 @@ prepare_platform()
 prepare_platform_without_build()
 {
 	cd "${PLATFORM_PATH}"/scripts
-	./prepare.sh no_build_kb no_build_sc_machine
+	./prepare.sh no_build_kb 
 }
 
 include_kb()

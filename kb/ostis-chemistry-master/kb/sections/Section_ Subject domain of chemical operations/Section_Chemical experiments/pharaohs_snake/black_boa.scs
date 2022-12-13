@@ -1,0 +1,67 @@
+black_boa
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[черный удав](*<- lang_ru;;*);
+	[black boa](*<- lang_en;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (черный удав)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Серная кислота отнимает от сахара (сахароза C12H22O11) воду, разрушая его молекулярную структуру, и окисляет его, превращаясь при этом в диоксид серы SO2. При окислении сахара получается диоксид углерода CO2. Эти газы вспучивают образующийся уголь и выталкивают его из стакана вместе с палочкой.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (черный удав, уравнение)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[C12H22O11 + 2H2SO4 = 11C + 2SO2 + CO2 + 13H2O]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+<= nrel_sc_text_translation: ...
+(* 
+	=> nrel_main_idtf: 		
+		[Видео (черный удав)](*<- lang_ru;;*);;
+	-> rrel_example: [p8Q5ocAfx4w]
+		(*
+			=> nrel_format: format_youtubelink;;
+			<-lang_ru;;
+		*);;
+*);
+
+=> nrel_ingredients: ...
+(*
+	-> powdered_sugar;;
+	-> sulfuric_acid;;
+*);
+
+
+//Сахарную пудру в количестве 75 г поместить в высокий стеклянный стакан
+//Смочить сахарную пудру в 5–7 мл воды
+//Перемешать длинной стеклянной палочкой.
+//Ко влажному сахару прилить по этой палочке 30–40 мл концентрированной серной кислоты H2SO4. 
+//Смесь быстро перемешать стеклянной палочкой.
+//Через 1–2 минуты 
+
+=> nrel_equipment: ...
+(*
+	-> glass_beaker;;
+	-> glass_rod;;
+*);;

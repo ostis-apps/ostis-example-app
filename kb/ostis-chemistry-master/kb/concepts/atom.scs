@@ -1,0 +1,26 @@
+atom
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[атом](*<-lang_ru;;*);
+     [atom](*<-lang_en;;*);;
+
+atom
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(атом)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b>А́том</b> (от др.-греч. ἄτομος — неделимый, неразрезаемый) — частица вещества микроскопических размеров и массы, наименьшая часть <sc_element sys_idtf="chemical_element">химического элемента</sc_element>, являющаяся носителем его свойств] (* <- lang_ru;; =>nrel_format: format_html;; *);; *);;
+	<=nrel_using_constants: chemical_element;;
+*);
+
+=>nrel_inclusion: atomic_nucleus; electron;
+
+<-rrel_key_sc_element: ...
+(*
+	->rrel_key_sc_element: atomic_nucleus;  electron; neutron; proton; nrel_charge; ion;;
+	->statement;;
+	<-concept_assertion_of_the_defining_type;;
+	<-rrel_theorem:subject_domain_of_chemistry (*<-concept_subject_domain;;*);;
+	<=nrel_sc_text_translation: ... (* ->rrel_example:"file://html/atom.html" (*<-lang_ru;;*);; *);;
+	=>nrel_main_idtf: [Утв. (атом, атомное ядро, электрон, нейтрон, протон, заряд*, ион)](*<-lang_ru;;*);; 
+*);;

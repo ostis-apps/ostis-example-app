@@ -1,0 +1,96 @@
+universal_environment
+=> nrel_main_idtf:
+	[универсальная среда](* <- lang_ru;; *);
+	[universal environment](* <- lang_en;; *);;
+
+toxin
+=> nrel_main_idtf:
+	[токсин](* <- lang_ru;; *);
+	[toxin](* <- lang_en;; *);;
+
+organism
+=> nrel_main_idtf:
+	[организм](* <- lang_ru;; *);
+	[organism](* <- lang_en;; *);;
+
+metabolism
+=> nrel_main_idtf:
+	[метаболизм](* <- lang_ru;; *);
+	[metabolism](* <- lang_en;; *);;
+
+
+nrel_kinetic_isotope_effect
+=> nrel_main_idtf:
+	[кинетический изотопный эффект](* <- lang_ru;; *);
+	[kinetic isotope effect](* <- lang_en;; *);;
+
+light_water
+=> nrel_main_idtf:
+	[light water](* <-lang_en;; *);
+	[лёгкая вода](* <- lang_ru;; *);
+
+
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(лёгкая вода)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[<b>Лёгкая водa</b> - моноизотопная композиция <sc_element sys_idtf = "H2O"><sup>1</sup>H<sub>2</sub><sup>16</sup>O</sc_element>, предельный случай изотопной чистоты.]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+		
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->H2O;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element: statement_universal_environment
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(универсальная среда, лёгкая вода, скорость химической реакции*, кинетический изотопный эффект*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[В качестве универсальной среды, в которой идут все биологические реакции, лёгкая вода увеличивает скорость этих реакций по сравнению с водой природного изотопного состава. Этот эффект известен под названием кинетический изотопный эффект растворителя.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: universal_environment;;
+	-> rrel_key_sc_element: light_water;;
+	-> rrel_key_sc_element: nrel_chemical_reaction_rate;;
+        -> rrel_key_sc_element: nrel_kinetic_isotope_effect;;
+	<- rrel_axiom:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+
+<- rrel_key_sc_element: statement_metabolism_organisma
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(лёгкая вода, изотоп, токсин, метаболизм, организм)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Легкая вода, очищенная от тяжелых изотопологов, за счет своих транспортных свойств эффективно выводит токсины и продукты метаболизма из организма.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: light_water;;
+	-> rrel_key_sc_element: isotope;;
+	-> rrel_key_sc_element: toxin;;
+        -> rrel_key_sc_element: metabolism;;
+        -> rrel_key_sc_element: organism;;
+	<- rrel_axiom:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);;
+

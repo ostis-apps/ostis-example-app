@@ -1,0 +1,84 @@
+explosive
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[взрывчатое вещество]
+	(* <- lang_ru;;	*);
+	[explosive]
+	(* <- lang_en;;	*);
+
+=> nrel_idtf: 
+	[ВВ] 
+	(* <-lang_ru;;*);
+	[взрывчатка] 
+	(* <-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_explosive
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="explosive">Взры́вчатое вещество́</sc_element></b> — конденсированное <sc_element sys_idtf="chemical_substance">химическое вещество</sc_element> или <sc_element sys_idtf="mixture">смесь</sc_element> таких веществ, способное при определенных условиях под влиянием внешних воздействий к быстрому самораспространяющемуся химическому превращению (взрыву) с выделением большого количества тепла и газообразных продуктов.]
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="explosive">Explosivé</sc_element></b> is a condensed <sc_element sys_idtf="chemical_substance">chemical substance</sc_element> or <sc_element sys_idtf="mixture">misture</sc_element> of such substances that is able to explode with a release of a large amount of heat and gaseous products under certain conditions.]
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+
+=> nrel_applying: ...
+(*
+		-> war_industry;;
+		-> mining;;
+		-> construction;;
+		-> seismic_survey;;
+		-> material_processing;;
+*);
+
+<= nrel_subdividing: ...
+(*
+    <- explanation;;
+    => nrel_main_idtf:
+    [Разбиение взрывчатых веществ по физическому состоянию](*<-lang_ru;; *);
+    [Partitioning explosives by physical state](*<-lang_en;; *);;
+    -> gas_explosive;;
+    -> liquid_explosive;;
+    -> gel_explosive;;
+    -> solid_explosive;;
+    -> elastic_explosive;;
+    -> emulsion_explosive;;
+    -> plastic_explosive;;
+    -> suspension_explosive;;
+*);
+
+<= nrel_subdividing: ...
+(*
+    <- explanation;;
+    => nrel_main_idtf:
+    [Разбиение взрывчатых веществ по методу приготовления зарядов](*<-lang_ru;; *);
+    [Partitioning explosives by charges preparation method](*<-lang_en;; *);;
+    -> pressed_explosive;;
+    -> cast_explosive;;
+    -> patronized_explosive;;
+*);;
+
+Definition_of_explosive
+=> nrel_main_idtf:
+	[Опр.(взрывчатое вещество)]
+	(* <- lang_ru;;	*);
+	[Def.(explosive)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_substance; mixture;;
+			*);;

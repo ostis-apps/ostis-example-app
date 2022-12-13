@@ -1,0 +1,846 @@
+subject_domain_of_alkenes
+	=> nrel_main_idtf:
+	[Предметная область алкенов]
+	(* <- lang_ru;; *);
+	[Subject domain of alkenes]
+	(* <- lang_en;; *);
+		
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: alkene;
+
+-> rrel_not_maximum_studied_object_class:
+	ethene;
+	propene;
+	butene;
+	penten;
+	hexene;
+	heptene;
+	okten;
+	nonene;
+	isobutylene;
+	cycloalkene;
+	decen;;
+subject_domain_of_alkenes <= nrel_sc_text_translation: ...
+		(* 
+		-> rrel_example: "file://html/section_alkenes.html" (* <-lang_ru;; *);;
+		*);;
+
+
+
+ethene
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[этен]
+	(* <- lang_ru;; *);
+	[ethene]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[этилен]
+	(* <- lang_ru;; *);
+	[ethylene]
+	(* <- lang_en;; *);
+
+<- gas;
+<- no_color;
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [28] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [0,001178] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [103,95] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*); 
+
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [169,45] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (этен, получение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> [В промышленных объемах этен получают при переработке нефти: крекингом и дегидрированием этана. Лабораторные способы получения этилена представлены: <ul>
+<li>дегидратация этанола
+<li>дегидрогалогенированиемоногалогенэтана
+<li>дегалогенирование дигалогенаэтана
+<li>неполное гидрирование ацетилена
+</ul>]
+		(* 
+		<-lang_ru;;
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: ...
+(* 
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(этен)](*<-lang_ru;;*);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="ethene">Этен</sc_element></b> — органическое <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element>, описываемое формулой С<sub>2</sub>Н<sub>4</sub>] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	<= nrel_using_constants: ... (* -> chemical_compound;; *);;	
+*);
+
+
+->rrel_key_sc_element: ...
+(*
+	=>nrel_main_idtf: [Утв. (этен, применение*](*<-lang_ru;;*);;
+	->rrel_key_sc_element: nrel_applying;;
+	<= nrel_sc_text_translation:...(*->rrel_example: [Основное направление использование этилена — промышленный органический синтез таких соединений как галогенопроизводные, спирты (этанол, этиленгликоль), уксусный альдегид, уксусная кислота и др. Кроме этого данное соединение в производстве полимеров.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+*);;
+
+
+propene
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[пропен]
+	(* <- lang_ru;; *);
+	[propene]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[пропилен]
+	(* <- lang_ru;; *);
+	[propylene]
+	(* <- lang_en;; *);
+
+<- gas;
+=> nrel_isomer: cyclopropane;
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [42,08] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [0,695] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [90,65] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*); 
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [225,55] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(пропен)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b><sc_element sys_idtf="propene">Пропиле́н</sc_element></b> (пропен) СН<sub>2</sub>=СН-СН<sub>3</sub> — непредельный (ненасыщенный) углеводород ряда этилена, горючий <sc_element sys_idtf="gas">газ</sc_element>. ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: gas;;
+*);
+<-rrel_key_sc_element: ...
+(*
+	<-statement;;
+	<-rrel_key_sc_element: nrel_applying;;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [Для производства оксида пропилена, получения изопропилового спирта и ацетона, для синтеза альдегидов, для получения акриловой кислоты и акрилонитрила, полипропилена, пластмасс, каучуков, моющих средств, компонентов моторных топлив, растворителей.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (пропен, применение*)](*<-lang_ru;;*);; 
+*);
+<-rrel_key_sc_element: ...
+(*
+	<-statement;;
+	<-rrel_key_sc_element: nrel_receiving;;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [<ul><li>Отщепление галогеноводорода от галогеналкилов при действии на них спиртового раствора щелочи <li>Гидрирование пропина в присутствии катализатора (Pd)<li>Дегидратация изопропилового спирта (отщепление воды). В качестве катализатора используют кислоты (серную или фосфорную) или Аl<sub>2</sub>O<sub>3</sub><li>Отщепление двух атомов галогена от дигалогеноалканов, содержащих галогены при соседних атомах С. Реакция протекает под действием металлов (Zn и др.)</ul>](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (нуклид, получение*)](*<-lang_ru;;*);; 
+*);;
+
+
+
+butene
+
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[бутен]
+	(* <- lang_ru;; *);
+	[butene]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[бутилен]
+	(* <- lang_ru;; *);
+
+<- gas;
+=> nrel_isomer: butene_2; 2_methylpropene_1; cis_butene_2; trans_butene_2; cyclobutane; methylcyclopropane; isobutylene; 
+<- no_color;
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [56,11] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [87,85] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*); 
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [266,55] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(бутен)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b><sc_element sys_idtf="butene">Бутен</sc_element></b> (бутилен-1) С<sub>4</sub>Н<sub>8</sub> — непредельный углеводород, наркотик, раздражающий верхние дыхательные пути. ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+*);
+<-rrel_key_sc_element: ...
+(*
+	<-statement;;
+	<-rrel_key_sc_element: nrel_receiving;;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: "file://html/applying_of_butene.html" (*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (бутен, получение*)](*<-lang_ru;;*);; 
+*);
+<-rrel_key_sc_element: ...
+(*
+	<-statement;;
+	<-rrel_key_sc_element: nrel_applying;;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [Бутилен широко используют для синтеза бутадиена, бензина, бутанола, изооктана и полиизобутилена. Также бутилен применяется в качестве топлива в составе газовых смесей при газокислородной сварке и резке металлов, и в частности он содержится в новом газе МАФ (метилацетилен-алленовой фракции) применяемом в качестве дешевой замены ацетилена.
+
+Бутилен-1 выступает в качестве сомономера при полимеризации этилена.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (бутен, применение*)](*<-lang_ru;;*);; 
+*);;
+
+
+
+penten
+
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[пентен]
+	(* <- lang_ru;; *);
+	[penten]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[амилен]
+	(* <- lang_ru;; *);
+	[amylene]
+	(* <- lang_en;; *);
+
+<- liquid;
+=> nrel_isomer: penten_2; cyclopentane; methylcyclobutane; 1_2_dimethylcyclopropane; 1_1_dimethylcyclopropane; ethylcyclopropane; cis_pentene_2; trans_pentene_2; 2_methylbutene_1; 3_methylbutene_1;
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [70,134] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [104,65] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*); 
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [293,21] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(пентен)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b><sc_element sys_idtf="penten">Пентен</sc_element></b> (амилен) С<sub>5</sub>Н<sub>10</sub> — общее название для непредельных углеводородов гомологического ряда <sc_element sys_idtf="alkene">алкенов</sc_element> ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: alkene;;
+*);
+<-rrel_key_sc_element: ...
+(*
+	<-statement;;
+	<-rrel_key_sc_element: nrel_receiving;;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: "file://html/applying_of_penten.html" (*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (пентен, получение*)](*<-lang_ru;;*);; 
+*);;
+
+
+
+
+hexene
+
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[гексен]
+	(* <- lang_ru;; *);
+	[hexene]
+	(* <- lang_en;; *);
+
+<- liquid;
+=> nrel_isomer: hexene_2; hexene_3; 2_methylpentene_1; 3_methylpentene_1; 4_methylpentene_1; 2_methylpentene_2; 3_methylpentene_2; 4_methylpentene_2; 2_ethylbutene_1; 2_3_dimethylbutene_1; 3_3_dimethylbutene_1; 2_3_dimethylbutene_2; cyclohexane; methylcyclopentane;
+<- no_color;
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [84] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [115,88] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*); 
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [314,397] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(гексен)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b><sc_element sys_idtf="hexene">Гексен</sc_element></b> — общее название для органических соединений состава С<sub>6</sub>Н<sub>12</sub>, относящихся к <sc_element sys_idtf="alkene">алкенам</sc_element>. ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: alkene;;
+*);
+<-rrel_key_sc_element: ...
+(*
+	<-statement;;
+	<-rrel_key_sc_element: nrel_receiving;;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [<sc_element sys_idtf="hexene">1-Гексен</sc_element> в виде <sc_element sys_idtf="mixture">смеси</sc_element> с α-олефинами получают олигомеризацией <sc_element sys_idtf="ethene">этилена</sc_element>, термическим крекингом парафинов. Изогексены получают димеризацией пропилена.] (*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (гексен, получение*)](*<-lang_ru;;*);; 
+*);
+<-rrel_key_sc_element: ...
+(*
+	<-statement;;
+	<-rrel_key_sc_element: nrel_applying;;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [Гексены входят в состав высокооктановых компонентов моторных топлив. Используются для получения изопрена, высших жирных спиртов и др.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (гексен, применение*)](*<-lang_ru;;*);; 
+*);;
+
+
+
+heptene
+
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[гептен]
+	(* <- lang_ru;; *);
+	[heptene]
+	(* <- lang_en;; *);
+
+<- liquid;
+=> nrel_isomer: heptene_2; heptene_3; 2_methylhexene_2; 3_methylhexene_2; 4_methylhexene_2; 3_ethylpentene_2;
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [98,1861] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [366,79] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_m:...
+		(*
+			=> nrel_main_idtf: [697] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(гептен)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b><sc_element sys_idtf="heptene">Гептен</sc_element></b> — общее название для органических соединений состава С<sub>7</sub>Н<sub>14</sub>, относящихся к <sc_element sys_idtf="alkene">алкенам</sc_element>. ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: alkene;;
+*);;
+
+
+
+
+okten
+
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[октен]
+	(* <- lang_ru;; *);
+	[okten]
+	(* <- lang_en;; *);
+<- liquid;
+<- no_color;
+<- strong_smell;
+=> nrel_isomer: octene_2; octene_3; octene_4; 2_methylheptene_2; 2_2_dimethylhexene_3; 5_5_dimethylhexene_2; 5_5_dimethylhexene_1; 2_methylheptene_3; 6_methylheptene_1; 5_methylheptene_1;
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [112,22] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [395,15] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [0,715] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [172,15] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*); 
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(октен)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b><sc_element sys_idtf="okten">Октен</sc_element></b> —  непредельный углеводород гомологического ряда алкенов с химической формулой С<sub>8</sub>Н<sub>16</sub>, относящихся к <sc_element sys_idtf="alkene">алкенам</sc_element>. ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: alkene;;
+*);;
+
+
+
+
+
+nonene
+
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[нонен]
+	(* <- lang_ru;; *);
+	[nonene]
+	(* <- lang_en;; *);
+<- liquid;
+=> nrel_isomer: nonene_2; nonene_3; nonene_4; nonene_5; 3_4_methylethylhexene_1;
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [126,24] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [420,15] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(нонен)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b><sc_element sys_idtf="nonene">Нонен</sc_element></b> — общее название для органических соединений состава С<sub>9</sub>Н<sub>18</sub>, относящихся к <sc_element sys_idtf="alkene">алкенам</sc_element>. ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: alkene;;
+*);;
+
+
+
+decen
+
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[децен]
+	(* <- lang_ru;; *);
+	[decen]
+	(* <- lang_en;; *);
+<- liquid;
+<- no_color;
+=> nrel_isomer: decene_2; decene_3; decene_4; decene_5; 2_methyloctene; 3_methyloctene; 4_methyloctene_3;
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [140,266] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [443,75] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [0,7408] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [206,85] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*); 
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(децен)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b><sc_element sys_idtf="decen">Децен</sc_element></b> —  непредельный углеводород гомологического ряда алкенов с химической формулой С<sub>10</sub>Н<sub>20</sub>, относящихся к <sc_element sys_idtf="alkene">алкенам</sc_element>. ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: alkene;;
+*);
+<-rrel_key_sc_element: ...
+(*
+	<-statement;;
+	<-rrel_key_sc_element: nrel_receiving;;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [В основном данный углеводород получают путём термического крекинга. Исходным веществом получения выступает эйкозан (C<sub>20</sub>H<sub>42</sub>).] (*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (децен, получение*)](*<-lang_ru;;*);; 
+*);
+<-rrel_key_sc_element: ...
+(*
+	<-statement;;
+	<-rrel_key_sc_element: nrel_applying;;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [Применяется для производства полимеризованного децена, который используется для производства моторных масел и пищевой добавки E907.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (децен, применение*)](*<-lang_ru;;*);; 
+*);;
+
+isobutylene
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[изобутилен]
+	(* <- lang_ru;; *);
+	[isobutylene]
+	(* <- lang_en;; *);
+
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(изобутилен)](*<-lang_ru;;*);;
+	<=nrel_using_constants: butene;;
+	<= nrel_sc_text_translation: ... (*->rrel_example: [<b><sc_element sys_idtf="isobutylene">Изобутилен</sc_element></b> —  (СН<sub>3</sub>)<sub>2</sub>С=СН<sub>2</sub> — ненасыщенный углеводород, изомерен <sc_element sys_idtf="butene">бутилену</sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+*);
+
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [56,11] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [266,25] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [0,5879] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+<-rrel_key_sc_element: ...
+(*
+	<-statement;;
+	<-rrel_key_sc_element: nrel_receiving;;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [Изобутилен в промышленности получают выделением из бутан-бутеновой фракции производства бензинов или этилена каталитическим или термическим крекингом или пиролизом жидким нефтепродуктов или нефтяных газов. Выход фракции С<sub>4</sub> в этих трех процессах составляет соответственно 3-10, 1-2 и 0,4-5 мас.%. Изобутилен из фракций C<sub>4</sub> выделяют путём экстракции 65%-ной серной кислотой (способ А.М. Бутлерова) при температурах, близких к комнатной. Экстракции протекает практически количественно. Итогом процесса является трет-бутилсерная кислота
+<br>
+(CH<sub>3</sub>)<sub>2</sub>C=CH<sub>2</sub> + H<sub>2</sub>SO<sub>4</sub> = (CH<sub>3</sub>)<sub>3</sub>COSO<sub>3</sub>H
+<br>
+которую вновь превращают в изобутилен.
+<br>
+Другой способ состоит в выделении его из бутилсерной кислоты гидролизом её острым паром, в результате чего образуется трет-бутиловый спирт.
+<br>
+(CH<sub>3</sub>)<sub>3</sub>COSO<sub>3</sub>H + H<sub>2</sub>O = (CH<sub>3</sub>)<sub>3</sub>COH + H<sub>2</sub>SO<sub>4</sub>
+<br>
+Последний дегидратируют 30%-ной серной кислотой до получения изобутилена. Однако применение этого способа ограничено высокой стоимостью процесса регенерации серной кислоты.
+<nr>
+Более эффективен способ, в котором реакционную жидкость, полученную экстракцией изобутилена 65%-ной кислотой, разбавляют водой до концентрации кислоты 45%. При нагревании этого раствора при низком давлении выделяется чистым изобутилен, который промывают щелочью, освобождают от спирта путём охлаждения, промывают водой и сжижают под давлением.
+<br>
+Фирма Union Carbide разработала процесс выделения изобутена из бутан-бутиленовой фракции путём адсорбции на цеолитах. В этом процессе также выделяют бутилен, который изомеризуют в изобутилен.
+<br>
+Другим способом получения изобутилена является каталитическое дегидрирование изобутана.] (*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (изобутилен, получение*)](*<-lang_ru;;*);; 
+*);
+<-rrel_key_sc_element: ...
+(*
+	<-statement;;
+	<-rrel_key_sc_element: nrel_applying;;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [Применяется для получения изооктана, метакролеина, синтетических смол. Реакцией со спиртами могут быть получены простые трет-бутиловые эфиры (МТБЭ, ЭТБЭ и др.), применяемые в качестве добавок к моторному топливу.
+<br>
+Присоединение формальдегида к изобутилену с последующей дегидратацией является одним из промышленных методов синтеза изопрена, использующегося в производстве синтетических каучуков.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (изобутилен, применение*)](*<-lang_ru;;*);; 
+*);;
+
+cycloalkene
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[циклоалкен]
+	(* <- lang_ru;; *);
+	[cycloalkene]
+	(* <- lang_en;; *);
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(циклоалкен)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b><sc_element sys_idtf="cycloalkene">Циклоалкены</sc_element></b> —  углеводороды, содержащие замкнутое кольцо <sc_element sys_idtf="elem_C">атомов углерода</sc_element>, но не являющиеся ароматическими.  ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: elem_C;;
+*);;
+
+
+alkene
+
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[алкен]
+	(* <- lang_ru;; *);
+	[alkene]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[олефин]
+	(* <- lang_ru;; *);
+	[olifine]
+	(* <- lang_en;; *);
+	[этиленовый углеводород]
+	(* <- lang_ru;; *);
+	[ethylene hydrocarbon]
+	(* <- lang_en;; *);
+<-chemical_substance;
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(алкен)](*<-lang_ru;;*);;
+	<=nrel_using_constants: elem_C;;
+	<= nrel_sc_text_translation: ... (*->rrel_example: [<b><sc_element sys_idtf="alkene">Алке́ны</sc_element></b> —  ациклические непредельные углеводороды, содержащие одну двойную связь между <sc_element sys_idtf="elem_C">атомами углерода</sc_element>, образующие гомологический ряд с общей формулой C<sub>n</sub>H<sub>2n</sub>.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+*);;
+
+alkene -> ethene; propene; butene; penten; hexane; heptene; okten; nonene; isobutylene; decen;;

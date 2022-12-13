@@ -1,0 +1,25 @@
+lib_component_ui_menu_file_for_agent_find_elem_valencies 
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команда пользовательского интерфейса для поиска валентностей заданного химического элемента]
+	(* <- lang_ru;; *);
+	[Library component. User interface command of search valencies of current chemical element]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS;
+<- atomic_reusable_component_OSTIS;
+<- reusable_knowledge_base_sc_model_component;
+
+<- rrel_key_sc_element:
+	... 
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Ui_Determine_The_Location_Of_The_Entity_In_Space.html"
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_component_ui_menu_file_for_agent_find_elem_valencies = [*^"file://ui_menu_file_for_agent_find_elem_valencies.scsi"*];; 

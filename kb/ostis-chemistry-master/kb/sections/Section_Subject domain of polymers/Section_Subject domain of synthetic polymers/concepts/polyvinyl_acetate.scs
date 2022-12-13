@@ -1,0 +1,122 @@
+polyvinyl_acetate<-sc_node_not_relation;;
+polyvinyl_acetate=> nrel_main_idtf:[поливинилацетат](* <- lang_ru;; *);;
+polyvinyl_acetate=> nrel_main_idtf:[polyvinyl_acetate](* <- lang_en;; *);;
+polyvinyl_acetate=> nrel_idtf:[ poly (1-acetyloxiethylene)​](* <- lang_en;; *);;
+polyvinyl_acetate=> nrel_idtf:[(C4H6O2)n](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: polyvinyl_acetate;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Поливинилацетат — <b><sc_element sys_idtf="polymer">полимер</b></sc_element>
+	  винилацетата. Твердое <b><sc_element sys_idtf="no_color">бесцветное</b></sc_element> 
+	  прозрачное <b><sc_element sys_idtf="non_toxic_substance">нетоксичное вещество</b></sc_element> ;<b><sc_element sys_idtf="no_smell">не имеет запаха</b></sc_element> .]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (поливинилацетат)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+			polymer;
+			no_color;
+			non_toxic_substance;
+		no_smell
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: polyvinyl_acetate;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Поливинилацетат — основной сферой применения поливинилацетата является производство поливинилацетатного клея 
+	(клей ПВА), водоэмульсионных и акриловых <b><sc_element sys_idtf="paint">красок</b></sc_element>
+	, а также дальнейшая переработка в поливиниловый <b><sc_element sys_idtf="alcohol">спирт</b></sc_element>
+	 и поливинилацетали.]
+	
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(поливинилацетат,применение)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		paint;
+		alcohol
+		};;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:polyvinyl_acetate;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Поливинилацетат — растворяется в  <b><sc_element sys_idtf="acetic_acid">уксусной кислоте</b></sc_element> 
+	  и многих <b><sc_element sys_idtf="organic_chemistry">органических</b></sc_element> растворителях   ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(поливинилацетат,растворимость)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		organic_chemistry;
+		acetic_acid
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyvinyl_acetate;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyvinyl_acetate.png";;*);;
+	=> nrel_main_idtf: [Рисунок(поливинилацетат,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyvinyl_acetate;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyvinyl_acetate_prim.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(поливинилацетат,пример)](*<- lang_ru;;*);;
+*);;
+
+
+thermoplastic_polymer=>nrel_inclusion:polyvinyl_acetate;;
+polycondensation_polymer=>nrel_inclusion:polyvinyl_acetate;;
+hetero_chain_polymer=>nrel_inclusion:polyvinyl_acetate;;
+
+polyvinyl_alcohol<=nrel_polymerization:polyvinyl_acetate;;
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> polyvinyl_acetate;;
+	=> rrel_mol: [86]
+	(*
+		<-number;;
+	*);;
+*);;
+
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyvinyl_acetate;;
+	=> rrel_joule_per_kelvin_and_mole: 0.32
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyvinyl_acetate;;
+	=> rrel_gram_per_cubic_cm: 1.1
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+

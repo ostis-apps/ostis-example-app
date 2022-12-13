@@ -1,0 +1,131 @@
+subst_Lu
+<- sc_node_not_relation;
+=> nrel_main_idtf: [лютеций] (* <- lang_ru;; *);
+=> nrel_main_idtf: [lutetium] (* <- lang_en;; *);
+<- rrel_key_sc_element: definition_of_subst_Lu
+(* 
+	=> nrel_main_idtf: 
+	[Опр.(лютеций)] (* <- lang_ru;; *);
+	[Def.(lutetium)] (* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Lu">Лютеций</sc_element></b> - <sc_element sys_idtf="solid">твёрдый</sc_element>, плотный, <sc_element sys_idtf="color_white_silver">серебристо-белый</sc_element> <sc_element sys_idtf="metal">металл</sc_element>.] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+
+		-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Lu">Lutetium</sc_element></b> is a  <sc_element sys_idtf="solid">solid</sc_element> dense <sc_element sys_idtf="color_white_silver">silvery white</sc_element> <sc_element sys_idtf="metal">metal</sc_element>.] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> solid;;
+		-> metal;;
+		-> color_white_silver;;
+	*);;
+*);
+
+=> nrel_applying: ...
+(*
+	-> metallurgy;;
+	-> energetics;;
+	-> nuclear_physics;;
+*);
+
+<- rrel_key_sc_element: interaction_lu_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(лютеций, взаимодействие*, кислота)](*<- lang_ru;;*);
+		[Утв.(lutetium, interaction*, acid)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Лютеций реагирует с кислотами с образованием солей. ] (*<- lang_ru;;*);;
+		-> rrel_example:[ Lutetium interacts with acids with formation of salts. ] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- solid;
+<= nrel_inclusion: chemical_substance;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(лютеций, твёрдое тело)] (* <- lang_ru;;	*);
+	[Pic.(lutetium, solid)] (* <- lang_en;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_Lu.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 1936 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_molar_volume: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_cubic_cm_per_mole:...
+		(*
+			=> nrel_main_idtf: [17,8] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [26,5] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 3668 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [9,8404] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;
+
+atomic_multiplicity_one -> (subst_Lu -> elem_Lu);;

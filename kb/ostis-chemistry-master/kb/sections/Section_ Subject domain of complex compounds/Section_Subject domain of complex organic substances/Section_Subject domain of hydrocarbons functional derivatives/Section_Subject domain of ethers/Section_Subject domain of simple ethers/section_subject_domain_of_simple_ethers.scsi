@@ -1,0 +1,972 @@
+subject_domain_of_simple_ethers
+	<-subject_domain;
+	=>nrel_main_idtf:[Предметная область простых эфиров.](*<-lang_ru;;*);
+	=>nrel_main_idtf:[Subject domain of simple ethers.](*<-lang_en;;*);
+	->rrel_maximum_studied_object_class:simple_ether;
+	->rrel_not_maximum_studied_object_class:
+		acetal;
+		ketal;
+		hemiacetal;
+		dimethyl_ether;
+		diethyl_ether;
+		diisopropyl_ether;
+		anisole;
+		tetrahydrofuran;
+		dioxane;
+		fenetol;
+		diphenyl_ether;;
+
+simple_ether
+<-sc_node_not_relation;
+=>nrel_main_idtf:[простой эфир](*<-lang_ru;;*);
+=>nrel_main_idtf:[simple ether](*<-lang_en;;*);;
+
+sc_definition->...
+(*
+	->rrel_key_sc_element:simple_ether;;
+
+	=>nrel_main_idtf:[Опр. (простой эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (simple ether)](*<-lang_en;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->chemical_formula;;
+		->organic_compound;;
+		->hydrocarbon_radical;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+				<sc_element sys_idtf="simple_ether">Простой эфир</sc_element> - 
+				<sc_element sys_idtf="organic_compound">органическое соединение</sc_element>,
+				<sc_element sys_idtf="chemical_formula">химическая формула</sc_element> которого имеет вид
+				R-<sc_element sys_idtf="elem_O">O</sc_element>-R', где R и R' - 
+				<sc_element sys_idtf="hydrocarbon_radical">углеводородные радикалы</sc_element>.
+			](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+				<sc_element sys_idtf="simple_ether">Simple ether</sc_element> is an 
+				<sc_element sys_idtf="organic_compound">oraganic compound</sc_element> with
+				<sc_element sys_idtf="chemical_formula">chemical formula</sc_element> 
+				R-<sc_element sys_idtf="elem_O">O</sc_element>-R', where R and R' - 
+				<sc_element sys_idtf="hydrocarbon_radical">hydrocarbon radicals</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_explanation->...
+(*
+	->rrel_key_sc_element:simple_ether;liquid;boiling;nrel_solubility;water;;
+	=>nrel_main_idtf:[Утв. (простой эфир, жидкость, кипение, растворимость*, вода)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (simple ether, liquid, boiling, solubility*, water)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="simple_ether">Простые эфиры</sc_element> - 
+			подвижные <sc_element sys_idtf="boiling">легкокипящие</sc_element> 
+			<sc_element sys_idtf="liquid">жидкости</sc_element>,
+			<sc_element sys_idtf="nrel_solubility">легкорастворимые</sc_element> 
+			в <sc_element sys_idtf="water">воде</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf = "simple_ether"> Ethers </sc_element> -
+			mobile <sc_element sys_idtf = "boiling"> light-boiled </sc_element>
+			<sc_element sys_idtf = "liquid"> liquids </sc_element>,
+			<sc_element sys_idtf = "nrel_solubility"> easily soluble </sc_element>
+			in <sc_element sys_idtf = "water"> water </sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_illustration->...
+(*
+	->rrel_key_sc_element:simple_ether;;
+	=>nrel_main_idtf:[Рис. (простой эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Pic. (simple ether)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/simple_ether.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+
+
+acetal
+<-sc_node_not_relation;
+=>nrel_main_idtf:[ацеталь](*<-lang_ru;;*);
+=>nrel_main_idtf:[acetal](*<-lang_en;;*);
+<=nrel_inclusion:simple_ether;;
+
+sc_definition->...
+(*
+	->rrel_key_sc_element:acetal;;
+
+	=>nrel_main_idtf:[Опр. (ацеталь)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (acetal)](*<-lang_en;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->simple_ether;;
+		->chemical_formula;;
+		->elem_C;;
+		->hydrocarbon_radical;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+				<sc_element sys_idtf="acetal">Ацетали</sc_element> - 
+				<sc_element sys_idtf="simple_ether">простые эфиры</sc_element>,
+				<sc_element sys_idtf="chemical_formula">химическая формула</sc_element> которых имеет вид
+				R<sub>2</sub><sc_element sys_idtf="elem_C">C</sc_element>(
+				<sc_element sys_idtf="elem_O">O</sc_element>R<sup>1</sup>)(
+				<sc_element sys_idtf="elem_O">O</sc_element>R<sup>2</sup>)
+				, где R<sup>1</sup> и R<sup>2</sup> - 
+				<sc_element sys_idtf="hydrocarbon_radical">углеводородные радикалы</sc_element>.
+			](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+				<sc_element sys_idtf="acetal">Acetals</sc_element> are 
+				<sc_element sys_idtf="simple_ether">simple ethers</sc_element> with
+				<sc_element sys_idtf="chemical_formula">chemical formula</sc_element>
+				R<sub>2</sub><sc_element sys_idtf="elem_C">C</sc_element>(
+				<sc_element sys_idtf="elem_O">O</sc_element>R<sup>1</sup>)(
+				<sc_element sys_idtf="elem_O">O</sc_element>R<sup>2</sup>)
+				, where R<sup>1</sup> and R<sup>2</sup> are 
+				<sc_element sys_idtf="hydrocarbon_radical">hydrocarbon radicals</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_explanation->...
+(*
+	->rrel_key_sc_element:acetal;alkali;;
+	=>nrel_main_idtf:[Утв. (ацеталь, щелочь)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (acetal, alkali)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="acetal">Ацетали</sc_element> 
+			устойчивы в <sc_element sys_idtf="alkali">щелочных</sc_element> средах. 
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="acetal">Acetals</sc_element> 
+			are stable in <sc_element sys_idtf="alkali">alkaline</sc_element> media.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_illustration->...
+(*
+	->rrel_key_sc_element:acetal;;
+	=>nrel_main_idtf:[Рис. (ацеталь)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Pic. (acetal)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/acetal.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+
+ketal
+<-sc_node_not_relation;
+<=nrel_inclusion:acetal;
+=>nrel_main_idtf:[кеталь](*<-lang_ru;;*);
+=>nrel_main_idtf:[ketal](*<-lang_en;;*);;
+
+sc_definition->...
+(*
+	->rrel_key_sc_element:ketal;;
+
+	=>nrel_main_idtf:[Опр. (кеталь)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (ketal)](*<-lang_en;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->simple_ether;;
+		->acetal;;
+		->chemical_formula;;
+		->elem_C;;
+		->hydrocarbon_radical;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+				<sc_element sys_idtf="ketal">Кетали</sc_element> - 
+				подкласс <sc_element sys_idtf="acetal">ацеталей</sc_element>,
+				<sc_element sys_idtf="simple_ether">простые эфиры</sc_element>,
+				<sc_element sys_idtf="chemical_formula">химическая формула</sc_element>
+				которых имеет вид
+				R - <sc_element sys_idtf="elem_C">C</sc_element>(R<sup>1</sup>)
+				<sc_element sys_idtf="elem_O">O</sc_element>R<sup>2</sup>)(
+				<sc_element sys_idtf="elem_O">O</sc_element>R<sup>3</sup>)
+				, где R<sup>1</sup>, R<sup>2</sup> и R<sup>3</sup> - 
+				<sc_element sys_idtf="hydrocarbon_radical">углеводородные радикалы</sc_element>.
+			](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+				<sc_element sys_idtf="ketal">Ketals</sc_element> are 
+				subclass of <sc_element sys_idtf="acetal">acetals</sc_element>,
+				<sc_element sys_idtf="simple_ether">simple ethers</sc_element> with
+				<sc_element sys_idtf="chemical_formula">chemical formula</sc_element> 
+				R - <sc_element sys_idtf="elem_C">C</sc_element>(R<sup>1</sup>)
+				<sc_element sys_idtf="elem_O">O</sc_element>R<sup>2</sup>)(
+				<sc_element sys_idtf="elem_O">O</sc_element>R<sup>3</sup>)
+				, where R<sup>1</sup>, R<sup>2</sup> and R<sup>3</sup> - 
+				<sc_element sys_idtf="hydrocarbon_radical">hydrocarbon radicals</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_explanation->...
+(*
+	->rrel_key_sc_element:ketal;hydrocarbon_radical;elem_C;chemical_substance;hemiacetal;;
+	=>nrel_main_idtf:[Утв. (кеталь, углеводородный радикал, атом углерода, химическое вещество, полуацеталь)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (ketal, hydrocarbon radical,carbon atom, chemical substance, hemiacetal)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			Если один из R<sup>2</sup> или R<sup>3</sup> (R<sup>2</sup> и R<sup>3</sup> - 
+			<sc_element sys_idtf="hydrocarbon_radical">углеводородные радикалы</sc_element>) 
+			представляет собой <sc_element sys_idtf="elem_C">атом углерода</sc_element>, 
+			то данное <sc_element sys_idtf="chemical_substance">вещество</sc_element> 
+			называют <sc_element sys_idtf="hemiacetal">полуацеталем</sc_element>. 
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			If one of R<sup>2</sup> or R<sup>3</sup> (R<sup>2</sup> and R<sup>3</sup> are 
+			<sc_element sys_idtf="hydrocarbon_radical">hydrocarbon radicals</sc_element>) 
+			is <sc_element sys_idtf="elem_C">carbon atom</sc_element>, 
+			then this <sc_element sys_idtf="chemical_substance">substance</sc_element> 
+			called <sc_element sys_idtf="hemiacetal">hemiacetal</sc_element>. 
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_illustration->...
+(*
+	->rrel_key_sc_element:ketal;;
+	=>nrel_main_idtf:[Рис. (кеталь)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Pic. (ketal)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/ketal.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+
+hemiacetal
+<-sc_node_not_relation;
+<=nrel_inclusion:ketal;
+=>nrel_main_idtf:[полуацеталь](*<-lang_ru;;*);
+=>nrel_main_idtf:[hemiacetal](*<-lang_en;;*);
+=>nrel_idtf:[полукеталь](*<-lang_ru;;*);
+=>nrel_idtf:[hemiketal](*<-lang_en;;*);;
+
+sc_definition->...
+(*
+	->rrel_key_sc_element:hemiacetal;;
+
+	=>nrel_main_idtf:[Опр. (полуацеталь)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (hemiacetal)](*<-lang_en;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->ketal;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->hydrocarbon_radical;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+				<sc_element sys_idtf="hemiacetal">Полуацетали</sc_element> - 
+				<sc_element sys_idtf="ketal">кетали</sc_element> с
+				<sc_element sys_idtf="chemical_formula">химической формулой</sc_element> R<sup>1</sup>R<sup>2</sup>
+				<sc_element sys_idtf="elem_C">C</sc_element>(<sc_element sys_idtf="elem_O">O</sc_element>
+				<sc_element sys_idtf="elem_H">H</sc_element>)<sc_element sys_idtf="elem_O">O</sc_element>
+				R (R, R<sup>1</sup>, R<sup>2</sup> -  
+				<sc_element sys_idtf="hydrocarbon_radical">углеводородные радикалы</sc_element>), 
+				где R<sup>1</sup> или R<sup>2</sup> часто <sc_element sys_idtf="elem_H">водород</sc_element> 
+				и R - не <sc_element sys_idtf="elem_H">водород</sc_element>.
+			](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+				<sc_element sys_idtf="hemiacetal">Hemiacetals</sc_element> are 
+				<sc_element sys_idtf="ketal">ketals</sc_element> with
+				<sc_element sys_idtf="chemical_formula">chemical formula</sc_element> R<sup>1</sup>R<sup>2</sup>
+				<sc_element sys_idtf="elem_C">C</sc_element>(<sc_element sys_idtf="elem_O">O</sc_element>
+				<sc_element sys_idtf="elem_H">H</sc_element>)<sc_element sys_idtf="elem_O">O</sc_element>
+				R (R, R<sup>1</sup>, R<sup>2</sup> are 
+				<sc_element sys_idtf="hydrocarbon_radical">hydrocarbon radicals</sc_element>) 
+				where R<sup>1</sup> or R<sup>2</sup> is often <sc_element sys_idtf="elem_H">hydrogen</sc_element> 
+				and R is not <sc_element sys_idtf="elem_H">hydrogen</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_illustration->...
+(*
+	->rrel_key_sc_element:hemiacetal;;
+	=>nrel_main_idtf:[Рис. (полуацеталь)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Pic. (hemiacetal)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/hemiacetal.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+
+dimethyl_ether
+=>nrel_hydrocarbon_radical_of_ether:methyl;
+=>nrel_hydrocarbon_radical_of_ether:methyl;
+<-sc_node_not_relation;
+<-simple_ether;
+=>nrel_main_idtf:[диметиловый эфир](*<-lang_ru;;*);
+=>nrel_main_idtf:[dimethyl ether](*<-lang_en;;*);;
+
+sc_definition->...
+(*
+	->rrel_key_sc_element:dimethyl_ether;;
+
+	=>nrel_main_idtf:[Опр. (диметиловый эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (dimethyl ether)](*<-lang_en;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->simple_ether;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+				<sc_element sys_idtf="dimethyl_ether">Диметиловый эфир</sc_element> - 
+				широко применяемый на практике 
+				<sc_element sys_idtf="simple_ether">простой эфир</sc_element>,
+				<sc_element sys_idtf="chemical_formula">химическая формула</sc_element> которого 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>6</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element>.
+			](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+				<sc_element sys_idtf="dimethyl_ether">Dimethyl ether</sc_element> - 
+				commonly used 
+				<sc_element sys_idtf="simple_ether">simple ether</sc_element> with
+				<sc_element sys_idtf="chemical_formula">chemical formula</sc_element>  
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>6</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_explanation->...
+(*
+	->rrel_key_sc_element:dimethyl_ether;no_color;gas;smell;;
+	=>nrel_main_idtf:[Утв. (диметиловый эфир, бесцветный, газ, запах)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (dimethyl ether, colorless, gas, smell)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="dimethyl_ether">Диметиловый эфир</sc_element> - 
+			<sc_element sys_idtf="no_color">бесцветный</sc_element> 
+			<sc_element sys_idtf="gas">газ</sc_element> c характерным 
+			<sc_element sys_idtf="smell">запахом</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+
+		->rrel_example:[
+			<sc_element sys_idtf="dimethyl_ether">Dimethyl ether</sc_element> is  
+			<sc_element sys_idtf="no_color">colorless</sc_element> 
+			<sc_element sys_idtf="gas">gas</sc_element> with specific 
+			<sc_element sys_idtf="smell">smell</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_illustration->...
+(*
+	->rrel_key_sc_element:dimethyl_ether;;
+	=>nrel_main_idtf:[Рис. (диметиловый эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Pic. (dimethyl ether)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/dimethyl_ether.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+
+diethyl_ether
+<-sc_node_not_relation;
+<-simple_ether;
+=>nrel_hydrocarbon_radical_of_ether:methyl;
+=>nrel_hydrocarbon_radical_of_ether:methylen;
+=>nrel_main_idtf:[диэтиловый эфир](*<-lang_ru;;*);
+=>nrel_main_idtf:[diethyl ether](*<-lang_en;;*);;
+
+sc_definition->...
+(*
+	->rrel_key_sc_element:diethyl_ether;;
+
+	=>nrel_main_idtf:[Опр. (диэтиловый эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (diethyl ether)](*<-lang_en;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->simple_ether;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+				<sc_element sys_idtf="diethyl_ether">Диэтиловый эфир</sc_element> - 
+				<sc_element sys_idtf="simple_ether">простой эфир</sc_element>,
+				<sc_element sys_idtf="chemical_formula">химическая формула</sc_element> которого 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>10</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element>.
+			](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+				<sc_element sys_idtf="diethyl_ether">Diethyl ether</sc_element> is
+				<sc_element sys_idtf="simple_ether">simple ether</sc_element> with
+				<sc_element sys_idtf="chemical_formula">chemical formula</sc_element>  
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>10</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_explanation->...
+(*
+	->rrel_key_sc_element:diethyl_ether;rrel_solvent;;
+	=>nrel_main_idtf:[Утв. (диэтиловый эфир, растворитель')](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (diethyl ether, solvent')](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="diethyl_ether">Диэтиловый эфир</sc_element> 
+			широко применяется как 
+			<sc_element sys_idtf="rrel_solvent">растворитель</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+
+		->rrel_example:[
+			<sc_element sys_idtf="diethyl_ether">Diethyl ether</sc_element> is  
+			commonly used as
+			<sc_element sys_idtf="rrel_solvent">solvent</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_illustration->...
+(*
+	->rrel_key_sc_element:diethyl_ether;;
+	=>nrel_main_idtf:[Рис. (диэтиловый эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Pic. (diethyl ether)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/diethyl_ether.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+
+diisopropyl_ether
+<-sc_node_not_relation;
+<-simple_ether;
+=>nrel_hydrocarbon_radical_of_ether:methyl;
+=>nrel_hydrocarbon_radical_of_ether:methyl;
+=>nrel_main_idtf:[диизопропиловый эфир](*<-lang_ru;;*);
+=>nrel_main_idtf:[diisopropyl ether](*<-lang_en;;*);;
+
+sc_definition->...
+(*
+	->rrel_key_sc_element:diisopropyl_ether;;
+
+	=>nrel_main_idtf:[Опр. (диизопропиловый эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (diisopropyl ether)](*<-lang_en;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->simple_ether;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+				<sc_element sys_idtf="diisopropyl_ether">Диизопропиловый эфир</sc_element> - 
+				<sc_element sys_idtf="simple_ether">простой эфир</sc_element>,
+				<sc_element sys_idtf="chemical_formula">химическая формула</sc_element> которого 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>6</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>14</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element>.
+			](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+				<sc_element sys_idtf="diisopropyl_ether">Diisopropyl ether</sc_element> is
+				<sc_element sys_idtf="simple_ether">simple ether</sc_element> with
+				<sc_element sys_idtf="chemical_formula">chemical formula</sc_element>  
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>6</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>14</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_explanation->...
+(*
+	->rrel_key_sc_element:diisopropyl_ether;no_color;liquid;ether;smell;;
+	=>nrel_main_idtf:[Утв. (диизопропиловый эфир, бесцветный, жидкость, эфир, запах)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (diisopropyl ether, colorless, liquid, ether, smell)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="diisopropyl_ether">Диизопропиловый эфир</sc_element> - 
+			<sc_element sys_idtf="no_color">бесцветная</sc_element>
+			<sc_element sys_idtf="liquid">жидкость</sc_element> c 
+			<sc_element sys_idtf="ether">эфирным</sc_element> 
+			<sc_element sys_idtf="smell">запахом</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+
+		->rrel_example:[
+			<sc_element sys_idtf="diisopropyl_ether">Diisopropyl ether</sc_element> is 
+			<sc_element sys_idtf="no_color">colorless</sc_element>
+			<sc_element sys_idtf="liquid">liquid</sc_element> with 
+			<sc_element sys_idtf="ether">ether</sc_element> 
+			<sc_element sys_idtf="smell">smell</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_illustration->...
+(*
+	->rrel_key_sc_element:diisopropyl_ether;;
+	=>nrel_main_idtf:[Рис. (диизопропиловый эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Pic. (diisopropyl ether)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/diisopropyl_ether.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+
+anisole
+<-sc_node_not_relation;
+<-simple_ether;
+=>nrel_hydrocarbon_radical_of_ether:methyl;
+=>nrel_hydrocarbon_radical_of_ether:phenyl;
+=>nrel_main_idtf:[анизол](*<-lang_ru;;*);
+=>nrel_main_idtf:[anisole](*<-lang_en;;*);;
+
+sc_definition->...
+(*
+	->rrel_key_sc_element:anisole;;
+
+	=>nrel_main_idtf:[Опр. (анизол)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (anisole)](*<-lang_en;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->simple_ether;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+				<sc_element sys_idtf="anisole">Анизол</sc_element> - 
+				<sc_element sys_idtf="simple_ether">простой эфир</sc_element>,
+				<sc_element sys_idtf="chemical_formula">химическая формула</sc_element> которого 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>6</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>5</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element>
+				<sc_element sys_idtf="elem_C">C</sc_element>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>3</sub>.
+			](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+				<sc_element sys_idtf="anisole">Anisole</sc_element> is
+				<sc_element sys_idtf="simple_ether">simple ether</sc_element> with
+				<sc_element sys_idtf="chemical_formula">chemical formula</sc_element>  
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>6</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>5</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element>
+				<sc_element sys_idtf="elem_C">C</sc_element>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>3</sub>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_explanation->...
+(*
+	->rrel_key_sc_element:anisole;no_color;liquid;smell;;
+	=>nrel_main_idtf:[Утв. (анизол, бесцветный, жидкость, запах)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (anisole, colorless, liquid, smell)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="anisole">Анизол</sc_element> - 
+			<sc_element sys_idtf="no_color">бесцветная</sc_element>
+			<sc_element sys_idtf="liquid">жидкость</sc_element> c приятным 
+			<sc_element sys_idtf="smell">запахом</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+
+		->rrel_example:[
+			<sc_element sys_idtf="anisole">Anisole</sc_element> is 
+			<sc_element sys_idtf="no_color">colorless</sc_element>
+			<sc_element sys_idtf="liquid">liquid</sc_element> with nice
+			<sc_element sys_idtf="smell">smell</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_illustration->...
+(*
+	->rrel_key_sc_element:anisole;;
+	=>nrel_main_idtf:[Рис. (анизол)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Pic. (anisole)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/anisole.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+
+tetrahydrofuran
+<-sc_node_not_relation;
+<-simple_ether;
+=>nrel_hydrocarbon_radical_of_ether:ethylen;
+=>nrel_hydrocarbon_radical_of_ether:ethylen;
+=>nrel_main_idtf:[тетрагидрофуран](*<-lang_ru;;*);
+=>nrel_main_idtf:[tetrahydrofuran](*<-lang_en;;*);;
+
+sc_definition->...
+(*
+	->rrel_key_sc_element:tetrahydrofuran;;
+
+	=>nrel_main_idtf:[Опр. (тетрагидрофуран)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (tetrahydrofuran)](*<-lang_en;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->simple_ether;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+				<sc_element sys_idtf="tetrahydrofuran">Тетрагидрофуран</sc_element> - 
+				<sc_element sys_idtf="simple_ether">простой эфир</sc_element>,
+				<sc_element sys_idtf="chemical_formula">химическая формула</sc_element> которого 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>8</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element>.
+			](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+				<sc_element sys_idtf="tetrahydrofuran">Tetrahydrofuran</sc_element> is
+				<sc_element sys_idtf="simple_ether">simple ether</sc_element> with
+				<sc_element sys_idtf="chemical_formula">chemical formula</sc_element>  
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>8</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_explanation->...
+(*
+	->rrel_key_sc_element:tetrahydrofuran;no_color;liquid;ether;smell;;
+	=>nrel_main_idtf:[Утв. (тетрагидрофуран, бесцветный, жидкость, эфир, запах)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (tetrahydrofuran, colorless, liquid, ether, smell)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="tetrahydrofuran">Тетрагидрофуран</sc_element> - 
+			<sc_element sys_idtf="no_color">бесцветная</sc_element>
+			<sc_element sys_idtf="liquid">жидкость</sc_element> c 
+			<sc_element sys_idtf="ether">эфирным</sc_element> 
+			<sc_element sys_idtf="smell">запахом</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+
+		->rrel_example:[
+			<sc_element sys_idtf="tetrahydrofuran">Tetrahydrofuran</sc_element> is 
+			<sc_element sys_idtf="no_color">colorless</sc_element>
+			<sc_element sys_idtf="liquid">liquid</sc_element> with 
+			<sc_element sys_idtf="ether">ether</sc_element> 
+			<sc_element sys_idtf="smell">smell</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_illustration->...
+(*
+	->rrel_key_sc_element:tetrahydrofuran;;
+	=>nrel_main_idtf:[Рис. (тетрагидрофуран)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Pic. (tetrahydrofuran)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/tetrahydrofuran.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+
+dioxane
+<-sc_node_not_relation;
+<-simple_ether;
+=>nrel_hydrocarbon_radical_of_ether:methylen;
+=>nrel_hydrocarbon_radical_of_ether:methylen;
+=>nrel_main_idtf:[диоксан](*<-lang_ru;;*);
+=>nrel_main_idtf:[dioxane](*<-lang_en;;*);;
+
+sc_definition->...
+(*
+	->rrel_key_sc_element:dioxane;;
+
+	=>nrel_main_idtf:[Опр. (диоксан)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (dioxane)](*<-lang_en;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->simple_ether;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+				<sc_element sys_idtf="dioxane">Диоксан</sc_element> - 
+				<sc_element sys_idtf="simple_ether">простой эфир</sc_element>,
+				<sc_element sys_idtf="chemical_formula">химическая формула</sc_element> которого 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>8</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>2</sub>.
+			](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+				<sc_element sys_idtf="dioxane">Dioxane</sc_element> is
+				<sc_element sys_idtf="simple_ether">simple ether</sc_element> with
+				<sc_element sys_idtf="chemical_formula">chemical formula</sc_element>  
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>8</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>2</sub>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_explanation->...
+(*
+	->rrel_key_sc_element:dioxane;no_color;liquid;ether;smell;;
+	=>nrel_main_idtf:[Утв. (диоксан, бесцветный, жидкость,эфир, запах)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (dioxane, colorless, liquid, ether, smell)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="dioxane">Диоксан</sc_element> - 
+			<sc_element sys_idtf="no_color">бесцветная</sc_element>
+			<sc_element sys_idtf="liquid">жидкость</sc_element> c 
+			<sc_element sys_idtf="ether">эфирным</sc_element> 
+			<sc_element sys_idtf="smell">запахом</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+
+		->rrel_example:[
+			<sc_element sys_idtf="dioxane">Dioxane</sc_element> is 
+			<sc_element sys_idtf="no_color">colorless</sc_element>
+			<sc_element sys_idtf="liquid">liquid</sc_element> with 
+			<sc_element sys_idtf="ether">ether</sc_element> 
+			<sc_element sys_idtf="smell">smell</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_illustration->...
+(*
+	->rrel_key_sc_element:dioxane;;
+	=>nrel_main_idtf:[Рис. (диоксан)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Pic. (dioxane)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/dioxane.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+
+fenetol
+<-sc_node_not_relation;
+<-simple_ether;
+=>nrel_hydrocarbon_radical_of_ether:ethyl;
+=>nrel_hydrocarbon_radical_of_ether:phenyl;
+=>nrel_main_idtf:[фенетол](*<-lang_ru;;*);
+=>nrel_main_idtf:[fenetol](*<-lang_en;;*);;
+
+sc_definition->...
+(*
+	->rrel_key_sc_element:fenetol;;
+
+	=>nrel_main_idtf:[Опр. (фенетол)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (fenetol)](*<-lang_en;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->simple_ether;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+				<sc_element sys_idtf="fenetol">Фенетол</sc_element> - 
+				<sc_element sys_idtf="simple_ether">простой эфир</sc_element>,
+				<sc_element sys_idtf="chemical_formula">химическая формула</sc_element> которого 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>8</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>10</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element>.
+			](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+				<sc_element sys_idtf="fenetol">Fenetol</sc_element> is
+				<sc_element sys_idtf="simple_ether">simple ether</sc_element> with
+				<sc_element sys_idtf="chemical_formula">chemical formula</sc_element>  
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>8</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>10</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_explanation->...
+(*
+	->rrel_key_sc_element:fenetol;color_yellow;liquid;smell;;
+	=>nrel_main_idtf:[Утв. (фенетол, жёлтый цвет, жидкость, запах)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (fenetol, yellow color, liquid, smell)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="fenetol">Фенетол</sc_element> - 
+			<sc_element sys_idtf="liquid">жидкость</sc_element>
+			<sc_element sys_idtf="color_yellow">желтого цвета</sc_element>
+			 c характерным
+			<sc_element sys_idtf="smell">запахом</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+
+		->rrel_example:[
+			<sc_element sys_idtf="fenetol">Fenetol</sc_element> is 
+			<sc_element sys_idtf="color_yellow">yellow</sc_element>
+			<sc_element sys_idtf="liquid">liquid</sc_element> with specific 
+			<sc_element sys_idtf="smell">smell</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_illustration->...
+(*
+	->rrel_key_sc_element:fenetol;;
+	=>nrel_main_idtf:[Рис. (фенетол)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Pic. (fenetol)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/fenetol.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+
+diphenyl_ether
+<-sc_node_not_relation;
+<-simple_ether;
+=>nrel_hydrocarbon_radical_of_ether:phenyl;
+=>nrel_hydrocarbon_radical_of_ether:phenyl;
+=>nrel_main_idtf:[дифениловый эфир](*<-lang_ru;;*);
+=>nrel_main_idtf:[diphenyl ether](*<-lang_en;;*);;
+
+sc_definition->...
+(*
+	->rrel_key_sc_element:diphenyl_ether;;
+
+	=>nrel_main_idtf:[Опр. (дифениловый эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (diphenyl ether)](*<-lang_en;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->simple_ether;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+				<sc_element sys_idtf="diphenyl_ether">Дифениловый эфир</sc_element> - 
+				<sc_element sys_idtf="simple_ether">простой эфир</sc_element>,
+				<sc_element sys_idtf="chemical_formula">химическая формула</sc_element> которого 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>12</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>10</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element>.
+			](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+				<sc_element sys_idtf="diphenyl_ether">Diphenyl ether</sc_element> is
+				<sc_element sys_idtf="simple_ether">simple ether</sc_element> with
+				<sc_element sys_idtf="chemical_formula">chemical formula</sc_element>  
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>12</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>10</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_explanation->...
+(*
+	->rrel_key_sc_element:diphenyl_ether;no_color;crystall;smell;;
+	=>nrel_main_idtf:[Утв. (дифениловый эфир, бесцветный, кристалл, запах)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (diphenyl ether, colorless, crystall, smell)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="diphenyl_ether">Дифениловый эфир</sc_element> - 
+			<sc_element sys_idtf="no_color">бесцветный</sc_element>
+			<sc_element sys_idtf="crystall">кристалл</sc_element>
+			 c характерным
+			<sc_element sys_idtf="smell">запахом</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+
+		->rrel_example:[
+			<sc_element sys_idtf="diphenyl_ether">Fenetol</sc_element> is 
+			<sc_element sys_idtf="no_color">colorless</sc_element>
+			<sc_element sys_idtf="crystall">crystall</sc_element> with specific 
+			<sc_element sys_idtf="smell">smell</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+sc_illustration->...
+(*
+	->rrel_key_sc_element:diphenyl_ether;;
+	=>nrel_main_idtf:[Рис. (дифениловый эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Pic. (diphenyl ether)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/diphenyl_ether.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

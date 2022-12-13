@@ -1,0 +1,8 @@
+subject_domain_of_oligosaccharides
+=> nrel_main_idtf: 
+	[Предметная область олигосахаридов]
+	(* <- lang_ru;;*);
+	[Subject domain of oligosaccharides]
+	(* <- lang_en;; *);
+
+<- subject_domain;;

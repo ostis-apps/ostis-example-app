@@ -1,0 +1,40 @@
+flash_point<-sc_node_not_relation;;
+
+flash_point=> nrel_main_idtf:[температура вспышки](* <- lang_ru;; *);;
+flash_point=> nrel_main_idtf:[flash point](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: flash_point;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Температура вспышки — наименьшая температура летучего конденсированного вещества, при которой <b><sc_element sys_idtf="steam">пары</b></sc_element>  над поверхностью <b><sc_element sys_idtf="chemical_substance">вещества</b></sc_element> способны вспыхивать в <b><sc_element sys_idtf="air">воздухе</b></sc_element> под воздействием источника зажигания, однако устойчивое горение после удаления источника зажигания не возникает.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Определение (температура вспышки)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		steam;
+		chemical_substance;
+		air
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: flash_point;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Для определения температуры вспышки применяются расчётные или экспериментальные методы. Как правило, при отсутствии указания на метод измерения используется метод Пенского — Мартенса.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(температура вспышки)](*<- lang_ru;;*);;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: flash_point;;
+	<= nrel_sc_text_translation: ...(*->"file://images/flash_point.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(температура вспышки)](*<- lang_ru;;*);;
+*);;
+
+
+

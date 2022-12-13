@@ -1,0 +1,105 @@
+morphine<-sc_node_not_relation;;
+morphine=> nrel_main_idtf:[морфин](* <- lang_ru;; *);;
+morphine=> nrel_main_idtf:[morphine](* <- lang_en;; *);;
+morphine=> nrel_idtf:[морфий](* <- lang_ru;; *);;
+morphine=> nrel_idtf:[C17H19NO3](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: morphine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Морфин — главный <b><sc_element sys_idtf="true_alkaloids">истинный алкалоид</b></sc_element> опиума, содержание которого в опиуме составляет в среднем 10 %, что значительно больше, чем других алкалоидов. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (морфин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		true_alkaloids
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: morphine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://morphine1.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(морфин,фармакологический эффект*)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: morphine ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://morphine2.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(морфин,побочный эффект*)](*<- lang_ru;;*);;
+	
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:morphine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/morphine1.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(морфин,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: morphine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/morphine2.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(морфин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: morphine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/morphine3.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(морфин,твердое вещество)](*<- lang_ru;;*);;
+*);;
+solid_matter=>nrel_inclusion:morphine;;
+true_alkaloids=>nrel_inclusion:morphine;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> morphine;;
+	=> nrel_measurement_in_gramms_per_mole: [285,34]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->morphine;;
+	=> nrel_measurement_in_degrees_Celsius: 254
+	(*
+		<-number;;
+	*);;
+*);;
+drag_half_life->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->morphine;;
+	=> nrel_measurement_in_degrees_Celsius: 2
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+
+

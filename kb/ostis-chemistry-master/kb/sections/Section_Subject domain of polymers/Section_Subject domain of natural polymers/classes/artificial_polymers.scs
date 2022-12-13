@@ -1,0 +1,48 @@
+artificial_polymers
+<-sc_node_not_relation;;
+
+artificial_polymers=> nrel_main_idtf:[искусственный полимер](* <- lang_ru;; *);;
+artificial_polymers=> nrel_main_idtf:[artificial polymer](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: artificial_polymers;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Искусственные полимеры  - высокомолекулярные вещества,
+	 которые получают на основе <b><sc_element sys_idtf="natural_polymer">природных полимеров</b></sc_element> путём их химической модификации.]
+	
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (искусственный полимер)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		natural_polymer
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: artificial_polymers;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[ Искусственные полимеры используют для получения 
+	<b><sc_element sys_idtf="plastic">пластмасс</b></sc_element>
+	, волокон и других материалов. ](*
+		
+	 <-lang_ru;;
+	=>nrel_format:format_html;;
+	 *);;
+	 *);;
+	
+	=> nrel_main_idtf: [Утверждение(искусственный полимер)](*<- lang_ru;;*);;
+		=> nrel_using_constants:
+		{
+		plastic
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: artificial_polymers;;
+	<= nrel_sc_text_translation: ...(*->"file://image/artificial_polymers.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(искусственный полимер)](*<- lang_ru;;*);;
+*);;

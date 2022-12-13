@@ -1,0 +1,94 @@
+adrenalin<-sc_node_not_relation;;
+adrenalin=> nrel_main_idtf:[адреналин](* <- lang_ru;; *);;
+adrenalin=> nrel_main_idtf:[adrenalin](* <- lang_en;; *);;
+adrenalin=> nrel_idtf:[(R)-4-(1-гидрокси-2-(метиламино)этил)-бензен-1,2-диол](* <- lang_ru;; *);;
+adrenalin=> nrel_idtf:[C9H13NO3](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: adrenalin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Адреналин- <b><sc_element sys_idtf="protoalkaloids">протоалкалоид</b></sc_element>,<b><sc_element sys_idtf="no_color"> беcцветное </b></sc_element> <b><sc_element sys_idtf="crystall"> кристаллическое </b></sc_element>  <b><sc_element sys_idtf="chemical_substance"> вещество </b></sc_element>,гормон мозгового слоя надпочечников человека и животных.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (адреналин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		protoalkaloids;
+		no_color;
+		crystall;
+		chemical_substance
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: adrenalin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://adrenalin2.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(адреналин,фармакологический эффект*)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: adrenalin ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://adrenalin1.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(адреналин,побочный эффект*)](*<- lang_ru;;*);;
+	
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:adrenalin;;
+	<= nrel_sc_text_translation: ...(*->"file://images/adrenalin.png";;*);;
+	=> nrel_main_idtf: [Рисунок(адреналин,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: adrenalin;;
+	<= nrel_sc_text_translation: ...(*->"file://images/adrenalin2.png";;*);;
+	=> nrel_main_idtf: [Рисунок(адреналин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+
+solid_matter=>nrel_inclusion:adrenalin;;
+protoalkaloids=>nrel_inclusion:adrenalin;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> adrenalin;;
+	=> nrel_measurement_in_gramms_per_mole: [183,21]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->adrenalin;;
+	=> nrel_measurement_in_degrees_Celsius: 212
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+
+
+

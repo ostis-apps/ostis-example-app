@@ -1,0 +1,40 @@
+hydroxyl_group 
+	<= nrel_inclusion: functional_group;
+	=> nrel_main_idtf: 
+		[hydroxyl group](*<- lang_en;;*);
+		[гидроксильная группа](*<- lang_ru;;*);
+	=> nrel_idtf: 
+		[гидроксогруппа](*<- lang_ru;;*);
+		[гидроксил](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (гидроксильная группа)](* <- lang_ru;;*);
+			[Def. (hydroxyl group)](* <- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:
+				[<b><sc_element sys_idtf="hydroxyl_group">Гидроксильная группа</sc_element></b> — <sc_element sys_idtf="functional_group">функциональная группа</sc_element> OH органических и неорганических <sc_element sys_idtf="chemical_compound">соединений</sc_element>, в которой <sc_element sys_idtf="atom">атомы</sc_element> <sc_element sys_idtf="elem_H">водорода</sc_element> и <sc_element sys_idtf="elem_O">кислорода</sc_element> связаны <sc_element sys_idtf="nrel_covalent_bond">ковалентной связью</sc_element>.] 
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);
+
+				[<b><sc_element sys_idtf="hydroxyl_group">The hydroxyl group</sc_element></b> is a <sc_element sys_idtf="functional_group">functional group</sc_element> of OH organic and inorganic <sc_element sys_idtf="chemical_compound">compounds</sc_element> in which the <sc_element sys_idtf="elem_H">hydrogen</sc_element> and <sc_element sys_idtf="elem_O">oxygen</sc_element> <sc_element sys_idtf="atom">atoms</sc_element> are linked by a <sc_element sys_idtf="nrel_covalent_bond">covalent bond</sc_element>.] 
+				(*
+					<- lang_en;;
+					=> nrel_format: format_html;;
+				*);;
+		*);;
+		<= nrel_using_constants:...
+		(*
+			-> hydroxyl_group;;
+			-> functional_group;;
+			-> chemical_compound;;
+			-> atom;;
+			-> elem_O;;
+			-> elem_H;;
+			-> nrel_covalent_bond;;
+		*);;
+	*);;

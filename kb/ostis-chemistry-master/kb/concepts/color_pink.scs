@@ -1,0 +1,19 @@
+color_pink
+<- sc_node_not_relation;
+=> nrel_main_idtf:[розовый цвет](* <- lang_ru;; *);
+=> nrel_main_idtf:[pink](* <- lang_en;; *);
+=> nrel_idtf:[pink color](* <- lang_en;; *);
+
+<-color;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (розовый цвет)](* <- lang_ru;; *);
+		[Pic. (pink)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/pink.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;

@@ -1,0 +1,27 @@
+chemical_substance
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[химическое вещество](* <- lang_ru;; *);;
+
+rrel_liter
+	<- sc_node_role_relation;
+	=> nrel_main_idtf:[литр'](* <- lang_ru;; *);;
+
+rrel_gr
+	<- sc_node_role_relation;
+	=> nrel_main_idtf:[грам'](* <- lang_ru;; *);;
+
+rrel_gr_on_sm3
+	<- sc_node_role_relation;
+	=> nrel_main_idtf:[гр/см3'](* <- lang_ru;; *);;
+
+rrel_gr_on_mol
+	<- sc_node_role_relation;
+	=> nrel_main_idtf:[гр/моль'](* <- lang_ru;; *);;
+
+rrel_mol
+	<- sc_node_role_relation;
+	=> nrel_main_idtf:[моль'](* <- lang_ru;; *);;
+
+nrel_molar_mass
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf:[молярная масса*](* <- lang_ru;; *);;

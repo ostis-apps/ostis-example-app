@@ -1,0 +1,69 @@
+nrel_indirect_action<-sc_node_norole_relation;;
+
+nrel_indirect_action=> nrel_main_idtf:[косвенное действие*](* <- lang_ru;; *);;
+nrel_indirect_action=> nrel_main_idtf:[indirect action*](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: nrel_indirect_action;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Косвенное  действие - изменение <b><sc_element sys_idtf="medicine">лекарственными средствами</b></sc_element> функции органов и клеток в результате действия на другие органы и клетки, функционально связанные с первыми. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (косвенное действие*)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{ 
+		medicine
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:nrel_indirect_action ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Рефлекторное действие является частным случаем косвенного действия.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(косвенное действие*)](*<- lang_ru;;*);;
+*);;
+
+
+
+chemical_substance->digoxyl;;
+action->venous_congestion_reduction;;
+venous_congestion_reduction<=nrel_indirect_action:digoxyl;;
+
+
+oriented_relation -> nrel_indirect_action;;
+norole_relation-> nrel_indirect_action;;
+antireflexive_relation -> nrel_indirect_action;; 
+antitransitive_relation -> nrel_indirect_action;;
+antisymmetric_relation -> nrel_indirect_action;;
+
+
+nrel_indirect_action => nrel_first_domain: chemical_substance;;
+nrel_indirect_action => nrel_second_domain: action;;
+nrel_indirect_action=>nrel_definitional_domain: ...(* 
+<=nrel_combination: 
+{ 
+chemical_substance; 
+action 
+};; 
+*);; 
+
+arity_2->nrel_indirect_action;;
+
+
+
+digoxyl=> nrel_main_idtf:[дигоксин](* <- lang_ru;; *);;
+digoxyl=> nrel_main_idtf:[digoxyl](* <- lang_en;; *);;
+
+venous_congestion_reduction=> nrel_main_idtf:[уменьшение венозного застоя](* <- lang_ru;; *);;
+venous_congestion_reduction=> nrel_main_idtf:[venous congestion reduction](* <- lang_en;; *);;
+
+

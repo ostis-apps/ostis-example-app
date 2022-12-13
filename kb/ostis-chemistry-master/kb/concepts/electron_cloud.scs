@@ -1,0 +1,49 @@
+electron_cloud
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[электронное облоко]
+	(* <- lang_ru;;	*);
+	[electron cloud]
+	(* <- lang_en;;	*);;
+electron_cloud
+<- rrel_key_sc_element:
+	Definition_of_electron_cloud
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/electron_cloud.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				electron;
+				atom;
+				molecule
+			};
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Полагая движение электронов независимым от намного более медленных ядерных движений (адиабатическое приближение) можно вполне строго описать образование химической связи как результат действия кулоновских сил притяжения положительно заряженных атомных ядер к электронному облаку, сконцентрированному в межъядерном пространстве.] (* <-lang_ru;; *);;
+		*);;
+*);;
+
+
+
+Definition_of_electron_cloud
+=> nrel_main_idtf:
+	[Опр.(Электронное облоко)]
+	(* <- lang_ru;;	*);;
+
+
+
+
+
+
+

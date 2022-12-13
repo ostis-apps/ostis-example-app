@@ -1,0 +1,22 @@
+﻿table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 3px;
+}
+
+
+.left-colors {
+  background-color: #87CEFA;
+}
+
+.colorless {
+  background-color: #F5F5F5;
+}
+
+.link{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	height: 100%;
+	font-size: 10px;
+}

@@ -1,0 +1,11 @@
+{
+     "sources": [
+        
+        "src/alloy-common.js",
+        "src/alloy-paintPanel.js"
+    ],
+
+    "component": "src/alloy-component.js",
+
+    "target": "static/components/js/chemistry_components/alloy_ui_component.js"
+}

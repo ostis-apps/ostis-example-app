@@ -1,0 +1,61 @@
+nrel_hydrolysis
+=> nrel_main_idtf:
+	[гидролиз*](*<-lang_ru;;*);
+	[hydrolysis*](*<-lang_en;;*);
+	
+<- sc_node_norole_relation;
+<= nrel_inclusion: nrel_reaction;
+
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+// домены
+=>nrel_second_domain: chemical_substance;
+=>nrel_first_domain: chemical_substance;
+=>nrel_definitional_domain:chemical_substance;
+//определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(гидролиз*)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://html/hydrolysis_definition.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->nrel_decomposition;;
+		->complex_substance;;
+		->water;;
+	*);;
+*);
+//утверждение
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(гидролиз*, гидролиз солей*, ионный обмен*, раствор, растворимая соль, вода)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Гидролиз солей — разновидность реакций гидролиза, обусловленного протеканием реакций ионного обмена в растворах растворимых солей. Движущей силой процесса является взаимодействие ионов с водой, приводящее к образованию слабого электролита в ионном или молекулярном виде.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_hydrolysis_of_salt; nrel_ion_exchange; solution; soluble_salt; water;;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(константа гидролиза*, гидролиз*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Константа гидролиза — константа равновесия гидролитической реакции.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_hydrolysis_constant;;
+*);;

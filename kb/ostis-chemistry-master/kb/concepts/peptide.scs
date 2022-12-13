@@ -1,0 +1,54 @@
+peptide
+=> nrel_main_idtf:
+	[пептид](* <-lang_ru;; *);
+	[peptide](* <-lang_en;; *);
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку длины последовательност аминокислотных остатков](* <-lang_ru;; *);;
+	-> polypeptide;;
+	-> oligopeptide;;
+*);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(пептид)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://html/peptide_definition.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->chemical_substance; molecule; acid_residue; amino_acid; peptide_bond;;
+	*);;
+*);
+//утверждение
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(пептид, кислотный остаток, аминокислота, олигопептид, полипептид, молекула, белок)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Пептиды, последовательность которых короче примерно 10-20 аминокислотных остатков, могут также называться олигопептидами; при большей длине последовательности они называются полипептидами; полипептиды могут иметь в молекуле неаминокислотные фрагменты, например углеводные остатки. Белками обычно называют полипептиды, содержащие, примерно, от 50 аминокислотных остатков с молекулярной массой более 5000-10000 дальтон.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: acid_residue; molecule;;
+	-> rrel_key_sc_element: amino_acid; protein;;
+	-> rrel_key_sc_element: oligopeptide; polypeptide;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(пептид, синтез*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Пептиды постоянно синтезируются во всех живых организмах для регулирования физиологических процессов.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_synthesis;;
+*);;

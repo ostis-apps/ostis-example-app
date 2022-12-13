@@ -1,0 +1,24 @@
+exercise4_metal
+<- exercises_metal;
+
+-> rrel_key_sc_element: metal; subst_Mg; nrel_mass; sulfate; solution; oxidation_state_plus_two;
+
+=> nrel_next_exercise: exercise5_metal;
+
+=> nrel_main_idtf:
+	[Упражнение 4. Раздел. Предметная область металлов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 4. Section. Subject domain of metals]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise4_metal_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise4_metal_en.html" (* <-lang_en;; *);;
+	*);;

@@ -1,0 +1,86 @@
+nitroacetanilide_decomposition
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[разложение нитроацетанилида](*<- lang_ru;;*);
+	[nitroacetanilide decomposition](*<- lang_en;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (разложение нитроацетанилида, предостережение)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[При выполнении опыта не наклоняться над тиглем. Опыт выполняется под тягой.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+<= nrel_sc_text_translation: ...
+(* 
+	=> nrel_main_idtf: 		
+		[Видео (разложение нитроацетанилида)](*<- lang_ru;;*);;
+	-> rrel_example: [M9pGUxreJZ8]
+		(*
+			=> nrel_format: format_youtubelink;;
+			<-lang_ru;;
+		*);;
+*);
+
+=> nrel_equipment: ...
+(*
+	-> porcelain_crucible;;
+	-> triangle;;
+	-> tripod;;
+	-> burner;;
+	-> glass_rod;;
+	-> putty_knife;;
+*);;
+
+nitroacetanilide_decomposition_experiment
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[опыт по разложению нитроацетанилида](*<- lang_ru;;*);;
+
+heating_of_nitroacetanilide
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[нагревание нитроацетанилида](*<- lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (нагревание нитроацетанилида)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Смешать в фарфоровом тигле органическое вещество белого цвета - нитроацетанилид и серную кислоту.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;
+
+nitroacetanilide_mixing
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[смешивание нитроацетанилида](*<- lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (смешивание нитроацетанилида)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Нагреть смесь]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;

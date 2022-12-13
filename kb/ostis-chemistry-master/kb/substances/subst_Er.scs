@@ -1,0 +1,78 @@
+subst_Er
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[erbium (substance)](*<- lang_en;;*);
+	[эрбий (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Er (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (эрбий (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Эрбий (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - мягкий ковкий серебристый <sc_element sys_idtf = "metal">металл</sc_element>.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> metal;;
+		-> color;;
+
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (эрбий (вещество), мягкий ковкий серебристый металл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Erbium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1497  (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:2868 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (эрбий (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы эрбия: <sup>143</sup>Er, <sup>144</sup>Er, <sup>145</sup>Er, <sup>146</sup>Er, <sup>147</sup>Er, <sup>148</sup>Er, <sup>149</sup>Er, <sup>150</sup>Er, <sup>151</sup>Er, <sup>152</sup>Er, <sup>153</sup>Er, <sup>154</sup>Er, <sup>155</sup>Er, <sup>156</sup>Er, <sup>157</sup>Er, <sup>158</sup>Er, <sup>159</sup>Er, <sup>160</sup>Er, <sup>161</sup>Er, <sup>162</sup>Er, <sup>163</sup>Er, <sup>164</sup>Er, <sup>165</sup>Er, <sup>166</sup>Er, <sup>167</sup>Er, <sup>168</sup>Er, <sup>169</sup>Er, <sup>170</sup>Er, <sup>171</sup>Er, <sup>172</sup>Er, <sup>173</sup>Er, <sup>174</sup>Er, <sup>175</sup>Er, <sup>176</sup>Er, <sup>177</sup>Er] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

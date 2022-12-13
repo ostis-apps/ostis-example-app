@@ -1,0 +1,105 @@
+atropine<-sc_node_not_relation;;
+atropine=> nrel_main_idtf:[атропин](* <- lang_ru;; *);;
+atropine=> nrel_main_idtf:[atropine](* <- lang_en;; *);;
+atropine=> nrel_idtf:[(8-метил-8-азабицикло(3.2.1)окт-3-ила) 3-гидрокси-](* <- lang_ru;; *);;
+atropine=> nrel_idtf:[C17H23NO3](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: atropine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Атропин – это натуральный <b><sc_element sys_idtf="true_alkaloids">истинный алкалоид</b></sc_element>, рацемический вид гиоциамина, содержащийся в растениях семейства паслёновых.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (атропин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		true_alkaloids
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: atropine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://atropine.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(атропин,фармакологический эффект*)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: atropine ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://atropine2.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(атропин,побочный эффект*)](*<- lang_ru;;*);;
+	
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:atropine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/atropine.png";;*);;
+	=> nrel_main_idtf: [Рисунок(атропин,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:atropine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/atropine.gif";;*);;
+	=> nrel_main_idtf: [Рисунок(атропин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: atropine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/atropine2.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(атропин,твердое вещество)](*<- lang_ru;;*);;
+*);;
+solid_matter=>nrel_inclusion:atropine;;
+true_alkaloids=>nrel_inclusion:atropine;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> atropine;;
+	=> nrel_measurement_in_gramms_per_mole: [289,369]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->atropine;;
+	=> nrel_measurement_in_degrees_Celsius: 115
+	(*
+		<-number;;
+	*);;
+*);;
+drag_half_life->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->atropine;;
+	=> nrel_measurement_in_degrees_Celsius: 2
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+
+

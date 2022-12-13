@@ -1,0 +1,24 @@
+exercise2_nonmetal
+<- exercises_nonmetal;
+
+-> rrel_key_sc_element: nrel_reaction; subst_Br; subst_Mg;
+
+=> nrel_next_exercise: exercise3_nonmetal;
+
+=> nrel_main_idtf:
+	[Упражнение 2. Раздел. Предметная область неметаллов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 2. Section. Subject domain of nonmetals]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise2_nonmetal_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise2_nonmetal_en.html" (* <-lang_en;; *);;
+	*);;

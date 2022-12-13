@@ -1,0 +1,78 @@
+subst_Cr
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[chromium (substance)](*<- lang_en;;*);
+	[хром (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Сr (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (хром (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Хром (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - твёрдый <sc_element sys_idtf = "metal">металл</sc_element> голубовато-белого <sc_element sys_idtf = "color">цвета</sc_element>.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> metal;;
+		-> color;;
+
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (хром (вещество), твёрдый металл голубовато-белого цвета)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Chromium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1907  (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:2671 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (хром (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы хрома:  <sup>42</sup>Cr, <sup>43</sup>Cr, <sup>44</sup>Cr, <sup>45</sup>Cr, <sup>46</sup>Cr, <sup>47</sup>Cr, <sup>48</sup>Cr, <sup>49</sup>Cr, <sup>50</sup>Cr, <sup>51</sup>Cr, <sup>52</sup>Cr, <sup>53</sup>Cr, <sup>54</sup>Cr, <sup>55</sup>Cr, <sup>56</sup>Cr, <sup>57</sup>Cr, <sup>58</sup>Cr, <sup>59</sup>Cr, <sup>60</sup>Cr, <sup>61</sup>Cr, <sup>62</sup>Cr, <sup>63</sup>Cr, <sup>64</sup>Cr, <sup>65</sup>Cr, <sup>66</sup>Cr, <sup>67</sup>Cr] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

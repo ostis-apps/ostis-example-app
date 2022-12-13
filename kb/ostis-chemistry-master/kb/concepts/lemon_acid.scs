@@ -1,0 +1,109 @@
+lemon_acid
+=> nrel_main_idtf:
+	[лимонная кислота](* <-lang_ru;; *);
+	[lemon acid](* <-lang_en;; *);
+=> nrel_applying: medicine;food_industry;cosmetics;construction;oil_industry;
+=> nrel_density_of_substance:...
+(*
+	<-quantity;;
+	<=nrel_value:...
+	(*
+		->rrel_gram_per_cubic_cm: [1,665]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*); 
+=> nrel_melting_temperature:...
+(*
+	<-quantity;;
+	<=nrel_value:...
+	(*
+		->rrel_degree_celsius: 153
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=> nrel_solubility:...
+(*
+	<-quantity;;
+	<=nrel_value:...
+	(*
+		->rrel_gram_per_milliliter: [1,33]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+//определение
+<-rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(лимонная кислота)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Лимонная кислота —  трёхосновная карбоновая кислота.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->carboxylic_acid;;
+	*);;
+*);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (лимонная кислота)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/lemon_acid.jpg"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(соль, эфир, лимонная кислота, цитрат)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Соли и эфиры лимонной кислоты называются цитратами.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: salt;;
+	-> rrel_key_sc_element: ether;;
+	-> rrel_key_sc_element: citrate;;
+	<- rrel_axiom:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+	=>nrel_main_idtf: [Утв.(лимонная кислота, сильный окислитель, перманганат калия, бертолетова соль, акриловая кислота, этиленоксид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[В реакциях с сильными окислителями (перманганат калия, бертолетова соль) лимонная кислота переходит в акриловую кислоту и этиленоксид.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: potassium_permanganate;;
+	-> rrel_key_sc_element: strong_oxidizer;;
+	-> rrel_key_sc_element: bertolet;;
+	-> rrel_key_sc_element: acrylic_acid;;
+	-> rrel_key_sc_element: ethylene_oxide;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);;

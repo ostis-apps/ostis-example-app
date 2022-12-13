@@ -1,0 +1,58 @@
+subject_domain_of_complex_compounds
+=> nrel_main_idtf: 
+	[Предметная область сложных соединений]
+	(* <- lang_ru;;*);
+	[Subject domain of complex compounds]
+	(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	complex_compound;;
+
+complex_compound
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[сложное соединение]
+	(* <- lang_ru;;	*);
+	[complex compound]
+	(* <- lang_en;;	*);;
+
+binary_compound
+<- sc_node_not_relation;
+<= nrel_inclusion: chemical_compound;
+
+=> nrel_main_idtf:
+	[бинарное соединение]
+	(* <- lang_ru;;	*);
+	[binary compound]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element: ...
+(* 
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр.(бинарное соединение)](* <- lang_ru;;	*);
+		[Def.(binary compound)](* <- lang_en;;	*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<b><sc_element sys_idtf="binary_compound">Бина́рное соедине́ние</sc_element></b> — <sc_element sys_idtf="chemical_substance">химическое вещество</sc_element>, образованное двумя <sc_element sys_idtf="chemical_element">химическими элементами</sc_element>.]
+			(* 
+				<- lang_ru;; 
+				=> nrel_format: format_html;;
+			*);;
+
+		-> rrel_example:
+			[<b><sc_element sys_idtf="binary_compound">Binary compound</sc_element></b> is a <sc_element sys_idtf="chemical_substance">chemical substance</sc_element> formed by 2 <sc_element sys_idtf="chemical_element">chemical elements</sc_element>.]
+			(* 
+				<- lang_en;; 
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_substance; chemical_element;;
+	*);;
+*);;

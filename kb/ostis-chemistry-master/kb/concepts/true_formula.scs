@@ -1,0 +1,39 @@
+true_formula <= nrel_inclusion: chemical_formula;;
+true_formula
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[истинная формула]
+	(* <- lang_ru;;	*);
+	[true formula]
+	(* <- lang_en;;	*);;
+true_formula
+<- rrel_key_sc_element:
+	Definition_of_true_formula
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/true_formula.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				substance;
+				molecular_mass
+			};;
+
+
+
+Definition_of_true_formula
+=> nrel_main_idtf:
+	[Опр.(истинная формула)]
+	(* <- lang_ru;;	*);;
+
+
+
+
+
+
+

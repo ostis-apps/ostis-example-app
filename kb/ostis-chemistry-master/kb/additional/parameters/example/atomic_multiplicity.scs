@@ -1,0 +1,79 @@
+atomic_multiplicity_one 
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
+	[количество вхождений атома 1](* <- lang_ru;;  *);
+	[atomic multiplicity 1](* <- lang_en;;  *);
+<= nrel_inclusion: atomic_multiplicity;
+=> nrel_measurement:one;;
+
+atomic_multiplicity_two  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
+	[количество вхождений атома 2](* <- lang_ru;;  *);
+	[atomic multiplicity 2](* <- lang_en;;  *);
+<= nrel_inclusion: atomic_multiplicity;
+=> nrel_measurement:two;;
+
+atomic_multiplicity_three  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
+	[количество вхождений атома 3](* <- lang_ru;;  *);
+	[atomic multiplicity 3](* <- lang_en;;  *);
+<= nrel_inclusion: atomic_multiplicity;
+=> nrel_measurement:three;;
+
+atomic_multiplicity_four  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
+	[количество вхождений атома 4](* <- lang_ru;;  *);
+	[atomic multiplicity 4](* <- lang_en;;  *);
+<= nrel_inclusion: atomic_multiplicity;
+=> nrel_measurement:four;;
+
+atomic_multiplicity_five  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
+	[количество вхождений атома 5](* <- lang_ru;;  *);
+	[atomic multiplicity 5](* <- lang_en;;  *);
+<= nrel_inclusion: atomic_multiplicity;
+=> nrel_measurement:five;;
+
+atomic_multiplicity_six  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
+	[количество вхождений атома 6](* <- lang_ru;;  *);
+	[atomic multiplicity 6](* <- lang_en;;  *);
+<= nrel_inclusion: atomic_multiplicity;
+=> nrel_measurement:six;;
+
+atomic_multiplicity_seven  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
+	[количество вхождений атома 7](* <- lang_ru;;  *);
+	[atomic multiplicity 7](* <- lang_en;;  *);
+<= nrel_inclusion: atomic_multiplicity;
+=> nrel_measurement:seven;;
+
+atomic_multiplicity_eight  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
+	[количество вхождений атома 8](* <- lang_ru;;  *);
+	[atomic multiplicity 8](* <- lang_en;;  *);
+<= nrel_inclusion: atomic_multiplicity;
+=> nrel_measurement:eight;;
+
+atomic_multiplicity_nine  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
+	[количество вхождений атома 9](* <- lang_ru;;  *);
+	[atomic multiplicity 9](* <- lang_en;;  *);
+<= nrel_inclusion: atomic_multiplicity;
+=> nrel_measurement:nine;;
+
+atomic_multiplicity_ten  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
+	[количество вхождений атома 10](* <- lang_ru;;  *);
+	[atomic multiplicity 10](* <- lang_en;;  *);
+<= nrel_inclusion: atomic_multiplicity;
+=> nrel_measurement:ten;;

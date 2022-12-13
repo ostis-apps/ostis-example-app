@@ -1,0 +1,94 @@
+hematite
+=> nrel_main_idtf:
+	[гематит](* <-lang_ru;; *);
+	[hematite](* <-lang_en;; *);
+=> nrel_idtf:
+	[красный железняк](* <-lang_ru;; *);
+-> Fe2O3;
+<- color_brownish_red;
+<- color_metallic_gray;
+=> nrel_density_of_substance:...
+(*
+	<-quantity;;
+	<=nrel_value:...
+	(*
+		->rrel_gram_per_cubic_cm: 5.1
+		(*
+			<-number;;
+		*);;
+	*);;
+*); 
+=> nrel_applying: jewelry;painting;
+=> nrel_being_in_nature: hydrothermal_veins;
+//определение
+<-rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(гематит)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Гемати́т — широко распространённый минерал железа Fe2O3, одна из главнейших железных руд.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->mineral;;
+		->subst_Fe;;
+		->Fe2O3;;
+		->iron_ore;;
+	*);;
+*);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (гематит)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/hematite.jpg"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+	=>nrel_main_idtf: [Утв.(гематит, минерал, нахождение в природе*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[В природе гематит — широко распространённый минерал, нередко образует большие скопления и рудные залежи.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: mineral;;
+	-> rrel_key_sc_element: nrel_being_in_nature;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+	=>nrel_main_idtf: [Утв.(гематит, продукт, примесь, магнетит, лимонит, сидерит)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[В качестве продукта изменения или выветривания образуется в виде вторичной примеси в таких железосодержащих минералах, как магнетит, лимонит, сидерит.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: product;;
+	-> rrel_key_sc_element: impurity;;
+	-> rrel_key_sc_element: magnetite;;
+	-> rrel_key_sc_element: limonite;;
+	-> rrel_key_sc_element: siderite;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);;

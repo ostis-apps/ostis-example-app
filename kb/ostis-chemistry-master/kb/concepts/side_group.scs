@@ -1,0 +1,33 @@
+side_group<= nrel_inclusion: nrel_group;;
+side_group
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[побочная группа]
+	(* <- lang_ru;;	*);
+	[side group]
+	(* <- lang_en;;	*);;
+
+side_group
+<- rrel_key_sc_element:
+	Definition_of_side_group
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/side_group.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				group
+			};;
+
+	
+
+Definition_of_side_group
+=> nrel_main_idtf:
+	[Опр.(Побочная группа)]
+	(* <- lang_ru;;	*);;
+

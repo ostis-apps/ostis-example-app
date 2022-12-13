@@ -1,0 +1,55 @@
+inorganic_chemistry
+=>nrel_main_idtf:
+[неорганическая химия](* <-lang_ru;;*);
+    [inorganic_chemistry](* <-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+    <-definition;;
+    <=nrel_using_constants:...(*
+        ->inorganic_chemistry;;
+        ->section;;
+        ->chemical_element;;
+        ->chemical_compound;;
+        ->organic_compound;;
+    *);;
+    =>nrel_main_idtf:
+    [Опр. (неорганическая химия)](* <-lang_ru;; *);
+    [Def. (inorganic chemistry)](* <-lang_en;; *);;
+    <= nrel_sc_text_translation:...(*
+    -> rrel_example: "file://html/inorganic_chemistry.html"(* <-lang_ru;; *);; 
+    -> rrel_example: "file://html/inorganic_chemistry_en.html"(* <-lang_en;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_object;;
+	=>nrel_main_idtf:
+	[Утв. (объект)](* <-lang_ru;;*);
+	[Expl. (object)](* <-lang_en;;*);;
+	-> rrel_example: "file://html/inorganic_chemistry_1.html"(* <-lang_ru;; *);;
+	-> rrel_example: "file://html/inorganic_chemistry_1_en.html"(* <-lang_en;; *);; 
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    periodic_law;;
+	=>nrel_main_idtf:
+	[Утв. (неорганическая химия, периодический закон)](* <-lang_ru;;*);
+	[Expl. (inorganiс chemistry, periodic law)](* <-lang_en;;*);;
+	-> rrel_example: "file://html/inorganic_chemistry_2.html"(* <-lang_ru;; *);;
+	-> rrel_example: "file://html/inorganic_chemistry_2_en.html"(* <-lang_en;; *);; 
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    inorganic_synthesis;;
+	=>nrel_main_idtf:
+	[Утв. (неорганическая химия, синтез неорганических соединений)](* <-lang_ru;;*);
+	[Expl. (inorganiс chemistry, inorganic synthesis](* <-lang_en;;*);;
+	-> rrel_example: "file://html/inorganic_chemistry_3.html"(* <-lang_ru;; *);;
+	-> rrel_example: "file://html/inorganic_chemistry_3_en.html"(* <-lang_en;; *);; 
+*);;

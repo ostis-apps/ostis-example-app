@@ -1,0 +1,82 @@
+neutron
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[нейтрон]
+	(* <- lang_ru;;	*);
+	[neutron]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element: ...
+(* 
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (нейтрон)](* <- lang_ru;;*);
+		[Def. (neutron)](* <- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[ <b>Нейтрон</b> - тяжёлая <sc_element sys_idtf  = "elementary_particle">элементарная частица</sc_element>, не имеющая <sc_element sys_idtf  = "electric_charge">электрического заряда</sc_element>.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);
+			[ <p><b>The neutron</b> is a heavy <sc_element sys_idtf  = "elementary_particle">elementary particle</sc_element>, that does not have an <sc_element sys_idtf  = "electric_charge">electric charge</sc_element>.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_particle;;
+		-> nrel_charge;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	-> rrel_key_sc_element: elementary_particle;;
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (нейтрон, элементарная частица)](* <- lang_ru;;*);
+		[Expl. (neutron, elementary particle)](* <- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(* 
+		-> rrel_example:
+			[Нейтрон — единственная из имеющих массу покоя элементарных частиц, для которой непосредственно наблюдалось гравитационное взаимодействие — искривление в поле земного тяготения траектории хорошо коллимированного пучка ультрахолодных нейтронов.] 
+			(* <-lang_ru;; *);
+			[The neutron is the only resting elementary particle for which gravitational interaction was directly observed: curvature in the field of gravity of the trajectory of a well-collimated beam of ultracold neutrons.] 
+			(* <-lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	-> rrel_key_sc_element: fermion; baryon;;
+	=> nrel_main_idtf:
+		[Утв. (нейтрон, фермион, барион)](* <- lang_ru;;*);
+		[Expl. (neutron, fermion, baryon)](* <- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(* 
+		-> rrel_example:
+			[ <sc_element sys_idtf  = "neutron">Нейтрон</sc_element> является <sc_element sys_idtf  = "fermion">фермионом</sc_element> и принадлежит к классу <sc_element sys_idtf  = "baryon">барионов</sc_element>.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);
+			[ <sc_element sys_idtf  = "neutron">A neutron</sc_element> is a <sc_element sys_idtf  = "fermion">fermion</sc_element> and belongs to the class of <sc_element sys_idtf  = "baryon">baryons</sc_element>.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+*);
+
+=> nrel_main_characteristics:...
+(*
+	=> nrel_mass: neutron_mass;;
+	=> nrel_charge: 0;;
+	=> nrel_spin: neutron_spin;;
+	=> nrel_gravitational_radius: neutron_radius;;
+*);;

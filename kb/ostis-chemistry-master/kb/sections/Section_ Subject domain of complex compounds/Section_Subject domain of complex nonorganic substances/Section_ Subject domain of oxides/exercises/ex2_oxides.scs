@@ -1,0 +1,24 @@
+ex2_oxides
+<- exercises_oxides;
+
+-> rrel_key_sc_element: carbon_monoxide; atom; nrel_chemical_amount; chemical_element; gas;
+
+=> nrel_next: ex3_oxides;
+
+=> nrel_main_idtf:
+	[Упражнение 2. Раздел. Предметная область оксидов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 2. Section. Subject domain of oxides]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex2_oxides_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex2_oxides_en.html" (* <-lang_en;; *);;
+	*);;

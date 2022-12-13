@@ -1,0 +1,60 @@
+sc_node_not_relation -> hydrogen_chloride;;
+hydrogen_chloride => nrel_main_idtf:
+[хлориcтый водород](* <-lang_ru;; *);
+    [hydrogen chloride](* <-lang_en;; *);
+
+=> nrel_idtf:
+    [hcl](* <- lang_en;; *);
+
+<=nrel_inclusion: chloride;
+
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(хлориcтый водород)](* <- lang_ru;; *);;
+    <= nrel_using_constants:...(*
+             -> gas;;
+              -> air;;
+              -> water;;
+              -> no_color;;
+              -> smell;;
+              -> hydrogen_chloride;;
+              -> acid;;
+              -> hydrochloric_acid;;
+           *);;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:"file://html/hydrogen_chloride.html"(* <- lang_ru;; *);;
+        -> rrel_example:"file://html/hydrogen_chloride_en.html"(* <- lang_en;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (хлорид водорода, шаро-стержневая модель)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/hydrogen_chloride.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+    <- explanation;;
+    -> rrel_key_sc_element: 
+	nrel_solid_state;;
+    => nrel_main_idtf: [Утв. (хлористый водород, твердое состояние*)](* <- lang_ru;; *);
+		       [Expl. (hydrogen chloride, solid state*)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        [В твердом состоянии хлористый водород встречается в виде двух кристаллических модификаций: ромбической и кубической.]
+(* <- lang_ru;;
+   => nrel_format: format_html;; *);;
+	->rrel_example:
+	[In the solid state, hydrogen chloride occurs in the form of two crystalline modifications: rhombic and cubic.]
+(* <- lang_en;; 
+   => nrel_format: format_html;;*);;
+    *);;
+*);;

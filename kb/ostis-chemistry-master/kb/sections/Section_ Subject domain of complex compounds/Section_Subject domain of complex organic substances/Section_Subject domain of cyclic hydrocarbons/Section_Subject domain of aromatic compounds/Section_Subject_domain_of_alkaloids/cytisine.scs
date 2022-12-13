@@ -1,0 +1,109 @@
+cytisine<-sc_node_not_relation;;
+cytisine=> nrel_main_idtf:[цитизин](* <- lang_ru;; *);;
+cytisine=> nrel_main_idtf:[cytisine](* <- lang_en;; *);;
+cytisine=> nrel_idtf:[(1R,5S)​-​ 1,2,3,4,5,6-​ hexahydro-​ 1,5-​methano-​8H-​pyrido(1,2a)(1,5) diazocin-​8-​one](* <- lang_en;; *);;
+cytisine=> nrel_idtf:[C11H14N2O](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: cytisine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Цитизин — <b><sc_element sys_idtf="true_alkaloids">истинный алкалоид</b></sc_element>, содержащийся в семенах растения Ракитник русский (Cytisus ruthenicus Fisch. ex Wol.) и Термопсис ланцетолистный (Thermopsis lanceolata R.Br.) оба из семейства Бобовые (Fabaceae, или Leguminosae).]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (цитизин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		true_alkaloids
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: cytisine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://cytisine.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(цитизин,фармакологический эффект*)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:cytisine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://cytisine2.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(цитизин,побочный эффект*)](*<- lang_ru;;*);;
+	
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:cytisine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/cytisine2.png";;*);;
+	=> nrel_main_idtf: [Рисунок(цитизин,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:cytisine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/cytisine1.png";;*);;
+	=> nrel_main_idtf: [Рисунок(цитизин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+
+solid_matter=>nrel_inclusion:cytisine;;
+true_alkaloids=>nrel_inclusion:cytisine;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> cytisine;;
+	=> nrel_measurement_in_gramms_per_mole: [190,24]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->cytisine;;
+	=> nrel_measurement_in_degrees_Celsius: 152
+	(*
+		<-number;;
+	*);;
+*);;
+drag_half_life->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->cytisine;;
+	=> nrel_measurement_in_degrees_Celsius: 4
+	(*
+		<-number;;
+	*);;
+*);;
+boiling_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->cytisine;;
+	=> nrel_measurement_in_degrees_Celsius: 218
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+

@@ -1,0 +1,24 @@
+exercise1_metal
+<- exercises_metal;
+
+-> rrel_key_sc_element: metal; oxide; nrel_oxidation; oxidation_state_plus_three; nrel_amount; subst_O;
+
+=> nrel_next_exercise: exercise2_metal;
+
+=> nrel_main_idtf:
+	[Упражнение 1. Раздел. Предметная область металлов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 1. Section. Subject domain of metals]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise1_metal_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise1_metal_en.html" (* <-lang_en;; *);;
+	*);;

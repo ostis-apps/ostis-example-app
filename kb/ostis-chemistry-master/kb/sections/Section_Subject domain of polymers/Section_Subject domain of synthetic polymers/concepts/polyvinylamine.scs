@@ -1,0 +1,129 @@
+polyvinylamine<-sc_node_not_relation;;
+polyvinylamine=> nrel_main_idtf:[поливиниламин](* <- lang_ru;; *);;
+polyvinylamine=> nrel_main_idtf:[polyvinylamine](* <- lang_en;; *);;
+polyvinylamine=> nrel_idtf:[ poly(vinylamine)​](* <- lang_en;; *);;
+polyvinylamine=> nrel_idtf:[(C2F4)n](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: polyvinylamine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Поливиниламин — представляет собой твердое 
+	<b><sc_element sys_idtf="amorphousness">аморфное</b></sc_element> вещество,
+	растворимое в воде, растворах кислот, 
+	<b><sc_element sys_idtf="alcohol">спиртах</b></sc_element>, диоксане, аминах..]
+	 
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (поливиниламин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		alcohol;
+		amorphousness
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: polyvinylamine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Поливиниламин — образует с кислотами <b><sc_element sys_idtf="salt">соли</b></sc_element>,
+	 реагирует с хлорангид-ридами или ангидридами <b><sc_element sys_idtf="acid">кислот</b></sc_element>
+	 , образуя соответствующие полимерные производные.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(поливиниламин, образует полимерные производные)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		salt;
+		acid
+		};;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:polyvinylamine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Поливиниламин  — , представляющий собой твердое <b><sc_element sys_idtf="amorphousness">аморфное</b></sc_element> вещество, не может быть получен
+	  <b><sc_element sys_idtf="nrel_polymerization">полимеризацией</b></sc_element> мономера. ] 
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(поливиниламин, не может быть получен полимеризацией мономера)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		amorphousness;
+		nrel_polymerization
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyvinylamine;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyvinylamine.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(поливиниламин,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyvinylamine;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyvinylamine_3d.png";;*);;
+	=> nrel_main_idtf: [Рисунок(поливиниламин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+
+homo_chain_polymer=>nrel_inclusion:polyvinylamine;;
+polymerisation_polymer=>nrel_inclusion:polyvinylamine;;
+thermosetting_polymer=>nrel_inclusion:polyvinylamine;;
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> polyvinylamine;;
+	=> rrel_mol: [1430]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyvinylamine;;
+	=> rrel_degree_celsius: 180
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyvinylamine;;
+	=> rrel_joule_per_kelvin_and_mole: 0.29
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyvinylamine;;
+	=> rrel_gram_per_cubic_cm: 2.0
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+

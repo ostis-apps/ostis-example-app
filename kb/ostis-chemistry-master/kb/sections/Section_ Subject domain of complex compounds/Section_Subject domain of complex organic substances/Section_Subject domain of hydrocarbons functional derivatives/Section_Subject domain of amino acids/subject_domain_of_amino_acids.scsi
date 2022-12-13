@@ -1,0 +1,3035 @@
+subject_domain_of_amino_acids
+=> nrel_main_idtf: 
+	[Предметная область аминовых кислот]
+	(* <- lang_ru;;*);
+	[Subject domain of amino acids]
+	(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	amino_acid;
+
+-> rrel_not_maximum_studied_object_class:
+	alanine;
+	arginine;
+	asparagine;
+	aspardic_acid;
+	lysine;
+	cysteine;
+	fenylalanine;
+	glutamic_acid;
+	glycine;
+	histidine;
+	isoleucine;
+	leucine;
+	methionine;
+	proline;
+	glutamine;
+	serine;
+	threonine;
+	tryptofan;
+	tyrosine;
+	valine;
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://html/section_amino_acids.html" (*<-lang_ru;;=>nrel_format:format_html;;*);;
+		*);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://html/section_amino_acids_eng.html" (*<-lang_en;;=>nrel_format:format_html;;*);;
+		*);;
+
+//необходимые идентификаторы
+amino_acid_radical
+=> nrel_main_idtf:
+	[Разбиение аминокислот по радикалу]
+	(* <- lang_ru;; *);
+	[Partitioning amino acids by radycals]
+	(* <- lang_en;; *);;
+
+amino_acid_functional_group
+=> nrel_main_idtf:
+	[Разбиение аминокислот по функциональным группам]
+	(* <- lang_ru;; *);
+	[Partitioning amino acids by functional groups]
+	(* <- lang_en;; *);;
+
+amino_acid_production
+=> nrel_main_idtf:
+	[Разбиение аминокислот по возможности синтеза живыми организмами]
+	(* <- lang_ru;; *);
+	[Partitioning amino acids by possibilities of synthesis by living organisms]
+	(* <- lang_en;; *);;
+
+
+
+
+
+//неполярная аминокислота
+non_polar_amino_acid
+=> nrel_main_idtf: 
+	[non_polar_amino_acid](*<- lang_en;;*);
+	[неполярная аминокислота](*<- lang_ru;;*);
+	
+<- rrel_key_sc_element:
+	Definition_of_non_polar_amino_acid
+(* 
+	<- definition;;
+	=> nrel_main_idtf:
+	[Опр.(неполярная аминокислота)](* <- lang_ru;;*);
+	[Def.(non_polar_amino_acid)](* <- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf  = "non_polar_amino_acid">Неполярные аминокислоты</sc_element></b> - это <sc_element sys_idtf  = "amino_acid">аминокислоты</sc_element>, которые нерастворимы в <sc_element sys_idtf  = "water">воде</sc_element> и имеют гидрофобные незаряженные <sc_element sys_idtf  = "radical">радикалы</sc_element>.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf = "non_polar_amino_acid">Non-Polar Amino Acids</sc_element></b> - <sc_element sys_idtf  = "amino_acid">amino acids</sc_element> that are insoluble in <sc_element sys_idtf = "water">water</sc_element> that have hydrophobic uncharted <sc_element sys_idtf = "radical">radicals</sc_element>. </p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants: ... 
+	(* 
+		->water;;
+		->amino_acid;;
+	*);;
+*);;
+
+// полярная незаряженная аминокислота
+polar_uncharged_amino_acid
+=> nrel_main_idtf: 
+	[polar_uncharged_amino_acid](*<- lang_en;;*);
+	[полярная незаряженная аминокислота](*<- lang_ru;;*);
+	
+<- rrel_key_sc_element:
+	Definition_of_polar_uncharged_amino_acid
+(* 
+	<- definition;;
+	=> nrel_main_idtf:
+	[Опр.(полярная незаряженная аминокислота)](* <- lang_ru;;*);
+	[Def.(polar_uncharged_amino_acid)](* <- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf  = "polar_uncharged_amino_acid">Полярные незаряженные аминокислоты</sc_element></b> - это <sc_element sys_idtf  = "amino_acid">аминокислоты</sc_element>, которые более растворимы в воде, чем гидрофобные аминокислоты, так как их полярные R-группы могут образовывать <sc_element sys_idtf  = "nrel_hydrogen_bond">водородные связи</sc_element> с <sc_element sys_idtf  = "molecule">молекулами</sc_element> <sc_element sys_idtf  = "water">воды</sc_element>.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf = "polar_uncharged_amino_acid"> Polar uncharged amino acids</sc_element></b> - <sc_element sys_idtf  = "amino_acid">amino acids</sc_element> that are more soluble in water than hydrophobic amino acids, since their polar R-groups can form <sc_element sys_idtf = "nrel_hydrogen_bond">hydrogen bonds</sc_element> with <sc_element sys_idtf = "molecule">molecules</sc_element> <sc_element sys_idtf = "water">water</sc_element>.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants: ... 
+	(* 
+		->molecule;;
+		->water;; 
+		->nrel_hydrogen_bond;;
+		->amino_acid;; 
+	*);;
+*);;
+
+//полярные положительно заряженные аминокислоты
+polar_positive_charged_amino_acid
+=> nrel_main_idtf: 
+	[polar_positive_charged_amino_acid](*<- lang_en;;*);
+	[полярная положительно заряженная аминокислота](*<- lang_ru;;*);
+	
+<- rrel_key_sc_element:
+	Definition_of_polar_positive_charged_amino_acid
+(* 
+	<- definition;;
+	=> nrel_main_idtf:
+	[Опр.(полярная положительно заряженная аминокислота)](* <- lang_ru;;*);
+	[Def.(polar_positive_charged_amino_acid)](* <- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf  = "polar_positive_charged_amino_acid">Полярные положительно заряженные аминокислоты</sc_element></b> - это <sc_element sys_idtf  = "amino_acid">аминокислоты</sc_element>, R-группа которых несут суммарный положительный <sc_element sys_idtf  = "nrel_charge">заряд</sc_element> при pH 7.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf = "polar_positive_charged_amino_acid"> Polar positive charged amino acids</sc_element></b> - <sc_element sys_idtf  = "amino_acid">amino acids</sc_element>, R-group which carry the total positive <sc_element sys_idtf  = "nrel_charge">charge</sc_element> when pH 7.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants: ... 
+	(* 
+		->charge;; 
+		->amino_acid;; 
+	*);;
+*);;
+
+//полярные отрицательно заряженные аминокислоты
+polar_negative_charged_amino_acid
+=> nrel_main_idtf: 
+	[polar_negative_charged_amino_acid](*<- lang_en;;*);
+	[полярная отрицательно заряженная аминокислота](*<- lang_ru;;*);
+	
+<- rrel_key_sc_element:
+	Definition_of_polar_negative_charged_amino_acid
+(* 
+	<- definition;;
+	=> nrel_main_idtf:
+	[Опр.(полярная отрицательно заряженная аминокислота)](* <- lang_ru;;*);
+	[Def.(polar_negative_charged_amino_acid)](* <- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf  = "polar_negative_charged_amino_acid">Полярные отрицательно заряженные аминокислоты</sc_element></b> - это <sc_element sys_idtf  = "amino_acid">аминокислоты</sc_element>, R-группа которых несут суммарный положительный <sc_element sys_idtf  = "nrel_charge">заряд</sc_element> при pH 7.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf = "polar_negative_charged_amino_acid"> Polar negative charged amino acids</sc_element></b> - <sc_element sys_idtf  = "amino_acid">amino acids</sc_element>, R-group which carry the total negative <sc_element sys_idtf  = "nrel_charge">charge</sc_element> when pH 7.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants: ... 
+	(* 
+		->charge;; 
+		->amino_acid;; 
+	*);;
+*);;
+
+//ароматические аминокислоты
+aromatic_amino_acid
+=> nrel_main_idtf: 
+	[aromatic_amino_acid](*<- lang_en;;*);
+	[ароматическая аминокислота](*<- lang_ru;;*);
+	
+<- rrel_key_sc_element:
+	Definition_of_aromatic_amino_acid
+(* 
+	<- definition;;
+	=> nrel_main_idtf:
+	[Опр.(ароматическая аминокислота)](* <- lang_ru;;*);
+	[Def.(aromatic_amino_acid)](* <- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf  = "aromatic_amino_acid">Ароматические аминокислоты</sc_element></b> - это <sc_element sys_idtf  = "amino_acid">аминокислоты</sc_element>, содержащие <sc_element sys_idtf  = "benzene_cycle">бензольное (ароматическое) кольцо</sc_element>.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf = "aromatic_amino_acid">Aromatic amino acids</sc_element></b> - <sc_element sys_idtf  = "amino_acid">amino acids</sc_element>, which have <sc_element sys_idtf  = "benzene_cycle">benzene (aromatic) cycle</sc_element>.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants: ... 
+	(* 
+		->benzene_cycle;; 
+		->amino_acid;; 
+	*);;
+*);;
+
+//алифатические аминокислоты
+alifatic_amino_acid
+=> nrel_main_idtf: 
+	[alifatic_amino_acid](*<- lang_en;;*);
+	[алифатическая аминокислота](*<- lang_ru;;*);
+	
+<- rrel_key_sc_element:
+	Definition_of_alifatic_amino_acid
+(* 
+	<- definition;;
+	=> nrel_main_idtf:
+	[Опр.(алифатическая аминокислота)](* <- lang_ru;;*);
+	[Def.(alifatic_amino_acid)](* <- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf  = "alifatic_amino_acid">Алифатические аминокислоты</sc_element></b> - это <sc_element sys_idtf  = "amino_acid">аминокислоты</sc_element>, несодержащие <sc_element sys_idtf  = "benzene_cycle">бензольное (ароматическое) кольцо</sc_element>.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf = "alifatic_amino_acid">Alifatic amino acids</sc_element></b> - <sc_element sys_idtf  = "amino_acid">amino acids</sc_element>, which don't have any <sc_element sys_idtf  = "benzene_cycle">benzene (aromatic) cycles</sc_element>.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants: ... 
+	(* 
+		->benzene_cycle;; 
+		->amino_acid;; 
+	*);;
+*);;
+
+//гетероциклические аминокислоты
+geterocyclic_amino_acid
+=> nrel_main_idtf: 
+	[geterocyclic_amino_acid](*<- lang_en;;*);
+	[гетероциклическая аминокислота](*<- lang_ru;;*);
+	
+<- rrel_key_sc_element:
+	Definition_of_geterocyclic_amino_acid
+(* 
+	<- definition;;
+	=> nrel_main_idtf:
+	[Опр.(гетероциклическая аминокислота)](* <- lang_ru;;*);
+	[Def.(geterocyclic_amino_acid)](* <- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf  = "geterocyclic_amino_acid">Гетероциклические аминокислоты</sc_element></b> - это <sc_element sys_idtf  = "amino_acid">аминокислоты</sc_element>, содержащие <sc_element sys_idtf  = "cycle">циклы</sc_element>, в <sc_element sys_idtf  = "nrel_object_structure">состав</sc_element> которых наряду с углеродом входят и <sc_element sys_idtf = "atom">атомы</sc_element> других элементов.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf = "geterocyclic_amino_acid">Getetocyclic amino acids</sc_element></b> - <sc_element sys_idtf  = "amino_acid">amino acids</sc_element>, which have <sc_element sys_idtf  = "cycle">циклы</sc_element>, in <sc_element sys_idtf  = "nrel_object_structure">structure</sc_element> which with carbon include <sc_element sys_idtf = "atom">atoms</sc_element> other elements.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants: ... 
+	(* 
+		->nrel_object_structure;;
+		->cycle;; 
+		->amino_acid;; 
+	*);;
+*);;
+
+//иминокислоты
+imino_acid
+=> nrel_main_idtf:
+	[imino_acid](*<- lang_en;;*);
+	[иминокислота](*<- lang_ru;;*);
+	
+<- rrel_key_sc_element:
+	Definition_imino_acid
+(* 
+	<- definition;;
+	=> nrel_main_idtf:
+	[Опр.(иминокислота)](* <- lang_ru;;*);
+	[Def.(imino_acid)](* <- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf  = "imino_acid">Иминокислоты</sc_element></b> - это <sc_element sys_idtf  = "carboxylic_acid">карбоновые кислоты</sc_element>, содержащие <sc_element sys_idtf  = "imino_group">иминогруппу (NH)</sc_element>. Обмен иминокислот, в организме тесно связан с обменом аминокислот, из которых иминокислоты образуются в результате отщепления водорода.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf = "imino_acid">Imino acids</sc_element></b> - <sc_element sys_idtf  = "carboxylic_acid">carboxylic acids</sc_element>, which have <sc_element sys_idtf  = "imino_group">imino group (NH)</sc_element>. The exchange of imino acids in the body is closely related to the metabolism of amino acids, from which imino acids are formed as a result of the elimination of hydrogen.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants: ... 
+	(* 
+		->imino_group;; 
+		->carboxylic_acid;; 
+	*);;
+*);;
+
+//заменимые аминокислоты
+replaceable_amino_acid
+=> nrel_main_idtf: 
+	[replaceable_amino_acid](*<- lang_en;;*);
+	[заменимая аминокислота](*<- lang_ru;;*);
+	
+<- rrel_key_sc_element:
+	Definition_of_replaceable_amino_acid
+(* 
+	<- definition;;
+	=> nrel_main_idtf:
+	[Опр.(заменимая аминокислота)](* <- lang_ru;;*);
+	[Def.(replaceable_amino_acid)](* <- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf  = "replaceable_amino_acid">Заменимые аминокислоты</sc_element></b> - это <sc_element sys_idtf  = "amino_acid">аминокислоты</sc_element>, которые могут поступать в наш организм с <sc_element sys_idtf  = "protein">белковой</sc_element> пищей либо же образовываться в организме из других аминокислот.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf = "replaceable_amino_acid">Replaceabel amino acids</sc_element></b> - <sc_element sys_idtf  = "amino_acid">amino acids</sc_element>, these are amino acids that can enter our body with <sc_element sys_idtf  = "protein">protein</sc_element> foods or else be formed in the body from other amino acids.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants: ... 
+	(* 
+		->protein;; 
+		->amino_acid;; 
+	*);;
+*);;
+
+//Незаменимые аминокислоты
+irreplaceable_amino_acid
+=> nrel_main_idtf: 
+	[irreplaceable_amino_acid](*<- lang_en;;*);
+	[незаменимая аминокислота](*<- lang_ru;;*);
+	
+<- rrel_key_sc_element:
+	Definition_of_irreplaceable_amino_acid
+(* 
+	<- definition;;
+	=> nrel_main_idtf:
+	[Опр.(незаменимая аминокислота)](* <- lang_ru;;*);
+	[Def.(irreplaceable_amino_acid)](* <- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf  = "irreplaceable_amino_acid">Незаменимые аминокислоты</sc_element></b> - это <sc_element sys_idtf  = "amino_acid">аминокислоты</sc_element>, которые не могут быть синтезированы в том или ином организме. Для разных видов организмов список незаменимых аминокислот различен.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf = "irreplaceable_amino_acid">Irreplaceabel amino acids</sc_element></b> - <sc_element sys_idtf  = "amino_acid">amino acids</sc_element>, which cannot be synthesized in a particular organism. For different types of organisms, the list of essential amino acids is different.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants: ... 
+	(*
+		->amino_acid;; 
+	*);;
+*);;
+
+//аланин
+alanine
+=> nrel_main_idtf:
+	[аланин](* <- lang_ru;; *);
+	[alanine](* <- lang_en;; *);
+<-alifatic_amino_acid;
+<-non_polar_amino_acid;
+<-replaceable_amino_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+	[Опр.(аланин)](* <-lang_ru;;*);
+	[Def.(alanine)](* <- lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf  = "alanine">Аланин</sc_element></b> -  <sc_element sys_idtf  = "alifatic_amino_acid">алифатическая аминокислота</sc_element>. α-Аланин входит в <sc_element sys_idtf  = "nrel_object_structure">состав</sc_element> многих <sc_element sys_idtf  = "protein">белков</sc_element>, β-аланин — в состав ряда биологически активных соединений.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf = "alanine">Alanine</sc_element></b> - <sc_element sys_idtf = "alifatic_amino_acid">alifatic amino acid</sc_element>. α-Alanine is included in <sc_element sys_idtf = "nrel_object_structure">composition</sc_element> of many <sc_element sys_idtf = "protein">proteins</sc_element>, β-alanine is part of a number of biologically active compounds. </p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->nrel_object_structure;;
+		->alifatic_amino_acid;;
+		->protein;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	
+	=>nrel_main_idtf: [Утв.(глюкоза, аланин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(glucose, alanine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "alanine">Аланин</sc_element></b> легко превращается в печени в <sc_element sys_idtf = "glucose">глюкозу</sc_element>. Этот процесс носит название <b>глюкозо-аланинового цикла</b> и является одним из основных путей <b>глюконеогенеза</b> в печени.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf = "alanine">Alanine</sc_element></b> is easily converted in the liver into <sc_element sys_idtf = "glucose">glucose</sc_element>. This process is called the <b>glucose-alanine cycle</b> and is one of the main ways of <b>gluconeogenesis</b> in the liver.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: glucose;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(гидролиз, аланин, синильная кислота)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(hydrolysis*, alanine, hydrocyanic_acid)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>Впервые <b><sc_element sys_idtf = "alanine">аланин</sc_element></b> был синтезирован Штреккером в 1850 г. действием на ацетальдегид аммиаком и <sc_element sys_idtf = "hydrocyanic_acid">синильной кислотой</sc_element> с последующим <sc_element sys_idtf = "nrel_hydrolysis">гидролизом</sc_element> образовавшегося α-аминонитрила.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 			[<p>The first <b><sc_element sys_idtf = "alanine">alanine</sc_element></b> were synthesized by Stickeron in 1850 effect on acetaldehyde ammonia and <sc_element sys_idtf = "hydrocyanic_acid">hydrocyanic acid</sc_element> followed <sc_element sys_idtf = "nrel_hydrolysis">hydrolysis</sc_element> the resulting α-aminonitriles.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: nrel_hydrolysis;;
+	-> rrel_key_sc_element: hydrocyanic_acid;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(аммиак, аланин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(ammonia, alanine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>В лабораторных условиях <b><sc_element sys_idtf = "alanine">аланин</sc_element></b> синтезируют взаимодействием с <sc_element sys_idtf = "ammonia">аммиаком</sc_element> α-хлор или α-бромпропионовой кислоты</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 			[<p>Under laboratory conditions <b><sc_element sys_idtf = "alanine">alanine</sc_element></b> is synthesized by interaction with <sc_element sys_idtf = "ammonia" >ammonia</sc_element> α-chlorine or α-bromopropionic acid</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: ammonia;;
+*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(аланин)] 
+	(* <- lang_ru;;	*);
+	[Pic.(alanine)]
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://img/Alanine.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+//аргинин
+arginine
+=> nrel_main_idtf:
+	[аргинин](* <- lang_ru;; *);
+	[arginine](* <- lang_en;; *);
+<-alifatic_amino_acid;
+<-polar_positive_charged_amino_acid;
+<-replaceable_amino_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+	[Опр.(аргинин)](* <-lang_ru;;*);
+	[Def.(arginine)](* <- lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf  = "arginine">Аргинин</sc_element></b> -  <sc_element sys_idtf  = "alifatic_amino_acid">алифатическая аминокислота</sc_element>. Оптически активна, существует в виде L- и D- <sc_element sys_idtf = "nrel_isomer">изомеров</sc_element> . L-Аргинин входит в <sc_element sys_idtf = "nrel_object_structure">состав</sc_element>  <sc_element sys_idtf = "peptide">пептидов</sc_element> и <sc_element sys_idtf = "protein">белков</sc_element>, особенно высоко содержание аргинина в основных белках — гистонах и протаминах (до 85 %). Новое исследование позволяет предположить, что чрезмерное потребление аргинина иммунными клетками, которые обычно защищают мозг, является причиной возникновения болезни Альцгеймера.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "arginine">Arginine</sc_element></b> - <sc_element sys_idtf = "alifatic_amino_acid">alifatic amino acid</sc_element>. Optically active, exists in the form of L - and D- <sc_element sys_idtf = "nrel_isomer">isomers</sc_element> . L-Arginine is included in <sc_element sys_idtf = "nrel_object_structure">composition</sc_element> <sc_element sys_idtf = "peptide">peptide</sc_element> <sc_element sys_idtf = "protein">proteins</sc_element>, especially high content of arginine in the basic proteins — histones and protamines (to 85 %). A new study suggests that excessive consumption of arginine by immune cells, which normally protect the brain, is the cause of Alzheimer's disease.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->nrel_object_structure;;
+		->alifatic_amino_acid;;
+		->protein;;
+		->peptide;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(запах, аргинин, химическое вещество)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(smell, arginine, chemical_substance)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>При воздействии с некоторыми <sc_element sys_idtf = "chemical_substance">химическими веществами</sc_element> выделяет самые различные <sc_element sys_idtf = "smell">запахи</sc_element>. В частности табака.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>When exposed to some <sc_element sys_idtf = "chemical_substance">chemicals</sc_element> allocates the various <sc_element sys_idtf = "smell">smell</sc_element>. Particularly tobacco.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: smell;;
+	-> rrel_key_sc_element: chemical_substance;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв1.(аргинин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat1.(arginine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>У взрослого и здорового человека <b>аргинин</b> вырабатывается организмом в достаточном количестве. В то же время, у детей и подростков, у пожилых и больных людей уровень синтеза <b>аргинина</b> часто недостаточен.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>In an adult and healthy person <b>arginine</b> is produced by the body in sufficient quantities. At the same time, in children and adolescents, in the elderly and sick people, the level of synthesis <b>arginine</b> is often insufficient.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв2.(аргинин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat2.(arginine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b>Аргинин</b> широко рекламируется как компонент БАД для бодибилдеров и спортсменов-тяжелоатлетов с целью улучшения питания мышц. </p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b>Arginine</b> is widely advertised as a component of dietary SUPPLEMENTS for bodybuilders and weightlifters to improve muscle nutrition.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(аргинин)] 
+	(* <- lang_ru;;	*);
+	[Pic.(arginine)]
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://img/Arginine.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+//аспарагин
+asparagine
+=> nrel_main_idtf:
+	[аспарагин](* <- lang_ru;; *);
+	[asparagine](* <- lang_en;; *);
+<-alifatic_amino_acid;
+<-polar_uncharged_amino_acid;
+<-replaceable_amino_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+	[Опр.(аспарагин)](* <-lang_ru;;*);
+	[Def.(asparagine)](* <- lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "asparagine">Аспарагин</sc_element></b> - <sc_element sys_idtf  = "alifatic_amino_acid">алифатическая аминокислота</sc_element>. Амид <sc_element sys_idtf = "aspardic_acid">аспарагиновой кислоты</sc_element>. Одна из 20 наиболее распространённых <sc_element sys_idtf = "amino_acid">аминокислот</sc_element> природного происхождения.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "asparagine">Asparagine</sc_element></b> - <sc_element sys_idtf = "alifatic_amino_acid">amino acid</sc_element>. Amide <sc_element sys_idtf = "aspardic_acid" >aspardic acid</sc_element>. One of the 20 most common <sc_element sys_idtf = "amino_acid">amino acids</sc_element> of natural origin.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->amino_acid;;
+		->alifatic_amino_acid;;
+		->aspardic_acid;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(аминокислота, аспарагин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(amino_acid, asparagine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "asparagine">Аспарагин</sc_element></b> был выделен из сока спаржи (англ. Asparagus) в 1806 году французским химиком Луи-Никола Вокленом и помощником Пьером Жаном Робике, став первой полученной человеком <sc_element sys_idtf = "amino_acid">аминокислотой</sc_element>.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "asparagine">Asparagine</sc_element></b> was isolated from asparagus juice (eng. Asparagus) in 1806 by the French chemist Louis-Nicolas Vauquelin and assistant Pierre Jean Robika, becoming the first man received <sc_element sys_idtf = "amino_acid">amino acid</sc_element>.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: amino_acid;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(внутренняя соль, аспарагин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(inner_salt, asparagine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "asparagine">Аспарадин</sc_element></b> легко образует <sc_element sys_idtf = "inner_salt">внутреннюю соль</sc_element> — бетаин. </p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "asparagine">Asparagine</sc_element></b> easily forms <sc_element sys_idtf = "inner_salt"> internal salt</sc_element > — betaine. </p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: inner_salt;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(аспарагин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(asparagine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b>Аспарагин</b> находится в значительных количествах в животных (молоко, сыворотка, мясо, птица, яйца, рыба, морепродукты) и растительных (спаржа, помидор, бобовые, орехи, семена, соя, цельные зёрна) источниках.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b> Asparagine</b> is found in significant amounts in animals (milk, whey, meat, poultry, eggs, fish, seafood) and plant (asparagus, tomato, legumes, nuts, seeds, soybeans, whole grains) sources.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(аспарагин)] 
+	(* <- lang_ru;;	*);
+	[Pic.(asparagine)]
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://img/Asparagine.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+// аспартат
+aspardic_acid
+=> nrel_main_idtf:
+	[аспартат](* <- lang_ru;; *);
+	[aspardic acid](* <- lang_en;; *);
+=> nrel_idtf:
+	[аспарагиновая кислота](* <- lang_ru;; *);
+	[аминоянтарная кислота](* <- lang_ru;; *);
+	[аминобутандиовая кислота](* <- lang_ru;; *);
+<-alifatic_amino_acid;
+<-polar_negative_charged_amino_acid;
+<-replaceable_amino_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+	[Опр.(аспартат)](* <-lang_ru;;*);
+	[Def.(aspardic_acid)](* <- lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "aspardic_acid">Аспартат</sc_element></b> - <sc_element sys_idtf  = "alifatic_amino_acid">алифатическая аминокислота</sc_element>, одна из 20 протеиногенных <sc_element sys_idtf = "amino_acid">аминокислот</sc_element> организма. Встречается во всех организмах в свободном виде и в составе <sc_element sys_idtf = "protein">белков</sc_element>. Кроме того, выполняет роль нейромедиатора в центральной нервной системе. </p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "aspardic_acid">Aspartate</sc_element></b> - <sc_element sys_idtf = "alifatic_amino_acid"> aliphatic amino acid</sc_element>, one of the 20 proteinogenic <sc_element sys_idtf = "amino_acid"> amino acids</sc_element > of the body. Occurs in all organisms in free form and as part of <sc_element sys_idtf = "protein" >proteins</sc_element>. It also acts as a neurotransmitter in the Central nervous system. </p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->amino_acid;;
+		->alifatic_amino_acid;;
+		->protein;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(аспартат, аспарагин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(aspardic_acid, asparagine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "aspardic_acid">Аспартат</sc_element></b> и <sc_element sys_idtf = "asparagine">аспарагин</sc_element> являются критически важными для роста и размножения лейкозных клеток при некоторых видах лимфолейкоза.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "aspardic_acid">Aspardic acid</sc_element></b> and <sc_element sys_idtf = "asparagine">asparagine</sc_element> are critical for the growth and reproduction of leukemic cells in some types of lymphocytic leukemia.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: asparagine;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(аспартат)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(aspardic_acid)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b>Аспартат</b> играет важную роль в обмене азотистых веществ. </p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b>Aspardic_acid</b> plays an important role in nitrogen metabolism. </p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: aspardic_acid;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(соль, аспартат)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(salt, aspardic_acid)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><sc_element sys_idtf = "aspardic_acid">Аспартат</sc_element> и её <sc_element sys_idtf = "salt">соли</sc_element> используются как компоненты лекарственных средств. Например, препарат аспаркам, содержащий аспарагинаты <b>калия</b> и <b>магния</b>, применяется в терапии сердечно-сосудистых расстройств.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><sc_element sys_idtf = "aspardic_acid">Aspardic acid</sc_element> and its <sc_element sys_idtf = "salt">salt</sc_element> used as ingredients in medicines. For example, the drug asparkam, containing asparaginates <b>potassium</b> and <b>magnesium</b>, used in the treatment of cardiovascular disorders.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: salt;;
+*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(аспартат)] 
+	(* <- lang_ru;;	*);
+	[Pic.(aspardic_acid)]
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://img/Aspardic_acid.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+// лизин
+lysine
+=> nrel_main_idtf:
+	[лизин](* <- lang_ru;; *);
+	[lysine](* <- lang_en;; *);
+<-alifatic_amino_acid;
+<-polar_positive_charged_amino_acid;
+<-irreplaceable_amino_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+	[Опр.(лизин)](* <-lang_ru;;*);
+	[Def.(lysine)](* <- lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "lysine">Лизин</sc_element></b> - <sc_element sys_idtf  = "alifatic_amino_acid">алифатическая аминокислота</sc_element>, с выраженными свойствами <sc_element sys_idtf = "base">основания</sc_element>. </p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "lysine">Lysine</sc_element></b> - <sc_element sys_idtf = "alifatic_amino_acid">aliphatic amino acid</sc_element> defined properties <sc_element sys_idtf = "base">base</sc_element>. </p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->alifatic_amino_acid;;
+		->base;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(аспартат, лизин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(aspardic_acid, lysine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>Растениями и бактериями <b><sc_element sys_idtf = "lysine">лизин</sc_element></b> синтезируется из <sc_element sys_idtf = "aspardic_acid">аспартата</sc_element>. </p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>Plants and bacteria <b><sc_element sys_idtf = "lysine">lysine</sc_element></b> is synthesized from <sc_element sys_idtf = "aspardic_acid">aspartat</sc_element>. </p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: aspardic_acid;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(лизин, пролин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(lysine, proline)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "lysine">Лизин</sc_element></b> в сочетании с <sc_element sys_idtf = "proline">пролином</sc_element> и витамином С предупреждает образование липопротеинов, вызывающих закупорку артерий.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "lysine">Lysine</sc_element></b> combined with <sc_element sys_idtf = "proline">proline</sc_element > and vitamin C prevents the formation of lipoproteins that cause arterial blockage.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: proline;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(лизин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(lysine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>Исследования, проведённые на животных, показали, что недостаток <b>лизина</b> вызывает иммунодефицитные состояния.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>Studies conducted on animals showed that the lack of <b>lysine</b> is immunodeficiency.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(лизин)] 
+	(* <- lang_ru;;	*);
+	[Pic.(lysine)]
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://img/Lysine.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+// цистеин
+cysteine
+=> nrel_main_idtf:
+	[цистеин](* <- lang_ru;; *);
+	[cysteine](* <- lang_en;; *);
+<-alifatic_amino_acid;
+<-non_polar_amino_acid;
+<-replaceable_amino_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+	[Опр.(цистеин)](* <-lang_ru;;*);
+	[Def.(cysteine)](* <- lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "cysteine">Цистеин</sc_element></b> - <sc_element sys_idtf  = "alifatic_amino_acid">алифатическая аминокислота</sc_element>. Оптически активна, существует в виде L- и D- <sc_element sys_idtf = "nrel_isomer">изомеров</sc_element>. L-Цистеин входит в состав <sc_element sys_idtf = "protein">белков</sc_element> и <sc_element sys_idtf = "peptide">пептидов</sc_element>, играет важную роль в процессах формирования <sc_element sys_idtf = "tissue">тканей</sc_element> кожи. Имеет значение для дезинтоксикационных процессов.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "cysteine">Cysteine</sc_element></b> - <sc_element sys_idtf = "alifatic_amino_acid">aliphatic amino acid </sc_element>. Optically active, exists as L- and D- <sc_element sys_idtf = "nrel_isomer">isomers</sc_element>. L-Cysteine is part of <sc_element sys_idtf = "protein">proteins</sc_element> and <sc_element sys_idtf = "peptide">peptides</sc_element>, plays an important role in the formation of <sc_element sys_idtf = "tissue">tissues</sc_element> skin. It is important for detoxification processes.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->alifatic_amino_acid;;
+		->nrel_isomer;;
+		->protein;;
+		->peptide;;
+		->tissue;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(цистеин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(cisteine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b>Цистеин</b> растворяется лучше, чем цистин, и быстрее утилизируется в организме, поэтому его чаще используют в комплексном лечении различных заболеваний.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b>Cysteine</b > dissolves better than cystine, and is utilized faster in the body, so it is more often used in the treatment of various diseases.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(цистеин, гидролиз, соляная кислота)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(cysteine, hydrolysis*, hydrochloric_acid)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>Основной метод получения L-цистеина в промышленности —  <sc_element sys_idtf = "nrel_hydrolysis">гидролиз</sc_element> белковых кератинсодержащих отходов с высоким содержанием <b><sc_element sys_idtf = "cysteine">цистеина</sc_element></b> — птичьих перьев, щетины, человеческого волоса; <sc_element sys_idtf = "nrel_hydrolysis">гидролиз</sc_element> проводится 20%-й <sc_element sys_idtf = "hydrochloric_acid">соляной кислотой</sc_element>. Выход <b>цистеина</b> из волос составляет до 100 кг на тонну сырья.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>the Main method for producing L-cysteine in industry is <sc_element sys_idtf = "nrel_hydrolysis">hydrolysis</sc_element> of protein keratin — containing waste with a high content of <b><sc_element sys_idtf = "cysteine">cysteine</sc_element></b> — bird feathers, bristles, human hair; <sc_element sys_idtf = "nrel_hydrolysis">hydrolysis</sc_element> 20% <sc_element sys_idtf = "hydrochloric_acid">hydrochloric acid</sc_element>. The yield of <b>cysteine</b> from the hair is up to 100 kg per ton of raw material.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: nrel_hydrolysis;;
+	-> rrel_key_sc_element: hydrochloric_acid;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(цистеин, радиация)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(cysteine, radiation)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><sc_element sys_idtf = "cysteine">Цистеин</sc_element> способствует обезвреживанию некоторых токсических веществ и защищает организм от повреждающего действия <sc_element sys_idtf = "radiation">радиации</sc_element>.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<sc_element sys_idtf = "cysteine">Cysteine</sc_element> helps to neutralize some toxic substances and protects the body from the damaging effects of <sc_element sys_idtf = "radiation">radiation</sc_element>.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: radiation;;
+*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(цистеин)] 
+	(* <- lang_ru;;	*);
+	[Pic.(cysteine)]
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://img/Cysteine.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+// фенилаланин
+fenylalanine
+=> nrel_main_idtf:
+	[фенилалан](* <- lang_ru;; *);
+	[fenylalanine](* <- lang_en;; *);
+<-aromatic_amino_acid;
+<-non_polar_amino_acid;
+<-irreplaceable_amino_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+	[Опр.(фенилаланин)](* <-lang_ru;;*);
+	[Def.(fenylalanine)](* <- lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "fenylalanine">Фенилаланин</sc_element></b> - <sc_element sys_idtf  = "aromatic_amino_acid">ароматическая аминокислота</sc_element>. Существует в двух оптически изомерных формах l и d и в виде рацемата (dl). По химическому строению соединение можно представить как <sc_element sys_idtf = "amino_acid">аминокислоту</sc_element> <sc_element sys_idtf = "alanine">аланин</sc_element>, в которой один из <sc_element sys_idtf = "atom">атомов</sc_element> водорода замещён фенильной группой. </p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "fenylalanine">Fenylalanine</sc_element></b> - <sc_element sys_idtf = "aromatic_amino_acid">aromatic amino acid</sc_element>. Exists in two optically isomeric forms l and d and as racemate (dl). The chemical structure of the compound can be represented as <sc_element sys_idtf = "amino_acid">amino acid</sc_element> <sc_element sys_idtf = "alanine "> alanine</sc_element>, in which one of the <sc_element sys_idtf = "atom" > atoms</sc_element> hydrogen is replaced by a phenyl group.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->aromatic_amino_acid;;
+		->amino_acid;;
+		->atom;;
+		->alanine;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(фенилаланин, кристалл)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(fenylalanine, crystall)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b>Фенилаланин</b> представляет собой бесцветное <sc_element sys_idtf = "crystall">кристаллическое вещество</sc_element>, разлагающееся при плавлении.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b>Fenylalanine</b> is a colourless <sc_element sys_idtf = "crystall">crystalline solid</sc_element> decomposing upon melting.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: crystall;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(фенилаланин, вода, этанол)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(fenylalanine, water, ethanol)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>Ограниченно растворяется в <sc_element sys_idtf = "water">воде</sc_element>, малорастворим в <sc_element sys_idtf = "ethanol">этаноле</sc_element>. </p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>Limited soluble in <sc_element sys_idtf = "water">water</sc_element> low in <sc_element sys_idtf = "ethanol">ethanol</sc_element>.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: water;;
+	-> rrel_key_sc_element: ethanol;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(фенилаланин, аминокислота, ароматическая аминокислота, тирозин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(fenylalanine, amino_acid, aromatic_amino_acid, tyrosine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>Основным метаболическим превращением <b><sc_element sys_idtf = "fenylalanine">фенилаланина</sc_element></b> у животных и человека является ферментативное гидроксилирование этой <sc_element sys_idtf = "amino_acid">аминокислоты</sc_element> с образованием другой <sc_element sys_idtf = "aromatic_amino_acid">ароматической аминокислоты</sc_element> — <sc_element sys_idtf = "tyrosine">тирозина</sc_element>. </p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>the Main metabolic transformation of <b><sc_element sys_idtf = "fenylalanine">fenylalanine</sc_element></b> in animals and humans is the enzymatic hydroxylation of this <sc_element sys_idtf = "amino_acid">amino acids</sc_element> education other <sc_element sys_idtf = "aromatic_amino_acid">aromatic amino acids</sc_element> — <sc_element sys_idtf = "tyrosine">tyrosine</sc_element>. </p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: amino_acid;;
+	-> rrel_key_sc_element: aromatic_amino_acid;;
+	-> rrel_key_sc_element: tyrosine;;
+*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(фенилаланин)] 
+	(* <- lang_ru;;	*);
+	[Pic.(fenylalanine)]
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://img/Fenylalanine.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+// глутаминовая кислота
+glutamic_acid
+=> nrel_main_idtf:
+	[глутаминовая кислота](* <- lang_ru;; *);
+	[glutamic acid](* <- lang_en;; *);
+<-alifatic_amino_acid;
+<-polar_negative_charged_amino_acid;
+<-replaceable_amino_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+	[Опр.(глутаминовая кислота)](* <-lang_ru;;*);
+	[Def.(glutamic acid)](* <- lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "glutamic_acid">Глутаминовая кислота</sc_element></b> - <sc_element sys_idtf  = "alifatic_amino_acid">алифатическая аминокислота</sc_element>. В живых организмах <b>глутаминовая кислота</b> входит в состав <sc_element sys_idtf = "protein">белков</sc_element>, ряда низкомолекулярных веществ и в свободном виде. <b>Глутаминовая кислота</b> играет важную роль в азотистом обмене.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "glutamic_acid">Glutamic acid</sc_element></b> - <sc_element sys_idtf = "alifatic_amino_acid">aliphatic amino acid</sc_element>. In living organisms <b>glutamic acid</b> is part of <sc_element sys_idtf = "protein">proteins</sc_element>, a number of low-molecular substances and in free form. <b> Glutamic acid</b> plays an important role in nitrogen metabolism.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->alifatic_amino_acid;;
+		->protein;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв1.(Глутаминовая кислота)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat1.(glutamic_acid)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>Фармакологический препарат <b>глутаминовой кислоты</b> оказывает умеренное психостимулирующее, возбуждающее и отчасти ноотропное действие.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>Pharmacological preparation <b> glutamic acid</b > has a moderate psychostimulating, stimulating and partly nootropic effect.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(глутаминовая кислота, вода, кристалл, этанол, диэтиловый эфир)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(glutamic acid, water, crystall, ethanol, diethyl ether)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "glutamic_acid">Глутаминовая кислота</sc_element></b> представляет собой белое <sc_element sys_idtf = "crystall">кристаллическое вещество</sc_element>, плохо растворимое в <sc_element sys_idtf="water">воде</sc_element>, <sc_element sys_idtf="ethanol">этаноле</sc_element>, нерастворимое в ацетоне и <sc_element sys_idtf="diethyl_ether">диэтиловом эфире</sc_element>.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "glutamic_acid">Glutamic acid</sc_element></b> is a white <sc_element sys_idtf = "crystall">crystalline solid</sc_element>, the poorly soluble <sc_element sys_idtf="water">water</sc_element>, <sc_element sys_idtf="ethanol">ethanol</sc_element>, insoluble in acetone and <sc_element sys_idtf="diethyl_ether">diethyl ether</sc_element>.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: water;;
+	-> rrel_key_sc_element: ethanol;;
+	-> rrel_key_sc_element: diethyl_ether;;
+	-> rrel_key_sc_element: crystall;;
+
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв2.(глутаминовая кислота)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat2.(glutamic acid))](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b>Глутаминовая кислота</b> используется в качестве хирального строительного блока в органическом синтезе </p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b>Glutamic acid</b> is used as a chiral building block in organic synthesis.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(глутаминовая кислота)] 
+	(* <- lang_ru;;	*);
+	[Pic.(glutamic acid)]
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://img/Glutamic_acid.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+// глицин
+glycine
+=> nrel_main_idtf:
+	[глицин](* <- lang_ru;; *);
+	[glycine](* <- lang_en;; *);
+<-alifatic_amino_acid;
+<-non_polar_amino_acid;
+<-replaceable_amino_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+	[Опр.(глицин)](* <-lang_ru;;*);
+	[Def.(glycine)](* <- lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "glycine">Глицин</sc_element></b> - <sc_element sys_idtf  = "alifatic_amino_acid">алифатическая аминокислота</sc_element> и единственная протеиногенная <sc_element sys_idtf = "amino_acid">аминокислота</sc_element>, не имеющая оптических <sc_element sys_idtf = "nrel_isomer">isomers</sc_element>. Неэлектролит. Название глицина происходит от др.-греч. γλυκύς, glycys — сладкий, из-за сладковатого вкуса аминокислоты. Применяется в медицине в качестве ноотропного лекарственного средства.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "glycine">Glycine</sc_element></b> - <sc_element sys_idtf = "alifatic_amino_acid">aliphatic amino acid</sc_element> and the only proteinogenic <sc_element sys_idtf = "amino_acid">amino acid</sc_element> not having optical <sc_element sys_idtf = "nrel_isomer">isomers</sc_element>. Nonelectrolyte. The name of glycine is derived from ancient Greek. γλυκύς, glycys - sweet, because the sweet taste amino acids. It is used in medicine as a nootropic drug.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->alifatic_amino_acid;;
+		->nrel_isomer;;
+		->amino_acid;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв1.(глицин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat1.(glycine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b>Глицин</b> является регулятором обмена веществ, нормализует и активирует процессы защитного торможения в центральной нервной системе, уменьшает психоэмоциональное напряжение, повышает умственную работоспособность.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b>Glycine</b> is a regulator of metabolism, normalizes and activates the processes of protective inhibition in the Central nervous system, reduces psycho-emotional stress, increases mental performance.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(глицин, аминокилоста, глутаминовая аминокислота)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(glycine, amino acid, glutamic acid)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>Связываясь с рецепторами, <b><sc_element sys_idtf = "glycine">глицин</sc_element></b> вызывает «тормозящее» воздействие на нейроны, уменьшает выделение из нейронов «возбуждающих» <sc_element sys_idtf = "amino_acid"></sc_element> аминокислот, таких, как <sc_element sys_idtf = "glutamic_acid">глутаминовая кислота</sc_element>, и повышает выделение ГАМК. </p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>Binds with the receptors <b><sc_element sys_idtf = "glycine">glycine</sc_element></b> causes a "braking" effect on neurons, reduces the secretion from neurons "Innervate" <sc_element sys_idtf = "amino_acid"></sc_element> amino acids, such as <sc_element sys_idtf = "glutamic_acid">glutamic acid</sc_element>, and increases the secretion of GABA. </p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: amino_acid;;
+	-> rrel_key_sc_element: glutamic_acid;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв2(глицин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat2.(glycine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b>Глицин</b> был обнаружен на комете 81P/Вильда (Wild 2) в рамках распределённого проекта Stardust@Home.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b>Glycine</b> was detected on comet 81P/wild (Wild 2) as part of the distributed project Stardust@Home.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(глицин)] 
+	(* <- lang_ru;;	*);
+	[Pic.(glycine)]
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://img/Glycine.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+//гистидин
+histidine
+=> nrel_main_idtf:
+	[гистидин](* <- lang_ru;; *);
+	[histidine](* <- lang_en;; *);
+<-geterocyclic_amino_acid;
+<-polar_positive_charged_amino_acid;
+<-replaceable_amino_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+	[Опр.(гистидин)](* <-lang_ru;;*);
+	[Def.(histidine)](* <- lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "histidine">Гистидин</sc_element></b> - <sc_element sys_idtf  = "geterocyclic_amino_acid">гетероциклическая аминокислота</sc_element> одна из 20 протеиногенных <sc_element sys_idtf = "amino_acid">аминокислот</sc_element>. Является одной из двух условно-незаменимых аминокислот (наряду с <sc_element sys_idtf = "arginine">аргинином</sc_element>). <sc_element sys_idtf = "irreplaceable_amino_acid">Незаменимой</sc_element> является только для детей.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "histidine">Histidine</sc_element></b> - <sc_element sys_idtf = "geterocyclic_amino_acid"> heterocyclic amino acid</sc_element> one of 20 proteinogenic <sc_element sys_idtf = "amino_acid">amino acids</sc_element>. It is one of two conditionally essential amino acids (along with <sc_element sys_idtf = "arginine">arginine</sc_element>). <sc_element sys_idtf = "irreplaceable_amino_acid">Irreplaceable</sc_element> is just for children.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->geterocyclic_amino_acid;;
+		->amino_acid;;
+		->arginine;;
+		->irreplaceable_amino_acid;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(гистидин, ткань)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(histidine, tissue)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>Известно связанное с дефектом гистидиназы наследственное заболевание гистидинемия, при котором характерно повышенное содержание <sc_element sys_idtf = "histidine">гистидина</sc_element> в <sc_element sys_idtf = "tissue">тканях</sc_element> и задержка умственного и физического развития.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>Known due to a defect in histidinate hereditary disease histidinemia, which is characterized by increased contents <sc_element sys_idtf = "histidine">histidine</sc_element> <sc_element sys_idtf = "tissue">tissue</sc_element> and delay mental and physical development.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: tissue;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(гистидин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(histidine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b>Гистидином</b> богаты такие продукты как тунец, лосось, свиная вырезка, говяжье филе, куриные грудки, соевые бобы, арахис, чечевица. Кроме того, гистидин включается в состав многих витаминных комплексов и некоторых иных медикаментов.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b>Histidine</b> products such as tuna, salmon, pork tenderloin, beef fillet, chicken Breasts, soybeans, peanuts, lentils are rich. In addition, histidine is included in many vitamin complexes and some other medications.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(гистидин, кислотный остаток, фермент)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(histidine, acid_residue, enzyme)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><sc_element sys_idtf = "acid_residue">Остаток</sc_element> <sc_element sys_idtf = "histidine">гистидина</sc_element> входит в состав активных центров множества <sc_element sys_idtf = "enzyme">ферментов</sc_element>. </p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><sc_element sys_idtf = "acid_residue">the Remainder</sc_element> <sc_element sys_idtf = "histidine">histidine</sc_element> is part of the active centers of <sc_element sys_idtf = "enzyme" >enzymes</sc_element>.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: acid_rasidue;;
+	-> rrel_key_sc_element: enzyme;;
+*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(гистидин)] 
+	(* <- lang_ru;;	*);
+	[Pic.(histidine)]
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://img/Histidine.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+//изолейцин
+isoleucine
+=> nrel_main_idtf:
+	[изолейцин](* <- lang_ru;; *);
+	[isoleucine](* <- lang_en;; *);
+<-alifatic_amino_acid;
+<-non_polar_amino_acid;
+<-irreplaceable_amino_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+	[Опр.(изолейцин)](* <-lang_ru;;*);
+	[Def.(isoleucine)](* <- lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "isoleucine">Изолейцин</sc_element></b> - <sc_element sys_idtf  = "alifatic_amino_acid">алифатическая аминокислота</sc_element> имеющая  <sc_element sys_idtf  = "chemical_formula">химическую формулу <b>HO<sub>2</sub>CCH(NH<sub>2</sub>)CH(CH<sub>3</sub>)CH<sub>2</sub>CH<sub>3</sub></b></sc_element> и входящая в  <sc_element sys_idtf  = "nrel_object_structure">состав</sc_element> всех природных  <sc_element sys_idtf  = "protein">белков</sc_element>. </p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "isoleucine">Isoleucine</sc_element></b> - <sc_element sys_idtf = "alifatic_amino_acid">aliphatic amino acid</sc_element> having <sc_element sys_idtf = "chemical_formula">chemical formula <b>HO<sub>2</sub>CCH(NH<sub>2</sub>)CH(CH<sub>3</sub>)CH<sub>2</sub>CH<sub>3</sub></b></sc_element> and included in <sc_element sys_idtf = "nrel_object_structure">composition</sc_element> of all natural <sc_element sys_idtf = "protein">proteins</sc_element>. </p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->alifatic_amino_acid;;
+		->protein;;
+		->nrel_object_structure;;
+		->chemical_formula;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(изолейцин, аминокилоста, трионин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(isoleucine, amino_acid, threonine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>Характерной особенностью боковой цепи <sc_element sys_idtf = "isoleucine">изолейцина</sc_element> является её хиральность (второй такой <sc_element sys_idtf = "amino_acid">аминокислотой</sc_element> является <sc_element sys_idtf = "threonine">треонин</sc_element>).</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>A characteristic feature of the side chain <sc_element sys_idtf = "isoleucine">isoleucine</sc_element> is its chirality (the second such <sc_element sys_idtf = "amino_acid"> amino acid</sc_element> is <sc_element sys_idtf = "threonine">threonine</sc_element>).</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: amino_acid;;
+	-> rrel_key_sc_element: threonine;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв1.(изолейцин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat1.(isoleucine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>О получении <b>изолейцина</b> синтетическим путём впервые было сообщено в 1905.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>the synthetic production of <b>isoleucine</b> was first reported in 1905.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв2(изолейцин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat2.(isoleucine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b>Изолейцин</b> участвует в энергетическом обмене.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b>Isoleucine</b> participates in energy exchange.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(изолейцин)] 
+	(* <- lang_ru;;	*);
+	[Pic.(isoleucine)]
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://img/Isoleucine.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+//лейцин
+leucine
+=> nrel_main_idtf:
+	[лейцин](* <- lang_ru;; *);
+	[leucine](* <- lang_en;; *);
+<-alifatic_amino_acid;
+<-non_polar_amino_acid;
+<-irreplaceable_amino_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+	[Опр.(лейцин)](* <-lang_ru;;*);
+	[Def.(leucine)](* <- lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "leucine">Лейцин</sc_element></b> - <sc_element sys_idtf  = "alifatic_amino_acid">алифатическая аминокислота</sc_element> имеющая  <sc_element sys_idtf  = "chemical_formula">химическую формулу <b>HO<sub>2</sub>CCH(NH<sub>2</sub>)CH<sub>2</sub>CH(CH<sub>3</sub>)<sub>2</sub></b></sc_element>. Имеет в своей <sc_element sys_idtf = "nrel_object_structure">структуре</sc_element> один хиральный центр. В живых организмах встречается в виде <sc_element sys_idtf = "nrel_isomer">L-изомера</sc_element>.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "leucine">leucine</sc_element></b> - <sc_element sys_idtf = "alifatic_amino_acid">aliphatic amino acid</sc_element> having <sc_element sys_idtf = "chemical_formula">chemical formula <b>HO<sub>2</sub>CCH(NH<sub>2</sub>)CH<sub>2</sub>CH(CH<Sub>3</sub>)<sub>2</sub></b></sc_element>. Is <sc_element sys_dev = "nrel_object_structure">structure</sc_element> one chiral center. In living organisms, found in the form of <sc_element sys_idtf = "nrel_isomer">L-isomer</sc_element>.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->alifatic_amino_acid;;
+		->nrel_isomer;;
+		->nrel_object_structure;;
+		->chemical_formula;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(лейцин, вода, этанол, диэтиловый эфир, раствор, кислота, щёлочь)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(leucine, water, ethanol, diethyl_ether, solution, acid, base)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><sc_element sys_idtf = "leucine">Лейцин</sc_element> ограничено растворим в <sc_element sys_idtf = "water">воде</sc_element>, плохо в <sc_element sys_idtf = "ethanol">этаноле</sc_element>, хорошо в <sc_element sys_idtf = "solution">растворах</sc_element> <sc_element sys_idtf = "alkali">щелочей</sc_element> и <sc_element sys_idtf = "acid">кислот</sc_element>, не растворим в <sc_element sys_idtf = "diethyl_ether">диэтиловом эфире</sc_element>.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><sc_element sys_idtf = "leucine">Leucine</sc_element> limited soluble in <sc_element sys_idtf = "water">water</sc_element> bad <sc_element sys_idtf = "ethanol">ethanol</sc_element>, solutions <sc_element sys_idtf = "alkali">alkalis</sc_element> <sc_element sys_idtf = "acid">acids</sc_element> soluble in <sc_element sys_idtf = "diethyl_ether">diethyl ether</sc_element>.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: water;;
+	-> rrel_key_sc_element: etahanol;;
+	-> rrel_key_sc_element: diethyl_ether;;
+	-> rrel_key_sc_element: solution;;
+	-> rrel_key_sc_element: acid;;
+	-> rrel_key_sc_element: base;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(лейцин, аммиак)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(leucine, ammonia)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><sc_element sys_idtf = "leucine">Лейцин</sc_element> впервые синтезирован взаимодействием 2-бром-4-метилпентановой кислоты с <sc_element sys_idtf = "ammonia">аммиаком</sc_element> в 1904 году Э.Фишером. </p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><sc_element sys_idtf = "leucine">Leucine</sc_element> first synthesized by reacting 2-bromo-4-methylpentanoic acid <sc_element sys_idtf = "ammonia">ammonia</sc_element> in 1904 by E. Fischer. </p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: ammonia;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(лейцин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(leucine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>В среднем суточная потребность организма в <b>лейцине</b> для здорового человека составляет 4-6 грамм.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>the average daily requirement of <b> leucine</b > for a healthy person is 4-6 grams.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(лейцин)] 
+	(* <- lang_ru;;	*);
+	[Pic.(leucine)]
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://img/Leucine.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+//метионин
+methionine
+=> nrel_main_idtf:
+	[метионин](* <- lang_ru;; *);
+	[methionine](* <- lang_en;; *);
+<-alifatic_amino_acid;
+<-non_polar_amino_acid;
+<-irreplaceable_amino_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+	[Опр.(метионин)](* <-lang_ru;;*);
+	[Def.(methionine)](* <- lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "methionine">Метионин</sc_element></b> - <sc_element sys_idtf  = "alifatic_amino_acid">алифатическая аминокислота</sc_element>, бесцветные <sc_element sys_idtf = "crystall">кристаллы</sc_element> со специфическим неприятным <sc_element sys_idtf = "smell">запахом</sc_element>, растворимые в <sc_element sys_idtf = "water">воде</sc_element>, входит в число <sc_element sys_idtf = "irreplaceable_amino_acid">незаменимых аминокислот</sc_element>. Содержится во многих <sc_element sys_idtf = "protein">белках</sc_element> и <sc_element sys_idtf = "peptide">пептидах</sc_element>.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "methionine">methionine</sc_element></b> - <sc_element sys_idtf = "alifatic_amino_acid">aliphatic amino acid</sc_element>, colorless <sc_element sys_idtf = "crystall">crystals</sc_element> with specific unpleasant <sc_element sys_idtf = "smell">smell</sc_element>, soluble in <sc_element sys_idtf = "water">water</sc_element>, it is included in <sc_element sys_idtf = "irreplaceable_amino_acid">irreplaciable amino acids</sc_element>. Contains many <sc_element sys_idtf = "protein">proteins</sc_element> <sc_element sys_idtf = "peptide">peptide</sc_element>.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->alifatic_amino_acid;;
+		->crystall;;
+		->peptide;;
+		->protein;;
+		->smell;;
+		->water;;
+		->irreplaceable_amino_acid;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв1.(метионин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat1.(methionine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b>Метионин</b> используется в качестве аминокислотной добавки к кормам в птицеводстве и скотоводстве.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b> methionine</b > Is used as an amino acid Supplement to feed in poultry and livestock.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв2.(метионин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat2.(methionine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b>Метионин</b>, меченый углеродом 11, обладает свойством избирательно накапливаться в опухолевой ткани. Это позволяет использовать его в качестве радиофармпрепарата при онкологических исследованиях головного мозга.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b>Methionine</b>, labeled with carbon 11, has the ability to selectively accumulate in tumor tissue. This allows it to be used as a radiopharmaceutical in cancer research of the brain.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв3.(метионин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat3.(methionine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>Фармакологический препарат <b>метионина</b> оказывает некоторое липотропное действие, повышает синтез холина, лецитина и других фосфолипидов, в некоторой степени способствует снижению содержания холестерина в крови</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>Pharmacological preparation <b>methionine</b> has some lipotropic effect, increases the synthesis of choline, lecithin and other phospholipids, to some extent contributes to the reduction of cholesterol in the blood</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(метионин)] 
+	(* <- lang_ru;;	*);
+	[Pic.(methionine)]
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://img/Methionine.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+//пролин
+proline
+=> nrel_main_idtf:
+	[пролин](* <- lang_ru;; *);
+	[proline](* <- lang_en;; *);
+<-geterocyclic_amino_acid;
+<-non_polar_amino_acid;
+<-replaceable_amino_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+	[Опр.(пролин)](* <-lang_ru;;*);
+	[Def.(proline)](* <- lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "proline">Пролин</sc_element></b> - <sc_element sys_idtf  = "geterocyclic_amino_acid">гетероциклическая аминокислота</sc_element>, в которую <sc_element sys_idtf = "atom_N">атом азота</sc_element> входит в составе вторичного, а не первичного  <sc_element sys_idtf = "amine">амина</sc_element> (в связи с чем <b>пролин</b> правильнее называть <sc_element sys_idtf = "imino_acid">иминокислотой</sc_element>).</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "proline">Proline</sc_element></b> - <sc_element sys_idtf = "geterocyclic_amino_acid">heterocyclic amino acid</sc_element>, which <sc_element sys_idtf = "atom_N">nitrogen atom</sc_element> is a part of the secondary not primary <sc_element sys_idtf = "amine">amine</sc_element> (in this connection, <b>proline</b> should be called <sc_element sys_idtf = "imino_acid">imino acid</sc_element>).</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->geterocyclic_amino_acid;;
+		->amine;;
+		->imine_acid;;
+		->atom_N;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(пролин, вода, этанол, диэтиловый эфир, раствор, кислота, щёлочь)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(proline, water, ethanol, diethyl_ether, solution, acid, base)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>Считается, что <sc_element sys_idtf = "proline">пролин</sc_element> входит в состав <sc_element sys_idtf = "protein">белков</sc_element> всех организмов. Особенно богат <sc_element sys_idtf = "proline">пролином</sc_element> основной белок соединительной ткани — коллаген.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>it is Assumed that <sc_element sys_idtf = "proline">proline</sc_element> is part of <sc_element sys_idtf = "protein">proteins</sc_element> in all organisms. Especially rich <sc_element sys_idtf = "proline">Proline</sc_element> the main protein of connective tissue — collagen.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: protein;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(пролин, вода, кристалл, этанол, бензол, диэтиловый эфир)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(proline, water, crystall, ethanol, benzene, diethyl ether)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><sc_element sys_idtf = "proline">Пролин</sc_element> представляет собой бесцветные, легко растворимые в <sc_element sys_idtf = "water">воде</sc_element> <sc_element sys_idtf = "crystall">кристаллы</sc_element>, плавящиеся при температуре около 220 °C. Также хорошо растворим в <sc_element sys_idtf = "ethanol">этаноле</sc_element>, хуже — в <sc_element sys_idtf = "benzene">бензоле</sc_element> и ацетоне, нерастворим в <sc_element sys_idtf = "diethyl_ether">диэтиловом эфире</sc_element>.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+        [<p><sc_element sys_idtf = "proline">Proline</sc_element> is a colorless, easily soluble in <sc_element sys_idtf = "water">water</sc_element> <sc_element sys_idtf = "crystall">crystals</sc_element>, melting at about 220 °C. also well soluble in <sc_element sys_idtf = "ethanol">ethanol</sc_element>, worse — in <sc_element sys_idtf = "benzene"">benzene</sc_element> and acetone, insoluble in <sc_element sys_idtf = "diethyl_ether" >diethyl ether</sc_element>.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: proline;;
+	-> rrel_key_sc_element: water;;
+	-> rrel_key_sc_element: crystall;;
+	-> rrel_key_sc_element: ethanol;;
+	-> rrel_key_sc_element: benzene;;
+	-> rrel_key_sc_element: diethyl_ether;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(пролин, глутаминовая кислота)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(proline, glutamic acid)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>В организме <sc_element sys_idtf = "proline">пролин</sc_element> синтезируется из <sc_element sys_idtf = "glutamic_acid">глутаминовой кислоты</sc_element>.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>in the body <sc_element sys_idtf = "proline">, proline</sc_element>is synthesized from <sc_element sys_idtf = "glutamic_acid">glutamic acid</sc_element>.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(пролин)] 
+	(* <- lang_ru;;	*);
+	[Pic.(proline)]
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://img/Proline.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+//глутамин
+glutamine
+=> nrel_main_idtf:
+	[глутамин](* <- lang_ru;; *);
+	[glutamine](* <- lang_en;; *);
+<-alifatic_amino_acid;
+<-polar_uncharged_amino_acid;
+<-irreplaceable_amino_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+	[Опр.(глутамин)](* <-lang_ru;;*);
+	[Def.(glutamine)](* <- lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "glutamine">Глутамин</sc_element></b> - <sc_element sys_idtf  = "alifatic_amino_acid">алифатическая аминокислота</sc_element>, одна из 20 стандартных аминокислот, входящих в <sc_element sys_idtf = "nrel_object_structure">состав</sc_element> <sc_element sys_idtf = "protein">белка</sc_element>. <b>Глутамин</b> полярен, не заряжен и является амидом моноаминодикарбоновой <sc_element sys_idtf = "glutamic_acid">глутаминовой кислоты</sc_element>, образуясь из неё в результате прямого аминирования под воздействием глутаминсинтетазы.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "glutamine">Glutamine</sc_element></b> - <sc_element sys_idtf = "alifatic_amino_acid">aliphatic amino acid</sc_element>, one of the 20 standard amino acids included in <sc_element sys_idtf = "nrel_object_structure">composition</sc_element> <sc_element sys_idtf = "protein">protein</sc_element>. <b>Glutamine</b> polar, not charged and is amid monoaminooksidasy <sc_element sys_idtf = "glutamic_acid">glutamic acid</sc_element>, obrazujas from it as a result of direct amination under the influence by.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->alifatic_amino_acid;;
+		->protein;;
+		->nrel_object_structure;;
+		->glutamic_acid;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(глутамин, фермент, окислительно-восстановительная реакция)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(glutamine, enzyme, oxydation-reduxion reaction)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><sc_element sys_idtf = "glutamine">Глутамин</sc_element> принимает участие в синтезе <sc_element sys_idtf = "enzyme">ферментов</sc_element>, осуществляющих <sc_element sys_idtf = "nrel_oxidation_reduction_reaction">окислительно-восстановительные реакции</sc_element>.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><sc_element sys_idtf = "glutamine">Glutamine</sc_element> participates in the synthesis of <sc_element sys_idtf = "enzyme">enzymes</sc_element> engaged <sc_element sys_idtf = "nrel_oxidation_reduction_reaction">redox reaction</sc_element>.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: enzyme;;
+	-> rrel_key_sc_element: nrel_oxidation_reduction_reaction;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(глутамин, аминокислота, концентрация)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(glutamine, amino acid, concentration)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><sc_element sys_idtf = "nrel_concentration">Концентрация</sc_element> <sc_element sys_idtf = "glutamine">глутамина</sc_element> в крови составляет 500—900 мкмоль/л, что выше концентрации любой другой <sc_element sys_idtf = "amino_acid">аминокислоты</sc_element >.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><sc_element sys_idtf = "nrel_concentration">Concentration</sc_element> <sc_element sys_idtf = "glutamine">glutamine</sc_element> in the blood is 500-900 µmol/l, which is higher than the concentration of any other <sc_element sys_idtf = "amino_acid">amino acid</sc_element>.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: nrel_concentration;;
+	-> rrel_key_sc_element: amino_acid;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(глутамин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(glutamine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b>Глутамин</b> укрепляет иммунитет и ускоряет восстановление после тренировок, предотвращает развитие перетренированности</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b>Glutamine</b> strengthens the immune system and accelerates recovery after training, prevents the development of overtraining</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(глутамин)] 
+	(* <- lang_ru;;	*);
+	[Pic.(glutamine)]
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://img/Glutamine.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+//серин
+serine
+=> nrel_main_idtf:
+	[серин](* <- lang_ru;; *);
+	[serine](* <- lang_en;; *);
+<-alifatic_amino_acid;
+<-polar_uncharged_amino_acid;
+<-replaceable_amino_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+	[Опр.(серин)](* <-lang_ru;;*);
+	[Def.(serine)](* <- lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "serine">Серин</sc_element></b> - <sc_element sys_idtf  = "alifatic_amino_acid">алифатическая аминокислота</sc_element>, существует в виде двух оптических <sc_element sys_idtf = "nrel_isomer">изомеров</sc_element> — L и D. </p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "serine">Serine</sc_element></b> - <sc_element sys_idtf = "alifatic_amino_acid">aliphatic amino acid</sc_element>, exists as two optical <sc_element sys_idtf = "nrel_isomer"> isomers</sc_element> — L and D.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->alifatic_amino_acid;;
+		->nrel_isomer;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(серин, белок)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(serine, protein)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><sc_element sys_idtf = "serine">L-серин</sc_element> участвует в построении почти всех природных <sc_element sys_idtf = "protein">белков</sc_element>. Впервые <b>серин</b> был выделен из шёлка, в белках которого он обнаружен в наибольших количествах.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><sc_element sys_idtf = "serine">L-serine</sc_element> participates in the construction of almost all natural <sc_element sys_idtf = "protein" >proteins</sc_element>. For the first time <b>serine</b> was isolated from silk, in proteins of which it was found in the largest quantities.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: protein;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(серин, фермент, каталитический процесс)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(serine, enzyme, catalytic process)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><sc_element sys_idtf = "serine">Серин</sc_element> участвует в образовании активных центров ряда <sc_element sys_idtf = "enzyme">ферментов</sc_element> (эстераз, пептидгидролаз), обеспечивая их функции. Протеолитические ферменты, активные центры которых содержат <b>серин</b>, играющий важную роль при выполнении <sc_element sys_idtf = "catalytic_process">каталитической функции</sc_element>, относят к отдельному классу сериновых пептидаз.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><sc_element sys_idtf = "serine">serine</sc_element> involved in the formation of active centers of a number of <sc_element sys_idtf = "enzyme">enzymes</sc_element>(esterases, peptidases), providing their function. Proteolytic enzymes, the active centers of which contain <b>serine</b>, which plays an important role in the <sc_element sys_idtf = "catalytic_process">catalytic function</sc_element>, belong to a separate class of serine peptides.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: catalytic_process;;
+	-> rrel_key_sc_element: enzyme;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(кислотный остаток, серин, состав, белок)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(acid residue, serine, nrel_object_structure, protein)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>Фосфорилирование <sc_element sys_idtf = "acid_residue">остатков</sc_element> <sc_element sys_idtf = "serine">серина</sc_element> в <sc_element sys_idtf = "nrel_object_structure">составе</sc_element> <sc_element sys_idtf = "protein">белков</sc_element> имеет важное значение в механизмах межклеточной передачи сигналов.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>Phosphorylation <sc_element sys_idtf = "acid_residue">residues</sc_element> <sc_element sys_idtf = "serine">serine</sc_element> in <sc_element sys_idtf = "nrel_object_structure">composition</sc_element> <sc_element sys_idtf = "protein">proteins</sc_element> is important in the mechanisms of Intercellular signal transmission.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: acid_residue;;
+	-> rrel_key_sc_element: nrel_object_structure;;
+	-> rrel_key_sc_element: protein;;
+*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.серин)] 
+	(* <- lang_ru;;	*);
+	[Pic.(serine)]
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://img/Serine.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+//треонин
+threonine
+=> nrel_main_idtf:
+	[треонин](* <- lang_ru;; *);
+	[threonine](* <- lang_en;; *);
+<-alifatic_amino_acid;
+<-polar_uncharged_amino_acid;
+<-irreplaceable_amino_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+	[Опр.(треонин)](* <-lang_ru;;*);
+	[Def.(threonine)](* <- lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "threonine">Треонин</sc_element></b> - <sc_element sys_idtf  = "alifatic_amino_acid">алифатическая аминокислота</sc_element>, <sc_element sys_idtf = "molecule">молекула</sc_element> которой содержит два хиральных центра, что обусловливает существование четырёх оптических <sc_element sys_idtf = "nrel_isomer"></sc_element>изомеров: L- и D-треонина (3D), а также L- и D-аллотреонина (3L). </p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "threonine">Threonine</sc_element></b> - <sc_element sys_idtf = "alifatic_amino_acid">aliphatic amino acid</sc_element>, <sc_element sys_idtf = "molecule">molecule</sc_element> which contains two chiral centers, which determines the existence of four optical <sc_element sys_idtf = "nrel_isomer"></sc_element>isomers: l - and d-threonine (3D) and l - and d-allotreonine (3l). </p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->alifatic_amino_acid;;
+		->molecule;;
+		->nrel_isomer;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(треонин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(threonine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>Суточная потребность в <b>треонине</b> для взрослого человека составляет 0,5 г, для детей — около 3 г.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>The daily requirement of <b>threonine</b> for an adult is 0.5 g, for children-about 3 g.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв1.(треонин, аспарагиновая кислота)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat1.(threonine, aspardic_acid)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>Бактериями и растениями <sc_element sys_idtf = "threonine">треонин</sc_element> синтезируется из <sc_element sys_idtf = "aspardic_acid">аспарагиновой кислоты</sc_element> через стадию образования гомосерин-O-фосфата.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>By bacteria and plants<sc_element sys_idtf = "threonine"> threonine </sc_element>is synthesized from <sc_element sys_idtf = "aspardic_acid"> aspartic acid </sc_element> through the formation of homoserine-O-phosphate.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: aspardic_acid;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв2.(треонин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat2.(threonine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b>Треонин</b> участвует в синтезе коллагена и эластина, в белковом и жировом обмене, стимулирует иммунитет и помогает работе печени, препятствуя отложению в ней жиров.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b>Threonine</b > is involved in the synthesis of collagen and elastin, in protein and fat metabolism, stimulates the immune system and helps the liver, preventing the deposition of fat in it.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.треонин)] 
+	(* <- lang_ru;;	*);
+	[Pic.(threonine)]
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://img/Threonine.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+//триптофан
+tryptofan
+=> nrel_main_idtf:
+	[триптофан](* <- lang_ru;; *);
+	[tryptofan](* <- lang_en;; *);
+<-geterocyclic_amino_acid;
+<-aromatic_amino_acid;
+<-non_polar_amino_acid;
+<-irreplaceable_amino_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+	[Опр.(триптофан)](* <-lang_ru;;*);
+	[Def.(tryprofan)](* <- lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "tryptofan">Триптофан</sc_element></b> - <sc_element sys_idtf  = "aromatic_amino_acid">ароматическая аминокислота</sc_element>, существует в двух оптически <sc_element sys_idtf = "nrel_isomer">изомерных формах</sc_element>, L и D, и в виде рацемата (DL).</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "tryptofan">Tryptophan</sc_element></b> - <sc_element sys_idtf = "aromatic_amino_acid">aromatic amino acid</sc_element>, exists in two optical <sc_element sys_idtf = "nrel_isomer">isomeric forms</sc_element>, L and D, and as racemate (DL).</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->aromatic_amino_acid;;
+		->nrel_isomer;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв1.(триптофан)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat1.(tryptofan)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b>Триптофан</b> является компонентом пищевых белков. Наиболее богаты триптофаном такие продукты, как сыр, рыба, мясо, бобовые, творог, грибы, овёс, сушёные финики, арахис, кунжут, кедровый орех, молоко, йогурт.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b>Tryptofan</b > Is a component of food proteins. The most rich in tryptophan products such as cheese, fish, meat, beans, cottage cheese, mushrooms, oats, dried dates, peanuts, sesame, pine nuts, milk, yogurt.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв2.(триптофан)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat2.(tryptofan)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>Гипотеза о том, что при депрессивных расстройствах уменьшается содержание в мозге серотонина, привела к терапевтическому использованию <b>L-триптофана</b> при депрессии. Он применяется как в качестве монотерапии, так и в сочетании с традиционными антидепрессантами.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>The hypothesis that the content of serotonin in the brain decreases in depressive disorders led to the therapeutic use of <b> L-tryptofan</b > in depression. It is used both as monotherapy and in combination with traditional antidepressants.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(щелочь, гидролиз, эфир, триптофан, соль, примесь)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(alkali, hydrolysis, ether, tryptofan, salt, impurity)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>После <sc_element sys_idtf = "alkali">щелочного</sc_element> <sc_element sys_idtf = "nrel_hydrolysis">гидролиза</sc_element> <sc_element sys_idtf = "ether">эфира</sc_element> получают <sc_element sys_idtf = "tryptofan">D,L-триптофан</sc_element> обычно в форме натриевой <sc_element sys_idtf = "salt">соли</sc_element>. В триптофане, полученном химическим синтезом, обнаруживаются <sc_element sys_idtf = "impurity">примеси</sc_element> токсичных соединений. <b>Синтетический триптофан</b> добавляют в комбикорма для животных.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>after <sc_element sys_idtf = "alkali">alkaline</sc_element> <sc_element sys_idtf = "nrel_hydrolysis">hydrolysis</sc_element> <sc_element sys_idtf = "ether">ether</sc_element> get <sc_element sys_idtf = "tryptofan">D,L-tryptophan</sc_element> usually in the form of Sodium <sc_element sys_idtf = "salt">salt</sc_element>. In tryptophan obtained by chemical synthesis, <sc_element sys_idtf = "impurity">impurities</sc_element> of toxic compounds are detected. <b>Synthetic tryptofan </b> is added to animal feed.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: alkali;;
+	-> rrel_key_sc_element: nrel_hydrolysis;;
+	-> rrel_key_sc_element: ether;;
+	-> rrel_key_sc_element: tryptofan;;
+	-> rrel_key_sc_element: salt;;
+	-> rrel_key_sc_element: impurity;;
+*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.триптофан)] 
+	(* <- lang_ru;;	*);
+	[Pic.(tryptofan)]
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://img/Tryptofan.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+//тирозин
+tyrosine
+=> nrel_main_idtf:
+	[тирозин](* <- lang_ru;; *);
+	[tyrosine](* <- lang_en;; *);
+<-aromatic_amino_acid;
+<-polar_uncharged_amino_acid;
+<-replaceable_amino_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+	[Опр.(тирозин)](* <-lang_ru;;*);
+	[Def.(tyrosine)](* <- lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "tyrosine">Тирозин</sc_element></b> - <sc_element sys_idtf  = "aromatic_amino_acid">ароматическая аминокислота</sc_element>, существует в двух оптически <sc_element sys_idtf = "nrel_isomer">изомерных формах</sc_element> — L и D и в виде рацемата (DL). По строению соединение отличается от <sc_element sys_idtf = "fenylalanine">фенилаланина</sc_element>  наличием фенольной <sc_element sys_idtf = "hydroxyl_group">гидроксильной группы</sc_element>  в пара-положении <sc_element sys_idtf = "benzene_cycle">бензольного кольца</sc_element>. </p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "tyrosine">Tyrosine</sc_element></b> - <sc_element sys_idtf = "aromatic_amino_acid">aromatic amino acid</sc_element>, exists in two optical <sc_element sys_idtf = "nrel_isomer">isomeric forms</sc_element> — L and D and as racemate (DL). The structure of the compound differs from <sc_element sys_idtf = "fenylalanine">fenylalanine</sc_element> by the presence of phenolic <sc_element sys_idtf = "hydroxyl_group">hydroxyl group</sc_element> in the para-position <sc_element sys_idtf = "benzene_cycle">of the benzene ring</sc_element>.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->aromatic_amino_acid;;
+		->nrel_isomer;;
+		->hydroxil_group;;
+		->fenylalanine;;
+		->benzene_cycle;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(тирозин, фермент)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(tyrosine, enzyme)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><sc_element sys_idtf = "tyrosine">Тирозин</sc_element> входит в состав <sc_element sys_idtf = "enzyme">ферментов</sc_element>, во многих из которых именно <b>тирозину</b> отведена ключевая роль в ферментативной активности и её регуляции.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><sc_element sys_idtf = "tyrosine">Tyrosine</sc_element>is a part of <sc_element sys_idtf ="enzyme">enzymes</sc_element>, in many of which <b>tyrosine</b> plays a key role in enzymatic activity and its regulation.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: enzyme;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(тирозин, незаменимая аминокислота, фенилаланин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(tyrosine, irreplaceable amino acid, fenylalanine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>В процессе биосинтеза <sc_element sys_idtf = "tyrosine">тирозина</sc_element> промежуточными соединениями являются <b>шикимат</b>, <b>хоризмат</b>, <b>префенат</b>. Из центральных метаболитов <sc_element sys_idtf = "tyrosine">тирозин</sc_element> в природе синтезируют микроорганизмы, грибы и растения. Животные не синтезируют <sc_element sys_idtf = "tyrosine">тирозин</sc_element>, но способны гидроксилировать <sc_element sys_idtf = "irreplaceable_amino_acid">незаменимую аминокислоту</sc_element> <sc_element sys_idtf = "fenylalanine">фенилаланин</sc_element> в <b>тирозин</b>.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>biosynthesis <sc_element sys_idtf = "tyrosine">tyrosine</sc_element> intermediate compounds are <b>shikimate</b>, <b>chorismate</b>, <b>prevent</b>. From the Central metabolites <sc_element sys_idtf = "tyrosine">tyrosine</sc_element> in nature synthesize microorganisms, fungi and plants. Animals do not synthesize <sc_element sys_idtf = "tyrosine">tyrosine</sc_element>, but are able to hydroxylate <sc_element sys_idtf = "irreplaceable_amino_acid">the essential amino acid</sc_element> <sc_element sys_idtf ="fenylalanine">phenylalanine</sc_element> in <b>tyrosine</b>.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: irreplaceable_amino_acid;;
+	-> rrel_key_sc_element: fenylalanine;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(тирозин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(tyrosine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b>Тирозин</b> подавляет аппетит, способствует уменьшению отложения жиров, способствует выработке меланина и улучшает функции надпочечников, щитовидной железы и гипофиза.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b>Tyrosine</b> suppresses appetite, reduces fat deposition, promotes melanin production and improves adrenal, thyroid and pituitary function.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.тирозин)] 
+	(* <- lang_ru;;	*);
+	[Pic.(tyrosine)]
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://img/Tyrosine.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+//валин
+valine
+=> nrel_main_idtf:
+	[валин](* <- lang_ru;; *);
+	[valine](* <- lang_en;; *);
+<-alifatic_amino_acid;
+<-non_polar_amino_acid;
+<-irreplaceable_amino_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+	[Опр.(валин)](* <-lang_ru;;*);
+	[Def.(valine)](* <- lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><b><sc_element sys_idtf = "valine">Валин</sc_element></b> - <sc_element sys_idtf  = "alifatic_amino_acid">алифатическая аминокислота</sc_element>, одна из 20 протеиногенных <sc_element sys_idtf ="amino_acid">аминокислот</sc_element>, входит в <sc_element sys_idtf ="nrel_object_structure">состав</sc_element> практически всех известных <sc_element sys_idtf ="protein">белков</sc_element>. Названо в честь растения валерианы. <sc_element sys_idtf ="chemical_formula">Химическая формула</sc_element>: C<sub>5</sub>H<sub>11</sub>NO<sub>2</sub></p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><b><sc_element sys_idtf = "valine">Valine</sc_element></b> - <sc_element sys_idtf = "alifatic_amino_acid">aliphatic amino acid</sc_element>, one of 20 proteinogenic <sc_element sys_idtf ="amino_acid">amino acids</sc_element>, included in <sc_element sys_idtf ="nrel_object_structure">composition of</sc_element> almost all known <sc_element sys_idtf ="protein">proteins</sc_element>. Named after the plant Valerian. <sc_element sys_idtf = "chemical_formula">Chemical formula</sc_element>: C<sub>5</sub>H<sub>11</sub>NO<sub>2</sub></p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->alifatic_amino_acid;;
+		->amino_acid;;
+		->nrel_object_structure;;
+		->protein;;
+		->chemical_formula;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(валин, азот)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(valine, substance N)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><sc_element sys_idtf = "valine">Валин</sc_element> необходим для поддержания нормального обмена <sc_element sys_idtf = "subst_N"></sc_element> азота в организме.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><sc_element sys_idtf = "valine"> Valine</sc_element> is required to maintain normal <sc_element sys_idtf = "subst_N"></sc_element > nitrogen metabolism in the body.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: subst_N;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(валин, ткань, лейцин, изолейцин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(valine, tissue, leucine, isoleucine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p><sc_element sys_idtf = "valine">Валин</sc_element> является одним из главных компонентов в росте и синтезе <sc_element sys_idtf = "tissue">тканей</sc_element> тела. Вместе с <sc_element sys_idtf = "leucine">лейцином</sc_element> и <sc_element sys_idtf = "isoleucine">изолейцином</sc_element> служит источником энергии в мышечных клетках, а также препятствует снижению уровня серотонина. Опыты на лабораторных крысах показали, что <sc_element sys_idtf = "valine">валин</sc_element> повышает мышечную координацию и понижает чувствительность организма к боли, холоду и жаре и т.д.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p><sc_element sys_idtf = "valine"> Valine</sc_element> is one of the main components in the growth and synthesis of <sc_element sys_idtf = "tissue"> tissues</sc_element > of the body. Together with <sc_element sys_idtf = "leucine">leucine</sc_element> and <sc_element sys_idtf = "isoleucine">, isoleucine</sc_element> is a source of energy in muscle cells, and prevents the reduction of serotonin levels. Experiments in laboratory rats have shown that <sc_element sys_idtf = "valine">valine</sc_element> increases muscle coordination and reduces the body's sensitivity to pain, cold and heat, etc.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+	-> rrel_key_sc_element: tissue;;
+	-> rrel_key_sc_element: leucine;;
+	-> rrel_key_sc_element: isoleucine;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(валин)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Stat.(valine)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<p>Используется для лечения болезненных пристрастий и вызванной ими аминокислотной недостаточности, наркоманий, депрессий (несильное стимулирующее соединение); рассеянного склероза, так как защищает миелиновую оболочку, окружающую нервные волокна в головном и спинном мозге.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		-> rrel_example:
+ 		[<p>is Used to treat painful addictions and their amino acid deficiency, drug addiction, depression (mild stimulating compound); multiple sclerosis, as it protects the myelin sheath surrounding the nerve fibers in the brain and spinal cord.</p>]
+			(* 
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			 *);;
+	*);;
+*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(валин)] 
+	(* <- lang_ru;;	*);
+	[Pic.(valine)]
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://img/Valine.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;

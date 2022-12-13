@@ -1,0 +1,24 @@
+electrode
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[электрод](*<-lang_ru;;*);
+     [electrode](*<-lang_en;;*);;
+
+electrode
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(электрод)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b>Электрод</b> (от «электро…» и греч. ὁδός — «дорога, путь») — это электрический проводник, имеющий электронную проводимость (проводник 1-го рода) и находящийся в контакте с ионным проводником — <sc_element sys_idtf="electrolyte">электролитом</sc_element> (ионной жидкостью, ионизированным газом, твёрдым электролитом).](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: electrolyte;;
+*);
+
+<-rrel_key_sc_element: ...
+(*
+	 ->rrel_key_sc_element: electrochemistry; solution;;
+	->statement;;
+	<-concept_assertion_of_the_defining_type;;
+	<-rrel_theorem:subject_domain_of_chemistry (*<-concept_subject_domain;;*);;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [В <sc_element sys_idtf="nrel_electrolysis">электрохимии</sc_element> — это часть электрохимической системы, включающая в себя проводник и окружающий его <sc_element sys_idtf="solution">раствор</sc_element> (например, водородный электрод, хлорсеребряный электрод, электрод сравнения, стеклянный электрод). Системы двух различных электродов могут использоваться как химические источники тока, а при пропускании через такие системы постоянного тока — в качестве электролизёров.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (электрод, электрохимия, раствор)](*<-lang_ru;;*);; 
+*);;

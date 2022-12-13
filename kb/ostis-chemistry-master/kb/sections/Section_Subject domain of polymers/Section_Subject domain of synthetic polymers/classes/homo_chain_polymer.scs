@@ -1,0 +1,56 @@
+homo_chain_polymer
+<-sc_node_not_relation;;
+
+homo_chain_polymer=> nrel_main_idtf:[гомоцепный полимер](* <- lang_ru;; *);;
+homo_chain_polymer=> nrel_main_idtf:[homo-chain polymer](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: homo_chain_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Гомоцепные полимеры  - это <b><sc_element sys_idtf="polymer">полимеры</b></sc_element> 
+	главные <b><sc_element sys_idtf="chain">цепи</b></sc_element> 
+	которых построены из атомов одного элемента.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (гомоцепный полимер)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		chain;
+		polymer
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: homo_chain_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Гомоцепные полимеры – состоят из <b><sc_element sys_idtf="nonorganic_compound">неорганических</b></sc_element>  
+	<b><sc_element sys_idtf="chain">цепей</b></sc_element> , 
+	обрамленных <b><sc_element sys_idtf="organic_compound">органическими</b></sc_element> радикалами или 
+	 из <b><sc_element sys_idtf="organic_compound">органических</b></sc_element> <b><sc_element sys_idtf="chain">цепей</b></sc_element> (карбоцепные) 
+	 с боковыми элементоорганическими группами.]
+	 (*
+	 <-lang_ru;;
+	=>nrel_format:format_html;;
+	 *);;
+	 *);;
+	
+	=> nrel_main_idtf: [Утверждение(гомоцепный полимер)](*<- lang_ru;;*);;
+		=> nrel_using_constants:
+		{
+		nonorganic_compound;
+		organic_compound;
+		chain
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: homo_chain_polymer;;
+	<= nrel_sc_text_translation: ...(*->"file://image/homo_chain_polymer.png";;*);;
+	=> nrel_main_idtf: [Рисунок(гомоцепный полимер)](*<- lang_ru;;*);;
+*);;
+
+	

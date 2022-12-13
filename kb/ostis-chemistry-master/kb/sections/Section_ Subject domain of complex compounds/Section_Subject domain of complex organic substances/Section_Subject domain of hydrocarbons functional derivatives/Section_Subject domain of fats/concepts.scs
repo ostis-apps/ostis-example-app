@@ -1,0 +1,27 @@
+production_of_lubricants
+	=> nrel_main_idtf:[производство смазочных материалов](* <- lang_ru;; *);
+	=> nrel_main_idtf:[production of lubricants](* <- lang_en;; *);;
+
+nrel_autoxidation
+	=> nrel_main_idtf:[автоокисление*](* <- lang_ru;; *);
+	=> nrel_main_idtf:[autoxidation*](* <- lang_en;; *);;
+
+nrel_raw_material
+	=> nrel_main_idtf:[сырьё для получения*](* <- lang_ru;; *);
+	=> nrel_main_idtf:[raw material*](* <- lang_en;; *);;
+
+saturated_fatty_acids
+=> nrel_main_idtf:[насыщенные жирные кислоты](* <- lang_ru;; *);
+=> nrel_main_idtf:[saturated fatty acids](* <- lang_en;; *);;
+
+unsaturated_fatty_acids
+=> nrel_main_idtf:[ненасыщенные жирные кислоты](* <- lang_ru;; *);
+=> nrel_main_idtf:[unsaturated fatty acids](* <- lang_en;; *);;
+
+unsaturated_alkadienic_acid
+=> nrel_main_idtf:[непредельные алкадиеновые кислоты](* <- lang_ru;; *);
+=> nrel_main_idtf:[unsaturated alkadienic acid](* <- lang_en;; *);;
+
+unsaturated_alkatrienic_acids
+=> nrel_main_idtf:[непредельные алкатриеновые кислоты](* <- lang_ru;; *);
+=> nrel_main_idtf:[unsaturated alkatrienic acids](* <- lang_en;; *);;

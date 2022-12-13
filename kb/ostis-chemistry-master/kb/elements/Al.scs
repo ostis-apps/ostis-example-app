@@ -1,0 +1,100 @@
+elem_Al
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+	Definition_of_aluminium
+	(*
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:"file://htmls/Al.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
+	*);
+
+<- group_thirteen;
+<- period_three;
+=> nrel_periodic_number: thirteen;
+<= nrel_discovery_year: 1825;
+
+<- metal;
+
+
+<= nrel_inclusion: oxidation_state_plus_three;
+<= nrel_inclusion: valence_three;
+
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:182(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Al;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:118(*<- number;;*);;
+	*);;
+*);
+
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Al;;
+	*);;
+*);
+
+
+
+<- rrel_key_sc_element: electron_configuration_Al
+	(*
+		<- explanation;;
+		=> nrel_main_idtf:
+			[Утв. (алюминий, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Al 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>1</sup>] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис. (химический элемент алюминий)] (* <- lang_ru;;	*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/Aluminium.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
+		*);;
+	*);;
+
+
+Definition_of_aluminium
+=> nrel_main_idtf:
+	[Опр. (алюминий)]
+	(* <- lang_ru;;	*);;
+
+
+atomic_mass_Al <- number;
+=> nrel_main_idtf:[26,98](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Al <- number;
+=> nrel_main_idtf:[1,61](*<-lang_ru;; <- lang_en;;*);;

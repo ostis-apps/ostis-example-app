@@ -1,0 +1,51 @@
+nrel_density_of_substance
+<- sc_node_norole_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_main_idtf:
+    [density of substance*](*<- lang_en;;*);
+    [плотность вещества*](*<- lang_ru;;*);
+
+=> nrel_idtf:
+    [плотность химического вещества*](*<- lang_ru;;*);
+    [плотность*](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+    <- definition;;
+    => nrel_main_idtf: 
+        [Опр. (плотность вещества*)](*<- lang_ru;;*);
+        [Def. (density of substance*)](*<- lang_en;;*);;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example: 
+            [<b>Плотность вещества</b> — это плотность однородного тела, состоящего из этого <sc_element sys_idtf="chemical_substance">вещества</sc_element>.]
+            (*
+                <- lang_ru;;
+                => nrel_format: format_html;;
+            *);
+            [<b>The density of a substance</b> is the density of a homogeneous body consisting of this <sc_element sys_idtf="chemical_substance">substance</sc_element>.]
+            (*
+                <- lang_en;;
+                => nrel_format: format_html;;
+            *);;
+    *);;
+    <= nrel_using_constants:...
+    (*
+        -> chemical_substance;;
+    *);;
+*);
+
+=> nrel_second_domain: number;
+=> nrel_first_domain: chemical_element;
+
+=> nrel_definitional_domain:...
+(*
+    <= nrel_combination: ...
+    (* 
+        -> chemical_element; number;;
+    *);;
+*);;

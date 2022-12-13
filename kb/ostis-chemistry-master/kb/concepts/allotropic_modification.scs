@@ -1,0 +1,82 @@
+allotropic_modification
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[аллотропная модификация](* <-lang_ru;; *);
+	[аллотропная форма](* <-lang_ru;; *);
+	[allotropic modification](* <- lang_en;; *);;
+
+allotropic_modification
+<- rrel_key_sc_element:
+	Definition_of_allotropic_modification
+	(*
+		<- sc_definition;;
+        <= nrel_sc_text_translation:...
+        (*
+			-> rrel_example:"file://htmls/allotropic_modification.html"(* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants:
+		...
+		(*
+			-> elementary_substance;;
+			-> chemical_element;;
+		*);;
+	*);;
+
+allotropic_modification
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Утв.(аллотропная модификация, аллотропия*)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/allotropic_modification1.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+	
+
+
+allotropic_modification
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Прим.(аллотропная модификация, неметалл)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/allotropic_modif_nonmetal_table.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+allotropic_modification
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Прим.(аллотропная модификация, полуметалл)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/allotropic_modif_semimetal_table.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+allotropic_modification
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Прим.(аллотропная модификация, металл)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/allotropic_modif_metal_table.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+allotropic_modification
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Прим.(аллотропная модификация, изменение условий*)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/allotropic_modification2.html" (* <-lang_ru;; *);;
+		*);;
+	*);;

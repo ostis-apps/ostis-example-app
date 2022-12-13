@@ -1,0 +1,22 @@
+ex25_solutions
+<- exercises_solutions;
+
+-> rrel_key_sc_element: impurity; nrel_mass; subst_Na; nrel_mass_fraction; carbon_dioxide;
+
+=> nrel_main_idtf:
+	[Упражнение 25. Раздел. Предметная область растворов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 25. Section. Subject domain of solutions]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex3_solutions_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex3_solutions_en.html" (* <-lang_en;; *);;
+	*);;

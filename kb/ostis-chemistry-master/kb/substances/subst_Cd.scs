@@ -1,0 +1,78 @@
+subst_Cd
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[cadmium (substance)](*<- lang_en;;*);
+	[кадмий (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Сd (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (кадмий (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Кадмий (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - мягкий ковкий тягучий переходный <sc_element sys_idtf = "metal">металл</sc_element> серебристо-белого <sc_element sys_idtf = "color">цвета</sc_element>.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> metal;;
+		-> color;;
+
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (кадмий (вещество), мягкий ковкий серебристо-серый металл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Cadmium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:321 (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:767 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (кадмий (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы кадмия:  <sup>95</sup>Сd, <sup>96</sup>Сd, <sup>97</sup>Сd, <sup>98</sup>Сd, <sup>99</sup>Сd, <sup>100</sup>Сd, <sup>101</sup>Сd, <sup>102</sup>Сd, <sup>103</sup>Сd, <sup>104</sup>Сd, <sup>105</sup>Сd, <sup>106</sup>Сd, <sup>107</sup>Сd, <sup>108</sup>Сd, <sup>109</sup>Сd, <sup>110</sup>Сd, <sup>111</sup>Сd, <sup>112</sup>Сd, <sup>113</sup>Сd, <sup>114</sup>Сd, <sup>115</sup>Сd, <sup>116</sup>Сd, <sup>117</sup>Сd, <sup>118</sup>Сd, <sup>119</sup>Сd, <sup>120</sup>Сd, <sup>121</sup>Сd, <sup>122</sup>Сd, <sup>123</sup>Сd, <sup>124</sup>Сd, <sup>125</sup>Сd, <sup>126</sup>Сd, <sup>127</sup>Сd, <sup>128</sup>Сd, <sup>129</sup>Сd, <sup>130</sup>Сd, <sup>131</sup>Сd, <sup>132</sup>Сd] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

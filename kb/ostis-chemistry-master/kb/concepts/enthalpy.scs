@@ -1,0 +1,44 @@
+enthalpy
+  <- sc_node_not_relation;
+  
+  => nrel_main_idtf:
+    [энтальпия] (* <- lang_ru;; *);
+    [enthalpy] (* <- lang_en;; *);
+  => nrel_idtf:
+    [теплосодержание] (* <- lang_ru;; *);
+
+  <- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (энтальпия)] (* <- lang_ru;; *);
+      [Def. (enthalpy)] (* <- lang_en;; *);;
+    <= nrel_using_constants: ... (*
+      -> pressure;;
+      -> elementary_particle;;
+    *);;
+    <= nrel_sc_text_translation: ... (*
+      -> [<b><sc_element sys_idtf="enthalpy">Энтальпия</b></sc_element> -- термодинамический потенциал, характеризующий состояние системы в термодинамическом равновесии при выборе в качестве независимых переменных <b><sc_element sys_idtf="pressure">давления</b></sc_element>, энтропии и числа <b><sc_element sys_idtf="elementary_particle">частиц</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> [<b><sc_element sys_idtf="enthalpy">Enthalpy</b></sc_element> is a thermodynamic potential that characterizes the state of the system in thermodynamic equilibrium when selecting <b><sc_element sys_idtf="pressure">pressure</b></sc_element>, entropy and the number of <b><sc_element sys_idtf="elementary_particle">particles</b></sc_element> as independent variables.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (энтальпия)] (* <- lang_ru;; *);
+      [Exp. (enthalpy)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> [Изменение <b><sc_element sys_idtf="enthalpy">энтальпии</b></sc_element> не зависит от пути процесса, определяясь только начальным и конечным состоянием системы.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+      -> [The change in <b><sc_element sys_idtf="enthalpy">enthalpy</b></sc_element> does not depend on the process path, determined only by the initial and final state of the system.](*<-lang_en;;=>nrel_format:format_html;;*);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:... (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (энтальпия)] (* <- lang_ru;; *);
+      [Pic. (enthalpy)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> "file://images/entalpy.png" (* => nrel_format: format_png;; *);;
+    *);;
+  *);;

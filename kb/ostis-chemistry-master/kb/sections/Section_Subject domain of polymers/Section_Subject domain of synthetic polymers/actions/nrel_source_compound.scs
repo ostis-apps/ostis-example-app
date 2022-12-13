@@ -1,0 +1,45 @@
+nrel_source_compound<-sc_node_norole_relation;;
+
+nrel_source_compound=> nrel_main_idtf:[исходное соединение* ](* <- lang_ru;; *);;
+nrel_source_compound=> nrel_main_idtf:[source_compound* ](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: nrel_source_compound;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Исходное соединение - 
+	<b><sc_element sys_idtf="complex_substance">сложное вещество</b></sc_element>
+	, состоящее из <b><sc_element sys_idtf="chemical_compound">химически связанных</b></sc_element>
+	 атомов двух или более элементов, которое вступило в химическую реакцию.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (исходное соединение*)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{ 
+			chemical_compound;
+		complex_substance
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:nrel_source_compound ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[После сплавления получаются новые соединения, которые в отличие от 
+	исходного соединения растворимы в <b><sc_element sys_idtf="hard_water">воде</b></sc_element> или в 
+	<b><sc_element sys_idtf="acid">кислотах</b></sc_element>. ]
+	
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(исходное соединение, не растворимы в воде при сплавлении )](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{ 
+			acid;
+		hard_water
+		};;
+*);;

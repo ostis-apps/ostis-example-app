@@ -1,0 +1,92 @@
+dopamine<-sc_node_not_relation;;
+dopamine=> nrel_main_idtf:[дофамин](* <- lang_ru;; *);;
+dopamine=> nrel_main_idtf:[dopamine](* <- lang_en;; *);;
+dopamine=> nrel_idtf:[C8H11NO2](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: dopamine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Дофамин — гормон и нейромедиатор,<b><sc_element sys_idtf="true_alkaloids">истинный алкалоид</b></sc_element>.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (дофамин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		true_alkaloids
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: dopamine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Дофамин является одним из химических факторов внутреннего подкрепления (ФВП) и служит важной частью «системы вознаграждения» мозга, поскольку вызывает чувство удовольствия (или удовлетворения), чем влияет на процессы мотивации и обучения.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(дофамин)](*<- lang_ru;;*);;
+	
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element:dopamine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/dopamine.png";;*);;
+	=> nrel_main_idtf: [Рисунок(дофамин,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:dopamine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/dopamine2.png";;*);;
+	=> nrel_main_idtf: [Рисунок(дофамин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:dopamine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/dopamine3.png";;*);;
+	=> nrel_main_idtf: [Рисунок(дофамин,синтез*)](*<- lang_ru;;*);;
+*);;
+solid_matter=>nrel_inclusion:dopamine;;
+true_alkaloids=>nrel_inclusion:dopamine;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> dopamine;;
+	=> nrel_measurement_in_gramms_per_mole: [153,178]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->dopamine;;
+	=> nrel_measurement_in_degrees_Celsius: 128
+	(*
+		<-number;;
+	*);;
+*);;
+
+destiny->...
+(* 
+	
+	<- sc_node_not_relation;;
+	-> dopamine;;
+	=> nrel_measurement_in_degrees_Celsius: [1,26]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+

@@ -1,0 +1,6 @@
+cobalt_group
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[подгруппа кобальта](* <- lang_ru;; *);
+	[cobalt group](* <- lang_en;; *);;
+	

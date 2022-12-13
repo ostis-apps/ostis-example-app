@@ -1,0 +1,37 @@
+nrel_non_polar_covalent_bond
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[неполярная ковалентная связь*](* <- lang_ru;; *);
+	[non-polar covalent bond*](* <- lang_en;; *);
+<= nrel_inclusion: nrel_covalent_bond;
+<- binary_relation;
+<- non_oriented_relation;
+<- reflexive_relation;
+<- symmetric_relation;
+<- antitransitive_relation;
+// домены
+=>nrel_second_domain: atom;
+=>nrel_first_domain: atom;
+=>nrel_definitional_domain:atom;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(полярная ковалентная связь*)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Неполярная ковалентная связь – связь между атомами с равной электроотрицательностью и, следовательно, равномерным распределением электронной плотности между ядрами атомов]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->nrel_chemical_bond;;
+		->atom;;
+		->electron_pair;;
+		->nrel_electronegativity;;
+		->nrel_electron_density;;
+	*);;
+*);;

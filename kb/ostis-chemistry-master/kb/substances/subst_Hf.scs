@@ -1,0 +1,78 @@
+subst_Hf
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[hafnium (substance)](*<- lang_en;;*);
+	[гафний (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Hf (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (гафний (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Гафний (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - серебристый ковкий <sc_element sys_idtf = "metal">металл</sc_element>.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> metal;;
+		-> color;;
+
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гафний (вещество), серебристый ковкий металл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Hafnium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:2233 (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:4603 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (гафний (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы гафния: <sup>153</sup>Hf, <sup>154</sup>Hf, <sup>155</sup>Hf, <sup>156</sup>Hf, <sup>157</sup>Hf, <sup>158</sup>Hf, <sup>159</sup>Hf, <sup>160</sup>Hf, <sup>161</sup>Hf, <sup>162</sup>Hf, <sup>163</sup>Hf, <sup>164</sup>Hf, <sup>165</sup>Hf, <sup>166</sup>Hf, <sup>167</sup>Hf, <sup>168</sup>Hf, <sup>169</sup>Hf, <sup>170</sup>Hf, <sup>171</sup>Hf, <sup>172</sup>Hf, <sup>173</sup>Hf, <sup>174</sup>Hf, <sup>175</sup>Hf, <sup>176</sup>Hf, <sup>177</sup>Hf, <sup>178</sup>Hf, <sup>179</sup>Hf, <sup>180</sup>Hf, <sup>181</sup>Hf, <sup>182</sup>Hf, <sup>183</sup>Hf, <sup>184</sup>Hf, <sup>185</sup>Hf, <sup>186</sup>Hf, <sup>187</sup>Hf, <sup>188</sup>Hf] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

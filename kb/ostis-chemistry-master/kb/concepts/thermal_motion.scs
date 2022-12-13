@@ -1,0 +1,44 @@
+thermal_motion
+=> nrel_main_idtf:
+	[тепловое движение]
+	(* <- lang_ru;;	*);
+	[thermal motion]
+	(* <- lang_en;;	*);;
+
+thermal_motion
+<- rrel_key_sc_element:
+	Definition_of_thermal_motion
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/thermal_motion.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->particle;;
+				-> chemical_substance;;
+			*);;
+	*);
+
+
+
+
+
+<- rrel_key_sc_element: thermal_speed
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (тепловое движение, скорость*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Чем выше температура, тем больше скорость движения частиц..] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+Definition_of_thermal_motion
+=> nrel_main_idtf:
+	[Опр.(Тепловое движение)]
+	(* <- lang_ru;;	*);;

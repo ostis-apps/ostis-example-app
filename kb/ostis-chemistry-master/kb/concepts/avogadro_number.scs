@@ -1,0 +1,41 @@
+avogadro_number
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[постоянная Авогадро]
+	(* <- lang_ru;;	*);
+	[avogadro's number]
+	(* <- lang_en;;	*);;
+avogadro_number
+<- rrel_key_sc_element:
+	Definition_of_avogadro_number
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/avogadro_number.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				substance;
+				molecule;
+				mols;
+				atom;
+				ion
+			};;
+
+
+
+Definition_of_avogadro_number
+=> nrel_main_idtf:
+	[Опр.(Постоянная Авогадро)]
+	(* <- lang_ru;;	*);;
+
+
+
+
+
+
+

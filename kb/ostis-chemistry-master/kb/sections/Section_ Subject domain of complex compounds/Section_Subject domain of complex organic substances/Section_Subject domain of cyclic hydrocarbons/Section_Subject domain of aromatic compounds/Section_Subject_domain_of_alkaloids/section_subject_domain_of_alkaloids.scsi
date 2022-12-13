@@ -1,0 +1,18 @@
+subject_domain_of_alkaloids
+	=> nrel_main_idtf:[Предметная область алкалоидов](* <- lang_ru;; *);
+	=> nrel_main_idtf:[Subject domain of alkaloids](* <- lang_en;; *);
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: alkaloids;
+
+-> rrel_not_maximum_studied_object_class:
+		true_alkaloids;
+		protoalkaloids;
+		peptide_alkaloids;
+		pseudoalkaloids;
+		indole_alkaloids;
+		isoquinoline_alkaloids;
+		pyridine_alkaloids;;
+
+
+

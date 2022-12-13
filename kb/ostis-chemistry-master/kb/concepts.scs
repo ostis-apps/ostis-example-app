@@ -1,0 +1,529 @@
+nickel_sulphide_1//
+=> nrel_main_idtf:
+	[сульфид никеля(I)](* <- lang_ru;; *);
+	[nickel sulphide (I)](* <- lang_en;; *);
+=> nrel_idtf:
+	[Ni2S](*<-lang_en;;*);;
+	
+non_transition_metals
+=> nrel_main_idtf:
+	[непереходный металл](* <- lang_ru;; *);
+	[non transition metals](* <- lang_en;; *);;
+	
+complex_hydroxide
+=> nrel_main_idtf:
+	[комплексный гидроксид](* <- lang_ru;; *);
+	[complex hydroxide](* <- lang_en;; *);;
+
+pure_metal
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[чистый метал](* <- lang_ru;; *);;
+
+radioactive_substance
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[radioactive substance](*<- lang_en;;*);
+	[радиоактивное вещество](*<- lang_ru;;*);;
+
+product => nrel_main_idtf:
+	[продукт](*<-lang_ru;;*);
+	<- sc_node_not_relation;;
+
+reagent => nrel_main_idtf:
+	[реагент](*<-lang_ru;;*);
+	<- sc_node_not_relation;;
+
+hydrogen_chloride => nrel_main_idtf:
+	[хлористый водород](*<-lang_ru;;*);
+	<- sc_node_not_relation;;
+
+lanthanide => nrel_main_idtf:
+	[лантанид](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+
+oligosaccharide => nrel_main_idtf:
+	[олигосахарид](*<-lang_ru;;*);
+	<- sc_node_not_relation;;
+
+monosaccharide => nrel_main_idtf:
+	[моносахарид](*<-lang_ru;;*);
+	<- sc_node_not_relation;;
+
+reducing_disaccherides => nrel_main_idtf:
+	[восстанавливающий дисахарид](*<-lang_ru;;*);
+	<- sc_node_not_relation;;
+
+non_reducing_disaccheride => nrel_main_idtf:
+	[невосстанавливающий дисахарид](*<-lang_ru;;*);
+	<- sc_node_not_relation;;
+
+organic_compound => nrel_main_idtf:
+	[органическое соединение](*<-lang_ru;;*);
+	<- sc_node_not_relation;;
+
+carbohydrate => nrel_main_idtf:
+	[углевод](*<-lang_ru;;*);
+	<- sc_node_not_relation;;
+
+strong_basis
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[сильная щелочь](* <- lang_ru;; *);;
+
+aqueous_solution_of_ammonia_hydrate
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[водный раствор гидрата аммиака](* <- lang_ru;; *);;
+
+chemical_process
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[химический процесс](* <- lang_ru;; *);;
+
+metal_compound
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[соединение металлов](* <- lang_ru;; *);;
+hydrogen_fluoride
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[фтористый водород](* <- lang_ru;; *);;
+
+organic_formation
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[органическое образование](* <- lang_ru;; *);;
+inorganic_ozonide
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[неорганический озонид](* <- lang_ru;; *);;
+radiotechnics
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[радиотехника](* <- lang_ru;; *);;
+chemical_industry
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[химическая промышленность](* <- lang_ru;; *);;
+nuclear_energy
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[ядерная энергетика](* <- lang_ru;; *);;
+catalytic_process
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[каталитический процесс](* <- lang_ru;; *);;
+
+water_vapor_conversion=> nrel_main_idtf:
+	[конверсия водяного пара](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+water_vapor_transmission=> nrel_main_idtf:
+	[перемещение водяного пара](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+catalytic_oxidation=> nrel_main_idtf:
+	[каталитическое окисление](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+hydrocarbons_cracking=> nrel_main_idtf:
+	[крекинг углеводородов](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+hydrocarbons_reforming=> nrel_main_idtf:
+	[конверсия углеводородов](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+hydride=> nrel_main_idtf:
+	[гидрид](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+low_temperature_condensation=> nrel_main_idtf:
+	[низкотемпературная конденсация](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+adsorption_selection=> nrel_main_idtf:
+	[адсорбционный отбор](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+
+non_toxic_substance=> nrel_main_idtf:
+	[нетоксичное вещество](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+taste=> nrel_main_idtf:
+	[вкус](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+thermal_receipt=> nrel_main_idtf:
+	[термическое получение](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+aluminothermic_method=> nrel_main_idtf:
+	[алюмотермический метод](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+coke_reduction=> nrel_main_idtf:
+	[коксование](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+organic_synthesis=> nrel_main_idtf:
+	[органический синтез](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+thermoelectric_material=> nrel_main_idtf:
+	[термоэлектрический материал](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+calcification_reduction=> nrel_main_idtf:
+	[кальцификации](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+flotation_method=> nrel_main_idtf:
+	[флотация](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+steels_alloying=> nrel_main_idtf:
+	[легирование стали](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+ammonium_nitrite=> nrel_main_idtf:
+	[нитрит аммония](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+petrochemistry=> nrel_main_idtf:
+	[нефтехимия](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+compound_synthesis=> nrel_main_idtf:
+	[синтез соединений](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+food_additive_E941=> nrel_main_idtf:
+	[пищевая добавка E941](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+sodium_thermic_method=> nrel_main_idtf:
+	[натриево-термальный метод](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+carbothermic_method=> nrel_main_idtf:
+	[карботермический метод](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+crystal_cell=> nrel_main_idtf:
+	[кристаллическая решётка](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+alloying=> nrel_main_idtf:
+	[легирование](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+smell=> nrel_main_idtf:
+	[запах](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+low_temperature_rectification=> nrel_main_idtf:
+	[низкотемпературная ректификация](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+cryogenic_rectification=> nrel_main_idtf:
+	[криогенная ректификация](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+potassium_permanganate=> nrel_main_idtf:
+	[перманганат калия](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+catalytic_decomposition=> nrel_main_idtf:
+	[каталитическое разложение](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+potassium_chlorate=> nrel_main_idtf:
+	[хлорат калия](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+
+inorganic_synthesis=> nrel_main_idtf:
+	[неорганический синтез](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+
+catalytic_process=> nrel_main_idtf:
+	[каталитический процесс](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+
+transition_metal=> nrel_main_idtf:
+	[переходный металл](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+post_transition_metal=> nrel_main_idtf:
+	[пост-переходный металл](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+protein_synthesis=> nrel_main_idtf:
+	[синтез белка](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+alcohol_detoxification=> nrel_main_idtf:
+	[алкогольная детоксикация](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+chalcogen=> nrel_main_idtf:
+	[халькоген](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+lithophile=> nrel_main_idtf:
+	[литофил](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+siderophile=> nrel_main_idtf:
+	[сидерофил](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+atmophile=> nrel_main_idtf:
+	[атмофил](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+heavy_element=> nrel_main_idtf:
+	[тяжёлый элемент](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+rare_earth_metal=> nrel_main_idtf:
+	[редкоземельный металл](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+toxic_substance=> nrel_main_idtf:
+	[токсичное вещество](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+fractional_distillation=> nrel_main_idtf:
+	[фракционная перегонка](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+
+nonferrous_metal => nrel_main_idtf:[цветной металл](*<-lang_ru;;*);;
+cellulose => nrel_main_idtf:[целлюлоза](*<-lang_ru;;*);;
+glucose => nrel_main_idtf:[глюкоза](*<-lang_ru;;*);;
+aspartame => nrel_main_idtf:[аспартам](*<-lang_ru;;*);;
+saccharin => nrel_main_idtf:[сахарин](*<-lang_ru;;*);;
+apple_acid => nrel_main_idtf:[яблочная кислота](*<-lang_ru;;*);;
+orthophosphoric_acid => nrel_main_idtf:[ортофосфорная кислота](*<-lang_ru;;*);;
+fatty_acid => nrel_main_idtf:[жирная кислота](*<-lang_ru;;*);;
+surface_active_substance => nrel_main_idtf:[поверхностно-активное вещество](*<-lang_ru;;*);;
+glycerol => nrel_main_idtf:[глицерин](*<-lang_ru;;*);;
+lanolin => nrel_main_idtf:[ланолин](*<-lang_ru;;*);;
+lignin => nrel_main_idtf:[лигнин](*<-lang_ru;;*);;
+hemicellulose => nrel_main_idtf:[гемицеллюлоза](*<-lang_ru;;*);;
+calcium_carbonate => nrel_main_idtf:[карбонат кальция](*<-lang_ru;;*);;
+magnesium_carbonate => nrel_main_idtf:[карбонат магния](*<-lang_ru;;*);;
+
+bromination
+=> nrel_main_idtf: 
+[бромирование](* <- lang_ru;; *);
+[bromination](* <- lang_en;; *);;
+
+nrel_ionic_bond
+	=> nrel_main_idtf: 
+		[ионная связь](*<- lang_ru;;*);;
+nrel_covalent_bond
+	=> nrel_main_idtf: 
+		[ковалентная связь](*<- lang_ru;;*);;
+nrel_chemical_bond
+	=> nrel_main_idtf: 
+		[химическая связь](*<- lang_ru;;*);;
+diffusion
+	=> nrel_main_idtf: 
+		[диффузия](*<- lang_ru;;*);;
+bluing
+	=> nrel_main_idtf: 
+		[воронение](*<- lang_ru;;*);;
+alkali_metal
+	=> nrel_main_idtf: 
+		[щелочной металл](*<- lang_ru;;*);;
+mols
+	=> nrel_main_idtf: 
+		[Моль](*<- lang_ru;;*);;
+molecule
+	=> nrel_main_idtf: 
+		[молекула](*<- lang_ru;;*);;
+external_shell
+	=> nrel_main_idtf: 
+		[внешняя электронная оболочка](*<- lang_ru;;*);;
+elementary_particle
+	=> nrel_main_idtf: 
+		[электронная частица](*<- lang_ru;;*);;
+elementary_charge
+	=> nrel_main_idtf: 
+		[элементарный заряд](*<- lang_ru;;*);;
+atom
+	=> nrel_main_idtf: 
+		[атом](*<- lang_ru;;*);;
+proton
+	=> nrel_main_idtf: 
+		[протон](*<- lang_ru;;*);;
+metal
+	=> nrel_main_idtf: 
+		[металл](*<- lang_ru;;*);;
+electron_shell
+	=> nrel_main_idtf: 
+		[электронная оболочка](*<- lang_ru;;*);;
+electron
+	=> nrel_main_idtf: 
+		[электрон](*<- lang_ru;;*);;
+electrolytic_dissociation
+	=> nrel_main_idtf: 
+		[электролитическая диссоциация](*<- lang_ru;;*);;
+neutralization_reaction
+	=> nrel_main_idtf: 
+		[реакция нейтрализации](*<- lang_ru;;*);;
+
+radioactive_indicator 
+	=> nrel_main_idtf: 
+		[радиоактивный индикатор](*<- lang_ru;;*);;
+
+saccharin
+=> nrel_main_idtf:
+	[сахарин]
+	(* <- lang_ru;;	*);
+	[saccharin]
+	(* <- lang_en;;	*);;
+
+sucrose
+=> nrel_main_idtf:
+	[сахароза]
+	(* <- lang_ru;;	*);
+	[sucrose]
+	(* <- lang_en;;	*);;
+
+sulfamic_acid
+=> nrel_main_idtf:
+	[аминосульфоновая кислота]
+	(* <- lang_ru;;	*);
+	[sulfamic acid]
+	(* <- lang_en;;	*);;
+
+dielectric
+=> nrel_main_idtf:
+	[диэлектрик]
+	(* <- lang_ru;; *);
+	[dielectric]
+	(* <- lang_en;; *);;
+
+alkaline_earth_metal
+=> nrel_main_idtf:
+	[щелочноземельный металл]
+	(* <- lang_ru;; *);
+	[alkaline earth metal]
+	(* <- lang_en;; *);;
+
+alkali_salt
+=> nrel_main_idtf:
+	[основная соль]
+	(* <- lang_ru;; *);
+	[alkali salt]
+	(* <- lang_en;; *);;
+
+simple_salt
+=> nrel_main_idtf:
+	[простая соль]
+	(* <- lang_ru;; *);
+	[simple salt]
+	(* <- lang_en;; *);;
+
+double_salt
+=> nrel_main_idtf:
+	[двойная соль]
+	(* <- lang_ru;; *);
+	[double salt]
+	(* <- lang_en;; *);;
+
+mixed_salt
+=> nrel_main_idtf:
+	[смешанная соль]
+	(* <- lang_ru;; *);
+	[mixed salt]
+	(* <- lang_en;; *);;
+
+inner_salt
+=> nrel_main_idtf:
+	[внутренняя соль]
+	(* <- lang_ru;; *);
+	[inner salt]
+	(* <- lang_en;; *);;
+
+complex_salt
+=> nrel_main_idtf:
+	[комплексная соль]
+	(* <- lang_ru;; *);
+	[complex salt]
+	(* <- lang_en;; *);;
+
+phosphate
+=> nrel_main_idtf:
+	[фосфат]
+	(* <- lang_ru;; *);
+	[phosphate]
+	(* <- lang_en;; *);;
+
+soluble_salt
+=> nrel_main_idtf:
+	[растворимая соль]
+	(* <- lang_ru;; *);
+	[soluble salt]
+	(* <- lang_en;; *);;
+
+poorly_soluble_salt
+=> nrel_main_idtf:
+	[малорастворимая соль]
+	(* <- lang_ru;; *);
+	[poorly soluble salt]
+	(* <- lang_en;; *);;
+	
+insoluble_salt
+=> nrel_main_idtf:
+	[нерастворимая соль]
+	(* <- lang_ru;; *);
+	[insoluble salt]
+	(* <- lang_en;; *);;
+
+iodide
+=> nrel_main_idtf:
+	[иодид]
+	(* <- lang_ru;; *);
+	[iodide]
+	(* <- lang_en;; *);;
+
+sulfide
+=> nrel_main_idtf:
+	[сульфид]
+	(* <- lang_ru;; *);
+	[sulfide]
+	(* <- lang_en;; *);;
+
+fluoride
+=> nrel_main_idtf:
+	[фторид]
+	(* <- lang_ru;; *);
+	[fluoride]
+	(* <- lang_en;; *);;
+
+sodium_carbonate
+=> nrel_main_idtf:
+	[карбонат натрия]
+	(* <- lang_ru;; *);
+	[sodium carbonate]
+	(* <- lang_en;; *);;
+
+tripotassium_phosphate
+=> nrel_main_idtf:
+	[ортофосфат калия]
+	(* <- lang_ru;; *);
+	[tripotassium phosphate]
+	(* <- lang_en;; *);;
+
+potassium_chloride
+=> nrel_main_idtf:
+	[хлорид калия]
+	(* <- lang_ru;;  *);
+	[potassium chloride]
+	(* <- lang_en;; *);;
+
+multielement_compound
+=> nrel_main_idtf:
+    [многоэлементное соединение](* <- lang_ru;;	*);
+	[multielement compound](*<- lang_en;;*);;
+	
+colloidal_solution
+=> nrel_main_idtf:
+    [colloidal solution]
+    (*<- lang_en;;*);
+	[коллоидальный раствор]
+	(* <- lang_ru;;	*);;
+
+molecular_solution
+=> nrel_main_idtf:
+    [molecular solution]
+    (*<- lang_en;;*);
+	[истинный раствор]
+	(* <- lang_ru;;	*);
+	[молекулярный раствор]
+	(* <- lang_ru;;	*);;
+
+picric_acid
+=> nrel_main_idtf:
+    [picric acid]
+    (*<- lang_en;;*);
+	[пикриновая кислота]
+	(* <- lang_ru;;	*);;
+
+dichromic_acid
+=> nrel_main_idtf: 
+[дихромовая кислота](* <- lang_ru;;	*);
+[dichromic acid](* <- lang_en;;	*);;
+
+carcinogen
+=> nrel_main_idtf: 
+[канцероген](* <- lang_ru;;	*);
+[carcinogen](* <- lang_en;;	*);;
+
+carbide
+=> nrel_main_idtf: 
+[карбид]
+(* <- lang_ru;;	*);
+[carbide]
+(* <- lang_en;;	*);;
+
+science
+=>nrel_main_idtf:
+[наука](*<- lang_ru;;*);
+[science](*<- lang_en;;*);;
+
+nrel_solod_state
+=>nrel_main_idtf:
+[твердое состояние*](*<- lang_ru;;*);
+[solid state*](*<- lang_en;;*);;

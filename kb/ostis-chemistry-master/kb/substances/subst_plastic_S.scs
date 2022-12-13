@@ -1,0 +1,32 @@
+subst_plastic_S
+<= nrel_inclusion: chemical_substance;
+<- sc_node_not_relation;
+=> nrel_main_idtf: [пластическая сера] (* <- lang_ru;; *);
+=> nrel_main_idtf: [plastic sulfur] (* <- lang_en;; *);
+=> nrel_idtf: [S4](*<- lang_en;;*);
+
+<- rrel_key_sc_element: definition_of_subst_plastic_S
+(* 
+	=> nrel_main_idtf: [Опр.(Пластическая сера)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Пластическая сера</b> - коричневая резиноподобная (аморфная) масса.  Неустойчива, при затвердевании превращается в <sc_element sys_idtf = "subst_rhombic_S">ромбическую серу</sc_element>. Является аллотропной модификацией <sc_element sys_idtf = "subst_S">серы</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_substance;;
+		-> subst_rhombic_S;;
+		-> subst_S;;
+	*);;
+*);
+
+<- solid;
+<- color_broun;;
+
+atomic_multiplicity_four -> (subst_plastic_S -> elem_S);;

@@ -1,0 +1,16 @@
+proton_mass
+=> nrel_main_idtf:
+	[масса протона](* <- lang_ru;; *);
+	[proton mass](* <- lang_en;; *);
+=> nrel_idtf:
+	[1,672 621 777(74) * 10^(−27) кг](* <- lang_ru;; *);
+	[1,672 621 777(74) * 10^(−27) kg](* <- lang_en;; *);
+<- value;
+<= nrel_measurement:...
+(*
+	-> rrel_10_in_minus_27_kg: ...
+	(*
+		<- number;;
+		=> nrel_main_idtf:[1,672](*<-lang_ru;; <- lang_en;;*);;
+	*);;
+*);;

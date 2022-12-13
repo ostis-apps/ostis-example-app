@@ -1,0 +1,10 @@
+section_subject_domain_of_alkaloids
+=> nrel_main_idtf:
+	[Раздел. Предметная область алкалоидов.](* <- lang_ru;; *);
+	[Section. Subject domain of alkaloids.](* <- lang_en;; *);
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_alkaloids = [*^"file://section_subject_domain_of_alkaloids.scsi"*];;
+
+section_subject_domain_of_alkaloids -> rrel_key_sc_element: subject_domain_of_alkaloids;;		

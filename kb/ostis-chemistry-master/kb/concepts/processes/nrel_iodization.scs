@@ -1,0 +1,49 @@
+nrel_iodization<-sc_node_norole_relation;;
+
+nrel_iodization=> nrel_main_idtf:[йодирование амидов* ](* <- lang_ru;; *);;
+nrel_iodization=> nrel_main_idtf:[amide iodizationdi* ](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: nrel_iodization;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[При действии галогенов (галогены в присутствии оснований) на N- незамещенные и монозамещенные амиды происходит замещение атомов водорода при азоте с образованием N-галогенамидов.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (йодирование*)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{
+		amide;
+		iodide_ion
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:nrel_iodization ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Водород в аминогруппах алифатических первичных и вторичных аминах может быть замещен на йод под действием различных галогенизирующих агентов, таких как гипогалогенит натрия.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(йодирование*)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{
+		amide;
+		iodide_ion
+		};;
+*);;
+
+
+
+nrel_iodization => nrel_first_domain: chemical_substance;;
+nrel_iodization => nrel_second_domain: chemical_substance;;
+
+
+arity_2->nrel_iodization;;
+
+iodine_propamide<=nrel_iodization:propamide;;

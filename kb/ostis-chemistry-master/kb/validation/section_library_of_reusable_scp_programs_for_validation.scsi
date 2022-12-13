@@ -1,0 +1,10 @@
+library_of_reusable_scp_programs_for_validation
+=> nrel_main_idtf:
+	[Библиотека многократно используемых scp-программ для валидации]
+	(* <- lang_ru;; *);
+	[Library of reusable scp-programs for validation]
+	(* <- lang_en;; *);;
+
+library_of_reusable_scp_programs_for_validation ->
+	lib_component_proc_of_generating_validation_comment;
+	lib_component_proc_of_adding_validating_message;;

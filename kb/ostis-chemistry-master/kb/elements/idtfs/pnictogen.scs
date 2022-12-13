@@ -1,0 +1,8 @@
+pnictogen
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[подгруппа азота](* <- lang_ru;; *);
+	[nitrogen qroup](* <- lang_en;; *);
+=> nrel_idtf:
+	[пниктогены](* <- lang_ru;; *);
+	[pnictogen](* <- lang_en;; *);;

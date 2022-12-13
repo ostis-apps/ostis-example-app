@@ -1,0 +1,14 @@
+section_subject_domain_of_quantum_chemistry
+=> nrel_main_idtf:
+    [Раздел. Предметная область квантовая химии]
+    (* <- lang_ru;;*);
+    [Section. Subject domain of quantum chemistry]
+    (* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_quantum_chemistry = [*^"file://subject_domain_of_quantum_chemistry.scsi"*];;
+
+section_subject_domain_of_quantum_chemistry
+-> rrel_key_sc_element: subject_domain_of_quantum_chemistry;;

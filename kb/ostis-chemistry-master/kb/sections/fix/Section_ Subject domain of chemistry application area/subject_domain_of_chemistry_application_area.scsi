@@ -1,0 +1,952 @@
+subject_domain_of_chemistry_application_area
+=> nrel_main_idtf: 
+	[Предметная область применения химии]
+	(* <- lang_ru;;*);
+	[Subject domain of chemistry application area]
+	(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class:...
+(*
+	<=nrel_combination:...
+	(*
+		->science;;
+		->industry;;
+	*);;
+*);
+
+-> rrel_not_maximum_studied_object_class:
+	aeronautics_filling;
+	aerospace_industry;
+	agriculture;
+	aircraft_industry;
+	chemical_industry;
+	construction;
+	cooking;
+	cryogenic_equipment;
+	electric_power_industry;
+	electronics;
+	fertilizer;
+	firefighting;
+	flotating;
+	food_industry;
+	geology;
+	leather_industry;
+	material_processing;
+	medicine;
+	metallurgy;
+	mining;
+	nuclear_energy;
+	pyrotechnics;
+	radiotechnics;
+	rocket_technology;
+	seismic_survey;
+	space_technology;
+	textile_industry;
+	war_industry;
+	ameliorative_agriculture;
+	irrigated_agriculture;
+	rainfed_agriculture;
+	petrochemistry;
+	cosmetics;
+	inorganic_chemistry;
+	organic_chemistry;
+	ceramics;
+	agrochemistry;
+	polymer;
+	elastomers;
+	explosives;
+	pharmaceutical_chemistry;
+	black_metallurgy;
+	color_metallurgy;
+	hydrometallurgy;
+	pyrometallurgy;;
+
+
+industry
+=> nrel_main_idtf: 
+	[industry]
+	(* <- lang_en;;*);
+
+=> nrel_main_idtf: 
+	[промышленность]
+	(* <- lang_en;;*);;
+
+
+aeronautics_filling
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[aeronautics filling](* <- lang_en;; *);
+=> nrel_main_idtf:
+	[воздухоплавание](*<- lang_ru;; *);
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/aeronautics_filling_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/aeronautics_filling_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+agriculture
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[agriculture](* <- lang_en;; *);
+
+<= nrel_inclusion: industry;
+
+<= nrel_subdividing:...
+(*
+	->ameliorative_agriculture;;
+	->irrigated_agriculture;;
+	->rainfed_agriculture;;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/agriculture_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/agriculture_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+
+ameliorative_agriculture
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[мелиоративное земледелие](* <- lang_en;; *);
+	[ameliorative agriculture](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/ameliorative_agriculture_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/ameliorative_agriculture_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+irrigated_agriculture
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[орошаемое земледелие](* <- lang_en;; *);
+	[irrigated agriculture](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/irrigated_agriculture_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/irrigated_agriculture_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+
+rainfed_agriculture
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[мелиоративное земледелие](* <- lang_en;; *);
+	[rainfed agriculture](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/rainfed_agriculture_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/rainfed_agriculture_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+
+
+aircraft_industry
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[aircraft industry](* <- lang_en;; *);
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/aircraft_industry_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/aircraft_industry_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+chemical_industry
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[chemical industry](* <- lang_en;; *);
+
+<= nrel_inclusion: industry;
+
+<= nrel_subdividing:...
+(*
+	-> petrochemistry;;
+	-> cosmetics;;
+	-> inorganic_chemistry;;
+	-> organic_chemistry;;
+	-> ceramics;;
+	-> agrochemistry;;
+	-> polymer;;
+	-> elastomers;;
+	-> explosives;;
+	-> pharmaceutical_chemistry;;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/chemical_industry_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/chemical_industry_en.html"(* <- lang_en;; *);;
+    *);;
+*);;  
+
+ceramics
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[керамика](* <- lang_ru;; *);
+	[ceramics](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/ceramics_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/ceramics_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+agrochemistry
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[агрохимия](* <- lang_ru;; *);
+	[agrochemistry](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/agrochemistry_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/agrochemistry_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+elastomer
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[эластомер](* <- lang_ru;; *);
+	[elastomer](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/elastomers_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/elastomers_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+explosive
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[взрывчатое вещество](* <- lang_ru;; *);
+	[explosive](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/explosives_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/explosives_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+pharmaceutical_chemistry
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[фармацевтическая химия](* <- lang_ru;; *);
+	[pharmaceutical chemistry](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/pharmaceutical_chemistry_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/pharmaceutical_chemistry_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+construction
+<- sc_node_not_relation;
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/construction_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/construction_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+cooking
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[cooking](* <- lang_en;; *);
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/cooking_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/cooking_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+cryogenic_equipment
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[cryogenic equipment](* <- lang_en;; *);
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/cryogenic_equipment_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/cryogenic_equipment_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+electric_power_industry
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[electric power industry](* <- lang_en;; *);
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/electric_power_industry_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/electric_power_industry_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+electronics
+<- sc_node_not_relation;
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/electronics_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/electronics_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+fertilizer
+<- sc_node_not_relation;
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/fertilizer_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/fertilizer_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+firefighting
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[firefighting](* <- lang_en;; *);
+
+=> nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/firefighting_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/firefighting_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+
+flotating
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[флотирование](* <-lang_ru;; *);
+	[flotating](* <- lang_en;; *);
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/flotating_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/flotating_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+food_industry
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[food industry](* <- lang_en;; *);
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/food_industry_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/food_industry_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+geology
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[geology](* <- lang_en;; *);
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/geology_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/geology_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+leather_industry
+<- sc_node_not_relation;
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/leather_industry_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/leather_industry_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+material_processing
+<- sc_node_not_relation;
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/material_processing_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/material_processing_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+medicine
+<- sc_node_not_relation;
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/medicine_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/medicine_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+metallurgy
+<- sc_node_not_relation;
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/metallurgy_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/metallurgy_en.html"(* <- lang_en;; *);;
+    *);;
+*);
+
+<= nrel_subdividing:...
+		      (*
+			      ->black_metallurgy;;
+			      ->color_metallurgy;;		  
+		       *);
+
+<= nrel_subdividing:...
+			(*
+			      ->hydrometallurgy;;
+			      ->pyrometallurgy;;
+			
+			*);;
+
+
+mining
+<- sc_node_not_relation;
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/mining_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/mining_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+nuclear_energy
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[ядерная энергетика](* <-lang_ru;; *);
+	[nuclear energetics](* <- lang_en;; *);
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/nuclear_energy_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/nuclear_energy_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+pyrotechnics
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[pyrotechnics](* <- lang_en;; *);
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/pyrotechnics_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/pyrotechnics_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+radiotechnics
+
+=> nrel_main_idtf:
+	[radiotechnics](* <- lang_en;; *);
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/radiotechnics_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/radiotechnics_en.html"(* <- lang_en;; *);;
+    *);;
+*);;	
+
+rocket_technology
+
+=> nrel_main_idtf:
+	[rocket technology](* <- lang_en;; *);
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/rocket_technology_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/rocket_technology_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+seismic_survey
+<- sc_node_not_relation;
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/seismic_survey_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/seismic_survey_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+space_technology
+
+=> nrel_main_idtf:
+	[space technology](* <- lang_en;; *);
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/space_technology_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/space_technology_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+textile_industry
+<- sc_node_not_relation;
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/textile_industry_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/textile_industry_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+war_industry
+<- sc_node_not_relation;
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/war_industry_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/war_industry_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+aerospace_industry
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[aerospace industry](* <- lang_en;; *);
+
+<= nrel_inclusion: industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/aerospace_industry_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/aerospace_industry_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+black_metallurgy
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[черная металлургия](* <-lang_ru;; *);
+	[black metallurgy](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/black_metallurgy_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/black_metallurgy_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+color_metallurgy
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[цветная металлургия](* <-lang_ru;; *);
+	[color metallurgy](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/color_metallurgy_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/color_metallurgy_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+pyrometallurgy
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[пирометаллургия](* <-lang_ru;; *);
+	[pyrometallurgy](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/pyrometallurgy_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/pyrometallurgy_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+
+hydrometallurgy
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[гидрометаллургия](* <-lang_ru;; *);
+	[hydrometallurgy](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/hydrometallurgy_rus.html"(* <- lang_ru;; *);;
+    *);;
+
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/hydrometallurgy_en.html"(* <- lang_en;; *);;
+    *);;
+*);;
+

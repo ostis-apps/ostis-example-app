@@ -1,0 +1,18 @@
+solubility_table
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[таблица растворимости](* <-lang_ru;; *);
+	[solubility table](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+					"file://content_html/solubility_table.html"
+						(* <- lang_ru;; *);; 
+				*);;
+		*);;

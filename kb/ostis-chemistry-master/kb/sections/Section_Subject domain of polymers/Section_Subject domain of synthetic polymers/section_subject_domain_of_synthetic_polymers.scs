@@ -1,0 +1,15 @@
+section_subject_domain_of_synthetic_polymers
+=> nrel_main_idtf: 
+	[Раздел. Предметная область синтетических полимеров]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of synthetic polymers]
+	(* <- lang_en;; *);
+
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_synthetic_polymers = [*^"file://subject_domain_of_synthetic_polymers.scsi"*];;
+
+section_subject_domain_of_synthetic_polymers
+-> rrel_key_sc_element: subject_domain_of_synthetic_polymers;;

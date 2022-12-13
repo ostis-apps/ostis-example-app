@@ -1,0 +1,172 @@
+subject_domain_of_toxicological_chemistry
+  => nrel_main_idtf:
+    [Предметная область токсикологической химии] (* <- lang_ru;;*);
+    [Subject domain of toxicological chemistry] (* <- lang_en;; *);
+
+  <- subject_domain;
+  -> rrel_maximum_studied_object_class: toxicological_chemistry;
+  -> rrel_not_maximum_studied_object_class:
+    analytical_toxicology;
+    biochemical_toxicology;
+    forensic_chemistry
+    ;;  
+
+toxicological_chemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [токсикологическая химия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [toxicological chemistry] (* <- lang_en;; *);
+
+  <= nrel_subdividing:...
+  (*
+    => nrel_main_idtf: [Разбиение на поднауки] (* <- lang_ru;; *);;
+    -> analytical_toxicology;;
+    -> biochemical_toxicology;;
+    -> forensic_chemistry;;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (токсикологическая химия)] (* <- lang_ru;; *);
+      [Def. (toxicological chemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Токсикологическая химия — наука, изучающая методы выделения токсических веществ из различных объектов, а также методы обнаружения и количественного определения этих веществ.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (токсикологическая химия)](* <- lang_ru;; *);
+      [Stat. (toxicological chemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Токсикологическая химия разрабатывает новые и совершенствует уже существующие методы определения ядовитых веществ в различных объектах, дает теоретическое обоснование этих методов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (токсикологическая химия)](* <- lang_ru;; *);
+      [Pic. (toxicological chemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/toxicological_chemistry.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+analytical_toxicology
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [аналитическая токсикология] (* <- lang_ru;; *);
+  => nrel_main_idtf: [analytical toxicology] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (аналитическая токсикология)] (* <- lang_ru;; *);
+      [Def. (analytical toxicology)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Аналитическая токсикология - основной раздел токсикологическской химии, в котором рассматриваются способы и методы химического анализа приложении к биологическим объектам.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (аналитическая токсикология)](* <- lang_ru;; *);
+      [Stat. (analytical toxicology)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Основными задачами аналитической токсикологии является определение, идентификация и в большинстве случаев количественное определение в биологических объектах, а также в небиологических объектах широкого спектра химических веществ.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+
+biochemical_toxicology
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [биохимическая токсикология] (* <- lang_ru;; *);
+  => nrel_main_idtf: [biochemical toxicology] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (биохимическая токсикология)] (* <- lang_ru;; *);
+      [Def. (biochemical toxicology)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Биохимическая токсикология - основной раздел токсикологическской химии, в котором рассматриваются кинетика всасывания вещества, его распределения, выделения, механизм метаболических реакций, определяется зависимость между химическими свойствами и биологической активностью.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);;
+
+forensic_chemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [токсикологическая химия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [forensic chemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (судебная химия)] (* <- lang_ru;; *);
+      [Def. (forensic chemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Судебная химия — часть химии и в широком смысле слова является почти необъятной по изобилию и разнообразию разрешаемых ею задач, ибо всякое химическое исследование, в сущности, может быть предметом судебно-химической экспертизы.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (судебная химия)](* <- lang_ru;; *);
+      [Stat. (forensic chemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Судебно-химические экспертные исследования проводят с целью выделения, идентификации и количественного определения (или исключения) ядовитых, наркотических, психотропных и сильнодействующих веществ, продуктов их превращения, главным образом, в органах и биологических жидкостях организма человека, а также в фармацевтических препаратах, пищевых продуктах, напитках, окружающей человека среде и предметах с интерпретацией полученных результатов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+  
+
+nrel_chromatography
+<-sc_node_norole_relation;
+=> nrel_main_idtf: [хроматография* ] (* <-lang_ru;; *);
+=> nrel_main_idtf: [chromatography* ](* <-lang_en;; *);
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+// домены
+=>nrel_second_domain: chemical_substance;
+=>nrel_first_domain: chemical_substance;
+=>nrel_definitional_domain:chemical_substance;
+
+//определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(хроматография*)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Хроматография — процесс разделения смесей веществ или частиц, основанный на различиях в скоростях их перемещения в системе несмешивающихся и движущихся относительно друг друга фаз.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->chemical_process;;
+	*);;
+*);;
+

@@ -1,0 +1,134 @@
+polyacrolein<-sc_node_not_relation;;
+polyacrolein=> nrel_main_idtf:[полиакролеин](* <- lang_ru;; *);;
+polyacrolein=> nrel_main_idtf:[polyacrolein](* <- lang_en;; *);;
+polyacrolein=> nrel_idtf:[ poly(acrolein)​](* <- lang_en;; *);;
+polyacrolein=> nrel_idtf:[(-CH2-CH-)n](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: polyacrolein;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Полиакролеин — <b><sc_element sys_idtf="aldehyde">альдегид</b></sc_element> 
+	 акриловой кислоты, простейший ненасыщенный <b><sc_element sys_idtf="aldehyde">альдегид</b></sc_element> 
+	  <b><sc_element sys_idtf="no_color">Бесцветная</b></sc_element>
+	 легколетучая слезоточивая <b><sc_element sys_idtf="liquid">жидкость</b></sc_element>
+	  с резким  <b><sc_element sys_idtf="smell">запахом</b></sc_element>
+	 , сильный лакриматор.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (полиакролеин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		liquid;
+		smell;
+		no_color;
+		aldehyde
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: polyacrolein;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Полиакролеин, полученный радикальной 
+	<b><sc_element sys_idtf="nrel_polymerization">полимеризацией</b></sc_element>
+	акролеина, является <b><sc_element sys_idtf="homo_chain_polymer">гомоцепным полимером</b></sc_element>.]
+	  
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(полиакролеин,гомоцепный полимер)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nrel_polymerization;
+		homo_chain_polymer
+		};;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:polyacrolein;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[<b><sc_element sys_idtf="nrel_source_compound">Исходным соединением</b></sc_element>
+	 для получения полиакролеиноксима служит <b><sc_element sys_idtf="polymer">полимер</b></sc_element> полиакролеина.]
+	 
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(полиакролеин,химически стойкое вещество)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nrel_source_compound;
+		polymer
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyacrolein;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyacrolein_1.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(полиакролеин,исходное соединение формулы)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyacrolein;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyacrolein.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(полиакролеин,пример)](*<- lang_ru;;*);;
+*);;
+
+
+thermoplastic_polymer=>nrel_inclusion:polyacrolein;;
+homo_chain_polymer=>nrel_inclusion:polyacrolein;;
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> polyacrolein;;
+	=> rrel_mol: [1400]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyacrolein;;
+	=> rrel_degree_celsius:230
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyacrolein;;
+	=> rrel_joule_per_kelvin_and_mole: 0.34
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyacrolein;;
+	=> rrel_gram_per_cubic_cm: 2.7
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+

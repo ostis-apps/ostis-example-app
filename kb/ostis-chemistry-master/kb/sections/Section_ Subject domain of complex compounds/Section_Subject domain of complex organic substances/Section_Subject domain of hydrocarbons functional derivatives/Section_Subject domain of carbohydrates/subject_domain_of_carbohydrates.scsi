@@ -1,0 +1,745 @@
+subject_domain_of_carbohydrate
+	=> nrel_main_idtf:[Предметная область углеводов](* <- lang_ru;; *);
+	=> nrel_main_idtf:[Subject domain of carbohydrate](* <- lang_en;; *);
+<- subject_domain;
+-> rrel_maximum_studied_object_class: carbohydrate;
+-> rrel_not_maximum_studied_object_class:
+	monosaccharide;
+        disaccharide;
+	polysaccharides;;
+fructose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[фруктоза](* <- lang_ru;; *);
+=> nrel_main_idtf:[fructose](* <- lang_en;; *);
+=> nrel_idtf:[фруктовый сахар](* <- lang_ru;; *);
+<- rrel_key_sc_element:
+Definition_of_fructose
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (фруктоза)](* <- lang_ru;; *);
+		[Def. (fructose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> chemical_substance;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Фруктозой называют изомер глюкозы](* <- lang_ru;; *);;
+		-> rrel_example:[Fructose is the isomer of glucose.](* <- lang_en;; *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (фруктоза)](* <- lang_ru;; *);
+		[Stat. (fructose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Фруктоза поглощает водяные пары из окружающей среды](* <- lang_ru;;*);;
+			-> rrel_example:[Fructose absorbs water vapor from the environment.](* <- lang_en;;*);;
+		*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (фруктоза)](* <- lang_ru;; *);
+		[Pic. (fructose)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/fructose.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+gluconic_acid
+<- sc_node_not_relation;
+=> nrel_main_idtf:[глюконовая кислота](* <- lang_ru;; *);
+=> nrel_main_idtf:[gluconic_acid](* <- lang_en;; *);
+<- rrel_key_sc_element:
+Definition_of_gluconic_acid
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (глюконовая кислота)](* <- lang_ru;; *);
+		[Def. (gluconic_acid)](* <- lang_en;; *);;
+	<= nrel_using_constants:...;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Глюконовой кислотой называется органическая кислота из группы альдоновых кислот, химическая формула (C6H12O7). ](* <- lang_ru;; *);;
+		-> rrel_example:[Gluconic acid is an organic acid from the group of aldonic acids, chemical formula (C6H12O7).](* <- lang_en;; *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (глюконовая кислота)](* <- lang_ru;; *);
+		[Stat. (gluconic_acid)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Глюконовая кислота применяется в фармацевтической промышленности в качестве наполнителя для таблеток.](* <- lang_ru;;*);;
+			-> rrel_example:[Gluconic acid is used in the pharmaceutical industry as a filler for tablets.](* <- lang_en;;*);;
+		*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (глюконовая кислота)](* <- lang_ru;; *);
+		[Pic. (gluconic_acid)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/glyk.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+amylose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[амилоза](* <- lang_ru;; *);
+=> nrel_main_idtf:[amylose](* <- lang_en;; *);
+=> nrel_idtf:[фермент](* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+Definition_of_amylose
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (амилоза)](* <- lang_ru;; *);
+		[Def. (amylose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...;;
+	
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Амилоза является одной из основных полисахаридов, составляющих крахмал.](* <- lang_ru;; *);;
+		-> rrel_example:[Amylose is one of the main polysaccharides that make up starch.](* <- lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (амилоза)](* <- lang_ru;; *);
+		[Stat. (amylose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Доля амилозы в картофельном, кукурузном, пшеничном крахмале 19—24 %, в рисовом 17 %, в яблочном 100 %.](* <- lang_ru;;*);;
+			-> rrel_example:[The share of amylose in potato, corn, wheat starch is 19-24%, in rice 17%, in apple 100%.](* <- lang_en;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (амилоза)](* <- lang_ru;; *);
+		[Pic. (amylose)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/amylose.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+
+glycogen
+<- sc_node_not_relation;
+=> nrel_main_idtf:[гликоген](* <- lang_ru;; *);
+=> nrel_main_idtf:[glycogen](* <- lang_en;; *);
+=> nrel_idtf:[углевод](* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+Definition_of_glycogen
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (гликоген)](* <- lang_ru;; *);
+		[Def. (glycogen)](* <- lang_en;; *);;
+	<= nrel_using_constants:...;;
+	
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гликогеном называют сложный комплексный углевод, который в процессе гликогенеза образуется из глюкозы, поступающей в организм человека вместе с пищей.](* <- lang_ru;; *);;
+		-> rrel_example:[Glycogen is a complex complex carbohydrate, which in the process of glycogenesis is formed from glucose that enters the human body along with food.](* <- lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (гликоген)](* <- lang_ru;; *);
+		[Stat. (glycogen)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[В качестве запасного углевода гликоген присутствует в клетках грибов.](* <- lang_ru;;*);;
+			-> rrel_example:[As a reserve carbohydrate glycogen is present in the cells of fungi.](* <- lang_en;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (гликоген)](* <- lang_ru;; *);
+		[Pic. (glycogen)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/glycogen.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+sorbit
+<- sc_node_not_relation;
+=> nrel_main_idtf:[сорбит](* <- lang_ru;; *);
+=> nrel_main_idtf:[sorbit](* <- lang_en;; *);
+=> nrel_idtf:[сорбитол](* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+Definition_of_sorbit
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (сорбит)](* <- lang_ru;; *);
+		[Def. (sorbit)](* <- lang_en;; *);;
+	<= nrel_using_constants:...;;
+	
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Сорбитом называют шестиатомный спирт, обладающий сладким вкусом.](* <- lang_ru;; *);;
+		-> rrel_example:[Sorbitol is a sweet taste of hexatomic alcohol.](* <- lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (сорбит)](* <- lang_ru;; *);
+		[Stat. (sorbit)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Сорбит получают путем гидрирования глюкозы с восстановлением альдегидной группы до первичной спиртовой группы.](* <- lang_ru;;*);;
+			-> rrel_example:[Sorbitol is obtained by hydrogenation of glucose with the reduction of the aldehyde group to the primary alcohol group.](* <- lang_en;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (сорбит)](* <- lang_ru;; *);
+		[Pic. (sorbit)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/sorbit.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+
+
+chlorophyll
+<- sc_node_not_relation;
+=> nrel_main_idtf:[хлорофилл](* <- lang_ru;; *);
+=> nrel_main_idtf:[chlorophyll](* <- lang_en;; *);
+=> nrel_idtf:[пигмент](* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+Definition_of_chlorophyll
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (хлорофилл)](* <- lang_ru;; *);
+		[Def. (chlorophyll)](* <- lang_en;; *);;
+	<= nrel_using_constants:...;;
+	
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Хлорофиллом называют зеленый пигмент, окрашивающий хлоропласты растений в зеленый цвет.](* <- lang_ru;; *);;
+		-> rrel_example:[Chlorophyll is a green pigment that dyes plant chloroplasts in green.](* <- lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (хлорофилл)](* <- lang_ru;; *);
+		[Stat. (chlorophyll)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Химическая структура хлорофилла представляет порфириновое кольцо.](* <- lang_ru;;*);;
+			-> rrel_example:[The chemical structure of chlorophyll is porphyrin ring.](* <- lang_en;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (хлорофилл)](* <- lang_ru;; *);
+		[Pic. (chlorophyll)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/chlorophyll.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+amylopectin
+<- sc_node_not_relation;
+=> nrel_main_idtf:[амилопектин](* <- lang_ru;; *);
+=> nrel_main_idtf:[amylopectin](* <- lang_en;; *);
+=> nrel_idtf:[полисахарид](* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+Definition_of_amylopectin
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (амилопектин)](* <- lang_ru;; *);
+		[Def. (amylopectin)](* <- lang_en;; *);;
+	<= nrel_using_constants:...;;
+	
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Амилопектином называют один из основных полисахаридов, составляющих крахмал.](* <- lang_ru;; *);;
+		-> rrel_example:[Amylopectin is one of the main polysaccharides that make up starch.](* <- lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (амилопектин)](* <- lang_ru;; *);
+		[Stat. (amylopectin)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Доля амилопектина в картофельном, кукурузном, рисовом крахмале — 76—81 %.](* <- lang_ru;;*);;
+			-> rrel_example:[The share of amylopectin in potato, corn, rice starch - 76-81%.](* <- lang_en;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (амилопектин)](* <- lang_ru;; *);
+		[Pic. (amylopectin)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/amylopectin.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+
+maltose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[мальтоза](* <- lang_ru;; *);
+=> nrel_main_idtf:[maltose](* <- lang_en;; *);
+=> nrel_idtf:[солодовый сахар](* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+Definition_of_maltose
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (мальтоза)](* <- lang_ru;; *);
+		[Def. (maltose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...;;
+	
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Мальтозой называется солодовый сахар, 4-О-α-D-глюкопиранозил-D-глюкоза, природный дисахарид, состоящий из двух остатков глюкозы.](* <- lang_ru;; *);;
+		-> rrel_example:[Maltose is malted sugar, 4-O-α-D-glucopyranosyl-D-glucose, a natural disaccharide consisting of two glucose residues.](* <- lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (мальтоза)](* <- lang_ru;; *);
+		[Stat. (maltose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Расщепление мальтозы до двух остатков глюкозы происходит в результате действия фермента a-глюкозидазы, или мальтазы.](* <- lang_ru;;*);;
+			-> rrel_example:[The splitting of maltose to two glucose residues occurs as a result of the action of the enzyme a-glucosidase, or maltase.](* <- lang_en;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (мальтоза)](* <- lang_ru;; *);
+		[Pic. (maltose)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/maltose.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+
+
+lactose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[лактоза](* <- lang_ru;; *);
+=> nrel_main_idtf:[lactose](* <- lang_en;; *);
+=> nrel_idtf:[молочный сахар](* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+Definition_of_lactose
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (лактоза)](* <- lang_ru;; *);
+		[Def. (lactose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...;;
+	
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Лактозой называется  углевод группы дисахаридов, содержится в молоке и молочных продуктах. ](* <- lang_ru;; *);;
+		-> rrel_example:[Lactose is the carbohydrate of the disaccharide group found in milk and dairy products.](* <- lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (лактоза)](* <- lang_ru;; *);
+		[Stat. (lactose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Получают лактозу из молочной сыворотки. ](* <- lang_ru;;*);;
+			-> rrel_example:[Get lactose from whey.](* <- lang_en;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (лактоза)](* <- lang_ru;; *);
+		[Pic. (lactose)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/lactose.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+starch
+<- sc_node_not_relation;
+=> nrel_main_idtf:[крахмал](* <- lang_ru;; *);
+=> nrel_main_idtf:[starch](* <- lang_en;; *);
+=> nrel_idtf:[углевод](* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+Definition_of_starch
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (крахмал)](* <- lang_ru;; *);
+		[Def. (starch)](* <- lang_en;; *);;
+	<= nrel_using_constants:...;;
+	
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Крахмалом называется смесь полисахаридов амилозы и амилопектина, мономером которых является альфа-глюкоза.  ](* <- lang_ru;; *);;
+		-> rrel_example:[Starch is a mixture of amylose and amylopectin polysaccharides, monomer of which is alpha-glucose.](* <- lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (крахмал)](* <- lang_ru;; *);
+		[Stat. (starch)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Часть глюкозы, образующейся в зелёных растениях при фотосинтезе, превращается в крахмал. ](* <- lang_ru;;*);;
+			-> rrel_example:[Part of the glucose formed in green plants during photosynthesis, turns into starch.](* <- lang_en;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (крахмал)](* <- lang_ru;; *);
+		[Pic. (starch)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/starch.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+
+polysaccharide
+<- sc_node_not_relation;
+=> nrel_main_idtf:[полисахарид](* <- lang_ru;; *);
+=> nrel_main_idtf:[polysaccharide](* <- lang_en;; *);
+=> nrel_idtf:[крахмал](* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+Definition_of_polysaccharide
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (полисахарид)](* <- lang_ru;; *);
+		[Def. (polysaccharide)](* <- lang_en;; *);;
+	<= nrel_using_constants:...;;
+	
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Полисахаридом называются высокомолекулярные углеводы, полимеры моносахаридов (гликаны).](* <- lang_ru;; *);;
+		-> rrel_example:[High molecular weight carbohydrates, polymers of monosaccharides (glycans) are called polysaccharides.](* <- lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (полисахарид)](* <- lang_ru;; *);
+		[Stat. (polysaccharide)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Молекулы полисахаридов представляют собой длинные линейные или разветвлённые цепочки моносахаридных остатков, соединённых гликозидной связью. ](* <- lang_ru;;*);;
+			-> rrel_example:[Polysaccharide molecules are long linear or branched chains of monosaccharide residues linked by a glycosidic bond.](* <- lang_en;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (полисахарид)](* <- lang_ru;; *);
+		[Pic. (polysaccharide)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/polysac.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+
+
+
+biopolymer
+<- sc_node_not_relation;
+=> nrel_main_idtf:[биополимер](* <- lang_ru;; *);
+=> nrel_main_idtf:[biopolymer](* <- lang_en;; *);
+=> nrel_idtf:[полимер](* <- lang_ru;; *);
+
+
+<= nrel_subdividing:
+...
+(*	
+	=> nrel_main_idtf:[Разбиение по типу](* <- lang_ru;; *);;
+	-> regular;;
+	-> irregular;;
+*);
+
+<- rrel_key_sc_element:
+Definition_of_biopolymer
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (биополимер)](* <- lang_ru;; *);
+		[Def. (biopolymer)](* <- lang_en;; *);;
+	<= nrel_using_constants:...;;
+	
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Биополимером называется класс полимеров, встречающихся в природе в естественном виде, входящие в состав живых организмов: белки, нуклеиновые кислоты, полисахариды, лигнин. ](* <- lang_ru;; *);;
+		-> rrel_example:[Biopolymer is a class of polymers naturally occurring that are part of living organisms: proteins, nucleic acids, polysaccharides, lignin.](* <- lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (биополимер)](* <- lang_ru;; *);
+		[Stat. (biopolymer)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Биополимеры состоят из одинаковых (или схожих) звеньев — мономеров.](* <- lang_ru;;*);;
+			-> rrel_example:[Biopolymers consist of identical (or similar) units - monomers.](* <- lang_en;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+aldehyde_group
+<- sc_node_not_relation;
+=> nrel_main_idtf:[альдегидная группа](* <- lang_ru;; *);
+=> nrel_main_idtf:[aldehyde_group](* <- lang_en;; *);
+
+
+
+
+<- rrel_key_sc_element:
+Definition_of_aldehyde_group
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (альдегидная группа)](* <- lang_ru;; *);
+		[Def. (aldehyde_group)](* <- lang_en;; *);;
+	<= nrel_using_constants:...;;
+	
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Альдегидной группой называется Функциональная группа альдегидов (—CHO). ](* <- lang_ru;; *);;
+		-> rrel_example:[An aldehyde group is the functional group of aldehydes (—CHO).](* <- lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (альдегидная группа)](* <- lang_ru;; *);
+		[Stat. (aldehyde_group)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Альдегидная группа содержится во многих природных веществах, таких, как углеводы (альдозы), некоторые витамины (ретиналь, пиридоксаль).](* <- lang_ru;;*);;
+			-> rrel_example:[The aldehyde group is contained in many natural substances, such as carbohydrates (aldoses), some vitamins (retinal, pyridoxal).](* <- lang_en;;*);;
+		*);;
+*);;
+
+
+
+vitamin_C
+<- sc_node_not_relation;
+=> nrel_main_idtf:[аскорбиновая кислота](* <- lang_ru;; *);
+=> nrel_main_idtf:[vitamin_C](* <- lang_en;; *);
+
+
+
+
+<- rrel_key_sc_element:
+Definition_of_vitamin_C
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (аскорбиновая кислота)](* <- lang_ru;; *);
+		[Def. (vitamin_C)](* <- lang_en;; *);;
+	<= nrel_using_constants:...;;
+	
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Органическое соединение с формулой C6H8O6, является одним из основных веществ в человеческом рационе, которое необходимо для нормального функционирования соединительной и костной ткани. ](* <- lang_ru;; *);;
+		-> rrel_example:[Organic compound with the formula C6H8O6, is one of the main substances in the human diet, which is necessary for normal functioning of the connective and bone tissue.](* <- lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (аскорбиновая кислота)](* <- lang_ru;; *);
+		[Stat. (vitamin_C)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[По физическим свойствам аскорбиновая кислота представляет собой белый кристаллический порошок кислого вкуса. ](* <- lang_ru;;*);;
+			-> rrel_example:[According to its physical properties, ascorbic acid is a white crystalline powder with an acidic taste.](* <- lang_en;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (аскорбиновая кислота)](* <- lang_ru;; *);
+		[Pic. (vitamin_C)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/ascorb.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+lactic_acid
+<- sc_node_not_relation;
+=> nrel_main_idtf:[молочная кислота](* <- lang_ru;; *);
+=> nrel_main_idtf:[lactic_acid](* <- lang_en;; *);
+
+
+
+
+<- rrel_key_sc_element:
+Definition_of_lactic_acid
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (молочная кислота)](* <- lang_ru;; *);
+		[Def. (lactic_acid)](* <- lang_en;; *);;
+	<= nrel_using_constants:...;;
+	
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Молочной кислотой называется α-оксипропионовая (2-гидроксипропановая) кислота. ](* <- lang_ru;; *);;
+		-> rrel_example:[Lactic acid is called α-hydroxypropionic (2-hydroxypropanoic) acid.](* <- lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (молочная кислота)](* <- lang_ru;; *);
+		[Stat. (lactic_acid)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Молочная кислота формируется при распаде глюкозы.](* <- lang_ru;;*);;
+			-> rrel_example:[Lactic acid is formed by the breakdown of glucose.](* <- lang_en;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (молочная кислота)](* <- lang_ru;; *);
+		[Pic. (lactic_acid)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/milk.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+

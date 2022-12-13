@@ -1,0 +1,125 @@
+chlorosulfonated_polyethylene<-sc_node_not_relation;;
+chlorosulfonated_polyethylene=> nrel_main_idtf:[хлорсульфированный полиэтилен](* <- lang_ru;; *);;
+chlorosulfonated_polyethylene=> nrel_main_idtf:[chlorosulfonated_polyethylene](* <- lang_en;; *);;
+chlorosulfonated_polyethylene=> nrel_idtf:[ chlorosulfonated polyethylene​](* <- lang_en;; *);;
+chlorosulfonated_polyethylene=> nrel_idtf:[(C7H13CI)12-CH-SO2CI](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: chlorosulfonated_polyethylene;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Хлорсульфированный полиэтилен (ХСП) является вторичным 
+	<b><sc_element sys_idtf="polyethylene">полиэтиленом</b></sc_element>, 
+	который получают в ходе обработки <b><sc_element sys_idtf="polyethylene">полиэтилена</b></sc_element>
+	 с помощью сернистого ангидрида в присутствии 
+	 <b><sc_element sys_idtf="chloride">хлора</b></sc_element>. ]
+	  
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (хлорсульфированный полиэтилен)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+			chloride;
+		polymer
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: chlorosulfonated_polyethylene;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Материал имеет каучукоподобные физико-технические свойства, 
+	пригоден для использования на 
+	обычных промышленных мешалках для <b><sc_element sys_idtf="rubber">резин</b></sc_element>, растворяется 
+	в массе  <b><sc_element sys_idtf="rubber">каучука</b></sc_element> и увеличивает ее объем..]
+	 
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(хлорсульфированный полиэтилен,пригоден для использования на промышленных мешалках)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		rubber
+		};;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:chlorosulfonated_polyethylene;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[хлорсульфированный полиэтилен — 
+	отличается высокой устойчивостью к термическим и химическим воздействиям, 
+	не разрушается <b><sc_element sys_idtf="acid">кислотами</b></sc_element> и щелочами, однако растворяется в 
+	<b><sc_element sys_idtf="acetic_acid">уксусной кислоте</b></sc_element>, а также некоторых углеводородах. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(хлорсульфированный полиэтилен,высоко устойчивое вещество)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		acetic_acid;
+		acid
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:chlorosulfonated_polyethylene;;
+	<= nrel_sc_text_translation: ...(*->"file://image/chlorosulfonated_polyethylene_formula.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(хлорсульфированный полиэтилен,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:chlorosulfonated_polyethylene;;
+	<= nrel_sc_text_translation: ...(*->"file://image/chlorosulfonated_polyethylene_3d.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(хлорсульфированный полиэтилен, кристалы)](*<- lang_ru;;*);;
+*);;
+
+
+thermosetting_polymer=>nrel_inclusion:chlorosulfonated_polyethylene;;
+hetero_chain_polymer=>nrel_inclusion:chlorosulfonated_polyethylene;;
+artificial_polymers=>nrel_inclusion:chlorosulfonated_polyethylene;;
+polycondensation_polymer=>nrel_inclusion:chlorosulfonated_polyethylene;;
+
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> chlorosulfonated_polyethylene;;
+	=> rrel_mol: [170000]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->chlorosulfonated_polyethylene;;
+	=> rrel_degree_celsius: 400
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->chlorosulfonated_polyethylene;;
+	=> rrel_joule_per_kelvin_and_mole: 0.9
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+

@@ -1,0 +1,33 @@
+galvanic_cell
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[гальванический элемент](*<-lang_ru;;*);
+     [galvanic cell](*<-lang_en;;*);;
+
+galvanic_cell
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(гальванический элемент)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b>Гальвани́ческий элеме́нт</b> — химический источник электрического тока, основанный на взаимодействии двух <sc_element sys_idtf="metal">металлов</sc_element> и/или их <sc_element sys_idtf="oxide">оксидов</sc_element> в <sc_element sys_idtf="electrolyte">электролите</sc_element>, приводящем к возникновению в замкнутой цепи электрического тока.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: electrolyte; metal; oxide;;
+*);
+
+<-rrel_key_sc_element: ...
+(*
+	->statement;;
+	<-concept_assertion_of_the_defining_type;;
+	<-rrel_theorem:subject_domain_of_chemistry (*<-concept_subject_domain;;*);;
+	<=nrel_sc_text_translation: ... (* ->rrel_example:"file://html/galvanic_cell1.html" (*<-lang_ru;;*);; *);;
+	=>nrel_main_idtf: [Утв. (гальванический элемент, классификация*)](*<-lang_ru;;*);; 
+*);
+
+<-rrel_key_sc_element: ...
+(*
+	 ->rrel_key_sc_element: nrel_applying;;
+	->statement;;
+	<-concept_assertion_of_the_defining_type;;
+	<-rrel_theorem:subject_domain_of_chemistry (*<-concept_subject_domain;;*);;
+	<=nrel_sc_text_translation: ... (* ->rrel_example:"file://html/galvanic_cell2.html" (*<-lang_ru;;*);; *);;
+	=>nrel_main_idtf: [Утв. (гальванический элемент, применение*)](*<-lang_ru;;*);; 
+*);;

@@ -1,0 +1,24 @@
+exercise4_acid
+<- exercises_acid;
+
+-> rrel_key_sc_element: sulfuric_acid; mixture; oxide; subst_Cu; subst_Zn; sulfate; nrel_object_structure;
+
+=> nrel_next_exercise: exercise5_acid;
+
+=> nrel_main_idtf:
+	[Упражнение 4. Раздел. Предметная область кислот]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 4. Section. Subject domain of acids]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise4_acid_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise4_acid_en.html" (* <-lang_en;; *);;
+	*);;

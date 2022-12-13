@@ -1,0 +1,51 @@
+organic_polymer
+<-sc_node_not_relation;;
+
+organic_polymer=> nrel_main_idtf:[органический полимер](* <- lang_ru;; *);;
+organic_polymer=> nrel_main_idtf:[organic polymer](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: organic_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Органические полимеры  - 
+	состоят из <b><sc_element sys_idtf="monomer">мономеров</b></sc_element>.
+	Они соединяются в трехмерные структуры 
+	либо <b><sc_element sys_idtf="chain">цепи</b></sc_element>
+	разветвленной или линейной формы вследствие поликонденсации либо 
+	<b><sc_element sys_idtf="nrel_polymerization">полимеризации</b></sc_element>.]
+	
+	
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (органические полимер)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+			chain;
+			nrel_polymerization;
+		monomer
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: organic_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Многие органические полимеры отличаются хорошими электроизоляционными параметрами
+	 в обширном интервале напряжений. ]
+	 
+	 (*
+	 <-lang_ru;;
+	=>nrel_format:format_html;;
+	 *);;
+	 *);;
+	
+	=> nrel_main_idtf: [Утверждение(органические полимер)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: organic_polymer;;
+	<= nrel_sc_text_translation: ...(*->"file://image/organic_polymers.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(органические полимер)](*<- lang_ru;;*);;
+*);;

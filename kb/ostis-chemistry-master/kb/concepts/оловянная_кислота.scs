@@ -1,0 +1,45 @@
+sc_node_not_relation->tin_acid;;
+
+tin_acid=> nrel_main_idtf: [оловянная кислота](* <- lang_ru;; *);;
+tin_acid=> nrel_main_idtf: [tin acid](* <- lang_en;; *);;
+tin_acid=> nrel_idtf: [H2SnO3](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: tin_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Оловянная кислота — неорганическое соединение, двухосновная кислородсодержащая кислота с формулой H2SnO3](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (оловянная кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nonorganic_compound;
+		oxyacid;
+		dibasic_acid;
+		chemical_formula
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: tin_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Оловянную кислоту получают растворением металлического олова в горячей концентрированной азотной кислоте.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(оловянная кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		subst_Sn;
+		nitric_acid
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: tin_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/оловянная_кислота.png";;*);;
+	=> nrel_main_idtf: [Рисунок(оловянная кислота, трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+tin_acid -> tin_acid_x;;
+dibasic_acid=>nrel_inclusion:tin_acid;;
+tin_acid<=nrel_inclusion:oxyacid;;
+tin_acid<=nrel_inclusion:inorganic_acid;;
+
+tin_acid<-rrel_not_maximum_studied_object_class:subject_domain_of_acids;;

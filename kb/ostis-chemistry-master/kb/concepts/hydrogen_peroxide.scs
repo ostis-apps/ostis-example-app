@@ -1,0 +1,58 @@
+hydrogen_peroxide
+<-sc_node_not_relation;
+<-peroxide;
+=>nrel_main_idtf:
+	[пероксид водорода](*<-lang_ru;;*);
+	[hydrogen peroxide](*<-lang_en;;*);
+=>nrel_idtf:
+	[перекись водорода](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (пероксид водорода)](*<-lang_ru;;*);
+		[Def. (hydroge peroxide)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->elem_H;;
+		->elem_O;;
+		->peroxide;;
+		->liquid;;
+		->water;;
+		->no_color;;
+		->metal;;
+		->taste;;
+		->chemical_formula;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="hydrogen_peroxide">Пероксид водорода</b></sc_element> - простейший представитель <b><sc_element sys_idtf="peroxide">пероксидов</b></sc_element>; <b><sc_element sys_idtf="no_color">бесцветная</b></sc_element> <b><sc_element sys_idtf="liquid">жидкость</b></sc_element> с <b><sc_element sys_idtf="metal">металлическим</b></sc_element> <b><sc_element sys_idtf="taste">вкусом</b></sc_element>. <b><sc_element sys_idtf="chemical_formula">Химическая формула</b></sc_element> - <b><sc_element sys_idtf="elem_H">H</b></sc_element><sub>2</sub><b><sc_element sys_idtf="elem_O">O</b></sc_element><sub>2</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="hydrogen_peroxide">Hydrogen peroxide</b></sc_element> is the simplest prototype of <b><sc_element sys_idtf="peroxide">peroxides</b></sc_element>; <b><sc_element sys_idtf="no_color">colorless</b></sc_element> <b><sc_element sys_idtf="liquid">liquid</b></sc_element> with <b><sc_element sys_idtf="metal">metal</b></sc_element> <b><sc_element sys_idtf="taste">taste</b></sc_element>. <b><sc_element sys_idtf="chemical_formula">Chemical formula</b></sc_element> - <b><sc_element sys_idtf="elem_H">H</b></sc_element><sub>2</sub><b><sc_element sys_idtf="elem_O">O</b></sc_element><sub>2</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (пероксид водорода, растворитель')](*<-lang_ru;;*);
+		[Exp. (hydrogen peroxide, solvent'](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="hydrogen_peroxide">Пероксид водорода</b></sc_element> является хорошим <b><sc_element sys_idtf="rrel_solvent">растворителем</b></sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="hydrogen_peroxide">Hydrogen peroxide</b></sc_element> is a good <b><sc_element sys_idtf="rrel_solvent">solvent</b></sc_element>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (пероксид водорода)](*<-lang_ru;;*);
+		[Pic. (hydrogen peroxide)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://image/hydrogen_peroxide.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

@@ -1,0 +1,43 @@
+nrel_isobar
+<- sc_node_norole_relation;
+=>nrel_main_idtf:
+[изобары*](*<-lang_ru;;*);
+     [isobar*](*<-lang_en;;*);;
+
+nrel_isobar=>nrel_idtf:
+[быть изобарами*](*<-lang_ru;;*);;
+
+nrel_isobar 
+<- rrel_key_sc_element: ... 
+    (*
+       <- definition;;
+       =>nrel_main_idtf: [Опр.(изобары*)]  (* <- lang_ru;; *);;
+       <= nrel_sc_text_translation:... (*->rrel_example: [Изобары - нуклиды разных элементов, имеющие одинаковое массовое число.](* <- lang_ru;; =>nrel_format: format_html;; *);; *);;
+	<=nrel_using_constants: nuclide; nrel_mass_number;;
+     *);
+
+<-rrel_key_sc_element: ... 
+     (*
+        ->rrel_key_sc_element: nrel_existence;;
+        <- statement;;
+		<-concept_assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_sets (*<-concept_subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (*->rrel_example: [Существует 58 примордиальных изобарных пар.](*<-lang_ru;; =>nrel_format: format_html;;*);; *);;
+        => nrel_main_idtf: [Утв. (изобары*, существование*)] (* <- lang_ru;; *);;
+      *);
+
+<- binary_relation;
+<- non_oriented_relation;
+<- reflexive_relation;
+<- symmetric_relation;
+<- transitive_relation;
+
+=> nrel_first_domain: nuclide;
+=> nrel_second_domain: nuclide;
+=> nrel_definitional_domain:...
+(*
+    <= nrel_combination: ...
+    (* 
+        -> nuclide;;
+    *);;
+*);;

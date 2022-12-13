@@ -1,0 +1,63 @@
+oxidation_state
+<- sc_node_not_relation;
+<- parameter;
+
+=> nrel_main_idtf:
+	[степень окисления](* <- lang_ru;; *);
+	[oxidation state](* <- lang_en;; *);
+
+=> nrel_idtf:
+	[окислительное число](* <- lang_ru;; *);
+	[формальный заряд](* <- lang_ru;; *);
+	[oxidation number](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (степень окисления)](* <- lang_ru;; *);
+		[Def. (oxidation state)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<b>Степенью окисления</b> <sc_element sys_idtf  = "atom">атома</sc_element> в <sc_element sys_idtf  = "molecule">молекуле</sc_element> называется количество отданных или принятых атомом <sc_element sys_idtf  = "electron">электронов</sc_element>.]
+			(*
+				<- lang_ru;; 
+				=> nrel_format: format_html;;
+			*);
+			[<b>The degree of oxidation</b> of an <sc_element sys_idtf  = "atom">atom</sc_element> in a <sc_element sys_idtf  = "molecule">molecule</sc_element> is the number of <sc_element sys_idtf  = "electron">electrons</sc_element> given or received by an atom.]
+			(*
+				<- lang_en;; 
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> atom;;
+		-> molecule;;
+		-> electron;;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	-> rrel_key_sc_element: atom; nrel_charge; chemical_compound; ion;;
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (степень окисления, атом, заряд, соединение, ион)](*<- lang_ru;;*);
+		[Expl. (oxidation state, atom, charge, compound, ion)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[При связывании разных <sc_element sys_idtf  = "atom">атомов</sc_element> <sc_element sys_idtf  = "oxidation_state">степень окисления</sc_element> равна <sc_element sys_idtf  = "nrel_charge">заряду</sc_element>, который приобрел бы атом в этом <sc_element sys_idtf  = "chemical_compound">соединении</sc_element>, если бы оно могло состоять из одних <sc_element sys_idtf  = "ion">ионов</sc_element>.]
+			(*
+				<- lang_ru;; 
+				=> nrel_format: format_html;;
+			*);
+			[The <sc_element sys_idtf = "oxidation_state">oxidation state</sc_element> at binding of different <sc_element sys_idtf = "atom">atoms</sc_element> is equal to the <sc_element sys_idtf = "nrel_charge">charge</sc_element>, which would acquire an atom in this <sc_element sys_idtf = "chemical_compound">compound</sc_element>, if it could consist of only <sc_element sys_idtf = "ion">ions</sc_element>.]
+			(*
+				<- lang_en;; 
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+*);;

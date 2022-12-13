@@ -1,0 +1,14 @@
+section_subject_domain_of_amino_acids
+=> nrel_main_idtf: 
+	[Раздел. Предметная область аминовых кислот]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of amino acids]
+	(* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_amino_acids = [*^"file://subject_domain_of_amino_acids.scsi"*];;
+
+section_subject_domain_of_amino_acids
+-> rrel_key_sc_element: subject_domain_of_amino_acids;;

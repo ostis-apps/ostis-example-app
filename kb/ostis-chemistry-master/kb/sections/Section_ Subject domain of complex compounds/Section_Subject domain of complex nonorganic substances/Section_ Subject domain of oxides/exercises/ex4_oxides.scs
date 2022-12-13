@@ -1,0 +1,22 @@
+ex4_oxides
+<- exercises_oxides;
+
+=> nrel_next: ex5_oxides;
+
+=> nrel_main_idtf:
+	[Упражнение 4. Раздел. Предметная область оксидов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 4. Section. Subject domain of oxides]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex4_oxides_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex4_oxides_en.html" (* <-lang_en;; *);;
+	*);;

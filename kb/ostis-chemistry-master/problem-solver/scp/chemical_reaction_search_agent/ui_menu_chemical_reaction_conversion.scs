@@ -1,0 +1,20 @@
+ui_menu_meltingpoint_conversion<- ui_user_command_class_atom; ui_user_command_class_view_kb;; 
+// Указываем русский идентификатор нашей команды меню 
+ui_menu_meltingpoint_conversion =>nrel_main_idtf: [Конвертировать температуру плавления в цельсии] (* <- lang_ru;; *);; 
+// Указываем английский идентификатор нашей команды меню 
+ui_menu_meltingpoint_conversion =>nrel_main_idtf: [Convert melting temp to celsium] (* <- lang_en;; *);; 
+// Указываем шаблон нашей команды 
+ui_menu_meltingpoint_conversion =>ui_nrel_command_template: 
+ [* 
+  question_meltingpoint_conversion _-> ._question_meltingpoint_conversion_instance 
+   (* 
+    _-> ui_arg_1;;     
+   *);; 
+  ._question_meltingpoint_conversion_instance _<- question;; 
+ *];; 
+// Указываем текстовый шаблон для истории диалога на русском языке 
+ui_menu_meltingpoint_conversion =>ui_nrel_command_lang_template:  [Запрос  поиска:  $ui_arg_1] (* 
+<- lang_ru;; *);; 
+// Указываем текстовый шаблон для истории диалога на английском языке 
+ui_menu_meltingpoint_conversion  =>ui_nrel_command_lang_template:  [Search request:  $ui_arg_1] 
+(* <- lang_en;; *);;

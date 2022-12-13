@@ -1,0 +1,22 @@
+sc_node_not_relation -> impurity;;
+
+impurity => nrel_main_idtf:
+	[примесь](* <-lang_ru;; *);
+	[impurity](* <-lang_en;; *);;
+
+impurity <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: примесь] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: impurity] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[При́месь — химический элемент, перешедший в состав сплава в процессе его производства как технологическая добавка.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Impurity is a chemical element, was transformed into the alloy during its production as a processing aid.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+impurity <= nrel_using_constants:... (*->chemical_element;;*);;

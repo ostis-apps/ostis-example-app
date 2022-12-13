@@ -1,0 +1,16 @@
+electron_mass
+=> nrel_main_idtf:
+	[масса электрона](* <- lang_ru;; *);
+	[electron mass](* <- lang_en;; *);
+=> nrel_idtf:
+	[9,109 382 91(40)*10^(−31) кг](* <- lang_ru;; *);
+	[9,109 382 91(40)*10^(−31) kg](* <- lang_en;; *);
+<- value;
+<= nrel_measurement:...
+(*
+	-> rrel_10_in_minus_31_kg: ...
+	(*
+		<- number;;
+		=> nrel_main_idtf:[9,109](*<-lang_ru;; <- lang_en;;*);;
+	*);;
+*);;

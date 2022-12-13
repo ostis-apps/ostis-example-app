@@ -1,0 +1,1023 @@
+subject_domain_of_organic_bases
+    => nrel_main_idtf:[Предметная область органических оснований](* <- lang_ru;; *);
+	=> nrel_main_idtf:[Subject domain of organic bases](* <- lang_en;; *);
+<- subject_domain;
+-> rrel_maximum_studied_object_class: organic_base;
+-> rrel_not_maximum_studied_object_class:
+   nitrogenous_base;
+   nucleotides;
+   Shiff_base;
+    hydroxide_ion;   
+   Pyrimidine_base;
+   Purine_base;
+   adenine;
+   guanine;
+   cytosine;
+   thymine;
+   ribose;
+   deoxyribose;
+   uracil;;
+
+organic_base
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[органическое основание](* <-lang_ru;; *);
+	[organic base](* <-lang_en;; *);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(органическое основание)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://htmls/organic_base.html"
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->ammonia;;
+		->elem_H;;
+	*);;
+*);;
+
+nitrogenous_base
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[азотистое основание](* <-lang_ru;; *);
+	[nitrogenous base](* <-lang_en;; *);
+
+// включение и разбиение
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку структуры](* <-lang_ru;; *);;
+	->adenine;;
+    ->guanine;;
+    ->cytosine;;
+    ->thymine;;
+    ->uracil;;
+*);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(азотистое основание)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Азотистое основание - гетероциклическое органическое соединение, производное пиримидина и пурина, входящее в состав нуклеиновых кислот.]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->organic_compound;;
+		->nucleic_acid;;
+		->pyrimidine;;
+		->purine;;
+	*);;
+*);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (азотистое основание)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/nitrogenous_base.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(азотистое основание, ковалентная связь, рибоза, дезоксирибоза, N-гликозид, нуклеозид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Азотистые основания, соединяясь ковалентной связью с 1' атомом рибозы или дезоксирибозы, образуют N-гликозиды, которые называют нуклеозиды.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_covalent_bond;;
+	-> rrel_key_sc_element: ribose;;
+	-> rrel_key_sc_element: deoxyribose;;
+	-> rrel_key_sc_element: N_glycoside;;
+	-> rrel_key_sc_element: nucleoside;;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+	=>nrel_main_idtf: [Утв.(нуклеозид, нуклеотид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Нуклеозиды, в которых к 5'-гидроксильной группе сахара присоединены одна или несколько фосфатных групп, называются нуклеотидами.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nucleoside;;
+	-> rrel_key_sc_element:  nucleotide;;
+*);;
+
+hydroxide_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[гидроксид-ион](* <-lang_ru;; *);
+	[hydroxide_ion](* <-lang_en;; *);
+
+=> nrel_idtf:
+	[гидроксильный ион](* <-lang_ru;; *);
+<= nrel_inclusion:ion;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(гидроксид-ион)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Гидроксид-ион — отрицательно заряженный ион гидроксида OH−.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->ion;;
+		->hydroxide;;
+	*);;
+*);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (гидроксид-ион)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/hydroxide_ion.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(гидроксид-ион, газовая фаза, кристаллическая решётка, гидроксид, основная соль, водный раствор)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Гидроксид-ион изолированно существует в газовой фазе, находится в кристаллической решётке гидроксидов и основных солей, образуется в водных растворах в результате электролитической диссоциации воды или/и растворённых гидроксидов.](* <-lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(электролитическая диссоциация, основание, катион, металл, ион, гидроксид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[При электролитической диссоциации оснований образуются катионы металла и общие для всех оснований ионы гидроксида.](* <-lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(электролитическая диссоциация, основание, катион, металл, ион, гидроксид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[При электролитической диссоциации оснований образуются катионы металла и общие для всех оснований ионы гидроксида.](* <-lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(гидроксид-ион, замещение*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Гидроксид-ион принимает участие в реакциях бимолекулярного нуклеофильного замещения.](* <-lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(гидроксид-ион, нейтрализация*, кислота, основание)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Основной реакцией, в которой принимает участие гидроксид-ион, является реакция нейтрализации кислот и оснований.](* <-lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(кристаллическая структура, гидроксид, ионный радиус. гидросид-ион)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Рыхлая слоистая кристаллическая структура гидроксидов является следствием высокой поляризуемости и большого ионного радиуса гидроксид-аниона.](* <-lang_ru;; *);;
+	*);;
+*);;
+
+Schiff_base
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[основание Шиффа](* <-lang_ru;; *);
+	[Schiff base](* <-lang_en;; *);
+
+=> nrel_idtf:
+	[азометин](* <-lang_ru;; *);
+
+<= nrel_inclusion:imine;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(основание Шиффа)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Основание Шиффа - N-замещенные имины, органические соединения общей формулы R1R2C=NR3, в которых азот связан с арильной или алкильной группой, но не с водородом.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->organic_compound;;
+		->imine;;
+		->chemical_formula;;
+		->subst_N;;
+		->subst_H;;
+		->alkyl_group;;
+	*);;
+*);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (основание Шиффа)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/Schiff_base.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(основание Шиффа, нерастворимое масло, ИК-спектр, полоса связи, алкилиденимин, бензилиденанил, без цвета, иминогруппа, слабое основание)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Шиффовы основания — нерастворимые в воде и растворимые в органических растворителях масла или кристаллические вещества, в ИК-спектрах присутствует характеристическая полоса связи C=N при 1690—1640 см−1 у N-замещенных алкилидениминов, у бензилиденанилов — при 1631—1613 см−1. Большинство оснований Шиффа бесцветны, однако в случае участия иминогруппы в сопряженной системе могут быть окрашены (азометиновые красители). Проявляют свойства слабых оснований.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: insoluble_oil;;
+	-> rrel_key_sc_element: IR;;
+	-> rrel_key_sc_element: lane;;
+	-> rrel_key_sc_element: alkylidenimine;;
+	-> rrel_key_sc_element: benzylidene;;
+	-> rrel_key_sc_element: no_color;;
+	-> rrel_key_sc_element: imino_group;;
+	-> rrel_key_sc_element: weak_base;;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(основание Шиффа, синтез*, ароматический амин, карбонильное соединение, нуклеофильное присоединение, углерод, альдегидная группа, аминоспирт, дегидратация*, имин, эфир)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Шиффовы основания могут быть синтезированы из ароматических аминов и карбонильных соединений, реакция идет через нуклеофильное присоединение амина к углероду альдегидной группы с образованием нестойкого 1,1-аминоспирта с последующей его дегидратацией до имина. В типичной реакции, 4,4'-диаминодифенильный эфир реагирует с o-ванилином.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_synthesis;;
+	-> rrel_key_sc_element: aromatic_amine;;
+	-> rrel_key_sc_element: carbonyl_compound;;
+	-> rrel_key_sc_element: nrel_nucleophilic_addition_reaction;;
+	-> rrel_key_sc_element: subst_C;;
+	-> rrel_key_sc_element: nrel_aldehyde_group;;
+	-> rrel_key_sc_element: amino_alcohol;;
+	-> rrel_key_sc_element: nrel_dehydration;;
+	-> rrel_key_sc_element: imine;;
+	-> rrel_key_sc_element: ether;;
+*);;
+
+nucleotides
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[нуклеотид](* <-lang_ru;; *);
+	[nucleotides](* <-lang_en;; *);
+
+=> nrel_idtf:
+	[нуклеозидфосфат](* <-lang_ru;; *);
+//разбиение
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку структуры](* <-lang_ru;; *);;
+	-> ribose;;
+	-> deoxyribose;;
+*);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(нуклеотид)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Нуклеоти́ды — группа органических соединений, представляют собой фосфорные эфиры нуклеозидов.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->organic_compound;;
+		->ether;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(нуклеотид, АТФ, цАМФ, АДФ, нуклеиновая кислота)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Свободные нуклеотиды, в частности АТФ, цАМФ, АДФ, играют важную роль в энергетических и информационных внутриклеточных процессах, а также являются составляющими частями нуклеиновых кислот и многих коферментов.](* <-lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(нуклеотид, сложный эфир, нуклеозид, фосфорная кислота)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Нуклеотиды являются сложными эфирами нуклеозидов и фосфорных кислот.](* <-lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(нуклеотид, молекула, соединение, динуклеотид, тринуклеотид, олигонуклетид, полинуклеотид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Соединения, состоящие из двух нуклеотидовых молекул, называются динуклеотидами, из трёх — тринуклеотидами, из небольшого числа — олигонуклеотидами, а из многих — полинуклеотидами, или нуклеиновыми кислотами.](* <-lang_ru;; *);;
+	*);;
+*);;
+
+
+
+
+
+Pyrimidine_base
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Пиримидиновое основание](* <-lang_ru;; *);
+	[Pyrimidine base](* <-lang_en;; *);
+<-no_color;
+<-crystall;
+<= nrel_inclusion:uracil;cytosine;thymine;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Пиримидиновое основание)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Пиримидиновые основания — группа природных веществ, производные пиримидина.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->pyrimidine;;
+		->natural_substance;;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(пиримидиновое основание, растительная ткань, микроорганизм)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Пиримидиновые основания широко распространены в животных, растительных тканях и в микроорганизмах.](* <-lang_ru;; *);;
+	*);;
+*);;
+
+Purine_base
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Пуриновое основание](* <-lang_ru;; *);
+	[Purine base](* <-lang_en;; *);
+<= nrel_inclusion:adenine;guanine;caffeine;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Пуриновое основание)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Пуриновые основания — органические природные соединения, производные пурина.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->purine;;
+		->natural_substance;;
+	*);;
+*);;
+
+adenine
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[аденин](* <-lang_ru;; *);
+	[adenine](* <-lang_en;; *);
+<- crystal;
+<- no_color;
+=> nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_celsius: [360]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=> nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm: [1,6]
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (аденин, шаростержневая модель)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/adenine.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(аденин)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Аденин — азотистое основание, аминопроизводное пурина (6-аминопурин).]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->nitrogenous_base;;
+		->purine;;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(аденин, водородная связь, урацил, тимин)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Аденин образует две водородных связи с урацилом и тимином (комплементарность).](* <-lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(аденин, вода, температура*, растворимость*, спирт, эфир, кислота, щёлочь)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Плохо растворим в воде, с понижением температуры воды растворимость аденина в ней падает. Плохо растворим в спирте, в хлороформе, эфире. Растворим в кислотах и щелочах.](* <-lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(аденин, химическая формула)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Химическая формула аденина - С5H5N5](* <-lang_ru;; *);;
+	*);;
+*);;
+
+guanine
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[гуанин](* <-lang_ru;; *);
+	[guanine](* <-lang_en;; *);
+<- crystal;
+<- no_color;
+=> nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_celsius: [365]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (гуанин, шаростержневая модель)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/guanine.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(гуанин)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Гуани́н — органическое соединение, азотистое основание, аминопроизводное пурина (2-амино-6-оксопурин), является составной частью нуклеиновых кислот.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->nitrogenous_base;;
+		->purine;;
+		->nucleic_acid;;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(гуанин, раствор, HCl)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Раствор гуанина в HCl флуоресцирует.](* <-lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(гуанин, химическая формула)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Химическая формула гуанина - C5H5N5O](* <-lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(гуанин, растворимость*, вода, щелочь, эфир, спирт, кислота)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Хорошо растворим в кислотах и щелочах, плохо растворим в эфире, спирте, аммиачных и нейтральных растворах, нерастворим в воде.](* <-lang_ru;; *);;
+	*);;
+*);;
+
+cytosine
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[цитозин](* <-lang_ru;; *);
+	[cytosine](* <-lang_en;; *);
+<- crystal;
+<- no_color;
+=> nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm: [1,6]
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (цитозин, шаростержневая модель)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/cytosine.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(цитозин)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Цитозин — органическое соединение, азотистое основание, производное пиримидина.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->organic_compound;;
+		->nitrogenous_base;;
+		->pyrimidine;;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(цитозин, химическая формула)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Химическая формула цитозина - C4H5N3O](* <-lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(цитозин, репликация*, водородная связь, гуанин)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Во время репликации и транскрипции по принципу комплементарности цитозин образует три водородных связи с гуанином.](* <-lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(цитозин, химическая реакция*, щелочь, кислота, азотистая кислота, урацил)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Цитозин проявляет основные свойства, реагирует с щелочами и кислотами, реагируя с азотистой кислотой дезаминируется, превращаясь в урацил.](* <-lang_ru;; *);;
+	*);;
+*);;
+
+thymine
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[тимин](* <-lang_ru;; *);
+	[thymine](* <-lang_en;; *);
+<- solid;
+=> nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_celsius: [316]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (тимин, шаростержневая модель)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/thymine.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(тимин)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Тимин — производное пиримидина, одно из пяти азотистых оснований.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->nitrogenous_base;;
+		->pyrimidine;;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(тимин, химическая формула)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Химическая формула тимина - C5H6N2O2](* <-lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(тимин, основание, окисление*, гидантоин, организм)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Тиминовые основания часто окисляются до гидантоинов с течением времени после смерти организма.](* <-lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(тимин, аденин, водородная связь)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Тимин комплементарен аденину, образуя с ним 2 водородные связи.](* <-lang_ru;; *);;
+	*);;
+*);;
+
+uracil
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[урацил](* <-lang_ru;; *);
+	[uracil](* <-lang_en;; *);
+<- solid;
+=> nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm: [1,32]
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (урацил, шаростержневая модель)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/uracil.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(урацил, химическая формула)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Химическая формула урацил - C4H4N2O2](* <-lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(урацил)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Урацил — пиримидиновое основание, которое является компонентом рибонуклеиновых кислот и как правило отсутствует в дезоксирибонуклеиновых кислотах, входит в состав нуклеотида. ]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->Pyrimidine_base;;
+		->nucleotides;;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(урацил, нуклеиновая кислота, аденин, водородная связь)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[В составе нуклеиновых кислот урацил может комплементарно связываться с аденином, образуя две водородные связи.](* <-lang_ru;; *);;
+	*);;
+*);;
+
+ribose
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[рибоза](* <-lang_ru;; *);
+	[ribose](* <-lang_en;; *);
+<-no_color;crystal;sweet;
+=> nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm: [0,8]
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=> nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_celsius: [90]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (рибоза)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/ribose.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(рибоза)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Рибо́за — моносахарид из группы пентоз, бесцветные кристаллы, легко растворимые в воде и имеющие сладкий вкус.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->monosaccharide;;
+		->pentose;;
+		->no_color;;
+		->crystal;;
+		->sweet;;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(рибоза, химическая формула)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Химическая формула рибозы - C₅H₁₀O₅](* <-lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(рибоза, восстановление*, водород, натрия, окисление*, альдегидная группа, кислота, синтез*, озазон)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Рибоза восстанавливается водородом или амальгамой натрия до соответствующего альдита (рибита) и окисляется по альдегидной группе до соответствующей альдоновой (рибоновой) кислоты, способной циклизоваться в условиях синтеза в рибонолактон, с гидразинами образует озазоны.](* <-lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(рибоза, рибонуклеиновая кислота, нуклеотид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Рибоза в форме β-D-рибофуранозы входит в состав рибонуклеиновой кислоты, нуклеозидов, нуклеотидов и других биологических важных веществ.](* <-lang_ru;; *);;
+	*);;
+*);;
+
+deoxyribose
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[дезоксирибоза](* <-lang_ru;; *);
+	[deoxyribose](* <-lang_en;; *);
+=> nrel_idtf:
+[тиминоза](* <-lang_ru;; *);
+=> nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_celsius: [91]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(дезоксирибоза)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Дезоксирибоза — углевод, альдопентоза: моносахарид, содержащий пять атомов углерода и альдегидную группу в линейной структуре.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->carbohydrate;;
+		->monosaccharide;;
+		->elem_C;;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(дезоксирибоза, химическая формула)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Химическая формула дезоксирибозы - C5H10O4](* <-lang_ru;; *);;
+	*);;
+*);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (дезоксирибоза)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/deoxyribose.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

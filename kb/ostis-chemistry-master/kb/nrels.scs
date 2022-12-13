@@ -1,0 +1,312 @@
+nrel_color_of_the_flame_during_combustion
+	=> nrel_main_idtf: [цвет пламени во время горения] (*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_reaction_condition
+=> nrel_main_idtf:
+	[условие реакции*](* <- lang_ru;; *);
+	[reaction condition*](* <- lang_en;; *);
+<- sc_node_norole_relation;;
+
+
+nrel_interaction
+=> nrel_main_idtf:
+	[взаимодействие*](* <- lang_ru;; *);
+	[interaction*](* <- lang_en;; *);
+	<- sc_node_norole_relation;;
+
+nrel_periodic_number
+	=> nrel_main_idtf: [порядковый номер*](* <- lang_ru;; *);
+	<- sc_node_norole_relation;
+	=> nrel_first_domain: chemical_element;
+	=> nrel_second_domain: number;;
+
+nrel_color
+	=> nrel_main_idtf: [цвет*](* <- lang_ru;; *);
+	<- sc_node_norole_relation;
+	=> nrel_first_domain: color;
+	=> nrel_second_domain: chemical_element;;
+
+nrel_molar_mass
+	=> nrel_main_idtf: [молярная масса*](* <- lang_ru;; *);
+	<- sc_node_norole_relation;
+	=> nrel_first_domain: chemical_element;
+	=> nrel_second_domain: number;;
+
+nrel_density_of_gas
+  => nrel_main_idtf: [плотность газа*](* <- lang_ru;; *);
+	<- sc_node_norole_relation;
+	=> nrel_first_domain: chemical_element;
+	=> nrel_second_domain: number;;
+
+nrel_discovery_year
+	=> nrel_main_idtf: [год открытия*](* <- lang_ru;; *);
+	<- sc_node_norole_relation;
+	=> nrel_first_domain: year;
+	=> nrel_second_domain: chemical_element;;
+
+nrel_solvation
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [solvation*]
+    (*<- lang_en;;*);
+	[сольватация*]
+	(* <- lang_ru;;	*);;
+
+nrel_allotropy
+=> nrel_main_idtf:
+	[аллотропия*]
+	(* <- lang_ru;; *);
+	[allotropy*]
+	(* <- lang_en;; *);;
+
+nrel_crystallization
+=> nrel_main_idtf:
+	[кристаллизация*]
+	(* <- lang_ru;; *);
+	[crystallization*]
+	(* <- lang_en;; *);;
+
+nrel_irradiation
+	=> nrel_main_idtf:
+		[облучение*](*<- lang_ru;;*);;
+nrel_electrolysis
+	=> nrel_main_idtf:
+		[электролиз*](*<- lang_ru;;*);;
+nrel_radioactive_decay
+	=> nrel_main_idtf:
+	[радиоактивный распад*](*<- lang_ru;;*);;
+nrel_air_separation
+	=> nrel_main_idtf:
+		[разделение воздуха*](*<- lang_ru;;*);;
+nrel_sublimation
+	=> nrel_main_idtf:
+		[сублимация*](*<- lang_ru;;*);;
+
+nrel_electronegativity
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[electronegativity*](*<- lang_en;;*);
+	[электроотрицательность*](*<- lang_ru;;*);;
+
+nrel_object_structure
+	=> nrel_main_idtf:[состав*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_compound
+	=> nrel_main_idtf:[соединение*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_decomposition
+	=> nrel_main_idtf:[разложение*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_optical_activity
+	=> nrel_main_idtf: [оптическая активность*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_charge
+	=> nrel_main_idtf: [заряд*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_heating
+	=> nrel_main_idtf: [нагревание*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_sedimentation
+	=> nrel_main_idtf: [осаждение*](*<-lang_ru;;*);
+	<- chemical_process;
+	<- sc_node_norole_relation;;
+
+nrel_receiving
+	=> nrel_main_idtf: [получение*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_applying
+	=> nrel_main_idtf: [применение*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_decomposition
+	=> nrel_main_idtf: [распад*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_main_characteristics
+	=> nrel_main_idtf: [основные характеристики*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_mass
+	=> nrel_main_idtf: [масса*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_spin
+	=> nrel_main_idtf: [спин*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_gravitational_radius
+	=> nrel_main_idtf: [гравитационный радиус*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_being_in_nature
+	=> nrel_main_idtf: [нахождение в природе*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_reducing_reaction
+	=> nrel_main_idtf: [реакция восстановления*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_isotopic_modification
+	=> nrel_main_idtf: [изотопная модификация*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_being_in_body
+	=> nrel_main_idtf: [нахождение в организме*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_biological_significance
+	=> nrel_main_idtf: [биологическое значение*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_alpha_decay
+	=> nrel_main_idtf: [альфа-распад*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_boiling_temperature
+	=> nrel_main_idtf: [температура кипения*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_specific_heat_of_fusion
+	=> nrel_main_idtf: [удельная теплота плавления*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_specific_heat_of_evaporation
+	=> nrel_main_idtf: [удельная теплота испарения*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_hydrolysis
+	=> nrel_main_idtf: [гидролиз*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_decomposition_reaction
+	=> nrel_main_idtf: [реакция разложения*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_calcination
+	=> nrel_main_idtf: [прокаливание*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_molar_heat_capacity
+	=> nrel_main_idtf: [молярная теплоёмкость*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_recuperation
+	=> nrel_main_idtf: [рекуперация*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_allotropic_modification
+	=> nrel_main_idtf: [аллотропная модификация*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_covalent_radius
+	=> nrel_main_idtf: [ковалентный радиус*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_atomic_mass
+	=> nrel_main_idtf: [атомная масса*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_thermal_decomposition
+	=> nrel_main_idtf: [термическое разложение*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_ionization_energy
+	=> nrel_main_idtf: [энергия ионизации*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_molar_volume
+	=> nrel_main_idtf: [молярный объём*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_nuclear_reaction
+	=> nrel_main_idtf: [ядерная реакция*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_amount
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[объём вещества*](* <- lang_ru;; *);;
+
+nrel_N
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[количество атомов*](* <- lang_ru;; *);;
+
+nrel_next_exercise
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [next exercise*]
+    (*<- lang_en;;*);
+	[следующее упражнение*]
+	(* <- lang_ru;;	*);;
+
+nrel_exercises
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [exercises*]
+    (*<- lang_en;;*);
+	[упражнения*]
+	(* <- lang_ru;;	*);;
+
+nrel_mass_fraction
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [mass fraction*]
+    (*<- lang_en;;*);
+	[массовая доля*]
+	(* <- lang_ru;;	*);;
+
+nrel_volume_fraction
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [volume fraction*]
+    (*<- lang_en;;*);
+	[объёмная доля*]
+	(* <- lang_ru;;	*);;
+
+nrel_homogeneous_reaction
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [homogeneous reaction*]
+    (*<- lang_en;;*);
+	[гомогенная реакция*]
+	(* <- lang_ru;;	*);;
+
+nrel_heterogeneous_reaction
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [heterogeneous reaction*]
+    (*<- lang_en;;*);
+	[гетерогенная реакция*]
+	(* <- lang_ru;;	*);;
+
+nrel_exothermic_reaction
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [exothermic reaction*]
+    (*<- lang_en;;*);
+	[экзотермическая реакция*]
+	(* <- lang_ru;;	*);;
+
+nrel_endothermic_reaction
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [endothermic reaction*]
+    (*<- lang_en;;*);
+	[эндотермическая реакция*]
+	(* <- lang_ru;;	*);;
+
+nrel_irreversible_reaction
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [irreversible reaction*]
+    (*<- lang_en;;*);
+	[необратимая реакция*]
+	(* <- lang_ru;;	*);;
+
+nrel_reversible_reaction
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [reversible reaction*]
+    (*<- lang_en;;*);
+	[обратимая реакция*]
+	(* <- lang_ru;;	*);;
+
+nrel_substitution
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [substitution reaction*]
+    (*<- lang_en;;*);
+	[реакция замены*]
+	(* <- lang_ru;;	*);;

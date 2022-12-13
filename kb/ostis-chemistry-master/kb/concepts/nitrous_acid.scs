@@ -1,0 +1,74 @@
+// Лаба 2-3
+// Азотистая кислота
+nrel_form_of_existence
+  <- sc_node_norole_relation;;
+
+// Классы
+nitrous_acid 
+  <-sc_node_not_relation;
+
+// Идентификаторы
+=> nrel_main_idtf: 
+    [азотистая кислота] (* <- lang_ru;; *);
+    [nitrous acid] (* <- lang_en;; *);
+
+// Определение
+<- rrel_key_sc_element: ... (*
+  <- definition ;;
+  => nrel_main_idtf: [Определение (азотистая кислота)](*<- lang_ru;;*);;
+  => nrel_using_constants: {
+    monobasic_acid;
+    faint_acid;
+    vapour_form;
+    pale_blue_color;
+    nrel_form_of_existence;
+    diluted_solution;
+    aqueous_solution
+ };;
+  <= nrel_sc_text_translation: ...(*
+    -> [Слабая одноосновная кислота, 
+    существует только в разбавленных водных растворах, окрашенных в слабый голубой цвет, и в 
+    газовой фазе](*<-lang_ru;;*);;*);;
+*);
+
+
+// Утверждение
+<- rrel_key_sc_element: ... (*
+  <- explanation;;
+  => nrel_main_idtf: [Утверждение (химическое свойство)](*<- lang_ru;;*);;
+  => nrel_using_constants: {
+    aqueous_solution;
+    nitric_acid;
+    nrel_oxidation;
+    nrel_heating
+    };;
+  <= nrel_sc_text_translation: ...(*
+  ->[В водных растворах существует равновесие. При нагревании 
+  раствора азотистая кислота распадается с выделением NO и образованием азотной кислоты. 
+  Является слабой кислотой. Легко вытесняется более сильными кислотами из солей. Азотистая кислота проявляет как окислительные, 
+  так и восстановительные свойства. При действии более сильных окислителей окисляется в азотную 
+  кислоту. В то же время она способна окислять вещества, 
+  обладающие восстановительными свойствами.](*<-lang_ru;;*);;*);;
+*);
+
+
+// Утверждение
+<- rrel_key_sc_element: ... (*
+  <-explanation;;
+  => nrel_main_idtf: [Утверждение (физическое свойство)](*<- lang_ru;;*);;
+  => nrel_using_constants: {
+    aqueous_solution;
+    density_of_substance; //плотность
+    boiling_temperature;
+    gas;
+    solubility;
+    melting_temperature;
+    molar_mass
+    };;
+<= nrel_sc_text_translation: ...(*
+-> [В водном растворе - жидкое, в чистом виде - газ. Плотность 1,685 г/см3, температура плавления 42.35 °C, температура кипения 158 °C, растворимость в воде 548 г/100 мл, молярная масса 47.0134 г/моль.](*<-lang_ru;;*);;*);;
+*);;
+
+// Пример
+nitrous_acid -> ninrous_acid_x;;
+nitrous_acid <= nrel_inclusion: acid;;

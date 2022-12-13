@@ -1,0 +1,49 @@
+nrel_esterification
+=> nrel_main_idtf:
+	[этерификация*](* <- lang_ru;; *);
+	[esterification*](* <- lang_en;; *);
+<- sc_node_norole_relation;
+<- quasybinary_relation;
+<- oriented_relation;
+// домены
+=>nrel_second_domain: alcohol;
+=>nrel_first_domain: acid;
+=>nrel_definitional_domain:...
+(*
+	<=nrel_combination:...
+	(*
+		->acid; alcohol;;
+	*);;
+*);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(этерификация*)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://html/esterification.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->nrel_reaction; acid; alcohol; ether;;
+	*);;
+*);
+//утверждение
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(этерификация*, катализатор, сильная кислота)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Этерификацию обычно проводят в присутствии катализаторов — сильных кислот.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: catalyst;;
+	-> rrel_key_sc_element: strong_acid;;
+*);;

@@ -1,0 +1,48 @@
+dipole_moment
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[дипольный момент]
+	(* <- lang_ru;;	*);
+	[dipole moment]
+	(* <- lang_en;;	*);;
+dipole_moment
+<- rrel_key_sc_element:
+	Definition_of_dipole_moment
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/dipole_moment.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				value;
+				elementary_charge
+			};
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Дипольный момент химической связи обусловлен смещением электронного облака в сторону одного из атомов. Связь называют полярной, если соответствующий дипольный момент существенно отличается от нуля.] (* <-lang_ru;; *);;
+		*);;
+*);;
+
+
+
+Definition_of_dipole_moment
+=> nrel_main_idtf:
+	[Опр.(Дипольный момент)]
+	(* <- lang_ru;;	*);;
+
+
+
+
+
+
+

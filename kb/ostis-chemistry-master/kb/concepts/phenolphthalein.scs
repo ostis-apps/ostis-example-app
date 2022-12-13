@@ -1,0 +1,51 @@
+phenolphthalein
+<- sc_node_not_relation;
+=> nrel_main_idtf:[фенолфталеин](* <- lang_ru;; *);
+=> nrel_main_idtf:[phenolphthalein](* <- lang_en;; *);
+
+<-pH_indicator;
+
+<- rrel_key_sc_element:
+Definition_of_phenolphthalein
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (фенолфталеин)](* <- lang_ru;; *);
+		[Def. (phenolphthalein)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> pH_indicator;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="phenolphthalein">Фенолфталеин</sc_element></b> —   трифенилметановый краситель, <sc_element sys_idtf="pH_indicator">кислотно-основный индикатор</sc_element>, изменяющий окраску от бесцветной (при pH меньше 8,2) до красно-фиолетовой, «малиновой» (в щелочной); но в концентрированной щелочи — вновь бесцветен. ](* <- lang_ru;;
+		     => nrel_format: format_html;; *);;
+		-> rrel_example:[<b> <sc_element sys_idtf = "phenolphthalein"> Phenolphthalein </ sc_element> </ b> is a triphenylmethane dye, <sc_element sys_idtf = "pH_indicator"> an acid-base indicator </ sc_element> that changes the color from the hint color, amethystine, to red-violet, “raspberry” (in alkaline); but in concentrated alkali - again colorless.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element: nrel_applying;;
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (фенолфталеин, применение*)](* <- lang_ru;; *);
+		[Stat. (phenolphthalein, applying*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Применяется в аналитической химии при титровании водных растворов (используют раствор в этаноле).](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Used in analytical chemistry for the titration of aqueous solutions (using a solution in ethanol).](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (фенолфталеин)](* <- lang_ru;; *);
+		[Pic. (phenolphthalein)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/phenolphthalein.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;

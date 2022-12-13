@@ -1,0 +1,17 @@
+/*
+format_electronLayer_json
+<- sc_node_not_relation;
+<- format;
+=> nrel_main_idtf: 
+	[формат компонента ПИ (json) - внешний электронный слой] 
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf: 
+	[format of atom's external electron layer UI component (json)] 
+	(* 
+	<- lang_en;;
+	*);
+=> nrel_mimetype:
+	[application/json];;
+	*/

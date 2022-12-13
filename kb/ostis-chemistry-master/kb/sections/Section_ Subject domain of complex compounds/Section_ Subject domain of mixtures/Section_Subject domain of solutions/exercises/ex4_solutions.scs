@@ -1,0 +1,24 @@
+ex4_solutions
+<- exercises_solutions;
+
+-> rrel_key_sc_element: potassium_chloride; solution; nitrate; subst_Ag;
+
+=> nrel_next_exercise: ex5_solutions;
+
+=> nrel_main_idtf:
+	[Упражнение 4. Раздел. Предметная область растворов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 4. Section. Subject domain of solutions]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex4_solutions_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex4_solutions_en.html" (* <-lang_en;; *);;
+	*);;

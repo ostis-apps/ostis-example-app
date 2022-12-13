@@ -1,0 +1,552 @@
+subject_domain_of_alkynes
+	=> nrel_main_idtf:
+	[Предметная область алкинов]
+	(* <- lang_ru;; *);
+	[Subject domain of alkynes]
+	(* <- lang_en;; *);
+		
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: alkyne;
+
+-> rrel_not_maximum_studied_object_class:
+	ethyne;
+	propyne;
+	butyne;
+	pentine;
+	hexine;
+	heptine;
+	oktin;
+	nonine;
+	cycloalkyne;
+	decin;;
+subject_domain_of_alkynes <= nrel_sc_text_translation: ...
+		(* 
+		-> rrel_example: "file://html/section_alkynes.html" (* <-lang_ru;; *);;
+		*);;
+
+
+
+ethyne
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[этин]
+	(* <- lang_ru;; *);
+	[ethyne]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[ацетилен]
+	(* <- lang_ru;; *);
+	[acetylene]
+	(* <- lang_en;; *);
+
+<- gas;
+<- no_color;
+<- strong_smell;
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [26,038] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [192,35] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*); 
+
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [189,55] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (этин, получение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> [<ul><li>В лаборатории<br>
+В лаборатории, а также в газосварочном оборудовании, ацетилен получают действием воды на карбид кальция(Ф. Вёлер, 1862 год),а также при дегидрировании двух молекул метана при температуре свыше 1400 °C
+<li>В промышленности<br>
+В промышленности ацетилен получают гидролизом карбида кальция и пиролизом углеводородного сырья — метана или пропана с бутаном. В последнем случае ацетилен получают совместно с этиленом и примесями других углеводородов. Карбидный метод позволяет получать очень чистый ацетилен, но требует высокого расхода электроэнергии. Пиролиз существенно менее энергозатратен, т.к. для нагрева реактора используется сгорание того же рабочего газа во внешнем контуре, но в газовом потоке продуктов концентрация самого ацетилена низка. Выделение и концентрирование индивидуального ацетилена в таком случае представляет сложную задачу. Экономические оценки обоих методов многочисленны, но противоречивы.
+<li>Получение пиролизом
+<li>Электрокрекинг <br>
+Метан превращают в ацетилен и водород в электродуговых печах (температура 2000—3000 °С, напряжение между электродами 1000 В). Метан при этом разогревается до 1600 °С. Расход электроэнергии составляет около 13000 кВт•ч на 1 тонну ацетилена, что относительно много (примерно равно затрачиваемой энергии по карбидному методу) и потому является недостатком процесса. Выход ацетилена составляет 50 %.
+<li>Регенеративный пиролиз
+<br>
+Иное название — Вульф-процесс. Сначала разогревают насадку печи путём сжигания метана при 1350—1400 °С. Далее через разогретую насадку пропускают метан. Время пребывания метана в зоне реакции очень мало и составляет доли секунды. Процесс реализован в промышленности, но экономически оказался не таким перспективным, как считалось на стадии проектирования.
+<li>Окислительный пиролиз
+<br>
+Метан смешивают с кислородом. Часть сырья сжигают, а образующееся тепло расходуют на нагрев остатка сырья до 1600 °С. Выход ацетилена составляет 30—32 %. Метод имеет преимущества — непрерывный характер процесса и низкие энергозатраты. Кроме того, с ацетиленом образуется еще и синтез-газ. Этот процесс (Заксе-процесс или BASF-процесс) получил наиболее широкое внедрение.
+<li>Гомогенный пиролиз
+<br>
+Является разновидностью окислительного пиролиза. Часть сырья сжигают с кислородом в топке печи, газ нагревается до 2000 °С. Затем в среднюю часть печи вводят остаток сырья, предварительно нагретый до 600 °С. Образуется ацетилен. Метод характеризуется большей безопасностью и надёжностью работы печи.
+<li>Пиролиз в струе низкотемпературной плазмы
+<br>
+Процесс разрабатывается с 1970-х годов, но, несмотря на перспективность, пока не внедрён в промышленности. Сущность процесса состоит в нагреве метана ионизированным газом. Преимущество метода заключается в относительно низких энергозатратах (5000—7000 кВт•ч) и высоких выходах ацетилена (87 % в аргоновой плазме и 73 % в водородной).
+]
+		(* 
+		<-lang_ru;;
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: ...
+(* 
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(этин)](*<-lang_ru;;*);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="ethyne">Ацетиле́н</sc_element></b> (по ИЮПАК — этин) — органическое соединение, непредельный углеводород <b>С<sub>2</sub>Н<sub>2</sub></b>] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;	
+*);
+
+
+->rrel_key_sc_element: ...
+(*
+	=>nrel_main_idtf: [Утв. (этин, применение*](*<-lang_ru;;*);;
+	->rrel_key_sc_element: nrel_applying;;
+	<= nrel_sc_text_translation:...(*->rrel_example: [
+Ацетилен используют:
+<br>
+<ul>
+<li>для газовой сварки и резки металлов,
+<li>как источник очень яркого, белого света в автономных светильниках, где он получается реакцией карбида кальция и воды (см. карбидная лампа),
+<li>в производстве взрывчатых веществ (см. ацетилениды),
+<li>для получения уксусной кислоты, этилового спирта, растворителей, пластических масс, каучука, ароматических углеводородов.
+<li>для получения технического углерода
+<li>в атомно-абсорбционной спектрофотометрии при пламенной атомизации
+<li>в ракетных двигателях (вместе с аммиаком)
+](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+*);;
+
+
+propyne
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[пропин]
+	(* <- lang_ru;; *);
+	[propyne]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[аллилен]
+	(* <- lang_ru;; *);
+	[allylene]
+	(* <- lang_en;; *);
+
+=>nrel_isomer: propadiene;
+
+<- gas;
+<- no_color;
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [40,06] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [0,6925] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [170,45] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*); 
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [249,94] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(пропин)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b><sc_element sys_idtf="propyne">Пропи́н</sc_element></b> алкин с формулой CH<sub>3</sub>-C≡CH. ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: gas;;
+*);
+
+<-rrel_key_sc_element: ...
+(*
+	<-statement;;
+	<-rrel_key_sc_element: nrel_receiving;;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [ 
+В промышленности пропин получается при гидролизе карбида магния и как побочный продукт при производстве ацетилена.
+<br>
+Mg<sub>2</sub>C<sub>3</sub>+4H<sub>2</sub>O = C<sub>3</sub>H<sub>4</sub> + 2Mg(OH)<sub>2</sub>
+<br>
+Аллилен получается действием спиртового раствора гидроксида калия при нагревании на 1,2-дибромпропан CH<sub>3</sub>CHBr—CH<sub>2</sub>Br.
+](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (пропин, получение*)](*<-lang_ru;;*);; 
+*);;
+
+
+
+butyne
+
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[бутин]
+	(* <- lang_ru;; *);
+	[butyne]
+	(* <- lang_en;; *);
+
+=>nrel_isomer: butyn_2; butadiene_1_3; cyclobutene;
+
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [54,09] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [147,25] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*); 
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [281,25] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(бутин)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b><sc_element sys_idtf="butyne">Бутин</sc_element></b> — алкин (непредельный ацетиленовый углеводород), имеет формулу С<sub>4</sub>Н<sub>6</sub>. ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: alkyne;;
+*);
+
+<-rrel_key_sc_element: ...
+(*
+	<-statement;;
+	<-rrel_key_sc_element: nrel_receiving;;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [Бутин-2 можно получить из 2,3-дибромбутана нагреванием со спиртовым раствором щелочи. ] (*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (бутин, получение*)](*<-lang_ru;;*);; 
+*);;
+
+
+pentine
+
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[пентин]
+	(* <- lang_ru;; *);
+	[pentine]
+	(* <- lang_en;; *);
+
+=>nrel_isomer: pentin_2; pentin_3; pentin_4; 3_methylbutyn_1; pentadien_1_4;
+
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [68] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(пентин)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b><sc_element sys_idtf="pentine">Пентин</sc_element></b> — алкин (непредельный ацетиленовый углеводород), имеет формулу С<sub>5</sub>Н<sub>8</sub>. ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: alkyne;;
+*);;
+
+
+hexin
+
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[гексин]
+	(* <- lang_ru;; *);
+	[hexin]
+	(* <- lang_en;; *);
+
+=>nrel_isomer: hexin_2; hexin_3; 3_methylpentin_1; 4_methylpentin_1; 4_methylpentin_2;
+
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [82] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(гексин)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b><sc_element sys_idtf="hexin">Гексин</sc_element></b> — алкин (непредельный ацетиленовый углеводород), имеет формулу С<sub>6</sub>Н<sub>10</sub>. ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: alkyne;;
+*);;
+
+
+
+heptine
+
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[гептин]
+	(* <- lang_ru;; *);
+	[heptine]
+	(* <- lang_en;; *);
+
+=>nrel_isomer: heptin_2; heptin_3; 3_methylhexyn_1; 4_methylhexyn_1; 5_methylhexyn_1; 3_3_dimethylpentyn_1; 3_4_dimethylpentyn_1;
+
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [96] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(гептин)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b><sc_element sys_idtf="heptine">Гептин</sc_element></b> — алкин (непредельный ацетиленовый углеводород), имеет формулу С<sub>7</sub>Н<sub>12</sub>. ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: alkyne;;
+*);;
+
+
+octin
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[октин]
+	(* <- lang_ru;; *);
+	[oсtin]
+	(* <- lang_en;; *);
+
+=>nrel_isomer: octin_2; octin_3; 3_methylheptin_1; 4_methylheptin_2; 5_methylheptin_3; 3_3_dimethylhexyn_1; 4_4_dimethylhexyne_2; 2_2_dimethylhexyn_3;
+
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [110] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+ 
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(октин)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b><sc_element sys_idtf="oсtin">Октин</sc_element></b> — алкин (непредельный ацетиленовый углеводород), имеет формулу С<sub>8</sub>Н<sub>14</sub>. ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: alkyne;;
+*);;
+
+
+nonin
+
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[нонин]
+	(* <- lang_ru;; *);
+	[nonin]
+	(* <- lang_en;; *);
+
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [124] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(нонин)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b><sc_element sys_idtf="nonine">Нонин</sc_element></b> — алкин (непредельный ацетиленовый углеводород), имеет формулу С<sub>9</sub>Н<sub>16</sub>. ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: alkyne;;
+*);;
+
+
+
+decin
+
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[децин]
+	(* <- lang_ru;; *);
+	[decin]
+	(* <- lang_en;; *);
+
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [138] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(децин)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b><sc_element sys_idtf="decin">Децин</sc_element></b> — алкин (непредельный ацетиленовый углеводород), имеет формулу С<sub>10</sub>Н<sub>18</sub>. ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: alkyne;;
+*);;
+
+
+cycloalkyne
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[циклоалкин]
+	(* <- lang_ru;; *);
+	[cycloalkyne]
+	(* <- lang_en;; *);
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(циклоалкин)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b><sc_element sys_idtf="cycloalkyne">Циклоалкины</sc_element></b> —  углеводороды, содержащие замкнутое кольцо <sc_element sys_idtf="elem_C">атомов углерода</sc_element>, но не являющиеся ароматическими.  ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: elem_C;;
+*);;
+
+
+alkyne
+
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[алкин]
+	(* <- lang_ru;; *);
+	[alkyne]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[ацетиленовый углеводород]
+	(* <- lang_ru;; *);
+	[acetylenic hydrocarbon]
+	(* <- lang_en;; *);
+<-chemical_substance;
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(алкин)](*<-lang_ru;;*);;
+	<=nrel_using_constants: elem_C;;
+	<= nrel_sc_text_translation: ... (*->rrel_example: [<b><sc_element sys_idtf="alkyne">Алки́ны</sc_element></b> —  углеводороды, содержащие тройную связь между атомами углерода, образующие гомологический ряд с общей формулой C<sub>n</sub>H<sub>2n-2</sub>.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+*);;
+
+alkyne -> ethyne; propyne; butyne; pentine; hexin; heptine; octin; nonin; decin;;

@@ -1,0 +1,68 @@
+subst_Es
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[einsteinium (substance)](*<- lang_en;;*);
+	[эйнштейний (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Es (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (эйнштейний (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Эйнштейний (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - радиоактивный, серебристый <sc_element sys_idtf = "metal">металл</sc_element>.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> metal;;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (эйнштейний (вещество), радиоактивный, серебристый металл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Einsteinium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:860 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (эйнштейний (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы эйнштейния:  <sup>243</sup>Es, <sup>244</sup>Es, <sup>245</sup>Es, <sup>246</sup>Es, <sup>247</sup>Es, <sup>248</sup>Es, <sup>249</sup>Es, <sup>250</sup>Es, <sup>251</sup>Es, <sup>252</sup>Es, <sup>253</sup>Es, <sup>254</sup>Es, <sup>255</sup>Es, <sup>256</sup>Es] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

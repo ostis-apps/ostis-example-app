@@ -1,0 +1,374 @@
+nrel_structural_isomerism
+<-sc_node_norole_relation;
+=>nrel_main_idtf:
+[структурный изомер*](* <-lang_ru;;*);
+    [structural isomer*](* <-lang_en;;*);;
+
+nrel_spatial_isomerism
+<-sc_node_norole_relation;
+=>nrel_main_idtf:
+[пространственный изомер*](* <-lang_ru;;*);
+    [spatial isomer*](* <-lang_en;;*);;
+
+nrel_isomerization
+<-sc_node_norole_relation;
+=>nrel_main_idtf:
+[изомеризация*](* <-lang_ru;;*);
+    [isomerization*](* <-lang_en;;*);;
+
+isobutane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[изобутан](* <-lang_ru;;*);
+    [isobutane](* <-lang_en;;*);;
+
+n_butane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[н-бутан](* <-lang_ru;;*);
+    [n-butane](* <-lang_en;;*);;
+
+n_pentane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[н-пентан](* <-lang_ru;;*);
+    [n-pentane](* <-lang_en;;*);;
+
+2_metil_butane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2-метилбутан](* <-lang_ru;;*);
+    [2-metilbutane](* <-lang_en;;*);
+
+=>nrel_idtf:[isopentane](* <-lang_en;;*);
+    [изопентан](* <-lang_ru;;*);;
+
+2_2_dimetil_propane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,2-диметилпропан](* <-lang_ru;;*);
+    [2,2-dimetilpropane](* <-lang_en;;*);
+
+=>nrel_idtf:[neopentane](* <-lang_en;;*);
+    [неопентан](* <-lang_ru;;*);;
+
+n_hexane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[н-гексан](* <-lang_ru;;*);
+    [n-hexane](* <-lang_en;;*);;
+
+2_metil_pentane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2-метилпентан](* <-lang_ru;;*);
+    [2-metilpentane](* <-lang_en;;*);
+=>nrel_idtf:[isohaxane](* <-lang_en;;*);
+    [изогексан](* <-lang_ru;;*);;
+
+3_metil_pentane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[3-метилпентан](* <-lang_ru;;*);
+    [3-metilpentane](* <-lang_en;;*);;
+
+2_3_dimetil_butane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,3-диметилбутан](* <-lang_ru;;*);
+    [2,3-dimetilbutane](* <-lang_en;;*);;
+
+2_2_dimetil_butane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,2-диметилбутан](* <-lang_ru;;*);
+    [2,2-dimetilbutane](* <-lang_en;;*);;
+
+n_heptane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[н-гептан](* <-lang_ru;;*);
+    [n-heptane](* <-lang_en;;*);;
+
+2_metil_hexane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2-метилгексан](* <-lang_ru;;*);
+    [2-metilhexane](* <-lang_en;;*);;
+
+3_metil_hexane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[3-метилгексан](* <-lang_ru;;*);
+    [3-metilhexane](* <-lang_en;;*);;
+
+2_3_dimetil_pentane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,3-диметилпентан](* <-lang_ru;;*);
+    [2,3-dimetilpentane](* <-lang_en;;*);;
+
+2_4_dimetil_pentane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,4-диметилпентан](* <-lang_ru;;*);
+    [2,4-dimetilpentane](* <-lang_en;;*);;
+
+3_3_dimetil_pentane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[3,3-диметилпентан](* <-lang_ru;;*);
+    [3,3-dimetilpentane](* <-lang_en;;*);;
+
+3_etil_pentane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[3-этилпентан](* <-lang_ru;;*);
+    [3-etilpentane](* <-lang_en;;*);;
+
+2_2_3_trimetil_butane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,2,3-триметилбутан](* <-lang_ru;;*);
+    [2,2,3-trimetilbutane](* <-lang_en;;*);;
+
+3_metil_hexane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[3-метилгексан](* <-lang_ru;;*);
+    [3-metilhexane](* <-lang_en;;*);;
+
+n_octane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[н-октан](* <-lang_ru;;*);
+    [n-octane](* <-lang_en;;*);;
+
+2_metil_heptane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2-метилгептан](* <-lang_ru;;*);
+    [2-metilheptane](* <-lang_en;;*);;
+
+3_metil_heptane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[3-метилгептан](* <-lang_ru;;*);
+    [2-metilheptane](* <-lang_en;;*);;
+
+4_metil_heptane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[4-метилгептан](* <-lang_ru;;*);
+    [4-metilheptane](* <-lang_en;;*);;
+
+3_etil_hexane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[3-этилгексан](* <-lang_ru;;*);
+    [3-etilhexane](* <-lang_en;;*);;
+
+2_2_dimetil_hexane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,2-диметилгексан](* <-lang_ru;;*);
+    [2,2-dimetilhexane](* <-lang_en;;*);;
+
+2_3_dimetil_hexane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,3-диметилгексан](* <-lang_ru;;*);
+    [2,3-dimetilhexane](* <-lang_en;;*);;
+
+2_4_dimetil_haxane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,4-диметилгексан](* <-lang_ru;;*);
+    [2,4-dimetilhexane](* <-lang_en;;*);;
+
+2_5_dimetil_hexane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,5-диметилгексан](* <-lang_ru;;*);
+    [2,5-dimetilhexane](* <-lang_en;;*);;
+
+3_3_dimetil_hexane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[3,3-диметилгексан](* <-lang_ru;;*);
+    [3,3-dimetilhexane](* <-lang_en;;*);;
+
+3_4_dimetil_hexane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[3,4-диметилгексан](* <-lang_ru;;*);
+    [3,4-dimetilhexane](* <-lang_en;;*);;
+
+2_metil_3_etil_pentane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2-метил-3-этилпентан](* <-lang_ru;;*);
+    [2-metil-3-etilpentane](* <-lang_en;;*);;
+
+3_metil_3_etil_pentane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[3-метил-3-этилпентан](* <-lang_ru;;*);
+    [3-metil-3-etilpentane](* <-lang_en;;*);;
+
+2_2_3_trimetil_pentane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,2,3-триметилпентан](* <-lang_ru;;*);
+    [2,2,3-trimetilpentane](* <-lang_en;;*);;
+
+2_2_4_trimetil_pentane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,2,4-триметилпентан](* <-lang_ru;;*);
+    [2,2,-trimetilpentane](* <-lang_en;;*);;
+
+2_3_3_trimetil_pentane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,3,3-триметилпентан](* <-lang_ru;;*);
+    [2,3,3-trimetilpentane](* <-lang_en;;*);;
+
+2_3_4_trimetil_pentane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,3,4-триметилпентан](* <-lang_ru;;*);
+    [2,3,4-trimetilpentane](* <-lang_en;;*);;
+
+2_2_3_3_tetrametil_butane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,2,3,3-тетраметилбутан](* <-lang_ru;;*);
+    [2,2,3,3-tetrametilbutane](* <-lang_en;;*);;
+
+n_nonane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[н-нонан](* <-lang_ru;;*);
+    [n-nonane](* <-lang_en;;*);;
+
+2_metil_octane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2-метилоктан ](* <-lang_ru;;*);
+    [2-metiloctane](* <-lang_en;;*);;
+
+2_2_dimetil_heptane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,2-диметилгептан](* <-lang_ru;;*);
+    [2,2-dimetilheptane](* <-lang_en;;*);;
+
+2_6_dimetil_heptane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,6-диметилгептан](* <-lang_ru;;*);
+    [2,6-dimetilheptane](* <-lang_en;;*);;
+
+3_3_dimetil_heptane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[3,3-диметилгептан](* <-lang_ru;;*);
+    [3,3-dimetilheptane](* <-lang_en;;*);;
+
+3_5_dimetil_heptane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[3,5-диметилгептан](* <-lang_ru;;*);
+    [3,5-dimetilheptane](* <-lang_en;;*);;
+
+4_4_dimetil_heptane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[4,4-диметилгептан](* <-lang_ru;;*);
+    [4,4-dimetilheptane](* <-lang_en;;*);;
+
+2_metil_3_etil_hexane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2-метил-3-этилгексан](* <-lang_ru;;*);
+    [2-metil-3-etilhexane](* <-lang_en;;*);;
+
+4_metil_4_etil_hexane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[4-метил-4-этилгексан](* <-lang_ru;;*);
+    [4-metil-4-etilhexane](* <-lang_en;;*);;
+
+2_2_3_trimetil_hexane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,2,3-триметилгексан](* <-lang_ru;;*);
+    [2,2,3-trimetilhexane](* <-lang_en;;*);;
+
+3_3_4_trimetil_hexane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[3,3,4-триметилгексан](* <-lang_ru;;*);
+    [3,3,4-trimetilhexane](* <-lang_en;;*);;
+
+2_3_3_4_tetrametil_heptane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,3,3,4-тетраметилпентан ](* <-lang_ru;;*);
+    [2,3,3,4-tetrametilheptane ](* <-lang_en;;*);;
+
+n_decane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[н-декан](* <-lang_ru;;*);
+    [n-decane](* <-lang_en;;*);;
+
+2_5_dimetil_octane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,5-диметилоктан](* <-lang_ru;;*);
+    [2,5-dimetiloctane](* <-lang_en;;*);;
+
+4_metil_nonane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[4-метилнонан](* <-lang_ru;;*);
+    [4-metilnonane](* <-lang_en;;*);;
+
+3_metil_2_etil_heptane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[3-метил-2-этилгептан](* <-lang_ru;;*);
+    [3-metil-2-etilheptane](* <-lang_en;;*);;
+
+3_isopropil_2_metil_hexane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[3-изопропил-2-метилгексан](* <-lang_ru;;*);
+    [3-isopropil-2-metilhexane](* <-lang_en;;*);;
+
+2_5_5_trimetil_heptane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,2,5-триметилгептан](* <-lang_ru;;*);
+    [2,5,5-trimetilheptane](* <-lang_en;;*);;
+
+2_2_dimetil_3_etil_hexane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,2-диметил-3-этилгексан](* <-lang_ru;;*);
+    [2,2-dimetil-3-etilhexane](* <-lang_en;;*);;
+
+2_2_4_5_tetrametil_hexane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,2,4,5-тетраметилгексан](* <-lang_ru;;*);
+    [2,2,4,5-tetrametilhexane](* <-lang_en;;*);;
+
+2_2_3_4_4_pentametil_pentane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[2,2,3,4,4-пентаметилпентан](* <-lang_ru;;*);
+    [2,2,3,4,4-pentametilpentane](* <-lang_en;;*);;
+

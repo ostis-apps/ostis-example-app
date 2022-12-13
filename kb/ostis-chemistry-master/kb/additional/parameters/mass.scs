@@ -1,0 +1,144 @@
+mass 
+=> nrel_main_idtf: 
+	[масса](* <- lang_ru;; *);
+	[mass](* <- lang_en;; *);
+<- sc_node_not_relation;
+<- parameter;;
+
+mass
+-> gram;miligram;kilogram;tonne;centner;carat;stone_weight;pound;ounce;short_ton;pood;;
+
+gram 
+=> nrel_main_idtf: 
+	[грам](* <- lang_ru;; *);
+	[gram](* <- lang_en;; *);
+=> nrel_idtf: 
+	[г](* <- lang_ru;; *);
+<- sc_node_not_relation;;
+
+gram_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: gram;;
+
+milligram 
+=> nrel_main_idtf: 
+	[миллиграмм](* <- lang_ru;; *);
+	[milligram](* <- lang_en;; *);
+=> nrel_idtf: 
+	[мг](* <- lang_ru;; *);
+	[mg](* <- lang_en;; *);
+<- sc_node_not_relation;;
+
+milligram_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: milligram;;
+
+kilogram 
+=> nrel_main_idtf: 
+	[милиграмм](* <- lang_ru;; *);
+	[kilogram](* <- lang_en;; *);
+=> nrel_idtf: 
+	[кг](* <- lang_ru;; *);
+	[kg](* <- lang_en;; *);
+<- sc_node_not_relation;;
+
+kilogram_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: kilogram;;
+
+tonne 
+=> nrel_main_idtf: 
+	[тонна](* <- lang_ru;; *);
+	[tonne](* <- lang_en;; *);
+<- sc_node_not_relation;;
+
+tonne_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: tonne;;
+
+centner 
+=> nrel_main_idtf: 
+	[центнер](* <- lang_ru;; *);
+	[centner](* <- lang_en;; *);
+=> nrel_idtf: 
+	[quintal](* <- lang_en;; *);
+<- sc_node_not_relation;;
+
+centner_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: centner;;
+
+carat 
+=> nrel_main_idtf: 
+	[карат](* <- lang_ru;; *);
+	[carat](* <- lang_en;; *);
+=> nrel_idtf: 
+	[ct](* <- lang_en;; *);
+<- sc_node_not_relation;;
+
+carat_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: carat;;
+
+stone_weight 
+=> nrel_main_idtf: 
+	[стоун](* <- lang_ru;; *);
+	[stone weight](* <- lang_en;; *);
+<- sc_node_not_relation;;
+
+stone_weight_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: stone_weight;;
+
+pound 
+=> nrel_main_idtf: 
+	[фунт](* <- lang_ru;; *);
+	[pound](* <- lang_en;; *);
+=> nrel_idtf: 
+	[lb](* <- lang_en;; *);
+<- sc_node_not_relation;;
+
+pound_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: pound;;
+
+ounce 
+=> nrel_main_idtf: 
+	[унция](* <- lang_ru;; *);
+	[ounce](* <- lang_en;; *);
+<- sc_node_not_relation;;
+
+ounce_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: ounce;;
+
+short_ton 
+=> nrel_main_idtf: 
+	[короткая тонна](* <- lang_ru;; *);
+	[short ton](* <- lang_en;; *);
+<- sc_node_not_relation;;
+
+short_ton_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: short_ton;;
+
+pood 
+=> nrel_main_idtf: 
+	[пуд](* <- lang_ru;; *);
+	[pood](* <- lang_en;; *);
+<- sc_node_not_relation;;
+
+pood_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: pood;;

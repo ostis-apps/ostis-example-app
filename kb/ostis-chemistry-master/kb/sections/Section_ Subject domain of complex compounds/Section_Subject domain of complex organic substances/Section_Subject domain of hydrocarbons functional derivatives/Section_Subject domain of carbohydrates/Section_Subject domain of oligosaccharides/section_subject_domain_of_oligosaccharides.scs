@@ -1,0 +1,14 @@
+section_subject_domain_of_oligosaccharides
+=> nrel_main_idtf: 
+	[Раздел. Предметная область олигосахаридов]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of oligosaccharides]
+	(* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_oligosaccharides = [*^"file://subject_domain_of_oligosaccharides.scsi"*];;
+
+section_subject_domain_of_oligosaccharides
+-> rrel_key_sc_element: subject_domain_of_oligosaccharides;;

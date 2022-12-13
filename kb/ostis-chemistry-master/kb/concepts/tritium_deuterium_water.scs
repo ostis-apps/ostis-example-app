@@ -1,0 +1,61 @@
+
+tritium_deuterium_water
+=> nrel_main_idtf:
+	[tritium deuterium water](* <-lang_en;; *);
+	[тритий-дейтериевая вода](* <- lang_ru;; *);
+=> nrel_idtf:
+        [TDO](* <-lang_en;; *);
+
+
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(тритий-дейтериевая вода)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[<b>Тритий-дейтериевая вода</b> - <sc_element sys_idtf = "water">вода</sc_element>, в <sc_element sys_idtf = "molecule">молекулах</sc_element> которой <sc_element sys_idtf = "atom">атомы</sc_element> <sc_element sys_idtf = "protie">протия</sc_element> замещены <sc_element sys_idtf = "atom">атомами</sc_element> <sc_element sys_idtf = "tritium">трития</sc_element> (тяжёлого радиоактивного <sc_element sys_idtf = "isotope">изотопа</sc_element> <sc_element sys_idtf = "hydrogen">водорода</sc_element>) и <sc_element sys_idtf = "deuterium">дейтерия</sc_element>.]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->water;;
+		->atom;;
+		->isotope;;
+		->hydrogen;;
+		->deuterium;;
+                ->protie;;
+		->tritium;;
+              
+	*);;
+*);
+
+
+//утверждения
+<- rrel_key_sc_element: statement_formula_tr_de
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(химическая формула, тритий-дейтериевая вода)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Формула тритий-дейтериевой воды обычно записывается как <b>TDO</b>.]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	-> rrel_key_sc_element: chemical_formula;;
+        -> rrel_key_sc_element: tritium_deuterium_water;;
+	<- rrel_axiom:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);;
+
+

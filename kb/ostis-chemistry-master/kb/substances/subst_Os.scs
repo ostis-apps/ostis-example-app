@@ -1,0 +1,174 @@
+subst_Os
+<- sc_node_not_relation;
+=> nrel_main_idtf: [осмий (вещество)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [osmium (substance)] (* <- lang_en;; *);
+<= nrel_inclusion: chemical_substance;
+<- rrel_key_sc_element: definition_of_subst_Os
+(* 
+	=> nrel_main_idtf: [Опр. (осмий (вещество))] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество осмий</b> - <sc_element sys_idtf  = "color_white_silver">серебристо-белый</sc_element>  блестящий твёрдый <sc_element sys_idtf  = "metal">металл</sc_element>  с голубоватым оттенком.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver;;
+		-> metal;;
+	*);;
+*);
+
+<- color_white_silver;
+
+=> nrel_being_in_nature: ...
+(*
+	-> earths_crust;;
+	-> polymetallic_ore;;
+	-> mineral;;
+*);
+
+=> nrel_receiving: ...
+(*
+	<= nrel_calcination: platinum_metal;;
+*);
+
+=> nrel_applying: ...
+(*
+	-> anti_friction_coating;;
+	-> catalyst_for_synthesis;;
+	-> catalyst_for_hydrogenation;;
+*);
+
+<- rrel_key_sc_element: interaction_os_and_oxygen
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (осмий (вещество), взаимодействие*, нагревание, кислород (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Порошок осмия при нагревании реагирует с кислородом.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_os_and_halogen
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (осмий (вещество), взаимодействие*, нагревание, галоген)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Порошок осмия при нагревании реагирует с галогенами.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_os_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (осмий (вещество), взаимодействие*, нагревание, кислота)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Порошок осмия при нагревании реагирует с кислотами.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (осмий (вещество), твёрдое тело)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_Osmium.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [22,587] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 3306 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 5285 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [31,7] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [738] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [24,7] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_volume: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_cubic_cm_per_mole:...
+		(*
+			=> nrel_main_idtf: [8,43] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;

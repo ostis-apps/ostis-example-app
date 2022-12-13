@@ -1,0 +1,53 @@
+organic_chemistry
+=>nrel_main_idtf:
+[органическая химия](* <-lang_ru;;*);
+    [organic_chemistry](* <-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->science;;
+            ->organic_chemistry;;
+            ->chemical_compound;;
+        *);;
+        => nrel_main_idtf:
+        [Опр.(органическая химия)](* <- lang_ru;; *);
+        [Def.(organic chemistry)](* <- lang_en;; *);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://html/organic_chemistry.html"(* <-lang_ru;; *);;
+        -> rrel_example: "file://html/organic_chemistry_en.html"(* <-lang_en;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    valence;
+    elem_C;
+    elem_H;
+    atom;
+    elem_N;
+    elem_O;
+    elem_S;
+    halogen;
+    elem_B;
+    elem_P;
+    chemical_element;;
+	=>nrel_main_idtf:
+	[Утв. (валентность, углерод, водород, атом, азот, кислород, сера, галоген, бор, фосфор, химический элемент)](* <-lang_ru;;*);
+	[Expl. (valence, carbon, hydrogen, atom, nitrogen, oxygen, sulfur, halogen, boron, phosphorus, chemical element)](* <-lang_en;;*);;
+	-> rrel_example: "file://html/organic_chemistry_1.html"(* <-lang_ru;; *);;
+	-> rrel_example: "file://html/organic_chemistry_1_en.html"(* <-lang_en;; *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    task;
+    compound_synthesis;;
+	=>nrel_main_idtf:
+	[Утв. (задача, синтез соединений)](* <-lang_ru;;*);
+	[Expl. (task, synthesis of compounds)](* <-lang_en;;*);;
+	-> rrel_example: "file://html/organic_chemistry_2.html"(* <-lang_ru;; *);;
+	-> rrel_example: "file://html/organic_chemistry_2_en.html"(* <-lang_en;; *);;
+*);;

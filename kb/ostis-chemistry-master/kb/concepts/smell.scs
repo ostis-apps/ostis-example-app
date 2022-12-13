@@ -1,0 +1,40 @@
+smell
+=> nrel_main_idtf:
+	[запах](* <-lang_ru;; *);
+	[smell](* <-lang_en;; *);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(запах)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Запах - специфическое ощущение присутствия в воздухе летучих пахучих веществ, обнаруживаемых рецепторами обоняния, расположенными в носовой полости животных и людей.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->air;substance;oldfactory_receptors;;
+	*);;
+*);
+//утверждение
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(сила запаха*, экология, пищевая промышленность, парфюмерия, медицина)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Оценка силы запаха важна в экологии, в объективной оценке качества пищевых продуктов, в парфюмерии, в клинических исследованих при различных видах патологии.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_odor_power;food_industry;perfumery;medicine;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);;

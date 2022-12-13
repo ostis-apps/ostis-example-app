@@ -1,0 +1,1040 @@
+subject_domain_of_aldehydes
+=> nrel_main_idtf: 
+	[Предметная область альдегидов]
+	(* <- lang_ru;;*);
+	[Subject domain of aldehydes]
+	(* <- lang_en;; *);
+
+<- subject_domain;
+-> rrel_maximum_studied_object_class: aldehyde;
+-> rrel_not_maximum_studied_object_class:
+	saturated_aldehyde;
+	unsaturated_aldehyde;
+	aromatic_aldehyde;
+	aldehyde_with_one_carbonyl_group;
+	dialdehyde;
+	polyatomic_aldehyde;
+	acetaldehyde;
+	acrolein;
+	benzaldehyde;
+	formaldehyde;
+	glyoxal;
+	citral;
+	citronellal;
+	butyraldehyde;
+	cinnamaldehyde;
+	propionaldehyde;
+	salicylic_aldehyde;
+	crotonaldehyde;
+	vanillin;
+	anise_aldehyde;;
+
+aldehyde
+	<-sc_node_not_relation;
+	=> nrel_main_idtf:[альдегид](* <- lang_ru;; *);
+	=> nrel_main_idtf:[aldehyde](* <- lang_en;; *);
+
+	<= nrel_subdividing:...
+	(*	
+		=> nrel_main_idtf:[Разбиение по признаку насыщенности углеводородного заместителя](* <- lang_ru;; *);;
+		-> saturated_aldehyde;;
+		-> unsaturated_aldehyde;;
+		-> aromatic_aldehyde;;
+	*);	
+
+	<= nrel_subdividing:...
+	(*	
+		=> nrel_main_idtf:[Разбиение по числу карбонильных групп](* <- lang_ru;; *);;
+		-> aldehyde_with_one_carbonyl_group;;
+		-> dialdehyde;;
+		-> polyatomic_aldehyde;;
+	*);
+
+	<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. (альдегид)](*<-lang_ru;;*);
+			[Def. (aldehyde)](*<-lang_en;;*);;
+		<=nrel_using_constants:...
+			(*
+				->organic_compound;;
+				->elem_C;;
+				->elem_H;;
+				->elem_O;;
+			*);;
+		
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="aldehyde">Альдегид</sc_element></b> - 
+			<sc_element sys_idtf="organic_compound">органическое соединение</sc_element>,
+			содержащее альдегидную группу 
+			(-<sc_element sys_idtf="elem_C">C</sc_element>
+			<sc_element sys_idtf="elem_H">H</sc_element>
+			<sc_element sys_idtf="elem_O">O</sc_element>)](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+			-> rrel_example:[<b><sc_element sys_idtf="aldehyde">Aldehyde</sc_element></b> is 
+			<sc_element sys_idtf="organic_compound">organic compound</sc_element>,
+			that contains aldehyde group 
+			(-<sc_element sys_idtf="elem_C">C</sc_element>
+			<sc_element sys_idtf="elem_H">H</sc_element>
+			<sc_element sys_idtf="elem_O">O</sc_element>)](* <- lang_en;; => nrel_format: format_html;; *);;
+		*);;
+
+	*);
+
+		<-rrel_key_sc_element:...
+		(*
+			<-explanation;;
+				=>nrel_main_idtf:
+					[Утв. (альдегид, химическое вещество)](*<-lang_ru;;*);
+					[Exp (aldehyde, chemical substance)](*<-lang_en;;*);;
+
+				<=nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b><sc_element sys_idtf="aldehyde">Альдегидная группа</sc_element>
+						 содержится во многих природных 
+						 <sc_element sys_idtf="chemical_substance">веществах</sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+					-> rrel_example:
+						[<b><sc_element sys_idtf="aldehyde">Aldehyde group</sc_element>
+						 is contained in lot of natural  
+						 <sc_element sys_idtf="chemical_substance">substances</sc_element>.](* <- lang_en;; => nrel_format: format_html;; *);;
+				*);;
+		*);
+
+		<- rrel_key_sc_element:...
+		(*
+			<- illustration;;
+			=> nrel_main_idtf:
+				[Рис. (альдегид)](* <- lang_ru;; *);
+				[Pic. (aldehyde)](* <- lang_en;; *);;
+				<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example: "file://image/aldehyde.png"(* => nrel_format: format_png;;*);;
+				*);;
+		*);;
+
+	
+	saturated_aldehyde
+	<-sc_node_not_relation;
+	=> nrel_main_idtf:[насыщенный альдегид](* <- lang_ru;; *);
+	=> nrel_main_idtf:[saturated aldehyd](* <- lang_en;; *);
+
+	<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. (насыщенный альдегид)](*<-lang_ru;;*);
+			[Def. (saturated aldehyde)](*<-lang_en;;*);;
+		<=nrel_using_constants:...
+			(*
+				->aldehyde;;
+				->elem_C;;
+			*);;
+		
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="saturated_aldehyde">Насыщенный альдегид</sc_element></b> - 
+			<sc_element sys_idtf="aldehyde">альдегид</sc_element>,
+			содержащий насыщенный  <sc_element sys_idtf="elem_C">углеродный</sc_element> заместитель.]
+				(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+			-> rrel_example:[<b><sc_element sys_idtf="saturated_aldehyde">Saturated aldehyde</sc_element></b> is 
+			<sc_element sys_idtf="aldehyde">aldehyde</sc_element> that contains
+			saturated  <sc_element sys_idtf="elem_C">carbon</sc_element> substituent.]
+				(* <- lang_en;; => nrel_format: format_html;; *);;
+		*);;
+	*);;
+
+
+	unsaturated_aldehyde
+	<-sc_node_not_relation;
+	=> nrel_main_idtf:[ненасыщенный альдегид](* <- lang_ru;; *);
+	=> nrel_main_idtf:[unsaturated aldehyde](* <- lang_en;; *);
+
+	<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. (ненасыщенный альдегид)](*<-lang_ru;;*);
+			[Def. (unsaturated aldehyde)](*<-lang_en;;*);;
+		<=nrel_using_constants:...
+			(*
+				->aldehyde;;
+				->elem_C;;
+			*);;
+		
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="unsaturated_aldehyde">Ненасыщенный альдегид</sc_element></b> - 
+			<sc_element sys_idtf="aldehyde">альдегид</sc_element>,
+			содержащий ненасыщенный  <sc_element sys_idtf="elem_C">углеродный</sc_element> заместитель.]
+				(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+			-> rrel_example:[<b><sc_element sys_idtf="saturated_aldehyde">Unsaturated aldehyde</sc_element></b> is 
+			<sc_element sys_idtf="aldehyde">aldehyde</sc_element> that contains
+			unsaturated  <sc_element sys_idtf="elem_C">carbon</sc_element> substituent.]
+				(* <- lang_en;; => nrel_format: format_html;; *);;
+		*);;
+	*);;
+
+	aromatic_aldehyde
+	<-sc_node_not_relation;
+	=> nrel_main_idtf:[ароматический альдегид](* <- lang_ru;; *);
+	=> nrel_main_idtf:[aromatic aldehyde](* <- lang_en;; *);
+
+	<-rrel_key_sc_element:...
+	(*
+		<-explanation;;
+		=>nrel_main_idtf:
+			[Утв. (ароматический альдегид, растворимость*, жидкость, вода)](*<-lang_ru;;*);
+			[Exp. (aromatic aldehyde, solubility*, liquid, water](*<-lang_en;;*);;
+
+		<=nrel_sc_text_translation:...
+		(*
+			->rrel_example:[<sc_element sys_idtf="aromatic_aldehyde">Ароматические альдегиды</sc_element> чаще всего 
+			являются <sc_element sys_idtf="liquid">жидкостями</sc_element>, плохо <sc_element sys_idtf="nrel_solubility">растворимыми</sc_element>
+			в <sc_element sys_idtf="water">воде</sc_element>.]
+			(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+			->rrel_example:[<sc_element sys_idtf="aromatic_aldehyde">Aromatic aldehydes</sc_element> more often 
+			are <sc_element sys_idtf="liquid">liquids</sc_element> that hardly <sc_element sys_idtf="nrel_solubility">soluble</sc_element>
+			in <sc_element sys_idtf="water">water</sc_element>.]
+			(* <- lang_ru;; => nrel_format: format_html;; *);;
+		*);;
+	*);;
+	
+
+	aldehyde_with_one_carbonyl_group
+	<-sc_node_not_relation;
+	=> nrel_main_idtf:[альдегид с одной карбонильной группой](* <- lang_ru;; *);
+	=> nrel_main_idtf:[aldehyde with one carbonyl group](* <- lang_en;; *);
+
+	<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. (альдегид с одной карбонильной группой)](*<-lang_ru;;*);
+			[Def. (aldehyde with one carbonyl group)](*<-lang_en;;*);;
+		<=nrel_using_constants:...
+			(*
+				->aldehyde;;
+				->number_one;;
+			*);;
+		
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="aldehyde_with_one_carbonyl_group">Альдегид с одной карбонильной группой</sc_element></b> - 
+			<sc_element sys_idtf="aldehyde">альдегид</sc_element>,
+			содержащий <sc_element sys_idtf="number_one">одну</sc_element> карбонилную группу.]
+				(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+			-> rrel_example:[<b><sc_element sys_idtf="aldehyde_with_one_carbonyl_group">Aldehyde with one carbonyl group</sc_element></b> - 
+			<sc_element sys_idtf="aldehyde">aldehyde</sc_element> that contains
+			<sc_element sys_idtf="number_one">one</sc_element> carbonyl group.]
+				(* <- lang_ru;; => nrel_format: format_html;; *);;
+		*);;
+
+	*);;
+
+
+	dialdehyde
+	<-sc_node_not_relation;
+	=> nrel_main_idtf:[диальдегид](* <- lang_ru;; *);
+	=> nrel_main_idtf:[dialdehyde](* <- lang_en;; *);
+
+	<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. (диальдегид)](*<-lang_ru;;*);
+			[Def. (dialdehyde)](*<-lang_en;;*);;
+		<=nrel_using_constants:...
+			(*
+				->aldehyde;;
+				->number_two;;
+			*);;
+		
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="dialdehyde">Диальдегид</sc_element></b> - 
+			<sc_element sys_idtf="aldehyde">альдегид</sc_element>,
+			содержащий <sc_element sys_idtf="number_two">две</sc_element> карбонилные группы.]
+				(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+			-> rrel_example:[<b><sc_element sys_idtf="dialdehyde">Dialdehyde</sc_element></b> - 
+			<sc_element sys_idtf="aldehyde">aldehyde</sc_element> that contains
+			<sc_element sys_idtf="number_two">two</sc_element> carbonyl groups.]
+				(* <- lang_ru;; => nrel_format: format_html;; *);;
+		*);;
+
+	*);;
+
+	polyatomic_aldehyde
+	<-sc_node_not_relation;
+	=> nrel_main_idtf:[многоатомный альдегид](* <- lang_ru;; *);
+	=> nrel_main_idtf:[polyatomic aldehyde](* <- lang_en;; *);
+
+	<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. (многоатомный альдегид)](*<-lang_ru;;*);
+			[Def. (polyatomic aldehyde)](*<-lang_en;;*);;
+		<=nrel_using_constants:...
+			(*
+				->aldehyde;;
+				->number_two;;
+				->nrel_more;;
+			*);;
+		
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="polyatomic_aldehyde">Многоатомный альдегид</sc_element></b> - 
+			<sc_element sys_idtf="aldehyde">альдегид</sc_element>,
+			содержащий <sc_element sys_idtf="nrel_more">больше</sc_element> чем
+			<sc_element sys_idtf="number_two">две</sc_element> карбонилные группы.]
+				(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+			-> rrel_example:[<b><sc_element sys_idtf="polyatomic_aldehyde">Dialdehyde</sc_element></b> - 
+			<sc_element sys_idtf="aldehyde">aldehyde</sc_element> that contains
+			<sc_element sys_idtf="nrel_more">more</sc_element> than
+			<sc_element sys_idtf="number_two">two</sc_element> carbonyl groups.]
+				(* <- lang_en;; => nrel_format: format_html;; *);;
+		*);;
+
+	*);;
+
+acetaldehyde
+<-sc_node_not_relation;
+=> nrel_main_idtf:[ацетальдегид](* <- lang_ru;; *);
+=> nrel_main_idtf:[acetaldehyde](* <- lang_en;; *);
+<=nrel_inclusion:saturated_aldehyde;
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (ацетальдегид)](*<-lang_ru;;*);
+		[Def. (acetaldehyde)](*<-lang_en;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->saturated_aldehyde;;
+		->chemical_formula;;
+		->aldehyde;;
+		->ethanol;;
+		->acetic_acyd;;
+		->elem_C;;
+		->elem_O;;
+		->elem_H;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="acetaldehyde">Ацетальдегид</sc_element></b> - 
+		<sc_element sys_idtf="saturated_aldehyde">насыщенный альдегид</sc_element> с 
+		<sc_element sys_idtf="chemical_formula">химической формулой</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element>
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>3</sub>-
+		<sc_element sys_idtf="elem_C">C</sc_element>
+		<sc_element sys_idtf="elem_H">H</sc_element>
+		<sc_element sys_idtf="elem_O">O</sc_element>, является 
+		<sc_element sys_idtf="aldehyde">альдегидом</sc_element> 
+		<sc_element sys_idtf="ethanol">этанола</sc_element> и 
+		<sc_element sys_idtf="acetic_acid">уксусной кислоты</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+		->rrel_example:
+		[<b><sc_element sys_idtf="acetaldehyde">Acetaldehyde</sc_element></b> is 
+		<sc_element sys_idtf="saturated_aldehyde">saturated aldehyde</sc_element> with 
+		<sc_element sys_idtf="chemical_formula">chemical formula</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element>
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>3</sub>-
+		<sc_element sys_idtf="elem_C">C</sc_element>
+		<sc_element sys_idtf="elem_H">H</sc_element>
+		<sc_element sys_idtf="elem_O">O</sc_element>,  
+		<sc_element sys_idtf="aldehyde">aldehyde</sc_element> of 
+		<sc_element sys_idtf="ethanol">ethanol</sc_element> and 
+		<sc_element sys_idtf="acetic_acid">acetic acid</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+	(*
+		<-explanation;;
+		=>nrel_main_idtf:
+			[Утв. (ацетальдегид, окисление*, этанол)](*<-lang_ru;;*);
+			[EXp. (acetaldehyde, oxidation*, ethanol)](*<-lang_en;;*);;
+		
+		<=nrel_sc_text_translation:...
+		(*
+			->rrel_example:
+			[<sc_element sys_idtf="acetaldehyde">Ацетальдегид</sc_element> производится
+			<sc_element sys_idtf="nrel_oxidation">окислением</sc_element>
+			<sc_element sys_idtf="ethanol">этанол</sc_element>.]
+			(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+			->rrel_example:
+			[<sc_element sys_idtf="acetaldehyde">Acetaldehyde</sc_element> is produced by
+			<sc_element sys_idtf="nrel_oxidation">oxidation</sc_element> of 
+			<sc_element sys_idtf="ethanol">ethanol</sc_element>.]
+			(* <- lang_ru;; => nrel_format: format_html;; *);;
+		*);;
+	*);
+
+<-rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (ацетальдегид)](* <- lang_ru;; *);
+		[Pic. (acetaldehyde)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/acetaldehyde.png"(* => nrel_format: format_png;;*);;
+	*);;
+*);;
+
+acrolein
+<-sc_node_not_relation;
+=> nrel_main_idtf:[акролеин](* <- lang_ru;; *);
+=> nrel_main_idtf:[acrolein](* <- lang_en;; *);
+<=nrel_inclusion:unsaturated_aldehyde;
+
+<-rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (акролеин)](* <- lang_ru;; *);
+		[Def. (acrolein)](* <- lang_en;; *);;
+
+	<=nrel_using_constants:...
+	(*
+		->unsaturated_aldehyde;;
+		->elem_C;;
+		->elem_O;;
+		->elem_H;;
+		->aldehyde;;
+		->chemical_formula;;
+		->acid;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="acrolein">Акролеин</sc_element></b> - простейший
+		<sc_element sys_idtf="unsaturated_aldehyde">ненасыщенный альдегид</sc_element>,
+		<sc_element sys_idtf="aldehyde">альдегид</sc_element> 
+		<sc_element sys_idtf="acid">акриловой кислоты</sc_element> с 
+		<sc_element sys_idtf="chemical_formula">химической формулой</sc_element> 
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>2</sub>
+		<sc_element sys_idtf="elem_C">C</sc_element>=
+		<sc_element sys_idtf="elem_H">H</sc_element>-
+		<sc_element sys_idtf="elem_C">C</sc_element>
+		<sc_element sys_idtf="elem_H">H</sc_element>
+		<sc_element sys_idtf="elem_O">O</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+		->rrel_example:
+		[<b><sc_element sys_idtf="acrolein">Acrolein</sc_element></b> is the simpliest
+		<sc_element sys_idtf="unsaturated_aldehyde">unsaturated aldehyde</sc_element>,
+		<sc_element sys_idtf="aldehyde">aldehyde</sc_element> of
+		<sc_element sys_idtf="acid">acrelic acid</sc_element> with 
+		<sc_element sys_idtf="chemical_formula">chemical formula</sc_element> 
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>2</sub>
+		<sc_element sys_idtf="elem_C">C</sc_element>=
+		<sc_element sys_idtf="elem_H">H</sc_element>-
+		<sc_element sys_idtf="elem_C">C</sc_element>
+		<sc_element sys_idtf="elem_H">H</sc_element>
+		<sc_element sys_idtf="elem_O">O</sc_element>.]
+		(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (акролеин, бесцетный, жидкость, резкий запах)](* <- lang_ru;; *);
+		[Exp. (acrolein, colorless, liquid, strong smell)](* <- lang_en;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="acrolein">Акролеин</sc_element> - 
+		<sc_element sys_idtf="no_color">бесцетная</sc_element> 
+		<sc_element sys_idtf="liquid">жидкость</sc_element> с 
+		<sc_element sys_idtf="strong_smell">резким запахом</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+		->rrel_example:
+		[<sc_element sys_idtf="acrolein">Acrolein</sc_element> is 
+		<sc_element sys_idtf="no_color">colorless</sc_element> 
+		<sc_element sys_idtf="liquid">liquid</sc_element> with 
+		<sc_element sys_idtf="strong_smell">strong smell</sc_element>.]
+		(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (акролеин)](*<- lang_ru;;*);
+		[Pic. (acrolein)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/acrolein.png"(* => nrel_format: format_png;;*);;
+	*);;
+*);;
+
+benzaldehyde
+<-sc_node_not_relation;
+<=nrel_inclusion:aromatic_aldehyde;
+=> nrel_main_idtf:[бензальдегид](* <- lang_ru;; *);
+=> nrel_main_idtf:[benzaldehyde](* <- lang_en;; *);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (бензальдегид)](*<- lang_ru;;*);
+		[Def. (benzaldehyde)](*<- lang_en;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->aromatic_aldehyde;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="benzaldehyde">Бензальдегид</sc_element></b> - простейший
+		<sc_element sys_idtf="aromatic_aldehyde">ароматический альдегид</sc_element> c 
+		<sc_element sys_idtf="chemical_formula">химический формулой</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element><sub>6</sub>
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>5</sub>
+		<sc_element sys_idtf="elem_C">C</sc_element>
+		<sc_element sys_idtf="elem_H">H</sc_element>
+		<sc_element sys_idtf="elem_O">O</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+		->rrel_example:
+		[<b><sc_element sys_idtf="benzaldehyde">Benzaldehyde</sc_element></b> is the simpliest
+		<sc_element sys_idtf="aromatic_aldehyde">aromatic aldehyde</sc_element> with 
+		<sc_element sys_idtf="chemical_formula">chemical formula</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element><sub>6</sub>
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>5</sub>
+		<sc_element sys_idtf="elem_C">C</sc_element>
+		<sc_element sys_idtf="elem_H">H</sc_element>
+		<sc_element sys_idtf="elem_O">O</sc_element>.]
+		(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (бензальдегид, бесцветный, жидкость, запах)](* <- lang_ru;; *);
+		[Exp. (benzaldehyde, colorless, liquid, smell)](* <- lang_en;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="benzaldehyde">Бензальдегид</sc_element> - 
+		<sc_element sys_idtf="no_color">бесцетная</sc_element> 
+		<sc_element sys_idtf="liquid">жидкость</sc_element> с 
+		<sc_element sys_idtf="smell">запахом</sc_element> миндаля.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+		->rrel_example:
+		[<sc_element sys_idtf="benzaldehyde">Benzaldehyde</sc_element> is 
+		<sc_element sys_idtf="no_color">colorless</sc_element> 
+		<sc_element sys_idtf="liquid">liquid</sc_element> with almond
+		<sc_element sys_idtf="smell">smell</sc_element>.]
+		(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (бензальдегид)](*<- lang_ru;;*);
+		[Pic. (benzaldehyde)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/benzaldehyde.png"(* => nrel_format: format_png;;*);;
+	*);;
+*);;
+
+glyoxal
+<-sc_node_not_relation;
+<=nrel_inclusion:dialdehyde;
+=> nrel_main_idtf:[глиоксаль](* <- lang_ru;; *);
+=> nrel_main_idtf:[glyoxal](* <- lang_en;; *);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (глиоксаль)](*<- lang_ru;;*);
+		[Def. (glyoxal)](*<- lang_en;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->dialdehyde;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="glyoxal">Глиоксаль</sc_element></b> - простейший
+		<sc_element sys_idtf="dialdehyde">диальдегид</sc_element> c 
+		<sc_element sys_idtf="chemical_formula">химический формулой</sc_element> 
+		<sc_element sys_idtf="elem_O">O</sc_element>
+		<sc_element sys_idtf="elem_C">C</sc_element>
+		<sc_element sys_idtf="elem_H">H</sc_element>
+		<sc_element sys_idtf="elem_O">O</sc_element>
+		<sc_element sys_idtf="elem_C">C</sc_element>
+		<sc_element sys_idtf="elem_H">H</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+		->rrel_example:
+		[<b><sc_element sys_idtf="glyoxal">Glyoxal</sc_element></b> is the simpliest
+		<sc_element sys_idtf="dialdehyde">dialdehyde</sc_element> with 
+		<sc_element sys_idtf="chemical_formula">chemical formula</sc_element> 
+		<sc_element sys_idtf="elem_O">O</sc_element>
+		<sc_element sys_idtf="elem_C">C</sc_element>
+		<sc_element sys_idtf="elem_H">H</sc_element>
+		<sc_element sys_idtf="elem_O">O</sc_element>
+		<sc_element sys_idtf="elem_C">C</sc_element>
+		<sc_element sys_idtf="elem_H">H</sc_element>.]
+		(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (глиоксаль, жёлтый цвет, жидкость, запах)](* <- lang_ru;; *);
+		[Exp. (glyoxal, yellow color, liquid, smell)](* <- lang_en;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="glyoxal">Глиоксаль</sc_element> - 
+		<sc_element sys_idtf="color_yellow">жёлтая</sc_element> 
+		<sc_element sys_idtf="liquid">жидкость</sc_element> с 
+		<sc_element sys_idtf="smell">запахом</sc_element> формалина.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+		->rrel_example:
+		[<sc_element sys_idtf="glyoxal">Glyoxal</sc_element> is 
+		<sc_element sys_idtf="color_yellow">yellow</sc_element> 
+		<sc_element sys_idtf="liquid">liquid</sc_element> with formalin
+		<sc_element sys_idtf="smell">smell</sc_element>.]
+		(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (глиоксаль)](*<- lang_ru;;*);
+		[Pic. (glyoxal)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/glyoxal.png"(* => nrel_format: format_png;;*);;
+	*);;
+*);;
+
+citral
+<-sc_node_not_relation;
+<=nrel_inclusion:aldehyde;
+=> nrel_main_idtf:[цитраль](* <- lang_ru;; *);
+=> nrel_main_idtf:[citral](* <- lang_en;; *);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (цитраль)](*<- lang_ru;;*);
+		[Def. (citral)](*<- lang_en;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->aldehyde;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="citral">Цитраль</sc_element></b> - монотерпеновый ациклический
+		<sc_element sys_idtf="aldehyde">альдегид</sc_element> c 
+		<sc_element sys_idtf="chemical_formula">химический формулой</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element><sub>10</sub>
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>16</sub>
+		<sc_element sys_idtf="elem_O">O</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+		->rrel_example:
+		[<b><sc_element sys_idtf="citral">Citral</sc_element></b> is monoterpenic acyclic
+		<sc_element sys_idtf="aldehyde">aldehyde</sc_element> with 
+		<sc_element sys_idtf="chemical_formula">chemical formula</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element><sub>10</sub>
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>16</sub>
+		<sc_element sys_idtf="elem_O">O</sc_element>.]
+		(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (цитраль, бесцветный, жёлтый цвет, жидкость, запах)](* <- lang_ru;; *);
+		[Exp. (citral, colorless, yellow color, liquid, smell)](* <- lang_en;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="citral">Цитраль</sc_element> - 
+		<sc_element sys_idtf="color_yellow">жёлтая</sc_element>  или
+		<sc_element sys_idtf="no_color">бесцетная</sc_element> 
+		<sc_element sys_idtf="liquid">жидкость</sc_element> с 
+		<sc_element sys_idtf="smell">запахом</sc_element> лимона.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+		->rrel_example:
+		[<sc_element sys_idtf="citral">Citral</sc_element> is 
+		<sc_element sys_idtf="color_yellow">yellow</sc_element> or
+		<sc_element sys_idtf="no_color">colorless</sc_element> 
+		<sc_element sys_idtf="liquid">liquid</sc_element> with lemon
+		<sc_element sys_idtf="smell">smell</sc_element>.]
+		(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (цитраль)](*<- lang_ru;;*);
+		[Pic. (citral)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/citral.png"(* => nrel_format: format_png;;*);;
+	*);;
+*);;
+
+citronellal
+<-sc_node_not_relation;
+<=nrel_inclusion:aldehyde;
+=> nrel_main_idtf:[цитронеллаль](* <- lang_ru;; *);
+=> nrel_main_idtf:[citronellal](* <- lang_en;; *);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (цитронеллаль)](*<- lang_ru;;*);
+		[Def. (citronellal)](*<- lang_en;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->aldehyde;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="citronellal">Цитронеллаль</sc_element></b> - 
+		<sc_element sys_idtf="aldehyde">альдегид</sc_element> c 
+		<sc_element sys_idtf="chemical_formula">химический формулой</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element><sub>10</sub>
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>18</sub>
+		<sc_element sys_idtf="elem_O">O</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+		->rrel_example:
+		[<b><sc_element sys_idtf="citronellal">Citronellal</sc_element></b> 
+		<sc_element sys_idtf="aldehyde">aldehyde</sc_element> with 
+		<sc_element sys_idtf="chemical_formula">chemical formula</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element><sub>10</sub>
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>18</sub>
+		<sc_element sys_idtf="elem_O">O</sc_element>.]
+		(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (цитронеллаль, бесцветный, жидкость, запах)](* <- lang_ru;; *);
+		[Exp. (citronellal, colorless, liquid, smell)](* <- lang_en;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="citronellal">Цитронеллаль</sc_element> - 
+		<sc_element sys_idtf="no_color">бесцетная</sc_element> 
+		<sc_element sys_idtf="liquid">жидкость</sc_element> с 
+		<sc_element sys_idtf="smell">запахом</sc_element> лимона.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+		->rrel_example:
+		[<sc_element sys_idtf="citronellal">Сitronellal</sc_element> is 
+		<sc_element sys_idtf="no_color">colorless</sc_element> 
+		<sc_element sys_idtf="liquid">liquid</sc_element> with lemon
+		<sc_element sys_idtf="smell">smell</sc_element>.]
+		(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (цитронеллаль, растворимость*, вода, этанол)](* <- lang_ru;; *);
+		[Exp. (citronellal, solubility*, water, ethanol)](* <- lang_en;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="citronellal">Цитронеллаль</sc_element> 
+		<sc_element sys_idtf="nrel_solubility">растворяется</sc_element> в
+		<sc_element sys_idtf="water">воде</sc_element> и плохо  
+		<sc_element sys_idtf="nrel_solubility">растворяется</sc_element> в
+		<sc_element sys_idtf="ethanol">этаноле</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+		->rrel_example:
+		[<sc_element sys_idtf="citronellal">Сitronellal</sc_element> is 
+		<sc_element sys_idtf="nrel_solubility">soluble</sc_element> at
+		<sc_element sys_idtf="water">water</sc_element> and hardly  
+		<sc_element sys_idtf="nrel_solubility">soluble</sc_element> at
+		<sc_element sys_idtf="ethanol">ethanol</sc_element>.]
+		(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (цитронеллаль)](*<- lang_ru;;*);
+		[Pic. (citronellal)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/citronellal.png"(* => nrel_format: format_png;;*);;
+	*);;
+*);;
+
+anise_aldehyde
+<-sc_node_not_relation;
+<=nrel_inclusion:aromatic_aldehyde;
+=> nrel_main_idtf:[анисовый альдегид](* <- lang_ru;; *);
+=> nrel_main_idtf:[anise aldehyde](* <- lang_en;; *);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (анисовый альдегид)](*<- lang_ru;;*);
+		[Def. (anise aldehyde)](*<- lang_en;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->aromatic_aldehyde;;
+		->benzaldehyde;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="anise_aldehyde">Анисовый альдегид</sc_element></b> - 
+		<sc_element sys_idtf="aromatic_aldehyde">ароматический альдегид</sc_element>, производный от 
+		 <sc_element sys_idtf="benzaldehyde">бензальдегида</sc_element>, c 
+		<sc_element sys_idtf="chemical_formula">химический формулой</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element><sub>8</sub>
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>8</sub>
+		<sc_element sys_idtf="elem_O">O</sc_element><sub>2</sub>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+		->rrel_example:
+		[<b><sc_element sys_idtf="anise_aldehyde">Anise aldehyde</sc_element></b> is 
+		<sc_element sys_idtf="aromatic_aldehyde">aromatic aldehyde</sc_element>, 
+		 <sc_element sys_idtf="benzaldehyde">benzaldehyde</sc_element> derivated, with 
+		<sc_element sys_idtf="chemical_formula">chemical formula/sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element><sub>8</sub>
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>8</sub>
+		<sc_element sys_idtf="elem_O">O</sc_element><sub>2</sub>.]
+		(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (анисовый альдегид, бесцветный, жидкость, запах)](* <- lang_ru;; *);
+		[Exp. (anise aldehyde, colorless, liquid, smell)](* <- lang_en;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="anise_aldehyde">Анисовый альдегид</sc_element> - 
+		<sc_element sys_idtf="no_color">бесцетная</sc_element> 
+		<sc_element sys_idtf="liquid">жидкость</sc_element> с пряным
+		<sc_element sys_idtf="smell">запахом</sc_element> боярышника.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+		->rrel_example:
+		[<sc_element sys_idtf="anise_aldehyde">Anise aldehyde</sc_element> is 
+		<sc_element sys_idtf="no_color">colorless</sc_element> 
+		<sc_element sys_idtf="liquid">liquid</sc_element> with spicy hawthorn
+		<sc_element sys_idtf="smell">smell</sc_element>.]
+		(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (анисовый альдегид)](*<- lang_ru;;*);
+		[Pic. (anise aldehyde)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/anise_aldehyde.png"(* => nrel_format: format_png;;*);;
+	*);;
+*);;
+
+butyraldehyde
+<-sc_node_not_relation;
+=> nrel_main_idtf:[бутаналь](* <- lang_ru;; *);
+=> nrel_main_idtf:[масляный альдегид](* <- lang_ru;; *);
+=> nrel_main_idtf:[butanal](* <- lang_en;; *);
+=> nrel_main_idtf:[butyraldehyde](* <- lang_en;; *);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (бутаналь)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->aldehyde;;
+		->butanone;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="butyraldehyde">Бутаналь</sc_element></b> - 
+		алифатический <sc_element sys_idtf="aldehyde">альдегид</sc_element>, изомерен
+		 <sc_element sys_idtf="butanone">бутанону</sc_element>, c 
+		<sc_element sys_idtf="chemical_formula">химический формулой</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>8</sub>
+		<sc_element sys_idtf="elem_O">O</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (бутаналь, бесцветный, жидкость, запах)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="butyraldehyde">Бутаналь</sc_element> - 
+		<sc_element sys_idtf="no_color">бесцетная</sc_element> легковоспламенимая 
+		<sc_element sys_idtf="liquid">жидкость</sc_element> с резким
+		<sc_element sys_idtf="smell">запахом</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (бутаналь)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/butanal.png"(* => nrel_format: format_png;;*);;
+	*);;
+*);;
+
+cinnamaldehyde
+<-sc_node_not_relation;
+=> nrel_main_idtf:[циннамаль](* <- lang_ru;; *);
+=> nrel_main_idtf:[коричный альдегид](* <- lang_ru;; *);
+=> nrel_main_idtf:[cinnamaldehyde](* <- lang_en;; *);;
+
+propionaldehyde
+<-sc_node_not_relation;
+=> nrel_main_idtf:[пропаналь](* <- lang_ru;; *);
+=> nrel_main_idtf:[пропионовый альдегид](* <- lang_ru;; *);
+=> nrel_main_idtf:[propanal](* <- lang_en;; *);
+=> nrel_main_idtf:[propionaldehyde](* <- lang_en;; *);;
+
+salicylic_aldehyde
+<-sc_node_not_relation;
+=> nrel_main_idtf:[салициловый альдегид](* <- lang_ru;; *);
+=> nrel_main_idtf:[salicylic aldehyde](* <- lang_en;; *);;
+
+formaldehyde
+<-sc_node_not_relation;
+=> nrel_main_idtf:[формальдегид](* <- lang_ru;; *);
+=> nrel_main_idtf:[муравьиный альдегид](* <- lang_ru;; *);
+=> nrel_main_idtf:[метаналь](* <- lang_ru;; *);
+=> nrel_main_idtf:[methanal](* <- lang_en;; *);
+=> nrel_main_idtf:[formaldehyde](* <- lang_en;; *);;
+
+crotonaldehyde
+<-sc_node_not_relation;
+=> nrel_main_idtf:[кротоновый альдегид](* <- lang_ru;; *);
+=> nrel_main_idtf:[crotonaldehyde](* <- lang_en;; *);;
+
+vanillin
+<-sc_node_not_relation;
+=> nrel_main_idtf:[ванилин](* <- lang_ru;; *);
+=> nrel_main_idtf:[vanillin](* <- lang_en;; *);;

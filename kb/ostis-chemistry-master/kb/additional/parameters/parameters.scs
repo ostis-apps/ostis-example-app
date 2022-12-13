@@ -1,0 +1,27 @@
+color => nrel_main_idtf: [цвет](* <- lang_ru;; *);
+	<- sc_node_not_relation;
+	<- parameter;;
+
+period <- parameter;;
+
+group <- parameter;;
+
+functional_group
+	=> nrel_main_idtf: 
+		[функциональная группа](*<- lang_ru;;*);
+	<- parameter;;
+
+chemical_property => nrel_main_idtf:[химическое свойство](*<-lang_ru;;*);
+	<- sc_node_not_relation;
+	<- parameter;;
+
+physical_property => nrel_main_idtf:[физическое свойство](*<-lang_ru;;*);
+	<- sc_node_not_relation;
+	<- parameter;;
+
+neutron_mass <- sc_node_not_relation;
+	=> nrel_main_idtf:[1,674 927 471(21)·10^(−27) кг](* <- lang_ru;; *);;
+neutron_spin <- sc_node_not_relation;
+	=> nrel_main_idtf:[0,5](* <- lang_ru;; *);;
+neutron_radius <- sc_node_not_relation;
+	=> nrel_main_idtf:[2,48 * 10^(-52) см](* <- lang_ru;; *);;

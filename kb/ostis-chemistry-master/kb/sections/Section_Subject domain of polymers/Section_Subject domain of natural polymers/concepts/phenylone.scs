@@ -1,0 +1,111 @@
+phenylone<-sc_node_not_relation;;
+phenylone=> nrel_main_idtf:[фенилон](* <- lang_ru;; *);;
+phenylone=> nrel_main_idtf:[phenylone](* <- lang_en;; *);;
+phenylone=> nrel_idtf:[ phenylone​](* <- lang_en;; *);;
+phenylone=> nrel_idtf:[C4F5](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: phenylone;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Фенилон —  линейный <b><sc_element sys_idtf="nrel_aromaticity">ароматический</b></sc_element> 
+	   <b><sc_element sys_idtf="polyamide">полиамид</b></sc_element> 
+	тетрафторэтилена (ПТФЭ).] 
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (фенилон)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+			polyamide;
+		polymer
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: phenylone;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Фенилон —  сверхпрочное 
+	и термостойкое <b><sc_element sys_idtf="synthetic_polymer">синтетическое волокно</b></sc_element>,
+	 группы <b><sc_element sys_idtf="polyamide">полиамидов</b></sc_element> , 
+	получаемых из продуктов переработки нефти. ]
+	
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(фенилон,сверхпрочный и термостойкий)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		polyamide;
+		synthetic_polymer
+		};;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:phenylone;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Фенилон — не горит, химически устойчив
+	 в кипящей воде, к действию топлив, 
+	масел, некоторых минеральных и органических <b><sc_element sys_idtf="acid">кислот</b></sc_element>
+	, <b><sc_element sys_idtf="strong_basis">щелочей</b></sc_element>, стоек к действию <b><sc_element sys_idtf="radiation">радиации</b></sc_element>
+	, поражению плесневыми грибками. ]
+
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(фенилон,химически стойкое вещество)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		strong_basis;
+		radiation;
+		acid
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:phenylone;;
+	<= nrel_sc_text_translation: ...(*->"file://image/phenylone.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(фенилон,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:phenylone;;
+	<= nrel_sc_text_translation: ...(*->"file://image/phenylone_formula.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(фенилон,пример)](*<- lang_ru;;*);;
+*);;
+
+
+thermoplastic_polymer=>nrel_inclusion:phenylone;;
+artificial_polymers=>nrel_inclusion:phenylone;;
+polymerisation_polymer=>nrel_inclusion:phenylone;;
+hetero_chain_polymer=>nrel_inclusion:phenylone;;
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> phenylone;;
+	=> rrel_mol: [20 000]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->phenylone;;
+	=> rrel_degree_celsius: 190
+	(*
+		<-number;;
+	*);;
+*);;

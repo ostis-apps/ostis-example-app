@@ -1,0 +1,5 @@
+carbon_group
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[подгруппа углерода](* <- lang_ru;; *);
+	[carbon group](* <- lang_en;; *);;

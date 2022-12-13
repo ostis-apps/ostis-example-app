@@ -1,0 +1,96 @@
+natural_polymer
+<-sc_node_not_relation;;
+
+natural_polymer=> nrel_main_idtf:[природный полимер](* <- lang_ru;; *);;
+natural_polymer=> nrel_main_idtf:[natural polymer](* <- lang_en;; *);;
+natural_polymer<= nrel_subdividing:...
+	(*	
+		=> nrel_main_idtf:[Разбиение в зависимости от реакции получения](* <- lang_ru;; *);;
+		-> polycondensation_polymer;;
+		-> polymerisation_polymer;;
+	*);;
+    natural_polymer<= nrel_subdividing:...
+	(*	
+		=> nrel_main_idtf:[в зависимости от происхождения](* <- lang_ru;; *);;
+		-> organic_polymer;;
+		-> artificial_polymers;;
+	*);;
+natural_polymer<= nrel_subdividing:...
+	(*	
+		=> nrel_main_idtf:[по отношению к нагреванию](* <- lang_ru;; *);;
+		-> thermoplastic_polymer;;
+		-> thermosetting_polymer;;
+	*);;
+	natural_polymer<= nrel_subdividing:...
+	(*	
+		=> nrel_main_idtf:[в зависимости от строения главной цепи](* <- lang_ru;; *);;
+		-> hetero_chain_polymer;;
+		-> homo_chain_polymer;;
+	*);;
+definition ->...
+(*
+	->rrel_key_sc_element: natural_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Природные полимеры — это <b><sc_element sys_idtf="polymer">полимеры</b></sc_element>
+     естественного происхождения, производимые без участия человека ]
+	 
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Определение (природные полимеры)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		polymer
+		};;
+*);;
+statement ->...
+(*
+	->rrel_key_sc_element: natural_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Характерная особенность природных полимеров – маленькая
+     <b><sc_element sys_idtf="molecular_mass">молекулярная масса</b></sc_element> при стандартных условиях .]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Утверждение(природные полимеры,маленькая молекулярная масса)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		rrel_mol;
+		molecular_mass
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: natural_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Целлюлоза — самый распространенный 
+    <b><sc_element sys_idtf="natural_polymer">природный полимер</b></sc_element>,
+     абсолютная масса которого на нашей планете значительно превышает количество любого другого 
+     <b><sc_element sys_idtf="organic_compound">органического</b></sc_element> вещества. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Утверждение(природные полимеры,Целлюлоза — самый распространенный природный полимер)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		natural_polymer;
+		organic_compound
+		};;
+*);;
+statement ->...
+(*
+	->rrel_key_sc_element: natural_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[ К природным полимерам относятся РНК и ДНК, которые так важны для генов и процесса продолжения жизни. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Утверждение(природные полимеры,это РНК и ДНК)](*<- lang_ru;;*);;
+*);;
+
+

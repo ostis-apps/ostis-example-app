@@ -1,0 +1,31 @@
+unified_atomic_mass_unit
+=> nrel_main_idtf:
+	[атомная единица массы](* <- lang_ru;; *);
+	[unified atomic mass unit](* <- lang_en;; *);
+=> nrel_idtf:
+	[1.660539040(20) * 10^(−24) g](* <- lang_en;; *);
+	[1.660539040(20) * 10^(−24) г](* <- lang_ru;; *);
+	[дальтон](* <- lang_ru;; *);
+	[углеродная единица](* <- lang_ru;; *);
+	[а.е.м.](* <- lang_ru;; *);
+	[dalton](* <- lang_en;; *);
+	[u](* <- lang_en;; *);
+	[Da](* <- lang_en;; *);
+<- value;
+<= nrel_measurement:...
+(*
+	-> rrel_10_in_minus_24_kg: ...
+	(*
+		<- number;;
+		=> nrel_main_idtf:[1,66](*<-lang_ru;; <- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... 
+(*	
+	<- explanation;;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> rrel_example:[Атомная единица массы (а.е.м., дальтон) = 1,660 538 921(73)*10^(−27) кг = 1,660 538 921(73)*10^(−24) г.] (* <-lang_ru;; *);;
+	*);;
+*);;

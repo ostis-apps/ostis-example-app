@@ -1,0 +1,22 @@
+acetylide
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[ацетиленид](*<-lang_ru;;*);
+     [acetylide](*<-lang_en;;*);;
+
+acetylide
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(ацетиленид)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b>Ацетилени́ды</b> — соли ацетилена и его производных, в котором один или два <sc_element sys_idtf="elem_H">атома водорода</sc_element> замещены атомами элементов, более электроположительных, чем <sc_element sys_idtf="elem_C">углерод</sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: elem_H; elem_C;;
+*);
+
+<-rrel_key_sc_element: ... 
+     (*
+	->rrel_key_sc_element: nrel_receiving;;
+        <- statement;;
+	=>nrel_main_idtf: [Утв. (ацетиленид, получение*)](*<-lang_ru;;*);;
+        <=nrel_sc_text_translation: ... (*->rrel_example: [<sc_element sys_idtf="acetylide">Ацетилениды</sc_element>, как соли очень слабой кислоты — ацетилена (рКа = 25), могут быть получены при взаимодействии ацетилена с щелочными и щёлочноземельными металлами (при нагревании, легче — в жидком аммиаке) или металлоорганическими соединениями. В процессе реакции происходит замещение водорода в ацетилене металлами. При взаимодействии с магнийорганическими соединениями ацетилен легко образует магнийгалогенопроизводные (реактивы Иоцича). Двузамещённые ацетилениды Cu<sub>2</sub>С<sub>2</sub> и Ag<sub>2</sub>C<sub>2</sub> образуются при действии на ацетилен аммиачных растворов соответствующих солей меди(I) и серебра.] (*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+      *);;

@@ -1,0 +1,35 @@
+sc_node_not_relation -> boiling;;
+
+boiling => nrel_main_idtf:
+	[кипение](* <-lang_ru;; *);
+	[boiling](* <-lang_en;; *);;
+
+boiling <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: кипение] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: boiling] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Кипе́ние — это процесс интенсивного парообразования, который происходит в жидкости, как на свободной её поверхности, так и внутри её структуры.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Boiling is a rapid vaporization process that occurs in the fluid as it on the free surface and inside of its structure.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+boiling <= nrel_using_constants: evaporation;;
+
+boiling <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Кипение происходит гораздо более интенсивно, чем испарение с поверхности, из-за присутствия очагов парообразования, обусловленных высокой температурой и наличием примесей.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Boiling occurs much more rapidly than with the evaporation surface, because of the presence of vaporization lesions caused high temperature and the presence of impurities.](*<- lang_en;;*);;
+			*);;
+		*);;

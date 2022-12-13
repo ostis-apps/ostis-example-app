@@ -1,0 +1,50 @@
+sc_node_not_relation -> aerosol;;
+
+aerosol => nrel_main_idtf:
+	[аэрозоль](* <-lang_ru;; *);
+	[aerosol](* <-lang_en;; *);;
+
+aerosol <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: аэрозоль] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: aerosol] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Аэрозо́ль — дисперсная система, состоящая из взвешенных в газовой среде (дисперсионной среде), обычно в воздухе, мелких частиц (дисперсной фазы). ](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Aerosol - dispersion consisting of suspended in a gaseous medium (dispersion medium), usually in the air, fine particles (dispersion phase).](*<- lang_en;;*);;
+			*);;
+		*);;
+
+aerosol => nrel_using_constants: dispersion;;
+
+aerosol <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Аэрозоли, дисперсная фаза которых состоит из капелек жидкости, называются туманами, а в случае твёрдых частиц - это  дымы либо  пыль.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Aerosols disperse phase of which consists of droplets of liquid, called fog, in the case of solid particles - is dust or fumes.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+aerosol <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Аэрозоли образуются при механическом измельчении и распылении твёрдых тел или жидкостей: при дроблении, истирании, взрывах, горении.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Aerosols are formed by mechanical grinding and spraying of solids or liquids in crushing, abrasion, explosions, burning.](*<- lang_en;;*);;
+			*);;
+		*);;
+

@@ -1,0 +1,14 @@
+section_subject_domain_of_alloys
+=> nrel_main_idtf: 
+	[Раздел. Предметная область сплавов]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of alloys]
+	(* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_alloys = [*^"file://section_subject_domain_of_alloys.scsi"*];;
+
+section_subject_domain_of_alloys
+-> rrel_key_sc_element: subject_domain_of_alloys;;

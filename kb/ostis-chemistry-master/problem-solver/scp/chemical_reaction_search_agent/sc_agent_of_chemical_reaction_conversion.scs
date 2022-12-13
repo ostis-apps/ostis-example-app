@@ -1,0 +1,64 @@
+// Спецификация sc-агента 
+sc_agent_of_meltingpoint_conversion 
+// Указываем множество идентификаторов агента 
+=>nrel_main_idtf: 
+ // lang_ru – атрибут идентификатора на русском языке 
+ [sc-агент поиска] (* <- lang_ru;; *); 
+ // lang_en – атрибут идентификатора на английском языке 
+ [sc-agent of search] (* <- lang_en;; *); 
+// Указываем, что наш агент принадлежит классу абстрактныхsc-агентов 
+<- abstract_sc_agent; 
+ 
+// Указываем начальное условие инициирования для нашего sc-агента 
+=>nrel_primary_initiation_condition: (sc_event_add_output_arc =>question_initiated); 
+// Указываем начальное условие и результат для нашего sc-агента 
+=>nrel_initiation_condition_and_result:  (..sc_agent_of_meltingpoint_conversion_initiation_condition  => 
+..sc_agent_of_meltingpoint_conversion_result); 
+<= nrel_sc_agent_key_sc_elements: 
+ { 
+  question_initiated; 
+  question; 
+  question_meltingpoint_conversion 
+ };// Описание деятельности sc-агента 
+<- key_sc_element: 
+ ... 
+ (* 
+ <- sc_description_of_sc_agent_behavior;; 
+ <= nrel_sc_text_translation: 
+  ... 
+  (* 
+  ->rrel_example: 
+   [Задачей sc-агента поиска является поиск.];; 
+  *);; 
+ *); // Описание поведения sc-агента 
+=>nrel_inclusion: ... 
+ (* 
+  <- platform_independent_abstract_sc_agent;; 
+  // Агент платформенно-независим, т.е. реализован на SCP 
+  <= nrel_sc_agent_program: 
+  { 
+   agent_proc_meltingpoint_conversion; 
+   proc_meltingpoint_conversion_calculation
+  };; // Перечень программ sc-агента, включая агентную программу 
+  ->sc_agent_of_meltingpoint_conversion_scp (* <- active_sc_agent;; *);; 
+  // Экемпляр абстраткного sс-агента – конкретный sc-агент 
+ *);; 
+ 
+// Полное условие инициирования sc-агента 
+..sc_agent_of_meltingpoint_conversion_initiation_condition 
+= [* 
+ question_meltingpoint_conversion _-> .._question;; 
+ question_initiated _-> .._question;; 
+ question _-> .._question;; 
+ .._question _-> .._parameter;; 
+*];; 
+ 
+// Описание результатов выполнения sc-агента 
+..sc_agent_of_meltingpoint_conversion_result 
+= [* 
+ question_meltingpoint_conversion _-> .._question;; 
+ question_finished _-> .._question;; 
+ question _-> .._question;; 
+ .._question _=>nrel_answer:: .._answer;; 
+ .._question _-> .._parameter;; 
+*];;

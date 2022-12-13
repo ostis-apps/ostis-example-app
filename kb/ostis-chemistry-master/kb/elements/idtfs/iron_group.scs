@@ -1,0 +1,6 @@
+iron_group
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[подгруппа железа](* <- lang_ru;; *);
+	[iron group](* <- lang_en;; *);;
+	

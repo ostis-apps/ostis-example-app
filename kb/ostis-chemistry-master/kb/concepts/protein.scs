@@ -1,0 +1,99 @@
+protein
+=> nrel_main_idtf:
+	[белок](* <- lang_ru;; *);
+	[protein](* <- lang_en;; *);
+=> nrel_idtf:
+	[протеин](* <-lang_ru;; *);
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку строения](* <-lang_ru;; *);;
+	-> fibrillar_protein;;
+	-> globular_protein;;
+	-> membrane_protein;;
+*);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(белок)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://html/protein_definition.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->amino_acid;;
+		->peptide_bond;;
+	*);;
+*);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (продукты, содержащие белок)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/protein.jpg"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(белок, пищеварение, фермент, аминокислота, распад*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[В процессе пищеварения ферменты разрушают потреблённые белки до аминокислот, которые используются для биосинтеза собственных белков организма или подвергаются дальнейшему распаду для получения энергии.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: digestion;;
+	-> rrel_key_sc_element: enzyme;;
+	-> rrel_key_sc_element: amino_acid;nrel_decomposition;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(белок, амфотерные свойства*, кислота, основание)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Белки обладают свойством амфотерности, то есть в зависимости от условий проявляют как кислотные, так и осно́вные свойства.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: acid_properties;;
+	-> rrel_key_sc_element: acid;;
+	-> rrel_key_sc_element: basis;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(молекула, белок, полимер, кислотный остаток, аминокислота)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Молекулы белков представляют собой линейные полимеры, состоящие из остатков α-L-аминокислот (которые являются мономерами), также в состав белков могут входить модифицированные аминокислотные остатки и компоненты неаминокислотной природы.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: molecule; polymer; acid_residue; amino_acid;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(синтез белка, органический синтез, легирование )](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Короткие белки могут быть синтезированы химическим путём с использованием методов органического синтеза, например, химического лигирования.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: protein_synthesis; organic_synthesis; alloying;;
+*);;

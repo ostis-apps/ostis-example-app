@@ -1,0 +1,44 @@
+section_subject_domain_of_complex_compounds
+=> nrel_main_idtf:
+	[Раздел. Предметная область сложных соединений]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of complex compounds]
+	(* <- lang_en;; *);
+
+<= nrel_section_decomposition:
+{
+	section_subject_domain_of_elementary_substances
+	(*
+	=> nrel_section_base_order:
+		section_subject_domain_of_complex_nonorganic_substances;;
+	*);
+	section_subject_domain_of_complex_nonorganic_substances
+	(*
+	=> nrel_section_base_order:
+		section_subject_domain_of_complex_organic_substances;;
+	*);
+	section_subject_domain_of_complex_organic_substances
+	(*
+	=> nrel_section_base_order:
+		section_subject_domain_of_poisons;;
+	*);
+	section_subject_domain_of_poisons
+	(*
+	=> nrel_section_base_order:
+		section_subject_domain_of_mixtures;;
+	*);
+	section_subject_domain_of_mixtures
+	(*
+	=> nrel_section_base_order:
+		subject_domain_of_food_supplements;;
+	*);
+	subject_domain_of_food_supplements
+};
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_complex_compounds = [*^"file://subject_domain_of_complex_compounds.scsi"*];;
+
+section_subject_domain_of_complex_compounds
+-> rrel_key_sc_element: subject_domain_of_complex_compounds;;

@@ -1,0 +1,34 @@
+pseudoalkaloids<-sc_node_not_relation;;
+
+pseudoalkaloids=> nrel_main_idtf:[псевдоалкалоид](* <- lang_ru;; *);;
+pseudoalkaloids=> nrel_main_idtf:[pseudoalkaloid](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: pseudoalkaloids;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Псевдоалкалоид - <b><sc_element sys_idtf="chemical_compound">соединение</b></sc_element>, похожее на <b><sc_element sys_idtf="alkaloids">алкалоид</b></sc_element>, биогенетическим предшественником которого не является  <b><sc_element sys_idtf="amino_acid">аминокислота</b></sc_element>.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (псевдоалкалоид)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		amino_acid;
+		organic_compound
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: pseudoalkaloids;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Большинство псевдоалкалоидов токсичны и мало использкются.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(пседвоалкалоиды,использование*,токсин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		toxin
+		};;
+*);;
+
+

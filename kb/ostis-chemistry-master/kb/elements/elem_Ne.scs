@@ -1,0 +1,110 @@
+elem_Ne
+	=> nrel_main_idtf:
+		[neon atom] (* <-lang_en;;*);
+		[атом неона] (* <-lang_ru;;*);
+	=> nrel_idtf: [atom Ne] (* <-lang_en;;*);
+	=> nrel_idtf: [атом Ne] (* <-lang_ru;;*);
+<- chemical_element;
+<- sc_node_not_relation;
+<- rrel_key_sc_element: definition_of_Neon
+(*
+	=> nrel_main_idtf: [Опр. (атом неона)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Неон</b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>    восемнадцатой   <sc_element sys_idtf  = "periodic_group">группы</sc_element>  , 2-го <sc_element sys_idtf  = "period">периода</sc_element>  периодической системы химических элементов. </p>]
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_element;;
+		-> period;;
+		-> periodic_group;;
+	*);;
+*);
+
+=> nrel_periodic_number: ten;
+<= nrel_discovery_year: 1898;
+
+<- nonmetal;
+<- atmophile;
+
+<- group_eighteen;
+<- period_two;
+<- oxidation_state_zero;
+<- valence_eight;
+
+=> nrel_biological_significance: ...
+(*
+	-> narcotic_effect;;
+	-> neurological_high_pressure_syndrome;;
+*);
+
+=> nrel_being_in_body: ...
+(*
+	-> blood_plasma;;
+	-> liver;;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (атом неона)] (* <- lang_ru;; *);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/elem_Ne.png"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:thirty_eight;;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Ne;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:fifty_eight;;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Ne;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Ne
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (атом неона, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ He 2s<sup>2</sup>2p<sup>6</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+atomic_mass_Ne <- number;
+=> nrel_main_idtf:[20,1797(6)](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Ne <- number;
+=> nrel_main_idtf:[4,4](*<-lang_ru;; <- lang_en;;*);;

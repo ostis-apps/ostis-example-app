@@ -1,0 +1,50 @@
+nrel_mass_number
+<- sc_node_norole_relation;
+=>nrel_main_idtf:
+[массовое число*](*<-lang_ru;;*);
+     [mass number*](*<-lang_en;;*);;
+
+nrel_mass_number 
+<- rrel_key_sc_element: ... 
+    (*
+       <- definition;;
+       =>nrel_main_idtf: [Опр.(массовое число*)]  (* <- lang_ru;; *);;
+       <= nrel_sc_text_translation:... (*->rrel_example: [<b>Ма́ссовое число́</b> <sc_element sys_idtf="atomic_nucleus">атомного ядра</sc_element> — массовое суммарное количество протонов и <sc_element sys_idtf="neutron">нейтронов</sc_element> (называемых общим термином <sc_element sys_idtf="nucleon">«нуклоны»</sc_element>) в ядре.](* <- lang_ru;; =>nrel_format: format_html;; *);; *);;
+	<=nrel_using_constants: atomic_nucleus; neutron; nucleon;;
+     *);
+
+<-rrel_key_sc_element: ... 
+     (*
+        ->rrel_key_sc_element: nrel_atomic_mass; atomic_mass_unit;;
+        <- statement;;
+		<-concept_assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_sets (*<-concept_subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (*->rrel_example: [Массовое число близко к атомной массе изотопа, выраженной в атомных единицах массы, но совпадает с ней только для углерода-12, поскольку атомная единица массы (а. е. м.) определяется сейчас как 1⁄12 массы атома 12С.](*<-lang_ru;; =>nrel_format: format_html;;*);; *);;
+        => nrel_main_idtf: [Утв. (массовое число*, атомная масса*, атомная единица массы)] (* <- lang_ru;; *);;
+      *);
+
+<-rrel_key_sc_element: ... 
+     (*
+        ->rrel_key_sc_element: nrel_atomic_mass; nucleon;;
+        <- statement;;
+		<-concept_assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_sets (*<-concept_subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (*->rrel_example: [Знание массового числа позволяет оценить массу ядра и атома. Если известно массовое число, то масса М атома и его ядра оценивается из следующего соотношения М ≈ А·mN, где mN ≈ 1,67·10^(−27) кг — масса нуклона, то есть протона или нейтрона. Например, в состав атома алюминия-27 и его ядра входит 27 нуклонов (13 протонов и 14 нейтронов). Его масса примерно равна 27·1,67·10^(−27) кг ≈ 4,5·10^(−26) кг. Если необходимо получить массу ядра с большей точностью, то нужно учесть, что нуклоны в ядре связаны силами ядерного притяжения, и поэтому в соответствии с соотношением E = mc^2 масса ядра уменьшается. В массу атома также следует добавить суммарную массу электронов на орбитах вокруг ядра. Однако все эти поправки не превышают 1 %.](*<-lang_ru;; =>nrel_format: format_html;;*);; *);;
+        => nrel_main_idtf: [Утв. (массовое число*, масса атома*, нуклон)] (* <- lang_ru;; *);;
+      *);
+
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_first_domain: atomic_nucleus;
+=> nrel_second_domain: number;
+=> nrel_definitional_domain:...
+(*
+    <= nrel_combination: ...
+    (* 
+        -> number; atomic_nucleus;;
+    *);;
+*);;

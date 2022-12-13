@@ -1,0 +1,70 @@
+subst_No
+<- sc_node_not_relation;
+=> nrel_main_idtf: [нобелий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [nobelium] (* <- lang_en;; *);
+<- rrel_key_sc_element: definition_of_subst_No
+(* 
+	=> nrel_main_idtf: 
+	[Опр.(нобелий)] (* <- lang_ru;; *);
+	[Def.(nobelium)] (* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<b><sc_element sys_idtf="subst_No">Нобелий</sc_element></b> — искусственно полученное <sc_element sys_idtf="radioactive_substance">радиоактивное</sc_element> <sc_element sys_idtf="chemical_substance">вещество</sc_element>, не встречающееся в природе.] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+
+			-> rrel_example:
+			[<b><sc_element sys_idtf="subst_No">Nobelium</sc_element></b> is an artificially received <sc_element sys_idtf="radioactive_substance">adioactive</sc_element> <sc_element sys_idtf="chemical_substance">substance</sc_element>that doesn't exist in nature.] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_substance;;
+		-> radioactive_substance;;
+	*);;
+*);
+
+<= nrel_inclusion: chemical_substance;
+
+
+<- rrel_key_sc_element: receiving_No_from_C
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(нобелий, получение*)](*<- lang_ru;;*);
+		[Stat.(nobelium, receiving*)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Нобелий получают в результате ядерных реакций углерода.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+
+		-> rrel_example:[ Nobelium is received in carbon's nuclear reactions.] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 1100 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_ionization_energy: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole: 640 (*<- number;;*);;
+	*);;
+*);;
+
+
+atomic_multiplicity_one -> (subst_No -> elem_No);;

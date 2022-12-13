@@ -1,0 +1,98 @@
+elem_Be
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+	Definition_of_beryllium
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Be.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
+	*);
+
+<- group_two;
+<- period_two;
+=> nrel_periodic_number: four;
+
+<- metal;
+
+
+<= nrel_inclusion: oxidation_state_plus_two; 
+<= nrel_inclusion: valence_two;
+
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:140(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Be;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:90(*<- number;;*);;
+	*);;
+*);
+
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Be;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_Be
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (бериллий, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Be 1s<sup>2</sup> 2s<sup>2</sup>] 
+			(*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис. (химический элемент бериллий)] (* <- lang_ru;;	*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/Beryllium.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
+		*);;
+	*);;
+
+
+Definition_of_beryllium
+=> nrel_main_idtf:
+	[Опр. (бериллий)]
+	(* <- lang_ru;;	*);;
+
+atomic_mass_Be <- number;
+=> nrel_main_idtf:[9,01](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Be <- number;
+=> nrel_main_idtf:[1,57](*<-lang_ru;; <- lang_en;;*);;

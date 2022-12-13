@@ -1,0 +1,87 @@
+urotropin_snake
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[уротропиновая змея](*<- lang_ru;;*);
+	[urotropin snake](*<- lang_en;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (уротропиновая змея)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Разложение уротропина (CH2)6N4 в смеси с нитратом аммония NH4NO3 приводит к образованию пористой массы, состоящей из углерода, и большого количества газов - диоксида углерода СО2, азота N2 и воды.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+<= nrel_sc_text_translation: ...
+(* 
+	=> nrel_main_idtf: 		
+		[Видео (уротропиновая змея)](*<- lang_ru;;*);;
+	-> rrel_example: [JLUZ5HkVDhU]
+		(*
+			=> nrel_format: format_youtubelink;;
+			<-lang_ru;;
+		*);;
+*);
+
+=> nrel_equipment: ...
+(*
+	-> saucer;;
+*);
+
+=> nrel_ingredient: ...
+(*
+	-> urotropin;;
+	-> ammonium_nitrate;;
+*);;
+
+urotropin_snake_experiment
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[опыт уротропиновая змея](*<- lang_ru;;*);;
+
+urotropin_snake_first
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[уротропиновая змея 1](*<- lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (уротропиновая змея 1)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Одну таблетку уротропина положитm на блюдце и 3-4 раза пропитайть концентрированным водным раствором нитрата аммония NH4NO3, капая его из пипетки, а потом высушивая.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;
+
+urotropin_snake_second
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[уротропиновая змея 2](*<- lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (уротропиновая змея 2)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Пропитанную и высушенную таблетку на блюдце следует поджечь с одной стороны.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;

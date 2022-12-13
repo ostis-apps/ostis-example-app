@@ -1,0 +1,24 @@
+exercise10_mixture
+<- exercises_mixture;
+
+-> rrel_key_sc_element: alloy; subst_Cu; subst_Sn; nrel_mass; nrel_concentration;
+
+=> nrel_next_exercise: exercise11_mixture;
+
+=> nrel_main_idtf:
+	[Упражнение 10. Раздел. Предметная область смесей]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 10. Section. Subject domain of mixtures]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise10_mixture_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise10_mixture_en.html" (* <-lang_en;; *);;
+	*);;

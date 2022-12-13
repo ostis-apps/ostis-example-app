@@ -1,0 +1,121 @@
+elem_Pb
+<= nrel_inclusion: chemical_element;
+<- sc_node_not_relation;
+
+=> nrel_main_idtf: [атом свинца] (* <-lang_ru;;*);
+=> nrel_main_idtf: [plumbum atom] (* <-lang_en;;*);
+=> nrel_idtf: [атом Pb] (* <-lang_ru;;*);
+=> nrel_idtf: [atom Pb] (* <-lang_en;;*);
+
+<- rrel_key_sc_element: definition_of_elem_Pb
+(* 
+	=> nrel_main_idtf: [Опр.(Атом свинца)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "elem_Pb">Свинец</sc_element></b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>   четырнадцатой  <sc_element sys_idtf  = "periodic_group">группы</sc_element>, 6-го <sc_element sys_idtf  = "period">периода</sc_element>  периодической системы химических элементов.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_element;;
+		-> period;;
+		-> periodic_group;;
+	*);;
+*);
+
+
+<- metal;
+<- light_metal;
+<- chalcophile;
+<- carbon_group;
+
+=> nrel_periodic_number: eighty_two;
+<- group_fourteen;
+<- period_six;
+
+<- oxidation_state_minus_four;
+<- oxidation_state_plus_two;
+<- oxidation_state_plus_four;
+
+<- valence_two;
+<- valence_four;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(Атом свинца)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Pic.(Plumbum atom)] (* <- lang_en;; *);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://image/elem_Pb.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:175(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Pb;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:147(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Pb;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Pb
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(атом свинца, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>3p<sup>6</sup>3d<sup>10</sup>4s<sup>2</sup>4p<sup>6</sup>4d<sup>10</sup>5s<sup>2</sup>5p<sup>6</sup>4f<sup>14</sup>5d<sup>10</sup>6s<sup>2</sup>6p<sup>2</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв.(атом свинца, свойство изотопа*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://html/isotopes_table_of_elem_Pb.html"
+		(*
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;
+
+atomic_mass_Pb <- number;
+=> nrel_main_idtf:[207,2(1)](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Pb <- number;
+=> nrel_main_idtf:[2,33](*<-lang_ru;; <- lang_en;;*);;
+
+

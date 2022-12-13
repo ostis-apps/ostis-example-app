@@ -1,0 +1,24 @@
+exercise4_mixture
+<- exercises_mixture;
+
+-> rrel_key_sc_element: mixture; subst_Cu; subst_Fe; subst_Fe; nrel_mass; sulfuric_acid; metal; nrel_solubility; gas; subst_NaOH; nrel_object_structure;
+
+=> nrel_next_exercise: exercise5_mixture;
+
+=> nrel_main_idtf:
+	[Упражнение 4. Раздел. Предметная область смесей]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 4. Section. Subject domain of mixtures]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise4_mixture_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise4_mixture_en.html" (* <-lang_en;; *);;
+	*);;

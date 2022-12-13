@@ -1,0 +1,98 @@
+ecgonine<-sc_node_not_relation;;
+ecgonine=> nrel_main_idtf:[экгонин](* <- lang_ru;; *);;
+ecgonine=> nrel_main_idtf:[ecgonine](* <- lang_en;; *);;
+ecgonine=> nrel_idtf:[C9H15NO3](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: ecgonine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Экгонин — <b><sc_element sys_idtf="organic_compound">органическое вещество</b></sc_element> с  <b><sc_element sys_idtf="chemical_formula">формулой </b></sc_element> C9H15NO3, <b><sc_element sys_idtf="true_alkaloids">истинный алкалоид</b></sc_element>, содержащийся в листьях коки.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (экгонин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		true_alkaloids;
+		organic_compound;
+		chemical_formula
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: ecgonine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Структура экгонина родственна структуре кокаина.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(экгонин)](*<- lang_ru;;*);;
+	
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element:ecgonine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/ecgonine1.png";;*);;
+	=> nrel_main_idtf: [Рисунок(экгонин,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:ecgonine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/ecgonine2.png";;*);;
+	=> nrel_main_idtf: [Рисунок(экгонин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+solid_matter=>nrel_inclusion:ecgonine;;
+true_alkaloids=>nrel_inclusion:ecgonine;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> ecgonine;;
+	=> nrel_measurement_in_gramms_per_mole: [185,2]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->ecgonine;;
+	=> nrel_measurement_in_degrees_Celsius: 198
+	(*
+		<-number;;
+	*);;
+*);;
+drag_half_life->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->ecgonine;;
+	=> nrel_measurement_in_degrees_Celsius: 1
+	(*
+		<-number;;
+	*);;
+*);;
+destiny->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->ecgonine;;
+	=> nrel_measurement_in_degrees_Celsius: [1,293]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+

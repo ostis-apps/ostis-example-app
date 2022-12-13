@@ -1,0 +1,80 @@
+subst_Bk
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[berkelium (substance)](*<- lang_en;;*);
+	[берклий (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Bk (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (берклий (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Берклий (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - <sc_element sys_idtf = "radioactivity">радиоактивный</sc_element> <sc_element sys_idtf = "metal">металл</sc_element> серебристо-белого цвета.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> radioactivity;;
+		-> metal;;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (берклий (вещество), радиоактивный металл серебристо-белого цвета)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Berkelium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+<- color_white_silver;
+<- no_smell;
+<- no_taste;
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1295 (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:2900 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (берклий (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Всего известно девять изотопов берклия, с массами от 243 до 251.] (* <- lang_ru;; *);;
+	*);;
+*);;

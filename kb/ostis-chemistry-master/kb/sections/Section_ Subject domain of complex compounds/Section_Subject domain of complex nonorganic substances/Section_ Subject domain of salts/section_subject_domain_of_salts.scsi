@@ -1,0 +1,1909 @@
+subject_domain_of_salts
+	=> nrel_main_idtf:
+	[Предметная область солей]
+	(* <- lang_ru;; *);
+	[Subject domain of salts]
+	(* <- lang_en;; *);
+		
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	salt;
+
+-> rrel_not_maximum_studied_object_class:
+	acesulfame_potassium;
+	acid_salt;
+	bromide;
+	caesium_auride;
+	caesium_chloride;
+	carbonate;
+	chloride;
+	chromium_II_carbide;
+	copper_II_bromide;
+	double_salt;
+	nitrate;
+	normal_salt;
+	picrate;
+	polonium_II_dibromide;
+	silicate;
+	silicon_carbide;
+	sodium_dichromate;
+	sodium_hydrosulfide;
+	sulfate;
+	tantalum_carbide;
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://html/section_salts.html" (* <-lang_ru;; *);;
+		*);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://html/section_salts_eng.html" (* <-lang_en;; *);;
+		*);;
+
+dichromate
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[дихромат]
+	(* <- lang_ru;; *);
+	[dichromate]
+	(* <- lang_en;; *);;
+
+sulfate
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[сульфат]
+	(* <- lang_ru;; *);
+	[sulfate]
+	(* <- lang_en;; *);
+
+
+<- rrel_key_sc_element: receiving_sulfate
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (сульфат, получение*)](*<- lang_ru;;*);
+			[Stat. (sulfate, receiving*)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> [Сульфаты образуются при взаимодействии серной кислоты и оснований.]
+		(* 
+		<-lang_ru;;
+		=> nrel_format: format_html;;
+		*);;
+
+		-> [Sulfates are formed by the interaction of sulfuric acid and bases.]
+		(* 
+		<-lang_en;;
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	Definition_of_sulfate
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="sulfate">Сульфат</sc_element></b> — <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element>, <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="sulfuric_acid">серной кислоты</sc_element> H<sub>2</sub>SO<sub>4</sub>] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="sulfate">Sulfate</sc_element></b> is a <sc_element sys_idtf="chemical_compound">chemical compound</sc_element>, <sc_element sys_idtf="salt">salt</sc_element> of <sc_element sys_idtf="sulfuric_acid">sulfuric acid</sc_element> H<sub>2</sub>SO<sub>4</sub>] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);;
+
+Definition_of_sulfate
+=> nrel_main_idtf:
+	[Опр.(сульфат)]
+	(* <- lang_ru;;	*);
+	[Def.(sulfate)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_compound; salt; sulfuric_acid;;
+			*);;
+
+sodium_hydrosulfide
+<- sc_node_not_relation;
+
+<-color_white;
+<-crystal;
+<-acid_salt;
+<-hydrosulfide;
+
+=> nrel_main_idtf:
+	[гидросульфид натрия]
+	(* <- lang_ru;;	*);
+	[sodium hydrosulfide]
+	(* <- lang_en;;	*);
+
+=> nrel_idtf:
+	[сернистый натрий]
+	(* <- lang_ru;;	*);
+	[кислый натрий]
+	(* <- lang_ru;;	*);
+	[NaHS] 
+	(* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_sodium_hydrosulfide
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="sodium_hydrosulfide">Гидросульфид натрия</sc_element></b> — <sc_element sys_idtf="acid_salt">кислая соль</sc_element> <sc_element sys_idtf="elem_Na">натрия</sc_element> и <sc_element sys_idtf="hydrogen_sulphide">сероводорода</sc_element>]
+		(* <-lang_ru;; 
+		   => nrel_format: format_html;;
+		   *);;
+
+		 -> rrel_example:[<b><sc_element sys_idtf="sodium_hydrosulfide">Sodium hydrosulfide</sc_element></b> is an <sc_element sys_idtf="acid_salt">acid salt</sc_element> of <sc_element sys_idtf="elem_Na">sodium</sc_element> and <sc_element sys_idtf="hydrogen_sulphide">hydrogen sulfide</sc_element>]
+		(* <-lang_en;; 
+		   => nrel_format: format_html;;
+		   *);;
+		*);;
+	*);
+
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [1,79] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 350 (*<- number;;*);;
+	*);;
+*);
+
+	
+=> nrel_applying: leather_industry; chemical_industry; textile_industry; mining; flotation;;
+
+
+
+
+
+Definition_of_sodium_hydrosulfide
+=> nrel_main_idtf:
+	[Опр.(гидросульфид натрия)]
+	(* <- lang_ru;;	*);
+	[Def.(sodium hydrosulfide)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> acid_salt; elem_Na; hydrogen_sulfide;;
+			*);;
+
+sodium_dichromate
+<- sc_node_not_relation;
+
+<- color_red;
+<- color_orange;
+<- carcinogen;
+<- dichromate;
+<- salt;
+
+=> nrel_main_idtf:
+	[дихромат натрия]
+	(* <- lang_ru;;	*);
+	[sodium dichromate]
+	(* <- lang_en;;	*);
+
+=> nrel_idtf: 
+	[Na2Cr2O7] 
+	(* <-lang_en;;*);
+	[бихромат натрия] 
+	(* <-lang_ru;;*);
+	[натриевый хромпик] 
+	(* <-lang_ru;;*);
+	[динатриевая соль дихромовой кислоты] 
+	(* <-lang_ru;;*);
+	[динатрий дихромат(VI)] 
+	(* <-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_sodium_dichromate
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sys_idtf="sodium_dichromate">Дихрома́т на́трия</sc_element></b> — <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element>, <sc_element sys_idtf="elem_Na">натриевая</sc_element> <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="dichromic_acid">дихромовой кислоты</sc_element>.]
+		(* <-lang_ru;; 
+		   => nrel_format: format_html;;
+		   *);;
+
+		-> rrel_example:[<b><sys_idtf="sodium_dichromate">Sodium dichromate</sc_element></b> is a <sc_element sys_idtf="chemical_compound">chemical compound</sc_element>, <sc_element sys_idtf="elem_Na">sodium</sc_element> <sc_element sys_idtf="salt">salt</sc_element> of <sc_element sys_idtf="dichromic_acid">dichromic acid</sc_element>.]
+		(* <-lang_en;; 
+		   => nrel_format: format_html;;
+		   *);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(дихромат натрия , твёрдое тело)] (* <- lang_ru;;	*);
+	[Pic.(sodium dichromate, solid)] (* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/sodium_dichromate.JPG"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [2,52] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 356 (*<- number;;*);;
+	*);;
+*);
+	
+=> nrel_applying: leather_industry; electronics;;
+
+
+
+Definition_of_sodium_dichromate
+=> nrel_main_idtf:
+	[Опр.(дихромат натрия)]
+	(* <- lang_ru;;	*);
+	[Def.(sodium dichromate)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_compound; elem_Na; salt; dichromic_acid;;
+			*);;
+
+
+silicon_carbide
+<- sc_node_not_relation;
+
+<-salt;
+<-carbide;
+<-solid;
+<-crystal;
+<-color_black;
+<-color_blue;
+<-color_yellow;
+<-color_green;
+<-color_white;
+
+=> nrel_main_idtf:
+	[карбид кремния]
+	(* <- lang_ru;;	*);
+	[silicon carbide]
+	(* <- lang_en;;	*);
+
+=> nrel_idtf: 
+	[SiC] 
+	(* <-lang_en;;*);
+	[карбору́нд] 
+	(* <-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_silicon_carbide
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="silicon_carbide">Карби́д кре́мния</sc_element></b> — <sc_element sys_idtf="binary_compound">бинарное</sc_element> <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element> <sc_element sys_idtf="elem_Si">кремния</sc_element> с <sc_element sys_idtf="elem_C">углеродом</sc_element>.]
+		(* <-lang_ru;; 
+		   => nrel_format: format_html;;
+		   *);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="silicon_carbide">Silicon carbide</sc_element></b> is a <sc_element sys_idtf="binary_compound">binary</sc_element> <sc_element sys_idtf="chemical_compound">chemical compound</sc_element> of <sc_element sys_idtf="elem_Si">silicon</sc_element> and <sc_element sys_idtf="elem_C">arbon</sc_element>.]
+		(* <-lang_en;; 
+		   => nrel_format: format_html;;
+		   *);;
+		*);;
+	*);
+
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [3,21] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 2730 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 4892 (*<- number;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(карбид кремния, твёрдое тело)] (* <- lang_ru;;	*);
+	[Pic.(silicon carbide, solid)] (* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/silicon_carbide.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+	
+=> nrel_applying: electronics; construction;;
+
+
+
+Definition_of_silicon_carbide
+=> nrel_main_idtf:
+	[Опр.(карбид кремния)]
+	(* <- lang_ru;;	*);
+	[Def.(silicon carbide)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_compound; binary_compound; elem_Si; elem_C;;
+			*);;
+
+
+silicate
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[силикат]
+	(* <- lang_ru;; *);
+	[silicate]
+	(* <- lang_en;; *);
+
+	<- rrel_key_sc_element: receiving_silicate
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (силикат, получение*)](*<- lang_ru;;*);
+			[Stat. (silicate, receiving*)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: 
+		[Силикаты образуются при взаимодействии кремниевой кислоты и оснований.]
+		(* <-lang_ru;;*);;
+
+		-> rrel_example: 
+		[Silicates are received from metasilicic acid and basis interaction.]
+		(* <-lang_en;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element:
+	Definition_of_silicate
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="silicate">Силикат</sc_element></b> — <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element>, <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="metasilicic_acid">кремниевых кислот.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="silicate">Silicate</sc_element></b> is a <sc_element sys_idtf="chemical_compound">chemical compound</sc_element>, <sc_element sys_idtf="salt">salt</sc_element> of <sc_element sys_idtf="metasilicic_acid">metasilicic acids.] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+=> nrel_applying: construction;;
+
+Definition_of_silicate
+=> nrel_main_idtf:
+	[Опр.(силикат)]
+	(* <- lang_ru;;	*);
+	[Def.(silicate)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_compound; salt; metasilicic_acid;;
+			*);;
+
+
+salt
+
+<- sc_node_not_relation;
+
+<= nrel_inclusion: complex_substance;
+
+=> nrel_main_idtf:
+	[соль]
+	(* <- lang_ru;;	*);
+	[salt]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element:
+	Definition_of_salt
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="salt">Со́ль</sc_element></b> — <sc_element sys_idtf="complex_substance">сложное вещество</sc_element>, которое в <sc_element sys_idtf="water">водных</sc_element> <sc_element sys_idtf="solution">растворах</sc_element> <sc_element sys_idtf="electrolytic_dissociation">диссоциирует</sc_element> на <sc_element sys_idtf="cation">катионы</sc_element> <sc_element sys_idtf="metal">металлов</sc_element> и <sc_element sys_idtf="anion">анионы</sc_element> <sc_element sys_idtf="nrel_acid_residue">кислотных остатков</sc_element>.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="salt">Salt</sc_element></b> is a <sc_element sys_idtf="complex_substance">complex substance</sc_element> which <sc_element sys_idtf="electrolytic_dissociation">dissociates</sc_element> into <sc_element sys_idtf="cation">cations</sc_element> of <sc_element sys_idtf="metal">metals</sc_element> and <sc_element sys_idtf="anion">anions</sc_element> of <sc_element sys_idtf="nrel_acid_residue">acid residues</sc_element> in <sc_element sys_idtf="water">water</sc_element> <sc_element sys_idtf="solution">solutions</sc_element> .] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(соль, твёрдое тело)] (* <- lang_ru;;	*);
+	[Pic.(salt, solid)] (* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/salt1.JPG"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+<= nrel_subdividing:
+	salt_substitution
+  (* 
+    -> normal_salt;;
+    -> acid_salt;;
+    -> alkali_salt;;
+	*);
+
+<= nrel_subdividing:
+	salt_structure
+  (* 
+    -> simple_salt;;
+    -> double_salt;;
+    -> mixed_salt;;
+	*);
+
+
+<= nrel_subdividing:
+	salt_molecule
+  (* 
+    -> crystalline_hydrate;;
+    -> inner_salt;;
+    -> complex_salt;;
+	*);
+
+<= nrel_subdividing:
+	salt_solubility
+  (* 
+    -> soluble_salt;;
+    -> poorly_soluble_salt;;
+    -> insoluble_salt;;
+	*);
+
+<= nrel_subdividing:
+	subdividing_salt_by_acid
+  (* 
+    -> carbonate;;
+    -> phosphate;;
+    -> nitrate;;
+    -> sulfate;;
+    -> chloride;;
+    -> silicate;;
+    -> bromide;;
+    -> iodide;;
+    -> sulfide;;
+    -> fluoride;;
+    -> picrate;;
+	*);;
+
+Definition_of_salt
+=> nrel_main_idtf:
+	[Опр.(соль)]
+	(* <- lang_ru;;	*);
+	[Def.(salt)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> complex_substance; water; solution; electrolytic_dissociation; cation; metal; anion; nrel_acid_residue;;
+			*);;
+
+salt_substitution
+=> nrel_main_idtf:
+	[Разбиение солей по продуктам замены]
+	(* <- lang_ru;; *);
+	[Partitioning salts by exchange products]
+	(* <- lang_en;; *);;
+
+salt_structure
+=> nrel_main_idtf:
+	[Разбиение солей по числу катионов и анионов]
+	(* <- lang_ru;; *);
+	[Partitioning salts by cation and anion number]
+	(* <- lang_en;; *);;
+
+salt_molecule
+=> nrel_main_idtf:
+	[Разбиение солей по входящим в состав частицам]
+	(* <- lang_ru;; *);
+	[Partitioning salts by comprising particles]
+	(* <- lang_en;; *);;
+
+salt_solubility
+=> nrel_main_idtf:
+	[Разбиение солей по растворимости]
+	(* <- lang_ru;; *);
+	[Partitioning salts by solubility]
+	(* <- lang_en;; *);;
+	
+subdividing_salt_by_acid
+=> nrel_main_idtf:
+	[Разбиение солей по соответствующим кислотам]
+	(* <- lang_ru;; *);
+	[Partitioning salts by corresponding acids]
+	(* <- lang_en;; *);;
+
+
+polonium_II_dibromide
+
+<- sc_node_not_relation;
+
+<-bromide;
+<-crystal;
+<-salt;
+<-color_brown;
+<-solid;
+
+=> nrel_main_idtf:
+	[бромид полония(II)]
+	(* <- lang_ru;;	*);
+	[polonium(II) dibromide]
+	(* <- lang_en;;	*);
+
+=> nrel_idtf: 
+	[PoBr2] 
+	(* <-lang_en;;*);
+
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 275 (*<- number;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:
+	Definition_of_polonium_II_dibromide
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="polonium_II_dibromide">Бромид полония(II)</sc_element></b> — <sc_element sys_idtf="binary_compound">бинарное соединение</sc_element> двухвалентного <sc_element sys_idtf="elem_Po">полония</sc_element> с <sc_element sys_idtf="elem_Br">бромом</sc_element>, полониевая <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="hydrobromic_acid">бромоводородной кислоты</sc_element>.]
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		   *);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="polonium_II_dibromide">Polonium(II) dibromide</sc_element></b> is a <sc_element sys_idtf="binary_compound">binary compound</sc_element> of <sc_element sys_idtf="elem_Po">polonium</sc_element>(II) with <sc_element sys_idtf="elem_Br">bromine</sc_element>, polonium <sc_element sys_idtf="salt">salt</sc_element> of <sc_element sys_idtf="hydrobromic_acid">hydrobromic acid</sc_element>.]
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		   *);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_polonium_II_dibromide
+=> nrel_main_idtf:
+	[Опр.(бромид полония(II))]
+	(* <- lang_ru;;	*);
+	[Def.(polonium(II) dibromide)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> binary_compound; elem_Po; elem_Br; salt; hydrobromic_acid;;
+			*);;
+
+			picrate
+<- sc_node_not_relation;
+        => nrel_main_idtf:
+                [picrate](*<- lang_en;;*);
+                [пикрат](*<- lang_ru;;*);
+
+<= nrel_inclusion: explosive;
+=> nrel_applying: explosive;
+
+=> nrel_receiving: ...
+(*
+	=> nrel_interaction: picric_acid; hydroxide;;
+*);
+
+=> nrel_receiving: ...
+(*
+	=> nrel_interaction: picric_acid; carbonate;;
+*);
+				
+
+
+<- rrel_key_sc_element: receiving_picrate
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (пикрат, получение*)](*<- lang_ru;;*);
+			[Stat. (picrate, receiving*)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Пикраты образуются при взаимодействии пикриновой кислоты и оснований.](* <-lang_ru;;	*);;
+		-> rrel_example:[Picrates are received from picric acid and basis interaction.](* <-lang_en;;	*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	Definition_of_picrate
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="picrate">Пикрат</sc_element></b> — <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element>, <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="picric_acid">пикриновой кислоты</sc_element>.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="picrate">Picrate</sc_element></b> is a <sc_element sys_idtf="chemical_compound">chemical compound</sc_element>, <sc_element sys_idtf="salt">salt</sc_element> of <sc_element sys_idtf="picric_acid">picric acid</sc_element>.] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);;
+
+Definition_of_picrate
+=> nrel_main_idtf:
+	[Опр.(пикрат)]
+	(* <- lang_ru;;	*);
+	[Def.(picrate)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_compound; salt; picric_acid;;
+			*);;
+
+
+normal_salt
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[нормальная соль]
+	(* <- lang_ru;; *);
+	[normal salt]
+	(* <- lang_en;; *);
+
+=> nrel_idtf: 
+	[средняя соль]
+	(* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+	Definition_of_normal_salt
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="normal_salt">Средняя (нормальная) соль</sc_element></b> — продукт замещения всех <sc_element sys_idtf="cation">катионов</sc_element> <sc_element sys_idtf="elem_H">водорода</sc_element> в молекулах <sc_element sys_idtf="acid">кислоты</sc_element> на катионы <sc_element sys_idtf="metal">металла</sc_element>.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="normal_salt">Normal salt</sc_element></b> is a product of substitution of all <sc_element sys_idtf="cation">cations</sc_element> of <sc_element sys_idtf="elem_H">hydrogen</sc_element> in <sc_element sys_idtf="acid">acid</sc_element> molecules into cations of <sc_element sys_idtf="metal">matel</sc_element>.] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);;
+
+
+Definition_of_normal_salt
+=> nrel_main_idtf:
+	[Опр.(средняя соль)]
+	(* <- lang_ru;;	*);
+	[Def.(normal salt)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> cation; metal; acid; elem_H;;
+			*);;
+
+
+nitrate
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[нитрат]
+	(* <- lang_ru;; *);
+	[nitrate]
+	(* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+	Definition_of_nitrate
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="nitrate">Нитрат</sc_element></b> — <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element>, <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="nitric_acid">азотной кислоты</sc_element> HNO<sub>3</sub>] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="nitrate">Nitrate</sc_element></b> is a <sc_element sys_idtf="chemical_compound">chemical compound</sc_element>, <sc_element sys_idtf="salt">salt</sc_element> of <sc_element sys_idtf="nitric_acid">nitric acid</sc_element> HNO<sub>3</sub>] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element: receiving_nitrate
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (нитрат, получение*)](*<- lang_ru;;*);
+			[Stat. (nitrate, receiving*)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Нитраты образуются при взаимодействии азотной кислоты и оснований.]
+		(* <-lang_ru;;*);;
+
+		-> rrel_example:[Nitrates are received from nitric acid and basis interaction.]
+		(* <-lang_en;;*);;
+		*);;
+	*);
+
+=> nrel_applying: ...
+(*
+		-> explosive;;
+		-> fertilizer;;
+		-> cooking;;
+		-> medicine;;
+*);;
+
+Definition_of_nitrate
+=> nrel_main_idtf:
+	[Опр.(нитрат)]
+	(* <- lang_ru;;	*);
+	[Def.(nitrate)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_compound; salt; nitric_acid;;
+			*);;
+
+
+double_salt
+
+<- sc_node_not_relation;
+
+<= nrel_inclusion: solid;
+
+=> nrel_main_idtf:
+	[двойная соль]
+	(* <- lang_ru;;	*);
+	[double salt]
+	(* <- lang_en;;	*);
+
+
+<- rrel_key_sc_element:
+	Definition_of_double_salt
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="double_salt">Двойная соль</sc_element></b> — это <sc_element sys_idtf="salt">соль</sc_element>, содержащая два типа <sc_element sys_idtf="cation">катионов</sc_element>.]
+		(* <-lang_ru;; 
+		   => nrel_format: format_html;;
+		   *);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="double_salt">Double salt</sc_element></b> is a <sc_element sys_idtf="salt">salt</sc_element>containing 2 <sc_element sys_idtf="cation">cations</sc_element> types.]
+		(* <-lang_en;; 
+		   => nrel_format: format_html;;
+		   *);;
+		*);;
+	*);;
+
+Definition_of_double_salt
+=> nrel_main_idtf:
+	[Опр.(двойная соль)]
+	(* <- lang_ru;;	*);
+	[Def.(double salt)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> salt; cation;;
+			*);;
+
+			copper_II_bromide
+
+<- sc_node_not_relation;
+
+<-bromide;
+<-crystal;
+<-salt;
+<-color_black;
+<-solid;
+
+=> nrel_main_idtf:
+	[бромид меди(II)]
+	(* <- lang_ru;;	*);
+	[copper (II) bromide]
+	(* <- lang_en;;	*);
+
+=> nrel_idtf: 
+	[CuBr2] 
+	(* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_copper_II_bromide
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="copper_II_bromide">Бромид меди(II)</sc_element></b> — соединение двухвалентной <sc_element sys_idtf="elem_Cu">меди</sc_element> с <sc_element sys_idtf="elem_Br">бромом</sc_element>.]
+		(* <-lang_ru;; 
+		   => nrel_format: format_html;;
+		   *);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="copper_II_bromide">Copper (II) bromide</sc_element></b> is a compound of <sc_element sys_idtf="elem_Cu">copper</sc_element>(II) and <sc_element sys_idtf="elem_Br">bromine</sc_element>.]
+		(* <-lang_en;; 
+		   => nrel_format: format_html;;
+		   *);;
+		*);;
+	*);
+
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [4,71] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 498 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 900 (*<- number;;*);;
+	*);;
+*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(бромид меди(II), твёрдое тело)] (* <- lang_ru;;	*);
+	[Pic.(copper (II) bromide, solid)] (* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/copper_II_bromide.PNG"
+			(*
+			=> nrel_format: format_PNG;;
+			*);;
+		*);;
+	*);
+	
+=> nrel_applying: bromination; photography;;
+
+
+
+
+
+Definition_of_copper_II_bromide
+=> nrel_main_idtf:
+	[Опр.(бромид меди(II))]
+	(* <- lang_ru;;	*);
+	[Def.(copper (II) bromide)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> elem_Cu; elem_Br;;
+			*);;
+
+
+chromium_II_carbide
+
+
+<- sc_node_not_relation;
+
+<-salt;
+<-carbide;
+<-solid;
+<-crystal;
+<-color_gray;
+
+=> nrel_main_idtf:
+	[карбид хрома(II)]
+	(* <- lang_ru;;	*);
+	[chromium(II) carbide]
+	(* <- lang_en;;	*);
+
+=> nrel_idtf: 
+	[Cr3C2] 
+	(* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_chromium_II_carbide
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="chromium_II_carbide">Карбид хрома(II)</sc_element></b> — <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element> <sc_element sys_idtf="elem_Cr">хрома</sc_element> и <sc_element sys_idtf="elem_C">углерода</sc_element>. ]
+		(* <-lang_ru;; 
+		   => nrel_format: format_html;;
+		   *);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="chromium_II_carbide">Chromium(II) carbide</sc_element></b> is a <sc_element sys_idtf="chemical_compound">chemical compound</sc_element> of <sc_element sys_idtf="elem_Cr">chrom</sc_element> and <sc_element sys_idtf="elem_C">carbon</sc_element>. ]
+		(* <-lang_en;; 
+		   => nrel_format: format_html;;
+		   *);;
+		*);;
+	*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [6,68] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: receiving_chromium_II_carbide_from_Cr
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (карбид хрома(II), получение*, хром, углерод)](*<- lang_ru;;*);
+			[Stat. (chromium(II) carbide, receiving*, chrom, carbon)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Карбонаты образуются непосредственным насыщением хрома углеродом.]
+		(* <-lang_ru;;*);;
+
+		-> rrel_example:[Carbonates are formed by direct saturation of chromium with carbon.]
+		(* <-lang_en;;*);;
+		*);;
+	*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 1895 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 3800 (*<- number;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(карбид хрома(II) , твёрдое тело)] (* <- lang_ru;;	*);
+	[Pic.(chromium(II) carbide, solid)] (* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/chromium_II_carbide.JPG"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+	
+=> nrel_applying: metallurgy;;
+
+Definition_of_chromium_II_carbide
+=> nrel_main_idtf:
+	[Опр.(карбид хрома(II))]
+	(* <- lang_ru;;	*);
+	[Def.(chromium(II) carbide)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_compound; elem_Cr; elem_C;;
+			*);;
+
+
+chloride
+
+<- sc_node_not_relation;
+
+        => nrel_main_idtf:
+                [chloride](*<- lang_en;;*);
+                [хлорид](*<- lang_ru;;*);
+
+
+<- rrel_key_sc_element: receiving_chloride
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (хлорид, получение*)](*<- lang_ru;;*);
+			[Stat. (chloride, receiving*)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Хлориды образуются при взаимодействии хлороводородной кислоты и оснований.]
+		(* <-lang_ru;;*);;
+
+
+		-> rrel_example:[Chlorides are formed by the interaction of hydrochloric acid and bases.]
+		(* <-lang_en;;*);;
+		*);;
+	*);
+				
+<- rrel_key_sc_element:
+	Definition_of_chloride
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="chloride">Хлори́д</sc_element></b> — <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element>, <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="hydrochloric_acid">хлороводородной (соляной) кислоты</sc_element> HCl] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="chloride">Chloride</sc_element></b> is a <sc_element sys_idtf="chemical_compound">chemical compound</sc_element>, <sc_element sys_idtf="salt">salt</sc_element> of <sc_element sys_idtf="hydrochloric_acid">hydrochloric acid</sc_element> HCl] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);;
+
+Definition_of_chloride
+=> nrel_main_idtf:
+	[Опр.(хлорид)]
+	(* <- lang_ru;;	*);
+	[Def.(chloride)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_compound; salt; chloric_acid;;
+			*);;
+
+
+carbonate
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[карбонат]
+	(* <- lang_ru;; *);
+	[carbonate]
+	(* <- lang_en;; *);
+
+
+<- rrel_key_sc_element:
+	Definition_of_carbonate
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="carbonate">Карбонат</sc_element></b> — <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element>, <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="carbonic_acid">угольной кислоты</sc_element> H<sub>2</sub>CO<sub>3</sub>] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="carbonate">Carbonate</sc_element></b> is a <sc_element sys_idtf="chemical_compound">chemical compound</sc_element>, <sc_element sys_idtf="salt">salt</sc_element> of <sc_element sys_idtf="carbonic_acid">carbonic acid</sc_element> H<sub>2</sub>CO<sub>3</sub>] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: receiving_carbonate
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (карбонат, получение*)](*<- lang_ru;;*);
+			[Stat. (carbonate, receiving*)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> [Карбонаты образуются при взаимодействии угольной кислоты и оснований.]
+		(* <-lang_ru;;*);;
+		-> [Carbonates are formed by the interaction of carbonic acid and bases.]
+		(* <-lang_en;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(карбонат , твёрдое тело)] (* <- lang_ru;;	*);
+	[Pic.(carbonate, solid)] (* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/carbonate.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+Definition_of_carbonate
+=> nrel_main_idtf:
+	[Опр.(карбонат)]
+	(* <- lang_ru;;	*);
+	[Def.(carbonate)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_compound; salt; carbonic_acid;;
+			*);;
+
+			caesium_chloride
+
+
+<- sc_node_not_relation;
+
+<-chloride;
+<-solid;
+
+=> nrel_main_idtf:
+	[хлорид цезия]
+	(* <- lang_ru;;	*);
+	[caesium chloride]
+	(* <- lang_en;;	*);
+
+=> nrel_idtf: 
+	[CsCl] 
+	(* <-lang_en;;*);
+	[хлористый цезий]
+	(* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+	Definition_of_caesium_chloride
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="caesium_chloride">Хлори́д це́зия</sc_element></b> — неорганическое <sc_element sys_idtf="binary_compound">бинарное соединение</sc_element> <sc_element sys_idtf="elem_Cs">цезия</sc_element> с <sc_element sys_idtf="elem_Cl">хлором</sc_element>, цезиевая <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="hydrochloric_acid">хлороводородной кислоты</sc_element>.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="caesium_chloride">Caesium chloride</sc_element></b> is an inorganic <sc_element sys_idtf="binary_compound">cinary compound</sc_element> of <sc_element sys_idtf="elem_Cs">caesium</sc_element> and <sc_element sys_idtf="elem_Cl">chlorine</sc_element>, caesium <sc_element sys_idtf="salt">salt</sc_element> of <sc_element sys_idtf="hydrochloric_acid">hydrochloric acid</sc_element>.] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(хлорид цезия, твёрдое тело)] (* <- lang_ru;;	*);
+	[Pic.(caesium_chloride, solid)] (* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/CsCl.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+
+		-> rrel_example:
+			"file://image/CsCl2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+
+<-no_color;
+
+
+<- rrel_key_sc_element: receiving_CsCl_from_caesium_carbonate
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(хлорид цезия, получение*)](*<- lang_ru;;*);
+		[Stat.(caesium chloride, receiving*)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Хлорид цезия получают из карбоната цезия.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Caesium chloride is received from caesium carbonate.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: receiving_CsCl_from_caesium_hydroxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(хлорид цезия, получение*)](*<- lang_ru;;*);
+		[Stat.(caesium chloride, receiving*)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Хлорид цезия получают из гидроксида цезия.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Caesium chloride is received from caesium hydroxide.] (*<- lang_en;;*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [3,983] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 646 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 1295 (*<- number;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: toxicity_of_caesium_chloride
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (хлорид цезия, токсичность*)](*<- lang_ru;;*);
+			[Stat. (caesium chloride, toxicity*)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Хлорид цезия является низко токсичным соединением, имеющим низкую степень опасности для человека.] 
+		(* <-lang_ru;;*);;
+		-> rrel_example:[Caesium chloride is a low toxic compound having a low degree of danger to humans.] 
+		(* <-lang_en;;*);;
+		*);;
+	*);;
+
+Definition_of_caesium_chloride
+=> nrel_main_idtf:
+	[Опр.(хлорид цезия)]
+	(* <- lang_ru;;	*);
+	[Def.(caesium chloride)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> binary_compound;;
+				-> salt;;
+				-> hydrochloric_acid;;
+				-> elem_Cs;;
+				-> elem_Cl;;
+			*);;
+
+
+caesium_auride
+
+<- sc_node_not_relation;
+
+<-auride;
+<-crystal;
+<-color_yellow;
+
+=> nrel_main_idtf:
+	[аурид цезия]
+	(* <- lang_ru;;	*);
+	[caesium auride]
+	(* <- lang_en;;	*);
+
+=> nrel_idtf: 
+	[CsAu] 
+	(* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_caesium_auride
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="caesium_auride">Аури́д це́зия</sc_element></b> — <sc_element sys_idtf="binary_compound">бинарное</sc_element> неорганическое <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element> <sc_element sys_idtf="elem_Cs">цезия</sc_element> и <sc_element sys_idtf="elem_Au">золота</sc_element>.] 
+		(* <-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="caesium_auride">Caesium auride</sc_element></b> is a <sc_element sys_idtf="binary_compound">binary</sc_element> inorganic <sc_element sys_idtf="chemical_compound">chemical compound</sc_element> of <sc_element sys_idtf="elem_Cs">caesium</sc_element> and <sc_element sys_idtf="elem_Au">gold</sc_element>.] 
+		(* <-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(аурид цезия, твёрдое тело)] (* <- lang_ru;;	*);
+	[Pic.(caesium auride, solid)] (* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/CsAu.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+
+		-> rrel_example:
+			"file://image/CsAu2.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_CsAu_and_oxygen
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(аурид цезия, взаимодействие*, кислород)](*<- lang_ru;;*);
+		[Stat.(caesium auride, interaction*, oxygen)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Аурид цезия легко реагирует с кислородом.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Caesium auride interacts with oxygen.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_CsAu_and_water
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(аурид цезия, взаимодействие*, вода)](*<- lang_ru;;*);
+		[Stat.(caesium auride, interaction*, water)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Аурид цезия реагирует с водой.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Caesium auride interacts with water.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_CsAu_and_halogen
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(аурид цезия, взаимодействие*, галоген)](*<- lang_ru;;*);
+		[Stat.(caesium auride, interaction*, halogen)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Аурид цезия реагирует с галогенами.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Caesium auride interacts with halogens.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_CsAu_exchange_reaction
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(аурид цезия, реакция обмена*)](*<- lang_ru;;*);
+		[Stat.(caesium auride, exchange reaction*)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Со многими соединениями идут реакции обмена.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Caesium auride enters into exchange reactions.] (*<- lang_en;;*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 585 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm: ...
+		(*
+			=> nrel_main_idtf: 7(*<- number;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;
+
+Definition_of_caesium_auride
+=> nrel_main_idtf:
+	[Опр.(аурид цезия)]
+	(* <- lang_ru;;	*);
+	[Def.(caesium auride)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_compound; binary_compound; elem_Cs; elem_Au;;
+			*);;
+
+
+bromide
+
+<- sc_node_not_relation;
+        => nrel_main_idtf:
+                [bromide](*<- lang_en;;*);
+                [бромид](*<- lang_ru;;*);
+
+<- rrel_key_sc_element: receiving_bromide
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (бромид, получение*)](*<- lang_ru;;*);
+			[Stat. (bromide, receiving*)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Бромиды образуются при взаимодействии бромоводородной кислоты и оснований.]
+		(* <-lang_ru;;*);;
+		-> rrel_example:[Bromides are formed by the interaction of hydrobromic acid and bases.]
+		(* <-lang_en;;*);;
+		*);;
+	*);
+				
+<- rrel_key_sc_element:
+	Definition_of_bromide
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="bromide">Броми́д</sc_element></b> — <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element>, <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="hydrobromic_acid">бромоводородной кислоты</sc_element> HBr.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="bromide">Bromide</sc_element></b> is a <sc_element sys_idtf="chemical_compound">chemical compound</sc_element>, <sc_element sys_idtf="salt">salt</sc_element> of <sc_element sys_idtf="hydrobromic_acid">hydrobromic acid</sc_element> HBr.] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);;
+
+Definition_of_bromide
+=> nrel_main_idtf:
+	[Опр.(бромид)]
+	(* <- lang_ru;;	*);
+	[Def.(bromide)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_compound; salt; hydrobromic_acid;;
+			*);;
+
+			acid_salt
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[кислая соль]
+	(* <- lang_ru;;	*);
+	[acid salt]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element:
+	Definition_of_acid_salt
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="acid_salt">Кислая соль</sc_element></b> — это <sc_element sys_idtf="salt">соль</sc_element>, содержащая два вида <sc_element sys_idtf="cation">катионов</sc_element>: катион <sc_element sys_idtf="metal">металла</sc_element> (или <sc_element sys_idtf="ammonia">аммония</sc_element>) и катион <sc_element sys_idtf="elem_H">водорода</sc_element>, и многозарядный <sc_element sys_idtf="anion">анион</sc_element> <sc_element sys_idtf="nrel_acid_residue">кислотного остатка</sc_element>.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="acid_salt">Acid salt</sc_element></b> is a <sc_element sys_idtf="salt">salt</sc_element>containing 2 types of <sc_element sys_idtf="cation">cations</sc_element>: <sc_element sys_idtf="metal">metal</sc_element> cation(или <sc_element sys_idtf="ammonia">ammonia</sc_element>) and a <sc_element sys_idtf="elem_H">hydrogen</sc_element> cation, and multicharged <sc_element sys_idtf="anion">anion</sc_element> of <sc_element sys_idtf="nrel_acid_residue">acid residue</sc_element>.] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: receiving_acid_salt
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кислая соль, получение*)](*<- lang_ru;;*);
+			[Stat. (acid salt, receiving*)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Кислые соли образуются при воздействии избытка кислоты на <sc_element sys_idtf="alkali">щелочь</sc_element>. В зависимости от количества молей кислоты (в данном случае — <sc_element sys_idtf="orthophosphoric_acid">ортофосфорной</sc_element>) могут образовываться гидроортофосфаты.]
+		(* 
+		<-lang_ru;;
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[Acidic salts are formed in reactions of excess acid on <sc_element sys_idtf="alkali">alkali</sc_element>. Depending on the amount of moles of acid (in this case <sc_element sys_idtf="orthophosphoric_acid">orthophosphoric</sc_element>), hydroorthophosphates can form.]
+		(* 
+		<-lang_en;;
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);;
+
+Definition_of_acid_salt
+=> nrel_main_idtf:
+	[Опр.(кислая соль)]
+	(* <- lang_ru;;	*);
+	[Def.(acid salt)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> salt; cation; metal; ammonia; elem_H; anion; nrel_acid_residue;;
+			*);;
+
+			acesulfame_potassium
+
+<- sc_node_not_relation;
+
+<- crystal;
+<- sulfamate;
+
+=> nrel_main_idtf:
+	[ацесульфам калия]
+	(* <- lang_ru;;	*);
+	[acesulfame potassium]
+	(* <- lang_en;;	*);
+
+=> nrel_idtf: 
+	[ацесульфам]
+	(* <- lang_ru;;	*);
+	[C4H4KNO4S] 
+	(* <-lang_en;;*);
+	[E950] 
+	(* <-lang_en;;*);
+	[калиевая соль 2,2-диоксида 3,4-дигидро-6-метил-1,2,3-оксатиазин-4-она]
+	(* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+	Definition_of_acesulfame_potassium
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="acesulfame_potassium">Ацесульфам</sc_element></b> — <sc_element sys_idtf="sweetener">подсластитель</sc_element> <sc_element sys_idtf="sulfamic_acid">сульфамидного</sc_element> ряда.]
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;-> rrel_example:[<b><sc_element sys_idtf="acesulfame_potassium">Acesulfame potassium</sc_element></b> is a <sc_element sys_idtf="sweetener">sweetener</sc_element> of <sc_element sys_idtf="sulfamic_acid">sulfamic</sc_element> row.]
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: application_of_acesulfame_potassium
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (ацесульфам калия, применение*)](*<- lang_ru;;*);
+			[Stat. (acesulfame potassium, application*)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Используется для подслащения <sc_element sys_idtf="carbonated_water">газированных напитков</sc_element>, при изготовлении выпечки, желатиновых десертов и жевательной резинки, также используется в качестве подсластителя некоторых лекарственных форм (сиропы).]
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+
+			-> rrel_example:[Acesulfame potassium is used for sweetening <sc_element sys_idtf="carbonated_water"> carbonated water </sc_element>, baked products, gelatinous desserts, chewing gum and syrups.]
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+
+Definition_of_acesulfame_potassium
+=> nrel_main_idtf:
+	[Опр.(ацесульфам калия)]
+	(* <- lang_ru;;	*);
+	[Def.(acesulfame potassium)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> sweetener; sulfamic_acid;;
+			*);;
+
+			tantalum_carbide
+
+<- sc_node_not_relation;
+
+<-color_brown;
+<-salt;
+<-carbide;
+<-solid;
+
+=> nrel_main_idtf:
+	[карбид тантала]
+	(* <- lang_ru;;	*);
+	[tantalum carbide]
+	(* <- lang_en;;	*);
+
+=> nrel_idtf: 
+	[TaC] 
+	(* <-lang_en;;*);
+	[монокарбид тантала] 
+	(* <-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_tantalum_carbide
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="tantalum_carbide">Карбид тантала</sc_element></b> — <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element> <sc_element sys_idtf="elem_Ta">тантала</sc_element> и <sc_element sys_idtf="C">углерода</sc_element>.]
+		(* <-lang_ru;; 
+		   => nrel_format: format_html;;
+		   *);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="tantalum_carbide">Tantalum carbide</sc_element></b> is a <sc_element sys_idtf="chemical_compound">chemical compound</sc_element> of <sc_element sys_idtf="elem_Ta">tantalum</sc_element> and <sc_element sys_idtf="C">carbon</sc_element>.]
+		(* <-lang_en;; 
+		   => nrel_format: format_html;;
+		   *);;
+		*);;
+	*);
+
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [14,4] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 3880 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 5500 (*<- number;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(карбид тантала, твёрдое тело)] 
+	(* <- lang_ru;;	*);
+	[Pic.(tantalum carbide, solid)] 
+	(* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/tantalum_carbide.JPG"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+	
+=> nrel_applying: metallurgy;;
+
+
+
+Definition_of_tantalum_carbide
+=> nrel_main_idtf:
+	[Опр.(карбид тантала)]
+	(* <- lang_ru;;	*);
+	[Def.(tantalum carbide)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_compound; elem_Ta; elem_C;;
+			*);;

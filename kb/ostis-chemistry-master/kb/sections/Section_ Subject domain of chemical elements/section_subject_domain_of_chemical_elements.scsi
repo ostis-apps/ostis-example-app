@@ -1,0 +1,23 @@
+subject_domain_of_chemical_elements
+=> nrel_main_idtf: 
+	[Предметная область химических элементов]
+	(* <- lang_ru;;*);
+	[Subject domain of chemical elements]
+	(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	chemical_element;
+
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content_html/subject_domain_of_chemical_elements.html" (* <-lang_ru;; *);;
+		*);
+
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content_html/table.html" (* <-lang_ru;; *);;
+		*);;

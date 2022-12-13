@@ -1,0 +1,53 @@
+sc_node_not_relation->hypophosphorous_acid;;
+
+hypophosphorous_acid=> nrel_main_idtf: [фосфорноватистая кислота](* <- lang_ru;; *);;
+hypophosphorous_acid=> nrel_main_idtf: [hypophosphorous acid](* <- lang_en;; *);;
+hypophosphorous_acid=> nrel_idtf: [H3PO2](* <- lang_en;; *);;
+hypophosphorous_acid=> nrel_idtf: [гипофосфористая кислота](* <- lang_ru;; *);;
+hypophosphorous_acid=> nrel_idtf: [фосфиновая кислота](* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: hypophosphorous_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Фосфорноватистая кислота - сильная одноосновная кислота с химической формулой H3PO2](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (фосфорноватистая кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		strong_acid;
+		monobasic_acid;
+		chemical_formula
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: hypophosphorous_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Соли фосфорноватистой кислоты называют фосфинатами или гипофосфитами. ](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(фосфорноватистая кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		salt
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: hypophosphorous_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/фосфорноватистая_кислота.png";;*);;
+	=> nrel_main_idtf: [Рисунок(фосфорноватистая кислота, структурная формула)](*<- lang_ru;;*);;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: hypophosphorous_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/фосфорноватистая_кислота_модель.png";;*);;
+	=> nrel_main_idtf: [Рисунок(фосфорноватистая кислота, трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+hypophosphorous_acid -> hypophosphorous_acid_x;;
+strong_acid=>nrel_inclusion:hypophosphorous_acid;;
+monobasic_acid=>nrel_inclusion:hypophosphorous_acid;;
+oxyacid=>nrel_inclusion:hypophosphorous_acid;;
+inorganic_acid=>nrel_inclusion:hypophosphorous_acid;;
+
+hypophosphorous_acid<-rrel_not_maximum_studied_object_class:subject_domain_of_acids;;

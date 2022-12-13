@@ -1,0 +1,123 @@
+oxidation_state_plus_one 
+=> nrel_main_idtf:	[степень окисления +1](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_plus_two => nrel_main_idtf:	[степень окисления +2](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_plus_three => nrel_main_idtf:	[степень окисления +3](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_plus_four => nrel_main_idtf:	[степень окисления +4](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_plus_five => nrel_main_idtf:	[степень окисления +5](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_plus_six => nrel_main_idtf:	[степень окисления +6](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_plus_seven => nrel_main_idtf:	[степень окисления +7](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_plus_eight => nrel_main_idtf:	[степень окисления +8](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_plus_nine => nrel_main_idtf:	[степень окисления +9](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_plus_ten => nrel_main_idtf:	[степень окисления +10](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_plus_eleven => nrel_main_idtf:	[степень окисления +11](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_plus_twelve => nrel_main_idtf:	[степень окисления +12](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_plus_thirteen => nrel_main_idtf:	[степень окисления +13](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_plus_fourteen => nrel_main_idtf:	[степень окисления +14](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_plus_fifteen => nrel_main_idtf:	[степень окисления +15](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_plus_sixteen => nrel_main_idtf:	[степень окисления +16](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_plus_seventeen => nrel_main_idtf:	[степень окисления +17](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_plus_eighteen => nrel_main_idtf:	[степень окисления +18](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_plus_nineteen => nrel_main_idtf:	[степень окисления +19](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_plus_twenty => nrel_main_idtf:	[степень окисления +20](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_minus_one => nrel_main_idtf:	[степень окисления -1](* <- lang_ru;; *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_minus_two => nrel_main_idtf:	[степень окисления -2](* <- lang_ru;; *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_minus_three => nrel_main_idtf:	[степень окисления -3](* <- lang_ru;; *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_minus_four => nrel_main_idtf:	[степень окисления -4](* <- lang_ru;; *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_minus_five => nrel_main_idtf:	[степень окисления -5](* <- lang_ru;; *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_minus_six => nrel_main_idtf:	[степень окисления -6](* <- lang_ru;; *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_minus_seven => nrel_main_idtf:	[степень окисления -7](* <- lang_ru;; *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_minus_eight => nrel_main_idtf:	[степень окисления -8](* <- lang_ru;; *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_minus_nine => nrel_main_idtf:	[степень окисления -9](* <- lang_ru;; *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_minus_ten => nrel_main_idtf:	[степень окисления -10](* <- lang_ru;; *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_minus_eleven => nrel_main_idtf:	[степень окисления -11](* <- lang_ru;; *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_minus_twelve => nrel_main_idtf:	[степень окисления -12](* <- lang_ru;; *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_minus_thirteen => nrel_main_idtf:	[степень окисления -13](* <- lang_ru;; *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_minus_fourteen => nrel_main_idtf:	[степень окисления -14](* <- lang_ru;; *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_minus_fifteen => nrel_main_idtf:	[степень окисления -15](* <- lang_ru;; *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_minus_sixteen => nrel_main_idtf:	[степень окисления -16](* <- lang_ru;; *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_minus_seventeen => nrel_main_idtf:	[степень окисления -17](* <- lang_ru;; *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_minus_eighteen => nrel_main_idtf:	[степень окисления -18](* <- lang_ru;; *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_minus_nineteen => nrel_main_idtf:	[степень окисления -19](* <- lang_ru;; *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_minus_twenty => nrel_main_idtf:	[степень окисления -20](* <- lang_ru;; *);
+<= nrel_inclusion: oxidation_state;;
+
+oxidation_state_zero => nrel_main_idtf:	[степень окисления 0](* <- lang_ru;;  *);
+<= nrel_inclusion: oxidation_state;;

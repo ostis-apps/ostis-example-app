@@ -1,0 +1,106 @@
+scopolamine<-sc_node_not_relation;;
+scopolamine=> nrel_main_idtf:[скополамин](* <- lang_ru;; *);;
+scopolamine=> nrel_main_idtf:[scopolamine](* <- lang_en;; *);;
+scopolamine=> nrel_idtf:[(1R,2R,4S,7S,9S)-9-метил-3-окса-9-аза-трицикло(3.3.1.02,4)нон-7-ил-(−)-(S)-3-гидрокси-2-фенилпропионат](* <- lang_ru;; *);;
+ascopolamine=> nrel_idtf:[C17H21NO4](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: scopolamine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Скополамин — <b><sc_element sys_idtf="true_alkaloids">истинный алкалоид</b></sc_element>, содержащийся вместе с <b><sc_element sys_idtf="atropine">атропином</b></sc_element> в растениях семейства паслёновых (скополии, красавке, белене, дурмане и некоторых других).]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (скополамин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		true_alkaloids;
+		atropine
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: scopolamine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://scopolamin2.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(скополамин,фармакологический эффект*)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: scopolamine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://scopolamine.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(скополамин,побочный эффект*)](*<- lang_ru;;*);;
+	
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:scopolamine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/scopolamine.png";;*);;
+	=> nrel_main_idtf: [Рисунок(скополамин,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:scopolamine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/scopolamine1.gif";;*);;
+	=> nrel_main_idtf: [Рисунок(скополамин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: scopolamine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/scopolamine.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(скополамин,твердое вещество)](*<- lang_ru;;*);;
+*);;
+solid_matter=>nrel_inclusion:scopolamine;;
+true_alkaloids=>nrel_inclusion:scopolamine;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> scopolamine;;
+	=> nrel_measurement_in_gramms_per_mole: [303,353]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->scopolamine;;
+	=> nrel_measurement_in_degrees_Celsius: 194
+	(*
+		<-number;;
+	*);;
+*);;
+drag_half_life->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->scopolamine;;
+	=> nrel_measurement_in_degrees_Celsius: 2
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+
+

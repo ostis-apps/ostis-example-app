@@ -1,0 +1,130 @@
+polyurethane_foam<-sc_node_not_relation;;
+polyurethane_foam=> nrel_main_idtf:[пенополиуретан](* <- lang_ru;; *);;
+polyurethane_foam=> nrel_main_idtf:[polyurethane_foam](* <- lang_en;; *);;
+polyurethane_foam=> nrel_idtf:[polyurethane foam](* <- lang_en;; *);;
+polyurethane_foam=> nrel_idtf:[C8H16N2O2](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: polyurethane_foam;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пенополиуретан устойчивый к действию всех распространённых 
+	<b><sc_element sys_idtf="soluble_acid">органических растворителей</b></sc_element> материал, застывшая смесь удаляется только механическим путём.]
+	  
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (пенополиуретан)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		soluble_acid
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: polyurethane_foam;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В качестве исходных компонентов
+	пенополиуретана обычно применяются продукты 
+	<b><sc_element sys_idtf="chemical_industry">нефтехимической промышленности</b></sc_element> 
+	(полиолы и полиизоцианаты), однако, не лишним будет отметить, 
+	что возможна выработка компонентов из масел растительного происхождения. ]
+	 
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(пенополиуретан,вещество)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		chemical_industry
+		};;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:polyurethane_foam;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Закрыто-пористый состав пенополиуретана обеспечивает преграду 
+	для <b><sc_element sys_idtf="water">воды</b></sc_element>, в т. ч. и ее паров, что позволяет использовать этот материал одновременно для тепло- , паро- и гидроизоляции. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(пенополиуретан, используют для изоляци)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		synthetic_polymer;
+		metal
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyurethane_foam;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyurethane_foam_formula.png";;*);;
+	=> nrel_main_idtf: [Рисунок(пенополиуретан,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyurethane_foam;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyurethane_foam_3d.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(пенополиуретан, пример)](*<- lang_ru;;*);;
+*);;
+
+
+thermoplastic_polymer=>nrel_inclusion:polyurethane_foam;;
+homo_chain_polymer=>nrel_inclusion:polyurethane_foam;;
+artificial_polymers=>nrel_inclusion:polyurethane_foam;;
+polycondensation_polymer=>nrel_inclusion:polyurethane_foam;;
+
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> polyurethane_foam;;
+	=> rrel_mol: [1700]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyurethane_foam;;
+	=> rrel_degree_celsius: 134
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyurethane_foam;;
+	=> rrel_joule_per_kelvin_and_mole: 0.24
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyurethane_foam;;
+	=> rrel_gram_per_cubic_cm: 1.2
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+

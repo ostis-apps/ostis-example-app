@@ -1,0 +1,45 @@
+sc_node_not_relation->hexachlorolead_acid;;
+
+hexachlorolead_acid=> nrel_main_idtf: [гексахлоросвинцовая кислота](* <- lang_ru;; *);;
+hexachlorolead_acid=> nrel_main_idtf: [hexachlorolead_acid](* <- lang_en;; *);;
+hexachlorolead_acid=> nrel_idtf: [H2 PbCl6](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: hexachlorolead_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Гексахлоросвинцовая кислота — неорганическое соединение, кислота с формулой H2 PbCl6](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (гексахлоросвинцовая кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		acid;
+		nonorganic_compound;
+		chemical_formula
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:hexachlorolead_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Гексахлоросвинцовая кислота выделяется из раствора при охлаждении в виде бесцветных кристаллов.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(гексахлоросвинцовая кислотаа)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		solution;
+		no_color;
+		crystall
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: hexachlorolead_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/гексахлорсвинцовая_кислота.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(гексахлоросвинцовая кислота)](*<- lang_ru;;*);;
+*);;
+
+hexachlorolead_acid->hexachlorolead_acid_x;;
+
+nonpersistent_acid=>nrel_inclusion:hexachlorolead_acid;;
+inorganic_acid=>nrel_inclusion:hexachlorolead_acid;;
+
+hexachlorolead_acid<-rrel_not_maximum_studied_object_class:subject_domain_of_acids;;

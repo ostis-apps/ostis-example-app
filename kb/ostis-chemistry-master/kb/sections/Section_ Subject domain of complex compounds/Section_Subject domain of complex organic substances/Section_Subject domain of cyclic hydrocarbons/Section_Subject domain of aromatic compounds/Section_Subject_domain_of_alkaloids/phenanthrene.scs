@@ -1,0 +1,107 @@
+phenanthrene<-sc_node_not_relation;;
+phenanthrene=> nrel_main_idtf:[фенантрен](* <- lang_ru;; *);;
+phenanthrene=> nrel_main_idtf:[phenanthrene](* <- lang_en;; *);;
+phenanthrene=> nrel_idtf:[C14H10](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: phenanthrene;;
+	<= nrel_sc_text_translation: ...(*->rrel_example: [Фенантрен — трициклический <b><sc_element sys_idtf="aromatic_compound">ароматический</b></sc_element> <b><sc_element sys_idtf="hydrocarbon">углеводород</b></sc_element> с химической формулой C14H10.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (фенантрен)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		aromatic_compound;
+		hydrocarbon
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: phenanthrene;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Фенантрен применяется при производстве <b><sc_element sys_idtf="dye">красителей</b></sc_element>, является <b><sc_element sys_idtf="stabilizer">стабилизатором</b></sc_element> <b><sc_element sys_idtf="explosive">взрывчатых веществ.</b></sc_element> ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(фенантрен)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		dye;
+		stabilizer;
+		explosive
+		};;
+*);;
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: phenanthrene;;
+	<= nrel_sc_text_translation: ...(*->"file://images/phenanthren.png";;*);;
+	=> nrel_main_idtf: [Рисунок(фенантрен,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: phenanthrene;;
+	<= nrel_sc_text_translation: ...(*->"file://images/phenanthren2.png";;*);;
+	=> nrel_main_idtf: [Рисунок(фенантрен,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+
+aromatic_compound=>nrel_inclusion:phenanthrene;;
+chemical_compound=>nrel_inclusion:phenanthrene;;
+heterocyclic_compound=>nrel_inclusion:phenanthrene;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> phenanthrene;;
+	=> nrel_measurement_in_gramms_per_mole: [178,23]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->phenanthrene;;
+	=> nrel_measurement_in_degrees_Celsius: 101
+	(*
+		<-number;;
+	*);;
+*);;
+boiling_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->phenanthrene;;
+	=> nrel_measurement_in_degrees_Celsius: 340
+	(*
+		<-number;;
+	*);;
+*);;
+destiny->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->phenanthrene;;
+	=> nrel_measurement_in_degrees_Celsius: [1,179]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+
+

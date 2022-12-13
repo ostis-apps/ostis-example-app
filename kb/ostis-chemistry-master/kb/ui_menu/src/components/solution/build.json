@@ -1,0 +1,11 @@
+{
+     "sources": [
+        
+        "src/solution-common.js",
+        "src/solution-paintPanel.js"
+    ],
+
+    "component": "src/solution-component.js",
+
+    "target": "static/components/js/chemistry_components/solution_ui_component.js"
+}

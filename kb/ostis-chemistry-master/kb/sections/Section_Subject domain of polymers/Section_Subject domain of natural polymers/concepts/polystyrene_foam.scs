@@ -1,0 +1,120 @@
+polystyrene_foam<-sc_node_not_relation;;
+polystyrene_foam=> nrel_main_idtf:[пенополистирол](* <- lang_ru;; *);;
+polystyrene_foam=> nrel_main_idtf:[polystyrene_foam](* <- lang_en;; *);;
+polystyrene_foam=> nrel_idtf:[ polystyrene foam](* <- lang_en;; *);;
+polystyrene_foam=> nrel_idtf:[(C8H8)n](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: polystyrene_foam;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[пенополистирол — представляет собой газонаполненный материал,
+	 получаемый из <b><sc_element sys_idtf="polystyrene">полистирола</b></sc_element>
+	  и его производных, а также из сополимеров стирола.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (пенополистирол)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		polystyrene
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: polystyrene_foam;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пенополистирол является широко 
+	распространенной разновидностью пенопласта, каковым обычно и называется в обиходе.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(пенополистирол,широко распространен)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:polystyrene_foam;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[пенополистирол —по своей химической стойкости превосходит все известные  <b><sc_element sys_idtf="synthetic_polymer">синтетические материалы</b></sc_element> и благородные <b><sc_element sys_idtf="metal">металлы</b></sc_element>.Не разрушается под влиянием щелочей, кислот и даже смеси азотной и соляной кислот. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(пенополистирол,химически стойкое вещество)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		synthetic_polymer;
+		metal
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polystyrene_foam;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polystyrene_foam_formula.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(пенополистирол,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polystyrene_foam;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polystyrene_foam_3d.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(пенополистирол,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+
+thermosetting_polymer=>nrel_inclusion:cellulose_acetate;;
+artificial_polymers=>nrel_inclusion:cellulose_acetate;;
+polymerisation_polymer=>nrel_inclusion:cellulose_acetate;;
+hetero_chain_polymer=>nrel_inclusion:cellulose_acetate;;
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> polystyrene_foam;;
+	=> rrel_mol: [170]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polystyrene_foam;;
+	=> rrel_degree_celsius: 140
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polystyrene_foam;;
+	=> rrel_joule_per_kelvin_and_mole: 0.71
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polystyrene_foam;;
+	=> rrel_gram_per_cubic_cm: 2.7
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+

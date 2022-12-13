@@ -1,0 +1,22 @@
+exercise5_metal
+<- exercises_metal;
+
+-> rrel_key_sc_element: subst_Al; subst_S; nrel_mass; nrel_reaction;
+
+=> nrel_main_idtf:
+	[Упражнение 5. Раздел. Предметная область металлов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 5. Section. Subject domain of metals]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise5_metal_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise5_metal_en.html" (* <-lang_en;; *);;
+	*);;

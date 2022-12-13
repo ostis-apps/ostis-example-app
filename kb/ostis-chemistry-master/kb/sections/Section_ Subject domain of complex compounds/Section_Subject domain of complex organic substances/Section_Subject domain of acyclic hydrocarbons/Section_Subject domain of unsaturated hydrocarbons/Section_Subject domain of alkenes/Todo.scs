@@ -1,0 +1,475 @@
+cyclopropane
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[циклопропан]
+	(* <- lang_ru;; *);
+	[cyclopropane]
+	(* <- lang_en;; *);;
+////////////////////
+butene_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[бутен-2]
+	(* <- lang_ru;; *);
+	[butene-2]
+	(* <- lang_en;; *);;
+
+2_methylpropene_1
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[2-метилпропен-1]
+	(* <- lang_ru;; *);
+	[2-methylpropene-1]
+	(* <- lang_en;; *);;
+
+cis_butene_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[цис-бутен-2]
+	(* <- lang_ru;; *);
+	[cis-butene-2]
+	(* <- lang_en;; *);;
+
+trans_butene_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[транс-бутен-2]
+	(* <- lang_ru;; *);
+	[trans-butene-2]
+	(* <- lang_en;; *);;
+
+cyclobutane
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[циклобутан]
+	(* <- lang_ru;; *);
+	[cyclobutane]
+	(* <- lang_en;; *);;
+
+methylcyclopropane
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[метилциклопропан]
+	(* <- lang_ru;; *);
+	[methylcyclopropane]
+	(* <- lang_en;; *);;
+///////////////////////
+penten_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[пентен-2]
+	(* <- lang_ru;; *);
+	[penten-2]
+	(* <- lang_en;; *);;
+
+cyclopentane
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[циклопентан]
+	(* <- lang_ru;; *);
+	[cyclopentane]
+	(* <- lang_en;; *);;
+
+methylcyclobutane
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[метилциклобутан]
+	(* <- lang_ru;; *);
+	[methylcyclobutane]
+	(* <- lang_en;; *);;
+
+1_2_dimethylcyclopropane
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[1,2-диметилциклопропан]
+	(* <- lang_ru;; *);
+	[1,2-dimethylcyclopropane]
+	(* <- lang_en;; *);;
+
+1_1_dimethylcyclopropane
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[1,1-диметилциклопропан]
+	(* <- lang_ru;; *);
+	[1,1-dimethylcyclopropane]
+	(* <- lang_en;; *);;
+
+ethylcyclopropane
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[этилциклопропан]
+	(* <- lang_ru;; *);
+	[ethylcyclopropane]
+	(* <- lang_en;; *);;
+
+cis_pentene_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[цис-пентен-2]
+	(* <- lang_ru;; *);
+	[cis-pentene-2]
+	(* <- lang_en;; *);;
+
+trans_pentene_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[транс-пентен-2]
+	(* <- lang_ru;; *);
+	[trans-pentene-2]
+	(* <- lang_en;; *);;
+
+2_methylbutene_1
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[2-метилбутен-1]
+	(* <- lang_ru;; *);
+	[2-methylbutene-1]
+	(* <- lang_en;; *);;
+
+3_methylbutene_1
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[3-метилбутен-1]
+	(* <- lang_ru;; *);
+	[3-methylbutene-1]
+	(* <- lang_en;; *);;
+//////////////////////
+hexene_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[гексен-2]
+	(* <- lang_ru;; *);
+	[hexene-2]
+	(* <- lang_en;; *);;
+
+hexene_3
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[гексен-3]
+	(* <- lang_ru;; *);
+	[hexene-3]
+	(* <- lang_en;; *);;
+
+2_methylpentene_1
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[2-метилпентен-1]
+	(* <- lang_ru;; *);
+	[2-methylpentene-1]
+	(* <- lang_en;; *);;
+
+3_methylpentene_1
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[3-метилпентен-1]
+	(* <- lang_ru;; *);
+	[3-methylpentene-1]
+	(* <- lang_en;; *);;
+
+4_methylpentene_1
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[4-метилпентен-1]
+	(* <- lang_ru;; *);
+	[4-methylpentene-1]
+	(* <- lang_en;; *);;
+
+2_methylpentene_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[2-метилпентен-2]
+	(* <- lang_ru;; *);
+	[2-methylpentene-2]
+	(* <- lang_en;; *);;
+
+3_methylpentene_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[3-метилпентен-2]
+	(* <- lang_ru;; *);
+	[3-methylpentene-2]
+	(* <- lang_en;; *);;
+
+4_methylpentene_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[4-метилпентен-2]
+	(* <- lang_ru;; *);
+	[4-methylpentene-2]
+	(* <- lang_en;; *);;
+
+2_ethylbutene_1
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[2-этилбутен-1]
+	(* <- lang_ru;; *);
+	[2-ethylbutene-1]
+	(* <- lang_en;; *);;
+
+2_3_dimethylbutene_1
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[2,3-диметилбутен-1]
+	(* <- lang_ru;; *);
+	[2,3-dimethylbutene-1]
+	(* <- lang_en;; *);;
+
+3_3_dimethylbutene_1
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[3,3-диметилбутен-1]
+	(* <- lang_ru;; *);
+	[3,3-dimethylbutene-1]
+	(* <- lang_en;; *);;
+
+2_3_dimethylbutene_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[2,3-диметилбутен-2]
+	(* <- lang_ru;; *);
+	[2,3-dimethylbutene-2]
+	(* <- lang_en;; *);;
+
+cyclohexane
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[циклогексан]
+	(* <- lang_ru;; *);
+	[cyclohexane]
+	(* <- lang_en;; *);;
+
+methylcyclopentane
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[метилциклопентан]
+	(* <- lang_ru;; *);
+	[methylcyclopentane]
+	(* <- lang_en;; *);;
+/////////////////////////////////////////////////////////////////////////////////////
+
+heptene_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[гептен-2]
+	(* <- lang_ru;; *);
+	[heptene-2]
+	(* <- lang_en;; *);;
+
+heptene_3
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[гептен-3]
+	(* <- lang_ru;; *);
+	[heptene-3]
+	(* <- lang_en;; *);;
+
+2_methylhexene_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[2- метилгексен-2]
+	(* <- lang_ru;; *);
+	[2-methylhexene-2]
+	(* <- lang_en;; *);;
+
+3_methylhexene_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[3 -метилгексен-2]
+	(* <- lang_ru;; *);
+	[3-methylhexene-2]
+	(* <- lang_en;; *);;
+
+4_methylhexene_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[4-метилгексен-2]
+	(* <- lang_ru;; *);
+	[4-methylhexene-2]
+	(* <- lang_en;; *);;
+
+3_ethylpentene_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[3-этилпентен-2]
+	(* <- lang_ru;; *);
+	[3-ethylpentene-2]
+	(* <- lang_en;; *);;
+////////////////////////////////////////////////////////////////////////////////////////
+
+octene_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[октен-2]
+	(* <- lang_ru;; *);
+	[octene-2]
+	(* <- lang_en;; *);;
+
+octene_3
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[октен-3]
+	(* <- lang_ru;; *);
+	[octene-3]
+	(* <- lang_en;; *);;
+
+octene_4
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[октен-4]
+	(* <- lang_ru;; *);
+	[octene-4]
+	(* <- lang_en;; *);;
+
+2_methylheptene_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[2-метилгептен-2]
+	(* <- lang_ru;; *);
+	[2-methylheptene-2]
+	(* <- lang_en;; *);;
+
+2_2_dimethylhexene_3
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[2,2-диметилгексен-3]
+	(* <- lang_ru;; *);
+	[2,2-dimethylhexene-3]
+	(* <- lang_en;; *);;
+
+5_5_dimethylhexene_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[5,5-диметилгексен-2]
+	(* <- lang_ru;; *);
+	[5,5-dimethylhexene-2]
+	(* <- lang_en;; *);;
+
+5_5_dimethylhexene_1
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[5,5-диметилгексен-1]
+	(* <- lang_ru;; *);
+	[5,5-dimethylhexene-1]
+	(* <- lang_en;; *);;
+
+2_methylheptene_3
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[2-метилгептен-3]
+	(* <- lang_ru;; *);
+	[2-methylheptene-3]
+	(* <- lang_en;; *);;
+
+6_methylheptene_1
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[6-метилгептен-1]
+	(* <- lang_ru;; *);
+	[6-methylheptene-1]
+	(* <- lang_en;; *);;
+
+5_methylheptene_1
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[5-метилгептен-1]
+	(* <- lang_ru;; *);
+	[5-methylheptene-1]
+	(* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////////////////////////
+
+nonene_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[нонен-2]
+	(* <- lang_ru;; *);
+	[nonene-2]
+	(* <- lang_en;; *);;
+
+nonene_3
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[нонен-3]
+	(* <- lang_ru;; *);
+	[nonene-3]
+	(* <- lang_en;; *);;
+
+nonene_4
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[нонен-4]
+	(* <- lang_ru;; *);
+	[nonene-4]
+	(* <- lang_en;; *);;
+
+nonene_5
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[нонен-5]
+	(* <- lang_ru;; *);
+	[nonene-5]
+	(* <- lang_en;; *);;
+
+3_4_methylethylhexene_1
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[3,4-метилэтилгексен-1]
+	(* <- lang_ru;; *);
+	[3_4_methylethylhexene_1]
+	(* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////////////////////////
+
+decene_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[децен-2]
+	(* <- lang_ru;; *);
+	[decene-2]
+	(* <- lang_en;; *);;
+
+decene_3
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[децен-3]
+	(* <- lang_ru;; *);
+	[decene-3]
+	(* <- lang_en;; *);;
+
+decene_4
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[децен-4]
+	(* <- lang_ru;; *);
+	[decene-4]
+	(* <- lang_en;; *);;
+
+decene_5
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[децен-5]
+	(* <- lang_ru;; *);
+	[decene-5]
+	(* <- lang_en;; *);;
+
+2_methyloctene
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[2-метилоктен]
+	(* <- lang_ru;; *);
+	[2-methyloctene]
+	(* <- lang_en;; *);;
+
+3_methyloctene
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[3-метилоктен]
+	(* <- lang_ru;; *);
+	[3-methyloctene]
+	(* <- lang_en;; *);;
+
+4_methyloctene_3
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[4-метилоктен-3]
+	(* <- lang_ru;; *);
+	[4-methyloctene-3]
+	(* <- lang_en;; *);;

@@ -1,0 +1,62 @@
+subst_Lv
+<- sc_node_not_relation;
+=> nrel_main_idtf: [ливерморий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [livermorium] (* <- lang_en;; *);
+<- rrel_key_sc_element: definition_of_subst_Lv
+(* 
+	=> nrel_main_idtf: 
+	[Опр.(ливерморий)] (* <- lang_ru;; *);
+	[Def.(livermorium)] (* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Lv">Ливерморий</sc_element></b> - искусственно полученное <sc_element sys_idtf="radioactive_substance">радиоактивное</sc_element> <sc_element sys_idtf="chemical_substance">вещество</sc_element>, не встречающееся в природе.] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+
+		-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Lv">Livermorium</sc_element></b> is an artificially received <sc_element sys_idtf="radioactive_substance">adioactive</sc_element> <sc_element sys_idtf="chemical_substance">substance</sc_element>that doesn't exist in nature.] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_substance;;
+		-> radioactive_substance;;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_lv_and_oxygen
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(ливерморий , взаимодействие*, кислород)](*<- lang_ru;;*);
+		[Утв.(livermorium, interaction*, oxygen)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Ливерморий реагирует с кислородом с образованием оксида LvO. ] (*<- lang_ru;;*);;
+		-> rrel_example:[ Livermorium interacts with oxygen with formation of LvO oxide. ] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_lv_and_hydrogen
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(ливерморий , взаимодействие*, водород)](*<- lang_ru;;*);
+		[Утв.(livermorium, interaction*, hydrogen)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Ливерморий реагирует с водородом с образованием H2Lv. ] (*<- lang_ru;;*);;
+		-> rrel_example:[ Livermorium interacts with hydrogen with formation of H2Lv. ] (*<- lang_en;;*);;
+	*);;
+*);
+
+<= nrel_inclusion: chemical_substance;;
+
+atomic_multiplicity_one -> (subst_Lv -> elem_Lv);;

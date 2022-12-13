@@ -1,0 +1,62 @@
+cement
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[цемент](* <-lang_ru;; *);
+	[cement](* <- lang_en;; *);;
+
+cement
+<- rrel_key_sc_element:
+	Definition_of_cement
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(цемент)] (* <-lang_ru;; *);; 
+        <= nrel_sc_text_translation:...
+        (*
+			-> rrel_example:"file://htmls/cement.html"(* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants:
+		...
+		(*
+			-> binder;;
+		*);;
+	*);;
+	
+cement
+<-rrel_key_sc_element:...
+				(*<-sc_illustration;;
+				<=nrel_sc_text_translation:...
+						(*->rrel_example: "file://img/cement.jpg";;*) ;;	
+				*);;
+
+cement
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Прим.(цемент, применение*)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/cement1.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+cement
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Прим.(цемент, вяжущее вещество, особенность)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/cement3.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+cement
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Прим.(цемент, получение*)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/cement2.html" (* <-lang_ru;; *);;
+		*);;
+	*);;

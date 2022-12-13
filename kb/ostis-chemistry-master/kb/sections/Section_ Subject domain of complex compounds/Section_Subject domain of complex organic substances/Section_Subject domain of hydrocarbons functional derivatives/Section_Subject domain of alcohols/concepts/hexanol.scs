@@ -1,0 +1,138 @@
+hexanol<-sc_node_not_relation;;
+hexanol=> nrel_main_idtf:[гексанол](* <- lang_ru;; *);;
+hexanol=> nrel_main_idtf:[hexanol](* <- lang_en;; *);;
+hexanol=> nrel_idtf:[hexanol-1](* <- lang_en;; *);;
+hexanol=> nrel_idtf:[СН3(СН2)5ОН](* <- lang_en;; *);;
+
+
+
+
+saturated_alcohols=>nrel_inclusion:hexanol;;
+higher_fatty_alcohols=>nrel_inclusion:hexanol;;
+
+hexanol<=nrel_intermolecular_dehydration:hexane;;
+
+
+hexanol<=nrel_poisoning_way:peroral_way;;
+
+organic_artificial_poison=>nrel_inclusion:hexanol;;
+rrel_liquid_solvent=>nrel_inclusion:hexanol;;
+triatomic_alcohol=>nrel_inclusion:hexanol;;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: hexanol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Гексанол — 
+	представляет собой 
+	<b><sc_element sys_idtf="organic_compound">органический</b></sc_element> 
+	спирт с шести- 
+	<b><sc_element sys_idtf="elem_C">углеродной</b></sc_element> цепью и конденсированной структурной формулай СН3(СН2)5ОН.]
+		(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (гексанол)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		organic_compound;
+		elem_C
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: hexanol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Гексанол 
+	бесцветная <b><sc_element sys_idtf="liquid">жидкость</b></sc_element>
+	 слабо растворим в <b><sc_element sys_idtf="water">воде</b></sc_element>, но смешивается с диэтиловым эфиром и этанолом .]
+	
+	  
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(гексанол, жидкость)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+			liquid;
+		water
+		};;	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:hexanol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[ Гексанол получают 
+	промышленным способом олигомеризации <b><sc_element sys_idtf="ethylen">этилена</b></sc_element> с 
+	использованием триэтилалюмини с последующим окислением алкилалюминия продуктов .]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(гексанол, получают 
+	промышленным способом олигомеризации)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		n_decane
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:hexanol;;
+	<= nrel_sc_text_translation: ...(*->"file://image/hexanol_1.png";;*);;
+	=> nrel_main_idtf: [Рисунок(гексанол,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:hexanol;;
+	<= nrel_sc_text_translation: ...(*->"file://image/hexanol_1_3d.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(гексанол,пример)](*<- lang_ru;;*);;
+*);;
+
+
+nrel_relative_molar_mass->...
+(* 
+	<- sc_node_not_relation;;
+	-> hexanol;;
+	=> rrel_mol: [145.34]
+	(*
+		<-number;;
+	*);;
+*);;
+
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->hexanol;;
+	=> rrel_gram_per_cubic_cm:0.74
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->hexanol;;
+	=> rrel_joule_per_kelvin_and_mole: 0.98
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->hexanol;;
+	=> rrel_degree_celsius: 176
+	(*
+		<-number;;
+	*);;
+*);;

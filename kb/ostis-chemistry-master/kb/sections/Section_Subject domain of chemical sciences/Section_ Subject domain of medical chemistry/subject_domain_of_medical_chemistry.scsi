@@ -1,0 +1,2398 @@
+subject_domain_of_medical_chemistry
+  => nrel_main_idtf:
+    [Предметная область медицинской химии] (* <- lang_ru;;*);
+    [Subject domain of medical chemistry] (* <- lang_en;; *);
+
+  <- subject_domain;
+  -> rrel_maximum_studied_object_class: medical_chemistry;
+  -> rrel_not_maximum_studied_object_class:
+    pharmaceuticals;
+    pharmacology;
+    pharmacodynamics;
+    pharmacokinetics;
+    pharmacophore;
+    pharmacognosy;
+    molecular_biology;
+    toxicology;
+    veterinary;
+    iatrochemistry;
+    physiology;
+    biochemistry;
+    pharmacy;
+    medicine;
+    dosage_form;
+    tablet;
+    capsule;
+    ointment;
+    decoction;
+    infusion;
+    elixir;
+    syrup;
+    powder;
+    granule;
+    paste;
+    gel;
+    aerosol;
+    metabolism;
+    disease;
+    antibiotics;
+    chloramphenicol;
+    streptocid;
+    penicillin;
+    benzylpenicillin;
+    hormones;
+    insulin;
+    erythropoietin;
+    medical_method;
+    chemotherapy;
+    clinical_trial;
+    anatomical_and_therapeutic_chemical_classification;
+    cumulation;
+    tetracycline;
+    atorvastatin;
+    biomolecules;
+    cisplatin;
+    aspirin;
+    generic;
+    acetylsalicylic_acid;
+    monoclonal_antibodies;;
+
+medical_chemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [медицинская химия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [medical chemistry] (* <- lang_en;; *);
+
+  <= nrel_subdividing:...
+  (*
+    => nrel_main_idtf: [Разбиение на поднауки] (* <- lang_ru;; *);;
+    -> pharmacology;;
+    -> molecular_biology;;
+    -> toxicology;;
+    -> veterinary;;
+    -> iatrochemistry;;
+    -> physiology;;
+    -> biochemistry;;
+  *);
+
+  <- rrel_key_sc_element:
+  definition_of_medical_chemistry
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (медицинская_химия)] (* <- lang_ru;; *);
+      [Def. (medical chemistry)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> medicine;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Медицинская химия — научная дисциплина, которая занимается обнаружением, оптимизацией и получением <b><sc_element sys_idtf="medicine">лекарств</b></sc_element> и биологически активных соединений](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Medical chemistry - a scientific discipline that is engaged in the detection, optimization and obtaining of <b><sc_element sys_idtf="medicine">medicine</b></sc_element> and biologically active compounds](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (медицинская химия)](* <- lang_ru;; *);
+      [Stat. (medical chemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Началом медицинской химии можно считать конец XIX века, но окончательно она оформилась лишь к 70-м годам XX века.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [The beginning of the XIX century can be considered the beginning of medical chemistry, but finally it took shape only by the 70s of the XX century.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (медицинская химия)](* <- lang_ru;; *);
+      [Pic. (medical chemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/medical_chemistry.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+pharmaceuticals
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [фармацевтика] (* <- lang_ru;; *);
+  => nrel_main_idtf: [pharmaceuticals] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_pharmaceuticals
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (фармацевтика)] (* <- lang_ru;; *);
+      [Def. (pharmaceuticals)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> medicine;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Формацевтика - часть фармации, связанная непосредственно с производственно-технологическими проблемами процесса изготовления <b><sc_element sys_idtf="medicine">лекарственных средств</b></sc_element> и субстанций.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Pharmaceuticals - part of the pharmacy, directly related to the production and technological problems of the process of manufacturing <b><sc_element sys_idtf="medicine">medicines</b></sc_element> and substances.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (фармацевтика)](* <- lang_ru;; *);
+      [Stat. (pharmaceuticals)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Разница между терминами «фармация» и «фармацевтика» подчёркнута в Оксфордском словаре английского языка.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [The difference between the terms "pharmacy" and "pharmaceuticals" is underlined in the Oxford English Dictionary.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (фармацевтика)](* <- lang_ru;; *);
+      [Pic. (pharmaceuticals)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/pharmaceuticals.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+pharmacology
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [фармакология] (* <- lang_ru;; *);
+  => nrel_main_idtf: [pharmacology] (* <- lang_en;; *);
+
+  <= nrel_subdividing:...
+  (*
+    => nrel_main_idtf: [Разбиение на поднауки] (* <- lang_ru;; *);;
+    -> pharmaceuticals;;
+    -> pharmacodynamics;;
+    -> pharmacokinetics;;
+    -> pharmacognosy;;
+    -> pharmacy;;
+  *);
+
+  <- rrel_key_sc_element:
+  definition_of_pharmacology
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (фармакология)] (* <- lang_ru;; *);
+      [Def. (pharmacology)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> medicine;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Фармакология — медико-биологическая наука о <b><sc_element sys_idtf="medicine">лекарственных веществах</b></sc_element> и их действии на организм; в более широком смысле — наука о физиологически активных веществах вообще.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Pharmacology - biomedical science of <b><sc_element sys_idtf="medicine">medicinal substances</b></sc_element> and their effects on the body; in a broader sense, the science of physiologically active substances in general.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (фармакология)](* <- lang_ru;; *);
+      [Stat. (pharmacology)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Если вещества используются в фармакотерапии, их называют <b><sc_element sys_idtf="medicine">лекарственные средства</b></sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [If substances are used in pharmacotherapy, they are called <b><sc_element sys_idtf="medicine">medicines</b></sc_element>.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (фармакология)](* <- lang_ru;; *);
+      [Pic. (pharmacology)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/pharmacology.jpeg"(* => nrel_format: format_jpeg;; *);;
+      *);;
+  *);;
+
+pharmacodynamics
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [фармакодинамика] (* <- lang_ru;; *);
+  => nrel_main_idtf: [pharmacodynamics] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_pharmacodynamics
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (фармакодинамика)] (* <- lang_ru;; *);
+      [Def. (pharmacodynamics)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> pharmacology;;
+      -> medicine;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Фармакодинамика — раздел <b><sc_element sys_idtf="pharmacology">фармакологии</b></sc_element>, который изучает фармакологические эффекты <b><sc_element sys_idtf="medicine">лекарственных средств</b></sc_element>: локализацию, механизм и виды дей­ствия.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Pharmacodynamics is a section of <b><sc_element sys_idtf="pharmacology">pharmacology</b></sc_element> that studies the pharmacological effects of <b><sc_element sys_idtf="medicine">drugs</b></sc_element>: localization, mechanism and types of action.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (фармакодинамика)](* <- lang_ru;; *);
+      [Stat. (pharmacodynamics)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Каж­дое биологически активное вещество вызывает характерные именно для него фармакологические эффекты.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Each biologically active substance causes pharmacological effects characteristic for it.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (фармакодинамика)](* <- lang_ru;; *);
+      [Pic. (pharmacodynamics)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/pharmacodynamics.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+pharmacokinetics
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [фармакокинетика] (* <- lang_ru;; *);
+  => nrel_main_idtf: [pharmacokinetics] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_pharmacokinetics
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (фармакокинетика)] (* <- lang_ru;; *);
+      [Def. (pharmacokinetics)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> pharmacology;;
+      -> medicine;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Фармакокинетика — раздел <b><sc_element sys_idtf="pharmacology">фармакологии</b></sc_element>, изучающий кинетические закономерности химических и биологических процессов, происходящих с <b><sc_element sys_idtf="medicine">лекарственным средством</b></sc_element> в организме животного или человека.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Pharmacokinetics is a section of <b><sc_element sys_idtf="pharmacology">pharmacology</b></sc_element> that studies the kinetic patterns of chemical and biological processes that occur with a <b><sc_element sys_idtf="medicine">drug</b></sc_element> in an animal or human body.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (фармакокинетика)](* <- lang_ru;; *);
+      [Stat. (pharmacokinetics)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Основные фармакокинетические процессы: всасывание, экскреция (выведение), распределение и метаболизм.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [The main pharmacokinetic processes: absorption, excretion (elimination), distribution and metabolism.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (фармакокинетика)](* <- lang_ru;; *);
+      [Pic. (pharmacokinetics)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/pharmacokinetics.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;
+
+pharmacophore
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [фармакофор] (* <- lang_ru;; *);
+  => nrel_main_idtf: [pharmacophore] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_pharmacophore
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (фармакофор)] (* <- lang_ru;; *);
+      [Def. (pharmacophore)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Фармакофор — это набор пространственных и электронных признаков, необходимых для обеспечения оптимальных супрамолекулярных взаимодействий с определённой биологической мишенью, которые могут вызывать (или блокировать) её биологический ответ](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [A pharmacophore is a set of spatial and electronic features necessary to ensure optimal supramolecular interactions with a specific biological target, which can cause (or block) its biological response.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (фармакофор)](* <- lang_ru;; *);
+      [Stat. (pharmacophore)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Под фармакофорными признаками (элементами) обычно понимаются фармакофорные центры и их взаимное расположение в пространстве, необходимые для проявления данного типа биологической активности.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Under pharmacophoric signs (elements) are usually understood pharmacophoric centers and their mutual arrangement in space, necessary for the manifestation of this type of biological activity.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (фармакофор)](* <- lang_ru;; *);
+      [Pic. (pharmacophore)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/pharmacophore.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;
+
+pharmacognosy
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [фармакогнозия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [pharmacognosy] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_pharmacognosy
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (фармакогнозия)] (* <- lang_ru;; *);
+      [Def. (pharmacognosy)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> pharmacology;;
+      -> medicine;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Фармакогнозия — одна из <b><sc_element sys_idtf="pharmacology">фармацевтических наук</b></sc_element>, изучающая <b><sc_element sys_idtf="medicine">лекарственные средства</b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Pharmacognosy is one of the <b><sc_element sys_idtf="pharmacology">pharmaceutical</b></sc_element> sciences that studies <b><sc_element sys_idtf="medicine">medicinal</b></sc_element>](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (фармакогнозия)](* <- lang_ru;; *);
+      [Stat. (pharmacognosy)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Фармакогнозия — старейшая отрасль фармации.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Pharmacognosy is the oldest branch of pharmacy.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (фармакогнозия)](* <- lang_ru;; *);
+      [Pic. (pharmacognosy)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/pharmacognosy.jpeg"(* => nrel_format: format_jpeg;; *);;
+      *);;
+  *);;
+
+molecular_biology
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [молекулярная биология] (* <- lang_ru;; *);
+  => nrel_main_idtf: [molecular biology] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_molecular_biology
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (молекулярная биология)] (* <- lang_ru;; *);
+      [Def. (molecular biology)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Молекулярная биология — комплекс биологических наук, изучающих механизмы хранения, передачи и реализации генетической информации, строение и функции сложных высокомолекулярных соединений, составляющих клетку](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Molecular biology - a complex of biological sciences that study the mechanisms of storage, transmission and sale of genetic information, the structure and functions of complex high-molecular compounds that make up a cell](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (молекулярная биология)](* <- lang_ru;; *);
+      [Stat. (molecular biology)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Возникнув как биохимия нуклеиновых кислот, молекулярная биология пережила период бурного развития собственных методов исследования](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Originating as nucleic acid biochemistry, molecular biology has experienced a period of rapid development of its own research methods.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (молекулярная биология)](* <- lang_ru;; *);
+      [Pic. (molecular biology)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/molecular_biology.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+toxicology
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [токсикология] (* <- lang_ru;; *);
+  => nrel_main_idtf: [toxicology] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_toxicology
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (токсикология)] (* <- lang_ru;; *);
+      [Def. (toxicology)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> medical_chemistry;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Токсикология — область <b><sc_element sys_idtf="medical_chemistry">медицины</b></sc_element>, изучающая ядовитые (токсичные) вещества, потенциальную опасность их воздействия на организмы и экосистемы, механизмы токсического действия](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Toxicology - the field of <b><sc_element sys_idtf="medical_chemistry">medicine</b></sc_element> that studies toxic (toxic) substances, the potential danger of their effects on organisms and ecosystems, the mechanisms of toxic action](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (токсикология)](* <- lang_ru;; *);
+      [Stat. (toxicology)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Раздел токсикологии, решающий проблемы выявления основных законов взаимодействия организма и ядов, их токсикокинетики и токсикодинамики](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Toxicology section that solves the problem of identifying the basic laws of the interaction of the organism and poisons, their toxicokinetics and toxicodynamics](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (токсикология)](* <- lang_ru;; *);
+      [Pic. (toxicology)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/toxicology.jpeg"(* => nrel_format: format_jpeg;; *);;
+      *);;
+  *);;
+
+veterinary
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [ветеринария] (* <- lang_ru;; *);
+  => nrel_main_idtf: [veterinary] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_veterinary
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (ветеринария)] (* <- lang_ru;; *);
+      [Def. (veterinary)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Ветеринария — отрасль науки, которая занимается профилактикой, диагностикой и лечением болезней, а также расстройствами и травмами животных](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Veterinary medicine - a branch of science that deals with the prevention, diagnosis and treatment of diseases, as well as animal disorders and injuries](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (ветеринария)](* <- lang_ru;; *);
+      [Stat. (veterinary)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Древнейшим из известных ветеринарным документом является древнеегипетский Папирус Кахуна, датируемый приблизительно 1800 годом до н. э.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [The oldest known veterinary document is the ancient Egyptian Papyrus Kahuna, dating from around 1800 BC. e.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (ветеринария)](* <- lang_ru;; *);
+      [Pic. (veterinary)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/veterinary.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+iatrochemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [ятрохимия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [iatrochemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_iatrochemistry
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (ятрохимия)] (* <- lang_ru;; *);
+      [Def. (iatrochemistry)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> medical_chemistry;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Ятрохимия — рациональное направление алхимии XVI—XVII веков, стремившееся поставить химию на службу <b><sc_element sys_idtf="medical_chemistry">медицине</b></sc_element> и ставившее своей главной целью приготовление лекарств.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Yatrohimiya is a rational direction of alchemy of the XVI-XVII centuries, which sought to put chemistry at the service of <b><sc_element sys_idtf="medical_chemistry">medicine</b></sc_element> and set as its main goal the preparation of medicines.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (ятрохимия)](* <- lang_ru;; *);
+      [Stat. (iatrochemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Основоположником ятрохимии считается швейцарский врач и алхимик Парацельс](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [The founder of yatrohimiya is considered a Swiss doctor and alchemist Paracelsus.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (ятрохимия)](* <- lang_ru;; *);
+      [Pic. (iatrochemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/iatrochemistry.jpeg"(* => nrel_format: format_jpeg;; *);;
+      *);;
+  *);;
+
+physiology
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [физиология] (* <- lang_ru;; *);
+  => nrel_main_idtf: [physiology] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_physiology
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (физиология)] (* <- lang_ru;; *);
+      [Def. (physiology)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Физиология — наука о сущности живого, жизни в норме и при патологиях, то есть о закономерностях функционирования и регуляции биологических систем разного уровня организации, о пределах нормы жизненных процессов и болезненных отклонений от неё](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Physiology - the science of the essence of life, life in health and pathology, that is, the laws of the functioning and regulation of biological systems of different levels of organization, on the limits of the normal life processes and painful deviations from it](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (физиология)](* <- lang_ru;; *);
+      [Stat. (physiology)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Физиологию традиционно делят на физиологию растений и физиологию человека и животных](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Physiology is traditionally divided into plant physiology and human and animal physiology.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (физиология)](* <- lang_ru;; *);
+      [Pic. (physiology)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/physiology.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;
+
+biochemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [биохимия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [biochemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_biochemistry
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (биохимия)] (* <- lang_ru;; *);
+      [Def. (biochemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Биохимия — наука о химическом составе живых клеток и организмов, а также о лежащих в основе их жизнедеятельности химических процессах.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Biochemistry - the science of the chemical composition of living cells and organisms, as well as the underlying chemical processes.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (биохимия)](* <- lang_ru;; *);
+      [Stat. (biochemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Биохимия — сравнительно молодая наука, которая находится на стыке биологии и химии](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Biochemistry is a relatively young science, which is located at the intersection of biology and chemistry.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (биохимия)](* <- lang_ru;; *);
+      [Pic. (biochemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/biochemistry.jpeg"(* => nrel_format: format_jpeg;; *);;
+      *);;
+  *);;
+
+pharmacy
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [фармация] (* <- lang_ru;; *);
+  => nrel_main_idtf: [pharmacy] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_pharmacy
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (фармация)] (* <- lang_ru;; *);
+      [Def. (pharmacy)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> medicine;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Фармация — комплекс научно-практических дисциплин, изучающих проблемы создания, безопасности, исследования, хранения, изготовления, отпуска и маркетинга <b><sc_element sys_idtf="medicine">лекарственных средств</b></sc_element>, а также поиска природных источников лекарственных субстанций](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Pharmacy - a complex of scientific and practical disciplines that study the problems of creation, safety, research, storage, manufacturing, supply and marketing of <b><sc_element sys_idtf="medicine">medicines</b></sc_element>, as well as the search for natural sources of medicinal substances](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (фармация)](* <- lang_ru;; *);
+      [Stat. (pharmacy)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [В комплексе с фармакологией составляет науку о <b><sc_element sys_idtf="medicine">лекарствах</b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [In conjunction with the pharmacology is the science of <b><sc_element sys_idtf="medicine">drugs</b></sc_element>](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (фармация)](* <- lang_ru;; *);
+      [Pic. (pharmacy)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/pharmacy.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+medicine
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [лекарственное средство] (* <- lang_ru;; *);
+  => nrel_main_idtf: [medicine] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_medicine
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (лекарственное средство)] (* <- lang_ru;; *);
+      [Def. (medicine)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> dosage_form;;
+      -> disease;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Лекарственное средство — вещество или смесь веществ в виде <b><sc_element sys_idtf="dosage_form">лекарственной формы</b></sc_element>, применяемые для профилактики, диагностики и лечения <b><sc_element sys_idtf="disease">заболеваний</b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Drug - a substance or mixture of substances in the form of a <b><sc_element sys_idtf="dosage_form">dosage form</b></sc_element>, used for the prevention, diagnosis and treatment of <b><sc_element sys_idtf="disease">diseases</b></sc_element>](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (лекарственное средство)](* <- lang_ru;; *);
+      [Stat. (medicine)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Перед употреблением в медицинской практике лекарственные средства должны проходить клинические исследования и получать разрешение к применению](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Before use in medical practice, medicinal products must undergo clinical studies and be approved for use.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (лекарственное средство)](* <- lang_ru;; *);
+      [Pic. (medicine)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/medicine.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+dosage_form
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [лекарственная форма] (* <- lang_ru;; *);
+  => nrel_main_idtf: [dosage form] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_dosage_form
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (лекарственная форма)] (* <- lang_ru;; *);
+      [Def. (dosage form)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> medicine;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Лекарственная форма — состояние <b><sc_element sys_idtf="medicine">лекарственного препарата</b></sc_element>, соответствующее способам его введения и применения и обеспечивающее достижение необходимого лечебного эффекта.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Dosage form - the state of the <b><sc_element sys_idtf="medicine">drug</b></sc_element>, corresponding to the methods of its introduction and use and ensuring the achievement of the desired therapeutic effect.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (лекарственная форма)](* <- lang_ru;; *);
+      [Stat. (dosage form)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Различают дозированные и недозированные лекарственные формы](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Distinguish between dosage and non-dosed dosage forms.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (лекарственная форма)](* <- lang_ru;; *);
+      [Pic. (dosage form)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/dosage_form.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+tablet
+  <- sc_node_not_relation;
+  <- dosage_form;
+  => nrel_main_idtf: [таблетка] (* <- lang_ru;; *);
+  => nrel_main_idtf: [tablet] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_tablet
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (таблетка)] (* <- lang_ru;; *);
+      [Def. (tablet)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> dosage_form;;
+      -> granule;;
+      -> powder;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Таблетки — твёрдая дозированная <b><sc_element sys_idtf="dosage_form">лекарственная форма</b></sc_element>, получаемая прессованием <b><sc_element sys_idtf="powder">порошков</b></sc_element> и <b><sc_element sys_idtf="granule">гранул</b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Tablets - solid <b><sc_element sys_idtf="dosage_form">dosage form</b></sc_element> obtained by pressing powders and granules](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (таблетка)](* <- lang_ru;; *);
+      [Stat. (tablet)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Основной формой таблеток являются прямые круглые цилиндры](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [The main form of tablets are straight circular cylinders.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (таблетка)](* <- lang_ru;; *);
+      [Pic. (tablet)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/tablet.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+capsule
+  <- sc_node_not_relation;
+  <- dosage_form;
+  => nrel_main_idtf: [капсула] (* <- lang_ru;; *);
+  => nrel_main_idtf: [capsule] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_capsule
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (капсула)] (* <- lang_ru;; *);
+      [Def. (capsule)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> dosage_form;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Капсула — дозированная <b><sc_element sys_idtf="dosage_form">лекарственная форма</b></sc_element>, состоящая из твердой или мягкой желатиновой оболочки, содержащей инкапсулят — одно или несколько активных действующих веществ](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Capsule - <b><sc_element sys_idtf="dosage_form">dosage form</b></sc_element> consisting of a hard or soft gelatin shell containing an encapsulate - one or more active active ingredients](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (капсула)](* <- lang_ru;; *);
+      [Stat. (capsule)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Капсулы применяют не вскрывая оболочки, целиком.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Capsules are used without opening the shell, entirely.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (капсула)](* <- lang_ru;; *);
+      [Pic. (capsule)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/capsule.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+ointment
+  <- sc_node_not_relation;
+  <- dosage_form;
+  => nrel_main_idtf: [мазь] (* <- lang_ru;; *);
+  => nrel_main_idtf: [ointment] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_ointment
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (мазь)] (* <- lang_ru;; *);
+      [Def. (ointment)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> dosage_form;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Мазь — мягкая <b><sc_element sys_idtf="dosage_form">лекарственная форма</b></sc_element>, предназначенная для нанесения на кожу](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Ointment - soft <b><sc_element sys_idtf="dosage_form">dosage form</b></sc_element> intended for application to the skin  ](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (мазь)](* <- lang_ru;; *);
+      [Stat. (ointment)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Для приготовления мазей используют разрешенные к медицинскому применению основы](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [For the preparation of ointments using approved for medical use bases](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (мазь)](* <- lang_ru;; *);
+      [Pic. (ointment)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/ointment.jpeg"(* => nrel_format: format_jpeg;; *);;
+      *);;
+  *);;
+
+decoction
+  <- sc_node_not_relation;
+  <- dosage_form;
+  => nrel_main_idtf: [отвар] (* <- lang_ru;; *);
+  => nrel_main_idtf: [decoction] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_decoction
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (отвар)] (* <- lang_ru;; *);
+      [Def. (decoction)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> dosage_form;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Отвар — недозированная жидкая <b><sc_element sys_idtf="dosage_form">лекарственная форма</b></sc_element>, представляющая собой водное извлечение из растительного сырья](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Broth - non-dosed liquid <b><sc_element sys_idtf="dosage_form">dosage form</b></sc_element>, which is a water extract from plant materials](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (отвар)](* <- lang_ru;; *);
+      [Stat. (decoction)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Технология <b><sc_element sys_idtf="infusion">настоев</b></sc_element> и отваров во многом похожа](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Technology infusions and decoctions is very similar](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (отвар)](* <- lang_ru;; *);
+      [Pic. (decoction)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/decoction.jpeg"(* => nrel_format: format_jpeg;; *);;
+      *);;
+  *);;
+
+infusion
+  <- sc_node_not_relation;
+  <- dosage_form;
+  => nrel_main_idtf: [настой] (* <- lang_ru;; *);
+  => nrel_main_idtf: [infusion] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_infusion
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (настой)] (* <- lang_ru;; *);
+      [Def. (infusion)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> dosage_form;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Настой — недозированная жидкая <b><sc_element sys_idtf="dosage_form">лекарственная форма</b></sc_element>, представляющая собой водное извлечение из лекарственного растительного сырья или водный раствор, специально приготовленный для этой цели](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Infusion - non-dosed liquid <b><sc_element sys_idtf="dosage_form">dosage form</b></sc_element>, which is an aqueous extract from medicinal plant materials or an aqueous solution specially prepared for this purpose.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (настой)](* <- lang_ru;; *);
+      [Stat. (infusion)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Первый документально зафиксированный факт приготовления и лечения данной лекарственной формой относится к X веку](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [The first documented fact of preparation and treatment of this dosage form refers to the X century](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (настой)](* <- lang_ru;; *);
+      [Pic. (infusion)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/infusion.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+elixir
+  <- sc_node_not_relation;
+  <- dosage_form;
+  => nrel_main_idtf: [эликсир] (* <- lang_ru;; *);
+  => nrel_main_idtf: [elixir] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_elixir
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (эликсир)] (* <- lang_ru;; *);
+      [Def. (elixir)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> dosage_form;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Эликсир — недозированная жидкая <b><sc_element sys_idtf="dosage_form">лекарственная форма</b></sc_element>, представляющая собой смесь спирто-водных извлечений из лекарственного растительного сырья](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Elixir - non-dosed liquid <b><sc_element sys_idtf="dosage_form">dosage form</b></sc_element>, which is a mixture of alcohol-water extracts from medicinal plant materials](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (эликсир)](* <- lang_ru;; *);
+      [Stat. (elixir)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Эликсир может быть приготовлен с добавлением <b><sc_element sys_idtf="medicine">лекарственных веществ</b></sc_element>, сахаров и ароматизаторов](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [The elixir can be prepared with the addition of medicinal substances, sugars and flavors.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (эликсир)](* <- lang_ru;; *);
+      [Pic. (elixir)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/elixir.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;
+
+syrup
+  <- sc_node_not_relation;
+  <- dosage_form;
+  => nrel_main_idtf: [сироп] (* <- lang_ru;; *);
+  => nrel_main_idtf: [syrup] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_syrup
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (сироп)] (* <- lang_ru;; *);
+      [Def. (syrup)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Сироп — концентрированный сахарный раствор или смесь отдельных сахаров](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Syrup - concentrated sugar solution or a mixture of individual sugars](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (сироп)](* <- lang_ru;; *);
+      [Stat. (syrup)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Содержание сахара в сиропе обычно колеблется от 40 до 80 %](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [The sugar content in syrup usually ranges from 40 to 80%](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (сироп)](* <- lang_ru;; *);
+      [Pic. (syrup)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/syrup.jpeg"(* => nrel_format: format_jpeg;; *);;
+      *);;
+  *);;
+
+powder
+  <- sc_node_not_relation;
+  <- dosage_form;
+  => nrel_main_idtf: [порошок] (* <- lang_ru;; *);
+  => nrel_main_idtf: [powder] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_powder
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (порошок)] (* <- lang_ru;; *);
+      [Def. (powder)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> dosage_form;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Порошк — твёрдая <b><sc_element sys_idtf="dosage_form">лекарственная форма</b></sc_element> для внутреннего или наружного применения, состоящая из одного или нескольких измельченных веществ](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Powder - solid <b><sc_element sys_idtf="dosage_form">dosage form</b></sc_element> for internal or external use, consisting of one or more powdered substances](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (порошок)](* <- lang_ru;; *);
+      [Stat. (powder)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Порошки разлагаются под действием желудочно-кишечного сока](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Powders decompose under the action of gastrointestinal juice.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (порошок)](* <- lang_ru;; *);
+      [Pic. (powder)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/powder.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;
+
+granule
+  <- sc_node_not_relation;
+  <- dosage_form;
+  => nrel_main_idtf: [гранула] (* <- lang_ru;; *);
+  => nrel_main_idtf: [granule] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_granule
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (гранула)] (* <- lang_ru;; *);
+      [Def. (granule)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Гранулы — комбинированные сухие сыпучие вещества и смеси или отдельные твёрдые дозированные и недозированные субстраты, спрессованные в виде крупинок шарообразной, неправильно кубической или цилиндрической формы.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Granules - combined dry granular substances and mixtures or individual solid dosed and non-dosed substrates, pressed in the form of spherical grains, irregularly cubic or cylindrical in shape.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (гранула)](* <- lang_ru;; *);
+      [Stat. (granule)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Фармакологические гранулы — твердая дозированная или недозированная <b><sc_element sys_idtf="dosage_form">лекарственная форма</b></sc_element> для внутреннего применения](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Pharmacological granules - solid dosage or non-dosed <b><sc_element sys_idtf="dosage_form">dosage form</b></sc_element> for internal use](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (гранула)](* <- lang_ru;; *);
+      [Pic. (granule)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/granule.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+paste
+  <- sc_node_not_relation;
+  <- dosage_form;
+  => nrel_main_idtf: [паста] (* <- lang_ru;; *);
+  => nrel_main_idtf: [paste] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_paste
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (паста)] (* <- lang_ru;; *);
+      [Def. (paste)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> ointment;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Паста — <b><sc_element sys_idtf="ointment">мазь</b></sc_element> плотной консистенции (суспензионная), содержание порошкообразных веществ в которой превышает 20 %](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Paste - <b><sc_element sys_idtf="ointment">ointment</b></sc_element> dense consistency (suspension), the content of powdery substances in which exceeds 20%](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (паста)](* <- lang_ru;; *);
+      [Stat. (paste)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Обладает подсушивающим действием, используется при выписывании вяжущих, прижигающих, антисептических средств.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [It has a drying effect, is used when discharging astringent, cauterizing, antiseptic agents.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (паста)](* <- lang_ru;; *);
+      [Pic. (paste)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/paste.jpeg"(* => nrel_format: format_jpeg;; *);;
+      *);;
+  *);;
+
+gel
+  <- sc_node_not_relation;
+  <- dosage_form;
+  => nrel_main_idtf: [гель] (* <- lang_ru;; *);
+  => nrel_main_idtf: [gel] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_gel
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (гель)] (* <- lang_ru;; *);
+      [Def. (gel)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> dosage_form;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Гель — мягкая <b><sc_element sys_idtf="dosage_form">лекарственная форма</b></sc_element> вязкой консистенции, способная сохранять форму и обладающая упругостью и пластичностью](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Gel - soft <b><sc_element sys_idtf="dosage_form">dosage form</b></sc_element> of viscous consistency, capable of preserving the shape and possessing elasticity and plasticity](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (гель)](* <- lang_ru;; *);
+      [Stat. (gel)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Гели получают путём суспендирования в воде <b><sc_element sys_idtf="powder">порошка</b></sc_element> полимера](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Gels are obtained by suspending polymer <b><sc_element sys_idtf="powder">powder</b></sc_element> in water.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (гель)](* <- lang_ru;; *);
+      [Pic. (gel)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/gel.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+aerosol
+  <- sc_node_not_relation;
+  <- dosage_form;
+  => nrel_main_idtf: [аэрозоль] (* <- lang_ru;; *);
+  => nrel_main_idtf: [aerosol] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_aerosol
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (аэрозоль)] (* <- lang_ru;; *);
+      [Def. (aerosol)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Аэрозоль — дисперсная система, состоящая из взвешенных в газовой среде, обычно в воздухе, мелких частиц](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Aerosol is a dispersed system consisting of fine particles suspended in a gaseous medium, usually in air.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (аэрозоль)](* <- lang_ru;; *);
+      [Stat. (aerosol)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Аэрозоли образуются при механическом измельчении и распылении твёрдых тел и жидкостей](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Aerosols are formed by mechanical grinding and spraying of solids and liquids.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (аэрозоль)](* <- lang_ru;; *);
+      [Pic. (aerosol)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/aerosol.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;
+
+metabolism
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [метаболизм] (* <- lang_ru;; *);
+  => nrel_main_idtf: [metabolism] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_metabolism
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (метаболизм)] (* <- lang_ru;; *);
+      [Def. (metabolism)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Метаболизм или обмен веществ — набор химических реакций, которые возникают в живом организме для поддержания жизни](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Metabolism or metabolism - a set of chemical reactions that occur in a living body to sustain life](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (метаболизм)](* <- lang_ru;; *);
+      [Stat. (metabolism)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Серии химических реакций обмена веществ называют метаболическими путями](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [A series of chemical metabolic reactions called metabolic pathways.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (метаболизм)](* <- lang_ru;; *);
+      [Pic. (metabolism)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/metabolism.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+disease
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [заболевание] (* <- lang_ru;; *);
+  => nrel_main_idtf: [disease] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_disease
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (заболевание)] (* <- lang_ru;; *);
+      [Def. (disease)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Заболевание — это нарушения нормальной жизнедеятельности, возникающие в ответ на действие патогенных факторов](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [The disease is a disruption of normal life, arising in response to the action of pathogenic factors.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (заболевание)](* <- lang_ru;; *);
+      [Stat. (disease)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Развитие общих представлений о болезни менялось на протяжении истории медицины.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [The development of general ideas about the disease has changed throughout the history of medicine.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (заболевание)](* <- lang_ru;; *);
+      [Pic. (disease)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/disease.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+antibiotics
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [антибиотики] (* <- lang_ru;; *);
+  => nrel_main_idtf: [antibiotics] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_antibiotics
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (антибиотики)] (* <- lang_ru;; *);
+      [Def. (antibiotics)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Антибиотики — вещества, подавляющие рост живых клеток, чаще всего прокариотических или простейших.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Antibiotics are substances that inhibit the growth of living cells, most often prokaryotic or protozoa.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (антибиотики)](* <- lang_ru;; *);
+      [Stat. (antibiotics)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Антибиотики природного происхождения чаще всего продуцируются актиномицетами, реже — немицелиальными бактериями.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Natural antibiotics are most often produced by actinomycetes, less often by non-mycelial bacteria.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (антибиотики)](* <- lang_ru;; *);
+      [Pic. (antibiotics)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/antibiotics.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+chloramphenicol
+  <- sc_node_not_relation;
+  <- medicine;
+  <- antibiotics;
+  => nrel_main_idtf: [хлорамфеникол] (* <- lang_ru;; *);
+  => nrel_main_idtf: [chloramphenicol] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_chloramphenicol
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (хлорамфеникол)] (* <- lang_ru;; *);
+      [Def. (chloramphenicol)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Хлорамфеникол — антибиотик, антибактериальное средство широкого спектра действия, бесцветные кристаллы чрезвычайно горького вкуса.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Chloramphenicol is an antibiotic, a broad spectrum antibacterial agent, colorless crystals of extremely bitter taste.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (хлорамфеникол)](* <- lang_ru;; *);
+      [Stat. (chloramphenicol)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Плохо растворим в воде, хорошо — в этаноле](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Poor soluble in water, good - in ethanol](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (хлорамфеникол)](* <- lang_ru;; *);
+      [Pic. (chloramphenicol)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/chloramphenicol.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;
+
+streptocid
+  <- sc_node_not_relation;
+  <- medicine;
+  <- antibiotics;
+  => nrel_main_idtf: [стрептоцид] (* <- lang_ru;; *);
+  => nrel_main_idtf: [streptocid] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_streptocid
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (стрептоцид)] (* <- lang_ru;; *);
+      [Def. (streptocid)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [стрептоцид - антибактериальный препарат из группы сульфаниламидов](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [streptotsid - antibacterial drug from the group of sulfonamides](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (стрептоцид)](* <- lang_ru;; *);
+      [Stat. (streptocid)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [один из первых представителей химиотерапевтических средств группы сульфаниламидов](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [one of the first representatives of chemotherapeutic agents of the sulfonamide group](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (стрептоцид)](* <- lang_ru;; *);
+      [Pic. (streptocid)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/streptocid.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+penicillin
+  <- sc_node_not_relation;
+  <- medicine;
+  <- antibiotics;
+  => nrel_main_idtf: [пенициллин] (* <- lang_ru;; *);
+  => nrel_main_idtf: [penicillin] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_penicillin
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (пенициллин)] (* <- lang_ru;; *);
+      [Def. (penicillin)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Пенициллины  — антимикробные препараты, относящиеся к классу β-лактамных антибиотиков.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Penicillins - antimicrobial drugs belonging to the class of β-lactam antibiotics.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (пенициллин)](* <- lang_ru;; *);
+      [Stat. (penicillin)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [В настоящее время все пенициллины подразделяются на 4 группы или поколения](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Currently, all penicillins are divided into 4 groups or generations.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (пенициллин)](* <- lang_ru;; *);
+      [Pic. (penicillin)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/penicillin.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+benzylpenicillin
+  <- sc_node_not_relation;
+  <- medicine;
+  <- antibiotics;
+  => nrel_main_idtf: [бензилпенициллин] (* <- lang_ru;; *);
+  => nrel_main_idtf: [benzylpenicillin] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_benzylpenicillin
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (бензилпенициллин)] (* <- lang_ru;; *);
+      [Def. (benzylpenicillin)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Бензилпеницилли́н — N-фенилацетамид 6-аминопенициллановой кислоты. Антибиотик, получаемый из плесневого гриба пеницилла](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [benzylpenicillin - N-phenylacetamide 6-aminopenicillanic acid. Antibiotic derived from penicillium fungus](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (бензилпенициллин)](* <- lang_ru;; *);
+      [Stat. (benzylpenicillin)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Пенициллиновые антибиотики имеют важное историческое значение, так как они являются первыми эффективными лекарствами против многих тяжёлых заболеваний](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Penicillin antibiotics are of great historical importance, as they are the first effective drugs against many serious diseases.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (бензилпенициллин)](* <- lang_ru;; *);
+      [Pic. (benzylpenicillin)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/benzylpenicillin.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;
+
+hormones
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [гормоны] (* <- lang_ru;; *);
+  => nrel_main_idtf: [hormones] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_hormones
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (гормоны)] (* <- lang_ru;; *);
+      [Def. (hormones)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Гормоны — биологически активные вещества органической природы в вашем теле, вырабатывающиеся в специализированных клетках желёз внутренней секреции](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Hormones - biologically active substances of organic nature in your body, produced in specialized cells of the endocrine glands](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (гормоны)](* <- lang_ru;; *);
+      [Stat. (hormones)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Гормоны служат гуморальными (переносимыми с кровью) регуляторами определённых процессов в различных органах.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Hormones serve as humoral (blood-borne) regulators of certain processes in various organs.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (гормоны)](* <- lang_ru;; *);
+      [Pic. (hormones)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/hormones.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+insulin
+  <- sc_node_not_relation;
+  <- medicine;
+  <- hormones;
+  => nrel_main_idtf: [инсулин] (* <- lang_ru;; *);
+  => nrel_main_idtf: [insulin] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_insulin
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (инсулин)] (* <- lang_ru;; *);
+      [Def. (insulin)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Инсулин— гормон пептидной природы, образуется в бета-клетках островков Лангерганса поджелудочной железы.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Insulin is a peptide hormone that is formed in the beta cells of the pancreatic islets of Langerhans.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (инсулин)](* <- lang_ru;; *);
+      [Stat. (insulin)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Инсулин увеличивает проницаемость плазматических мембран для глюкозы](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Insulin increases plasma membrane permeability to glucose.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (инсулин)](* <- lang_ru;; *);
+      [Pic. (insulin)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/insulin.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+erythropoietin
+  <- sc_node_not_relation;
+  <- medicine;
+  <- hormones;
+  => nrel_main_idtf: [эритропоэтин] (* <- lang_ru;; *);
+  => nrel_main_idtf: [erythropoietin] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_erythropoietin
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (эритропоэтин)] (* <- lang_ru;; *);
+      [Def. (erythropoietin)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Эритропоэтин — один из гормонов почек, который контролирует эритропоэз, то есть образование красных кровяных клеток.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Erythropoietin is one of the hormones of the kidneys that controls erythropoiesis, that is, the formation of red blood cells.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (эритропоэтин)](* <- lang_ru;; *);
+      [Stat. (erythropoietin)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Экзогенный эритропоэтин вырабатывается при помощи молекулярного клонирования в клеточной культуре.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Exogenous erythropoietin is produced by molecular cloning in cell culture.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (эритропоэтин)](* <- lang_ru;; *);
+      [Pic. (erythropoietin)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/erythropoietin.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;
+
+medical_method
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [медицинский метод] (* <- lang_ru;; *);
+  => nrel_main_idtf: [medical method] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_medical_method
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (медицинский метод)] (* <- lang_ru;; *);
+      [Def. (medical method)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [медицинский метод - метод диагностического исследования или лечения пациента](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [medical method - a method of diagnostic research and treatment of the patient](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);;
+
+chemotherapy
+  <- sc_node_not_relation;
+  <- medical_method;
+  => nrel_main_idtf: [химиотерапия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [chemotherapy] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_chemotherapy
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (химиотерапия)] (* <- lang_ru;; *);
+      [Def. (chemotherapy)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Химиотерапия — лечение какого-либо инфекционного, паразитарного заболевания либо злокачественной опухоли с помощью ядов или токсинов, губительно воздействующих на инфекционный агент](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Chemotherapy - treatment of any infectious, parasitic disease or malignant tumor with the help of poisons or toxins, detrimental effect on the infectious agent](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (химиотерапия)](* <- lang_ru;; *);
+      [Stat. (chemotherapy)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Некоторые лекарства могут вступать в реакцию с препаратами, используемыми при химиотерапии.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Some drugs may react with drugs used in chemotherapy.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (химиотерапия)](* <- lang_ru;; *);
+      [Pic. (chemotherapy)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/chemotherapy.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+clinical_trial
+  <- sc_node_not_relation;
+  <- medical_method;
+  => nrel_main_idtf: [клиническое исследование] (* <- lang_ru;; *);
+  => nrel_main_idtf: [clinical_trial] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_clinical_trial
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (клиническое исследование)] (* <- lang_ru;; *);
+      [Def. (clinical trial)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Клиническое исследование — научное исследование с участием людей, которое проводится с целью оценки эффективности и безопасности нового лекарственного препарата](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Clinical research - a scientific study with the participation of people, which is conducted to assess the effectiveness and safety of a new drug](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (клиническое исследование)](* <- lang_ru;; *);
+      [Stat. (clinical trial)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [При разработке нового препарата невозможно обойтись без клинических исследований](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [When developing a new drug can not do without clinical studies](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (клиническое исследование)](* <- lang_ru;; *);
+      [Pic. (clinical trial)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/clinical_trial.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+anatomical_and_therapeutic_chemical_classification
+  <- sc_node_not_relation;
+  <- medical_method;
+  => nrel_main_idtf: [анатомо-терапевтическо-химическая классификация] (* <- lang_ru;; *);
+  => nrel_main_idtf: [anatomical and therapeutic chemical classification] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_anatomical_and_therapeutic_chemical_classification
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (анатомо-терапевтическо-химическая классификация)] (* <- lang_ru;; *);
+      [Def. (anatomical and therapeutic chemical classification)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Анатомо-терапевтическо-химическая классификация — международная система классификации лекарственных средств.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Anatomical, therapeutic and chemical classification is the international drug classification system.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (анатомо-терапевтическо-химическая классификация)](* <- lang_ru;; *);
+      [Stat. (anatomical and therapeutic chemical classification)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [АТС подразделяет лекарственные средства на группы, имеющие 5 различных уровней](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [ATS divides drugs into groups with 5 different levels](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (анатомо-терапевтическо-химическая классификация)](* <- lang_ru;; *);
+      [Pic. (anatomical and therapeutic chemical classification)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/anatomical_and_therapeutic_chemical_classification.jpeg"(* => nrel_format: format_jpeg;; *);;
+      *);;
+  *);;
+
+cumulation
+  <- sc_node_not_relation;
+  <- medical_method;
+  => nrel_main_idtf: [кумуляция] (* <- lang_ru;; *);
+  => nrel_main_idtf: [cumulation] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_cumulation
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (кумуляция)] (* <- lang_ru;; *);
+      [Def. (cumulation)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Кумуляция — накопление биологически активного вещества](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Cumulation - the accumulation of biologically active substances](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (кумуляция)](* <- lang_ru;; *);
+      [Stat. (cumulation)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Для исследования кумулятивности используются различные методы, основанные на учёте гибели животных при повторном воздействии изучаемого вещества.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [For the study of cumulativeness, various methods are used, based on accounting for the death of animals with repeated exposure to the substance under study.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (кумуляция)](* <- lang_ru;; *);
+      [Pic. (cumulation)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/cumulation.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+tetracycline
+  <- sc_node_not_relation;
+  <- medicine;
+  => nrel_main_idtf: [тетрациклин] (* <- lang_ru;; *);
+  => nrel_main_idtf: [tetracycline] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_tetracycline
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (тетрациклин)] (* <- lang_ru;; *);
+      [Def. (tetracycline)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Тетрациклин — антибиотик из группы тетрациклинов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Tetracycline is an antibiotic from the tetracycline group.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (тетрациклин)](* <- lang_ru;; *);
+      [Stat. (tetracycline)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Глазная мазь тетрациклина входит в российский перечень жизненно необходимых и важнейших лекарственных препаратов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [STATE](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (тетрациклин)](* <- lang_ru;; *);
+      [Pic. (tetracycline)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/tetracycline.jpeg"(* => nrel_format: format_jpeg;; *);;
+      *);;
+  *);;
+
+atorvastatin
+  <- sc_node_not_relation;
+  <- medicine;
+
+  => nrel_main_idtf: [аторвастатин] (* <- lang_ru;; *);
+  => nrel_main_idtf: [atorvastatin] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_atorvastatin
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (аторвастатин)] (* <- lang_ru;; *);
+      [Def. (atorvastatin)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Аторвастатин — гиполипидемическое лекарственное средство III поколения из группы статинов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Atorvastatin is a hypolipidemic drug of the third generation from the group of statins.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (аторвастатин)](* <- lang_ru;; *);
+      [Stat. (atorvastatin)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Снижает уровни холестерина и липопротеинов в плазме за счет угнетения ГМГ-КоА-редуктазы](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Reduces plasma cholesterol and lipoprotein levels by inhibiting HMG-CoA reductase](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (аторвастатин)](* <- lang_ru;; *);
+      [Pic. (atorvastatin)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/atorvastatin.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;
+
+biomolecules
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [биомолекулы] (* <- lang_ru;; *);
+  => nrel_main_idtf: [biomolecules] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_biomolecules
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (биомолекулы)] (* <- lang_ru;; *);
+      [Def. (biomolecules)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Биомолекулы — это органические вещества, которые синтезируются живыми организмами.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Biomolecules are organic substances that are synthesized by living organisms.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (биомолекулы)](* <- lang_ru;; *);
+      [Stat. (biomolecules)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Биомолекулы состоят из атомов углерода, водорода, азота, кислорода, а также фосфора и серы.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Biomolecules are composed of atoms of carbon, hydrogen, nitrogen, oxygen, as well as phosphorus and sulfur.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (биомолекулы)](* <- lang_ru;; *);
+      [Pic. (biomolecules)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/biomolecules.jpeg"(* => nrel_format: format_jpeg;; *);;
+      *);;
+  *);;
+
+cisplatin
+  <- sc_node_not_relation;
+  <- medicine;
+  => nrel_main_idtf: [цисплатин] (* <- lang_ru;; *);
+  => nrel_main_idtf: [cisplatin] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_cisplatin
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (цисплатин)] (* <- lang_ru;; *);
+      [Def. (cisplatin)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Цисплатин — цитотоксический препарат, неорганическое вещество, комплексный хлорид-аммиакат двухвалентной платины, цис-(Pt(NH3)2Cl2)](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Cisplatin - cytotoxic drug, inorganic substance, complex chloride ammonium bivalent platinum, cis- (Pt (NH3) 2Cl2)](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (цисплатин)](* <- lang_ru;; *);
+      [Stat. (cisplatin)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Регистрационный номер вещества в базе Американского химического общества (CAS number): 15663-27-1.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [The registration number of the substance in the base of the American Chemical Society (CAS number): 15663-27-1.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (цисплатин)](* <- lang_ru;; *);
+      [Pic. (cisplatin)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/cisplatin.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+aspirin
+  <- sc_node_not_relation;
+  <- medicine;
+  => nrel_main_idtf: [аспирин] (* <- lang_ru;; *);
+  => nrel_main_idtf: [aspirin] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_aspirin
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (аспирин)] (* <- lang_ru;; *);
+      [Def. (aspirin)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Аспирин — лекарственное средство, оказывающее анальгезирующее (обезболивающее), жаропонижающее, противовоспалительное действие.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Aspirin is a drug that has an analgesic (analgesic), antipyretic, anti-inflammatory effect.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (аспирин)](* <- lang_ru;; *);
+      [Stat. (aspirin)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Ацетилсалициловая кислота также широко известна под торговой маркой «Аспирин», запатентованной фирмой «Байер»](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Acetylsalicylic acid is also widely known under the trademark Aspirin, patented by Bayer.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (аспирин)](* <- lang_ru;; *);
+      [Pic. (aspirin)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/aspirin.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+generic
+  <- sc_node_not_relation;
+  <- medicine;
+  => nrel_main_idtf: [дженерик] (* <- lang_ru;; *);
+  => nrel_main_idtf: [generic] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_generic
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (дженерик)] (* <- lang_ru;; *);
+      [Def. (generic)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Джене́рик — лекарственное средство, содержащее химическое вещество - активную фармацевтическую субстанцию, идентичную запатентованной компанией - первоначальным разработчиком лекарственного средства.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Generic is a medicinal product containing a chemical - an active pharmaceutical substance identical to the patented company - the original developer of the medicinal product.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (дженерик)](* <- lang_ru;; *);
+      [Stat. (generic)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Воспроизведенные биологические лекарственные средства, в отличие от химических, не являются полностью идентичными оригинальному препарату и называются биосимилярами.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Reproduced biological drugs, unlike chemical, are not completely identical to the original drug and are called biosimilars.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (дженерик)](* <- lang_ru;; *);
+      [Pic. (generic)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/generic.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+acetylsalicylic_acid
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [ацетилсалициловая кислота] (* <- lang_ru;; *);
+  => nrel_main_idtf: [acetylsalicylic acid] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_acetylsalicylic_acid
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (ацетилсалициловая кислота)] (* <- lang_ru;; *);
+      [Def. (acetylsalicylic acid)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> aspirin;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Ацетилсалициловая кислота является полным названием <b><sc_element sys_idtf="aspirin">аспирина</b></sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Acetylsalicylic acid is the full name of <b><sc_element sys_idtf="aspirin">aspirin</b></sc_element>.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);;
+
+monoclonal_antibodies
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [моноклональные антитела] (* <- lang_ru;; *);
+  => nrel_main_idtf: [monoclonal antibodies] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_monoclonal_antibodies
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (моноклональные антитела)] (* <- lang_ru;; *);
+      [Def. (monoclonal antibodies)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Моноклональные антитела — антитела, вырабатываемые иммунными клетками, принадлежащими к одному клеточному клону](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Monoclonal antibodies - antibodies produced by immune cells belonging to the same cell clone.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (моноклональные антитела)](* <- lang_ru;; *);
+      [Stat. (monoclonal antibodies)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Примером лекарственного средства на основе моноклональных антител являются ипилимумаб](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Examples of monoclonal antibody based drugs are ipilimumab.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (моноклональные антитела)](* <- lang_ru;; *);
+      [Pic. (monoclonal antibodies)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/monoclonal_antibodies.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;

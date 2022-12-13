@@ -1,0 +1,77 @@
+subst_Ca
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[calcium (substance)](*<- lang_en;;*);
+	[кальций (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Сa (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (кальций (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Кальций (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - умеренно твёрдый, серебристо-белый <sc_element sys_idtf = "metal">металл</sc_element>. 
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> metal;;
+
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (кальций (вещество), умеренно твёрдый, серебристо-белый металл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Calcium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:842 (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1484 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (кальций (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы кальция:  <sup>40</sup>Са, <sup>42</sup>Са, <sup>43</sup>Са, <sup>44</sup>Са, <sup>46</sup>Са, <sup>48</sup>С] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

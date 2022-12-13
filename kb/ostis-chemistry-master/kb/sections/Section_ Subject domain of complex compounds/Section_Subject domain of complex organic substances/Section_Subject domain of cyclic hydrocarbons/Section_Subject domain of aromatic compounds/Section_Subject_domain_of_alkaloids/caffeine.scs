@@ -1,0 +1,120 @@
+caffeine<-sc_node_not_relation;;
+caffeine=> nrel_idtf:[гуаранин](* <- lang_ru;; *);;
+caffeine=> nrel_idtf:[матеин](* <- lang_ru;; *);;
+caffeine=> nrel_idtf:[метилтеобромин](* <- lang_ru;; *);;
+caffeine=> nrel_idtf:[C8H10N4O2](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: caffeine ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Кофеин — <b><sc_element sys_idtf="alkaloids">алкалоид</b></sc_element> пуринового ряда, бесцветные или белые горькие <b><sc_element sys_idtf="crystall">кристаллы</b></sc_element>. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (кофеин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		alkaloids;
+		crystall
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: caffeine ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Открыт и назван «кофеином» в 1819 году немецким химиком Фердинандом Рунге. ]
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(кофеин)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: caffeine ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://caffeine.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(кофеин,побочный эффект*)](*<- lang_ru;;*);;
+	
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: caffeine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/coffeine1.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(кофеин,твердое вещество)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: caffeine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/caffeine3.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(кофеин,структурная формула](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: caffeine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/kofein.gif";;*);;
+	=> nrel_main_idtf: [Рисунок(кофеин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+solid_matter=>nrel_inclusion:caffeine;;
+pseudoalkaloids=>nrel_inclusion:caffeine;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> caffeine;;
+	=> nrel_measurement_in_gramms_per_mole: [194,19]
+	(*	
+		<-number;;
+	*);;
+*);;
+
+
+destiny->...
+(* 
+
+	<- sc_node_not_relation;;
+	->caffeine;;
+	=> nrel_measurement_in_gramms_per_centimeter: [1,23]
+	(*
+		<-number;;
+	*);;
+
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->caffeine;;
+	=> nrel_measurement_in_degrees_Celsius: 234
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+
+drag_half_life->...
+(* 
+
+	<- sc_node_not_relation;;
+	->caffeine;;
+	=> nrel_measurement_in_hours:5	
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+

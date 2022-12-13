@@ -1,0 +1,13 @@
+{
+     "sources": [
+        
+        "src/solubility_table-common.js",        
+	"src/ui_solubility_table.js",
+	"src/ui_solubility_table_data.js"
+
+    ],
+
+    "component": "src/solubility_table-component.js",
+
+    "target": "static/components/js/chemistry_components/solubility_table.js"
+}

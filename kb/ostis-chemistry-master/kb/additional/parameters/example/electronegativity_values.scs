@@ -1,0 +1,45 @@
+two_and_two
+=> nrel_main_idtf:
+	[2,2](*<- lang_en; lang_ru;;*);;
+one_and_three
+=> nrel_main_idtf:
+	[1,3](*<- lang_en; lang_ru;;*);;
+two_and_ninety_six
+=> nrel_main_idtf:
+	[2,96](*<- lang_en; lang_ru;;*);;
+one_and_zero
+=> nrel_main_idtf:
+	[1,0](*<- lang_en; lang_ru;;*);;
+one_and_sixty_nine
+=> nrel_main_idtf:
+	[1,69](*<- lang_en; lang_ru;;*);;
+one_and_twelve
+=> nrel_main_idtf:
+	[1,12](*<- lang_en; lang_ru;;*);;
+one_and_three
+=> nrel_main_idtf:
+	[1,3](*<- lang_en; lang_ru;;*);;
+three_and_sixteen
+=> nrel_main_idtf:
+	[3,16](*<- lang_en; lang_ru;;*);;
+one_and_eighty_eight
+=> nrel_main_idtf:
+	[1,88](*<- lang_en; lang_ru;;*);;
+one_and_sixty_six
+=> nrel_main_idtf:
+	[1,66](*<- lang_en; lang_ru;;*);;
+one_and_nine
+=> nrel_main_idtf:
+	[1,9](*<- lang_en; lang_ru;;*);;
+two_and_fifty_five
+=> nrel_main_idtf:
+	[2,55](*<- lang_en; lang_ru;;*);;
+one_and_two
+=> nrel_main_idtf:
+	[1,2](*<- lang_en; lang_ru;;*);;
+one_and_twenty_three
+=> nrel_main_idtf:
+	[1,23](*<- lang_en; lang_ru;;*);;
+one_and_one
+=> nrel_main_idtf:
+	[1,1](*<- lang_en; lang_ru;;*);;

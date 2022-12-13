@@ -1,0 +1,2465 @@
+subject_domain_of_nonmetals
+	=> nrel_main_idtf:
+	[Предметная область неметаллов]
+	(* <- lang_ru;; *);
+	[Subject domain of nonmetals]
+	(* <- lang_en;; *);
+		
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	nonmetal;
+
+-> rrel_not_maximum_studied_object_class:
+	subst_H;
+	subst_He;
+	subst_B;
+	subst_C;
+	subst_N;
+	subst_O;
+	subst_F;
+	subst_Ne;
+	subst_Si;
+	subst_P;
+	subst_S;
+	subst_Cl;
+	subst_Ar;
+	subst_As;
+	subst_Se;
+	subst_Br;
+	subst_Kr;
+	subst_Te;
+	subst_I;
+	subst_Xe;
+	subst_At;
+	subst_Rn;
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://html/section_nonmetals.html" (* <-lang_ru;; *);;
+		*);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://html/section_nonmetals_eng.html" (* <-lang_en;; *);;
+		*);;
+
+subst_Rn
+<= nrel_inclusion: chemical_substance;
+<- sc_node_not_relation;
+=> nrel_main_idtf: [радон] (* <- lang_ru;; *);
+=> nrel_main_idtf: [radon] (* <- lang_en;; *);
+=> nrel_idtf: [Rn](*<- lang_en;;*);
+
+<- rrel_key_sc_element: definition_of_subst_Rn
+(* 
+	=> nrel_main_idtf: [Опр.(Радон)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество радон</b> - бесцветный, слегка флюоресцирующий радиоактивный <sc_element sys_idtf = "noble_gas">газ</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> noble_gas;;
+	*);;
+*);
+
+<- gas;
+<- no_color;
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [9,81] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [202] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [211,4] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [2,7] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [18,1] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [20,79] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;
+
+
+
+subst_I
+<= nrel_inclusion: chemical_substance;
+<- sc_node_not_relation;
+=> nrel_main_idtf: [иод] (* <- lang_ru;; *);
+=> nrel_main_idtf: [iodium] (* <- lang_en;; *);
+=> nrel_idtf: [I2](*<- lang_en;;*);
+
+<- rrel_key_sc_element: definition_of_subst_I
+(* 
+	=> nrel_main_idtf: [Опр.(Иод)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество иод</b> - <sc_element sys_idtf = "nonmetal">неметаллические</sc_element> кристаллы чёрно-серого цвета с фиолетовым металлическим блеском, легко образует фиолетовые пары, обладающие резким запахом.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> nonmetal;;
+	*);;
+*);
+
+<- solid;
+<- color_black_and_violet;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(иод, твердое вещество)] (* <- lang_ru;;	*);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://image/subst_I.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [4,93] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [113,5] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [184,35] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [15,52] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [41,95] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [54,44] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_volume: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_cubic_cm_per_mole:...
+		(*
+			=> nrel_main_idtf: [25,7] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;
+
+
+
+subst_Br
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[bromum (substance)](*<- lang_en;;*);
+	[бром (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Br (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (бром (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Бром (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - тяжёлая едкая <sc_element sys_idtf = "liquid">жидкость</sc_element> красно-бурого <sc_element sys_idtf = "color">цвета</sc_element> с сильным неприятным <sc_element sys_idtf = "smell">запахом</sc_element>.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> liquid;;
+		-> color;;
+		-> smell;;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (бром (вещество), красно-бурая жидкость с сильным неприятным запахом)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Brom.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> liquid;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:minus_seven (*<-number;;
+							=>nrel_main_idtf:[-7](*<- lang_en;;*);;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:58 (*<-number;;*);;		
+		*);;
+	*);;
+
+
+subst_S
+<= nrel_inclusion: chemical_substance;
+<- sc_node_not_relation;
+=> nrel_main_idtf: [сера] (* <- lang_ru;; *);
+=> nrel_main_idtf: [sulfur] (* <- lang_en;; *);
+=> nrel_idtf: [S](*<- lang_en;;*);
+
+<- rrel_key_sc_element: definition_of_subst_S
+(* 
+	=> nrel_main_idtf: [Опр.(Сера)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество сера</b> - светло-жёлтое порошкообразное <sc_element sys_idtf = "chemical_substance">вещество</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_substance;;
+	*);;
+*);
+
+<- solid;
+<- color_yellow;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(сера, твердое вещество)] (* <- lang_ru;;	*);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://image/subst_S.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [2,070] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [386] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [717,824] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [1,23] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [10,5] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [22,61] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_volume: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_cubic_cm_per_mole:...
+		(*
+			=> nrel_main_idtf: [15,5] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;
+
+
+subst_Xe
+<- sc_node_not_relation;
+=> nrel_main_idtf: [ксенон] (* <- lang_ru;; *);
+<- rrel_key_sc_element: definition_of_subst_Xe
+(* 
+	=> nrel_main_idtf: [опр.(ксенон)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество ксенон</b> — инертный 
+<sc_element sys_idtf  = "gas">газ</sc_element> без цвета, вкуса и запаха.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> gas;;
+	*);;
+*);
+
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:minus_one_hundred_and_twelve (*<-number;;*);;	
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:minus_one_hundred_and_seven (*<-number;;*);;	
+		*);;
+	*);
+
+
+<- rrel_key_sc_element:...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_xe.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_xe
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (ксенон, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/xe_(application).html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+
+subst_Te
+<- sc_node_not_relation;
+=> nrel_main_idtf: [теллур] (* <- lang_ru;; *);
+<- rrel_key_sc_element: definition_of_subst_Te
+(* 
+	=> nrel_main_idtf: [опр.(теллур)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество теллур</b> — 
+<sc_element sys_idtf  = "colour_silver">серебристого цвета</sc_element> 
+блестящий <sc_element sys_idtf  = "nonmetal">неметалл</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> colour_silver;;
+		-> nonmetal;;
+	*);;
+*);
+
+<- colour_silver;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:four_hundred_fifty (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:nine_hundred_ninety (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_te_and_o
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (теллур (вещество), взаимодействие*, кислород](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ С кислородом образует соединения TeO, TeO2, TeO3] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_te_and_h
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (теллур (вещество), взаимодействие*, водород](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Теллур образует соединение с водородом при нагревании] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_te_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (теллур (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ При взаимодействии с концентрированной серной кислотой образует сульфит.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_te.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_te
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (теллур, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/te_(application).html" (* <-lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: application_of_te
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (теллур, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/te_(application)1.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+subst_Si
+<- sc_node_not_relation;
+=> nrel_main_idtf: [кремний] (* <- lang_ru;; *);
+<- rrel_key_sc_element: definition_of_subst_Si
+(* 
+	=> nrel_main_idtf: [опр.(кремний)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество кремний</b> — 
+ <sc_element sys_idtf  = "nonmetal">неметалл</sc_element>
+ <sc_element sys_idtf  = "colour_dark_grey">тёмно-серого цвета</sc_element>,
+ слегка блестящий.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> colour_dark_grey;;
+		-> nonmetal;;
+	*);;
+*);
+
+<- colour_dark_grey;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_four_hundred_and_fifty (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:two_thousand_three_hundred_and_fifty (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: heating
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (кремний (вещество), нагревание*](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ При нагревании до температуры свыше 400—500 °C кремний реагирует с кислородом с образованием диоксида SiO2, процесс сопровождается увеличением толщины слоя диоксида на поверхности, скорость процесса окисления лимитируется диффузией атомарного кислорода сквозь плёнку диоксида.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: heating
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (кремний (вещество), нагревание*](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ При нагревании до температуры свыше 400—500 °C кремний реагирует с хлором, бромом и иодом — с образованием соответствующих легко летучих тетрагалогенидов SiHal4 и, возможно, галогенидов более сложного состава.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_si.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_si
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кремний, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/si_(application).html" (* <-lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: application_of_si
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кремний, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/si_(application)1.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+subst_Kr
+<- sc_node_not_relation;
+=> nrel_main_idtf: [криптон] (* <- lang_ru;; *);
+<- rrel_key_sc_element: definition_of_subst_Kr
+(* 
+	=> nrel_main_idtf: [Опр.(криптон)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество криптон</b> — инертный 
+одноатомный <sc_element sys_idtf  = "gas">газ</sc_element> без цвета, вкуса и запаха.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> gas;;
+	*);;
+*);
+
+
+=> nrel_state_of_aggregation:...
+(*
+	-> gas;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:minus_one_hundred_and_fifty_seven (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:minus_one_hundred_and_fifty_two (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_kr_and_f
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (криптон (вещество), взаимодействие*, фтор](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ В жёстких условиях реагирует со фтором, образуя дифторид криптона.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_kr.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_kr
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (криптон, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/kr_(application).html" (* <-lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: application_of_kr
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (криптон, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/kr_(application)1.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+subst_F
+<- sc_node_not_relation;
+=> nrel_main_idtf: [фтор] (* <- lang_ru;; *);
+<- rrel_key_sc_element: definition_of_subst_F
+(* 
+	=> nrel_main_idtf: [Опр.(фтор)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество фтор</b> —двухатомный 
+<sc_element sys_idtf  = "gas">газ</sc_element> (формула F2) 
+<sc_element sys_idtf  = "colour_pale_yellow">бледно-жёлтого цвета
+</sc_element> с резким запахом, напоминающим озон или хлор.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> colour_pale_yellow;;
+		-> gas;;
+	*);;
+*);
+
+<- colour_pale_yellow;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> gas;;
+	-> liquid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:minus_two_hundred_and_twenty (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:minus_one_hundred_and_eighty_eight (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_f_and_h
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (фтор (вещество), взаимодействие*, водород](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Контакт фтора с водородом приводит к воспламенению и взрыву даже при очень низких температурах.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_f.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_f
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (фтор, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/f_(application).html.html" (* <-lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: application_of_f
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (фтор, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/f_(application)1.html.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+subst_O
+<- sc_node_not_relation;
+=> nrel_main_idtf: [кислород (вещество)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [oxygen (substance)] (* <- lang_en;; *);
+<= nrel_inclusion: chemical_substance;
+<- rrel_key_sc_element: definition_of_subst_O
+(* 
+	=> nrel_main_idtf: [Опр. (кислород (вещество))] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество кислород</b> — <sc_element sys_idtf = "gas">газ</sc_element> без <sc_element sys_idtf = "color">цвета</sc_element>, <sc_element sys_idtf = "taste">вкуса</sc_element> и <sc_element sys_idtf = "smell">запаха</sc_element>. <sc_element sys_idtf = "liquid">Жидкий</sc_element> кислород имеет <sc_element sys_idtf = "color_white_blue">светло-голубой цвет</sc_element>, а <sc_element sys_idtf = "solid">твёрдый</sc_element> представляет собой кристаллы светло-синего цвета</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> gas;;
+		-> taste;;
+		-> smell;;
+		-> liquid;;
+		-> solid;;
+		-> color_white_blue;;
+	*);;
+*);
+
+<- gas;
+<- color_white_blue;
+<- no_color;
+
+=> nrel_being_in_nature: ...
+(*
+	-> earths_crust;;
+	-> sea;;
+	-> atmosphere;;
+	-> ocean;;
+	-> cell;;
+*);
+
+=> nrel_receiving: ...
+(*
+	-> air;;
+	-> cryogenic_rectification;;
+	-> ...
+	(*
+		<=  nrel_heating: potassium_permanganate;;
+	*);;
+	->  ...
+	(*
+		<= catalytic_decomposition: hydrogen_peroxide; potassium_chlorate;;
+	*);;
+	-> nrel_electrolysis;;
+*);
+
+=> nrel_applying: ...
+(*
+	-> metallurgy;;
+	-> cryotherapy;;
+	-> petrochemistry;;
+	-> compound_synthesis;;
+	-> food_additive_E941;;
+*);
+
+<- rrel_key_sc_element: interaction_o
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (кислород (вещество), взаимодействие*, химический элемент, оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Кислород взаимодействует со всеми элементами, кроме гелия, неона, аргона и фтора, образуя оксиды.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_o_and_me
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (кислород (вещество), горение*, щелочной металл, пероксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ При сгорании шелочных металлов в кислороде получаются пероксиды.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_o_and_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (кислород (вещество), поглощение*, оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Некоторые оксиды поглощают кислород.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_o_and_k
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (кислород (вещество), взаимодействие*, калий (вещество), надпероксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Калий реагирует с кислородом с образованием надпероксида.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [1,42897] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [54,8] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [90,19] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [0,444] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [3,4099] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [29,4] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_volume: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_cubic_cm_per_mole:...
+		(*
+			=> nrel_main_idtf: [14,0] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;
+
+subst_Ne
+<- sc_node_not_relation;
+=> nrel_main_idtf: [неон (вещество)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [neon (substance)] (* <- lang_en;; *);
+<= nrel_inclusion: chemical_substance;
+<- rrel_key_sc_element: definition_of_subst_Ne
+(* 
+	=> nrel_main_idtf: [Опр. (неон (вещество))] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Неон</b> - <sc_element sys_idtf = "noble_gas">инертный газ</sc_element> без <sc_element sys_idtf = "color">цвета</sc_element>, <sc_element sys_idtf = "taste">вкуса</sc_element> и <sc_element sys_idtf = "smell">запаха</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> noble_gas;;
+		-> color;;
+		-> taste;;
+		-> smell;;
+	*);;
+*);
+
+<- gas;
+<- no_color;
+
+=> nrel_being_in_nature: ...
+(*
+	-> earths_crust;;
+	-> solar_atmosphere;;
+*);
+
+=> nrel_receiving: ...
+(*
+	-> adsorption;;
+	-> low_temperature_rectification;;
+*);
+
+=> nrel_applying: ...
+(*
+	-> coolant; signal_lamp; photocell; rectifier; gas_laser; advertising;;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (неон (вещество), газ)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_Neon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [24,55] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [27,1] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [1,74] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [20,79] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_volume: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_cubic_cm_per_mole:...
+		(*
+			=> nrel_main_idtf: [16,8] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;
+
+
+subst_N
+<- sc_node_not_relation;
+=> nrel_main_idtf: [азот (вещество)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [nitrogenium (substance)] (* <- lang_en;; *);
+<= nrel_inclusion: chemical_substance;
+<- rrel_key_sc_element: definition_of_subst_N
+(* 
+	=> nrel_main_idtf: [Опр. (азот (вещество))] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Азот</b> — <sc_element sys_idtf = "gas">газ</sc_element> без <sc_element sys_idtf = "color">цвета</sc_element>, <sc_element sys_idtf = "taste">вкуса</sc_element> и <sc_element sys_idtf = "smell">запаха</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> gas;;
+		-> color;;
+		-> taste;;
+		-> smell;;
+	*);;
+*);
+
+=> nrel_being_in_nature: ...
+(*
+	-> gas_nebula;;
+	-> solar_atmosphere;;
+	-> hydrosphere;;
+*);
+
+=> nrel_receiving: ...
+(*
+	-> ...
+	(*
+		<= nrel_decomposition_reaction: ammonium_nitrite; azide;;
+	*);;
+	-> fractional_distillation;;
+*);
+
+=> nrel_applying: ...
+(*
+	-> coolant;;
+	-> cryotherapy;;
+	-> petrochemistry;;
+	-> compound_synthesis;;
+	-> food_additive_E941;;
+*);
+
+<- gas;
+<- no_color;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (азот (вещество), газ)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_Nitrogenium.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_n_and_li
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (азот (вещество), взаимодействие*, литий (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Азот при обычных условиях реагирует с литием.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_n_and_metall
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (азот (вещество), нагревание, металл, нитрид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Азот при нагревании реагирует с некоторыми металлами, образуя нитриды.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_n_and_nonmetall
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (азот (вещество), нагревание, неметалл, нитрид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Азот при нагревании реагирует с некоторыми неметаллами, образуя нитриды.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_n_and_oxygen
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (азот (вещество), взаимодействие*, кислород, оксид азота (II))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Азот реагирует с кислородом, образуя оксид азота (II).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [63,29] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [77,4] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [0,720] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [5,57] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [29,125] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_volume: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_cubic_cm_per_mole:...
+		(*
+			=> nrel_main_idtf: [17,3] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;
+
+
+subst_He
+<- sc_node_not_relation;
+=> nrel_main_idtf: [гелий (вещество)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [helium (substance)] (* <- lang_en;; *);
+<= nrel_inclusion: chemical_substance;
+<- rrel_key_sc_element: definition_of_subst_He
+(* 
+	=> nrel_main_idtf: [Опр. (гелий (вещество))] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество гелий</b> - <sc_element sys_idtf = "noble_gas">инертный</sc_element> одноатомный <sc_element sys_idtf  = "gas">газ</sc_element> без <sc_element sys_idtf  = "color">цвета</sc_element>, <sc_element sys_idtf  = "taste">вкуса</sc_element> и <sc_element sys_idtf  = "smell">запаха</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> noble_gas;;
+		-> gas;;
+		-> color;;
+		-> taste;;
+		-> smell;;
+	*);;
+*);
+
+<- no_color;
+<- gas;
+<- non_toxic_substance;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гелий (вещество), газ)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_Helium.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_receiving: fractional_distillation;
+
+=> nrel_applying: ...
+(*
+	-> metallurgy;;
+	-> food_industry;;
+	-> coolant;;
+	-> aeronautics_filling;;
+	-> breathing_mixture;;
+	-> coolant;;
+	-> geology;;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [0,95] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [4,215] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [0,0138] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [0,0829] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [20,79] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_volume: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_cubic_cm_per_mole:...
+		(*
+			=> nrel_main_idtf: [31,8] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;
+
+
+subst_H
+<- sc_node_not_relation;
+=> nrel_main_idtf: [водород (вещество)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [hydrogenium (substance)] (* <- lang_en;; *);
+<- rrel_key_sc_element: definition_of_subst_H
+(* 
+	=> nrel_main_idtf: [Опр. (водород (вещество))] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество водород</b> — лёгкий <sc_element sys_idtf  = "gas">газ</sc_element> без <sc_element sys_idtf  = "color">цвета</sc_element> и <sc_element sys_idtf  = "taste">вкуса</sc_element>.</p>] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> gas;;
+		-> color;;
+		-> taste;;
+	*);;
+*);
+
+<= nrel_inclusion: chemical_substance;
+<- no_color;
+<- gas;
+<- non_toxic_substance;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (водород (вещество), газ)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_hydrogenium.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_hydrogenium_and_active_metal
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (водород (вещество), взаимодействие*, активный металл, гидрид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Водород реагирует с очень активными металлами, образуя гидриды.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_hydrogenium_and_fluorine
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (водород (вещество), взаимодействие*, фтор (вещество), фтороводород)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Водород реагирует со фтором, образуя фтороводород.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_hydrogenium_and_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (водород (вещество), взаимодействие*, оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Водород реагирует с оксидами.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_hydrogenium_and_halogen
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (водород (вещество), взаимодействие*, галоген, галогеноводород)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Водород  в реакции с галогенами образует галогеноводороды.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+=> nrel_apllying: ...
+(*
+	-> atomic_hydrogen_welding;;
+	-> chemical_industry;;
+	-> food_industry;;
+	-> margarine_production;;
+	-> food_additive_E949;;
+	-> aircraft_industry;;
+	-> meteorology;;
+	-> rocket_fuel;;
+	-> electric_power_industry;;
+	-> coolant;;
+*);
+
+=> nrel_receiving: ...
+(*
+	-> water_vapor_conversion;;
+	-> water_vapor_transmission;;
+	-> nrel_electrolysis;;
+	-> catalytic_oxidation;;
+	-> hydrocarbons_cracking;;
+	-> hydrocarbons_reforming;;
+	-> ...
+	(*
+		<= nrel_hydrolysis: hydride;;
+	*);;
+	-> low_temperature_condensation;;
+	-> adsorption_selection;;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [0,0000899] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [14,01] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [20,28] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [0,117] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [0,904] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [28,47] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_volume: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_cubic_cm_per_mole:...
+		(*
+			=> nrel_main_idtf: [14,1] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;
+
+subst_Ar
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[argon](*<- lang_en;;*);
+	[аргон](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Ar](*<- lang_en;;*);
+	
+
+
+<- rrel_key_sc_element: definition_of_subst_Ar
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (аргон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Аргон (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - одноатомный <sc_element sys_idtf = "noble_gas">инертный газ</sc_element> без цвета, вкуса и запаха.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> noble_gas;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (аргон, нормальные условия, газообразное агрегатное состояние, цвет)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Ar.jpg";
+		[ Появление цвета при высокочастотном разряде. ](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (аргон, пониженная температура, газообразное агрегатное состояние](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Ar1.jpg";
+		[ При температуре -180°C ](*<- lang_ru;;*);;
+	*);;
+*);
+
+
+<= nrel_being_in_nature:argon_in_nature
+(*
+	-> air;;
+	-> liquid;;
+*);
+
+
+=> nrel_state_of_aggregation:...
+(*
+	-> gas;;
+	-> liquid;;
+	-> solid;;
+*);
+
+
+
+<= nrel_receiving:...
+(*
+	-> nrel_air_separation;;
+*);
+
+
+<= nrel_applying: applying_of_Ar
+(*
+	-> laser;;
+	-> incandescent_lamp;;
+	-> medicine;;
+	-> firefighting;;
+	-> diving;;
+	-> plasmatron;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ В химическом синтезе для создания инертной атмосферы при работе с нестабильными на воздухе соединениями. ](*<- lang_ru;;*);;
+	*);;
+*);
+
+
+<- no_color;
+<- no_smell;
+<- no_taste;
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:melting_temperature_Ar;;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:boiling_temperature_Ar;;		
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (аргон, изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://html/Ar_isotop_table.html" (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Прим. (аргон, спектр)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			"file://image/Argon_Spectrum.png";;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Прим. (аргон, нахождение в природе*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[ <p>
+				Аргон — третий по содержанию после <sc_element sys_idtf = "subst_N">азота</sc_element> и <sc_element sys_idtf = "subst_O">кислорода</sc_element> компонент воздуха.
+			</p> ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+melting_temperature_Ar <- number;
+=> nrel_main_idtf:[-189](*<-lang_ru;; <- lang_en;;*);;
+boiling_temperature_Ar <- number;
+=> nrel_main_idtf:[-186](*<-lang_ru;; <- lang_en;;*);;
+
+
+subst_As
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[arsenicum](*<- lang_en;;*);
+	[мышьяк](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[As](*<- lang_en;;*);
+	
+
+<- rrel_key_sc_element: definition_of_subst_As
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (мышьяк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Мышьяк (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - хрупкий полуметалл стального цвета с зеленоватым оттенком.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (мышьяк, нормальные условия, твердое агрегатное состояние)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/As.jpg";;
+	*);;
+*);
+
+
+<= nrel_being_in_nature:arsenicum_in_nature
+(*
+	-> nugget;;
+	-> loellingite;;
+	-> scorodite;;
+	-> realgar;;
+	-> orpiment;;
+	-> arsenopyrit;;
+*);
+
+
+=> nrel_state_of_aggregation:...
+(*
+	-> gas;;
+	-> liquid;;
+	-> solid;;
+*);
+
+
+
+<= nrel_receiving:...
+(*
+	-> nrel_reaction;;
+	-> nrel_reducing_reaction;;
+	-> nrel_sublimation;;
+*);
+
+
+<= nrel_applying:  applying_of_As
+(*
+	-> painting;;
+	-> pyrotechnics;;
+	-> military_industry;;
+	-> medicine;;
+
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Мышьяк используется для легирования сплавов свинца, идущих на приготовление дроби, так как капли принимают строго сферическую форму и прочность свинца существенно возрастает. ](*<- lang_ru;;*);;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Мышьяк особой чистоты (99,9999 %) используется для синтеза ряда полезных и важных полупроводниковых материалов. ](*<- lang_ru;;*);;
+	*);;
+*);
+
+
+<- steel_color;
+<- no_smell;
+<- no_taste;
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:817 (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:613 (*<-number;;*);;		
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (мышьяк, изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://html/As_isotop_table.html" (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Прим. (мышьяк, применение*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[ Мышьяк является одним из древнейших элементов, используемых человеком.  ] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Прим. (мышьяк, яд, отравление)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[ Мышьяк и все его соединения ядовиты. При остром отравлении мышьяком наблюдаются рвота, боли в животе, понос, угнетение центральной нервной системы. ] (* <- lang_ru;; *);;
+	*);;
+*);;
+
+
+
+subst_At
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[astatum](*<- lang_en;;*);
+	[астат](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[At](*<- lang_en;;*);
+	
+
+<- rrel_key_sc_element: definition_of_subst_At
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (астат)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Астат (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - нестабильные <sc_element sys_idtf = "radioactivity">радиоактивные</sc_element> летучие <sc_element sys_idtf = "crystal">кристаллы</sc_element> тёмно-синего цвета с резким запахом.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> radioactivity;;
+		-> crystal;;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (астат, нормальные условия, твердое агрегатное состояние, цвет)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/At.jpg";;
+	*);;
+*);
+
+
+
+<= nrel_being_in_nature:astatum_in_nature
+(*
+	-> none_in_nature;;
+*);
+
+
+=> nrel_state_of_aggregation:...
+(*
+	-> gas;;
+	-> liquid;;
+	-> solid;;
+*);
+
+
+
+<= nrel_receiving:...
+(*
+	-> nrel_irradiation;;
+*);
+
+<= nrel_applying:  applying_of_At
+(*
+	-> medicine;;
+*);
+
+
+<- dark_blue_color;
+<- strong_smell;
+<- no_taste;
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:302 (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:337 (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (астат, изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://html/At_isotop_table.html" (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: astatum_naturally
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (астат, нахождение в природе*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Астат является наиболее редким элементом среди всех, встречающихся в земной природе. Его суммарное содержание в земной коре не превышает одного грамма. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: ...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (астат, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Ввиду малого количества доступного для изучения вещества физические свойства этого элемента плохо изучены и, как правило, построены на аналогиях с более доступными элементами. ] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+subst_C
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[carbon (substance)](*<- lang_en;;*);
+	[углерод (вещество)](*<- lang_ru;;*);
+=> nrel_idtf:
+	[С (substance)](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (углерод (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Углерод (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - <sc_element sys_idtf = "substance">вещество</sc_element>, существующее во множестве аллотропных модификаций с очень разнообразными физическими свойствами. 
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> substance;;
+
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (углерод (вещество), матово-чёрный (графит), либо прозрачный (алмаз))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Carbon.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:3550 (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:4027 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (углерод (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы углерода:  <sup>8</sup>С, <sup>9</sup>С, <sup>10</sup>С, <sup>11</sup>С, <sup>12</sup>С, <sup>13</sup>С, <sup>14</sup>С, <sup>15</sup>С, <sup>16</sup>С, <sup>17</sup>С, <sup>18</sup>С, <sup>19</sup>С, <sup>20</sup>С, <sup>21</sup>С, <sup>22</sup>С] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+
+subst_Cl
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[chlorine (substance)](*<- lang_en;;*);
+	[хлор (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Сl (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (хлор (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Хлор (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - ядовитый <sc_element sys_idtf = "gas">газ</sc_element> желтовато-зелёного <sc_element sys_idtf = "color">цвета</sc_element>, тяжелее воздуха, с резким запахом и сладковатым, «металлическим» вкусом. 
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> gas;;
+		-> color;;
+
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (хлор (вещество) в ампуле)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Chlorine_ampoule.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> gas;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:minus_101 (*<-number;;
+							=>nrel_main_idtf:[-101](*<- lang_en;;*);;*);;	
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:minus_34 (*<-number;;
+							=>nrel_main_idtf:[-34](*<- lang_en;;*);;*);;	
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (хлоа (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы хлора:  <sup>28</sup>Сl, <sup>29</sup>Сl, <sup>30</sup>Сl, <sup>31</sup>Сl, <sup>32</sup>Сl, <sup>33</sup>Сl, <sup>34</sup>Сl, <sup>35</sup>Сl, <sup>36</sup>Сl, <sup>37</sup>Сl, <sup>38</sup>Сl, <sup>39</sup>Сl, <sup>40</sup>Сl, <sup>41</sup>Сl, <sup>42</sup>Сl, <sup>43</sup>Сl, <sup>44</sup>Сl, <sup>45</sup>Сl, <sup>46</sup>Сl, <sup>47</sup>Сl, <sup>48</sup>Сl, <sup>49</sup>Сl, <sup>50</sup>Сl, <sup>51</sup>Сl] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+
+atomic_multiplicity_one -> (subst_Rn -> elem_Rn);
+(subst_S -> elem_S);
+(subst_Xe -> elem_Xe);
+(subst_Te -> elem_Te);
+(subst_Si -> elem_Si);
+(subst_Kr -> elem_Kr);
+(subst_F -> elem_F);
+(subst_Ar -> elem_Ar);
+(subst_As -> elem_As);
+(subst_At -> elem_At);;
+
+atomic_multiplicity_two -> (subst_I -> elem_I);
+(subst_H -> elem_H);;

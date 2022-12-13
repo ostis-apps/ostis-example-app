@@ -1,0 +1,24 @@
+ex8_solutions
+<- exercises_solutions;
+
+-> rrel_key_sc_element: ozone; solution; nrel_mass; hydrogen_peroxide; nrel_mass_fraction;
+
+=> nrel_next_exercise: ex9_solutions;
+
+=> nrel_main_idtf:
+	[Упражнение 8. Раздел. Предметная область растворов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 8. Section. Subject domain of solutions]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex8_solutions_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex8_solutions_en.html" (* <-lang_en;; *);;
+	*);;

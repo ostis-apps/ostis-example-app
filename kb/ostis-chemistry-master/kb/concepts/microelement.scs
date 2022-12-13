@@ -1,0 +1,50 @@
+microelement
+=> nrel_main_idtf:
+	[микроэлемент](* <-lang_ru;; *);
+	[microelement](* <-lang_en;; *);
+=> nrel_applying: medicine; agriculture;
+//включение
+-> elem_Br;
+-> elem_Fe;
+-> elem_I;
+-> elem_Co;
+-> elem_Cu;
+-> elem_Se;
+-> elem_F;
+-> elem_Cr;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(микроэлемент)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Микроэлементы - химические элементы, которые находятся во всех живых организмах, включая человека, в минимальных количествах, то есть в тысячных и менее долях процентов.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->chemical_element;nrel_being_in_body;;
+	*);;
+*);
+//утверждение
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(микроэлемент, биохимический процесс)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Микроэлементы участвуют в биохимических процессах и необходимы живым организмам.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: biochemical_process;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);;

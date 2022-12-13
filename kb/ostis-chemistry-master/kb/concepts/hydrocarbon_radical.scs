@@ -1,0 +1,53 @@
+hydrocarbon_radical
+->ethyl;ethylen;methyl;methylen;phenyl;
+<-sc_node_not_relation;
+<=nrel_inclusion:radical;
+=>nrel_main_idtf:[углеводородный радикал](*<-lang_ru;;*);
+=>nrel_main_idtf:[hydrocarbon radical](*<-lang_en;;*);
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (углеводородный радикал)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (hydrocarbon radical)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->atom;;
+		->nrel_compound;;
+		->functional_group;;
+		->molecule;;	
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="hydrocarbon_radical">Углеводородный радикал</sc_element> - группа <sc_element sys_idtf="atom">атомов</sc_element>, <sc_element sys_idtf="nrel_compound">соединенных</sc_element> <sc_element sys_idtf="functioanal_group">функциональной группой</sc_element> <sc_element sys_idtf="molecule">молекулы</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf = "hydrocarbon_radical"> Hydrocarbon radical </sc_element> is the group <sc_element sys_idtf = "atom"> atoms </sc_element>, <sc_element sys_idtf = "nrel_compound"> connected </sc_element> <sc_element sys_idtf = "functioanal_group" > the functional group </sc_element> <sc_element sys_idtf = "molecule"> molecules </sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;	
+	*);;
+*);;
+
+ethyl
+<-sc_node_not_relation;
+=>nrel_main_idtf:[этил](*<-lang_ru;;*);
+=>nrel_main_idtf:[ethyl](*<-lang_en;;*);;
+
+ethylen
+<-sc_node_not_relation;
+=>nrel_main_idtf:[этилен](*<-lang_ru;;*);
+=>nrel_main_idtf:[ethylen](*<-lang_en;;*);;
+
+methyl
+<-sc_node_not_relation;
+=>nrel_main_idtf:[метил](*<-lang_ru;;*);
+=>nrel_main_idtf:[methyl](*<-lang_en;;*);;
+
+methylen
+<-sc_node_not_relation;
+=>nrel_main_idtf:[метилен](*<-lang_ru;;*);
+=>nrel_main_idtf:[methylen](*<-lang_en;;*);;
+
+phenyl
+<-sc_node_not_relation;
+=>nrel_main_idtf:[фенил](*<-lang_ru;;*);
+=>nrel_main_idtf:[phenyl](*<-lang_en;;*);;

@@ -1,0 +1,8 @@
+subject_domain_of_hydrocarbons_functional_derivatives
+=> nrel_main_idtf: 
+	[Предметная область функциональных производных углеводородов]
+	(* <- lang_ru;;*);
+	[Subject domain of hydrocarbons functional derivatives]
+	(* <- lang_en;; *);
+
+<- subject_domain;;

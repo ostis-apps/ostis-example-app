@@ -1,0 +1,9 @@
+exercises_oxides
+<= nrel_exercises: section_subject_domain_of_oxides;
+
+=> nrel_main_idtf:
+	[Множество упражнений раздела предметной области оксидов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Set of exercises. Section of subject domain of oxides]
+	(* <- lang_en;; *);;

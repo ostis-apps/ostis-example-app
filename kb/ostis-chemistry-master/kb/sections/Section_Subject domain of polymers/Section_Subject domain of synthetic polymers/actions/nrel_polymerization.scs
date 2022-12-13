@@ -1,0 +1,83 @@
+nrel_polymerization<-sc_node_norole_relation;;
+
+nrel_polymerization=> nrel_main_idtf:[полимеризация* ](* <- lang_ru;; *);;
+nrel_polymerization=> nrel_main_idtf:[polymerization* ](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: nrel_polymerization;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Полимеризация - <b><sc_element sys_idtf="compound_synthesis">процесс синтеза </b></sc_element> 
+	 высокомолекулярного вещества путем последовательного присоединения
+	 <b><sc_element sys_idtf="molecule">молекул</b></sc_element>  
+	  низкомолекулярного вещества к активному центру, находящемуся на конце растущей
+	  <b><sc_element sys_idtf="chain">цепи</b></sc_element>.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (полимеризация*)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{
+		chain;
+		molecule;
+		compound_synthesis
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:nrel_polymerization ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В процессе цепной полимеризации может произойти перенос
+	 активного центра на низкомолекулярное вещество: инициатор,
+	 <b><sc_element sys_idtf="monomer">мономер</b></sc_element> 
+	 , <b><sc_element sys_idtf="rrel_solvent">растворитель</b></sc_element>,
+	 <b><sc_element sys_idtf="impurity">примесь</b></sc_element>  и т. д.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(полимеризация*)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{
+		monomer;
+		rrel_solvent;
+		compound_synthesis
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element:nrel_polymerization;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polimerization.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(полимеризация,пример)](*<- lang_ru;;*);;
+*);;
+
+relation => nrel_inclusion: oriented_relation;; 
+relation => nrel_inclusion: norole_relation;;
+oriented_relation -> nrel_polymerization;;
+norole_relation-> nrel_polymerization;;
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: antitransitive_relation;;
+binary_relation => nrel_inclusion: antisymmetric_relation;; 
+antireflexive_relation -> nrel_polymerization;; 
+antitransitive_relation -> nrel_polymerization;;
+antisymmetric_relation -> nrel_polymerization;;
+
+
+nrel_polymerization => nrel_first_domain: chemical_substance;;
+nrel_polymerization => nrel_second_domain: chemical_substance;;
+
+
+sc_node_not_relation->arity;;
+sc_node_not_relation->arity_2;;
+arity_2=>nrel_measurement:2;;
+arity_2->nrel_polymerization;;
+arity_2<-arity;;
+number->2;;
+
+chemical_substance->polypropylene;;
+chemical_substance->polyethylene;;
+polyethylene<=nrel_polymerization:polypropylene;;

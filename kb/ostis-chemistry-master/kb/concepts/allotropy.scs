@@ -1,0 +1,46 @@
+allotropy
+=> nrel_main_idtf:
+	[аллотропия]
+	(* <- lang_ru;;	*);
+	[allotropy]
+	(* <- lang_en;;	*);;
+allotropy
+<- rrel_key_sc_element:
+	Definition_of_allotropy
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/allotropy.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+<- rrel_key_sc_element: restrictions_of_allotropy
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (молекула, вещество,атом)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Явление аллотропии обусловлено либо различным составом молекул простого вещества (аллотропия состава), либо способом размещения атомов или молекул в кристаллической решётке (аллотропия формы).] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: examples_of_allotropy
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (металл, давление)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Среди металлов, которые встречаются в природе в больших количествах (до U, без Tc и Pm), 28 имеют аллотропные формы при атмосферном давлении: Li, Be, Na, Ca, Sc, Ti, Mn, Fe, Co, Sr, Y, Zr, Sn, La, Ce, Pr, Nd, Sm, Gd, Tb, Dy, Yb, Hf, Tl, Th, Pa, U. Также важны аллотропные формы ряда металлов, образующиеся при их технологической обработке: Ti при 882˚C, Fe при 912˚C и 1394˚C, Co при 422˚C, Zr при 863˚C, Sn при 13˚C и U при 668˚C и 776˚C.] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+Definition_of_allotropy
+=> nrel_main_idtf:
+	[Опр.(Аллотропия)]
+	(* <- lang_ru;;	*);;

@@ -1,0 +1,88 @@
+nrel_reaction
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[chemical reaction*] (*<- lang_en;;*);
+		[химическая реакция*] (*<- lang_ru;;*);
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+// домены
+=>nrel_second_domain: chemical_substance;
+=>nrel_first_domain: chemical_substance;
+=>nrel_definitional_domain:chemical_substance;
+//разбиение
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку наличию границы раздела фаз](* <-lang_ru;; *);;
+	-> nrel_homogeneous_reaction;;
+	-> nrel_heterogeneous_reaction;;
+*);
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку теплового эффекта реакции](* <-lang_ru;; *);;
+	-> nrel_exothermic_reaction;;
+	-> nrel_endothermic_reaction;;
+*);
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку направления протекания](* <-lang_ru;; *);;
+	-> nrel_irreversible_reaction;;
+	-> nrel_reversible_reaction;;
+*);
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку типа превращений реагирующих частиц](* <-lang_ru;; *);;
+	-> nrel_compound;;
+	-> nrel_substitution;;
+	-> nrel_decomposition;;
+	-> nrel_exchange_reaction;;
+*);
+
+//определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(химическая реакция*)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://html/reaction_definition.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->nrel_nucleus;;
+		->chemical_substance;;
+		->reagent;;
+		->electron;;
+	*);;
+*);
+
+//утверждение
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(химическая реакция*, реагент, нагревание*, катализатор, плазма)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Химические реакции происходят при смешении или физическом контакте реагентов самопроизвольно, при нагревании, участии катализаторов (катализ), действии света (фотохимические реакции), электрического тока (электродные процессы), ионизирующих излучений (радиационно-химические реакции), механического воздействия (механохимические реакции), в низкотемпературной плазме (плазмохимические реакции) и т. п. ](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: reagent; nrel_heating; catalyst; plasma;;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(химическая реакция*, химическое вещество, реагент, химическое свойство, атом, химический элемент, электронная оболочка)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[В химических реакциях получаются новые вещества с отличными от реагентов свойствами, но никогда не образуются атомы новых элементов. В атомах же участвующих в реакции элементов обязательно происходят видоизменения электронной оболочки.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: chemical_substance; reagent; chemical_property; atom; chemical_element; electron_shell;;
+*);;

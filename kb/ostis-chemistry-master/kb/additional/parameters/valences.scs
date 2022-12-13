@@ -1,0 +1,55 @@
+valence_one
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[valence 1](*<- lang_en;;*);
+	[валентность 1](*<- lang_ru;;*);
+<-valence;;
+
+valence_two
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[valence 2](*<- lang_en;;*);
+	[валентность 2](*<- lang_ru;;*);
+<-valence;;
+
+valence_three
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[valence 3](*<- lang_en;;*);
+	[валентность 3](*<- lang_ru;;*);
+<-valence;;
+
+valence_four
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[valence 4](*<- lang_en;;*);
+	[валентность 4](*<- lang_ru;;*);
+<-valence;;
+
+valence_five
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[valence 5](*<- lang_en;;*);
+	[валентность 5](*<- lang_ru;;*);
+<-valence;;
+
+valence_six
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[valence 6](*<- lang_en;;*);
+	[валентность 6](*<- lang_ru;;*);
+<-valence;;
+
+valence_seven
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[valence 7](*<- lang_en;;*);
+	[валентность 7](*<- lang_ru;;*);
+<-valence;;
+
+valence_eight
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[valence 8](*<- lang_en;;*);
+	[валентность 8](*<- lang_ru;;*);
+<-valence;;

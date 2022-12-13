@@ -1,0 +1,87 @@
+senetsionin<-sc_node_not_relation;;
+senetsionin=> nrel_main_idtf:[сенеционин](* <- lang_ru;; *);;
+senetsionin=> nrel_main_idtf:[senetsionin](* <- lang_en;; *);;
+senetsionin=> nrel_idtf:[C18H25NO5](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: senetsionin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Сенеционин — <b><sc_element sys_idtf="true_alkaloids">истинный алкалоид</b></sc_element>, выделенный из многих видов растений рода крестовник.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (сенеционин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		true_alkaloids
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: senetsionin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В 1895 году он был открыт Гранвалем и Лажу в крестовнике обыкновенном (Senecio vulgaris).]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(сенеционин)](*<- lang_ru;;*);;
+	
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element:senetsionin;;
+	<= nrel_sc_text_translation: ...(*->"file://images/senetsionin.png";;*);;
+	=> nrel_main_idtf: [Рисунок(сенеционин,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:senetsionin;;
+	<= nrel_sc_text_translation: ...(*->"file://images/senetsionin1.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(сенеционин,растение)](*<- lang_ru;;*);;
+*);;
+
+solid_matter=>nrel_inclusion:senetsionin;;
+true_alkaloids=>nrel_inclusion:senetsionin;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> senetsionin;;
+	=> nrel_measurement_in_gramms_per_mole: [335,395]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->senetsionin;;
+	=> nrel_measurement_in_degrees_Celsius: 236
+	(*
+		<-number;;
+	*);;
+*);;
+
+destiny->...
+(* 
+	
+	<- sc_node_not_relation;;
+	-> senetsionin;;
+	=> nrel_measurement_in_degrees_Celsius: [1,25]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+

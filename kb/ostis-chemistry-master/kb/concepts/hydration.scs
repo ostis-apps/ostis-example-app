@@ -1,0 +1,47 @@
+hydration
+=> nrel_main_idtf:
+	[гидратация]
+	(* <- lang_ru;;	*);
+	[hydration]
+	(* <- lang_en;;	*);;
+hydration
+<- rrel_key_sc_element:
+	Definition_of_hydration
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/hydration.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+
+<- rrel_key_sc_element: hydration_results
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (раствор, соединение, вещество)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидратация в водных растворах приводит к образованию стойких и нестойких соединений воды с растворенным веществом (гидратов); в органических растворителях образуются аналогичные гидратам сольваты. Гидратация обусловливает устойчивость ионов в растворах и затрудняет их ассоциацию.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: unlike_hydration
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (случай, молекула, вещество, растворитель)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидратация является частным случаем сольватации — присоединения к молекулам или ионам веществ молекул органического растворителя. В отличие от гидролиза гидратация не сопровождается образованием водородных или гидроксильных ионов.] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+Definition_of_hydration
+=> nrel_main_idtf:
+	[Опр.(Гидратация)]
+	(* <- lang_ru;;	*);;

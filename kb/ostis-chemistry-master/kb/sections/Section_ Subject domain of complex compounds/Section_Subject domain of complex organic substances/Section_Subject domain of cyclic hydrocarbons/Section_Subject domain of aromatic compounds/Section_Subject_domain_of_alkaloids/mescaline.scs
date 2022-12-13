@@ -1,0 +1,116 @@
+mescaline<-sc_node_not_relation;;
+mescaline=> nrel_main_idtf:[мескалин](* <- lang_ru;; *);;
+mescaline=> nrel_main_idtf:[mescaline](* <- lang_en;; *);;
+mescaline=> nrel_idtf:[2-​​(3,4,5-​триметоксифенил)​-​этиламин](* <- lang_ru;; *);;
+mescaline=> nrel_idtf:[C11H17NO3](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: mescaline;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Мескалин- <b><sc_element sys_idtf="protoalkaloids">протоалкалоид</b></sc_element>,энтеоген из группы <b><sc_element sys_idtf="phenylethylamine">фенилэтиламинов</b></sc_element>.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (мескалин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		protoalkaloids;
+		phenylethylamine
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: mescaline ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://mescaline1.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(мескалин,психотропный эффект*)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: mescaline ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://mescaline2.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(мескалин,побочный эффект*)](*<- lang_ru;;*);;
+	
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:mescaline;;
+	<= nrel_sc_text_translation: ...(*->"file://images/mescaline1.png";;*);;
+	=> nrel_main_idtf: [Рисунок(мескалин,структурная формула](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: mescaline;;
+	<= nrel_sc_text_translation: ...(*->"file://images/mescaline.gif";;*);;
+	=> nrel_main_idtf: [Рисунок(мескалин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: mescaline;;
+	<= nrel_sc_text_translation: ...(*->"file://images/mescaline.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(мескалин,твердое вещество)](*<- lang_ru;;*);;
+*);;
+solid_matter=>nrel_inclusion:mescaline;;
+protoalkaloids=>nrel_inclusion:mescaline;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> mescaline;;
+	=> nrel_measurement_in_gramms_per_mole: [211,26]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->mescaline;;
+	=> nrel_measurement_in_degrees_Celsius: 128
+	(*
+		<-number;;
+	*);;
+*);;
+
+boiling_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->mescaline;;
+	=> nrel_measurement_in_degrees_Celsius: 312
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+drag_half_life->...
+(* 
+
+	<- sc_node_not_relation;;
+	->mescaline;;
+	=> nrel_measurement_in_hours:4
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+

@@ -1,0 +1,78 @@
+subst_Cu
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[cuprum (substance)](*<- lang_en;;*);
+	[медь (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Сu (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (медь (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Медь (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - пластичный <sc_element sys_idtf = "metal">металл</sc_element> золотисто-розового <sc_element sys_idtf = "color">цвета</sc_element>.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> metal;;
+		-> color;;
+
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (медь (вещество), пластичный металл золотисто-розового цвета)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Cuprum.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1084 (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:2927 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (медь (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы меди:  <sup>52</sup>Cu, <sup>53</sup>Cu, <sup>54</sup>Cu, <sup>55</sup>Cu, <sup>56</sup>Cu, <sup>57</sup>Cu, <sup>58</sup>Cu, <sup>59</sup>Cu, <sup>60</sup>Cu, <sup>61</sup>Cu, <sup>62</sup>Cu, <sup>63</sup>Cu, <sup>64</sup>Cu, <sup>65</sup>Cu, <sup>66</sup>Cu, <sup>67</sup>Cu, <sup>68</sup>Cu, <sup>69</sup>Cu, <sup>70</sup>Cu, <sup>71</sup>Cu, <sup>72</sup>Cu, <sup>73</sup>Cu, <sup>74</sup>Cu, <sup>75</sup>Cu, <sup>76</sup>Cu, <sup>77</sup>Cu, <sup>78</sup>Cu, <sup>79</sup>Cu, <sup>80</sup>Cu] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

@@ -1,0 +1,24 @@
+exercise8_carboxylic_acids
+<- exercises_carboxylic_acids;
+
+//-> rrel_key_sc_element: 
+
+=> nrel_next_exercise: exercise9_carboxylic_acids;
+
+=> nrel_main_idtf:
+	[Упражнение 8. Раздел. Предметная область карбоновых кислот]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 8. Section. Subject domain of carboxylicacids]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise8_carboxylic_acids_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise8_carboxylic_acids_en.html" (* <-lang_en;; *);;
+	*);;

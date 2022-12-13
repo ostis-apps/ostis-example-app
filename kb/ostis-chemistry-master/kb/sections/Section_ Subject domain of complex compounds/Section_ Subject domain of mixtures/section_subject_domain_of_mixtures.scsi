@@ -1,0 +1,1333 @@
+subject_domain_of_mixtures
+=> nrel_main_idtf: 
+	[Предметная область смесей]
+	(* <- lang_ru;;*);
+	[Subject domain of mixtures]
+	(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	mixture;	
+-> rrel_not_maximum_studied_object_class:
+	heterogeneou_mixture;
+	homogeneou_mixture;
+    supercooled_liquid;
+    supersaturated_steam;
+    steam;
+    saturated_steam;
+    unsaturated_steam;
+    superheated_liquid;
+    composite;
+    coating;
+    oxide_film;
+    mill_scale;
+    iron_scale;
+    copper_scale;
+    rust;
+    tint_colors;
+    black_oxide;
+    sorbent;
+    absorb;
+    adsorb;
+    decantation;
+    separation;
+    centrifugation;
+    filtration;;
+
+mixture
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[смесь]
+	(* <- lang_ru;;	*);    
+    [mixture]
+    (* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+	Definition_of_mixture
+	(* 
+	=> nrel_main_idtf:
+	[Опр.(смесь)]
+	(* <- lang_ru;;	*);
+    [Def.(mixture)]
+    (* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+				[<b><sc_element sys_idtf  = "mixture">Смесь</sc_element> </b>-  система, состоящая из двух или более <sc_element sys_idtf  = "chemical_substance">веществ</sc_element>.]
+                    (*
+                     	<- lang_ru;;
+                        => nrel_format: format_html;;
+                    *);;
+        -> rrel_example:
+                [<b><sc_element sys_idtf  = "mixture">Mixture</sc_element> </b>-  a system consisting of two or more <sc_element sys_idtf  = "chemical_substance">substance</sc_element>.]
+                    (*
+                        <- lang_en;;
+                        => nrel_format: format_html;;
+                    *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				-> chemical_substance;;
+			*);;
+	*);
+<= nrel_subdividing:...
+		      (*
+			      ->homogeneou_mixture;;
+			      ->heterogeneou_mixture;;		  
+		       *);;
+
+
+
+heterogeneou_mixture
+		<- sc_node_not_relation;
+        => nrel_main_idtf:
+                [heterogeneous mixture](*<- lang_en;;*);
+                [неоднородная смесь](*<- lang_ru;;*);
+        <- rrel_key_sc_element:
+                Definition_of_heterogeneou_mixture
+                (*
+                        <- definition;;
+                        => nrel_main_idtf: [Опр.(неоднородная смеси)](*<- lang_ru;;*);;
+                        => nrel_main_idtf: [Def.(heterogeneou mixture)](*<- lang_en;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "heterogeneou_mixture">Неоднородные смеси</sc_element> </b> – это такие <sc_element sys_idtf  = "mixture">смеси</sc_element>, в которых невооруженным глазом или при помощи микроскопа можно обнаружить частицы двух или нескольких <sc_element sys_idtf  = "chemical_substance">веществ</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "heterogeneou_mixture">Heterogeneou mixture</sc_element> </b> – these are <sc_element sys_idtf  = "mixture">mixture</sc_element>, in which, with the naked eye or with a microscope, particles of two or more <sc_element sys_idtf  = "chemical_substance">substance</sc_element>.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+        		<= nrel_using_constants:...
+                		(*
+                        		->mixture;;
+               			*);;
+                *);
+        <- rrel_key_sc_element: separation_of_heterogeneou_mixture
+            (*
+                <- explanation;;
+                => nrel_main_idtf: 
+                    [Прим. (неоднородная смесь, разделение)](*<- lang_ru;;*);
+                    [Node (heterogeneou mixture, separation)](*<- lang_en;;*);;
+                <= nrel_sc_text_translation:...
+                (*
+                    -> rrel_example:[Основные способы выделения веществ из неоднородной (гетерогенной) смеси: <sc_element sys_idtf  = "decantation">декантация</sc_element>, <sc_element sys_idtf  = "separation">сепарация</sc_element>, <sc_element sys_idtf  = "centrifugation">центрифугирование</sc_element>, <sc_element sys_idtf  = "filtration">фильтрованиеар</sc_element>.] 
+                    (*
+                        <- lang_ru;;
+                        => nrel_format: format_html;;
+                    *);;
+                    -> rrel_example:[The main methods of isolating substances from heterogeneous (heterogeneous) mixtures: <sc_element sys_idtf  = "decantation">decantation</sc_element>, <sc_element sys_idtf  = "separation">separation</sc_element>, <sc_element sys_idtf  = "centrifugation">centrifugation</sc_element>, <sc_element sys_idtf  = "filtration">filtration</sc_element>.] 
+                    (*
+                        <- lang_en;;
+                        => nrel_format: format_html;;
+                    *);;
+                *);;
+            *);;
+homogeneou_mixture
+		<- sc_node_not_relation;
+        => nrel_main_idtf:
+                [homogeneous mixture](*<- lang_en;;*);
+                [однородная смесь](*<- lang_ru;;*);
+        <- rrel_key_sc_element:
+                Definition_of_homogeneou_mixture
+                (*
+                        <- definition;;
+                        => nrel_main_idtf: [Опр.(однородная смесь)](*<- lang_ru;;*);;
+                        => nrel_main_idtf: [Def.(homogeneou mixture)](*<- lang_en;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "homogeneou_mixture">Однородные смеси</sc_element> </b> – это такие <sc_element sys_idtf  = "mixture">смеси</sc_element> двух или нескольких <sc_element sys_idtf  = "chemical_substance">веществ</sc_element>, в которых даже под микроскопом нельзя обнаружить частицы этих веществ.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "homogeneou_mixture">Homogeneou mixture</sc_element> </b> – these are <sc_element sys_idtf  = "mixture">mixture</sc_element> two or more <sc_element sys_idtf  = "chemical_substance">substance</sc_element>, in which even under a microscope it is impossible to detect particles of these substances.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                  *);;
+        		<= nrel_using_constants:...
+                		(*
+                        		-> chemical_substance;;
+                		*);;
+                *);;
+
+supercooled_liquid
+    => nrel_main_idtf:
+        [переохлаждённая жидкость]
+        (* <- lang_ru;; *);
+        [supercooled liquid]
+        (* <- lang_en;; *);;
+
+supercooled_liquid
+    <- rrel_key_sc_element:
+        Definition_of_supercooled_liquid
+        (* 
+        => nrel_main_idtf:
+            [Опр.(переохлаждённая жидкость)] (* <- lang_ru;;    *);
+            [Def.(supercooled liquid)] (* <- lang_en;;  *);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (* 
+            -> rrel_example:[<b><sc_element sys_idtf  = "supercooled_liquid">Переохлаждённая жидкость</sc_element> </b>- <sc_element sys_idtf  = "liquid">жидкость</sc_element> имеющая <sc_element sys_idtf  = "nrel_temperature">температуру</sc_element>температуру ниже температуры кристаллизации при данном давлении.] 
+                (* 
+                <-lang_ru;; 
+                => nrel_format: format_html;;
+                *);;
+            -> rrel_example:[<b><sc_element sys_idtf  = "supercooled_liquid">Supercooled liquid</sc_element> </b>- <sc_element sys_idtf  = "liquid">liquid</sc_element> which has <sc_element sys_idtf  = "nrel_temperature">temperature</sc_element> below the crystallization temperature at a given pressure.] 
+                (* 
+                <-lang_en;; 
+                => nrel_format: format_html;;
+                *);;
+            *);;
+        <= nrel_using_constants:...
+                (*
+                    ->liquid;;
+                    ->nrel_temperature;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: supercooled_liquid_liquid_state
+        (*
+            <- explanation;;
+            => nrel_main_idtf: 
+                [Прим. (переохлаждённая жидкость, неустойчивое состояние, жидкость)](*<- lang_ru;;*);
+                [Node (supercooled liquid, unstable state, liquid)](*<- lang_en;;*);;
+            <= nrel_sc_text_translation:...
+            (*
+                -> rrel_example:[Переохлаждённая жидкость является одним из неустойчивых (метастабильных) состояний жидкости.] 
+                (*
+                    <- lang_ru;;
+                    => nrel_format: format_html;;
+                *);;
+                -> rrel_example:[The supercooled liquid is one of the unstable (metastable) states of the liquid.] 
+                (*
+                    <- lang_en;;
+                    => nrel_format: format_html;;
+                *);;
+            *);;
+        *);;
+
+
+supersaturated_steam
+    => nrel_main_idtf:
+        [пересыщенный пар]
+        (* <- lang_ru;; *);
+        [supersaturated steam]
+        (* <- lang_en;; *);;
+
+supersaturated_steam
+    <- rrel_key_sc_element:
+        Definition_of_supersaturated_steam
+        (* 
+        => nrel_main_idtf:
+            [Опр.(пересыщенный пар)] (* <- lang_ru;;    *);
+            [Def.(supersaturated steam)] (* <- lang_en;;  *);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (* 
+            -> rrel_example:[<b><sc_element sys_idtf  = "supersaturated_steam">Пересыщенный пар</sc_element></b> — <sc_element sys_idtf  = "steam">пар</sc_element>, давление которого превышает давление <sc_element sys_idtf  = "saturated_steam">насыщенного пара</sc_element> при данной <sc_element sys_idtf  = "nrel_temperature">температуре</sc_element>] 
+                (* 
+                <-lang_ru;; 
+                => nrel_format: format_html;;
+                *);;
+            -> rrel_example:[<b><sc_element sys_idtf  = "supersaturated_steam">Supersaturated steam</sc_element></b> - <sc_element sys_idtf  = "steam">steam</sc_element> pressure which exceeds a saturated vapor at the given <sc_element sys_idtf  = "nrel_temperature">temperature</sc_element>.] 
+                (* 
+                <-lang_en;; 
+                => nrel_format: format_html;;
+                *);;
+            *);;
+        <= nrel_using_constants:...
+                (*
+                    ->steam;;
+                    ->nrel_temperature;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: supersaturated_steam_receiving1
+        (*
+            <- explanation;;
+            => nrel_main_idtf: 
+                [Прим. (пересыщенный пар, получение, давление*, объём*)](*<- lang_ru;;*);
+                [Node (supersaturated steam, receiving, pressure*, volume*)](*<- lang_en;;*);;
+            <= nrel_sc_text_translation:...
+            (*
+                -> rrel_example:[Может быть получен путём увеличения давления пара в объёме, свободном от центров конденсации (пылинок, ионов, капелек жидкости малых размеров и т. д.).] 
+                (*
+                    <- lang_ru;;
+                    => nrel_format: format_html;;
+                *);;
+                -> rrel_example:[It can be obtained by increasing the vapor pressure in a volume that is free of condensation centers (dust particles, ions, small liquid droplets, etc.).] 
+                (*
+                    <- lang_en;;
+                    => nrel_format: format_html;;
+                *);;
+            *);;
+        *);
+    <- rrel_key_sc_element: supersaturated_steam_receiving2
+        (*
+            <- explanation;;
+            => nrel_main_idtf: 
+                [Прим. (пересыщенный пар, получение, охлаждение*)](*<- lang_ru;;*);
+                [Node (supersaturated steam, receiving, cooling*)](*<- lang_en;;*);;
+            <= nrel_sc_text_translation:...
+            (*
+                -> rrel_example:[Способ получения — охлаждение насыщенного пара, свободном от центров конденсации (пылинок, ионов, капелек жидкости малых размеров и т. д.).] 
+                (*
+                    <- lang_ru;;
+                    => nrel_format: format_html;;
+                *);;
+                -> rrel_example:[The method of production is the cooling of saturated vapor, free from condensation centers (dusts, ions, droplets of liquid of small dimensions, etc.).] 
+                (*
+                    <- lang_en;;
+                    => nrel_format: format_html;;
+                *);;
+            *);;
+        *);
+    <- rrel_key_sc_element: supersaturated_steam_condition
+        (*
+            <- explanation;;
+            => nrel_main_idtf: 
+                [Утв. (пересыщенный пар, состояние*)](*<- lang_ru;;*);
+                [Stat. (supersaturated steam, condition*)](*<- lang_en;;*);;
+            <= nrel_sc_text_translation:...
+            (*
+                -> rrel_example:[Состояние пересыщенного пара является метастабильным, то есть такое состояние пара способно существовать длительное время, однако оно является термодинамически неустойчивым.] 
+                (*
+                    <- lang_ru;;
+                    => nrel_format: format_html;;
+                *);;
+                -> rrel_example:[The state of supersaturated vapor is metastable, that is, such a vapor state can exist for a long time, but it is thermodynamically unstable.] 
+                (*
+                    <- lang_en;;
+                    => nrel_format: format_html;;
+                *);;
+            *);;
+        *);;
+
+
+steam
+    => nrel_main_idtf:
+        [пар]
+        (* <- lang_ru;; *);
+        [steam]
+        (* <- lang_en;; *);
+    => nrel_idtf:
+        [vapor]
+        (* <- lang_en;; *);;
+
+steam
+    <- rrel_key_sc_element:
+        Definition_of_steam
+        (* 
+        => nrel_main_idtf:
+            [Опр.(пар)] (* <- lang_ru;;    *);
+            [Def.(steam)] (* <- lang_en;;  *);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (* 
+            -> rrel_example:[<b><sc_element sys_idtf  = "steam">Пар</sc_element></b> — <sc_element sys_idtf  = "gas">газообразное состояние</sc_element> <sc_element sys_idtf  = "chemical_substance">вещества</sc_element> в условиях, когда <sc_element sys_idtf  = "gas">газовая фаза</sc_element> может находиться в равновесии с <sc_element sys_idtf  = "liquid">жидкой</sc_element> или <sc_element sys_idtf  = "solid">твёрдой фазами</sc_element> того же <sc_element sys_idtf  = "chemical_substance">вещества</sc_element>, то есть при <sc_element sys_idtf  = "nrel_temperature">температурах</sc_element> ниже <sc_element sys_idtf  = "critical_temperature">критической температуры</sc_element> <sc_element sys_idtf  = "chemical_substance">вещества</sc_element>.] 
+                (* 
+                <-lang_ru;; 
+                => nrel_format: format_html;;
+                *);;
+            -> rrel_example:[<b><sc_element sys_idtf  = "steam">Steam</sc_element></b> is <sc_element sys_idtf  = "gas">the gaseous state</sc_element> of <sc_element sys_idtf  = "chemical_substance">the substance</sc_element> under conditions when <sc_element sys_idtf  = "gas">the gas phase</sc_element> can be in equilibrium with <sc_element sys_idtf  = "liquid">the liquid</sc_element> or <sc_element sys_idtf  = "solid">solid phase</sc_element> of <sc_element sys_idtf  = "chemical_substance">the same substance</sc_element>, that is, at <sc_element sys_idtf  = "critical_temperature">the next critical temperature</sc_element> of <sc_element sys_idtf  = "chemical_substance">the substance</sc_element>.] 
+                (* 
+                <-lang_en;; 
+                => nrel_format: format_html;;
+                *);;
+            *);;
+        <= nrel_using_constants:...
+                (*
+                    ->steam;;
+                    ->nrel_temperature;;
+                    ->gas;;
+                    ->chemical_substance;;
+                    ->liquid;;
+                    ->solidl;;
+                    ->critical_temperature;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: vaporization
+        (*
+            <- explanation;;
+            => nrel_main_idtf: 
+                [Прим. (парообразование)](*<- lang_ru;;*);
+                [Node (vaporization)](*<- lang_en;;*);;
+            <= nrel_sc_text_translation:...
+            (*
+                -> rrel_example:[Процесс возникновения пара из жидкой (твёрдой) фазы называется «парообразованием».] 
+                (*
+                    <- lang_ru;;
+                    => nrel_format: format_html;;
+                *);;
+                -> rrel_example:[The process of vapor generation from a liquid (solid) phase is called "vaporization".] 
+                (*
+                    <- lang_en;;
+                    => nrel_format: format_html;;
+                *);;
+            *);;
+        *);
+    <= nrel_subdividing:...
+              (*
+                  ->saturated_steam;;
+                  ->unsaturated_steam;;   
+               *);;
+
+
+saturated_steam
+        <- sc_node_not_relation;
+        => nrel_main_idtf:
+                [saturated steam](*<- lang_en;;*);
+                [насыщенный пар](*<- lang_ru;;*);
+        <- rrel_key_sc_element:
+                Definition_of_saturated_steam
+                (*
+                        <- definition;;
+                        => nrel_main_idtf: [Опр.(насыщенный пар)](*<- lang_ru;;*);;
+                        => nrel_main_idtf: [Def.(saturated steam)](*<- lang_en;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "saturated_steam">Насыщенный пар</sc_element></b> — <sc_element sys_idtf  = "steam">пар</sc_element>, находящийся в динамическом равновесии со своей <sc_element sys_idtf  = "liquid">жидкостью</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "saturated_steam">Unsaturated steam</sc_element></b> - <sc_element sys_idtf  = "steam">steam</sc_element>, has not reached the dynamic equilibrium with its <sc_element sys_idtf  = "liquid">liquid</sc_element>.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                <= nrel_using_constants:...
+                        (*
+                                ->steam;;
+                        *);;
+                *);;
+unsaturated_steam
+        <- sc_node_not_relation;
+        => nrel_main_idtf:
+                [unsaturated steam](*<- lang_en;;*);
+                [ненасыщенный пар](*<- lang_ru;;*);
+        <- rrel_key_sc_element:
+                Definition_of_unsaturated_steam
+                (*
+                        <- definition;;
+                        => nrel_main_idtf: [Опр.(ненасыщенный пар)](*<- lang_ru;;*);;
+                        => nrel_main_idtf: [Def.(unsaturated steam)](*<- lang_en;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "saturated_steam">Ненасыщенный пар</sc_element></b> — <sc_element sys_idtf  = "steam">пар</sc_element>, не достигший динамического равновесия со своей <sc_element sys_idtf  = "liquid">жидкостью</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "saturated_steam">Unsaturated steam</sc_element></b> - sc_element sys_idtf  = "steam">steam</sc_element>, has not reached the dynamic equilibrium with its <sc_element sys_idtf  = "liquid">liquid</sc_element>.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                  *);;
+                <= nrel_using_constants:...
+                        (*
+                                -> steam;;
+                        *);;
+                *);;
+
+
+superheated_liquid
+    => nrel_main_idtf:
+        [перегретая жидкость]
+        (* <- lang_ru;; *);
+        [superheated liquid]
+        (* <- lang_en;; *);
+    => nrel_idtf:
+        [метастабильная жидкость]
+        (* <- lang_ru;; *);;
+
+superheated_liquid
+    <- rrel_key_sc_element:
+        Definition_of_superheated_liquid
+        (* 
+        => nrel_main_idtf:
+            [Опр.(перегретая жидкость)] (* <- lang_ru;;    *);
+            [Def.(superheated liquid)] (* <- lang_en;;  *);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (* 
+            -> rrel_example:[<b><sc_element sys_idtf  = "superheated_liquid">Перегретая (метастабильная) жидкость</sc_element></b> — <sc_element sys_idtf  = "liquid">жидкость</sc_element>, нагретая выше <sc_element sys_idtf  = "nrel_boiling_temperature">температуры кипения</sc_element>.] 
+                (* 
+                <-lang_ru;; 
+                => nrel_format: format_html;;
+                *);;
+            -> rrel_example:[<b><sc_element sys_idtf  = "steam">Overheated (metastable) liquid</sc_element></b> is <sc_element sys_idtf  = "liquid">a liquid</sc_element> heated above <sc_element sys_idtf  = "nrel_boiling_temperature">the boiling point</sc_element>.] 
+                (* 
+                <-lang_en;; 
+                => nrel_format: format_html;;
+                *);;
+            *);;
+        <= nrel_using_constants:...
+                (*
+                    ->superheated_liquid;;
+                    ->liquid;;
+                    ->nrel_boiling_temperature;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: superheated_liquid_metastable_state
+        (*
+            <- explanation;;
+            => nrel_main_idtf: 
+                [Прим. (перегретая жидкость, метастабильное состояние)](*<- lang_ru;;*);
+                [Node (superheated liquid, metastable state)](*<- lang_en;;*);;
+            <= nrel_sc_text_translation:...
+            (*
+                -> rrel_example:[Перегретая жидкость является примером метастабильного состояния, в ряде энергетических и технологических режимов вызывает такие специфические динамические явления, как взрывообразное вскипание за счёт запасённого тепла, неустойчивость поверхности раздела жидкость-пар, формирование фронта фазового перехода.] 
+                (*
+                    <- lang_ru;;
+                    => nrel_format: format_html;;
+                *);;
+                -> rrel_example:[The superheated liquid is an example of a metastable state; in a number of energy and technological regimes, it causes such specific dynamic phenomena as explosive effervescence due to stored heat, instability of the liquid-vapor interface, and the formation of a phase-transition front.] 
+                (*
+                    <- lang_en;;
+                    => nrel_format: format_html;;
+                *);;
+            *);;
+        *);;
+
+
+composite
+    => nrel_main_idtf:
+        [композит]
+        (* <- lang_ru;; *);
+        [composite]
+        (* <- lang_en;; *);
+    => nrel_idtf:
+        [композиционный материал]
+        (* <- lang_ru;; *);;
+
+composite
+    <- rrel_key_sc_element:
+        Definition_of_composite
+        (* 
+        => nrel_main_idtf:
+            [Опр.(композит)] (* <- lang_ru;;    *);
+            [Def.(composite)] (* <- lang_en;;  *);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (* 
+            -> rrel_example:[<b><sc_element sys_idtf  = "composite">Композит</sc_element></b> — неоднородный сплошной материал, состоящий из двух или более компонентов, среди которых можно выделить армирующие элементы, обеспечивающие необходимые механические характеристики материала, и матрицу (или связующее), обеспечивающую совместную работу армирующих элементов.] 
+                (* 
+                <-lang_ru;; 
+                => nrel_format: format_html;;
+                *);;
+            -> rrel_example:[<b><sc_element sys_idtf  = "composite">A composite</sc_element></b> is a non-uniform solid material consisting of two or more components, among which one can distinguish reinforcing elements that provide the necessary mechanical characteristics of the material, and a matrix (or binder) that ensures the joint operation of reinforcing elements.] 
+                (* 
+                <-lang_en;; 
+                => nrel_format: format_html;;
+                *);;
+            *);;
+        <= nrel_using_constants:...
+                (*
+                    ->composite;;
+                *);;
+        *);;
+
+
+coating
+    => nrel_main_idtf:
+        [покрытие]
+        (* <- lang_ru;; *);
+        [coating]
+        (* <- lang_en;; *);;
+
+coating
+    <- rrel_key_sc_element:
+        Definition_of_coating
+        (* 
+        => nrel_main_idtf:
+            [Опр.(покрытие)] (* <- lang_ru;;    *);
+            [Def.(coating)] (* <- lang_en;;  *);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (* 
+            -> rrel_example:[<b><sc_element sys_idtf  = "coating">Покрытие</sc_element></b> – это нанесённый на объект относительно тонкий поверхностный слой из другого материала.] 
+                (* 
+                <-lang_ru;; 
+                => nrel_format: format_html;;
+                *);;
+            -> rrel_example:[<b><sc_element sys_idtf  = "coating">A coating</sc_element></b> is a relatively thin surface layer of another material applied to the object.] 
+                (* 
+                <-lang_en;; 
+                => nrel_format: format_html;;
+                *);;
+            *);;
+        <= nrel_using_constants:...
+                (*
+                    ->coating;;
+                *);;
+        *);
+    <- rrel_key_sc_element: types_of_coatings
+        (*
+            <- explanation;;
+            => nrel_main_idtf: 
+                [Прим. (покрытие, вид)](*<- lang_ru;;*);
+                [Node (coating, type)](*<- lang_en;;*);;
+            <= nrel_sc_text_translation:...
+            (*
+                -> rrel_example:[<p>Виды покрытий:</p><p>Тонкие пленки:<br>Полученные химическим осаждением из газовой фазы<br>Полученные вакуумным напылением<br>Металлизация, полученная<br>Анодированием<br>Хромированием<br>Оксидированием<br>Алитированием<br>Цинкованием<br>Фосфатированием<br>Напыление<br>Высокоскоростное газопламенное напыление<br>Газопламенное напыление<br>Детонационное напыление<br>Напыление с оплавлением<br>Плазменное напыление<br>Краски<br>Олифа<br>Эмаль<br>Порошковые покрытия<br>Промышленные покрытия<br>Эпоксидные покрытия<br>Биметалл<br>Гальваника<br>Полимерные покрытия, например, Тефлон<br>Глазурь<br>Гелькоут<br>Ламинация<br></p>] 
+                (*
+                    <- lang_ru;;
+                    => nrel_format: format_html;;
+                *);;
+                -> rrel_example:[<p> Coating types: </ p> <p> Thin films: <br> Obtained by chemical vapor deposition <br> Vacuum deposited <br> Metallization, obtained by Anodizing <br> Chroming <br> Oxidizing <br> Aligning with zinc-plating <br> Phosphating <br> Sputtering <br> High-speed gas-flame spraying <br> Flame spraying <br> Detonation spraying <br> Sputtering with reflow <br> Plasma spraying <br> Paints <br> Olifa <br> Enamel <br> Powder coatings <br> Industrial coatings <br> Epoxy coatings <br> Bimetal <br> Electroplating <br> Polymer coatings I, for example, Teflon <br> Glaze <br> Gelcoat <br> Lamination <br> </ p>.] 
+                (*
+                    <- lang_en;;
+                    => nrel_format: format_html;;
+                *);;
+            *);;
+        *);;
+
+
+oxide_film
+    => nrel_main_idtf:
+        [оксидная плёнка]
+        (* <- lang_ru;; *);
+        [oxide film]
+        (* <- lang_en;; *);
+    => nrel_idtf:
+        [окисная плёнка]
+        (* <- lang_ru;; *);;
+
+oxide_film
+    <- rrel_key_sc_element:
+        Definition_of_oxide_film
+        (* 
+        => nrel_main_idtf:
+            [Опр.(оксидная плёнка)] (* <- lang_ru;;    *);
+            [Def.(oxide film)] (* <- lang_en;;  *);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (* 
+            -> rrel_example:[<b><sc_element sys_idtf  = "oxide_film">Оксидная плёнка</sc_element></b> — плёнка на поверхности <sc_element sys_idtf  = "metal">металла</sc_element> или <sc_element sys_idtf  = "semiconductor">полупроводника</sc_element>, образующаяся при определённых условиях в <sc_element sys_idtf  = "air">воздухе</sc_element> или слегка окислительной среде и состоящая из <sc_element sys_idtf  = "oxide_mineral">окислов</sc_element> этого <sc_element sys_idtf  = "chemical_substance">вещества</sc_element>.] 
+                (* 
+                <-lang_ru;; 
+                => nrel_format: format_html;;
+                *);;
+            -> rrel_example:[<b><sc_element sys_idtf  = "oxide_film">Oxide film</sc_element></b> - a film on the surface of <sc_element sys_idtf  = "metal">a metal</sc_element> or <sc_element sys_idtf  = "semiconductor">semiconductor</sc_element>, formed under certain conditions in <sc_element sys_idtf  = "air">the air</sc_element> or slightly oxidizing environment and consisting of <sc_element sys_idtf  = "oxide_mineral">oxides</sc_element> of this <sc_element sys_idtf  = "chemical_substance">substance</sc_element>.] 
+                (* 
+                <-lang_en;; 
+                => nrel_format: format_html;;
+                *);;
+            *);;
+        <= nrel_using_constants:...
+                (*
+                    ->oxide_film;;
+                    ->metal;;
+                    ->semiconductor;;
+                    ->air;;
+                    ->oxide_mineral;;
+                    ->chemical_substance;;
+                *);;
+        *);
+    <- rrel_key_sc_element: thickness_of_oxide_film
+        (*
+            <- explanation;;
+            => nrel_main_idtf: 
+                [Утв. (оксидная плёнка, толщина)](*<- lang_ru;;*);
+                [Stat. (oxide film, thickness)](*<- lang_en;;*);;
+            <= nrel_sc_text_translation:...
+            (*
+                -> rrel_example:[Толщина окисных плёнок может варьироваться от нескольких диаметров молекул до нескольких десятков миллиметров.] 
+                (*
+                    <- lang_ru;;
+                    => nrel_format: format_html;;
+                *);;
+                -> rrel_example:[The thickness of the oxide films can vary from several molecular diameters to several tens of millimeters.] 
+                (*
+                    <- lang_en;;
+                    => nrel_format: format_html;;
+                *);;
+            *);;
+        *);
+    <= nrel_subdividing:...
+              (*
+                  ->mill_scale;;
+                  ->rust;;   
+                  ->tint_colors;;
+               *);;
+
+
+mill_scale
+    => nrel_main_idtf:
+        [окалина]
+        (* <- lang_ru;; *);
+        [mill scale]
+        (* <- lang_en;; *);
+    => nrel_idtf:
+        [ocalin]
+        (* <- lang_en;; *);;
+
+mill_scale
+    <- rrel_key_sc_element:
+        Definition_of_mill_scale
+        (* 
+        => nrel_main_idtf:
+            [Опр.(окалина)] (* <- lang_ru;;    *);
+            [Def.(mill scale)] (* <- lang_en;;  *);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (* 
+            -> rrel_example:[<b><sc_element sys_idtf  = "mill_scale">Окалина</sc_element></b> — это <sc_element sys_idtf  = "mixture">смесь</sc_element> <sc_element sys_idtf  = "oxide">оксидов</sc_element>, образующихся прямым действием <sc_element sys_idtf  = "subst_O">кислорода</sc_element> при накаливании на <sc_element sys_idtf  = "air">воздухе</sc_element> <sc_element sys_idtf  = "metal">металлов</sc_element>.] 
+                (* 
+                <-lang_ru;; 
+                => nrel_format: format_html;;
+                *);;
+            -> rrel_example:[<b><sc_element sys_idtf  = "mill_scale">Ocalin</sc_element></b> is <sc_element sys_idtf  = "mixture">a mixture</sc_element> of <sc_element sys_idtf  = "oxide">oxides</sc_element> formed by direct action of <sc_element sys_idtf  = "subst_O">oxygen</sc_element> when <sc_element sys_idtf  = "metal">the metals</sc_element> are incandescent in <sc_element sys_idtf  = "air">air</sc_element>.] 
+                (* 
+                <-lang_en;; 
+                => nrel_format: format_html;;
+                *);;
+            *);;
+        <= nrel_using_constants:...
+                (*
+                    ->mill_scale;;
+                    ->metal;;
+                    ->mixture;;
+                    ->air;;
+                    ->oxide;;
+                    ->subst_O;;
+                *);;
+        *);
+    <= nrel_subdividing:...
+              (*
+                  ->iron_scale;;
+                  ->copper_scale;;
+               *);;
+
+
+
+iron_scale
+    => nrel_main_idtf:
+        [железная окалина]
+        (* <- lang_ru;; *);
+        [iron scale]
+        (* <- lang_en;; *);;
+
+iron_scale
+    <- rrel_key_sc_element:
+        Definition_of_iron_scale
+        (* 
+        => nrel_main_idtf:
+            [Опр.(железная окалина)] (* <- lang_ru;;    *);
+            [Def.(iron scale)] (* <- lang_en;;  *);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (* 
+            -> rrel_example:[<b><sc_element sys_idtf  = "iron_scale">Железная окалина</sc_element></b> представляет собой <sc_element sys_idtf  = "mixture">смесь</sc_element> <sc_element sys_idtf  = "oxide">оксидов</sc_element> Fe3O4, <sc_element sys_idtf  = "iron_oxide_2">FeO</sc_element> и <sc_element sys_idtf  = "iron_oxide_3">Fe2O3</sc_element>, и состоит из двух слоев, легко отделяемых друг от друга.] 
+                (* 
+                <-lang_ru;; 
+                => nrel_format: format_html;;
+                *);;
+            -> rrel_example:[<b><sc_element sys_idtf  = "iron_scale">Iron scale</sc_element></b> is <sc_element sys_idtf  = "mixture">a mixture</sc_element> of <sc_element sys_idtf  = "oxide">oxides</sc_element> Fe3O4, <sc_element sys_idtf  = "iron_oxide_2">FeO</sc_element> and <sc_element sys_idtf  = "iron_oxide_3">Fe2O3</sc_element>, and consists of two layers that are easily separated from each other.] 
+                (* 
+                <-lang_en;; 
+                => nrel_format: format_html;;
+                *);;
+            *);;
+        <= nrel_using_constants:...
+                (*
+                    ->iron_scale;;
+                    ->mixture;;
+                    ->iron_oxide_2;;
+                    ->oxide;;
+                    ->iron_oxide_3;;
+                *);;
+        *);
+    <- rrel_key_sc_element: properties_of_iron_scale
+        (*
+            <- explanation;;
+            => nrel_main_idtf: 
+                [Утв. (железная окалина, свойства)](*<- lang_ru;;*);
+                [Stat. (iron scale, properties)](*<- lang_en;;*);;
+            <= nrel_sc_text_translation:...
+            (*
+                -> rrel_example:[Внутренний слой пористый, черно-серого цвета, наружный плотный и с красноватым оттенком, оба слоя хрупки и обладают ферромагнитными свойствами.] 
+                (*
+                    <- lang_ru;;
+                    => nrel_format: format_html;;
+                *);;
+                -> rrel_example:[The inner layer is porous, black-gray, outer dense and with a reddish tinge, both layers are brittle and have ferromagnetic properties.] 
+                (*
+                    <- lang_en;;
+                    => nrel_format: format_html;;
+                *);;
+            *);;
+        *);;
+
+
+copper_scale
+    => nrel_main_idtf:
+        [медная окалина]
+        (* <- lang_ru;; *);
+        [copper scale]
+        (* <- lang_en;; *);;
+
+copper_scale
+    <- rrel_key_sc_element:
+        Definition_of_copper_scale
+        (* 
+        => nrel_main_idtf:
+            [Опр.(медная окалина)] (* <- lang_ru;;    *);
+            [Def.(copper scale)] (* <- lang_en;;  *);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (* 
+            -> rrel_example:[<b><sc_element sys_idtf  = "copper_scale">Медная окалина</sc_element></b> состоит из <sc_element sys_idtf  = "oxide">окислов</sc_element> <sc_element sys_idtf  = "subst_Cu">меди</sc_element> Cu2O и CuO.] 
+                (* 
+                <-lang_ru;; 
+                => nrel_format: format_html;;
+                *);;
+            -> rrel_example:[<b><sc_element sys_idtf  = "copper_scale">Copper scale</sc_element></b> consists of <sc_element sys_idtf  = "subst_Cu">copper</sc_element> <sc_element sys_idtf  = "oxide">oxides</sc_element> Cu2O and CuO.] 
+                (* 
+                <-lang_en;; 
+                => nrel_format: format_html;;
+                *);;
+            *);;
+        <= nrel_using_constants:...
+                (*
+                    ->copper_scale;;
+                    ->subst_Cu;;
+                    ->oxide;;
+                *);;
+        *);
+    <- rrel_key_sc_element: properties_of_copper_scale
+        (*
+            <- explanation;;
+            => nrel_main_idtf: 
+                [Утв. (медная окалина, свойства)](*<- lang_ru;;*);
+                [Stat. (copper scale, properties)](*<- lang_en;;*);;
+            <= nrel_sc_text_translation:...
+            (*
+                -> rrel_example:[Медная окалина, представляющая собой хрупкую, чёрно-серого цвета массу.] 
+                (*
+                    <- lang_ru;;
+                    => nrel_format: format_html;;
+                *);;
+                -> rrel_example:[Copper scale, which is a fragile, black-gray color mass.] 
+                (*
+                    <- lang_en;;
+                    => nrel_format: format_html;;
+                *);;
+            *);;
+        *);;
+
+
+rust
+    => nrel_main_idtf:
+        [ржавчина]
+        (* <- lang_ru;; *);
+        [rust]
+        (* <- lang_en;; *);;
+
+rust
+    <- rrel_key_sc_element:
+        Definition_of_rust
+        (* 
+        => nrel_main_idtf:
+            [Опр.(ржавчина)] (* <- lang_ru;;    *);
+            [Def.(rust)] (* <- lang_en;;  *);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (* 
+            -> rrel_example:[<b><sc_element sys_idtf  = "rust">Ржавчина</sc_element></b> является красным <sc_element sys_idtf  = "oxide">окислам</sc_element> <sc_element sys_idtf  = "subst_Fe">железа</sc_element>, образующимся в ходе <sc_element sys_idtf  = "nrel_reaction">реакции</sc_element> <sc_element sys_idtf  = "subst_Fe">железа</sc_element> с <sc_element sys_idtf  = "subst_O">кислородом</sc_element> в присутствии <sc_element sys_idtf  = "water">воды</sc_element> или влажного <sc_element sys_idtf  = "air">воздуха</sc_element>.] 
+                (* 
+                <-lang_ru;; 
+                => nrel_format: format_html;;
+                *);;
+            -> rrel_example:[<b><sc_element sys_idtf  = "rust">Rust</sc_element></b> is red <sc_element sys_idtf  = "subst_Fe">iron</sc_element> <sc_element sys_idtf  = "oxide">oxide</sc_element>, formed during <sc_element sys_idtf  = "nrel_reaction">the reaction</sc_element> of <sc_element sys_idtf  = "subst_Fe">iron</sc_element> with <sc_element sys_idtf  = "subst_O">oxygen</sc_element> in the presence of <sc_element sys_idtf  = "water">water</sc_element> or moist  <sc_element sys_idtf  = "air">air</sc_element>.] 
+                (* 
+                <-lang_en;; 
+                => nrel_format: format_html;;
+                *);;
+            *);;
+        <= nrel_using_constants:...
+                (*
+                    ->rust;;
+                    ->oxide;;
+                    ->subst_Fe;;
+                    ->nrel_reaction;;
+                    ->subst_O;;
+                    ->water;;
+                    ->air;;                    
+                *);;
+        *);
+    <- rrel_key_sc_element: causes_of_rust
+        (*
+            <- explanation;;
+            => nrel_main_idtf: 
+                [Утв. (ржавчина, причина)](*<- lang_ru;;*);
+                [Stat. (rust, causes)](*<- lang_en;;*);;
+            <= nrel_sc_text_translation:...
+            (*
+                -> rrel_example:[Если железо, содержащее какие-либо добавки и примеси (например, углерод), находится в контакте с водой, кислородом или другим сильным окислителем и/или кислотой, то оно начинает ржаветь.] 
+                (*
+                    <- lang_ru;;
+                    => nrel_format: format_html;;
+                *);;
+                -> rrel_example:[If iron containing any additives and impurities (for example, carbon) is in contact with water, oxygen or other strong oxidant and/or acid, then it begins to rust.] 
+                (*
+                    <- lang_en;;
+                    => nrel_format: format_html;;
+                *);;
+            *);;
+        *);
+    <- rrel_key_sc_element: rust_protection
+        (*
+            <- explanation;;
+            => nrel_main_idtf: 
+                [Прим. (ржавчина, защита)](*<- lang_ru;;*);
+                [Node (rust, protection)](*<- lang_en;;*);;
+            <= nrel_sc_text_translation:...
+            (*
+                -> rrel_example:[Поверхность ржавчины не создаёт защиту для нижележащего железа.] 
+                (*
+                    <- lang_ru;;
+                    => nrel_format: format_html;;
+                *);;
+                -> rrel_example:[The rust surface does not provide protection for the underlying iron.] 
+                (*
+                    <- lang_en;;
+                    => nrel_format: format_html;;
+                *);;
+            *);;
+        *);;
+
+
+tint_colors
+    => nrel_main_idtf:
+        [побежалость]
+        (* <- lang_ru;; *);
+        [tint colors]
+        (* <- lang_en;; *);
+    => nrel_idtf:
+        [цвета побежалости]
+        (* <- lang_en;; *);;
+
+tint_colors
+    <- rrel_key_sc_element:
+        Definition_of_tint_colors
+        (* 
+        => nrel_main_idtf:
+            [Опр.(побежалость)] (* <- lang_ru;;    *);
+            [Def.(tint colors)] (* <- lang_en;;  *);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (* 
+            -> rrel_example:[<b><sc_element sys_idtf  = "tint_colors">Цвета побежалости</sc_element></b> — радужные цвета, образующиеся на гладкой поверхности <sc_element sys_idtf  = "metal">металла</sc_element> или <sc_element sys_idtf  = "mineral">минерала</sc_element> в результате образования тонкой прозрачной поверхностной <sc_element sys_idtf  = "oxide_film">окисной плёнки</sc_element> и интерференции света в ней.] 
+                (* 
+                <-lang_ru;; 
+                => nrel_format: format_html;;
+                *);;
+            -> rrel_example:[<b><sc_element sys_idtf  = "tint_colors">The tint colors</sc_element></b> are iridescent colors formed on a smooth surface of <sc_element sys_idtf  = "metal">metal</sc_element> or <sc_element sys_idtf  = "mineral">mineral</sc_element> as a result of the formation of a thin transparent surface <sc_element sys_idtf  = "oxide_film">oxide film</sc_element> and interference of light in it] 
+                (* 
+                <-lang_en;; 
+                => nrel_format: format_html;;
+                *);;
+            *);;
+        <= nrel_using_constants:...
+                (*
+                    ->tint_colors;;
+                    ->metal;;
+                    ->mineral;;
+                    ->oxide_film;;                  
+                *);;
+        *);
+    <- rrel_key_sc_element: causes_of_tint_colors
+        (*
+            <- explanation;;
+            => nrel_main_idtf: 
+                [Прим. (цвета побежалости, причина)](*<- lang_ru;;*);
+                [Node. (tint colors, causes)](*<- lang_en;;*);;
+            <= nrel_sc_text_translation:...
+            (*
+                -> rrel_example:[Цвета побежалости появляются от теплового воздействия.] 
+                (*
+                    <- lang_ru;;
+                    => nrel_format: format_html;;
+                *);;
+                -> rrel_example:[The colors of whiteness appear from the heat effect.] 
+                (*
+                    <- lang_en;;
+                    => nrel_format: format_html;;
+                *);;
+            *);;
+        *);;
+
+
+black_oxide
+    => nrel_main_idtf:
+        [оксидирование]
+        (* <- lang_ru;; *);
+        [black oxide]
+        (* <- lang_en;; *);
+    => nrel_idtf:
+        [oxidation]
+        (* <- lang_en;; *);;
+
+black_oxide
+    <- rrel_key_sc_element:
+        Definition_of_black_oxide
+        (* 
+        => nrel_main_idtf:
+            [Опр.(оксидирование)] (* <- lang_ru;;    *);
+            [Def.(black oxide)] (* <- lang_en;;  *);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (* 
+            -> rrel_example:[<b><sc_element sys_idtf  = "black_oxide">Оксидирование</sc_element></b> — создание <sc_element sys_idtf  = "oxide_film">оксидной плёнки</sc_element> на поверхности изделия или заготовки в результате <sc_element sys_idtf  = "nrel_oxidation_reduction_reaction">окислительно-восстановительной реакции</sc_element>.] 
+                (* 
+                <-lang_ru;; 
+                => nrel_format: format_html;;
+                *);;
+            -> rrel_example:[<b><sc_element sys_idtf  = "black_oxide">Oxidation</sc_element></b> - the creation of <sc_element sys_idtf  = "oxide_film">an oxide film</sc_element> on the surface of a product or workpiece as a result of <sc_element sys_idtf  = "nrel_oxidation_reduction_reaction">an oxidation-reduction reaction</sc_element>.] 
+                (* 
+                <-lang_en;; 
+                => nrel_format: format_html;;
+                *);;
+            *);;
+        <= nrel_using_constants:...
+                (*
+                    ->black_oxide;;
+                    ->nrel_oxidation_reduction_reaction;;
+                    ->oxide_film;;                  
+                *);;
+        *);
+    <- rrel_key_sc_element: application_of_black_oxide
+        (*
+            <- explanation;;
+            => nrel_main_idtf: 
+                [Прим. (оксидирование, применение)](*<- lang_ru;;*);
+                [Node. (black oxide, application)](*<- lang_en;;*);;
+            <= nrel_sc_text_translation:...
+            (*
+                -> rrel_example:[Оксидирование преимущественно используют для получения защитных и декоративных покрытий, а также для формирования диэлектрических слоёв.] 
+                (*
+                    <- lang_ru;;
+                    => nrel_format: format_html;;
+                *);;
+                -> rrel_example:[Oxidation is advantageously used for the production of protective and decorative coatings, as well as for the formation of dielectric layers.] 
+                (*
+                    <- lang_en;;
+                    => nrel_format: format_html;;
+                *);;
+            *);;
+        *);
+    <- rrel_key_sc_element: methods_of_black_oxide
+        (*
+            <- explanation;;
+            => nrel_main_idtf: 
+                [Прим. (оксидирование, методы)](*<- lang_ru;;*);
+                [Node. (black oxide, methods)](*<- lang_en;;*);;
+            <= nrel_sc_text_translation:...
+            (*
+                -> rrel_example:[Различают термические, химические, электрохимические (или анодные) и плазменные методы оксидирования.] 
+                (*
+                    <- lang_ru;;
+                    => nrel_format: format_html;;
+                *);;
+                -> rrel_example:[There are thermal, chemical, electrochemical (or anodic) and plasma oxidation methods.] 
+                (*
+                    <- lang_en;;
+                    => nrel_format: format_html;;
+                *);;
+            *);;
+        *);;
+sorbent
+    => nrel_main_idtf:
+        [сорбент]
+        (* <- lang_ru;; *);
+        [sorbent﻿]
+        (* <- lang_en;; *);;
+
+sorbent
+    <- rrel_key_sc_element:
+        Definition_of_sorbent
+        (* 
+        => nrel_main_idtf:
+            [Опр.(сорбент)] (* <- lang_ru;;    *);
+            [Def.(sorbent﻿)] (* <- lang_en;;  *);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf="sorbent﻿">Сорбенты</sc_element></b> —  <sc_element sys_idtf="solid">твердые тела</sc_element> или  <sc_element sys_idtf="liquid">жидкости</sc_element>, избирательно поглощающие (сорбирующие) из окружающей среды  <sc_element sys_idtf="gas">газы</sc_element>,  <sc_element sys_idtf="steam">пары</sc_element> или  <sc_element sys_idtf="rrel_solute">растворённые вещества</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf="sorbent﻿">Sorbents</sc_element></b> are  <sc_element sys_idtf="solid">solids</sc_element> or <sc_element sys_idtf="liquid">liquids</sc_element> that selectively absorb (sorb) from the environment   <sc_element sys_idtf="gas">gases</sc_element>, <sc_element sys_idtf="steam">vapors</sc_element> or <sc_element sys_idtf="rrel_solute">dissolved substances</sc_element>.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+        <= nrel_using_constants:...
+                (*
+                    ->sorbent;;
+                    ->solid;;
+                    ->liquid;;
+                    ->gas;;
+                    ->steam;;
+                    ->rrel_solute;;                  
+                *);;
+        *);
+    <= nrel_subdividing:...
+              (*
+                  ->adsorb;;
+                  ->absorb;;
+               *);;
+
+
+
+decantation
+        <- sc_node_not_relation;
+        => nrel_main_idtf:
+                [decantation](*<- lang_en;;*);
+                [декантация](*<- lang_ru;;*);
+        => nrel_main_idtf:
+                [декантирование](*<- lang_ru;;*);
+        <- rrel_key_sc_element:
+                Definition_of_decantation
+                (*
+                        <- definition;;
+                        => nrel_main_idtf: [Опр.(decantation)](*<- lang_ru;;*);;
+                        => nrel_main_idtf: [Def.(декантация)](*<- lang_en;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "decantation">Декантация</sc_element></b> — механическое отделение твёрдой фазы дисперсной системы (суспензии) от жидкой путём сливания <sc_element sys_idtf  = "solution">раствора</sc_element> с осадка.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "decantation">Decantation</sc_element></b> - mechanical separation of the solid phase of the dispersed system (suspension) from the liquid by draining the  <sc_element sys_idtf  = "solution">solution</sc_element> from the precipitate.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                <= nrel_using_constants:...
+                        (*
+                                ->decantation;;
+                                ->solution;;
+                        *);;
+                *);;
+
+separation
+        <- sc_node_not_relation;
+        => nrel_main_idtf:
+                [separation](*<- lang_en;;*);
+                [сепарация](*<- lang_ru;;*);
+        <- rrel_key_sc_element:
+                Definition_of_separation
+                (*
+                        <- definition;;
+                        => nrel_main_idtf: [Опр.(separation)](*<- lang_ru;;*);;
+                        => nrel_main_idtf: [Def.(сепарация)](*<- lang_en;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "separation">Сепарация</sc_element></b> — это различные процессы разделения смешанных объёмов разнородных <sc_element sys_idtf  = "particle">частиц</sc_element>, <sc_element sys_idtf  = "mixture">смесей</sc_element>, <sc_element sys_idtf  = "liquid">жидкостей</sc_element> разной <sc_element sys_idtf  = "nrel_density_of_substance">плотности</sc_element>, <sc_element sys_idtf  = "emulsion">эмульсий</sc_element>, <sc_element sys_idtf  = "solid">твёрдых материалов</sc_element>, <sc_element sys_idtf  = "suspension">взвесей</sc_element>, <sc_element sys_idtf  = "particle">твёрдых частиц</sc_element> или капелек в <sc_element sys_idtf  = "gas">газе</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "separation">Separation</sc_element></b> is a different process of separation of mixed volumes of dissimilar <sc_element sys_idtf  = "particle">particles</sc_element>, <sc_element sys_idtf  = "mixture">mixtures</sc_element>, <sc_element sys_idtf  = "liquid">liquids</sc_element> of different <sc_element sys_idtf  = "nrel_density_of_substance">density</sc_element>, <sc_element sys_idtf  = "emulsion">emulsions</sc_element>, <sc_element sys_idtf  = "solid">solids</sc_element>, <sc_element sys_idtf  = "suspension">suspensions</sc_element>, <sc_element sys_idtf  = "particle">solid particles</sc_element> or droplets in <sc_element sys_idtf  = "gas">a gas</sc_element>.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                <= nrel_using_constants:...
+                        (*
+                                ->separation;;
+                                ->particle;;
+                                ->mixture;;
+                                ->liquid;;
+                                ->nrel_density_of_substance;;
+                                ->emulsion;;
+                                ->solid;;
+                                ->suspension;;
+                                ->gas;;
+                        *);;
+                *);;
+
+
+centrifugation
+        <- sc_node_not_relation;
+        => nrel_main_idtf:
+                [centrifugation](*<- lang_en;;*);
+                [центрифугирование](*<- lang_ru;;*);
+        <- rrel_key_sc_element:
+                Definition_of_centrifugation
+                (*
+                        <- definition;;
+                        => nrel_main_idtf: [Опр.(centrifugation)](*<- lang_ru;;*);;
+                        => nrel_main_idtf: [Def.(центрифугирование)](*<- lang_en;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "centrifugation">Центрифугирование</sc_element></b> — разделение неоднородных систем на фракции по <sc_element sys_idtf  = "nrel_density_of_substance">плотности</sc_element> при помощи центробежных сил.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "centrifugation">Centrifugation</sc_element></b>  - the separation of heterogeneous systems into fractions by <sc_element sys_idtf  = "nrel_density_of_substance">density</sc_element> using centrifugal forces.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                <= nrel_using_constants:...
+                        (*
+                                ->centrifugation;;
+                                ->nrel_density_of_substance;;
+                        *);;
+                *);;
+
+
+filtration
+        <- sc_node_not_relation;
+        => nrel_main_idtf:
+                [filtration](*<- lang_en;;*);
+                [фильтрование](*<- lang_ru;;*);             
+        <- rrel_key_sc_element:
+                Definition_of_filtration
+                (*
+                        <- definition;;
+                        => nrel_main_idtf: [Опр.(фильтрование)](*<- lang_ru;;*);;
+                        => nrel_main_idtf: [Def.(filtration)](*<- lang_en;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "filtration">Фильтрование</sc_element></b> - процесс разделения неоднородных систем при помощи пористых перегородок, пропускающих дисперсионную среду и задерживающих дисперсную твёрдую фазу.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "filtration">Filtration</sc_element></b> is the process of separating inhomogeneous systems by means of porous baffles passing the dispersion medium and retaining the dispersed solid phase.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                  *);;
+                <= nrel_using_constants:...
+                        (*
+                                -> filtration;;
+                        *);; 
+                *);;
+
+absorb
+        <- sc_node_not_relation;
+        => nrel_main_idtf:
+                [absorb](*<- lang_en;;*);
+                [абсорбент](*<- lang_ru;;*);
+        <- rrel_key_sc_element:
+                Definition_of_absorb
+                (*
+                        <- definition;;
+                        => nrel_main_idtf: [Опр.(absorb)](*<- lang_ru;;*);;
+                        => nrel_main_idtf: [Def.(абсорбент)](*<- lang_en;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "absorb">Абсорбенты</sc_element></b> — тела, образующие с поглощённым <sc_element sys_idtf  = "chemical_substance">веществом</sc_element> твёрдый или жидкий <sc_element sys_idtf  = "solution">раствор</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "absorb">Absorbents</sc_element></b> are bodies that form a solid or liquid <sc_element sys_idtf  = "solution">solution</sc_element> with an absorbed <sc_element sys_idtf  = "chemical_substance">substance</sc_element>]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                *);;
+                <= nrel_using_constants:...
+                        (*
+                                ->absorb;;
+                                ->chemical_substance;;
+                                ->solution;;
+                        *);;
+                *);;
+
+adsorb
+        <- sc_node_not_relation;
+        => nrel_main_idtf:
+                [adsorb](*<- lang_en;;*);
+                [адсорбент](*<- lang_ru;;*);
+        <- rrel_key_sc_element:
+                Definition_of_adsorb
+                (*
+                        <- definition;;
+                        => nrel_main_idtf: [Опр.(адсорбент)](*<- lang_ru;;*);;
+                        => nrel_main_idtf: [Def.(adsorb)](*<- lang_en;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "adsorb">Абсорбенты</sc_element></b> — тела, поглощающие <sc_element sys_idtf  = "chemical_substance">вещество</sc_element> на своей поверхности, и химические поглотители, которые связывают поглощаемое <sc_element sys_idtf  = "chemical_substance">вещество</sc_element>, вступая с ним в <sc_element sys_idtf  = "nrel_interaction">химическое взаимодействие</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "adsorb">Adsorbents</sc_element></b> are bodies that absorb  <sc_element sys_idtf  = "chemical_substance">matter</sc_element> on their surface, and chemical absorbers that bind <sc_element sys_idtf  = "chemical_substance">the substance</sc_element> to be absorbed, interacting with it  <sc_element sys_idtf  = "nrel_interaction">chemically</sc_element>.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                  *);;
+                        <= nrel_using_constants:...
+                            (*
+                                    -> adsorb;;
+                                    -> chemical_substance;;
+                                    -> nrel_interaction;;
+                            *);;
+                *);;

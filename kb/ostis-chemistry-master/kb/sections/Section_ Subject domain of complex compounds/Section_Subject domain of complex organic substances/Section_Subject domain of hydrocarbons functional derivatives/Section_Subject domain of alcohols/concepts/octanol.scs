@@ -1,0 +1,142 @@
+octanol<-sc_node_not_relation;;
+octanol=> nrel_main_idtf:[октанол](* <- lang_ru;; *);;
+octanol=> nrel_main_idtf:[octanol](* <- lang_en;; *);;
+octanol=> nrel_idtf:[octanol-1](* <- lang_en;; *);;
+octanol=> nrel_idtf:[C₈H₁₈O](* <- lang_en;; *);;
+
+
+
+
+octanol<=nrel_intramolecular_dehydration:octane;;
+saturated_alcohols=>nrel_inclusion:octanol;;
+triatomic_alcohol=>nrel_inclusion:octanol;;
+higher_fatty_alcohols=>nrel_inclusion:octanol;;
+
+
+
+octanol<=nrel_poisoning_way:peroral_way;;
+organic_artificial_poison=>nrel_inclusion:octanol;;
+rrel_liquid_solvent=>nrel_inclusion:octanol;;
+
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: octanol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Октанол — 
+	<b><sc_element sys_idtf="organic_compound">органическое вещество</b></sc_element>, относится к 
+	классу <b><sc_element sys_idtf="higher_fatty_alcohols">жирных спиртов</b></sc_element>
+	.Содержится в эфирных маслах цитрусовых (грейпфрутовое масло, апельсиновое масло).]
+		
+		(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (октанол)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		organic_compound;
+		higher_fatty_alcohols
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: octanol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В промышленности октанол 
+	получают по Циглеру из <b><sc_element sys_idtf="ethylen">этилена</b></sc_element>
+	 и триэтилалюминия с последующей ректификацией 
+	образующихся <b><sc_element sys_idtf="ethylen">спиртов</b></sc_element>.
+]
+	
+	  
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(октанол, используют в промышлености)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		ethylen;
+		alcohol
+		};;	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:octanol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Октанол
+	хорошо растворим в спирте, петролейном эфире, плохо в 
+	<b><sc_element sys_idtf="water">воде</b></sc_element>. <b><sc_element sys_idtf="strong_smell">Запах — сильный </b></sc_element>
+	жирно-цитрусовый.]
+	  
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(октанол, хорошо растворим в спирте)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+			strong_smell;
+		water
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:octanol;;
+	<= nrel_sc_text_translation: ...(*->"file://image/octanol_1.png";;*);;
+	=> nrel_main_idtf: [Рисунок(октанол,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:octanol;;
+	<= nrel_sc_text_translation: ...(*->"file://image/octanol_1_3d.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(октанол,пример)](*<- lang_ru;;*);;
+*);;
+
+
+nrel_relative_molar_mass->...
+(* 
+	<- sc_node_not_relation;;
+	-> octanol;;
+	=> rrel_mol: [130.23]
+	(*
+		<-number;;
+	*);;
+*);;
+
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->octanol;;
+	=> rrel_gram_per_cubic_cm:1.94
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->octanol;;
+	=> rrel_joule_per_kelvin_and_mole: 0.28
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->octanol;;
+	=> rrel_degree_celsius: 195
+	(*
+		<-number;;
+	*);;
+*);;

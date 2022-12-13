@@ -1,0 +1,221 @@
+scp_program -> proc_boilingpoint_conversion_calculation (* 
+
+
+ ->rrel_params: ... (* 
+  -> rrel_1: rrel_in: _parameter;; 
+  -> rrel_2: rrel_out: _node_number2;; 
+ *);; 
+
+
+ ->rrel_operators: ... (*
+
+ // генерация узла для выходного параметра
+-> rrel_init: .proc_boilingpoint_conversion_calculation0 
+			(* 
+			<- genEl;; 
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _node_number2;; 
+			 
+			=>nrel_goto: .proc_boilingpoint_conversion_calculation1;; 
+			*);;
+ 
+ // считывание значения в кельвинах
+  ->.proc_boilingpoint_conversion_calculation1 (* 
+  
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _parameter;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node_boil_temp;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_boiling_temperature;;
+
+			=> nrel_then: .proc_boilingpoint_conversion_calculation1a;;
+			=> nrel_else: .proc_boilingpoint_conversion_calculation_reading_error;;       
+			*);;
+  
+  		-> .proc_boilingpoint_conversion_calculation1a
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: value;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node_boil_temp;;
+
+			=> nrel_then: .proc_boilingpoint_conversion_calculation1b;;		
+			=> nrel_else: .proc_boilingpoint_conversion_calculation_reading_error;;      
+			*);;
+
+		-> .proc_boilingpoint_conversion_calculation1b
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _node_measurement;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node_boil_temp;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measurement;;
+
+			=> nrel_then: .proc_boilingpoint_conversion_calculation1c;;		
+			=> nrel_else: .proc_boilingpoint_conversion_calculation_reading_error;;      
+			*);;
+
+// проверка наличия ранее вычисленного значения в цельсиях	(на случай, если запускаем агент повторно на одном понятии)//
+
+
+  		-> .proc_boilingpoint_conversion_calculation1c
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node_measurement;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node_number_check;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_role_relation: rrel_degree_celsius;;
+
+//если есть, выводим сообщение в консоль, считываем значение и завершаем работу
+			=> nrel_then: .proc_boilingpoint_conversion_calculation_already_converted;;	
+			=> nrel_else: .proc_boilingpoint_conversion_calculation1d;; 		  
+			*);;
+
+
+		-> .proc_boilingpoint_conversion_calculation1d
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node_measurement;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node_number;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_role_relation: rrel_kelvin;;
+
+			=> nrel_then: .proc_boilingpoint_conversion_calculation1e;;		
+			=> nrel_else: .proc_boilingpoint_conversion_calculation_reading_error;;      
+			*);;
+
+		-> .proc_boilingpoint_conversion_calculation1e
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: number;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node_number;;
+
+			=> nrel_then: .proc_boilingpoint_conversion_calculation1f;;		
+			=> nrel_else: .proc_boilingpoint_conversion_calculation_reading_error;;      
+			*);;
+
+		-> .proc_boilingpoint_conversion_calculation1f
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node_number;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _link_measurement_k;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			=> nrel_then: .proc_boilingpoint_conversion_calculation2;;		
+			=> nrel_else: .proc_boilingpoint_conversion_calculation_reading_error;; 
+     
+			*);;
+			
+
+// подсчёт
+
+			-> .proc_boilingpoint_conversion_calculation2 (* 
+			<- contSub ;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _link_measurement_c;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link_measurement_k ;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [273] ;;
+ 
+			=> nrel_goto: .proc_boilingpoint_conversion_calculation3 ;;
+
+			*);; 
+// генерация
+
+
+		-> .proc_boilingpoint_conversion_calculation3
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: number;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node_number2;;
+
+			=> nrel_goto: .proc_boilingpoint_conversion_calculation3a;;		     
+			*);;
+
+  		-> .proc_boilingpoint_conversion_calculation3a
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node_measurement;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node_number2;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_role_relation: rrel_degree_celsius;;
+
+			=> nrel_goto: .proc_boilingpoint_conversion_calculation3b;;		  
+			*);;
+
+
+		-> .proc_boilingpoint_conversion_calculation3b
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node_number2;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _link_measurement_c;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			=> nrel_goto: .proc_boilingpoint_conversion_calculation4;;		   
+			*);;
+
+
+// вывод сообщения об успешном вычислении 
+  -> .proc_boilingpoint_conversion_calculation4 (* 
+
+  <- printNl;; 
+    -> rrel_1: rrel_fixed: rrel_scp_const: [Celsius conversion is done];; 
+ 
+ 
+    =>nrel_goto: .proc_boilingpoint_conversion_calculation4a;;  
+  *);; 
+
+
+  
+  -> .proc_boilingpoint_conversion_calculation4a (* 
+
+  <- printNl;; 
+    -> rrel_1: rrel_fixed: rrel_scp_var:_link_measurement_c;; 
+ 
+ 
+    =>nrel_goto: .proc_boilingpoint_conversion_calculation_return;;  
+  *);; 
+
+
+  -> .proc_boilingpoint_conversion_calculation_reading_error (* 
+
+  <- print;; 
+    -> rrel_1: rrel_fixed: rrel_scp_const: [Couldnt read some parameters];; 
+ 
+ 
+    =>nrel_goto: .proc_boilingpoint_conversion_calculation_return;;  
+  *);; 
+
+  -> .proc_boilingpoint_conversion_calculation_already_converted (* 
+
+  <- print;; 
+    -> rrel_1: rrel_fixed: rrel_scp_const: [Celsius conversion was done earlier];; 
+ 
+ 
+    =>nrel_goto: .proc_boilingpoint_conversion_calculation_return;;  
+  *);; 
+
+  -> .proc_boilingpoint_conversion_calculation_return (* 
+  <- return;; 
+  *);; 
+*);;
+*);;

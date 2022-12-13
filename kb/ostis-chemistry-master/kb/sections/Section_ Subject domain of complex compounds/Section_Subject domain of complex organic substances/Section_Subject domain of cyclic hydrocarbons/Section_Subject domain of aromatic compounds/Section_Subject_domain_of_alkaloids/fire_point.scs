@@ -1,0 +1,48 @@
+fire_point<-sc_node_not_relation;;
+
+fire_point=> nrel_main_idtf:[температура воспламенения](* <- lang_ru;; *);;
+fire_point=> nrel_main_idtf:[fire point](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: fire_point;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Температура воспламенения — наименьшая температура <b><sc_element sys_idtf="chemical_substance">вещества</b></sc_element>, при которой  <b><sc_element sys_idtf="steam">пары</b></sc_element> над поверхностью горючего <b><sc_element sys_idtf="chemical_substance">вещества</b></sc_element> выделяются с такой скоростью, что при воздействии на них источника зажигания наблюдается воспламенение.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Определение (температура воспламенения)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		steam;
+		chemical_substance
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: fire_point;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Температура воспламенения всегда выше <b><sc_element sys_idtf="flash_point">температуры вспышки</b></sc_element>]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;	
+	*);;
+	*);;
+	=> nrel_main_idtf: [Утверждение(температура воспламенения)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		flash_point
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: fire_point;;
+	<= nrel_sc_text_translation: ...(*->"file://images/fire_point.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(температура воспламенения)](*<- lang_ru;;*);;
+*);;
+
+
+

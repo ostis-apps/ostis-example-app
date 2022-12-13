@@ -1,0 +1,187 @@
+subst_Mg
+<- sc_node_not_relation;
+=> nrel_main_idtf: [магний] (* <- lang_ru;; *);
+=> nrel_main_idtf: [magnesium] (* <- lang_en;; *);
+<= nrel_inclusion: chemical_substance;
+<- rrel_key_sc_element: definition_of_subst_Mg
+(* 
+	=> nrel_main_idtf: [Опр. (магний)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Магний</b> - лёгкий, ковкий, <sc_element sys_idtf  = "color_white_silver">серебристо-белый</sc_element> <sc_element sys_idtf = "metal">металл</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver;;
+		-> metal;;
+	*);;
+*);
+
+<- solid;
+<- liquid;
+<- color_white_silver;
+
+=> nrel_being_in_nature: ...
+(*
+	-> sea;;
+	-> carnallit;;
+	-> bischofite;;
+	-> kieserite;;
+	-> epsomite;;
+	-> cainite;;
+	-> magnesite;;
+	-> dolomite;;
+	-> brucite;;
+*);
+
+=> nrel_receiving: ...
+(*
+	-> nrel_electrolysis;;
+	-> thermal_receipt;;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (магний, твёрдое тело)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_Magnesium.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_mg_and_air
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (магний, нагревание, оксид, нитрид, воздух)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ При нагревании на воздухе магний сгорает с образованием оксида и небольшого количества нитрида.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_mg_and_co2
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (магний, горение, углекислый газ)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Магний может гореть в углекислом газе.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_mg_and_water
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (магний, взаимодействие*, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Раскаленный магний реагирует с водой.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_mg_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (магний, растворение, кислота, водород)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Магний в кислотах растворяется с бурным выделением водорода.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [1,738] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 923 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 1363 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [9,20] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [131,8] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [24,90] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_volume: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_cubic_cm_per_mole:...
+		(*
+			=> nrel_main_idtf: [14,0] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;

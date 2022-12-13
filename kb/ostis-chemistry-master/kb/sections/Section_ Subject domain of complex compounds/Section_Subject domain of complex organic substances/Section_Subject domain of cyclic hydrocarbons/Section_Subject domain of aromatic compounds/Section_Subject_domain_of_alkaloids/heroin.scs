@@ -1,0 +1,107 @@
+heroin<-sc_node_not_relation;;
+heroin=> nrel_main_idtf:[героин](* <- lang_ru;; *);;
+heroin=> nrel_main_idtf:[heroin](* <- lang_en;; *);;
+heroin=> nrel_idtf:[5α,6α-​7,8-​Дидегидро-​4,5-​эпокси-​ 17-​метилморфинан-​3,6-​диол диацетат](* <- lang_ru;; *);;
+heroin=> nrel_idtf:[C21H23NO5](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: heroin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Героин  — полусинтетический опиоидный наркотик, в конце XIX века — начале XX применявшийся как <b><sc_element sys_idtf="medicine">лекарственное средство</b></sc_element>. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (героин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		medicine
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: heroin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://heroin2.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(героин,фармакологический эффект*)](*<- lang_ru;;*);;
+	
+*);;
+statement ->...
+(*
+	->rrel_key_sc_element: heroin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://heroin3.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(героин,психотропный эффект*)](*<- lang_ru;;*);;
+	
+*);;
+statement ->...
+(*
+	->rrel_key_sc_element: heroin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://heroin.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(героин,побочный эффект*)](*<- lang_ru;;*);;
+	
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:heroin;;
+	<= nrel_sc_text_translation: ...(*->"file://images/heroin.png";;*);;
+	=> nrel_main_idtf: [Рисунок(героин,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: heroin;;
+	<= nrel_sc_text_translation: ...(*->"file://images/heroin2.png";;*);;
+	=> nrel_main_idtf: [Рисунок(героин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: heroin;;
+	<= nrel_sc_text_translation: ...(*->"file://images/heroin3.png";;*);;
+	=> nrel_main_idtf: [Рисунок(героин,синтез*)](*<- lang_ru;;*);;
+*);;
+
+
+solid_matter=>nrel_inclusion:heroin;;
+chemical_compound=>nrel_inclusion:heroin;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> heroin;;
+	=> nrel_measurement_in_gramms_per_mole: [369,417]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->heroin;;
+	=> nrel_measurement_in_degrees_Celsius: 170
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+long_periods <= nrel_inclusion: period;;
+long_periods
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[большие периоды]
+	(* <- lang_ru;;	*);
+	[long periods]
+	(* <- lang_en;;	*);;
+long_periods
+<- rrel_key_sc_element:
+	Definition_of_long_periods
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/long_periods.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				period
+			};;
+
+
+
+Definition_of_long_periods
+=> nrel_main_idtf:
+	[Опр.(Большие периоды)]
+	(* <- lang_ru;;	*);;
+
+
+
+
+
+
+

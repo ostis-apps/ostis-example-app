@@ -1,0 +1,38 @@
+nrel_decomposition
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[разложение*](* <-lang_ru;; *);
+	[decomposition*](* <-lang_en;; *);
+=> nrel_idtf:
+	[реакция разложения*](* <-lang_ru;; *);
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+// домены
+=>nrel_second_domain: chemical_substance;
+=>nrel_first_domain: chemical_substance;
+=>nrel_definitional_domain:chemical_substance;
+
+//определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(разложение*)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Реакции разложения — химические реакции, в которых из одного, более сложного вещества образуются два или более других, более простых веществ.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->nrel_chemical_reaction;;
+		->complex_substance;;
+		->elementary_substance;;
+	*);;
+*);;

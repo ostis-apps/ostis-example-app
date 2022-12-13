@@ -1,0 +1,8 @@
+subject_domain_of_alkadienes
+	=> nrel_main_idtf:
+	[Предметная область алкадиенов]
+	(* <- lang_ru;; *);
+	[Subject domain of alkadienes]
+	(* <- lang_en;; *);
+		
+<- subject_domain;;

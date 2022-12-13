@@ -1,0 +1,48 @@
+subject_domain_of_ecological_chemistry
+  => nrel_main_idtf:
+    [Предметная область экологической химии] (* <- lang_ru;;*);
+    [Subject domain of ecological chemistry] (* <- lang_en;; *);
+
+  <- subject_domain;
+  -> rrel_maximum_studied_object_class: ecological_chemistry;;
+
+ecological_chemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [экологическая химия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [ecological chemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (экологическая химия)] (* <- lang_ru;; *);
+      [Def. (ecological chemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Экологическая химия — наука о химических процессах, определяющих состояние и свойства окружающей среды — атмосферы, гидросферы и почв.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (экологическая химия)](* <- lang_ru;; *);
+      [Stat. (ecological chemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Экологическая химия изучает как естественные химические процессы, происходящие в окружающей среде, так и процесс её антропогенного загрязнения. Одна из задач экологической химии — разработка новых химических технологий, значительно снижающих отрицательное воздействие на окружающую среду, технологий утилизации и обезвреживания отходов, очистки воздуха и сточных вод, рекомендации (восстановления) почв.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (экологическая химия)](* <- lang_ru;; *);
+      [Pic. (ecological chemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/ecological_chemistry.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;

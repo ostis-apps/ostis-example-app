@@ -1,0 +1,99 @@
+elem_Bk
+=> nrel_main_idtf:
+	[berkelium atom](*<- lang_en;;*);
+	[атом берклия](*<- lang_ru;;*);
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+	Definition_of_berkelium
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Bk.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
+				
+			*);;
+	*);
+
+<- group_three;
+<- period_seven;
+=> nrel_periodic_number: ninety_seven;
+
+<- metal;
+
+<-oxidation_state_plus_three;oxidation_state_plus_four;
+<-valence_three;valence_four;
+
+=> nrel_atomic_radius: atomic_radius_of_Bk
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:297(*<- number;;*);;
+	*);;
+*);
+=> nrel_electronegativity: electronegativity_Bk
+			(* <- number;;
+			=> nrel_main_idtf:[1,3](*<-lang_ru;; <- lang_en;;*);;
+			*);
+
+
+=> nrel_atomic_mass: atomic_mass_of_Bk
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_aem: atomic_mass_Bk;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Bk
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (атом берклия, электронная конфигурация*)](*<- lang_ru;;*);;
+		=> nrel_main_idtf: 
+			[Stat. (erkelium atom, electronic configuration*)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Bk 5f<sup>9</sup>7s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	illustration_of_Bk
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис.(атом берклия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(berkelium atom)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Berkelium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+
+
+
+Definition_of_berkelium
+=> nrel_main_idtf:
+	[Опр.(атом берклия)]
+	(* <- lang_ru;;	*);
+	[Def.(berkelium atom)]
+	(* <- lang_en;;	*);;
+
+atomic_mass_Bk <- number;
+=> nrel_main_idtf:[247,0703](*<-lang_ru;; <- lang_en;;*);;

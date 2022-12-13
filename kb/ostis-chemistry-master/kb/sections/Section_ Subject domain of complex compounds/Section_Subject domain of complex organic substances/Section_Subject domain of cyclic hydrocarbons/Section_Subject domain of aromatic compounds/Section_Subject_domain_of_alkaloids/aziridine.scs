@@ -1,0 +1,108 @@
+aziridine<-sc_node_not_relation;;
+aziridine=> nrel_main_idtf:[азиридин](* <- lang_ru;; *);;
+aziridine=> nrel_main_idtf:[aziridine](* <- lang_en;; *);;
+aziridine=> nrel_idtf:[C2H5N](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: aziridine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Азиридин — <b><sc_element sys_idtf="true_alkaloids">истинный алкалоид</b></sc_element>, азотсодержащее <b><sc_element sys_idtf="heterocyclic_compound">гетероциклическое соединение </b></sc_element>, <b><sc_element sys_idtf="no_color">бесцветная </b></sc_element> <b><sc_element sys_idtf="liquid">жидкость</b></sc_element> с характерным <b><sc_element sys_idtf="smell">запахом </b></sc_element> <b><sc_element sys_idtf="amine">аминов.</b></sc_element>]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (азиридин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		true_alkaloids;
+		liquid;
+		no_color;
+		smell;
+		amine
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: aziridine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Азиридин используется при получении полиэтиленимина, аминоэтилировании <b><sc_element sys_idtf="polymer">полимеров.</b></sc_element>]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(азиридин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		polymer
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element:aziridine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/aziridin.png";;*);;
+	=> nrel_main_idtf: [Рисунок(азиридин,структурная формула)](*<- lang_ru;;*);;
+*);;
+
+
+liquid=>nrel_inclusion:aziridine;;
+toxin=>nrel_inclusion:aziridine;;
+true_alkaloids=>nrel_inclusion:aziridine;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> aziridine;;
+	=> nrel_measurement_in_gramms_per_mole: [43]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+boiling_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->aziridine;;
+	=> nrel_measurement_in_degrees_Celsius: 57
+	(*
+		<-number;;
+	*);;
+*);;
+
+destiny->...
+(* 
+	
+	<- sc_node_not_relation;;
+	-> aziridine;;
+	=> nrel_measurement_in_degrees_Celsius: [0,832]
+	(*
+		<-number;;
+	*);;
+*);;
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	-> aziridine;;
+	=> nrel_measurement_in_degrees_Celsius: [-74]
+	(*
+		<-number;;
+	*);;
+*);;
+flash_point->...
+(* 
+	
+	<- sc_node_not_relation;;
+	-> aziridine;;
+	=> nrel_measurement_in_degrees_Celsius: [-11]
+	(*
+		<-number;;
+	*);;
+*);;

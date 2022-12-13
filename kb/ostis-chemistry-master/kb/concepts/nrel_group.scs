@@ -1,0 +1,41 @@
+nrel_group
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[группа]
+	(* <- lang_ru;;	*);
+	[group]
+	(* <- lang_en;;	*);;
+
+nrel_group
+<- rrel_key_sc_element:
+	Definition_of_nrel_group
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/nrel_periodic_group.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				atom
+			};
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Номер группы определяется количеством электронов на внешней оболочке атома (валентных электронов) и, как правило, соответствует высшей валентности атома.] (* <-lang_ru;; *);;
+		*);;
+*);;
+	
+
+Definition_of_nrel_group
+=> nrel_main_idtf:
+	[Опр.(Группа)]
+	(* <- lang_ru;;	*);;
+

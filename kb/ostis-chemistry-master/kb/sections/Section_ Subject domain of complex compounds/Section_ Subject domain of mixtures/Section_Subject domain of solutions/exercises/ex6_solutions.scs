@@ -1,0 +1,24 @@
+ex6_solutions
+<- exercises_solutions;
+
+-> rrel_key_sc_element: nitric_acid; chemical_substance; gas; solution; chloride; subst_Ba; 
+
+=> nrel_next_exercise: ex7_solutions;
+
+=> nrel_main_idtf:
+	[Упражнение 6. Раздел. Предметная область растворов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 6. Section. Subject domain of solutions]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex6_solutions_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex6_solutions_en.html" (* <-lang_en;; *);;
+	*);;

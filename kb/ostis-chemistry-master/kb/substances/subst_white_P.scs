@@ -1,0 +1,134 @@
+subst_white_P
+<= nrel_inclusion: chemical_substance;
+<- sc_node_not_relation;
+=> nrel_main_idtf: [белый фосфор] (* <- lang_ru;; *);
+=> nrel_main_idtf: [white phosphorus] (* <- lang_en;; *);
+=> nrel_idtf: [P4](*<- lang_en;;*);
+
+<- rrel_key_sc_element: definition_of_subst_white_P
+(* 
+	=> nrel_main_idtf: [Опр.(Белый фосфор)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество белый фосфор</b> - белое ядовитое <sc_element sys_idtf = "chemical_substance">вещество</sc_element> (из-за примесей может иметь желтоватый оттенок). Белый фосфор имеет молекулярную кристаллическую решётку, формула молекулы белого фосфора - P4, причем атомы расположены в вершинах тетраэдра.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_substance;;
+	*);;
+*);
+
+<- solid;
+<- color_white;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(белый фосфор, твердое вещество)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_white_P.gif"
+		(*
+			=> nrel_format: format_gif;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [1,82] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [44,1] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [553] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [2,51] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [49,8] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [21,6] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_volume: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_cubic_cm_per_mole:...
+		(*
+			=> nrel_main_idtf: [17,0] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;
+
+atomic_multiplicity_four -> (subst_white_S -> elem_S);;

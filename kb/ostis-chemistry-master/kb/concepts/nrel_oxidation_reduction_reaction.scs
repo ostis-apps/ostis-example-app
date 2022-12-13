@@ -1,0 +1,40 @@
+nrel_oxidation_reduction_reaction
+<- sc_node_norole_relation;
+=>nrel_main_idtf:
+[окислительно-восстановительная реакция*](*<-lang_ru;;*);
+     [oxidation reduction reaction*](*<-lang_en;;*);;
+
+nrel_oxidation_reduction_reaction
+<- rrel_key_sc_element: ... 
+    (*
+       <- definition;;
+       =>nrel_main_idtf: [Опр.(окислительно-восстановительная реакция*)]  (* <- lang_ru;; *);;
+       <= nrel_sc_text_translation:... (*->rrel_example: [<b>Окисли́тельно-восстанови́тельные реа́кции</b>, также редокс (сокр. англ. redox, от reduction-oxidation — восстановление-окисление) — это встречно-параллельные <sc_element sys_idtf="nrel_reaction">химические реакции</sc_element>, протекающие с изменением <sc_element sys_idtf="oxidation_state">степеней окисления</sc_element> и не более 2 <sc_element sys_idtf="atom">атомов</sc_element>, входящих в состав реагирующих веществ (или ионов веществ), реализующимся путём перераспределения электронов между атомом-окислителем (акцептором) и атомом-восстановителем (донором).](* <- lang_ru;; =>nrel_format: format_html;; *);; *);;
+	<=nrel_using_constants:  nrel_reaction; oxidation_state; atom;;
+     *);
+
+<-rrel_key_sc_element: ... 
+     (*
+        ->rrel_key_sc_element: nrel_oxidation; nrel_reducing_reaction;;
+        <- statement;;
+		<-concept_assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_sets (*<-concept_subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (*->rrel_example: [В процессе окислительно-восстановительной реакции восстановитель отдаёт электроны, то есть окисляется; окислитель присоединяет электроны, то есть восстанавливается. Причём любая окислительно-восстановительная реакция представляет собой единство двух противоположных превращений — окисления и восстановления, происходящих одновременно и без отрыва одного от другого.](*<-lang_ru;; =>nrel_format: format_html;;*);; *);;
+        => nrel_main_idtf: [Утв. (окислительно-восстановительная реакция*, окисление*, восстановление*)] (* <- lang_ru;; *);;
+      *);
+
+<- binary_relation;
+<- non_oriented_relation;
+<- reflexive_relation;
+<- symmetric_relation;
+<- transitive_relation;
+
+=> nrel_first_domain: chemical_element;
+=> nrel_second_domain: chemical_element;
+=> nrel_definitional_domain:...
+(*
+    <= nrel_combination: ...
+    (* 
+        -> chemical_element;;
+    *);;
+*);;

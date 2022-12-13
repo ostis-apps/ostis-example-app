@@ -1,0 +1,3615 @@
+subject_domain_of_inorganic_bases
+    => nrel_main_idtf:[Предметная область неорганических оснований](* <- lang_ru;; *);
+	=> nrel_main_idtf:[Subject domain of inorganic bases](* <- lang_en;; *);
+<- subject_domain;
+-> rrel_maximum_studied_object_class: inorganic_base;
+-> rrel_not_maximum_studied_object_class:
+   alkali;
+   nrel_neutralization_reaction;
+   nrel_force_of_bases;
+   amphoteric_hydroxide;
+   Bronstead_base;
+   alkaline_earth_metal;
+   subst_NH4OH;
+   subst_AgOH;
+   subst_AlOH3;
+   subst_BaOH2;
+   subst_BeOH2;
+   subst_CaOH2;
+   subst_CdOH2;
+   subst_CrOH3;
+   subst_CsOH;
+   subst_CuOH;
+   subst_CuOH2;
+   subst_FeOH2;
+   subst_FeOH3;
+   subst_GaOH3;
+   subst_InOH3;
+   subst_KOH;
+   subst_LiOH;
+   subst_MgOH2;
+   subst_NaOH;
+   subst_NiOH;
+   subst_NiOH2;
+   subst_PbOH2;
+   subst_RbOH;
+   subst_SnOH2;
+   subst_SrOH2;
+   subst_TlOH;
+   subst_TlOH3;
+   subst_ZnOH2;;
+
+inorganic_base
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[неорганическое основание](* <-lang_ru;; *);
+	[inorganic base](* <-lang_en;; *);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(неорганическое основание)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://htmls/inorganic_base.html"
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->ammonia;;
+		->elem_H;;
+	*);;
+*);;
+
+subst_NH4OH
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[гидрат аммония](* <-lang_ru;; *);
+	[ammonia solution](* <-lang_en;; *);
+
+=> nrel_idtf:
+	[NH4OH](* <-lang_ru;; *);
+	[гидрат аммиака](* <-lang_ru;; *);
+
+=> nrel_applying: food_industry;agriculture;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(гидрат аммония)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Гидрат аммония - соединение, образующееся при взаимодействии аммиака с водой и диссоциирующее в воде с образованием катионов аммония и гидроксид-анионов (слабое основание).]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->nrel_compound;;
+		->nrel_interaction;;
+		->ammonia;;
+		->hydroxide_ion;;
+		->cation;;
+	*);;
+*);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (гидрат аммония)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/nh4oh.jpg"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(гидроксид аммония, химическая реакция*, водный раствор гидрата аммиака, резкий запах, раствор)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Реакция образования гидроксида аммония обратима, поэтому в водных растворах гидроксид аммония находится в равновесии с аммиаком, обусловливающим резкий запах таких растворов.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_reaction;;
+	-> rrel_key_sc_element: aqueous_solution_of_ammonia_hydrate;;
+	-> rrel_key_sc_element: strong_smell;;
+	-> rrel_key_sc_element: solution;;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(гидроксид аммония, водный раствор аммиака)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Водные растворы аммиака, в которых он существует преимущественно в форме гидроксида аммония, носят название аммиачная вода.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nucleoside;;
+	-> rrel_key_sc_element:  nucleotide;;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(пищевая промышленность, пищевая добавка Е527)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[В пищевой промышленности зарегистрирован в качестве пищевой добавки E527.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: food_industry;;
+	-> rrel_key_sc_element: food_additive_E527;;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(сельское хозяйство, удобрения)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[В сельском хозяйстве используется в качестве удобрения.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: agriculture;;
+	-> rrel_key_sc_element: fertilizer;;
+*);;
+
+amphoteric_hydroxide
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[амфотерный гидроксид](* <-lang_ru;; *);
+	[amphoteric hydroxide](* <-lang_en;; *);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(амфотерный гидроксид)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Амфотерные гидроксиды — неорганические соединения, гидроксиды амфотерных элементов, в зависимости от условий проявляющие свойства кислотных или осно́вных гидроксидов.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->inorganic_compound;;
+		->hydroxide;;
+		->amphoteric_element;;
+		->basic_hydroxide;;
+		->acid_hydroxide;;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(амфотерный гидроксид, твёрдое вещество, растворимость*, вода, электролит)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Все амфотерные гидроксиды являются твёрдыми веществами. Нерастворимы в воде, в основном являются слабыми электролитами.
+
+](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: electrolyte;;
+	-> rrel_key_sc_element: solid;;
+	-> rrel_key_sc_element: nrel_solubility;;
+	-> rrel_key_sc_element: water;;
+	-> rrel_key_sc_element: amphoteric_hydroxide;;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(амфотерный гидроксид, нагревание*, амфотерный оксид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[При нагревании амфотерные гидроксиды разлагаются с образованием соответствующего амфотерного оксида.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: amphoteric_oxide;;
+	-> rrel_key_sc_element: nrel_heating;;	
+	-> rrel_key_sc_element: amphoteric_hydroxide;;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(амфотерный гидроксид, взаимодействие*, соль, кислота, амфотерный элемент, катион)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[При взаимодействии с кислотами амфотерные гидроксиды образуют соли с амфотерным элементом в катионе](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: amphoteric_oxide;;
+	-> rrel_key_sc_element: nrel_interaction;;	
+	-> rrel_key_sc_element: salt;;
+	-> rrel_key_sc_element: acid;;
+	-> rrel_key_sc_element: amphoteric_element;;
+	-> rrel_key_sc_element: cation;;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(амфотерный гидроксид, взаимодействие*, соль, кислота, амфотерный элемент, анион)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[При взаимодействии со щёлочью амфотерные гидроксиды образуют соли с амфотерным элементом в анионе.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: amphoteric_oxide;;
+	-> rrel_key_sc_element: nrel_interaction;;	
+	-> rrel_key_sc_element: salt;;
+	-> rrel_key_sc_element: acid;;
+	-> rrel_key_sc_element: amphoteric_element;;
+	-> rrel_key_sc_element: anion;;
+*);;
+
+Bronsted_base
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[основание Брёнстеда](* <-lang_ru;; *);
+	[Bronsted base](* <-lang_en;; *);
+
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(основание Брёнстеда)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Основанием Брёнстеда называется соединение или ион, способный принимать (отщеплять) протон от кислоты.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->chemical_compound;;
+		->ion;;
+		->proton;;
+		->acid;;
+	*);;
+*);;
+
+nrel_neutralization_reaction
+<- sc_node_norole_relation;
+[реакция нейтрализации*](* <-lang_ru;; *);
+	[neutralization reaction*](* <-lang_en;; *);
+<- oriented_relation;
+<- quasybinary_relation;
+=>nrel_second_domain: chemical_substance;
+=>nrel_first_domain: chemical_substance;
+=>nrel_definitional_domain:chemical_substance;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(реакция нейтрализации*)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Нейтрализация — взаимодействие кислоты и основания (щелочи) между собой с образованием соли и слабо диссоциирующего вещества (воды).]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->interaction;;
+		->acid;;
+		->base;;
+		->alkali;;
+		->salt;;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(реакция нейтрализации*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[В большинстве своем, реакции нейтрализации экзотермичны.](* <-lang_ru;; *);;
+	*);;
+*);;
+
+nrel_force_of_bases
+<- sc_node_norole_relation;
+[сила основания*](* <-lang_ru;; *);
+	[force of bases*](* <-lang_en;; *);
+<- oriented_relation;
+<- binary_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+=>nrel_second_domain: number;
+=>nrel_first_domain: base;
+=>nrel_definitional_domain:...
+(*
+	<=nrel_combination:...
+	(*
+		->number; base;;
+	*);;
+*);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(сила основания*)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Сила оснований - способность оснований отщеплять протон от кислот.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->proton;;
+		->acid;;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(сила основания*, константа равновесия, кислота, вода, протон)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Силу основания принято определять при помощи константы основности Kb — константы равновесия реакции основания с кислотой сравнения, в качестве которой выбрана вода. Чем выше константа основности, тем выше сила основания и тем больше его способность отщеплять протон.](* <-lang_ru;; *);;
+	*);;
+*);;
+
+alkaline_earth_metal
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[щелочноземельный металл](* <-lang_ru;; *);
+	[alkaline earth metal](* <-lang_en;; *);
+-> elem_Be;elem_Ca;Sr;elem_Ba;
+<- solid;
+<- color_gray;
+<- oxidation_state_plus_two;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(щелочноземельный металл)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Щёлочноземельные металлы — химические элементы, образующие 2-ую группу периодической таблицы элементов Д. И. Менделеева.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->chemical_element;;
+		->group_two;;
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(щелочноземельный металл, химическая активность*, порядковый номер*, нахождение в природе*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Щелочноземельные металлы обладают высокой химической активностью и в природе в свободном состоянии не встречаются. Активность их возрастает при увеличении порядкового номера](* <-lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(щелочноземельный металл, кальций, нахождение в природе*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Самым распространённым щёлочноземельным металлом является кальций, содержание которого равно относительно массы земной коры оценивается по-разному: от 2 % до 13,3 %.](* <-lang_ru;; *);;
+	*);;
+*);;
+
+subst_AgOH
+	=>nrel_main_idtf:
+	[гидроксид серебра]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[silver hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[гидроксид аргентума]
+	(* <- lang_ru;; *);
+	[AgOH]
+	(*<-lang_en;;*);
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_silver_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид серебра (AgOH)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид серебра)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:amphoteric_hydroxide;
+///////////
+	//<-solid;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_AgOH ->elem_Ag);;
+	atomic_multiplicity_one->(subst_AgOH ->elem_O);;
+	atomic_multiplicity_one->(subst_AgOH ->elem_H);;
+subst_AgOH
+<- rrel_key_sc_element: interaction_subst_AgOH_and_acid_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид аргентума, взаимодействие*, соль, вода,кислотный оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид аргентума взаимодействует с кислотными оксидами с образованием соли и воды.] (*<- lang_ru;;*);;
+	*);;
+*);;
+interaction_subst_AgOH_and_acid_oxide
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid_oxide; 
+->rrel_key_sc_element:salt;
+->rrel_key_sc_element:water;;
+
+subst_AlOH3
+	=>nrel_main_idtf:
+	[гидроксид алюминия]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[aluminum hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[AlOH3]
+	(*<-lang_en;;*);
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_aluminum_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид алюминия (Al(OH)<sub>3</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов/sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид алюминия)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->basia;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:amphoteric_hydroxide;
+///////////
+	<-solid;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_AlOH3 ->elem_Al);;
+	atomic_multiplicity_three->(subst_AlOH3 ->elem_O);;
+	atomic_multiplicity_three->(subst_AlOH3 ->elem_H);;
+subst_AlOH3
+//////////
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [300] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [2,42] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_AlOH3_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид алюминия, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид алюминия взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: 
+	decomposition_subst_AlOH3
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид алюминия, разложение*, оксид алюминия, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид алюминия разлогается на оксид алюминия и воду(при 575 градусах Цельсия).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид алюминия)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_AlOH3.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+decomposition_subst_AlOH3 -> rrel_key_sc_element:nrel_decomposition;;
+decomposition_subst_AlOH3 ->rrel_key_sc_element:	aluminum_oxide;;
+decomposition_subst_AlOH3 ->rrel_key_sc_element:	water;;
+
+interaction_subst_AlOH3_and_acid->rrel_key_sc_element: nrel_interaction;;
+interaction_subst_AlOH3_and_acid->rrel_key_sc_element:acid;;
+interaction_subst_AlOH3_and_acid->rrel_key_sc_element:	salt;;
+interaction_subst_AlOH3_and_acid->rrel_key_sc_element:water;;
+
+subst_BaOH2
+	=>nrel_main_idtf:
+	[гидроксид бария]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[barium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[едкий барий]
+	(* <- lang_ru;; *);
+	[BaOH2]
+	(*<-lang_en;;*);
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_barium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид бария (Ba(OH)<sub>2</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид бария)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:basic_hydroxide;
+///////////
+	<-solid;
+	<-no_color;;
+	atomic_multiplicity_one->(subst_BaOH2 ->elem_Ba);;
+	atomic_multiplicity_three->(subst_BaOH2 ->elem_O);;
+	atomic_multiplicity_three->(subst_BaOH2 ->elem_H);;
+subst_BaOH2
+//////////
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [408] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+	-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [780] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+//
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [4,5] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:interaction_subst_BaOH2_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид бария, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид бария взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_subst_BaOH2_and_acid_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид бария, взаимодействие*, соль, вода,кислотный оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид бария взаимодействует с кислотными оксидами с образованием соли и воды.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид бария)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_BaOH2.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+interaction_subst_BaOH2_and_acid
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid;
+->rrel_key_sc_element: salt;
+->rrel_key_sc_element: water;;
+
+interaction_subst_BaOH2_and_acid_oxide
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid_oxide;
+->rrel_key_sc_element: salt; 
+->rrel_key_sc_element:water;;
+
+subst_BeOH2
+	=>nrel_main_idtf:
+	[гидроксид бериллия]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[beryllium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[BeOH2]
+	(*<-lang_en;;*);
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_beryllium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид бериллия (Be(OH)<sub>2</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)</sc_element>.
+				</p>]
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид бериллия)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:basic_hydroxide;
+///////////
+	<-solid;//<- gel;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_BeOH2 ->elem_Be);;
+	atomic_multiplicity_two->(subst_BeOH2 ->elem_O);;
+	atomic_multiplicity_two->(subst_BeOH2 ->elem_H);;
+subst_BeOH2
+//////////
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [138] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [1,92] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_BeOH2_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид бериллия, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид калия взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_subst_BeOH2_and_alkali
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид бериллия, взаимодействие*, соль,щелочь)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид калия взаимодействует с щелочами с образованием соли.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: decomposition_subst_BeOH2
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид бериллия, разложение*, оксид бериллия, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид бериллия разлогается на оксид бериллия и воду(при 138 градусах Цельсия).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид бериллия)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_BeOH2.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+decomposition_subst_BeOH2 -> rrel_key_sc_element:nrel_decomposition; beryllium_oxide; water;;
+interaction_subst_BeOH2_and_acid->rrel_key_sc_element:nrel_interaction;acid; salt; water;;
+interaction_subst_BeOH2_and_alkali->rrel_key_sc_element: nrel_interaction; alkali; salt;water;;
+
+subst_CaOH2
+	=>nrel_main_idtf:
+	[гидроксид кальция]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[calcium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[CaOH2]
+	(*<-lang_en;;*);
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_calcium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид кальция (Ca(OH)<sub>2</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид кальция)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	 <=nrel_inclusion:basic_hydroxide;
+///////////
+	<-solid;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_CaOH2 ->elem_Tl);;
+	atomic_multiplicity_two->(subst_CaOH2 ->elem_O);;
+	atomic_multiplicity_two->(subst_CaOH2 ->elem_H);;
+subst_CaOH2
+//////////
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [1076] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [512] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [2,211] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_CaOH2_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид кальция, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид кальция взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_subst_CaOH2_and_salt
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид кальция, взаимодействие*, соль, гидроксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид кальция взаимодействует с солями с образованием соли и гидроксида.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:interaction_subst_CaOH2_and_CO
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид кальция, взаимодействие*, карбонат кальция, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид кальция взаимодействует с угарным газом с образованием карбоната кальция и водорода(при 400 градусах Цельсия).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид кальция)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_CaOH2.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+interaction_subst_CaOH2_and_acid->rrel_key_sc_element:nrel_interaction;acid; salt; water;;
+interaction_subst_CaOH2_and_salt->rrel_key_sc_element:nrel_interaction; salt; hydroxide;;
+interaction_subst_CaOH2_and_carbon_monoxide->rrel_key_sc_element:nrel_interaction; carbon_monoxide; hydrogen;;
+
+subst_CdOH2
+	=>nrel_main_idtf:
+	[гидроксид кадмия]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[cadmium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[CdOH2]
+	(*<-lang_en;;*);
+
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_cadmium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид кадмия (Cd(OH)2)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид кадмия)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->hydroxides;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:amphoteric_hydroxide;
+///////////
+	<-solid;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_CdOH2 ->elem_Cd);;
+	atomic_multiplicity_two->(subst_CdOH2 ->elem_O);;
+	atomic_multiplicity_two->(subst_CdOH2 ->elem_H);;
+subst_CdOH2
+//////////
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [130] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+/*=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [300] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);*/
+
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [300] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+//
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [4,79] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_CdOH2_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид кадмия, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид кадмия взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: decomposition_subst_CdOH2
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид кадмия, разложение*, оксид кадмия, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид кадмия разлогается на оксид кадмия и воду(при 300 градусах Цельсия).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид кадмия)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_CdOH2.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+decomposition_subst_CdOH2 
+-> rrel_key_sc_element:nrel_decomposition;
+->rrel_key_sc_element: cadmium_oxide;
+->rrel_key_sc_element: water;;
+interaction_subst_CdOH2_and_acid
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid;
+->rrel_key_sc_element: salt;
+->rrel_key_sc_element: water;;
+
+subst_CrOH3
+	=>nrel_main_idtf:
+	[гидроксид хрома(III)]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[chromium hydroxide(III)]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[CrOH3]
+	(*<-lang_en;;*);
+
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_chromium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид хрома (Cr(OH)<sub>3</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид хрома)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->hydroxides;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:amphoteric_hydroxide;
+///////////
+	<-solid;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_CrOH3 ->elem_Cr);;
+	atomic_multiplicity_three->(subst_CrOH3 ->elem_O);;
+	atomic_multiplicity_three->(subst_CrOH3 ->elem_H);;
+subst_CrOH3
+//////////
+
+/*=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [150] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);*/
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [100] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+//
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [3,11] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_CrOH3_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид хрома, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид хрома взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: decomposition_subst_CrOH3
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид хрома, разложение*, оксид хрома(3), вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид хрома разлогается на оксид хрома(III) и воду(при 100 градусах Цельсия).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид хрома)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_CrOH3.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+decomposition_subst_CrOH3 -> rrel_key_sc_element:nrel_decomposition; chromium_oxide_3; water;;
+interaction_subst_CrOH3_and_acid->rrel_key_sc_element:nrel_interaction;acid; salt; water;;
+
+subst_CsOH
+	=>nrel_main_idtf:
+	[гидроксид цезия]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[cesium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[CsOH]
+	(*<-lang_en;;*);
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_cesium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид цезия (CsOH)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид цезия)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:basic_hydroxide;
+///////////
+	<- solid;
+	<-no_color;;
+	atomic_multiplicity_one->(subst_CsOH ->elem_Cs);;
+	atomic_multiplicity_one->(subst_CsOH ->elem_O);;
+	atomic_multiplicity_one->(subst_CsOH ->elem_H);;
+subst_CsOH
+//////////
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [342] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [3,68] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+/////////////////////////////////////////////////////////////////////!
+<- rrel_key_sc_element:
+ interaction_subst_CsOH_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид цезия, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид цезия взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_subst_CsOH_and_acid_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид цезия, взаимодействие*, соль, вода,кислотный оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид цезия взаимодействует с кислотными оксидами с образованием соли и воды.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_subst_CsOH_and_metal
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид цезия, взаимодействие*, амфотерный металл, комплексная соль, водород)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид цезия взаимодействует с некоторыми амфотерными металлами в растворе с образованием комплексной соли и водорода.] (*<- lang_ru;;*);;
+	*);;
+*);;
+interaction_subst_CsOH_and_acid->rrel_key_sc_element:nrel_interaction;acid; salt; water;;
+interaction_subst_CsOH_and_acid_oxide->rrel_key_sc_element: nrel_interaction; acid_oxide; salt;water;;
+interaction_subst_CsOH_and_metal->rrel_key_sc_element:nrel_interaction;amphoteric_metal; complex_salt; hydrogen;;
+subst_CuOH
+	=>nrel_main_idtf:
+	[гидроксид меди(I)]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[cuprum hydroxide(I)]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[гидроксид купрума(I)]
+	(* <- lang_ru;; *);
+	=>nrel_idtf:
+	[CuOH]
+	(*<-lang_en;;*);
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_cuprum_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид меди(I) (Cu(OH))</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид меди(I))](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:amphoteric_hydroxide;
+///////////
+	<-solid;
+	<-color_yellow;;
+	atomic_multiplicity_one->(subst_CuOH ->elem_Cu);;
+	atomic_multiplicity_one->(subst_CuOH ->elem_O);;
+	atomic_multiplicity_one->(subst_CuOH ->elem_H);;
+subst_CuOH
+//////////
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [100] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [3,37] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+
+<- rrel_key_sc_element: decomposition_subst_CuOH
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид меди(I), разложение*, меди(I), вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид меди(I) разлогается на оксид меди(I) и воду(при 100 градусах Цельсия).] (*<- lang_ru;;*);;
+	*);;
+*);;
+subst_CuOH2
+	=>nrel_main_idtf:
+	[гидроксид меди(II)]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[cuprum hydroxide(II)]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[гидроксид купрума(II)]
+	(* <- lang_ru;; *);
+	=>nrel_idtf:
+	[CuOH2]
+	(*<-lang_en;;*);
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_cuprum_hydroxide2
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид меди(II) (Cu(OH)<sub>2</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид меди(II))](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:amphoteric_hydroxide;
+///////////
+	<-solid;
+	<-color_yellow;;
+	atomic_multiplicity_one->(subst_CuOH2 ->elem_Cu);;
+	atomic_multiplicity_two->(subst_CuOH2 ->elem_O);;
+	atomic_multiplicity_two->(subst_CuOH2 ->elem_H);;
+subst_CuOH2
+//////////
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [<70] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [3,37] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_CuOH2_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид меди(II), взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид меди(II) взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: decomposition_subst_CuOH2
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид меди(II), разложение*, оксид меди(II), вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид меди(II) разлогается на оксид меди(II) и воду(при 100 градусах Цельсия).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:
+ interaction_subst_CuOH2_and_oxygen
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид меди(II), кислород, взаимодействие*, оксид меди(III), вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид меди(II) взаимодействует с кислородом с образованием оксида меди(III) и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);;
+	subst_FeOH2
+	=>nrel_main_idtf:
+	[гидроксид железа(II)]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[iron hydroxide(II)]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[гидроксид ферума(II)]
+	(* <- lang_ru;; *);
+	=>nrel_idtf:
+	[FeOH2]
+	(*<-lang_en;;*);
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_iron_hydroxide2
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид железа(II) (Fe(OH)2)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element> .
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид железа(II))](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:amphoteric_hydroxide;
+///////////
+	<- solid;
+	<-color_reddish_brown;;
+	atomic_multiplicity_one->(subst_FeOH2 ->elem_Fe);;
+	atomic_multiplicity_two->(subst_FeOH2 ->elem_O);;
+	atomic_multiplicity_two->(subst_FeOH2 ->elem_H);;
+subst_FeOH2
+//////////
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+	-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [150-200] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [3,4] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element: decomposition_subst_FeOH2
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид железа(II), разложение*, оксид железа(II), вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид железа(II) разлогается на оксид таллия(III) и воду(при 500 градусах Цельсия).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:
+ interaction_subst_FeOH2_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид железа(II), взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид железа(II) взаимодействует с кислотами c образованием соли и воды.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+///////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (раствор гидроксида железа(II))] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_FeOH2.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+decomposition_subst_FeOH2 
+-> rrel_key_sc_element:nrel_decomposition;
+->rrel_key_sc_element: iron_oxide_2;
+->rrel_key_sc_element: water;;
+
+interaction_subst_FeOH2_and_acid
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid; 
+->rrel_key_sc_element:salt; 
+->rrel_key_sc_element:water;;
+subst_FeOH3
+	=>nrel_main_idtf:
+	[гидроксид железа(III)]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[iron hydroxide(III)]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[гидроксид ферума(III)]
+	(* <- lang_ru;; *);
+	=>nrel_idtf:
+	[FeOH3]
+	(*<-lang_en;;*);
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_iron_hydroxide3
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид железа(III)(Fe(OH)3)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element> .
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид железа(III))](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:amphoteric_hydroxide;
+///////////
+	<- solid;
+	<-color_reddish_brown;;
+	atomic_multiplicity_one->(subst_FeOH3 ->elem_Fe);;
+	atomic_multiplicity_three->(subst_FeOH3 ->elem_O);;
+	atomic_multiplicity_three->(subst_FeOH3 ->elem_H);;
+subst_FeOH3
+//////////
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+	-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [500] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [3,6] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element: decomposition_subst_FeOH3
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид железа(III), разложение*, оксид железа(II), вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид железа(III) разлогается на оксид железа(II) и воду(при 150-200 градусах Цельсия).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:
+ interaction_subst_FeOH3_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид железа(III), взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид железа(III) взаимодействует с кислотами c образованием соли и воды.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+///////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (раствор гидроксида железа(III))] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_FeOH3.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+decomposition_subst_FeOH3 
+				-> rrel_key_sc_element:nrel_decomposition; 
+				->rrel_key_sc_element: iron_oxide_3;
+				->rrel_key_sc_element: water;;
+				
+interaction_subst_FeOH3_and_acid
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid;
+->rrel_key_sc_element:salt;
+->rrel_key_sc_element:water;;
+subst_GaOH3
+	=>nrel_main_idtf:
+	[гидроксид галлия]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[gallium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[GaOH3]
+	(*<-lang_en;;*);
+
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_gallium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид галлия (Ga(OH)<sub>3</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
+				</p>]
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид галлия)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->hydroxides;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:amphoteric_hydroxide;
+///////////
+	<-solid;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_GaOH3 ->elem_Ga);;
+	atomic_multiplicity_three->(subst_GaOH3 ->elem_O);;
+	atomic_multiplicity_three->(subst_GaOH3 ->elem_H);;
+subst_GaOH3
+//////////
+
+
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [400] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_GaOH3_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид галлия, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид галлия взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_subst_GaOH3_and_acid_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид галлия, взаимодействие*, соль, вода,кислотный оксид)](*<- lang_ru;;*);;//
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид галлия взаимодействует с кислотными оксидами с образованием соли и воды.] (*<- lang_ru;;*);;
+	*);;
+*);
+<- rrel_key_sc_element: decomposition_subst_GaOH3
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид галлия, разложение*, оксид стронция, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид галлия ступенчато разлогается при нагревании до 400 градусов Цельсия сначало на GaO(OH) затем на Ga2O3*H2O и затем при нагревании от 540-600 градусов Цельсия на Ga2O3.] (*<- lang_ru;;*);;
+	*);;
+*);;
+
+
+//////////////////////////////////////////////////////////////
+decomposition_subst_GaOH3 
+-> rrel_key_sc_element:nrel_decomposition;
+->rrel_key_sc_element: gallium_oxide;
+->rrel_key_sc_element: water;;
+
+interaction_subst_GaOH3_and_acid
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid; 
+->rrel_key_sc_element:salt; 
+->rrel_key_sc_element:water;;
+
+interaction_subst_GaOH3_and_acid_oxide
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid_oxide; 
+->rrel_key_sc_element:salt; 
+->rrel_key_sc_element:water;;
+
+subst_InOH3
+	=>nrel_main_idtf:
+	[гидроксид индия]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[indium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[InOH3]
+	(*<-lang_en;;*);
+
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_indium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид индия (In(OH)<sub>3</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид индия)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->hydroxides;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	 <=nrel_inclusion:amphoteric_hydroxide;
+///////////
+	<-solid;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_InOH3 ->elem_In);;
+	atomic_multiplicity_three->(subst_InOH3 ->elem_O);;
+	atomic_multiplicity_three->(subst_InOH3 ->elem_H);;
+subst_InOH3
+//////////
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [150] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [340] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+//
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [4,33] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_InOH3_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид индия, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид индия взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: decomposition_subst_InOH3
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид индия, разложение*, оксид индия, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид индия разлогается на оксид индия и воду(при 340 градусах Цельсия).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид индия)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_InOH3.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+decomposition_subst_InOH3 
+-> rrel_key_sc_element:nrel_decomposition;
+->rrel_key_sc_element: indium_oxide;
+->rrel_key_sc_element: water;;
+interaction_subst_InOH3_and_acid
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid;
+->rrel_key_sc_element: salt;
+->rrel_key_sc_element: water;;
+
+subst_KOH
+	=>nrel_main_idtf:
+	[гидроксид калия]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[potassium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[калиевая щёлочь]
+	(* <- lang_ru;; *);
+	[гидроокись калия]
+	(* <- lang_ru;; *);
+	[каустический поташ]
+	(* <- lang_ru;; *);
+	=>nrel_idtf:
+	[KOH]
+	(*<-lang_en;;*);
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_potassium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p><b>Гидроксид калия(KOH)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)</sc_element>.</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид калия)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:basic_hydroxide;
+///////////
+	<- solid;
+	<-no_color;;
+	atomic_multiplicity_one->(subst_KOH ->elem_K);;
+	atomic_multiplicity_one->(subst_KOH ->elem_O);;
+	atomic_multiplicity_one->(subst_KOH ->elem_H);;
+subst_KOH
+//////////
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [393] (* <- lang_en;;*);;//380−406
+			<- number;;
+		*);;
+	*);;
+*);
+//////////!
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [1327] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [2,08] (* <- lang_en;;*);;//2,044−2,12
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_KOH_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид калия, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид калия взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_subst_KOH_and_acid_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид калия, взаимодействие*, соль, вода,кислотный оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид калия взаимодействует с кислотными оксидами с образованием соли и воды.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_subst_KOH_and_non_transition_metals
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид калия, взаимодействие*, непереходный металл, комплексная соль, водород)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид калия взаимодействует с некоторыми непереходными металлами в растворе с образованием комплексной соли и водорода.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид калия)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_KOH.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+interaction_subst_KOH_and_acid->rrel_key_sc_element:nrel_interaction;acid; salt; water;;
+interaction_subst_KOH_and_acid_oxide->rrel_key_sc_element: nrel_interaction; acid_oxide; salt;water;;
+interaction_subst_KOH_and_non_transition_metals->rrel_key_sc_element:nrel_interaction;non_transition_metals; complex_salt; hydrogen;;
+
+subst_LiOH
+	=>nrel_main_idtf:
+	[гидроксид лития]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[lithium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[LiOH]
+	(*<-lang_en;;*);
+
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_lithium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид лития(LiOH)</b>  -   <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)</sc_element>.
+				</p>]
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр.(гидроксид лития)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:basic_hydroxide;
+///////////
+	<- solid;
+	<-no_color;;
+	atomic_multiplicity_one->(subst_LiOH ->elem_Li);;
+	atomic_multiplicity_one->(subst_LiOH ->elem_O);;
+	atomic_multiplicity_one->(subst_LiOH ->elem_H);;
+subst_LiOH
+//////////
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [462] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+//////////
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [925] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [930] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [1,46 ] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_LiOH_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид лития, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид лития взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_subst_LiOH_and_acid_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид лития, взаимодействие*, соль, вода,кислотный оксид)](*<- lang_ru;;*);;//
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид лития взаимодействует с кислотными оксидами с образованием соли и воды.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: decomposition_subst_LiOH
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид литя, разложение*, оксид лития, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид литя разлогается на оксид лития и воду(при 925 градусах Цельсия).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(гидроксид лития)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_LiOH.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+/////////////////////////////
+decomposition_subst_LiOH -> rrel_key_sc_element:nrel_decomposition; lithium_oxide; water;;
+interaction_subst_LiOH_and_acid->rrel_key_sc_element:nrel_interaction;acid; salt; water;;
+interaction_subst_LiOH_and_acid_oxide->rrel_key_sc_element: nrel_interaction; acid_oxide; salt;water;;
+
+subst_MgOH2
+	=>nrel_main_idtf:
+	[гидроксид магния]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[magnesium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[MgOH2]
+	(*<-lang_en;;*);
+
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_magnesium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид магния (Mg(OH)<sub>2</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид магния)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:basic_hydroxide;
+///////////
+	<-solid;;
+	//<-white_color;
+	atomic_multiplicity_one->(subst_MgOH2 ->elem_Mg);;
+	atomic_multiplicity_two->(subst_MgOH2 ->elem_O);;
+	atomic_multiplicity_two->(subst_MgOH2 ->elem_H);;
+subst_MgOH2
+//////////
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [350] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+//
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [2,211] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_MgOH2_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид магния, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид магния взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_subst_MgOH2_and_acid_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид магния, взаимодействие*, соль, вода,кислотный оксид)](*<- lang_ru;;*);;//
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид магния взаимодействует с кислотными оксидами с образованием соли и воды.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид магния)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_MgOH2.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+interaction_subst_MgOH2_and_acid
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid; 
+->rrel_key_sc_element:salt;
+->rrel_key_sc_element: water;;
+
+interaction_subst_MgOH2_and_acid_oxide
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid_oxide; 
+->rrel_key_sc_element:salt;
+->rrel_key_sc_element: water;;
+
+subst_NaOH
+	=>nrel_main_idtf:
+	[гидроксид натрия]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[sodium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[едкий натр]
+	(* <- lang_ru;; *);
+	[каустическая сода]
+	(* <- lang_ru;; *);
+	=>nrel_idtf:
+	[NaOH]
+	(*<-lang_en;;*);
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_sodium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид натрия (NaOH)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)</sc_element> .
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид натрия)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:basic_hydroxide;
+///////////
+	<- solid;
+	<-color_white;;
+	atomic_multiplicity_one->(subst_NaOH ->elem_Tl);;
+	atomic_multiplicity_one->(subst_NaOH ->elem_O);;
+	atomic_multiplicity_one->(subst_NaOH ->elem_H);;
+subst_NaOH
+//////////
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+	-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [1050] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+//////////
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+	-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [3197] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [2,13] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_NaOH_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид натрия, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид натрия взаимодействует с кислотами c образованием соли и воды.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_subst_NaOH_and_amphoteric_hydroxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид натрия, взаимодействие*, амфотерный гидроксид, комплексный гидрокссид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид натрия взаимодействует с амфотерными гидроксидами c образованием комплексного гидроксида.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_subst_NaOH_and_salt
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид натрия, взаимодействие*, соль, основание)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид натрия взаимодействует с солями c образованием соли и нерастворимого в воде основания.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_subst_NaOH_and_amphoteric_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид натрия, взаимодействие*, амфотерный оксид, комплексный гидроксид)](*<- lang_ru;;*);;//
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид калия взаимодействует с амфотерными оксидами c образованием комплексного гидроксида.] (*<- lang_ru;;*);;
+	*);;
+*);
+///////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид натрия в гранулах)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_NaOH.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;//amphoteric_oxide
+interaction_subst_NaOH_and_acid->rrel_key_sc_element:nrel_interaction;acid; salt; water;;
+interaction_subst_NaOH_and_amphoteric_hydroxide->rrel_key_sc_element: nrel_interaction; amphoteric_hydroxide; complex_hydroxide;;
+interaction_subst_NaOH_and_salt->rrel_key_sc_element:nrel_interaction; salt; hydroxides;;
+interaction_subst_NaOH_and_amphoteric_oxide->rrel_key_sc_element:amphoteric_oxide;nrel_interaction; complex_hydroxide;;
+
+subst_NiOH
+	=>nrel_main_idtf:
+	[гидроксид никеля(I)]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[nickel hydroxide(I)]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[NiOH]
+	(*<-lang_en;;*);
+
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_nickel_hydroxide_1
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид никеля(I) (Ni(OH))</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид никеля(I))](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->hydroxides;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:amphoteric_hydroxide;
+///////////
+	<-solid;
+	<-dark_blue_color;;
+	atomic_multiplicity_one ->(subst_NiOH ->elem_Ni);;
+	atomic_multiplicity_one ->(subst_NiOH ->elem_O);;
+	atomic_multiplicity_one ->(subst_NiOH ->elem_H);;
+subst_NiOH
+<- rrel_key_sc_element:
+ interaction_subst_NiOH_and_sulfide_alkali_metals
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид никеля(I), взаимодействие*, сульфид, щелочной металл, основание, сульфид никеля(I))](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид никеля(I) взаимодействует с сульфидами щелочных металлов с образованием сульфида никеля (I) и основания .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид никеля(I))] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_NiOH.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+interaction_subst_NiOH_and_sulfide_alkali_metals->rrel_key_sc_element:nrel_interaction;sulfide; alkale_metal; hydroxides;nickel_sulphide_1;;
+
+subst_NiOH2
+	=>nrel_main_idtf:
+	[гидроксид никеля(II)]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[nickel hydroxide(II)]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[NiOH2]
+	(*<-lang_en;;*);
+
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_nickel_hydroxide_2
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид никеля(II) (Ni(OH)<sub>2</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид никеля(II))](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->hydroxides;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:amphoteric_hydroxide;
+///////////
+	<-solid;
+	<-color_light_green;;
+	atomic_multiplicity_one->(subst_NiOH2 ->elem_Ni);;
+	atomic_multiplicity_two->(subst_NiOH2 ->elem_O);;
+	atomic_multiplicity_two->(subst_NiOH2 ->elem_H);;
+subst_NiOH2
+//////////
+
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [230-360] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+//
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [3,65] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_NiOH2_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид никеля(II), взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид никеля(II) взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: decomposition_subst_NiOH2
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид никеля(II), разложение*, оксид никеля(II), вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид никеля(II) разлогается на оксид никеля(II) и воду(при 230-360 градусах Цельсия).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид никеля(II))] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_NiOH2.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+decomposition_subst_NiOH2 -> rrel_key_sc_element:nrel_decomposition; nickel_oxide_2; water;;
+interaction_subst_NiOH2_and_acid->rrel_key_sc_element:nrel_interaction;acid; salt; water;;
+
+subst_PbOH2
+	=>nrel_main_idtf:
+	[гидроксид свинца]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[lead hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[PbOH2]
+	(*<-lang_en;;*);
+
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_lead_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид свинца (Pb(OH)<sub>2</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид свинца)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->hydroxides;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:amphoteric_hydroxide;
+///////////
+	<-solid;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_PbOH2 ->elem_Pb);;
+	atomic_multiplicity_two->(subst_PbOH2 ->elem_O);;
+	atomic_multiplicity_two->(subst_PbOH2 ->elem_H);;
+subst_PbOH2
+//////////
+
+/*=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [145] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);*/
+
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [100-145] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+//
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [7,41] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_PbOH2_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид свинца, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид свинца взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: decomposition_subst_PbOH2
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид свинца, разложение*, оксид свинца, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид свинца разлогается на оксид свинца и воду(при 100-150 градусах Цельсия).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид свинца)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_PbOH2.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+decomposition_subst_PbOH2 -> rrel_key_sc_element:nrel_decomposition; lead_oxide; water;;
+interaction_subst_PbOH2_and_acid->rrel_key_sc_element:nrel_interaction;acid; salt; water;;
+
+subst_RbOH
+	=>nrel_main_idtf:
+	[гидроксид рубидия]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[rubidium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[RbOH]
+	(*<-lang_en;;*);
+
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_rubidium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид рубидия (RbOH)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид рубидия)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:basic_hydroxide;
+///////////
+	<- solid;
+	<-no_color;;
+	atomic_multiplicity_one->(subst_RbOH ->elem_Rb);;
+	atomic_multiplicity_three->(subst_RbOH ->elem_O);;
+	atomic_multiplicity_three->(subst_RbOH ->elem_H);;
+subst_RbOH
+//////////
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [308] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+//////////
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [1390] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [3,2] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_RbOH_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид рубидия, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид рубидия взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_subst_PbOH_and_acid_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид рубидия, взаимодействие*, соль, вода,кислотный оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид рубидия взаимодействует с кислотными оксидами с образованием соли и воды.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_subst_RbOH_and_metal
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид рубидия, взаимодействие*, амфотерный металл, комплексная соль, водород)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид рубидия взаимодействует с некоторыми амфотерными металлами в растворе с образованием комплексной соли и водорода.] (*<- lang_ru;;*);;
+	*);;
+*);
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид рубидия)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_RbOH.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+interaction_subst_RbOH_and_acid->rrel_key_sc_element:nrel_interaction;acid; salt; water;;
+interaction_subst_RbOH_and_acid_oxide->rrel_key_sc_element: nrel_interaction; acid_oxide; salt;water;;
+interaction_subst_RbOH_and_metal->rrel_key_sc_element:nrel_interaction;amphoteric_metal; complex_salt; hydrogen;;
+
+subst_SnOH2
+	=>nrel_main_idtf:
+	[гидроксид олова]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[tin hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[SnOH2]
+	(*<-lang_en;;*);
+
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_tin_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>гидроксид олова (Sn(OH)<sub>2</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид олова)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->hydroxides;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	 <=nrel_inclusion:amphoteric_hydroxide;
+///////////
+	<-solid;//gel;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_SnOH2 ->elem_Sn);;
+	atomic_multiplicity_two->(subst_SnOH2 ->elem_O);;
+	atomic_multiplicity_two->(subst_SnOH2 ->elem_H);;
+subst_SnOH2
+//////////
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [60-120] (* <- lang_en;;*);;//60-120
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_SnOH2_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид олова, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[гидроксид олова взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: decomposition_subst_SnOH2
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид олова, разложение*, оксид олова, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[гидроксид олова разлогается на оксид олова и воду(при 60-120 градусах Цельсия).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (осадок гидроксида олова)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_SnOH2.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+decomposition_subst_SnOH2 -> rrel_key_sc_element:nrel_decomposition; tin_oxide; water;;
+interaction_subst_SnOH2_and_acid->rrel_key_sc_element:nrel_interaction;acid; salt; water;;
+
+subst_SrOH2
+	=>nrel_main_idtf:
+	[гидроксид стронция]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[strontium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[SrOH2]
+	(*<-lang_en;;*);
+
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_strontium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид стронция (Sr(OH)<sub>2</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "alkali">щёлочам</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид стронция)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:basic_hydroxide;
+///////////
+	<-solid;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_SrOH2 ->elem_Sr);;
+	atomic_multiplicity_two->(subst_SrOH2 ->elem_O);;
+	atomic_multiplicity_two->(subst_SrOH2 ->elem_H);;
+subst_SrOH2
+//////////
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [450] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [710] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+//
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [3,625] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_SrOH2_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид стронция, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид стронция взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_subst_SrOH2_and_acid_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид стронция, взаимодействие*, соль, вода,кислотный оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид стронция взаимодействует с кислотными оксидами с образованием соли и воды.] (*<- lang_ru;;*);;
+	*);;
+*);
+<- rrel_key_sc_element: decomposition_subst_SrOH2
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид стронция, разложение*, оксид стронция, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид стронция разлогается на оксид стронция и воду(при 1000 градусах Цельсия).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид стронция)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_SrOH2.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+decomposition_subst_SrOH2 
+-> rrel_key_sc_element:nrel_decomposition;
+->rrel_key_sc_element: strontium_oxide;
+->rrel_key_sc_element: water;;
+
+interaction_subst_SrOH2_and_acid
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid; 
+->rrel_key_sc_element:salt;
+->rrel_key_sc_element: water;;
+
+interaction_subst_SrOH2_and_acid_oxide
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid_oxide; 
+->rrel_key_sc_element:salt; 
+->rrel_key_sc_element:water;;
+
+subst_TlOH
+	=>nrel_main_idtf:
+	[гидроксид таллия(I)]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[thallium hydroxide(I)]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[TlOH]
+	(*<-lang_en;;*);
+
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_thallium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид таллия(I) (TlOH)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид таллия(I))](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	 <=nrel_inclusion:amphoteric_hydroxide;
+///////////
+	<-solid;
+	<-white_color;;
+	
+	atomic_multiplicity_one->(subst_TlOH->elem_Tl);;
+	atomic_multiplicity_one->(subst_TlOH->elem_O);;
+	atomic_multiplicity_one->(subst_TlOH->elem_H);;
+subst_TlOH
+	
+//////////
+//////////
+
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [125] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+//
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [7,44] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element: interaction_subst_TlOH_and_acid_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид таллия, взаимодействие*, соль, вода,кислотный оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид таллия взаимодействует с кислотными оксидами с образованием соли и воды.] (*<- lang_ru;;*);;
+	*);;
+*);
+<- rrel_key_sc_element: decomposition_subst_TlOH
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид таллия, разложение*, оксид таллия, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид таллия разлогается на оксид таллия(I) и воду(при 125 градусах Цельсия).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид таллия(I))] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_TlOH.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+interaction_subst_TlOH_and_acid_oxide
+->rrel_key_sc_element: nrel_interaction; 
+->rrel_key_sc_element:acid_oxide; 
+->rrel_key_sc_element:salt;water;;
+
+decomposition_subst_TlOH 
+->rrel_key_sc_element: thallium_oxide_1;
+->rrel_key_sc_element:water;;
+
+subst_TlOH3
+	=>nrel_main_idtf:
+	[гидроксид таллия(III)]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[thallium hydroxide(III)]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[TlOH3]
+	(*<-lang_en;;*);
+
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_thallium_hydroxide3
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид таллия (Tl(OH)3)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид таллия(III))](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	 <=nrel_inclusion:amphoteric_hydroxide;
+///////////
+	<-solid;
+	<-color_reddish_brown;;
+	atomic_multiplicity_one->(subst_TlOH3 ->elem_Tl);;
+	atomic_multiplicity_three->(subst_TlOH3 ->elem_O);;
+	atomic_multiplicity_three->(subst_TlOH3 ->elem_H);;
+subst_TlOH3
+//////////
+
+/*=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [450] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);*/
+
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [100] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: decomposition_subst_TlOH3
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид таллия(III), разложение*, оксид таллия(III), вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид сталлия(III) разлогается на оксид таллия(III) и воду(при 100 градусах Цельсия).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид таллия(III))] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_TlOH3.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+decomposition_subst_TlOH3 
+-> rrel_key_sc_element:nrel_decomposition;
+ ->rrel_key_sc_element:thallium_oxide_3; 
+ ->rrel_key_sc_element:water;;
+interaction_subst_TlOH3_and_acid
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid; 
+->rrel_key_sc_element:salt; 
+->rrel_key_sc_element:water;;
+
+subst_ZnOH2
+	=>nrel_main_idtf:
+	[гидроксид цинка]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[zinc hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[ZnOH2]
+	(*<-lang_en;;*);
+
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_zinc_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид цинка (Zn(OH)2)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид цинка)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->hydroxides;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:amphoteric_hydroxide;
+///////////
+	<-solid;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_Zn->elem_Zn);;
+	atomic_multiplicity_two->(subst_ZnOH2->elem_O);;
+	atomic_multiplicity_two->(subst_ZnOH2->elem_H);;
+subst_ZnOH2	
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [125] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [3,053] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_ZnOH2_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид цинка, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид цинка взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: interaction_subst_ZnOH2_and_acid_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид цинка, взаимодействие*, соль, вода,кислотный оксид)](*<- lang_ru;;*);;//
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид цинка взаимодействует с кислотными оксидами с образованием соли и воды.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: decomposition_subst_ZnOH2
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид цинка, разложение*, оксид цинка, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид цинка разлогается на оксид цинка и воду.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид цинка)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_ZnOH2.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+decomposition_subst_ZnOH2 
+-> rrel_key_sc_element:nrel_decomposition;
+-> rrel_key_sc_element:zinc_oxide; water;;
+interaction_subst_ZnOH2_and_acid
+
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid;
+->rrel_key_sc_element: salt;
+->rrel_key_sc_element: water;;
+
+interaction_subst_ZnOH2_and_acid_oxide
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid_oxide;
+->rrel_key_sc_element: salt;
+->rrel_key_sc_element: water;;

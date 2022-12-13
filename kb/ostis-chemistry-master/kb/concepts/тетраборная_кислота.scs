@@ -1,0 +1,35 @@
+sc_node_not_relation->tetraboric_acid;;
+
+tetraboric_acid=> nrel_main_idtf: [тетраборная кислота] (* <- lang_ru;; *);;
+tetraboric_acid=> nrel_main_idtf: [tetraboric_acid](* <- lang_en;; *);;
+tetraboric_acid=> nrel_idtf: [H2B4O7](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: tetraboric_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Тетраборная кислота — неорганическая кислота с химической формулой H2B4O7](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (метаборная кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		chemical_formula;
+		inorganic_acid
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: tetraboric_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[ Тетраборная кислота является слабой кислотой](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(метаборная кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		 weak_acid
+		};;
+*);;
+
+tetraboric_acid -> tetraboric_acid_x;;
+tetraboric_acid <=nrel_inclusion:oxyacid;;
+tetraboric_acid<=nrel_inclusion:weak_acid;;
+tetraboric_acid <=nrel_inclusion:inorganic_acid;;
+
+tetraboric_acid <-rrel_not_maximum_studied_object_class:subject_domain_of_acids;;

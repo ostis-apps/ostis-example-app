@@ -1,0 +1,10 @@
+section_subject_domain_of_food_supplements
+=> nrel_main_idtf:
+	[Раздел. Предметная область пищевых добавок](* <- lang_ru;; *);
+	[Section. Subject domain of food supplements](* <- lang_en;; *);
+<- not_enough_formed_structure;
+<- atomic_section;;
+section_subject_domain_of_food_supplements = [*^"file://section_subject_domain_of_food_supplements.scsi"*];;
+
+section_subject_domain_of_food_supplements
+-> rrel_key_sc_element: subject_domain_of_food_supplements;;

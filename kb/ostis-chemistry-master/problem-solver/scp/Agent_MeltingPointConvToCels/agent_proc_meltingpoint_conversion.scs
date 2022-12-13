@@ -1,0 +1,113 @@
+agent_proc_meltingpoint_conversion
+=>nrel_main_idtf: 
+ [агентная scp-программа поиска] (* <- lang_ru;; *); 
+ [agent scp-program of search] (* <- lang_en;; *); 
+<- agent_scp_program;; 
+// Указываем, что программа является агентной scp-программой 
+scp_program ->agent_proc_meltingpoint_conversion  (* 
+ // Множество параметров агентной программы 
+ ->rrel_params: .agent_proc_meltingpoint_conversion_params (* 
+  -> rrel_1: rrel_in: _event;; 
+  -> rrel_2: rrel_in: _input_arc;; 
+ *);; 
+ // Множество операторов агентной программы 
+ ->rrel_operators: .agent_proc_meltingpoint_conversion_operator_set (* 
+  // Первый исполняемый оператор программы 
+  ->rrel_init: .agent_proc_meltingpoint_conversion_operator1 (* 
+  <- searchElStr3;; 
+    -> rrel_1: rrel_assign: rrel_scp_var: _temp;; 
+    -> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;; 
+    -> rrel_3: rrel_assign: rrel_scp_var: _quest;; 
+    =>nrel_goto: .agent_proc_meltingpoint_conversion_operator2;; 
+  *);; 
+  //  В rrel_1 устанавливаем имя придуманного нами  класса вопросов 
+// Агент будет просыпаться, только когда обнаружит наш вопрос. 
+  -> .agent_proc_meltingpoint_conversion_operator2 (* 
+  <- searchElStr3;; 
+    ->rrel_1: rrel_fixed: rrel_scp_const: question_meltingpoint_conversion;;  
+    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;; 
+    -> rrel_3: rrel_fixed: rrel_scp_var: _quest;; 
+ 
+    =>nrel_then: .agent_proc_meltingpoint_conversion_operator3;; 
+    =>nrel_else: .agent_proc_meltingpoint_conversion_operator_return;; 
+  *);; 
+  // Найдём параметр запроса – его подал на вход сам пользователь 
+  -> .agent_proc_meltingpoint_conversion_operator3 (* 
+  <- searchElStr3;; 
+    -> rrel_1: rrel_fixed: rrel_scp_var: _quest;; 
+    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;; 
+    -> rrel_3: rrel_assign: rrel_scp_var: _param;; 
+ 
+    =>nrel_then: .agent_proc_meltingpoint_conversion_operator4;; 
+    =>nrel_else: .agent_proc_meltingpoint_conversion_operator_return;; 
+  *);; 
+
+
+  // Сгенерировать узел, в который мы поместим конструкцию ответа 
+-> .agent_proc_meltingpoint_conversion_operator4 (* 
+  <- genEl;; 
+    -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;; 
+ 
+    =>nrel_goto: .agent_proc_meltingpoint_conversion_operator5;; 
+  *);; 
+ 
+
+  -> .agent_proc_meltingpoint_conversion_operator5 (* 
+  <- call;;// В первом параметре содержится название вызванной процедуры 
+  -> rrel_1: rrel_fixed: rrel_scp_const: proc_meltingpoint_conversion_calculation;; 
+  ->rrel_2:rrel_fixed:rrel_scp_const: 
+  // здесь описаны параметры, подаваемые на вход процедуре 
+.agent_proc_meltingpoint_conversion_operator5_params (* 
+    -> rrel_1: rrel_fixed: rrel_scp_var: _param;; 
+    -> rrel_2: rrel_assign: rrel_scp_var: _conversion_result;; 
+   *);; 
+  // Знак scp-процесса, который может быть использован для того, чтобы  
+          // дождаться завершения созданного scp-процесса 
+  -> rrel_3: rrel_assign: rrel_scp_var: _descr;; 
+ 
+    =>nrel_goto: .agent_proc_meltingpoint_conversion_operator6;; 
+  *);; 
+  // scp-оператор ожидания завершения выполнения подпрограммы 
+  -> .agent_proc_meltingpoint_conversion_operator6 (* 
+  <- waitReturn;; 
+    -> rrel_1: rrel_fixed: rrel_scp_var: _descr;; 
+ 
+    =>nrel_goto: .agent_proc_meltingpoint_conversion_operator_gen_answer;; 
+  *);;  
+ 
+  // Связываем ответ и вопрос отношением ответ* 
+  -> .agent_proc_meltingpoint_conversion_operator_gen_answer (* 
+  <- genElStr5;; 
+    -> rrel_1: rrel_fixed: rrel_scp_var: _quest;; 
+    -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;; 
+    -> rrel_3: rrel_fixed: rrel_scp_var: _answer;; 
+    -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;; 
+    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;; 
+ 
+    =>nrel_goto: .agent_proc_meltingpoint_conversion_operator_gen_answer2;; 
+  *);; 
+
+  // связывание ответа и полученного результата
+   -> .agent_proc_meltingpoint_conversion_operator_gen_answer2 (* 
+  <- genElStr3;; 
+    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;; 
+    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_end;; 
+    -> rrel_3: rrel_fixed: rrel_scp_var: _conversion_result;; 
+ 
+    =>nrel_goto: .agent_proc_meltingpoint_conversion_operator_gen_answer3;; 
+  *);; 
+
+  // вывод сообщения об успешном завершении работы
+  -> .agent_proc_meltingpoint_conversion_operator_gen_answer3 (* 
+  <- print;; 
+    -> rrel_1: rrel_fixed: rrel_scp_const: [Finished conversion];; 
+ 
+    =>nrel_goto: .agent_proc_meltingpoint_conversion_operator_return;; 
+  *);; 
+
+  // Оператор завершения агентной программы   
+  -> .agent_proc_meltingpoint_conversion_operator_return (* 
+  <- return;; 
+  *);; 
+ *);; 
+*);;

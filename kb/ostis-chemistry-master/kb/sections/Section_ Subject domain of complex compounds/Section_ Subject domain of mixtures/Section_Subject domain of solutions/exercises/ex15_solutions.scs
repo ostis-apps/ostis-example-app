@@ -1,0 +1,23 @@
+ex15_solutions
+<- exercises_solutions;
+
+-> rrel_key_sc_element: water; nrel_mass; subst_Na; nrel_mass_fraction; chemical_substance; solution;
+
+
+=> nrel_main_idtf:
+	[Упражнение 15. Раздел. Предметная область растворов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 15. Section. Subject domain of solutions]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex15_solutions_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex15_solutions_en.html" (* <-lang_en;; *);;
+	*);;

@@ -1,0 +1,49 @@
+nrel_molar_concentration
+<-sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_main_idtf:
+	[молярная концентрация*](* <- lang_ru;; *);
+	[molar concentration*]	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element:
+	Definition_of_nrel_molar_concentration
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Молярная концентрация*)](* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "nrel_molar_concentration">Молярная концентрация (молярность)</sc_element></b> - <sc_element sys_idtf  = "value">величина</sc_element>, показывающая, сколько молей растворенного <sc_element sys_idtf  = "substance">вещества</sc_element> содержится в 1 литре <sc_element sys_idtf  = "solution">раствора</sc_element>.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->value;;
+				->substance;;
+				->solution;;
+			*);;	
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Молярная концентрация вещества в моль/л – отношение количества растворенного вещества в молях к объему раствора.] (* <-lang_ru;; *);;
+		*);;
+*);
+
+=>nrel_first_domain: chemical_substance;
+=>nrel_second_domain: value;;

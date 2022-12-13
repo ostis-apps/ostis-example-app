@@ -1,0 +1,42 @@
+coagulant
+=> nrel_main_idtf:
+	[коагулянт](* <- lang_ru;; *);
+	[coagulant](* <- lang_en;; *);
+=>nrel_applying:industry;food_industry;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(коагулянт)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Коагулянты — вещества (хим. реагенты) способные вызывать или ускорять процесс объединения мелких взвешенных частиц в группировки (агрегаты) вследствие их сцепления при соударениях.]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->substance;;
+		->reagent;;
+		->aggregate;;
+	*);;
+*);
+//утверждение
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(очистка воды, соль, алюминий, железа)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Для очистки воды обычно применяют соли алюминия и железа.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: salt;;
+	-> rrel_key_sc_element: aluminum;;
+	-> rrel_key_sc_element: subst_Fe;;
+	-> rrel_key_sc_element: water_purification;;
+*);;

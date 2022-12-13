@@ -1,0 +1,273 @@
+scp_program -> proc_of_generating_validation_comment
+	(*
+  	-> rrel_params: .proc_of_generating_validation_comment_params 
+		(*
+		-> rrel_1: rrel_in: _quest_node;;
+    		-> rrel_2: rrel_in: _message;;
+		-> rrel_3: rrel_in: _answer_proc_of_generating_validation_comment;;
+    		*);;
+
+	-> rrel_operators: .proc_of_generating_validation_comment_operator_set
+    		(*
+    		-> rrel_init: .proc_of_generating_validation_comment_operator1A 
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_proc_of_generating_validation_comment;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest_node;;
+
+			=> nrel_goto: .proc_of_generating_validation_comment_operator1B1;;
+			*);;
+
+		-> .proc_of_generating_validation_comment_operator1B1 
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _comment;;
+
+			=> nrel_goto: .proc_of_generating_validation_comment_operator1B2;;
+			*);;
+
+		-> .proc_of_generating_validation_comment_operator1B2 
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest_node;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _comment;;
+			-> rrel_4: rrel_assign:  rrel_const: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_comment;;
+
+			=> nrel_goto: .proc_of_generating_validation_comment_operator1B3;;
+			*);;
+
+		-> .proc_of_generating_validation_comment_operator1B3 
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest_node;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _comment;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_comment;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_generating_validation_comment;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_proc_of_generating_validation_comment;;
+
+			=> nrel_goto: .proc_of_generating_validation_comment_operator1B4_add_comment_node_to_answer;;
+			*);;
+
+		-> .proc_of_generating_validation_comment_operator1B4_add_comment_node_to_answer
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_proc_of_generating_validation_comment;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _comment;;
+
+			=> nrel_goto: .proc_of_generating_validation_comment_operator1B4;;
+			*);;
+
+
+		-> .proc_of_generating_validation_comment_operator1B4
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_proc_of_generating_validation_comment;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_comment;;
+
+			=> nrel_goto: .proc_of_generating_validation_comment_operator1C1;;
+			*);;
+
+		-> .proc_of_generating_validation_comment_operator1C1
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: section_subjdomain_parameters_and_values;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _comment;;
+
+			=> nrel_goto: .proc_of_generating_validation_comment_operator1C2;;
+			*);;
+
+		-> .proc_of_generating_validation_comment_operator1C2
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: section_subjdomain_parameters_and_values;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _comment;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_generating_validation_comment;;
+
+			=> nrel_goto: .proc_of_generating_validation_comment_operator1C3;;
+			*);;
+
+		-> .proc_of_generating_validation_comment_operator1C3
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_proc_of_generating_validation_comment;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: section_subjdomain_parameters_and_values;;
+
+			=> nrel_goto: .proc_of_generating_validation_comment_operator1D1;;
+			*);;
+
+		-> .proc_of_generating_validation_comment_operator1D1 
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _translation;;
+
+			=> nrel_goto: .proc_of_generating_validation_comment_operator1D2;;
+			*);;
+
+		-> .proc_of_generating_validation_comment_operator1D2
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _translation;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _comment;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_sc_text_translation;;
+
+			=> nrel_goto: .proc_of_generating_validation_comment_operator1B3_add_sc_text_translation_relation_arcs_to_answer;;
+			*);;
+
+		-> .proc_of_generating_validation_comment_operator1B3_add_sc_text_translation_relation_arcs_to_answer 
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _translation;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _comment;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_sc_text_translation;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_generating_validation_comment;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_proc_of_generating_validation_comment;;
+
+			=> nrel_goto: .proc_of_generating_validation_comment_operator1_add_sc_text_translation_node_to_answer;;
+			*);;
+
+
+		-> .proc_of_generating_validation_comment_operator1_add_sc_text_translation_node_to_answer
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_proc_of_generating_validation_comment;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_sc_text_translation;;
+
+			=> nrel_goto: .proc_of_generating_validation_comment_operator1C1_add_translation_var_node_to_answer;;
+			*);;
+
+		-> .proc_of_generating_validation_comment_operator1C1_add_translation_var_node_to_answer
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_proc_of_generating_validation_comment;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _translation;;
+
+			=> nrel_goto: .proc_of_generating_validation_comment_operator1D3;;
+			*);;
+
+
+		-> .proc_of_generating_validation_comment_operator1D3 
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _translation;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _message;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: section_subjdomain_parameters_and_values;;
+
+			=> nrel_goto: .proc_of_generating_validation_comment_operator1B3_add_link_and_translation_arcs_to_answer;;
+			*);;
+
+		-> .proc_of_generating_validation_comment_operator1B3_add_link_and_translation_arcs_to_answer 
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _translation;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _message;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: section_subjdomain_parameters_and_values;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_generating_validation_comment;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_proc_of_generating_validation_comment;;
+
+			=> nrel_goto: .proc_of_generating_validation_comment_operator1C1_add_message_var_node_to_answer;;
+			*);;
+
+		-> .proc_of_generating_validation_comment_operator1C1_add_message_var_node_to_answer
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_proc_of_generating_validation_comment;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _message;;
+
+			=> nrel_goto: .proc_of_generating_validation_comment_operator1D4_1;;
+			*);;
+
+		-> .proc_of_generating_validation_comment_operator1D4_1
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: lang_en;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _message;;
+
+			=> nrel_then: .proc_of_generating_validation_comment_operator1B3_add_lang_en_arcs_to_answer;;
+			=> nrel_else: .proc_of_generating_validation_comment_operator1D4;;
+			*);;	
+
+		-> .proc_of_generating_validation_comment_operator1D4 
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: lang_en;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _message;;
+
+			=> nrel_goto: .proc_of_generating_validation_comment_operator1B3_add_lang_en_arcs_to_answer;;
+			*);;
+
+		-> .proc_of_generating_validation_comment_operator1B3_add_lang_en_arcs_to_answer 
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: lang_en;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _message;;
+		
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_generating_validation_comment;;
+
+			=> nrel_goto: .proc_of_generating_validation_comment_operator1C1_add_language_const_node_to_answer;;
+			*);;
+
+		-> .proc_of_generating_validation_comment_operator1C1_add_language_const_node_to_answer
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_proc_of_generating_validation_comment;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: lang_en;;
+
+			=> nrel_goto: .proc_of_generating_validation_comment_operator_return;;
+			*);;
+
+		-> .proc_of_generating_validation_comment_operator_return 
+			(*
+			<- return;;
+			*);;
+		*);;
+	*);;

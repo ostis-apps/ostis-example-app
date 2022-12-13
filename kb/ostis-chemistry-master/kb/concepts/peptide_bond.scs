@@ -1,0 +1,24 @@
+peptide_bond
+=> nrel_main_idtf:
+	[пептидная связь](* <- lang_ru;; *);
+	[peptide bond](* <- lang_en;; *);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(пептидная связь)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://html/peptide_bond_definition.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->nrel_chemical_bond;;
+		->protein; peptide; amino_acid;;
+	*);;
+*);;

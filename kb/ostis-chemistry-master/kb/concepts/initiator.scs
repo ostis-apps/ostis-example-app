@@ -1,0 +1,47 @@
+initiator
+=> nrel_main_idtf:
+	[инициатор]
+	(* <- lang_ru;;	*);
+	[initiator]
+	(* <- lang_en;;	*);;
+initiator
+<- rrel_key_sc_element:
+	Definition_of_initiator
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/initiator.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+
+<- rrel_key_sc_element: unlike_initiator
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (инициатор, превращение, катализатор)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Инициатор реагирует, вызывая ряд (цепочку) химических превращений, но в отличие от катализатора он не регенерируется в конце процесса, его участие в химическом превращении приводит к его необратимому расходованию.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: danger
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (газ, реакция, инициатор)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Наибольшую опасность представляют большие выбросы газа которые происходят вследствие протекания неуправляемой реакции при нарушениях режима дозировки или разложении инициаторов (перекисных соединений).] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+Definition_of_initiator
+=> nrel_main_idtf:
+	[Опр.(Инициатор)]
+	(* <- lang_ru;;	*);;

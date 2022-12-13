@@ -1,0 +1,129 @@
+ephedrine<-sc_node_not_relation;;
+ephedrine=> nrel_main_idtf:[эфедрин](* <- lang_ru;; *);;
+ephedrine=> nrel_main_idtf:[ephedrine](* <- lang_en;; *);;
+ephedrine=> nrel_idtf:[2-​метиламино-​1-​фенилпропанол-​1](* <- lang_ru;; *);;
+ephedrine=> nrel_idtf:[C10H15NO](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: ephedrine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Эфедрин- <b><sc_element sys_idtf="protoalkaloids">протоалкалоид</b></sc_element>,<b><sc_element sys_idtf="color_white"> белое </b></sc_element> <b><sc_element sys_idtf="crystall"> кристаллическое </b></sc_element> <b><sc_element sys_idtf="toxin"> токсичное </b></sc_element> <b><sc_element sys_idtf="chemical_substance"> вещество </b></sc_element>]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (эфедрин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		protoalkaloids;
+		color_white;
+		crystall;
+		toxin;
+		chemical_substance
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: ephedrine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://ephedrine2.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(эфедрин,фармакологический эффект*)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: ephedrine ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://ephedrine1.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(эфедрин,побочный эффект*)](*<- lang_ru;;*);;
+	
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:ephedrine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/ephedrine.png";;*);;
+	=> nrel_main_idtf: [Рисунок(эфедрин,структурная формула](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: ephedrine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/efedrin.gif";;*);;
+	=> nrel_main_idtf: [Рисунок(эфедрин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: ephedrine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/ephedrine2.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(эфедрин,твердое вещество)](*<- lang_ru;;*);;
+*);;
+solid_matter=>nrel_inclusion:ephedrine;;
+protoalkaloids=>nrel_inclusion:ephedrine;;
+toxin=>nrel_inclusion:ephedrine;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> ephedrine;;
+	=> nrel_measurement_in_gramms_per_mole: [165,24]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->ephedrine;;
+	=> nrel_measurement_in_degrees_Celsius: 40
+	(*
+		<-number;;
+	*);;
+*);;
+
+boiling_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->ephedrine;;
+	=> nrel_measurement_in_degrees_Celsius: 225
+	(*
+		<-number;;
+	*);;
+*);;
+
+decomposition_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->ephedrine;;
+	=> nrel_measurement_in_degrees_Celsius: 225
+	(*
+		<-number;;
+	*);;
+*);;
+drag_half_life->...
+(* 
+
+	<- sc_node_not_relation;;
+	->ephedrine;;
+	=> nrel_measurement_in_hours:5
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+

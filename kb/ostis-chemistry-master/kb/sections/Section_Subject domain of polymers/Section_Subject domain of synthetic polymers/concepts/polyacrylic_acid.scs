@@ -1,0 +1,119 @@
+polyacrylic_acid<-sc_node_not_relation;;
+polyacrylic_acid=> nrel_main_idtf:[полиакриловая кислота](* <- lang_ru;; *);;
+polyacrylic_acid=> nrel_main_idtf:[polyacrylic_acid](* <- lang_en;; *);;
+polyacrylic_acid=> nrel_idtf:[ Poly(acrylic acid)](* <- lang_en;; *);;
+polyacrylic_acid=> nrel_idtf:[(C3H4O2)n](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: polyacrylic_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[полиакриловая кислота — <b><sc_element sys_idtf="polymer">полимер</b></sc_element>акриловой кислоты.]
+		(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (полиакриловая кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		polymer
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: polyacrylic_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Полиакриловую кислоту — получают путем радикальной  <b><sc_element sys_idtf="polymer">полимеризацией</b></sc_element>  
+	акриловой кислоты в водном растворе или в среде органических <b><sc_element sys_idtf="rrel_solvent">растворителей</b></sc_element>  (процесс экзотермичен).]
+	
+	  
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(полиакриловая кислота,получение)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		rrel_solvent;
+		nrel_polymerization;
+		polymer
+		};;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:polyacrylic_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[полиакриловая кислота — при <b><sc_element sys_idtf="nrel_mixing">смешении</b></sc_element>
+	 при  водных растворов полиакриловой кислоты с растворами катионных <b><sc_element sys_idtf="polymer">полимер</b></sc_element>
+	 , поверхностно-активных веществ и некоторых лекарств возможно образование нерастворимых комплексов.. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(полиакриловая кислота,смешение)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nrel_mixing;
+		polymer
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyacrylic_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyvinyl_alcohol.png";;*);;
+	=> nrel_main_idtf: [Рисунок(полиакриловая кислота,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyacrylic_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyvinyl_alcohol_3d.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(полиакриловая кислота,пример)](*<- lang_ru;;*);;
+*);;
+
+
+thermosetting_polymer=>nrel_inclusion:polyacrylic_acid;;
+polycondensation_polymer=>nrel_inclusion:polyacrylic_acid;;
+hetero_chain_polymer=>nrel_inclusion:polyacrylic_acid;;
+rrel_liquid_solvent=>nrel_inclusion:polyacrylic_acid;;
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> polyacrylic_acid;;
+	=> rrel_mol: [1000]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyacrylic_acid;;
+	=> rrel_degree_celsius: 116
+	(*
+		<-number;;
+	*);;
+*);;
+
+nrel_molar_heat_capacity->...
+(* 
+
+	<- sc_node_not_relation;;
+	->polyacrylic_acid;;
+	=> rrel_joule_per_kelvin_and_mole: 0.21
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+

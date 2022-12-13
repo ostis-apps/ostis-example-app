@@ -1,0 +1,54 @@
+nrel_nitrilization<-sc_node_norole_relation;;
+
+nrel_nitrilization=> nrel_main_idtf:[нитрование амидов* ](* <- lang_ru;; *);;
+nrel_nitrilization=> nrel_main_idtf:[amide nitrilization* ](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: nrel_nitrilization;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Первичные и вторичные ариламиды легко окисляются азотной кислотой. Третичные ароматические амидыы нитруются азотной кислотой, превращаясь в орто- и пара-нитроариламиды.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (нитрование*)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{
+		amide;
+		iodide_ion
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:nrel_nitrilization ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[ Для получения нитрозамещенных ариламинов требуется защита аминогруппы.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(нитрование*)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{
+		amide;
+		iodide_ion
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element:nrel_nitrilization;;
+	<= nrel_sc_text_translation: ...(*->"file://img/nrel_nitrilization.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(бромирование*)](*<- lang_ru;;*);;
+*);;
+
+
+nrel_nitrilization => nrel_first_domain: chemical_substance;;
+nrel_nitrilization => nrel_second_domain: chemical_substance;;
+
+arity_2->nrel_nitrilization;;
+
+pronitrideamide<=nrel_nitrilization:propamide;;

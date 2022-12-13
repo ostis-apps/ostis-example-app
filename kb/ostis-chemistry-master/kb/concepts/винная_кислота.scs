@@ -1,0 +1,53 @@
+sc_node_not_relation->tartaric_acid;;
+
+tartaric_acid=> nrel_main_idtf: [винная кислота](* <- lang_ru;; *);;
+tartaric_acid=> nrel_main_idtf: [artaric_acid](* <- lang_en;; *);;
+tartaric_acid=> nrel_idtf: [НООССН(ОН)СН(ОН)СООH](* <- lang_en;; *);;
+tartaric_acid=> nrel_idtf: [тартаровая кислота](* <- lang_ru ;; *);;
+tartaric_acid=> nrel_idtf: [диоксиянтарная кислота](* <- lang_ru;; *);;
+tartaric_acid=> nrel_idtf: [2,3-дигидроксибутандиовая кислота](* <- lang_ru;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: tartaric_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Винная кислота - белая кристаллическая органическая кислота](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (винная кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		organic_acid;
+		crystall;
+		color_white
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: tartaric_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Соли и анионы винной кислоты называют тартратами. ](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(винная кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		salt
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: tartaric_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/винная_кислота_стр.png";;*);;
+	=> nrel_main_idtf: [Рисунок(винная кислота,структурная формула)](*<- lang_ru;;*);;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: tartaric_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/винная_кислота_модель.png";;*);;
+	=> nrel_main_idtf: [Рисунок(винная кислота,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+tartaric_acid -> tartaric_acid_x;;
+
+
+tartaric_acid<=nrel_inclusion:organic_acid;;
+tartaric_acid<=nrel_inclusion:dibasic_acid;;
+
+
+tartaric_acid<-rrel_not_maximum_studied_object_class:subject_domain_of_acids;;

@@ -1,0 +1,58 @@
+chemical_reagents
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[химические реактивы]
+	(* <- lang_ru;;	*);
+	[chemical reagents]
+	(* <- lang_en;;	*);;
+chemical_reagents
+<- rrel_key_sc_element:
+	Definition_of_chemical_reagents
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/chemical_reagents.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				substance
+			};
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Многие химические реактивы специально производятся для лабораторного использования, но находят применение и очищенные химические продукты, выпускаемые для промышленных целей.] (* <-lang_ru;; *);;
+		*);;
+*);
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Химические реактивы разделяют также на группы в зависимости от их состава: неорганические, органические реактивы, реактивы, содержащие радиоактивные изотопы, и др. По назначению выделяют прежде всего аналитические реактивы, а также химические индикаторы, органические растворители.] (* <-lang_ru;; *);;
+		*);;
+*);;
+
+
+
+
+Definition_of_chemical_reagents
+=> nrel_main_idtf:
+	[Опр.(Химические реактивы)]
+	(* <- lang_ru;;	*);;
+
+
+
+
+
+
+

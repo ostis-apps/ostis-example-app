@@ -1,0 +1,38 @@
+metal_indicator
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[металлоиндикатор](*<-lang_ru;;*);
+     [metal indicator](*<-lang_en;;*);;
+
+
+metal_indicator 
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(металлоиндикатор)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [Металлоиндикаторы — вещества, предназначенные для определения точки эквивалентности при комплексонометрическом титровании.](*<-lang_ru;; =>nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: chemical_substance;;
+*);
+
+<- rrel_key_sc_element: ... 
+      (*
+        ->rrel_key_sc_element: nrel_application;;
+        ->statement;;
+		<-concept_assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_chemistry (*<-concept_subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (* ->rrel_example: [Индикаторы позволяют быстро и достаточно точно контролировать состав жидких и газообразных сред, следить за изменением их состава, или за протеканием химической реакции. Широко используются кислотно-основные индикаторы, разбавленные растворы которых обладают способностью заметно изменять цвет, в зависимости от кислотного раствора. Причина изменения цвета - изменения в строении молекул индикатора в кислой и щелочной среде, что приводит к изменению спектра поглощения раствора. Для определения состава газовых сред используют индикаторые бумажки и индикаторные трубки.](*<-lang_ru;; =>nrel_format: format_html;;*);; *);;
+        =>nrel_main_idtf: [Утв. (индикатор, применение*)](*<-lang_ru;;*);;  
+      *);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (металлоиндикатор)] (* <- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://image//metal_indicator.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

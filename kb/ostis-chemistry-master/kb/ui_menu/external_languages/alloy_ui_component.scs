@@ -1,0 +1,8 @@
+alloy_ui_component 
+<- ui_user_command_class_noatom;
+<- ui_external_languages;
+=> nrel_main_idtf:
+    [Команды раздела сплавов]
+    (*<- lang_ru;;*);
+    [Alloys section commands]
+    (* <- lang_en;; *);;

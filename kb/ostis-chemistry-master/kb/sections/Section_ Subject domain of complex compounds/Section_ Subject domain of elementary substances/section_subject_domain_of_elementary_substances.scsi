@@ -1,0 +1,93 @@
+subject_domain_of_elementary_substances
+=> nrel_main_idtf: 
+	[Предметная область простых веществ]
+	(* <- lang_ru;;*);
+	[Subject domain of elementary substances]
+	(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	elementary_substance;
+
+-> rrel_not_maximum_studied_object_class:
+	elementary_substance_chemical_bond;;
+
+elementary_substance
+
+<- sc_node_not_relation;
+=> nrel_main_idtf: 
+	[elementary substance](*<- lang_en;;*);
+	[простое вещество](*<- lang_ru;;*);
+	
+<- rrel_key_sc_element:
+	Definition_of_elementary_substance
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="elementary_substance">Просто́е вещество́</sc_element></b> — <sc_element sys_idtf="chemical_substance">вещество</sc_element>, состоящее исключительно из <sc_element sys_idtf="atom">атомов</sc_element> одного <sc_element sys_idtf="chemical_element">химического элемента</sc_element>.]
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="elementary_substance">Elementary substancé</sc_element></b> is a <sc_element sys_idtf="chemical_substance">substance</sc_element> that consists only of <sc_element sys_idtf="atom">atoms</sc_element> of one <sc_element sys_idtf="chemical_element">chemical element</sc_element>.]
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+<= nrel_subdividing:
+	elementary_substance_chemical_bond
+  (* 
+    -> metal; nonmetal;;
+	*);
+
+<- rrel_key_sc_element: elementary_substance_allotropy
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (простое вещество, аллотропия*)](*<- lang_ru;;*);
+			[Stat. (elementary substance, allotropy*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Один и тот же химический элемент зачастую может образовывать несколько типов простых веществ (<sc_element sys_idtf="nrel_allotropy">аллотропия</sc_element>), называемых аллотропными модификациями. Явление аллотропии может быть обусловлено либо различным составом молекул данного элемента (<i>аллотропия состава</i>), либо различным строением молекул и способом размещения молекул (атомов) в <sc_element sys_idtf="crystal">кристаллах</sc_element> (<i>аллотропия формы</i>). Способность элемента к образованию соответствующих аллотропных модификаций обусловлена строением атома, которое определяет тип <sc_element sys_idtf="chemical_bond">химической связи</sc_element>, строение молекул и кристаллов.
+		Различные аллотропные модификации могут переходить друг в друга. Для данного химического элемента его аллотропные модификации всегда различаются по физическим свойствам и химической активности (например, озон активнее кислорода, <sc_element sys_idtf="nrel_melting_temperature">температура плавления</sc_element> алмаза больше, чем фуллерена).] 
+		(* 
+		<-lang_ru;;
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[One chemical element often can form multiple types of elementary substances (<sc_element sys_idtf="nrel_allotropy">allotropy</sc_element>) which are called allotropic modifications. The phenomenon of allotropy can be caused either by the different composition of the molecules of a given element (<i>composition allotropy</i>) or different molecular structure and the way molecules (atoms) are arranged in <sc_element sys_idtf="crystal">crystals</sc_element> (<i>form allotropy</i>). The ability of the element to form the corresponding allotropic modifications is due to the structure of the atom, which determines the type of <sc_element sys_idtf="chemical_bond">chemical bond</sc_element>, molecule structure and crystals.
+		Various allotropic modifications can pass into each other. For a given chemical element, its allotropic modifications always differ in their physical properties and chemical activity (for example, ozone is more active than oxygen, diamond's <sc_element sys_idtf="nrel_melting_temperature">melting temperature</sc_element> is higher than fullerene's).] 
+		(* 
+		<-lang_en;;
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);;
+
+Definition_of_elementary_substance
+=> nrel_main_idtf:
+	[Опр.(простое вещество)]
+	(* <- lang_ru;;	*);
+	[Def.(elementary substance)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_substance; atom; chemical_element;;
+			*);;
+
+
+elementary_substance_chemical_bond
+=> nrel_main_idtf:
+	[Разбиение простых веществ по типу химической связи между атомами]
+	(* <- lang_ru;; *);
+	[Partitioning elementary substances by atom chemical bond type]
+	(* <- lang_en;; *);;
+

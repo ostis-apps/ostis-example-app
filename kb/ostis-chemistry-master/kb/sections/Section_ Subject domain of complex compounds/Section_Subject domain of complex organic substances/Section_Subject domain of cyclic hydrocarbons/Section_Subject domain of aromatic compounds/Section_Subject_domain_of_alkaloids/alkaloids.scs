@@ -1,0 +1,87 @@
+alkaloids<-sc_node_not_relation;;
+
+alkaloids=> nrel_main_idtf:[алкалоид](* <- lang_ru;; *);;
+alkaloids=> nrel_main_idtf:[alkaloid](* <- lang_en;; *);;
+alkaloids<= nrel_subdividing:...
+	(*	
+		=> nrel_main_idtf:[Разбиение по химическому строению азотсодержащего гетероцикла](* <- lang_ru;; *);;
+		-> true_alkaloids;;
+		-> protoalkaloids;;
+		-> peptide_alkaloids;;
+		-> pseudoalkaloids;;
+	*);;
+alkaloids<= nrel_subdividing:...
+	(*	
+		=> nrel_main_idtf:[Разбиение по признаку сходства строений углеродного скелета](* <- lang_ru;; *);;
+		-> indole_alkaloids;;
+		-> isoquinoline_alkaloids;;
+		-> pyridine_alkaloids;;
+	*);;
+definition ->...
+(*
+	->rrel_key_sc_element: alkaloids;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Алкалоиды — группа азотсодержащих <b><sc_element sys_idtf="organic_compound">органических соединений</b></sc_element> природного происхождения, преимущественно <b><sc_element sys_idtf="heterocyclic_compound">гетероциклических</b></sc_element>, большинство из которых обладает свойствами <b><sc_element sys_idtf="weak_base"слабого основания</b></sc_element>; к ним также причисляются некоторые биогенетически связанные с основными алкалоидами нейтральные и даже слабокислотные соединения. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Определение (алкалоиды)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		heterocyclic_compound;
+		organic_compound;
+		weak_base
+		};;
+*);;
+statement ->...
+(*
+	->rrel_key_sc_element: alkaloids;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Алкалоиды, молекулы которых содержат <b><sc_element sys_idtf="elem_O">атомы кислорода</b></sc_element> при стандартных условиях, как правило, представляют собой <b><sc_element sys_idtf="no_color">бесцветные</b></sc_element> <b><sc_element sys_idtf="crystall">кристаллы.</b></sc_element>]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Утверждение(алкалоиды,бесцветные кристаллы)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		elem_O;
+		no_color;
+		crystall
+		};;
+*);;
+statement ->...
+(*
+	->rrel_key_sc_element: alkaloids;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Алкалоиды, молекулы которых не содержат <b><sc_element sys_idtf="elem_O">атомов кислорода</b></sc_element>, чаще всего являются летучими бесцветными маслянистыми <b><sc_element sys_idtf="liquid">жидкостями</b></sc_element>]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Утверждение(алкалоиды,маслянистая жидкость)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		elem_O;
+		no_color;
+		liquid
+		};;
+*);;
+statement ->...
+(*
+	->rrel_key_sc_element: alkaloids;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Алкалоиды сразу нашли своё применение в клинической практике в качестве <b><sc_element sys_idtf="medicine">лекарственного средства</b></sc_element>]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Утверждение(алкалоиды,лекарственное средство)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		medicine
+		};;
+*);;
+
+

@@ -1,0 +1,48 @@
+sc_node_not_relation->metaaluminum_acid;;
+
+
+metaaluminum_acid=> nrel_main_idtf: [метаалюминиевая кислота](* <- lang_ru;; *);;
+metaaluminum_acid=> nrel_main_idtf: [metaaluminum acid](* <- lang_en;; *);;
+metaaluminum_acid=> nrel_main_idtf: [оксигидроксид алюминия](* <- lang_ru;; *);;
+metaaluminum_acid=> nrel_idtf: [HAlO2](* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: metaaluminum_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Метаалюминиевая кислота - неорганическое соединение, смешанный оксид-гидроксид алюминия с формулой AlO(OH) (HAlO2),белый порошок, нерастворимый в воде](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (метаалюминиевая кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		nonorganic_compound;
+		oxide;
+		base;
+		chemical_formula;
+		powder;
+		insoluble_acid
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: metaaluminum_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Метаалюминиевую кислоту получают нагреванием гидроксида алюминия](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(метаалюминиевая кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		nrel_receiving;
+		nrel_heating;
+		subst_AlOH3
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: metaaluminum_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/метаалюминиевая кислота.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(метаалюминиевая кислота)](*<- lang_ru;;*);;
+*);;
+
+metaaluminum_acid -> metaaluminum_acid_x;;
+inorganic_acid=>nrel_inclusion:metaaluminum_acid;;
+
+metaaluminum_acid<-rrel_not_maximum_studied_object_class:subject_domain_of_acids;;

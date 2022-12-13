@@ -1,0 +1,42 @@
+temperature 
+=> nrel_main_idtf: 
+	[температура](* <- lang_ru;; *);
+	[temperature](* <- lang_en;; *);
+<- sc_node_not_relation;
+<- parameter;;
+
+temperature
+-> celsius; kelvin; fahrenheit;;
+
+celsius 
+=> nrel_main_idtf: 
+	[Цельсий](* <- lang_ru;; *);
+	[Celsius](* <- lang_en;; *);
+<- sc_node_not_relation;;
+
+celsium_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: celsius;;
+
+kelvin 
+=> nrel_main_idtf: 
+	[Кельвин](* <- lang_ru;; *);
+	[Kelvin](* <- lang_en;; *);
+<- sc_node_not_relation;;
+
+kelvin_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: kelvin;;
+
+fahrenheit 
+=> nrel_main_idtf: 
+	[Фаренгейт](* <- lang_ru;; *);
+	[Fahrenheit](* <- lang_en;; *);
+<- sc_node_not_relation;;
+
+fahrenheit_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: fahrenheit;;

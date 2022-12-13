@@ -1,0 +1,8 @@
+subject_domain_of_unsaturated_hydrocarbons
+=> nrel_main_idtf: 
+	[Предметная область непредельных углеводородов]
+	(* <- lang_ru;;*);
+	[Subject domain of unsaturated hydrocarbons]
+	(* <- lang_en;; *);
+
+<- subject_domain;;

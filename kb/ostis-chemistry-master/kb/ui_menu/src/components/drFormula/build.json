@@ -1,0 +1,11 @@
+{
+     "sources": [
+        
+        "src/drFormula-common.js",
+        "src/drFormula-paintPanel.js"
+    ],
+
+    "component": "src/drFormula-component.js",
+
+    "target": "static/components/js/chemistry_components/drFormula.js"
+}

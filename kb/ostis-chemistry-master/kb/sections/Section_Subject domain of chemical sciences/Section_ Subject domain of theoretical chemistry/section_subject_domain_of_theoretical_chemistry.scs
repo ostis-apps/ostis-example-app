@@ -1,0 +1,14 @@
+section_subject_domain_of_theoretical_chemistry
+=> nrel_main_idtf:
+    [Раздел. Предметная область теоретической химии]
+    (* <- lang_ru;;*);
+    [Section. Subject domain of theoretical chemistry]
+    (* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_theoretical_chemistry = [*^"file://subject_domain_of_theoretical_chemistry.scsi"*];;
+
+section_subject_domain_of_theoretical_chemistry
+-> rrel_key_sc_element: subject_domain_of_theoretical_chemistry;;

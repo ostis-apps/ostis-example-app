@@ -1,0 +1,14 @@
+section_subject_domain_of_chemical_elements
+=> nrel_main_idtf: 
+	[Раздел. Предметная область химических элементов]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of chemical elements]
+	(* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_chemical_elements = [*^"file://section_subject_domain_of_chemical_elements.scsi"*];;
+
+section_subject_domain_of_chemical_elements
+-> rrel_key_sc_element: subject_domain_of_chemical_elements;;

@@ -1,0 +1,116 @@
+cellulose_acetate<-sc_node_not_relation;;
+cellulose_acetate=> nrel_main_idtf:[ацетат целлюлозы](* <- lang_ru;; *);;
+cellulose_acetate=> nrel_main_idtf:[cellulose_acetate](* <- lang_en;; *);;
+cellulose_acetate=> nrel_idtf:[ acetate(cellulose)​](* <- lang_en;; *);;
+cellulose_acetate=> nrel_idtf:[C6H7O2(OH)3-x(OCOCH3)х n](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: cellulose_acetate;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Ацетат целлюлозы — прозрачный 
+	аморфный <b><sc_element sys_idtf="amorphousness">полимер</b></sc_element>
+	ударопрочный атмосферостойкий материал.]
+	  
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (ацетат целлюлозы)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		amorphousness
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: cellulose_acetate;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Ацетат целлюлозы — широко применяется для прочных, прозрачных изделий 
+	(оправы для очков, рукоятки и т.д.), изделий с  <b><sc_element sys_idtf="paint">окраской</b></sc_element> под кость.]
+	 
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(ацетат целлюлозы, широко применяется)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		paint
+		};;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:cellulose_acetate;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Ацетат целлюлозы —  <b><sc_element sys_idtf="ester">сложный эфир</b></sc_element> 
+	<b><sc_element sys_idtf="cellulose">целлюлозы</b></sc_element> и 
+	уксусной кислоты.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(ацетат целлюлозы,сложный эфир)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		ester;
+		cellulose
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:cellulose_acetate;;
+	<= nrel_sc_text_translation: ...(*->"file://image/cellulose_acetate.png";;*);;
+	=> nrel_main_idtf: [Рисунок(ацетат целлюлозы,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:cellulose_acetate;;
+	<= nrel_sc_text_translation: ...(*->"file://image/cellulose_acetate_3d.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(ацетат целлюлозы, молекулы)](*<- lang_ru;;*);;
+*);;
+
+
+thermoplastic_polymer=>nrel_inclusion:cellulose_acetate;;
+artificial_polymers=>nrel_inclusion:cellulose_acetate;;
+polymerisation_polymer=>nrel_inclusion:cellulose_acetate;;
+homo_chain_polymer=>nrel_inclusion:cellulose_acetate;;
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> cellulose_acetate;;
+	=> rrel_mol: [134]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->cellulose_acetate;;
+	=> rrel_degree_celsius: 127
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->cellulose_acetate;;
+	=> rrel_joule_per_kelvin_and_mole: 0.3
+	(*
+		<-number;;
+	*);;
+*);;
+
+

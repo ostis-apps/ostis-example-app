@@ -1,0 +1,46 @@
+imide
+=> nrel_main_idtf:
+	[имид](* <-lang_ru;; *);
+	[imide](* <-lang_en;; *);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(имид)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://html/imide_definition.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->ammonia; amide; chemical_compound;;
+	*);;
+*);
+//утверждение
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(имид, амид, карбоновая кислота, азот, атом)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Свойства и реакционная способность имидов сходны со свойствами амидов карбоновых кислот. Индуктивный эффект двух ацильных заместителей при атоме азота обуславливает большую кислотность атома водорода NH-группы, снижает нуклеофильность атомов азота и карбонильного кислорода, а также повышает электрофильность карбонильных атомов углерода ацильных групп по сравнению с амидами.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: amide; carboxylic_acid; atom; subst_N;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(имид, альдегид, кетон, аминокабрил, амин)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://html/imide_interaction_with_aldehyde_and_ketone.html"(* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: aldehyde; ketone; aminocabril; amine;;
+*);;

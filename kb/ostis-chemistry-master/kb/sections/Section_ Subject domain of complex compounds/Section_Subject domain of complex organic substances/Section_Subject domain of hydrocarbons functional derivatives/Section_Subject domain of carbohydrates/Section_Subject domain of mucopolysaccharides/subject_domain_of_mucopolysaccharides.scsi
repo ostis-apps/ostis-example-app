@@ -1,0 +1,8 @@
+subject_domain_of_mucopolysaccharides
+=> nrel_main_idtf: 
+	[Предметная область мукополисахаридов]
+	(* <- lang_ru;;*);
+	[Subject domain of mucopolysaccharides]
+	(* <- lang_en;; *);
+
+<- subject_domain;;

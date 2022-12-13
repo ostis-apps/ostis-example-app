@@ -1,0 +1,125 @@
+nonanol<-sc_node_not_relation;;
+nonanol=> nrel_main_idtf:[нонанол](* <- lang_ru;; *);;
+nonanol=> nrel_main_idtf:[nonanol](* <- lang_en;; *);;
+nonanol=> nrel_idtf:[C9H20O](* <- lang_en;; *);;
+
+
+
+
+nonanol<=nrel_intramolecular_dehydration:nonane;;
+
+
+nonanol<=nrel_poisoning_way:peroral_way;;
+
+aromatic_alcohols=>nrel_inclusion:nonanol;;
+higher_fatty_alcohols=>nrel_inclusion:nonanol;;
+organic_artificial_poison=>nrel_inclusion:nonanol;;
+rrel_liquid_solvent=>nrel_inclusion:nonanol;;
+triatomic_alcohol=>nrel_inclusion:nonanol;;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: nonanol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Нонанол — 
+	<b><sc_element sys_idtf="organic_compound">органическое вещество</b></sc_element>, относится к 
+	классу <b><sc_element sys_idtf="higher_fatty_alcohols">жирных спиртов</b></sc_element>
+	. Содержится в ряде эфирных масел, например в апельсиновом масле и резиноиде дубового мха.]
+		(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (нонанол)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		organic_compound;
+		higher_fatty_alcohols
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: nonanol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[<b><sc_element sys_idtf="peroral_way">Пероральное воздействие</b></sc_element>
+	 приводит к симптомам ,
+	 аналогичным интоксикации <b><sc_element sys_idtf="ethanol">этанолам</b></sc_element>
+	  , и , как потребление <b><sc_element sys_idtf="ethanol">этанола</b></sc_element>, может вызвать повреждение печени.]
+	
+	  
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(нонанол,вредное вещество)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		peroral_way;
+		ethanol
+		};;	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:nonanol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Нонанол получают
+	 гидрированием  <b><sc_element sys_idtf="ester">сложных эфиров</b></sc_element>
+	  пеларгоновой кислоты.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(нонанол, получают гидрированием)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		ester
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:nonanol;;
+	<= nrel_sc_text_translation: ...(*->"file://image/nonanol_1.png";;*);;
+	=> nrel_main_idtf: [Рисунок(нонанол,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:nonanol;;
+	<= nrel_sc_text_translation: ...(*->"file://image/nonanol_1_3d.png";;*);;
+	=> nrel_main_idtf: [Рисунок(нонанол,пример)](*<- lang_ru;;*);;
+*);;
+
+
+nrel_relative_molar_mass->...
+(* 
+	<- sc_node_not_relation;;
+	-> nonanol;;
+	=> rrel_mol: [120]
+	(*
+		<-number;;
+	*);;
+*);;
+
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->nonanol;;
+	=> rrel_gram_per_cubic_cm:1.23
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->nonanol;;
+	=> rrel_joule_per_kelvin_and_mole: 0.44
+	(*
+		<-number;;
+	*);;
+*);;

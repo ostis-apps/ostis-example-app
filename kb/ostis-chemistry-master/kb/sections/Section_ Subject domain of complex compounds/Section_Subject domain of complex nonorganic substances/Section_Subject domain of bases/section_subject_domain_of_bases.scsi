@@ -1,0 +1,53 @@
+subject_domain_of_bases
+    => nrel_main_idtf:[Предметная область оснований](* <- lang_ru;; *);
+	=> nrel_main_idtf:[Subject domain of bases](* <- lang_en;; *);
+<- subject_domain;
+-> rrel_maximum_studied_object_class: base;;
+
+base
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[основание](* <-lang_ru;; *);
+	[base](* <-lang_en;; *);
+//разбиение
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку степени диссоциации](* <-lang_ru;; *);;
+	-> strong_base;;
+	-> weak_base;;
+*);
+//определение
+<-rrel_key_sc_element:Definition_of_base
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(основание)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://htmls/base.html"
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->chemical_compound;;
+		->hydroxyl_group;;
+		->ion;;
+		->aqueous_solution;;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(растворимость*, основание, вода, щёлочь)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Хорошо растворимые в воде основания называются щелочами.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_solubility;;
+	-> rrel_key_sc_element: water;;
+	-> rrel_key_sc_element: alkali;;
+*);;

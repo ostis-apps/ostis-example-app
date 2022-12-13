@@ -1,0 +1,89 @@
+synthetic_polymer
+<-sc_node_not_relation;;
+
+synthetic_polymer=> nrel_main_idtf:[синтетический полимер](* <- lang_ru;; *);;
+synthetic_polymer=> nrel_main_idtf:[synthetic polymer](* <- lang_en;; *);;
+synthetic_polymer<= nrel_subdividing:...
+	(*	
+		=> nrel_main_idtf:[Разбиение в зависимости от реакции получения](* <- lang_ru;; *);;
+		-> polycondensation_polymer;;
+		-> polymerisation_polymer;;
+	*);;
+synthetic_polymer<= nrel_subdividing:...
+	(*	
+		=> nrel_main_idtf:[по отношению к нагреванию](* <- lang_ru;; *);;
+		-> thermoplastic_polymer;;
+		-> thermosetting_polymer;;
+	*);;
+	synthetic_polymer<= nrel_subdividing:...
+	(*	
+		=> nrel_main_idtf:[в зависимости от строения главной цепи](* <- lang_ru;; *);;
+		-> hetero_chain_polymer;;
+		-> homo_chain_polymer;;
+	*);;
+definition ->...
+(*
+	->rrel_key_sc_element: synthetic_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Синтетические полимеры —  <b><sc_element sys_idtf="polymer">полимеры</b></sc_element> , которые относятся к классу химических соединений, у которых короткие структурные единицы, состоящие из нескольких атомов (мономеров), соединенных в длинные цепочки при помощи различного рода связей. ]
+	 
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Определение (синтетические полимеры)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		polymer
+		};;
+*);;
+statement ->...
+(*
+	->rrel_key_sc_element: synthetic_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Характерная особенность синтетических полимеров – большая <b><sc_element sys_idtf="molecular_mass">молекулярная масса</b></sc_element> при стандартных условиях,– от нескольких тысяч, до миллионов <b><sc_element sys_idtf="rrel_mol">моль</b></sc_element> .]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Утверждение(синтетические полимеры,большая молекулярная масса)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		rrel_mol;
+		molecular_mass
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: synthetic_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Синтетические полимеры имеют в своей основе низкомолекулярные органические соединения <b><sc_element sys_idtf="monomer">(мономеры)</b></sc_element>, которые в результате <b><sc_element sys_idtf="nrel_polymerization_reaction"> реакций полимеризации</b></sc_element>  или поликонденсации образуют длинные цепочки.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Утверждение(синтетические полимеры,имеют в своей основе мономеры)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		nrel_polymerization_reaction;
+		monomer
+		};;
+*);;
+statement ->...
+(*
+	->rrel_key_sc_element: synthetic_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[ Под действием ультрафиолетовых лучей длинные полимерные <b><sc_element sys_idtf="nrel_simple_trail">цепочки</b></sc_element> разрушаются, увеличивается хрупкость изделий, снижается прочность. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Утверждение(синтетические полимеры,не неустойчивы к ультрафиолетовому излучению)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nrel_simple_trail
+		};;
+*);;
+
+

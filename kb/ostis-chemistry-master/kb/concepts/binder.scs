@@ -1,0 +1,51 @@
+binder
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[вяжущее вещество](* <-lang_ru;; *);
+	[binder](* <- lang_en;; *);;
+
+binder
+<- rrel_key_sc_element:
+	Definition_of_binder
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(вяжущее вещество)] (* <-lang_ru;; *);; 
+        <= nrel_sc_text_translation:...
+        (*
+			-> rrel_example:"file://htmls/binder.html"(* <- lang_ru;; *);;
+        *);;
+	*);;
+	
+binder
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Прим.(вяжущее вещество, классификация*)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/binder1.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+binder
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Прим.(минеральное вяжущее вещество, классификация*, пример')] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/binder2.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+binder
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Прим.(органическое вяжущее вещество, пример')] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/binder3.html" (* <-lang_ru;; *);;
+		*);;
+	*);;

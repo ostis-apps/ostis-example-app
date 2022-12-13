@@ -1,0 +1,14 @@
+radical
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[радикал](*<-lang_ru;;*);
+     [radical](*<-lang_en;;*);;
+
+radical
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(радикал)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b>Радикал</b> — по представлениям А. Л. Лавуазье, группа <sc_element sys_idtf="atom">атомов</sc_element>, переходящих без изменения из одного <sc_element sys_idtf="nrel_compound">соединения</sc_element> в другое.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: atom; nrel_compound;;
+*);;

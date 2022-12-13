@@ -1,0 +1,19 @@
+color_golden
+<- sc_node_not_relation;
+=> nrel_main_idtf:[золотистый цвет](* <- lang_ru;; *);
+=> nrel_main_idtf:[golden](* <- lang_en;; *);
+=> nrel_idtf:[golden color](* <- lang_en;; *);
+
+<-color;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (золотистый цвет)](* <- lang_ru;; *);
+		[Pic. (golden)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/golden.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;

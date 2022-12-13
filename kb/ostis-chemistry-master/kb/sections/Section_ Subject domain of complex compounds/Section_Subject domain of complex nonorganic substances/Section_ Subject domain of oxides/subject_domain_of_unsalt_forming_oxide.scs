@@ -1,0 +1,49 @@
+subject_domain_of_unsalt_forming_oxide
+=> nrel_main_idtf:
+	[Предметная область несолеобразующих оксидов]
+	(* <- lang_ru;; *);
+	[Subject domain of unsalt forming oxides]
+	(* <- lang_en;; *);
+		
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	unsalt_forming_oxide;
+
+<= nrel_sc_text_translation: ...
+(* 
+	-> rrel_example: "file://content_html/unsalt_forming_oxides.html" (* <-lang_ru;; *);;
+*);
+<= nrel_sc_text_translation: ...
+(* 
+	-> rrel_example: "file://content_html/unsalt_forming_oxides_eng.html" (* <-lang_en;; *);;
+*);;
+
+unsalt_forming_oxide
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[unsalt-forming oxide](*<- lang_en;;*);
+	[несолеобразующий оксид](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+		[Опр. (несолеобразующий оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<b>Несолеобразующие оксиды</b> - <sc_element sys_idtf="oxide">оксиды</sc_element>, не проявляющие ни кислотных, ни основных, ни амфотерных свойств и не образующие <sc_element sys_idtf="salt">соли</sc_element>.]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> oxide;;
+		-> salt;;
+	*);;
+*);
+
+=> nrel_inclusion: silicon_monoxide; dinitrogen_monoxide; nitrogen_monoxide; carbon_monoxide;;

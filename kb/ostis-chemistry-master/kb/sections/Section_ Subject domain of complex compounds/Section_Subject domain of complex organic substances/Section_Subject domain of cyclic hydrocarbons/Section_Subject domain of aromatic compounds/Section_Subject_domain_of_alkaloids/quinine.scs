@@ -1,0 +1,100 @@
+quinine<-sc_node_not_relation;;
+quinine=> nrel_main_idtf:[хинин](* <- lang_ru;; *);;
+quinine=> nrel_main_idtf:[quinine](* <- lang_en;; *);;
+quinine=> nrel_idtf:[C20H24N2O2](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: quinine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Хинин  —  <b><sc_element sys_idtf="organic_compound"> органическое соединение</b></sc_element> коры хинного дерева с сильным горьким вкусом, обладающий жаропонижающим и обезболивающим свойствами, а также выраженным действием против малярийных плазмодиев.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (хинин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		organic_compound
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: quinine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://quinine.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(хинин,фармакологический эффект*)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:quinine ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://quinine2.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(хинин,побочный эффект*)](*<- lang_ru;;*);;
+	
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:quinine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/quinine.png";;*);;
+	=> nrel_main_idtf: [Рисунок(хинин,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:quinine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/quinine1.png";;*);;
+	=> nrel_main_idtf: [Рисунок(хинин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element:quinine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/quinine2.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(хинин,твердое вещество)](*<- lang_ru;;*);;
+*);;
+solid_matter=>nrel_inclusion:quinine;;
+true_alkaloids=>nrel_inclusion:quinine;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	->quinine;;
+	=> nrel_measurement_in_gramms_per_mole: [324,417]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->quinine;;
+	=> nrel_measurement_in_degrees_Celsius: 177
+	(*
+		<-number;;
+	*);;
+*);;
+drag_half_life->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->quinine;;
+	=> nrel_measurement_in_degrees_Celsius: 8
+	(*
+		<-number;;
+	*);;
+*);;
+

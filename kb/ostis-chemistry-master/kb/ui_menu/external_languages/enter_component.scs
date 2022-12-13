@@ -1,0 +1,8 @@
+enter_component 
+<- ui_user_command_class_noatom;
+<- ui_external_languages;
+=> nrel_main_idtf:
+    [Поиск химического количества вещества]
+    (*<- lang_ru;;*);
+    [Find chemical amount of substance]
+    (* <- lang_en;; *);;

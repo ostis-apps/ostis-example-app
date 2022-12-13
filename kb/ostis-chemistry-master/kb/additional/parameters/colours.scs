@@ -1,0 +1,146 @@
+nrel_color_of_the_flame_during_combustion
+	=> nrel_main_idtf: [цвет пламени во время горения] (*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+color_red <= nrel_color_of_the_flame_during_combustion:LiCl; SrCl2; CaSO4;Ba;;
+color_green <= nrel_color_of_the_flame_during_combustion:CuSO4; P2;elem_Cu;elem_K;;
+color_blue <= nrel_color_of_the_flame_during_combustion:CuCl;elem_Se;;
+color_yellow <= nrel_color_of_the_flame_during_combustion:NaCl;;
+
+
+color_red
+	=> nrel_main_idtf:
+		[красный цвет] (*<-lang_ru;;*);
+	<- color;
+	<- sc_node_not_relation;;
+
+color_pink
+	=> nrel_main_idtf:
+		[розовый цвет] (*<-lang_ru;;*);
+	<- color;
+	<- sc_node_not_relation;;
+
+
+color_white
+	=> nrel_main_idtf:
+		[белый цвет](* <- lang_ru;; *);
+		[white color](* <- lang_en;; *);
+	<- color;
+	<- sc_node_not_relation;;
+
+color_reddish_brown
+	=> nrel_main_idtf:
+		[красновато-коричневый цвет](* <- lang_ru;; *);
+		[reddish-brown color](* <- lang_en;; *);
+	<- color;
+	<- sc_node_not_relation;;
+
+color_light_green
+	=> nrel_main_idtf:
+		[светло-зеленный цвет](* <- lang_ru;; *);
+		[light green color](* <- lang_en;; *);
+	<- color;
+	<- sc_node_not_relation;;
+
+color_green
+	=> nrel_main_idtf:
+		[зелёный цвет] (*<-lang_ru;;*);
+		[green color](* <- lang_en;; *);
+	<- color;
+	<- sc_node_not_relation;;
+
+color_blue
+	=> nrel_main_idtf:
+		[синий цвет] (*<-lang_ru;;*);
+	<- color;
+	<- sc_node_not_relation;;
+
+color_yellow
+	=> nrel_main_idtf:
+		[жёлтый цвет] (*<-lang_ru;;*);
+	<- color;
+	<- sc_node_not_relation;;
+
+color_white_blue
+	=> nrel_main_idtf:
+		[бело-голубой цвет](* <- lang_ru;; *);
+	<- color;
+	<- sc_node_not_relation;;
+
+color_silver_grey
+	=> nrel_main_idtf:
+		[серебристо-серый цвет](* <- lang_ru;; *);
+	<- color;
+	<- sc_node_not_relation;;
+
+color_white_silver
+	=> nrel_main_idtf: [серебристо-белый цвет](* <- lang_ru;; *);
+	<- color;
+	<- sc_node_not_relation;;
+
+color_black
+	=> nrel_main_idtf:[чёрный цвет] (*<-lang_ru;;*);
+	<- color;
+	<- sc_node_not_relation;;
+
+color_brown
+	=> nrel_main_idtf:[коричневый цвет] (*<-lang_ru;;*);
+	<- color;
+	<- sc_node_not_relation;;
+
+color_orange
+	=> nrel_main_idtf:[оранжевый цвет] (*<-lang_ru;;*);
+	<- color;
+	<- sc_node_not_relation;;
+
+color_gray
+	=> nrel_main_idtf:[серый цвет] (*<-lang_ru;;*);
+	<- color;
+	<- sc_node_not_relation;;
+
+color_gray_white
+	=> nrel_main_idtf:[серо-белый цвет](*<-lang_ru;;*);
+	<- color;
+	<- sc_node_not_relation;;
+
+color_pale_yellow
+	=> nrel_main_idtf:[бледно-жёлтый цвет](*<-lang_ru;;*);
+	<- color;
+	<- sc_node_not_relation;;
+
+color_dark_grey
+	=> nrel_main_idtf:[тёмно-серый цвет](*<-lang_ru;;*);
+	<- color;
+	<- sc_node_not_relation;;
+
+color_silver
+	=> nrel_main_idtf:[серебристый цвет](*<-lang_ru;;*);
+	<- color;
+	<- sc_node_not_relation;;
+
+no_color
+	=> nrel_main_idtf: [бесцветный](*<- lang_ru;;*);
+	<- color;
+	<- sc_node_not_relation;;
+
+steel_color => nrel_main_idtf: [стальной цвет](*<- lang_ru;;*);
+	<- color;
+	<- sc_node_not_relation;;
+
+dark_blue_color => nrel_main_idtf: [темно-синий цвет](*<- lang_ru;;*);
+	<- color;
+	<- sc_node_not_relation;;
+
+smell -> no_smell;;
+smell -> strong_smell;;
+no_smell => nrel_main_idtf: [без запаха](*<- lang_ru;;*);;
+strong_smell => nrel_main_idtf: [резкий запах](*<- lang_ru;;*);;
+
+taste -> no_taste;;
+no_taste => nrel_main_idtf: [без вкуса](*<- lang_ru;;*);;
+
+sweet
+<- sc_node_not_relation;
+<= nrel_inclusion: taste;
+=> nrel_main_idtf:
+	[сладкий вкус](* <- lang_ru;; *);;

@@ -1,0 +1,24 @@
+ex19_solutions
+<- exercises_solutions;
+
+-> rrel_key_sc_element: chloride; mixture; water; nrel_mass; sulfate; nitrate; solution;
+
+=> nrel_next_exercise: ex20_solutions;
+
+=> nrel_main_idtf:
+	[Упражнение 19. Раздел. Предметная область растворов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 19. Section. Subject domain of solutions]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex19_solutions_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex19_solutions_en.html" (* <-lang_en;; *);;
+	*);;

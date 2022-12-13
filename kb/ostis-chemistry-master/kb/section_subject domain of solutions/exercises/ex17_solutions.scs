@@ -1,0 +1,24 @@
+ex17_solutions
+<- exercises_solutions;
+
+-> rrel_key_sc_element: hydrochloric_acid; metal; nrel_mass; chloride; nrel_volume_fraction; gas;
+
+=> nrel_next_exercise: ex18_solutions;
+
+=> nrel_main_idtf:
+	[Упражнение 17. Раздел. Предметная область растворов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 17. Section. Subject domain of solutions]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex17_solutions_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex17_solutions_en.html" (* <-lang_en;; *);;
+	*);;

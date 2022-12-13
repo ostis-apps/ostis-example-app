@@ -1,0 +1,8 @@
+subject_domain_of_proteins
+=> nrel_main_idtf: 
+	[Предметная область белков]
+	(* <- lang_ru;;*);
+	[Subject domain of proteins]
+	(* <- lang_en;; *);
+
+<- subject_domain;;

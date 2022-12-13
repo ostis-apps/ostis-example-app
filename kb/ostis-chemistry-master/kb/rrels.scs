@@ -1,0 +1,139 @@
+rrel_pm 
+	=> nrel_main_idtf: [пм'](* <- lang_ru;; *);
+	<- sc_node_role_relation;;
+
+rrel_aem 
+	=> nrel_main_idtf:[а.е.м.'](*<-lang_ru;;*);
+	<- sc_node_role_relation;;
+
+rrel_gram_per_cubic_cm 
+	=> nrel_main_idtf: [грамм на см в кубе'](* <- lang_ru;; *);
+	<- sc_node_role_relation;;
+
+rrel_kelvin 
+	=> nrel_main_idtf: [Кельвин'](* <- lang_ru;; *);
+	<- sc_node_role_relation;;
+
+rrel_kilojoule_per_mole 
+	=> nrel_main_idtf: [кДж на моль'](* <- lang_ru;; *);
+	<- sc_node_role_relation;;
+
+rrel_kilojoule_per_kg 
+	=> nrel_main_idtf: [кДж на кг'](* <- lang_ru;; *);
+	<- sc_node_role_relation;;
+
+rrel_catalyst 
+	=> nrel_main_idtf: [катализатор'](* <- lang_ru;; *);
+	<- sc_node_role_relation;;
+
+rrel_joule_per_kelvin_and_mole 
+	=> nrel_main_idtf: [Дж/(К*моль)'](* <- lang_ru;; *);
+	<- sc_node_role_relation;;
+
+rrel_cubic_cm_per_mole 
+	=> nrel_main_idtf: [см в кубе на моль'](* <- lang_ru;; *);
+	<- sc_node_role_relation;;
+
+rrel_degree_celsius 
+	=> nrel_main_idtf: [°C](*<- lang_ru;;*);
+	=> nrel_idtf: [градус цельсия](*<- lang_ru;;*);
+	<- sc_node_role_relation;;
+
+rrel_liter_per_mole
+<- sc_node_role_relation;
+=> nrel_main_idtf:
+	[литр/моль'](* <- lang_ru;; *);;
+
+rrel_10_in_23_mole
+<- sc_node_role_relation;
+=> nrel_main_idtf:
+	[10^23 моль^(-1)'](* <- lang_ru;; *);;
+
+rrel_liter
+<- sc_node_role_relation;
+=> nrel_main_idtf:
+	[литр'](* <- lang_ru;; *);;
+
+rrel_10_in_23
+<- sc_node_role_relation;
+=> nrel_main_idtf:
+	[10^23'](* <- lang_ru;; *);;
+
+rrel_10_in_minus_24_kg
+<- sc_node_role_relation;
+=> nrel_main_idtf:
+	[10^(-24) кг'](* <- lang_ru;; *);
+	[10^(-24) kg'](* <- lang_en;; *);;
+
+rrel_10_in_minus_27_kg
+<- sc_node_role_relation;
+=> nrel_main_idtf:
+	[10^(-27) кг'](* <- lang_ru;; *);
+	[10^(-27) kg'](* <- lang_en;; *);;
+
+rrel_10_in_minus_31_kg
+<- sc_node_role_relation;
+=> nrel_main_idtf:
+	[10^(-31) кг'](* <- lang_ru;; *);
+	[10^(-31) kg'](* <- lang_en;; *);;
+
+rrel_10_in_minus_8_kg
+<- sc_node_role_relation;
+=> nrel_main_idtf:
+	[10^(-8) кг'](* <- lang_ru;; *);
+	[10^(-8) kg'](* <- lang_en;; *);;
+
+rrel_10_in_30_kg
+<- sc_node_role_relation;
+=> nrel_main_idtf:
+	[10^(30) кг'](* <- lang_ru;; *);
+	[10^(30) kg'](* <- lang_en;; *);;
+
+rrel_mol
+<- sc_node_role_relation;
+=> nrel_main_idtf:
+	[моль'](* <- lang_ru;; *);;
+
+	
+
+rrel_organic_solvent
+=> nrel_main_idtf:
+    [organic solvent'](*<- lang_en;;*);
+	[органический растворитель']
+	(* <- lang_ru;;	*);;
+	
+rrel_inorganic_solvent
+=> nrel_main_idtf:
+    [inorganic solvent'](*<- lang_en;;*);
+	[неорганический растворитель']
+	(* <- lang_ru;;	*);;
+	
+rrel_liquid_solvent
+=> nrel_main_idtf:
+    [liquid solvent'](*<- lang_en;;*);
+	[жидкий растворитель']
+	(* <- lang_ru;;	*);;
+
+rrel_solid_solvent
+=> nrel_main_idtf:
+    [solid solvent'](*<- lang_en;;*);
+	[твёрдый растворитель']
+	(* <- lang_ru;;	*);;
+
+rrel_aprotic_solvent
+=> nrel_main_idtf:
+    [aprotic solvent'](*<- lang_en;;*);
+	[апротонный растворитель']
+	(* <- lang_ru;;	*);;
+
+rrel_amphidic_solvent
+=> nrel_main_idtf:
+    [amphidic solvent'](*<- lang_en;;*);
+	[амфипротный растворитель']
+	(* <- lang_ru;;	*);;
+
+rrel_protophilic_solvent
+=> nrel_main_idtf:
+    [protophilic solvent'](*<- lang_en;;*);
+	[протофильный растворитель']
+	(* <- lang_ru;;	*);;

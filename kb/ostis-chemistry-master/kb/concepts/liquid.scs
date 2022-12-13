@@ -1,0 +1,88 @@
+liquid
+=> nrel_main_idtf:
+	[жидкость]
+	(* <- lang_ru;;	*);
+	[liquid]
+	(* <- lang_en;;	*);;
+liquid
+<- rrel_key_sc_element:
+	Definition_of_liquid
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/liquid.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->nrel_state_of_aggregation;;
+				->chemical_substance;;
+			*);;
+	*);
+
+
+
+
+
+<- rrel_key_sc_element: state_of_liquid
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (жидкость, состояние*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Жидкость является конденсированным, т.е. связанным, состоянием.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: property1_of_liquid
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (жидкость, свойство*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Основным свойством жидкости, отличающим её от веществ, находящихся в других агрегатных состояниях, является способность неограниченно менять форму под действием касательных механических напряжений, даже сколь угодно малых, практически сохраняя при этом объём.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: property2_of_liquid
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (жидкость, свойство*, текучесть)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Основным свойством жидкостей является текучесть.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: form_of_liquid
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (жидкость, форма*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Форма жидких тел может полностью или отчасти определяться тем, что их поверхность ведёт себя как упругая мембрана. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+<- rrel_key_sc_element: molecule_of_liquid
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (жидкость, молекула)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Молекулы жидкости не имеют определённого положения, но в то же время им недоступна полная свобода перемещений. Между ними существует притяжение, достаточно сильное, чтобы удержать их на близком расстоянии. ] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+Definition_of_liquid
+=> nrel_main_idtf:
+	[Опр.(Жидкость)]
+	(* <- lang_ru;;	*);;

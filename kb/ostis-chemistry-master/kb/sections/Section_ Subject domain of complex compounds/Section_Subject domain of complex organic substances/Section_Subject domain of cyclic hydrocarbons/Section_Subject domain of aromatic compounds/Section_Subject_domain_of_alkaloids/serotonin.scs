@@ -1,0 +1,101 @@
+serotonin<-sc_node_not_relation;;
+serotonin=> nrel_main_idtf:[серотонин](* <- lang_ru;; *);;
+serotonin=> nrel_main_idtf:[serotonin](* <- lang_en;; *);;
+serotonin=> nrel_idtf:[N2OC10H12](* <- lang_en;; *);;
+serotonin=> nrel_idtf:[5-гидрокситриптамин](* <- lang_ru;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: serotonin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Серотонин — один из основных нейромедиаторов,истинный алкалоид,по химическому строению относится к биогенным <b><sc_element sys_idtf="amine"> аминам</b></sc_element>, классу триптаминов, часто называют «гормоном хорошего настроения» и «гормоном счастья».]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (серотонин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		amine
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: serotonin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://serotonin.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(серотонин,фармакологический эффект*)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:serotonin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://serotonin2.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(серотонин,побочный эффект*)](*<- lang_ru;;*);;
+	
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:serotonin;;
+	<= nrel_sc_text_translation: ...(*->"file://images/serotonin.png";;*);;
+	=> nrel_main_idtf: [Рисунок(серотонин,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:serotonin;;
+	<= nrel_sc_text_translation: ...(*->"file://images/serotonin.2png";;*);;
+	=> nrel_main_idtf: [Рисунок(серотонин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element:serotonin;;
+	<= nrel_sc_text_translation: ...(*->"file://images/serotonin3.png";;*);;
+	=> nrel_main_idtf: [Рисунок(серотонин,синтез)](*<- lang_ru;;*);;
+*);;
+solid_matter=>nrel_inclusion:serotonin;;
+true_alkaloids=>nrel_inclusion:serotonin;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	->serotonin;;
+	=> nrel_measurement_in_gramms_per_mole: [176,215]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->serotonin;;
+	=> nrel_measurement_in_degrees_Celsius: 168
+	(*
+		<-number;;
+	*);;
+*);;
+boiling_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->serotonin;;
+	=> nrel_measurement_in_degrees_Celsius: 416
+	(*
+		<-number;;
+	*);;
+*);;
+

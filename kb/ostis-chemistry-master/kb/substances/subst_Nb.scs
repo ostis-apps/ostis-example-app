@@ -1,0 +1,146 @@
+subst_Nb
+<- sc_node_not_relation;
+=> nrel_main_idtf: [ниобий (вещество)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [niobium (substance)] (* <- lang_en;; *);
+<= nrel_inclusion: chemical_substance;
+<- rrel_key_sc_element: definition_of_subst_Nb
+(* 
+	=> nrel_main_idtf: [Опр. (ниобий (вещество))] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество ниобий</b> - блестящий <sc_element sys_idtf = "metal">металл</sc_element> <sc_element sys_idtf = "color_silver_grey">серебристо-серого цвета</sc_element> с кубической объёмноцентрированной <sc_element sys_idtf = "crystal_cell">кристаллической решеткой</sc_element> типа α-Fe, а = 0,3294.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> metal;;
+		-> color_silver_grey;;
+		-> crystal_cell;;
+	*);;
+*);
+
+<- solid;
+<- color_silver_grey;
+
+=> nrel_being_in_nature: ...
+(*
+	-> mineral;;
+	-> sea;;
+*);
+
+=> nrel_receiving: ...
+(*
+	-> aluminothermic_method;;
+	-> sodium_thermic_method;;
+	-> carbothermic_method;;
+*);
+
+=> nrel_applying: ...
+(*
+	-> coolant;;
+	-> cryotherapy;;
+	-> petrochemistry;;
+	-> compound_synthesis;;
+	-> food_additive_E941;;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (ниобий (вещество), твёрдое тело)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_Niobium.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [8,57] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 2741 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 5015 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [26,8] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [680] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [24,44] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_volume: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_cubic_cm_per_mole:...
+		(*
+			=> nrel_main_idtf: [10,8] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;

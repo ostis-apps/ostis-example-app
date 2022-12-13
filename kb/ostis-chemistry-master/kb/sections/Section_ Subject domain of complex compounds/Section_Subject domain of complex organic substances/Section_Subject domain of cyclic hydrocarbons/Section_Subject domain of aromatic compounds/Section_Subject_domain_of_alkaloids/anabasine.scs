@@ -1,0 +1,135 @@
+anabasine<-sc_node_not_relation;;
+anabasine=> nrel_main_idtf:[анабазин](* <- lang_ru;; *);;
+anabasine=> nrel_main_idtf:[anabasine](* <- lang_en;; *);;
+anabasine=> nrel_idtf:[3-​​(2-​пиперидил)​пиридин](* <- lang_ru;; *);;
+anabasine=> nrel_idtf:[C10H14N2](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: anabasine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Анабазин  — <b><sc_element sys_idtf="true_alkaloids">истинный алкалоид</b></sc_element>, содержащийся в ежовнике безлистном (Anabasis aphylla L.), а также в табаке.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (анабазин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		true_alkaloids
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: anabasine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://anabasine.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(анабазин,фармакологический эффект*)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: anabasine ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://anabasine2.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(анабазин,побочный эффект*)](*<- lang_ru;;*);;
+	
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:anabasine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/anabasine.png";;*);;
+	=> nrel_main_idtf: [Рисунок(анабазин,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:anabasine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/anabasine.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(анабазин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+
+liquid=>nrel_inclusion:anabasine;;
+true_alkaloids=>nrel_inclusion:anabasine;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> anabasine;;
+	=> nrel_measurement_in_gramms_per_mole: [162,23]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->anabasine;;
+	=> nrel_measurement_in_degrees_Celsius: 9
+	(*
+		<-number;;
+	*);;
+*);;
+drag_half_life->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->anabasine;;
+	=> nrel_measurement_in_degrees_Celsius: 11
+	(*
+		<-number;;
+	*);;
+*);;
+decomposition_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->anabasine;;
+	=> nrel_measurement_in_degrees_Celsius: 240
+	(*
+		<-number;;
+	*);;
+*);;
+boiling_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->anabasine;;
+	=> nrel_measurement_in_degrees_Celsius: 270
+	(*
+		<-number;;
+	*);;
+*);;
+flash_point->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->anabasine;;
+	=> nrel_measurement_in_degrees_Celsius: 93
+	(*
+		<-number;;
+	*);;
+*);;
+destiny->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->anabasine;;
+	=> nrel_measurement_in_degrees_Celsius: [1,01]
+	(*
+		<-number;;
+	*);;
+*);;

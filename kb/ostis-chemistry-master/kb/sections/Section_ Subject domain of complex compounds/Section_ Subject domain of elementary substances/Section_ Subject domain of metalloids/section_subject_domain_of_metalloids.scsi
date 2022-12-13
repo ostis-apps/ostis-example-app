@@ -1,0 +1,11 @@
+subject_domain_of_metalloids
+	=> nrel_main_idtf:
+	[Предметная область полуметаллов]
+	(* <- lang_ru;; *);
+	[Subject domain of metalloids]
+	(* <- lang_en;; *);
+		
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	metalloid;;

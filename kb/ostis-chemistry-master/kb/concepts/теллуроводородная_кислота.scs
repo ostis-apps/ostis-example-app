@@ -1,0 +1,54 @@
+sc_node_not_relation->hydrotelluric_acid;;
+
+hydrotelluric_acid=> nrel_main_idtf: [теллуроводородная кислота](* <- lang_ru;; *);;
+hydrotelluric_acid=> nrel_main_idtf: [hydrotelluric acid](* <- lang_en;; *);;
+hydrotelluric_acid=> nrel_idtf: [H2Te](* <- lang_en;; *);;
+hydrotelluric_acid=> nrel_idtf: [теллуроводород](* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: hydrotelluric_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Теллуроводородная кислотаная кислота  — бинарное неорганическое соединение водорода и теллура с формулой H2Te.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (теллуроводородная кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nonorganic_compound;
+		binary_compound;
+		subst_Te;
+		elem_H;
+		chemical_formula
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: hydrotelluric_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Теллуроводородная кислота очень токсичен, является гемолитическим ядом](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(теллуроводородная кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		toxin;
+		poison
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: hydrotelluric_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/теллуроводородная_кислота.png";;*);;
+	=> nrel_main_idtf: [Рисунок(теллуроводородная кислота, структурная формула)](*<- lang_ru;;*);;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: hydrotelluric_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/теллуроводородная_кислота_модель.png";;*);;
+	=> nrel_main_idtf: [Рисунок(теллуроводородная кислота, трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+hydrotelluric_acid -> hydrotelluric_acid_x;;
+inorganic_acid=>nrel_inclusion:hydrotelluric_acid;;
+hydrotelluric_acid<=nrel_inclusion:oxygen_free_acid;;
+hydrotelluric_acid<=nrel_inclusion:monobasic_acid;;
+
+hydrotelluric_acid<-rrel_not_maximum_studied_object_class:subject_domain_of_acids;;

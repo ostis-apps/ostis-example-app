@@ -1,0 +1,50 @@
+coordination_number
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[координационное число](* <-lang_ru;; *);
+	[coordination number](* <- lang_en;; *);;
+
+coordination_number
+<- rrel_key_sc_element:
+	Definition_of_coordination_number
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(координационное число)] (* <-lang_ru;; *);; 
+        <= nrel_sc_text_translation:...
+        (*
+			-> rrel_example:"file://htmls/coordination_number.html"(* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants:
+		...
+		(*
+			-> atom;;
+			-> molecule;;
+			-> ion;;
+		*);;
+	*);;
+	
+
+
+	
+coordination_number
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Прим.(координационное число, применение*)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/coordination_number1.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+coordination_number
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Прим.(координационное число, пример')] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/coordination_number2.html" (* <-lang_ru;; *);;
+		*);;
+	*);;

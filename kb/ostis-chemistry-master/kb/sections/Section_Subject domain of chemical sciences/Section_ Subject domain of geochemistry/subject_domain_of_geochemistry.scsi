@@ -1,0 +1,320 @@
+subject_domain_of_geochemistry
+  => nrel_main_idtf:
+    [Предметная область геохимии] (* <- lang_ru;;*);
+    [Subject domain of geochemistry] (* <- lang_en;; *);
+
+  <- subject_domain;
+  -> rrel_maximum_studied_object_class: geochemistry;
+  -> rrel_not_maximum_studied_object_class:
+    biogeochemistry;
+    cosmochemistry;
+    isotope_geochemistry;
+    organic_geochemistry;
+    photogeochemistry;
+    regional_geochemistry;
+    aqueous_geochemistry
+    ;;  
+
+geochemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [геохимия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [geochemistry] (* <- lang_en;; *);
+
+  <= nrel_subdividing:...
+  (*
+    => nrel_main_idtf: [Разбиение на поднауки] (* <- lang_ru;; *);;
+        -> biogeochemistry;;
+        -> cosmochemistry;;
+        -> isotope_geochemistry;;
+        -> organic_geochemistry;;
+        -> photogeochemistry;;
+        -> regional_geochemistry;;
+        -> aqueous_geochemistry;;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (геохимия)] (* <- lang_ru;; *);
+      [Def. (geochemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Геохимия — наука о химическом составе Земли и планет, законах распределения и движения элементов и изотопов в различных геологических средах, процессах формирования горных пород, почв и природных вод.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (геохимия)](* <- lang_ru;; *);
+      [Stat. (geochemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [В задачи геохимии входят: определение относительной и абсолютной распространённости элементов и изотопов в Земле и на её поверхности; изучение распределения и перемещения элементов в различных частях Земли (коре, мантии, гидросфере и т. д.) для выяснения законов и причин неравномерного распределения элементов и другие.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (геохимия)](* <- lang_ru;; *);
+      [Pic. (geochemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/geochemistry.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+biogeochemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [биогеохимия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [biogeochemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (биогеохимия)] (* <- lang_ru;; *);
+      [Def. (biogeochemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Биогеохимия — раздел геохимии, изучает химический состав живого вещества и геохимические процессы, протекающие в биосфере Земли при участии живых организмов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (биогеохимия)](* <- lang_ru;; *);
+      [Stat. (biogeochemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Поскольку многие элементы (например, тяжёлые металлы и мышьяк) обладают токсичностью, то вопросы накопления этих металлов в организмах важны для экотоксикологии. Таким образом, биогеохимия связана с экотоксикологией и вопросами химического загрязнения среды элементами, проявляющими токсичность.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (биогеохимия)](* <- lang_ru;; *);
+      [Pic. (biogeochemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/biogeochemistry.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;
+
+cosmochemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [космохимия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [cosmochemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (космохимия)] (* <- lang_ru;; *);
+      [Def. (cosmochemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Космохимия — область химии, наука о химическом составе космических тел, законах распространённости и распределения химических элементов во Вселенной, процессах сочетания и миграции атомов при образовании космического вещества.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (космохимия)](* <- lang_ru;; *);
+      [Stat. (cosmochemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Космохимия исследует преимущественно «холодные» процессы на уровне атомно-молекулярных взаимодействий веществ, в то время как «горячими» ядерными процессами в космосе — плазменным состоянием вещества, нуклеосинтезом (процессом образования химических элементов) внутри звёзд занимается физика.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (космохимия)](* <- lang_ru;; *);
+      [Pic. (cosmochemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/cosmochemistry.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+isotope_geochemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [изотопная геохимия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [isotope geochemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (изотопная геохимия)] (* <- lang_ru;; *);
+      [Def. (isotope geochemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Изотопная геохимия - раздел геохимии, основанный на изучении естественных изменений содержания изотопов различных элементов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (изотопная геохимия)](* <- lang_ru;; *);
+      [Stat. (isotope geochemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Изотопная геохимия включает определение относительных и абсолютных концентраций элементов и их изотопов на Земле и её поверхности.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (изотопная геохимия)](* <- lang_ru;; *);
+      [Pic. (isotope geochemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/isotope_geochemistry.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+organic_geochemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [органическая геохимия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [organic geochemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (органическая геохимия)] (* <- lang_ru;; *);
+      [Def. (organic geochemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Органическая геохимия - раздел геохимии, изучающий химимический и изотопный состав органических веществ, заключённых в горных породах, закономерности распределения, а также роль органического вещетва в процессах миграции химических элементов в земной коре.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (органическая геохимия)](* <- lang_ru;; *);
+      [Stat. (organic geochemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Органическая геохимия изучает роль процессов и соединений, происходящих из живых или некогда живых организмов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+
+photogeochemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [фотогеохимия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [photogeochemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (фотогеохимия)] (* <- lang_ru;; *);
+      [Def. (photogeochemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Фотогеохимия - раздел геохимии, который изучает вызванные светом химические реакции, которые происходят или могут происходить среди природных компонентов земной поверхности.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (фотогеохимия)](* <- lang_ru;; *);
+      [Stat. (photogeochemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Фотогеохимические реакции ограничиваются химическими реакциями, не включающими живые организмы. Реакции, включающие фотосинтез в растениях и других организмах, например, не считаются фотогеохимией, поскольку физико-химический контекст для этих реакций устанавливается организмом и должен поддерживаться для продолжения этих реакций (т.е. реакции прекращаются, если организм умирает).](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (фотогеохимия)](* <- lang_ru;; *);
+      [Pic. (photogeochemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/photogeochemistry.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+regional_geochemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [региональная геохимия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [regional geochemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (региональная геохимия)] (* <- lang_ru;; *);
+      [Def. (regional geochemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Региональная геохимия — раздел геохимии тесно связанный с рядом наук: стратиграфии, минералогии и петрографии, тектоники и структурной геологии (изучающих характер смятий и разрывов толщ горных пород, движения земной коры), геологического картирования.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (региональная геохимия)](* <- lang_ru;; *);
+      [Stat. (regional geochemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Региональная геохимия включает приложения к экологическим, гидрологическим и минеральным исследованиям.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+
+aqueous_geochemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [водная геохимия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [aqueous geochemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (водная геохимия)] (* <- lang_ru;; *);
+      [Def. (aqueous geochemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Водная геохимия — раздел геохимии, который изучает роль различных элементов в водосборных бассейнах, в том числе меди, серы, ртути, и то, как обменяются потоки элементарных частиц посредством взаимодействий атмосферы, земли и воды.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (водная геохимия)](* <- lang_ru;; *);
+      [Stat. (aqueous geochemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Работы в области водной геохимии также изучали распространение редкоземельных элементов, ядерных отходов и углеводородов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;

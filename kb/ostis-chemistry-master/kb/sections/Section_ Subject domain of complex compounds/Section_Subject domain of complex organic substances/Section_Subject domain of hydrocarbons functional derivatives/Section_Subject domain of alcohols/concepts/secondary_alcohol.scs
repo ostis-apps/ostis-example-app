@@ -1,0 +1,138 @@
+secondary_alcohol<-sc_node_not_relation;;
+secondary_alcohol=> nrel_main_idtf:[вторичный спирт](* <- lang_ru;; *);;
+secondary_alcohol=> nrel_main_idtf:[secondary_alcohol](* <- lang_en;; *);;
+secondary_alcohol=> nrel_idtf:[secondary alcohol-1](* <- lang_en;; *);;
+secondary_alcohol=> nrel_idtf:[СH3–CH2–OH](* <- lang_en;; *);;
+
+
+
+saturated_alcohols=>nrel_inclusion:secondary_alcohol;;
+secondary_alcohol<=nrel_intermolecular_dehydration:alcohol;;
+
+secondary_alcohol<=nrel_poisoning_way:peroral_way;;
+higher_fatty_alcohols=>nrel_inclusion:secondary_alcohol;;
+organic_artificial_poison=>nrel_inclusion:secondary_alcohol;;
+rrel_liquid_solvent=>nrel_inclusion:secondary_alcohol;;
+triatomic_alcohol=>nrel_inclusion:secondary_alcohol;;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: secondary_alcohol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Вторичные спирты представляет собой 
+	<b><sc_element sys_idtf="alcohol">спирт</b></sc_element>
+	 , который имеет гидроксильную группу , связанную со вторым 
+	 <b><sc_element sys_idtf="elem_C">атомом углерода </b></sc_element>.]
+		(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (вторичный спирт)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		alcohol;
+		elem_C
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: secondary_alcohol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Вторичные спирты подвергаются 
+	<b><sc_element sys_idtf="nrel_intermolecular_dehydration">дегидратациии</b></sc_element>
+	 при нагревании с 85%-ной
+<b><sc_element sys_idtf="orthophosphoric_acid">Фосфорной кислотой</b></sc_element>.]
+	
+	  
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(вторичный спирт, вторичный спирт подвергаются дегидратациии)](*<- lang_ru;;*);;	
+	=> nrel_using_constants:
+		{
+		orthophosphoric_acid;
+		nrel_intermolecular_dehydration
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:secondary_alcohol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Для <b><sc_element sys_idtf="nrel_oxidation">окисления</b></sc_element> 
+	вторичных 
+	спиртов используют реактив Джонса - раствор строго рассчитанного количества 
+	CrO3 в водной серной кислоте. Важное достоинство реагента Джонса состоит
+	 в том, что вторичные спирты, 
+	содержащие двойную или тройную связь, 
+	быстро <b><sc_element sys_idtf="nrel_oxidation">окисляются</b></sc_element> до кетонов без затрагивания кратных связей.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(вторичный спирт, окисляются)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nrel_oxidation
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:secondary_alcohol;;
+	<= nrel_sc_text_translation: ...(*->"file://image/secondary_alcohol_1.png";;*);;
+	=> nrel_main_idtf: [Рисунок(вторичный спирт,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:secondary_alcohol;;
+	<= nrel_sc_text_translation: ...(*->"file://image/secondary_alcohol_1_3d.png";;*);;
+	=> nrel_main_idtf: [Рисунок(вторичный спирт,пример)](*<- lang_ru;;*);;
+*);;
+
+
+
+nrel_relative_molar_mass->...
+(* 
+	<- sc_node_not_relation;;
+	-> secondary_alcohol;;
+	=> rrel_mol: [151.90]
+	(*
+		<-number;;
+	*);;
+*);;
+
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->secondary_alcohol;;
+	=> rrel_gram_per_cubic_cm:1.73
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->secondary_alcohol;;
+	=> rrel_joule_per_kelvin_and_mole: 0.19
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->secondary_alcohol;;
+	=> rrel_degree_celsius: 124
+	(*
+		<-number;;
+	*);;
+*);;

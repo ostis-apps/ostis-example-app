@@ -1,0 +1,43 @@
+nucleophile
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[нуклеофил](*<-lang_ru;;*);
+     [nucleophile](*<-lang_en;;*);;
+
+nucleophile
+
+<- rrel_key_sc_element: ... 
+    (*
+       <- definition;;
+       =>nrel_main_idtf: [Опр.(нуклеофил)]  (* <- lang_ru;; *);;
+       <= nrel_sc_text_translation:... (*->rrel_example: [<b>Нуклеофил</b> — <sc_element sys_idtf="reagent">реагент</sc_element>, образующий <sc_element sys_idtf="nrel_chemical_bond">химическую связь</sc_element> с партнером по реакции (электрофилом) по донорно-акцепторному механизму, предоставляя <sc_element sys_idtf="electron_pair">электронную пару</sc_element>, образующую новую <sc_element sys_idtf="sheaf">связь</sc_element>.](* <- lang_ru;; =>nrel_format: format_html;; *);; *);;
+	<=nrel_using_constants: reagent; nrel_chemical_bond; electron_pair; sheaf;;
+     *);
+
+<-rrel_key_sc_element: ... 
+     (*
+        <- statement;;
+        <=nrel_sc_text_translation: ... (*->rrel_example: [Нуклеофилы можно классифицировать несколькими способами: по типу орбитали, с которой донируются электроны, и по природе атома, который образует связь. <br>
+<b>По типу реагирующей орбитали</b><br>
+В зависимости от природы орбитали, на которой располагались электроны, пошедшие на образование связи с электрофилом, можно выделить:
+<br><ul>
+<li>π-нуклеофилы (электроны ушли с π-орбитали):
+<ul><li>алкены, диены, алкины;
+<li>аллилсиланы, аллилгерманы, аллилстаннаны;
+<li>алкил- и силиленоловые эфиры;
+<li>ароматические соединения;
+</ul>
+<li>n-нуклеофилы (электроны находились на несвязывающей орбитали — неподелённой электронной паре):
+<ul>
+<li>амины;
+<li>фосфины;
+<li>фосфиты;
+<li>анионы;
+</ul>
+<li>σ-нуклеофилы (электроны ушли с σ-орбитали):
+<ul><li>доноры гидрид-иона H−.</ul>
+] (* <- lang_ru;; =>nrel_format: format_html;; *);; *);;
+        => nrel_main_idtf: [Утв. (нуклеофил, классификация*)] (* <- lang_ru;; *);;
+      *);
+
+->alkene; alkyne;;

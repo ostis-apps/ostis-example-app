@@ -1,0 +1,24 @@
+ex11_solutions
+<- exercises_solutions;
+
+-> rrel_key_sc_element: mixture; nrel_mass; subst_Zn; calcium_carbonate; solution; hydrochloric_acid; nrel_density_of_substance; gas;
+
+=> nrel_next_exercise: ex12_solutions;
+
+=> nrel_main_idtf:
+	[Упражнение 11. Раздел. Предметная область растворов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 11. Section. Subject domain of solutions]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex11_solutions_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex11_solutions_en.html" (* <-lang_en;; *);;
+	*);;

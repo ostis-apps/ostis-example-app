@@ -1,0 +1,107 @@
+subst_Og
+<- sc_node_not_relation;
+=> nrel_main_idtf: [оганесон] (* <- lang_ru;; *);
+=> nrel_main_idtf: [oganesson] (* <- lang_en;; *);
+<- rrel_key_sc_element: definition_of_subst_Og
+(* 
+	=> nrel_main_idtf: 
+	[Опр.(оганесон)] (* <- lang_ru;; *);
+	[Def.(oganesson)] (* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Og">Оганесон</sc_element></b> — искусственно полученное <sc_element sys_idtf="radioactive_substance">радиоактивное</sc_element> <sc_element sys_idtf="chemical_substance">вещество</sc_element>, не встречающееся в природе.] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+
+			-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Og">Oganesson</sc_element></b> is an artificially received <sc_element sys_idtf="radioactive_substance">radioactive</sc_element> <sc_element sys_idtf="chemical_substance">substance</sc_element> that doesn't exist in nature.] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_substance;;
+		-> radioactive_substance;;
+	*);;
+*);
+
+<= nrel_inclusion: chemical_substance;
+
+<- rrel_key_sc_element: receiving_Og_from_Kr
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(оганесон, получение*)](*<- lang_ru;;*);
+		[Stat.(oganesson, receiving*)](*<- lang_;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Оганесон получают ядерной реакцией криптона со свинцом.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+
+	-> rrel_example:[ Oganesson can be received in nuclear reaction of crypton and plumbum.] (*
+		<- lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+*);
+
+<- rrel_key_sc_element: receiving_Og_from_Ca
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(оганесон , получение*)](*<- lang_ru;;*);
+		[Stat.(oganesson, receiving*)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Оганесон получают ядерной реакцией кальция.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		-> rrel_example:[ Oganesson can be received in nuclear reaction of calcium.] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_kg:...
+		(*
+			=> nrel_main_idtf: [23,5] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_kg: ...
+		(*
+			=> nrel_main_idtf: [19,4] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm: ...
+		(*
+			=> nrel_main_idtf: 5(*<- number;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;
+
+atomic_multiplicity_one -> (subst_Og -> elem_Og);;

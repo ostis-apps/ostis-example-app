@@ -1,0 +1,46 @@
+chemical_compound <= nrel_inclusion: complex_substance;;
+chemical_compound
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[химическое соединение]
+	(* <- lang_ru;;	*);
+	[chemical compound]
+	(* <- lang_en;;	*);;
+
+chemical_compound
+<- rrel_key_sc_element:
+	Definition_of_chemical_compound
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/chemical_compound.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->molecule;;
+				->atom;;
+				->complex_substance;;
+			*);;
+	*);
+
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Состав химического соединения записывается в виде химических формул, а строение часто изображается структурными формулами. Систематическое название (номенклатура ИЮПАК) также указывает состав соединения.] (* <-lang_ru;; *);;
+		*);;
+*);;
+	
+
+Definition_of_chemical_compound
+=> nrel_main_idtf:
+	[Опр.(Химическое соединение)]
+	(* <- lang_ru;;	*);;
+
+

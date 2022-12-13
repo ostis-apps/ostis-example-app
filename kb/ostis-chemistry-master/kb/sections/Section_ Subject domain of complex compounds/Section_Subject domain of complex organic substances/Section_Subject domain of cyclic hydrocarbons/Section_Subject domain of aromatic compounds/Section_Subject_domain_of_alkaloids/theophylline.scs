@@ -1,0 +1,100 @@
+theophylline<-sc_node_not_relation;;
+theophylline=> nrel_main_idtf:[теофиллин](* <- lang_ru;; *);;
+theophylline=> nrel_main_idtf:[theophylline](* <- lang_en;; *);;
+theophylline=> nrel_idtf:[1,3-​диметил-​7H-​пурин-​2,6-​дион](* <- lang_ru;; *);;
+theophylline=> nrel_idtf:[C7H8N4O2](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: theophylline;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Теофиллин - <b><sc_element sys_idtf="alkaloids">алкалоид</b></sc_element>, использующееся при терапии респираторных заболеваний, таких как хроническая обструктивная болезнь лёгких и астма ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (теофиллин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		alkaloids
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: theophylline ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Теофиллин содержится в бобах какао   ]
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(теофиллин)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: theophylline ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://theophylline.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(теофиллин,фармакологический эффект*)](*<- lang_ru;;*);;
+	
+*);;
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element:theophylline;;
+	<= nrel_sc_text_translation: ...(*->"file://images/theophylline.png";;*);;
+	=> nrel_main_idtf: [Рисунок(теофиллин,структурная формула](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: theophylline;;
+	<= nrel_sc_text_translation: ...(*->"file://images/theophylline2.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(теофиллин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+solid_matter=>nrel_inclusion:theophylline;;
+pseudoalkaloids=>nrel_inclusion:theophylline;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> theophylline;;
+	=> nrel_measurement_in_gramms_per_mole: [180,164]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->theophylline;;
+	=> nrel_measurement_in_degrees_Celsius: 268
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+
+drag_half_life->...
+(* 
+
+	<- sc_node_not_relation;;
+	->theophylline;;
+	=> nrel_measurement_in_hours:12	
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+

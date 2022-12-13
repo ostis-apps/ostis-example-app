@@ -1,0 +1,57 @@
+sc_node_not_relation -> mineral;;
+
+mineral => nrel_main_idtf:
+	[минерал](* <-lang_ru;; *);
+	[mineral](* <-lang_en;; *);;
+
+pollucite <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: минерал] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: mineral] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Минера́л  — однородное природное твёрдое тело, находящееся или бывшее в кристаллическом состоянии.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A mineral is a naturally occurring chemical compound, usually of crystalline form.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+pollucite <= nrel_using_constants:... (*->crystal_structure;;*);;
+
+pollucite <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Минералы являются составной частью горных пород (породообразующие минералы), руд, метеоритов.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Minerals are an integral part of rock (rock-forming minerals), ores, meteorites.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+pollucite <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Большинство минералов имеют в своём составе всего 8 элементов, наиболее распространённых в земной коре: кислород, кремний, алюминий, железо, магний, кальций, натрий и калий (по степени убывания).](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Most minerals in their composition have a total of 8 elements, the most common in the crust: oxygen, silicon, aluminum, iron, magnesium, calcium, sodium and potassium (in descending order).](*<- lang_en;;*);;
+			*);;
+		*);;
+
+
+pollucite <-rrel_key_sc_element:...
+				(*<-sc_illustration;;
+				<=nrel_sc_text_translation:...
+						(*->rrel_example: "file://Na_(Sodium).png";;*) ;;	
+				*);;

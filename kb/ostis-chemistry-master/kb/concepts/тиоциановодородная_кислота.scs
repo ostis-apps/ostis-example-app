@@ -1,0 +1,44 @@
+sc_node_not_relation->thiocyanhydric_acid;;
+
+thiocyanhydric_acid=> nrel_main_idtf: [тиоциановодородная кислота](* <- lang_ru;; *);;
+thiocyanhydric_acid=> nrel_main_idtf: [thiocyanhydric acid](* <- lang_en;; *);;
+thiocyanhydric_acid=> nrel_idtf: [HSCN](* <- lang_en;; *);;
+thiocyanhydric_acid=> nrel_idtf: [тиоциановодород](* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: thiocyanhydric_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[ Тиоциановая кислота  - неорганическое соединение с химической формулой HSCN.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (тиоциановодородная кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nonorganic_compound;
+		chemical_formula
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: thiocyanhydric_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[ Тиоциановая кислота является очень сильной кислотой.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(тиоциановодородная кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		strong_acid
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: thiocyanhydric_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/тиоциановодородная_кислота.png";;*);;
+	=> nrel_main_idtf: [Рисунок(тиоциановодородная кислота)](*<- lang_ru;;*);;
+*);;
+
+thiocyanhydric_acid -> thiocyanhydric_acid_x;;
+strong_acid=>nrel_inclusion:thiocyanhydric_acid;;
+thiocyanhydric_acid<=nrel_inclusion:oxygen_free_acid;;
+thiocyanhydric_acid<=nrel_inclusion:monobasic_acid;;
+thiocyanhydric_acid<=nrel_inclusion:inorganic_acid;;
+
+thiocyanhydric_acid<-rrel_not_maximum_studied_object_class:subject_domain_of_acids;;

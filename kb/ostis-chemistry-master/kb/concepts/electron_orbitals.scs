@@ -1,0 +1,47 @@
+electron_orbitals
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[электронная орбиталь]
+	(* <- lang_ru;;	*);
+	[electron orbitals]
+	(* <- lang_en;;	*);;
+electron_orbitals
+<- rrel_key_sc_element:
+	Definition_of_electron_orbitals
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/electron_orbitals.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				atom				
+			};
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Сам Э. Шрёдингер рассматривал электрон в атоме как отрицательно заряженное облако, плотность которого пропорциональна квадрату значения волновой функции в соответствующей точке атома. В таком виде понятие электронного облака было воспринято и в теоретической химии.] (* <-lang_ru;; *);;
+		*);;
+*);;
+
+
+
+Definition_of_electron_orbitals
+=> nrel_main_idtf:
+	[Опр.(Электронная орбиталь)]
+	(* <- lang_ru;;	*);;
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+pumice
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[пемза](* <-lang_ru;; *);
+	[пумицит](* <-lang_ru;; *);
+	[pumice](* <- lang_en;; *);
+	[pumicite](* <- lang_en;; *);;
+
+pumice
+<- rrel_key_sc_element:
+	Definition_of_pumice
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(пемза)] (* <-lang_ru;; *);; 
+        <= nrel_sc_text_translation:...
+        (*
+			-> rrel_example:"file://htmls/pumice.html"(* <- lang_ru;; *);;
+        *);;
+        
+	*);;
+	
+
+pumice
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Утв.(пемза, физические свойства*)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/pumice1.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+pumice
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Прим.(пемза, применение*)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/pumice2.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+pumice
+<-rrel_key_sc_element:...
+				(*<-sc_illustration;;
+				<=nrel_sc_text_translation:...
+						(*->rrel_example: "file://img/pumice.jpg";;*) ;;	
+				*);;
+
+

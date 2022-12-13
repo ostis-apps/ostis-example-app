@@ -1,0 +1,16 @@
+formula_unit
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[формульная единица](*<-lang_ru;;*);
+     [formula unit](*<-lang_en;;*);;
+
+formula_unit
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(формульная единица)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b>Формульная единица</b> — реально существующая или условная группа<sc_element sys_idtf="atom"> атомов</sc_element> или <sc_element sys_idtf="ion">ионов</sc_element>, состав которой соответствует эмпирической формуле данного вещества. ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: atom; ion;;
+*);
+
+=>nrel_inclusion: atom; molecule; cation; anion; radical; free_radicals; electron;;

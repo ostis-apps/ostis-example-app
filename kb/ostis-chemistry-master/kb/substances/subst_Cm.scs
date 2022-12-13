@@ -1,0 +1,76 @@
+subst_Cm
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[curium (substance)](*<- lang_en;;*);
+	[кюрий (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Сm (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (кюрий (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Кюрий (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - серебристый податливый радиоактивный <sc_element sys_idtf = "metal">металл</sc_element>.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> metal;;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (кюрий (вещество), серебристый податливый радиоактивный металл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Curium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1345 (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:3110 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (кюрий (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы кюрия:  <sup>232</sup>Cm, <sup>233</sup>Cm, <sup>234</sup>Cm, <sup>235</sup>Cm, <sup>236</sup>Cm,<sup>237</sup>Cm, <sup>238</sup>Cm, <sup>239</sup>Cm, <sup>240</sup>Cm, <sup>241</sup>Cm, <sup>242</sup>Cm, <sup>243</sup>Cm, <sup>244</sup>Cm, <sup>245</sup>Cm, <sup>246</sup>Cm, <sup>247</sup>Cm, <sup>248</sup>Cm, <sup>249</sup>Cm, <sup>250</sup>Cm, <sup>251</sup>Cm, <sup>252</sup>Cm] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

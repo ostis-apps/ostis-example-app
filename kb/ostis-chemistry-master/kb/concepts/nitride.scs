@@ -1,0 +1,63 @@
+nitride
+=> nrel_main_idtf:
+	[нитрид](* <-lang_ru;; *);
+	[nitride](* <-lang_en;; *);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(нитрид)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://html/nitride_definition.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->chemical_compound;subst_N;nrel_electronegativity; chemical_element; metal; non_metal;;
+	*);;
+*);
+//утверждение
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(нитрид, разложение*, вода, кислота, химическое свойство, основание)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://html/nitride_ion_type.html"(* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_decomposition;;
+	-> rrel_key_sc_element: water; acid;;
+	-> rrel_key_sc_element: basis; chemical_property;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(нитрид, нагревание*, химический элемент, группа 5, группа 6, группа 8, разложение*, азот, металл, группа 4)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Нагревание нитридов элементов V, VI и VIII групп приводит к их разложению с выделением азота, низших нитридов и твердых растворов азота в металлах. Нитриды бора, кремния, алюминия, индия, галлия и переходных металлов IV группы при нагревании в вакууме не разлагаются.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_heating; nrel_decomposition; chemical_element;;
+	-> rrel_key_sc_element: group_six; group_five; group_eight; group_four;;
+	-> rrel_key_sc_element: subst_N; metal;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(нитрид, оксиление*, кислород, оксид металла, оксид азота)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Окисление нитридов кислородом приводит к образованию оксидов металлов и азота. ](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_oxidation; oxygen;;
+	-> rrel_key_sc_element: metal_oxide;;
+	-> rrel_key_sc_element: nitric_oxide;;
+*);;

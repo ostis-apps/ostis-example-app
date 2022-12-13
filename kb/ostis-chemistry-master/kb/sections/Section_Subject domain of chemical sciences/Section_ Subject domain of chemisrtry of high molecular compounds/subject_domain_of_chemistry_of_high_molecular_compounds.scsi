@@ -1,0 +1,48 @@
+subject_domain_of_chemistry_of_high_molecular_compounds
+  => nrel_main_idtf:
+    [Предметная область химии высокомолекулярных соединений] (* <- lang_ru;;*);
+    [Subject domain of chemistry of high molecular compounds] (* <- lang_en;; *);
+
+  <- subject_domain;
+  -> rrel_maximum_studied_object_class: chemistry_of_high_molecular_compounds;;
+
+chemistry_of_high_molecular_compounds
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [химия высокомолекулярных соединений] (* <- lang_ru;; *);
+  => nrel_main_idtf: [chemistry of high molecular compounds] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (химия высокомолекулярных соединений)] (* <- lang_ru;; *);
+      [Def. (chemistry of high molecular compounds)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Химия высокомолекулярных соединений — раздел органической химии, объектами исследования которой служат макромолекулы синтетического и природного происхождения, состоящие из повторяющихся мономерных звеньев или молекулярных группировок, соединенных химическими связями и содержащих в главной цепи атомы углерода, а также кислорода, азота и серы.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (химия высокомолекулярных соединений)](* <- lang_ru;; *);
+      [Stat. (chemistry of high molecular compounds)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [На основе высокомолекулярных соединений (полимеров) разрабатываются многочисленные материалы, в том числе интеллектуальные структуры, с функциональными ингредиентами, что существенно расширяет области их применения.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (химия высокомолекулярных соединений)](* <- lang_ru;; *);
+      [Pic. (chemistry of high molecular compounds)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/chemistry_of_high_molecular_compounds.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;

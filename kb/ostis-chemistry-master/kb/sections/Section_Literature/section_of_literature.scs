@@ -1,0 +1,9 @@
+section_of_literature
+=> nrel_main_idtf: 
+	[Раздел. Литература]
+	(* <- lang_ru;;*);
+	[Section. Literature]
+	(* <- lang_en;; *);
+	
+<- not_enough_formed_structure;
+<- atomic_section;;

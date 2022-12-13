@@ -1,0 +1,2163 @@
+subject_domain_of_alloys
+	=> nrel_main_idtf:
+	[Предметная область сплавов]
+	(* <- lang_ru;; *);
+	[Subject domain of alloys]
+	(* <- lang_en;; *);
+		
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	alloy;
+
+-> rrel_not_maximum_studied_object_class:
+	alloying;
+	impurity;
+	steel;
+	cast_iron;
+	duralumin;
+	bronze;
+	brass;
+	babbit;
+	manganin;
+	nichrome;
+	pobedit;
+	amorphous_metals;
+	alloy_hardening;
+	hardening;
+	recrystallization;
+	precipitation_hardening;
+	martensitic_transformation;
+	heavy_alloy;
+	stellite;
+	copper_nickel_alloy;
+	highly_entropic_alloys;
+	hardness;
+	microhardness;
+	sintering;
+	metal_ceramics;
+
+-> rrel_explored_relation:
+	nrel_alloy_component;
+	nrel_number_of_components;
+	nrel_number_of_occurrences_of_metal;
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://html/section_alloys.html" (* <-lang_ru;; *);;
+		*);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://html/section_alloys_eng.html" (* <-lang_en;; *);;
+		*);;
+
+alloy
+=> nrel_main_idtf:
+	[сплав]
+	(* <- lang_ru;;	*);
+	[alloy]
+	(* <- lang_en;;	*);;
+
+alloy
+<- rrel_key_sc_element:
+	Definition_of_alloy
+	(* 
+	=> nrel_main_idtf:
+		[Опр.(сплав)] (* <- lang_ru;;	*);
+		[Def.(alloy)] (* <- lang_en;;	*);;
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf  = "alloy">Сплав</sc_element> </b>- макроскопически однородный металлический материал, состоящий из <sc_element sys_idtf  = "mixture">смеси</sc_element> двух или большего числа <sc_element sys_idtf  = "chemical_element">химических элементов</sc_element>   с преобладанием металлических компонентов.] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "alloy">Alloy</sc_element> </b>- macroscopically homogeneous metallic material consisting of a <sc_element sys_idtf  = "mixture">mixture</sc_element> two or more <sc_element sys_idtf  = "chemical_element">chemical element</sc_element> with predominance of metal components.] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+
+<=nrel_inclusion:chemical_substance;
+<- rrel_key_sc_element: composition_of_alloy
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (сплав, состав)](*<- lang_ru;;*);
+			[Stat.  (alloy, composition)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ <sc_element sys_idtf  = "alloy">Сплавы</sc_element> состоят из основы (одного или нескольких металлов), малых добавок, специально вводимых в сплав легирующих и модифицирующих элементов, а также из неудалённых примесей (природных, технологических и случайных).] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[ <sc_element sys_idtf  = "alloy">Alloy</sc_element> consist of a base (one or several metals), small additives specially introduced into the alloy of alloying and modifying elements, as well as from unsuccessful impurities (natural, technological and random).] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: properties_of_alloy
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (сплав, свойства)](*<- lang_ru;;*);
+			[Note (alloy, properties)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Свойства металлов и сплавов полностью определяются их структурой.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[ The properties of metals and alloys are completely determined by their structure.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: characteristic_of_alloy
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (сплав, свариваемость)](*<- lang_ru;;*);
+			[Note. (alloy, weldability)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Важнейшей характеристикой сплавов является свариваемость. ] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[ The most important characteristic of alloys is weldability.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+alloy_hardening
+=> nrel_main_idtf:
+	[упрочнение сплавов]
+	(* <- lang_ru;;	*);
+	[alloy hardening]
+	(* <- lang_en;;	*);;
+
+alloy_hardening
+<- rrel_key_sc_element:
+	Definition_of_alloy_hardening
+	(* 
+	=> nrel_main_idtf:
+		[Опр.(упрочнение сплавов)] (* <- lang_ru;;	*);
+		[Def.(alloy hardening)] (* <- lang_en;;	*);;
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf  = "alloy_hardening">Упрочнение сплавов</sc_element> </b>- технологический процесс обработки <sc_element sys_idtf  = "alloy">сплавов</sc_element> <sc_element sys_idtf  = "chemical_element">химических элементов</sc_element> с целью повышения их прочности.] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "alloy_hardening">Alloy hardening</sc_element> </b>- processing process <sc_element sys_idtf  = "alloy">alloy</sc_element> <sc_element sys_idtf  = "chemical_element">chemical element</sc_element> in order to increase their strength..] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->alloy;;
+				->chemical_element;;
+			*);;
+	*);
+<= nrel_subdividing:...
+		      (*
+			    ->hardening;;
+				->recrystallization;;
+				->precipitation_hardening;;
+				->martensitic_transformation;;  
+		       *);;
+
+
+alloying
+=> nrel_main_idtf:
+	[легирование]
+	(* <- lang_ru;;	*);
+	[alloying]
+	(* <- lang_en;;	*);;
+
+alloying
+<- rrel_key_sc_element:
+	Definition_of_alloying
+	(* 
+	=> nrel_main_idtf:
+		[Опр.(легирование)] (* <- lang_ru;;	*);
+		[Def.(alloying)] (* <- lang_en;;	*);;
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf  = "alloying">Легирование</sc_element> </b>- добавление в состав материалов <sc_element sys_idtf  = "impurity">примесей</sc_element> для изменения (улучшения) физических и/или химических свойств основного материала.] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "alloying">Alloying</sc_element> </b>- addition to materials <sc_element sys_idtf  = "impurity">impurity</sc_element> to change (improve) the physical and / or chemical properties of the base material.] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				-> chemical_substance;;
+				->impurity;;
+				->alloy;;
+			*);;
+	*);
+
+<=nrel_inclusion: chemical_substance;
+
+<- rrel_key_sc_element: types_of_alloying
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (легирование, объёмное легирование, поверхностное легирование)](*<- lang_ru;;*);
+			[Stat. (alloying, volumetric alloying, superficial alloying)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Различают объёмное (металлургическое) и поверхностное (ионное, диффузное и др.) легирование.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[ There are volumetric (metallurgical) and surface (ionic, diffuse, etc.) alloying.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: alloying_in_metallurgy
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (легирование, расплав, шихта, вещество)](*<- lang_ru;;*);
+			[Note (alloying, melt, charge, substance)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ В металлургии легирование производится в основном введением в расплав или шихту дополнительных веществ, улучшающих механические, физические и химические свойства сплава.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[ In metallurgy, alloying is carried out mainly by introducing into the melt or charge auxiliary substances that improve the mechanical, physical and chemical properties of the alloy.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: diffuse_substances_into_the_alloyed_material
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (легирование, вещество, диффундировать, материал, структура)](*<- lang_ru;;*);
+			[Note (alloying, substance, diffuse, material, structure)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[В отличие от напыления и других видов покрытия, добавляемые вещества диффундируют в легируемый материал, становясь частью его структуры.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[Unlike spraying and other types of coating, the added substances diffuse into the material to be doped, becoming part of its structure.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+
+
+amorphous_metals
+=> nrel_main_idtf:
+	[аморфные металлы]
+	(* <- lang_ru;;	*);
+	[amorphous metals]
+	(* <- lang_en;;	*);
+=> nrel_idtf:
+	[металлические стёкла]
+	(* <- lang_ru;;	*);;
+
+amorphous_metals
+<- rrel_key_sc_element:
+	Definition_of_amorphous_metals
+	(* 
+	=> nrel_main_idtf:
+		[Опр.(аморфные металлы)] (* <- lang_ru;;	*);
+		[Def.(amorphous metals)] (* <- lang_en;;	*);;
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf  = "amorphous_metals">Аморфные металлы</sc_element> </b>- класс металлических <sc_element sys_idtf  = "solid">твердых тел</sc_element> с аморфной структурой, характеризующейся отсутствием дальнего порядка и наличием ближнего порядка в расположении <sc_element sys_idtf  = "atom">атомов</sc_element>.] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "amorphous_metals">Amorphous metals</sc_element> </b>- class of metal <sc_element sys_idtf  = "solid">solid bodies</sc_element> with an amorphous structure characterized by the absence of long-range order and the presence of short-range order in the arrangement of <sc_element sys_idtf  = "atom">atoms</sc_element>.] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->solid;;
+				-> chemical_substance;;
+				->atom;;
+			*);;
+	*);
+
+
+<=nrel_inclusion: chemical_substance;
+
+
+<- rrel_key_sc_element: amorphous_metals_phase_homogeneity
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (аморфные металлы, фазовая однородность)](*<- lang_ru;;*);
+			[Note (amorphous metals, phase homogeneity)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ В отличие от металлов с кристаллической структурой, аморфные металлы характеризуются фазовой однородностью, их атомная структура аналогична атомной структуре переохлаждённых расплавов.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[ Unlike metals with a crystal structure, amorphous metals are characterized by phase homogeneity, their atomic structure is analogous to the atomic structure of supercooled melts.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: properties_of_amorphous_metals
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (аморфные металлы, свойства)](*<- lang_ru;;*);
+			[Note (amorphous metals, properties)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[  По некоторым свойствам ряд аморфных металлов значительно отличаются от кристаллических того же состава. В частности, некоторые из них отличаются высокой прочностью и вязкостью, коррозионной стойкостью, высокой магнитной проницаемостью.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[ For some properties, a number of amorphous metals differ significantly from the crystalline ones of the same composition. In particular, some of them have high strength and toughness, corrosion resistance, high magnetic permeability.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+babbit
+=> nrel_main_idtf:
+	[баббит]
+	(* <- lang_ru;;	*);
+	[babbit]
+	(* <- lang_en;;	*);;
+
+babbit
+<- rrel_key_sc_element:
+	Definition_of_babbit
+	(* 
+		=> nrel_main_idtf:
+			[Опр.(баббит)] (* <- lang_ru;;	*);
+			[Def.(alloy)] (* <- lang_en;;	*);;
+		<- explanation;;
+		
+		<= nrel_sc_text_translation:...
+		(* 
+			-> rrel_example:[<b><sc_element sys_idtf  = "babbit">Баббит</sc_element> </b> - антифрикционный <sc_element sys_idtf  = "alloy">сплав</sc_element> на основе <sc_element sys_idtf  = "subst_Sn">олова</sc_element> или <sc_element sys_idtf  = "subst_Pb">свинца</sc_element>.] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[<b><sc_element sys_idtf  = "babbit">Babbit</sc_element> </b> - antifriction <sc_element sys_idtf  = "alloy">alloy</sc_element> on the basis of <sc_element sys_idtf  = "subst_Sn">Stannum</sc_element> or <sc_element sys_idtf  = "subst_Pb">Plumbum</sc_element>.] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+		
+		<= nrel_using_constants:...
+		(*
+			-> subst_Pb;;
+			-> subst_Sn;;
+			-> alloy;;
+		*);;	
+	*);
+
+=> nrel_alloy_component: subst_Pb;
+=> nrel_alloy_component: subst_Sb;
+=> nrel_alloy_component: subst_Sb;
+=> nrel_alloy_component: subst_Cu;
+=> nrel_alloy_component: subst_Ni;
+=> nrel_alloy_component: subst_As;
+=> nrel_alloy_component: subst_Cd;
+=> nrel_alloy_component: subst_Te;
+=> nrel_alloy_component: subst_Ca;
+=> nrel_alloy_component: subst_Na;
+=> nrel_alloy_component: subst_Mg;
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:300 (*<-number;;*);;		
+		*);;
+	*);
+ 
+
+<- alloy;
+
+
+<- rrel_key_sc_element: additives_in_babbit
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (баббит, добавки)](*<- lang_ru;;*);
+			[Note (babbit, additives)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ В качестве добавок могут быть использованы: сурьма, медь, никель, мышьяк, кадмий, теллур, кальций, натрий, магний.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[ As additives can be used: antimony, copper, nickel, arsenic, cadmium, tellurium, calcium, sodium, magnesium.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+brass
+=> nrel_main_idtf:
+	[латунь]
+	(* <- lang_ru;;	*);
+	[brass]
+	(* <- lang_en;;	*);;
+
+brass
+<- rrel_key_sc_element:
+	Definition_of_brass
+	(* 
+		=> nrel_main_idtf:
+		[Опр.(латунь)] (* <- lang_ru;;	*);
+		[Def.(brass)] (* <- lang_en;;	*);;
+		<- explanation;;
+		
+		<= nrel_sc_text_translation:...
+		(* 
+			-> rrel_example:[<b><sc_element sys_idtf  = "brass">Латунь</sc_element> </b>- двойной или многокомпонентный <sc_element sys_idtf  = "alloy">сплав</sc_element> на основе <sc_element sys_idtf  = "subst_Cu">меди</sc_element>, где основным легирующим компонентом является <sc_element sys_idtf  = "subst_Zn">цинк </sc_element>.] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[<b><sc_element sys_idtf  = "brass">Brass</sc_element> </b>- double or multicomponent <sc_element sys_idtf  = "alloy">alloy</sc_element> on the basis of <sc_element sys_idtf  = "subst_Cu">Cuprum</sc_element>, where the main alloying component is <sc_element sys_idtf  = "subst_Zn">Zincum </sc_element>.] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+		
+		<= nrel_using_constants:...
+		(*
+			-> subst_Cu;;
+			-> subst_Zn;;
+			-> alloy;;
+		*);;	
+	*);
+
+=> nrel_alloy_component: subst_Zn;
+=> nrel_alloy_component: subst_Cu;
+=> nrel_alloy_component: subst_Ni;
+=> nrel_alloy_component: subst_Fe;
+=> nrel_alloy_component: subst_Mn;
+=> nrel_alloy_component: subst_Pb;
+ 
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:880 (*<-number;;*);;		
+		*);;
+	*);
+
+<- alloy;
+
+
+<- rrel_key_sc_element: additives_in_brass
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (латунь, добавки)](*<- lang_ru;;*);
+			[Note (brass, additives)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ В латунь добавляют олово (меньше, чем цинка, иначе получится традиционная оловянная бронза), никель, свинец, марганца, железо.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[ In the brass add tin (less than zinc, otherwise it will be traditional tin bronze), nickel, lead, manganese, iron.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: brass_Bi_Pb
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (латунь, висмут, свинец)](*<- lang_ru;;*);
+			[Note (brass, Bismuthum, Plumbum)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Висмут и свинец имеют вредное влияние на латунь, так как уменьшают способность к деформации в горячем состоянии.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[ Bismuthum and Plumbum have a harmful effect on brass, since they reduce the ability to deform in the hot state.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+bronze
+=> nrel_main_idtf:
+	[бронза]
+	(* <- lang_ru;;	*);
+	[bronze]
+	(* <- lang_en;;	*);;
+
+bronze
+<- rrel_key_sc_element:
+	Definition_of_bronze
+	(* 
+		=> nrel_main_idtf:
+		[Опр.(бронза)] (* <- lang_ru;;	*);
+		[Def.(bronze)] (* <- lang_en;;	*);;
+		<- explanation;;
+		
+		<= nrel_sc_text_translation:...
+		(* 
+			-> rrel_example:[<b><sc_element sys_idtf  = "bronze">Бронза</sc_element> </b>- <sc_element sys_idtf  = "alloy">сплав</sc_element> <sc_element sys_idtf  = "subst_Cu">меди</sc_element>, с <sc_element sys_idtf  = "subst_Sn">оловом</sc_element> в качестве основного компонента.] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[<b><sc_element sys_idtf  = "bronze">Bronze</sc_element> </b>- <sc_element sys_idtf  = "alloy">alloy</sc_element> <sc_element sys_idtf  = "subst_Cu">Cuprum</sc_element>, with <sc_element sys_idtf  = "subst_Sn">Stannum</sc_element> as the main component.] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+		
+		<= nrel_using_constants:...
+		(*
+			-> subst_Cu;;
+			-> subst_Sn;;
+			-> alloy;;
+		*);;	
+	*);
+
+=> nrel_alloy_component: subst_Sn;
+=> nrel_alloy_component: subst_Cu;
+=> nrel_alloy_component: subst_Al;
+=> nrel_alloy_component: subst_Si;
+=> nrel_alloy_component: subst_Be;
+=> nrel_alloy_component: subst_Pb;
+=> nrel_alloy_component: subst_Zn;
+=> nrel_alloy_component: subst_P;
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:930 (*<-number;;*);;		
+		*);;
+	*);
+ 
+
+<- alloy;
+
+
+<- rrel_key_sc_element: substance_in_bronze
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (бронза, медь, алюмийний, кремний, берилий, свинец)](*<- lang_ru;;*);
+			[Note (bronze, subst_Cu, subst_Al, subst_Si, subst_Be, subst_Sn)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ К бронзам также относят медные сплавы с алюминием, кремнием, бериллием, свинцом и другими элементами, за исключением цинка (это латунь) и никеля (это мельхиор).] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[ Bronze also includes copper alloys with aluminum, silicon, beryllium, lead and other elements, except for zinc (this is brass) and nickel (this is nickel).] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: additives_in_bronze
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (бронза, добавки)](*<- lang_ru;;*);
+			[Note (bronze, additives)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[В любой бронзе в незначительных количествах присутствуют добавки: цинк, свинец, фосфор] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[ In any bronze in minor quantities there are additives: zinc, lead, phosphorus.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+cast_iron
+=> nrel_main_idtf:
+	[чугун]
+	(* <- lang_ru;;	*);
+	[crude iron]
+	(* <- lang_en;;	*);
+	[cast iron]
+	(* <- lang_en;;	*);;
+
+cast_iron
+<- rrel_key_sc_element: Definition_of_cast_iron
+(* 
+	=> nrel_main_idtf:
+		[Опр.(чугун)] (* <- lang_ru;;	*);
+		[Def.(cast iron)] (* <- lang_en;;	*);;
+	<- explanation;;
+	<= nrel_sc_text_translation:...
+	(* 
+		-> rrel_example:[<b><sc_element sys_idtf  = "cast_iron">Чугун</sc_element> </b>- <sc_element sys_idtf  = "alloy">сплав</sc_element> <sc_element sys_idtf  = "subst_Fe">железа</sc_element> с <sc_element sys_idtf  = "subst_C">углеродом</sc_element> (и другими элементами).] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "cast_iron">Cast iron</sc_element> </b>- <sc_element sys_idtf  = "alloy">alloy</sc_element> <sc_element sys_idtf  = "subst_Fe">Ferrum</sc_element> with <sc_element sys_idtf  = "subst_C">Carboneum</sc_element> (and other elements).] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+	*);;
+
+	<= nrel_using_constants:...
+	(*
+		-> chemical_element;;
+		-> subst_Fe;;
+		-> subst_C;;
+		-> alloy;;
+	*);;
+	
+*);
+
+<- alloy;
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1150 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element: cast_iron_is_very_hard
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (чугун, твёрдость)](*<- lang_ru;;*);
+			[Note (cast iron, hardness)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ <sc_element sys_idtf  = "cast_iron">Чугун</sc_element> очень тверд.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[ <sc_element sys_idtf  = "cast_iron">Cast iron</sc_element> is very hard.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+cast_iron
+=> nrel_alloy_component: 
+	subst_Fe; subst_C; subst_P; subst_Mn; subst_S; subst_Si; subst_Al; subst_V; subst_Ni;;
+
+copper_nickel_alloy
+=> nrel_main_idtf:
+	[медно-никелевый сплав]
+	(* <- lang_ru;;	*);
+	[copper-nickel alloy]
+	(* <- lang_en;;	*);;
+
+copper_nickel_alloy
+<- rrel_key_sc_element:
+	Definition_of_copper_nickel_alloy
+	(* 
+		=> nrel_main_idtf:
+		[Опр.(медно-никелевый сплав)] (* <- lang_ru;;	*);
+		[Def.(copper-nickel alloy)] (* <- lang_en;;	*);;
+
+		<- explanation;;
+		
+		<= nrel_sc_text_translation:...
+		(* 
+			-> rrel_example:[<b><sc_element sys_idtf  = "copper_nickel_alloy">Медно-никелевый сплав</sc_element> </b>- <sc_element sys_idtf  = "alloy">сплавы</sc_element>на основе <sc_element sys_idtf  = "subst_Cu">меди</sc_element> и содержащие в качестве основного легирующего элемента <sc_element sys_idtf  = "subst_Ni">никель</sc_element>.] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[<b><sc_element sys_idtf  = "copper_nickel_alloy">Copper-nickel alloy</sc_element> </b>- <sc_element sys_idtf  = "alloy">alloys</sc_element> on the basis of <sc_element sys_idtf  = "subst_Cu">Cuprum</sc_element> and containing as the main alloying element <sc_element sys_idtf  = "subst_Ni">Niccolum</sc_element>.] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+		
+		<= nrel_using_constants:...
+		(*
+			-> subst_Cu;;
+			-> subst_Ni;;
+			-> alloy;;
+		*);;	
+	*);
+
+=> nrel_alloy_component: subst_Cu;
+=> nrel_alloy_component: subst_Ni;
+=> nrel_alloy_component: subst_Zn;
+=> nrel_alloy_component: subst_Fe;
+=> nrel_alloy_component: subst_Mn;
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:930 (*<-number;;*);;		
+		*);;
+	*);
+ 
+
+<- alloy;
+
+
+<- rrel_key_sc_element: blending_of_Cu_and_Ni
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (медь, никель, медно-никелевый сплав, коррозия, электросопротивление)](*<- lang_ru;;*);
+			[Node (cuprum, niccolum, copper-nickel alloy, corrosion, electrical resistance)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ В результате смешивания меди и никеля полученный сплав обладает повышенной стойкостью против коррозий, а электросопротивление и прочность возрастают.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[As a result of the mixing of copper and nickel, the obtained alloy has an increased resistance to corrosion, and the electrical resistivity and strength increase.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: type_of_copper_nickel_alloy
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (медно-никелевый сплав, типы)](*<- lang_ru;;*);
+			[Node (copper-nickel alloy, type)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Медно-никелевые сплавы существуют двух типов: электротехнические и конструкционные.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[ Copper-nickel alloys exist in two types: electrotechnical and structural.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+duralumin
+=> nrel_main_idtf:
+	[дюралюминий]
+	(* <- lang_ru;;	*);
+	[duralumin]
+	(* <- lang_en;;	*);
+=> nrel_idtf:
+	[дюралюмин]
+	(* <- lang_ru;;	*);
+	[дюраль]
+	(* <- lang_ru;;	*);;
+
+duralumin
+<- rrel_key_sc_element:
+	Definition_of_duralumin
+	(* 
+		=> nrel_main_idtf:
+		[Опр.(дюралюминий)] (* <- lang_ru;;	*);
+		[Def.(duralumin)] (* <- lang_en;;	*);;
+		<- explanation;;
+		
+		<= nrel_sc_text_translation:...
+		(* 
+			-> rrel_example:[<b><sc_element sys_idtf  = "duralumin">Дюралюминий</sc_element> </b>- группа высокопрочных <sc_element sys_idtf  = "alloy">сплавов</sc_element> на основе <sc_element sys_idtf  = "subst_Al">алюминия</sc_element> с добавками <sc_element sys_idtf  = "subst_Cu">меди</sc_element>, <sc_element sys_idtf  = "subst_Mg">магния</sc_element> и <sc_element sys_idtf  = "subst_Mn">марганца</sc_element>.] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[<b><sc_element sys_idtf  = "duralumin">Duralumin</sc_element> </b>- high-strength  <sc_element sys_idtf  = "alloy">alloys</sc_element> group on the basis of <sc_element sys_idtf  = "subst_Al">Aluminium</sc_element> with additives <sc_element sys_idtf  = "subst_Cu">Cuprum</sc_element>, <sc_element sys_idtf  = "subst_Mg">Magnesium</sc_element> и <sc_element sys_idtf  = "subst_Mn">Manganum</sc_element>.] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+		
+		<= nrel_using_constants:...
+		(*
+			-> subst_Al;;
+			-> subst_Cu;;
+			-> subst_Mg;;
+			-> subst_Mn;;
+			-> alloy;;
+		*);;	
+	*);
+
+=> nrel_alloy_component: subst_Al;
+=> nrel_alloy_component: subst_Cu;
+=> nrel_alloy_component: subst_Mg;
+=> nrel_alloy_component: subst_Mn;
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:600 (*<-number;;*);;		
+		*);;
+	*);
+ 
+
+<- alloy;
+
+
+<- rrel_key_sc_element: substance_in_duralumin
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (дюралюминий, доля*, медь, магний, марганец, алюминий)](*<- lang_ru;;*);
+			[Node (duralumin, fraction*, copper, magnesium, manganese, aluminum)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Основными легирующими элементами в нём являлись медь (4,5 % массы), магний (1,5 %) и марганец (0,5 %); остальное — алюминий (93,5 %).] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[The main alloying elements in it were copper (4.5% of mass), magnesium (1.5%) and manganese (0.5%); The rest is aluminum (93.5%).] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+hardening
+=> nrel_main_idtf:
+	[наклёп]
+	(* <- lang_ru;;	*);
+	[hardening]
+	(*<- lang_en;;*);
+=>nrel_idtf:
+	[нагартовка]
+	(* <- lang_ru;;	*);;
+hardening
+<- rrel_key_sc_element:
+	Definition_of_hardening
+	(* 
+	=> nrel_main_idtf:
+		[Опр.(наклёп)] (* <- lang_ru;;	*);
+		[Def.(hardening)] (* <- lang_en;;	*);;
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf  = "hardening">Наклёп</sc_element> </b>- <sc_element sys_idtf  = "alloy_hardening">упрочнение сплавов</sc_element> вследствие изменения их структуры и фазового состава в процессе пластической деформации при <sc_element sys_idtf  = "temperature">температуре</sc_element> ниже температуры рекристаллизации.] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "hardening">Hardening</sc_element> </b>- <sc_element sys_idtf  = "alloy_hardening">alloy hardening</sc_element> due to a change in their structure and phase composition during the plastic deformation at <sc_element sys_idtf  = "temperature">temperature</sc_element> below the recrystallization temperature.] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->alloy;;
+				->alloy_hardening;;
+				->temperature;;
+			*);;
+	*);
+<- rrel_key_sc_element: hardening_and_strength_limit
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (наклёп, предел прочности)](*<- lang_ru;;*);
+			[Node (hardening, strength_limit)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ В результате наклёпа повышается предел прочности сплава, а его пластичность снижается. До деформации кристаллические зерна имеют, в основном, равноосную форму, а после деформации зерна сначала вытягиваются в направлении действующих сил, а затем измельчаются, из-за чего происходит повышение прочности сплава.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[As a result of hardening, the strength of the alloy rises, and its plasticity decreases. Before deformation, the crystalline grains have an essentially equiaxial shape, and after deformation, the grains are first stretched in the direction of the acting forces, and then they are ground, which causes an increase in the strength of the alloy.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+
+
+hardness
+=> nrel_main_idtf:
+	[твёрдость]
+	(* <- lang_ru;;	*);
+	[hardness]
+	(* <- lang_en;;	*);;
+
+hardness
+<- rrel_key_sc_element:
+	Definition_of_hardness
+	(* 
+	=> nrel_main_idtf:
+		[Опр.(твёрдость)] (* <- lang_ru;;	*);
+		[Def.(hardness)] (* <- lang_en;;	*);;
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf  = "hardness">Твёрдость</sc_element> </b>- свойство материала не испытывать пластической деформации вследствие местного контактного воздействия.] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "hardness">Hardness</sc_element> </b>- the property of the material does not undergo plastic deformation due to local contact action.] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->metal;;
+			*);;
+	*);
+
+
+
+<- rrel_key_sc_element: hardness_allotropic_carbon_modificationshardness
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (твёрдость, аллотропные модификации углерода)](*<- lang_ru;;*);
+			[Stat. (hardness, allotropic modifications of carbon)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Наиболее твёрдыми из существующих на сегодняшний день материалов являются две аллотропные модификации углерода: лонсдейлит, на 58 % превосходящий по твёрдости алмаз, и фуллерит (примерно в 2 раза твёрже алмаза).] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[The most solid materials available today are the two allotropic modifications of carbon: lonsdaleite, which is 58% greater than the hardness of diamond, and fullerite (about 2 times harder than diamond).] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: determination_of_hardness_1
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (твёрдость, определение, велечина нагрузки)](*<- lang_ru;;*);
+			[Stat. (hardness, definition, magnitude of the load)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Твёрдость определяется как отношение величины нагрузки к площади поверхности, площади проекции или объёму отпечатка.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[Hardness is defined as the ratio of the load to the surface area, the projection area, or the volume of the print.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+<- rrel_key_sc_element: determination_of_hardness_2
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (твёрдость, определение, сила сопротивления)](*<- lang_ru;;*);
+			[Stat. (hardness, definition, resistance force)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Твёрдость определяется как отношение силы сопротивления к площади поверхности, площади проекции или объёму внедрённой в материал части индентора.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[Hardness is defined as the ratio of the resistance force to the surface area, the projection area or the volume of the part of the indenter inserted into the material.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+
+
+
+heavy_alloy
+=> nrel_main_idtf:
+	[тяжёлый сплав]
+	(* <- lang_ru;;	*);
+	[heavy alloy]
+	(* <- lang_en;;	*);;
+
+heavy_alloy
+<- rrel_key_sc_element: Definition_of_heavy_alloy
+(* 
+	=> nrel_main_idtf:
+		[Опр.(тяжёлый сплав)] (* <- lang_ru;;	*);
+		[Def.(heavy alloy)] (* <- lang_en;;	*);;
+	<- explanation;;
+	<= nrel_sc_text_translation:...
+	(* 
+		-> rrel_example:[<b><sc_element sys_idtf  = "heavy_alloy">Тяжёлые сплавы</sc_element> </b>- это <sc_element sys_idtf  = "alloy">сплавы</sc_element> на основе <sc_element sys_idtf  = "subst_W">вольфрама</sc_element> с высокой <sc_element sys_idtf  = "nrel_density_of_substance">плотностью</sc_element>.] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "heavy_alloy">Heavy alloy</sc_element> </b>-  <sc_element sys_idtf  = "alloy">alloys</sc_element> on the basis of <sc_element sys_idtf  = "subst_W">Wolframium</sc_element> with high <sc_element sys_idtf  = "nrel_density_of_substance">density</sc_element>.] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+	*);;
+
+	<= nrel_using_constants:...
+	(*
+		-> nrel_density_of_substance;;
+		-> subst_W;;
+		-> alloy;;
+	*);;
+	
+*);
+
+<- alloy;
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1400 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element: basis_heavy_alloy
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (тяжёлый сплав, основа, вольфрам, доля*)](*<- lang_ru;;*);
+			[Node (тheavy alloy, base, tungsten, fraction*)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Основой тяжёлых сплавов является вольфрам, содержание которого может составлять от 76% до 97%.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[The basis of heavy alloys is tungsten, the content of which can be from 76% to 97%.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: additives_in_heavy_alloy
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (тяжёлый сплав, никель, железо, медь)](*<- lang_ru;;*);
+			[Node (heavy alloy, nickel, iron, copper)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Помимо вольфрама в состав сплавов обычно входят никель, железо и медь, но также могут входить и другие металлы — (молибден, кобальт, хром, серебро).] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[In addition to tungsten, alloys usually contain nickel, iron and copper, but other metals (molybdenum, cobalt, chromium, silver) can also be included.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+heavy_alloy
+=> nrel_alloy_component: 
+	subst_W;subst_Ni;subst_Cu;subst_Fe;subst_Mo;subst_Co;subst_Cr;subst_Ag;;
+
+highly_entropic_alloys
+=> nrel_main_idtf:
+	[высокоэнтропийный сплав]
+	(* <- lang_ru;;	*);
+	[highly entropic alloys]
+	(* <- lang_en;;	*);
+=>nrel_idtf:
+	[ВЭС]
+	(* <- lang_ru;;	*);;
+
+highly_entropic_alloys
+<- rrel_key_sc_element:
+	Definition_of_highly_entropic_alloys
+	(* 
+	=> nrel_main_idtf:
+		[Опр.(высокоэнтропийный сплав)] (* <- lang_ru;;	*);
+		[Def.(highly entropic alloys)] (* <- lang_en;;	*);;
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf  = "highly_entropic_alloys">Высокоэнтропийные сплавы</sc_element> </b>- <sc_element sys_idtf  = "alloy">сплавы</sc_element>, которые содержат не менее 5 <sc_element sys_idtf  = "nrel_alloy_component">элементов</sc_element>, причём количество каждого из них не должно превышать 35% и не должно быть меньше 5%.] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "highly_entropic_alloys">Highly entropic alloysы</sc_element> </b>- <sc_element sys_idtf  = "alloy">alloys</sc_element>, which contain not less than 5 <sc_element sys_idtf  = "nrel_alloy_component">component</sc_element>, and the number of each of them should not exceed 35% and should not be less than 5%.] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->metal;;
+				->nrel_alloy_component;;
+			*);;
+	*);
+
+
+<=nrel_inclusion: chemical_substance;
+
+<- rrel_key_sc_element: highly_entropic_alloys_multicomponent_alloys
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (высокоэнтропийный сплав, многокомпонентный сплав)](*<- lang_ru;;*);
+			[Stat. (high-entropy alloy, multicomponent alloy)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Высокоэнтропийными сплавами являются многокомпонентные сплавы, в которых элементы находятся в равной атомной доле.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[High-entropy alloys are multicomponent alloys, in which the elements are in an equal atomic fraction.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+
+sc_node_not_relation -> impurity;;
+
+impurity => nrel_main_idtf:
+	[примесь](* <-lang_ru;; *);
+	[impurity](* <-lang_en;; *);;
+
+impurity <- rrel_key_sc_element: 
+		Definition_of_impurity
+		(*
+		=> nrel_main_idtf:
+			[Опр.(примесь)] (* <- lang_ru;;	*);
+			[Def.(impurity)] (* <- lang_en;;	*);;
+		<- definition;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[<b><sc_element sys_idtf  = "impurity">Примесь</sc_element> </b> — <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>, перешедший в состав сплава в процессе его производства как технологическая добавка.]			
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+			-> rrel_example: 
+				[<b><sc_element sys_idtf  = "impurity">Impurity</sc_element> </b> — a <sc_element sys_idtf  = "chemical_element">chemical element</sc_element> that has passed to the alloy in the process of its production as a technological additive.]			
+				(*
+					<- lang_en;;
+					=> nrel_format: format_html;;
+				*);;
+
+			*);;
+		<=nrel_using_constants:... (*->chemical_element;;*);;
+		*);;
+
+manganin
+=> nrel_main_idtf:
+	[манганин]
+	(* <- lang_ru;;	*);
+	[manganin]
+	(* <- lang_en;;	*);;
+
+manganin
+<- rrel_key_sc_element:
+	Definition_of_manganin
+	(* 
+		=> nrel_main_idtf:
+			[Опр.(манганин)] (* <- lang_ru;;	*);
+			[Def.(manganin)] (* <- lang_en;;	*);;
+		<- explanation;;
+		
+		<= nrel_sc_text_translation:...
+		(* 
+			-> rrel_example:[<b><sc_element sys_idtf  = "manganin">Манганин</sc_element> </b> - термостабильный <sc_element sys_idtf  = "alloy">сплав</sc_element> на основе <sc_element sys_idtf  = "subst_Cu">меди (Cu)</sc_element> (около 85 %).] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[<b><sc_element sys_idtf  = "manganin">Manganin</sc_element> </b> - thermostable <sc_element sys_idtf  = "alloy">alloy</sc_element> on the basis of <sc_element sys_idtf  = "subst_Cu">Cuprum</sc_element> (about 85 %).] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+		
+		<= nrel_using_constants:...
+		(*
+			-> subst_Cu;;
+			-> alloy;;
+		*);;	
+	*);
+
+=> nrel_alloy_component: subst_Cu;
+=> nrel_alloy_component: subst_Ni;
+=> nrel_alloy_component: subst_Mg;
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:960 (*<-number;;*);;		
+		*);;
+	*);
+ 
+
+<- alloy;
+
+
+<- rrel_key_sc_element: additives_in_manganin
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (манганин, добавки)](*<- lang_ru;;*);
+			[Node (manganin, additives)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[  В качестве добавок могут быть использованы: марганец, никель.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[As additives can be used: manganese, nickel.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: electric_resistance_of_manganin
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (манганин, электрическое сопротивление*)](*<- lang_ru;;*);
+			[Node (manganine, electrical resistance*)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Манганин характеризуется чрезвычайно малым изменением электрического сопротивления в области комнатных температур.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[Manganine is characterized by an extremely small change in electrical resistance in the room temperature region.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+martensitic_transformation
+=> nrel_main_idtf:
+	[мартенситное превращение]
+	(* <- lang_ru;;	*);
+	[martensitic transformation]
+	(*<- lang_en;;*);;
+martensitic_transformation
+<- rrel_key_sc_element:
+	Definition_of_martensitic_transformation
+	(* 
+	=> nrel_main_idtf:
+		[Опр.(мартенситное превращение)] (* <- lang_ru;;	*);
+		[Def.(martensitic transformation)] (* <- lang_en;;	*);;
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf  = "martensitic_transformation">Мартенситное превращение</sc_element> </b>- полиморфное превращение, при котором изменение взаимного расположения составляющих кристалл <sc_element sys_idtf  = "atom">атомов</sc_element> (или <sc_element sys_idtf  = "molecule">молекул</sc_element>) происходит путём их упорядоченного перемещения, причем относительные смещения соседних атомов малы по сравнению с междуатомным расстоянием.] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "martensitic_transformation">Martensitic transformation</sc_element> </b>- polymorphic transformation, in which the change in the mutual arrangement of the constituent crystal <sc_element sys_idtf  = "atom">atoms</sc_element> (or <sc_element sys_idtf  = "molecule">molecules</sc_element>) occurs by their ordered displacement, and the relative displacements of neighboring atoms are small in comparison with the interatomic distance.] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->alloy;;
+				->atom;;
+				->molecule;;
+			*);;
+	*);
+<- rrel_key_sc_element: martensitic_transformation_and_steel
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (мартенситное превращение, сталь)](*<- lang_ru;;*);
+			[Node (martensitic transformation, steel)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Мартенситное превращение характерно для сталей.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[Martensitic transformation is characteristic of steels.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+
+metal_ceramics
+=> nrel_main_idtf:
+	[металлокерамика]
+	(* <- lang_ru;;	*);
+	[metal ceramics]
+	(* <- lang_en;;	*);
+=>nrel_idtf:
+	[керметы]
+	(* <- lang_ru;;	*);
+	[керамико-металлические материалы]
+	(* <- lang_ru;;	*);
+	[спеченные антифрикционные материалы]
+	(* <- lang_ru;;	*);;
+
+metal_ceramics
+<- rrel_key_sc_element:
+	Definition_of_metal_ceramics
+	(* 
+	=> nrel_main_idtf:
+		[Опр.(металлокерамика)] (* <- lang_ru;;	*);
+		[Def.(metal ceramics)] (* <- lang_en;;	*);;
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf  = "metal_ceramics">Металлокерамика</sc_element> </b>- искусственный материал, представляющий собой гетерогенную композицию <sc_element sys_idtf  = "metal">металлов</sc_element> или <sc_element sys_idtf  = "alloy">сплавов</sc_element> с <sc_element sys_idtf  = "nonmetal">неметаллами</sc_element> (керамикой).] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "metal_ceramics">Metal ceramics</sc_element> </b>- artificial material, which is a heterogeneous composition <sc_element sys_idtf  = "metal">metals</sc_element> or <sc_element sys_idtf  = "alloy">alloys</sc_element> with <sc_element sys_idtf  = "nonmetal">nonmetals</sc_element> (ceramics).] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->metal;;
+				->nonmetal;;
+				->alloy;;
+			*);;
+	*);
+
+
+<=nrel_inclusion: chemical_substance;
+
+<- rrel_key_sc_element: properties_of_metal_ceramics
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (металлокерамика, свойства, металл, неметалл)](*<- lang_ru;;*);
+			[Stat. (metal ceramics, properties, metal, nonmetal)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Металлокерамики объединяют важные конструкционные и эксплуатационные свойства металлов и неметаллов. Они отличаются большой прочностью, высокими износо- и теплостойкостью, антикоррозионными свойствами.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[Metal ceramics combine the important structural and operational properties of metals and non-metals. They are distinguished by their high strength, high wear and heat resistance, anti-corrosion properties.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: composition_of_metal_ceramics
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (металлокерамика, состав)](*<- lang_ru;;*);
+			[Node (metal ceramics, composition)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Металлическая фаза металлокерамических материалов может содержать Cr, Ni, Al, Fe, Со, Ti, Zr и их сплавы. К керамической фазе относят оксиды (Al<sub>2</sub>O<sub>3</sub>, Cr<sub>2</sub>O<sub>3</sub>, SiO, SiO<sub>2</sub>, ZrO<sub>2</sub>), карбиды (SiC, Cr<sub>3</sub>C<sub>3</sub>, TiC, WC), бориды (Cr<sub>2</sub>B<sub>2</sub>, TiB<sub>2</sub>, ZrB<sub>2</sub>), силициды (MoSi), нитриды (TiN) и углерод (алмаз, графит). Содержание керамической составляющей в металлокерамике в зависимости от её типа изменяется в широких пределах от 15 до 85% (по объёму).] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[The metallic phase of the cermet materials may contain Cr, Ni, Al, Fe, Co, Ti, Zr and their alloys. The ceramic phase includes oxides (Al<sub>2</sub> O <sub>3</sub>, Cr<sub>2</sub>O<sub>3</sub>, SiO, SiO<sub>2</sub>, ZrO<sub>2</sub>), carbides (SiC, Cr<sub>3</sub> C<sub>3</sub>, TiC, WC), borides (Cr<sub>2</sub> B<sub>2</sub>, TiB<sub>2</sub>, ZrB<sub>2</sub>), silicides (MoSi), nitrides (TiN) and carbon (diamond , graphite). The content of the ceramic component in the cermet varies depending on its type over a wide range from 15 to 85% (by volume).] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+
+
+microhardness
+=> nrel_main_idtf:
+	[микротвёрдость]
+	(* <- lang_ru;;	*);
+	[microhardness]
+	(* <- lang_en;;	*);;
+
+microhardness
+<- rrel_key_sc_element:
+	Definition_of_microhardness
+	(* 
+	=> nrel_main_idtf:
+		[Опр.(микротвёрдость)] (* <- lang_ru;;	*);
+		[Def.(microhardness)] (* <- lang_en;;	*);;
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf  = "microhardness">Микротвёрдость</sc_element> </b>- <sc_element sys_idtf  = "hardness">твёрдость</sc_element> отдельных участков микроструктуры материала.] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "microhardness">Microhardness</sc_element> </b>- <sc_element sys_idtf  = "hardness">hardness</sc_element> separate sections of the microstructure of the material.] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->metal;;
+				->hardness;;
+			*);;
+	*);;
+
+
+
+nichrome
+=> nrel_main_idtf:
+	[нихром]
+	(* <- lang_ru;;	*);
+	[nichrome]
+	(* <- lang_en;;	*);;
+
+nichrome
+<- rrel_key_sc_element:
+	Definition_of_nichrome
+	(* 
+
+		=> nrel_main_idtf:
+			[Опр.(нихром)] (* <- lang_ru;;	*);
+			[Def.(nichrome)] (* <- lang_en;;	*);;
+		<- explanation;;
+		
+		<= nrel_sc_text_translation:...
+		(* 
+			-> rrel_example:[<b><sc_element sys_idtf  = "nichrome">Нихром</sc_element> </b> - <sc_element sys_idtf  = "alloy">сплав</sc_element> на основе <sc_element sys_idtf  = "subst_Ni">никеля </sc_element> и<sc_element sys_idtf  = "subst_Cr">хрома </sc_element> .] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[<b><sc_element sys_idtf  = "nichrome">Nichrome</sc_element> </b> - <sc_element sys_idtf  = "alloy">alloy</sc_element> on the basis of <sc_element sys_idtf  = "subst_Ni">Niccolum </sc_element> and <sc_element sys_idtf  = "subst_Cr">Chromium</sc_element> .] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+		
+		<= nrel_using_constants:...
+		(*
+			-> subst_Cr;;
+			-> subst_Ni;;
+			-> alloy;;
+		*);;	
+	*);
+
+=> nrel_alloy_component: subst_Cr;
+=> nrel_alloy_component: subst_Ni;
+=> nrel_alloy_component: subst_Mg;
+=> nrel_alloy_component: subst_Si;
+=> nrel_alloy_component: subst_Fe;
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1100 (*<-number;;*);;		
+		*);;
+	*);
+ 
+
+<- alloy;
+
+
+<- rrel_key_sc_element: additives_in_nichrome
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (нихром, добавки)](*<- lang_ru;;*);
+			[Node (nichrome, additives)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ В качестве добавок могут быть использованы: марганец, кремний, железо, алюминий.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[As additives can be used: manganese, silicon, iron, aluminum.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: electric_resistance_of_nichrome
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (нихром, электрическое сопротивление)](*<- lang_ru;;*);
+			[Node (nichrome, electrical resistance)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Нихром обладает высокой жаростойкостью в окислительной атмосфере, высоким удельным электрическим сопротивлением, имеет минимальный температурный коэффициент электрического сопротивления.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[Nichrome has a high heat resistance in an oxidizing atmosphere, high electrical resistivity, has a minimum temperature coefficient of electrical resistance.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+
+pobedit
+=> nrel_main_idtf:
+	[победит]
+	(* <- lang_ru;;	*);
+	[pobedit]
+	(* <- lang_en;;	*);;
+
+pobedit
+<- rrel_key_sc_element:
+	Definition_of_pobedit
+	(* 
+		=> nrel_main_idtf:
+			[Опр.(победит)] (* <- lang_ru;;	*);
+			[Def.(pobedit)] (* <- lang_en;;	*);;
+		<- explanation;;
+		
+		<= nrel_sc_text_translation:...
+		(* 
+			-> rrel_example:[<b><sc_element sys_idtf  = "pobedit">Победит</sc_element> </b> - твёрдый <sc_element sys_idtf  = "alloy">сплав</sc_element> карбида вольфрама и <sc_element sys_idtf  = "subst_Co">кобальта</sc_element> в массовом соотношении 96:4.] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[<b><sc_element sys_idtf  = "pobedit">Pobedit</sc_element> </b> - solid <sc_element sys_idtf  = "alloy">alloy</sc_element> tungsten carbide and <sc_element sys_idtf  = "subst_Co">Cobaltum</sc_element> in a weight ratio of 96: 4.] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+		
+		<= nrel_using_constants:...
+		(*
+			-> subst_Co;;
+			-> alloy;;
+		*);;	
+	*);
+
+=> nrel_alloy_component: subst_Co;
+ 
+
+<- alloy;
+
+
+<- rrel_key_sc_element: hardness_pobedit
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (победит, твёрдость)](*<- lang_ru;;*);
+			[Node (pobedit, hardness)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Обладает высокой твёрдостью.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[Has a high hardness.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+
+precipitation_hardening
+=> nrel_main_idtf:
+	[дисперсионное твердение]
+	(* <- lang_ru;;	*);
+	[precipitation hardening]
+	(*<- lang_en;;*);;
+precipitation_hardening
+<- rrel_key_sc_element:
+	Definition_of_precipitation_hardening
+	(* 
+	=> nrel_main_idtf:
+		[Опр.(дисперсионное твердение)] (* <- lang_ru;;	*);
+		[Def.(precipitation hardening)] (* <- lang_en;;	*);;
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf  = "precipitation_hardening">Дисперсионное твердение</sc_element> </b>- <sc_element sys_idtf  = "alloy_hardening">упрочнение</sc_element>  за счет выделения из пересыщенного твердого <sc_element sys_idtf  = "solution">раствора</sc_element> большого количества частиц второй (мелкодисперсной) фазы. ] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "precipitation_hardening">Precipitation hardening</sc_element> </b>- <sc_element sys_idtf  = "alloy_hardening">alloy hardening</sc_element>  by separation from a supersaturated solid <sc_element sys_idtf  = "solution">solution</sc_element> a large number of particles of the second (finely dispersed) phase. ] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->alloy;;
+				->alloy_hardening;;
+				->solution;;
+			*);;
+	*);
+<- rrel_key_sc_element: hardening_and_precipitation_hardening
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (дисперсионное твердение, упрочнение)](*<- lang_ru;;*);
+			[Node (precipitation hardening, hardening)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[  За счет того, что частицы мелкодисперсной фазы препятствуют перемещению дефектов кристаллической решетки (дислокаций), сплав упрочняется. Данным способом могут быть получены дисперсионно-упрочненные материалы.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[Due to the fact that the particles of the finely dispersed phase interfere with the movement of defects in the crystal lattice (dislocations), the alloy strengthens. Dispersion-reinforced materials can be obtained by this method.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+
+recrystallization
+=> nrel_main_idtf:
+	[перекристаллизация]
+	(* <- lang_ru;;	*);
+	[recrystallization]
+	(*<- lang_en;;*);;
+
+recrystallization
+<- rrel_key_sc_element:
+	Definition_of_recrystallization
+	(* 
+	=> nrel_main_idtf:
+		[Опр.(перекристаллизация)] (* <- lang_ru;;	*);
+		[Def.(recrystallization)] (* <- lang_en;;	*);;
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf  = "recrystallization">Перекристаллизация</sc_element> </b>- это изменение <sc_element sys_idtf  = "alloy">сплава</sc_element>, вызванное изменением типа кристаллической решетки. ] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "recrystallization">Recrystallization</sc_element> </b>- this change <sc_element sys_idtf  = "alloy">alloy</sc_element>, the change in the type of crystal lattice. ] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->alloy;;
+			*);;
+	*);
+<- rrel_key_sc_element: hardening_recrystallization
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (перекристаллизация, упрочнение)](*<- lang_ru;;*);
+			[Node (recrystallization, hardening)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Упрочнение достигается за счет уменьшения размеров зерен или их свойств (например, при возникновении зерен квазикристаллической фазы) в процессе изменения типа кристаллической решетки.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[Hardening is achieved by reducing the grain size or their properties (for example, in the case of the appearance of grains of the quasicrystalline phase) during the process of changing the type of crystal lattice.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+sintering
+=> nrel_main_idtf:
+	[спекание]
+	(* <- lang_ru;;	*);
+	[sintering]
+	(* <- lang_en;;	*);;
+
+sintering
+<- rrel_key_sc_element:
+	Definition_of_supercooled_sintering
+	(* 
+	=> nrel_main_idtf:
+		[Опр.(спекание)] (* <- lang_ru;;	*);
+		[Def.(sintering)] (* <- lang_en;;	*);;
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf  = "sintering">Спекание</sc_element> </b>- процесс получения <sc_element sys_idtf  = "solid">твёрдых</sc_element> </b>твёрдых и пористых материалов (изделий) из мелких порошкообразных или пылевидных материалов при повышенных температурах и/или высоком давлении.] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "sintering">Sintering</sc_element> </b>- process of obtaining <sc_element sys_idtf  = "solid">solid</sc_element> </b> and porous materials (products) from fine powder or dust-like materials at elevated temperatures and / or high pressures] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->solid;;
+			*);;
+	*);
+
+
+
+
+
+<- rrel_key_sc_element: sintering_physicochemical_properties_and_structure_of_material
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (спекание, физико-химические свойства, структура)](*<- lang_ru;;*);
+			[Node (sintering, physico-chemical properties, structure)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ При спекании меняются физико-химические свойства и структура материала.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[When sintering, the physicochemical properties and the structure of the material change.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+
+
+steel
+=> nrel_main_idtf:
+	[сталь]
+	(* <- lang_ru;;	*);
+	[steel]
+	(* <- lang_en;;	*);;
+
+
+steel
+<- rrel_key_sc_element:
+	Definition_of_steel
+	(* 
+		=> nrel_main_idtf:
+			[Опр.(сталь)] (* <- lang_ru;;	*);
+			[Def.(steel)] (* <- lang_en;;	*);;
+		<- explanation;;
+		
+		<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf  = "steel">Сталь</sc_element> </b>- <sc_element sys_idtf  = "alloy">сплав</sc_element> <sc_element sys_idtf  = "subst_Fe">железа</sc_element> с <sc_element sys_idtf  = "subst_C">углеродом</sc_element> (и другими элементами).] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "steel">Steel</sc_element> </b>- <sc_element sys_idtf  = "alloy">alloy</sc_element> <sc_element sys_idtf  = "subst_Fe">Ferrum</sc_element> with <sc_element sys_idtf  = "subst_C">carbon</sc_element> (and other elements).] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+		
+		<= nrel_using_constants:...
+		(*
+			-> chemical_element;;
+			-> subst_Fe;;
+			-> subst_C;;
+			-> alloy;;
+		*);;	
+	*);
+
+=> nrel_alloy_component: subst_Fe;
+=> nrel_alloy_component: subst_C;
+=> nrel_alloy_component: subst_P;
+=> nrel_alloy_component: subst_Mn;
+=> nrel_alloy_component: subst_S;
+=> nrel_alloy_component: subst_Si;
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1500 (*<-number;;*);;		
+		*);;
+	*);
+ 
+
+<- alloy;
+
+
+<- rrel_key_sc_element: carbon_in_steel
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (сталь, доля*, углерод, железо)](*<- lang_ru;;*);
+			[Node (steel, fraction*, carbon, iron)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Содержание углерода в стали от 0,1 до 2,14 %. На данный момент существуют стали с большим содержанием углерода, такие как: zdp-189 ~ 3,0 %, cpm rex 121 ~ 3,4 %. Углерод придаёт сплавам железа прочность и твёрдость, снижая пластичность и вязкость.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[he carbon content in the steel is from 0.1 to 2.14%. At the moment, there are steels with a high carbon content, such as: zdp-189 ~ 3.0%, cpm rex 121 ~ 3.4%. Carbon imparts strength and hardness to iron alloys, reducing ductility and viscosity.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: definition_of_steel
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (сталь, легирование, железо, углерод)](*<- lang_ru;;*);
+			[Node (steel, alloying, iron, carbon)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Учитывая, что в сталь могут быть добавлены легирующие элементы, сталью называется содержащий не менее 45 % железа сплав железа с углеродом и легирующими элементами (легированная, высоколегированная сталь).] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[Taking into account that alloying elements can be added to steel, steel is an alloy of iron containing carbon and alloying elements (alloyed, high-alloy steel) containing not less than 45% iron.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+
+stellite
+=> nrel_main_idtf:
+	[стеллит]
+	(* <- lang_ru;;	*);
+	[stellite]
+	(* <- lang_en;;	*);;
+
+stellite
+<- rrel_key_sc_element: Definition_of_stellite
+(* 
+	=> nrel_main_idtf:
+		[Опр.(стеллит)] (* <- lang_ru;;	*);
+		[Def.(stellite)] (* <- lang_en;;	*);;
+	<- explanation;;
+	<= nrel_sc_text_translation:...
+	(* 
+		-> rrel_example:[<b><sc_element sys_idtf  = "stellite">Стеллит</sc_element> </b>- сверхтвердый <sc_element sys_idtf  = "alloy">сплав</sc_element> на основе <sc_element sys_idtf  = "subst_Co">кобальта</sc_element> и <sc_element sys_idtf  = "subst_Cr">хрома</sc_element> с добавками <sc_element sys_idtf  = "subst_W">вольфрама</sc_element> и/или <sc_element sys_idtf  = "subst_Mo"> молибдена</sc_element>.] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "stellite">Stellite</sc_element> </b>- superhard <sc_element sys_idtf  = "alloy">alloy</sc_element> on the basis of <sc_element sys_idtf  = "subst_Co">Cobaltum</sc_element> and <sc_element sys_idtf  = "subst_Cr">Chromium</sc_element> with additives <sc_element sys_idtf  = "subst_W">Wolframium</sc_element> and/or <sc_element sys_idtf  = "subst_Mo"> Molybdaenum</sc_element>.] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+	*);;
+
+	<= nrel_using_constants:...
+	(*
+		-> nrel_density_of_substance;;
+		-> subst_W;;
+		-> subst_Co;;
+		-> subst_Cr;;
+		-> subst_Mo;;
+		-> alloy;;
+	*);;
+	
+*);
+
+<- alloy;
+
+
+<- rrel_key_sc_element: stellite_durability_hardness
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (стеллит, коррозионная стойкость, кавитационная стойкость,твёрдостью)](*<- lang_ru;;*);
+			[Node (stellite, corrosion resistance, cavitation resistance, hardness)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Стеллит обладает высокой коррозионной, кавитационной стойкостью и твёрдостью.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example:[Stellite has high corrosion, cavitation resistance and hardness.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+stellite
+=> nrel_alloy_component: 
+	subst_W;subst_Co;subst_Cr;subst_Mo;;
+
+
+
+
+
+nrel_alloy_component
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[компонент сплава*]
+	(* <- lang_ru;;	*);
+	[alloy_component*]
+	(* <- lang_en;;	*);;
+
+nrel_alloy_component
+<- rrel_key_sc_element: Definition_of_nrel_alloy_component
+(* 
+	=> nrel_main_idtf:
+		[Опр.(компонент сплава*)] (* <- lang_ru;;	*);
+		[Def.(alloy_component*)] (* <- lang_en;;	*);;
+	<- explanation;;
+	<= nrel_sc_text_translation:...
+	(* 
+		-> rrel_example:[<b><sc_element sys_idtf  = "nrel_alloy_component">компонет сплава*</sc_element> </b>- <sc_element sys_idtf  = "binary_relation">бинарное отношение</sc_element>, связывающее <sc_element sys_idtf  = "metal">металл</sc_element>   со <sc_element sys_idtf  = "alloy">сплавом</sc_element>.  ] 
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "nrel_alloy_component">alloy component*</sc_element> </b>- <sc_element sys_idtf  = "binary_relation">binary relation</sc_element>, binding <sc_element sys_idtf  = "metal">metal</sc_element>   with <sc_element sys_idtf  = "alloy">alloy</sc_element>.  ] 
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
+	*);;
+
+	<= nrel_using_constants: ...
+	(*
+		-> alloy;;
+		-> metal;;
+	*);;
+	
+*);
+
+
+=> nrel_second_domain:...
+(*
+	->metal;;
+	->chemical_element;;
+	-> chemical_substance;;
+*);
+=> nrel_first_domain: alloy;
+
+<- rrel_key_sc_element: properties_of_nrel_alloy_component
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (компонент сплава, свойства)](*<- lang_ru;;*);
+		[Stat. (alloy component, properties)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Свойства <sc_element sys_idtf  = "alloy">сплавов</sc_element> определяются их <sc_element sys_idtf  = "nrel_alloy_component">компонентами</sc_element>.] (*<- lang_ru;;
+										   => nrel_format: format_html;;*);;
+		-> rrel_example:[ Properties <sc_element sys_idtf  = "alloy">alloy</sc_element> determined by their <sc_element sys_idtf  = "nrel_alloy_component">components</sc_element>.] (*<- lang_en;;
+										   => nrel_format: format_html;;*);;
+	*);;
+*);
+<- binary_relation;;
+
+
+nrel_number_of_components
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[количество компонентов*]
+	(* <- lang_ru;;	*);
+	[number of components*]
+	(* <- lang_en;;	*);;
+
+nrel_alloy_component
+<- binary_relation;;
+
+
+nrel_number_of_occurrences_of_metal
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[количество вхождений металла*]
+	(* <- lang_ru;;	*);
+	[number of occurrences of metal*]
+	(* <- lang_en;;	*);;
+
+nrel_number_of_occurrences_of_metal
+<- binary_relation;;

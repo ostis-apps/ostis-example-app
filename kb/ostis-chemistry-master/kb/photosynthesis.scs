@@ -1,0 +1,96 @@
+// Лаба 2-3
+// Фотосинтез
+nrel_energy_conversion
+<- sc_node_norole_relation;;
+
+nrel_photosynthesis
+<- sc_node_norole_relation;
+
+// Идентификаторы
+ => nrel_main_idtf: 
+   [фотосинтез* ] (*<- lang_ru;;*);
+   [photosynthesis* ] (*<- lang_en;;*);
+
+// Определение
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+  => nrel_main_idtf: [Определение (фотосинтез*)](*<- lang_ru;;*);;
+  => nrel_using_constants: {
+    photosynthetic_pigments;
+    light_energy;
+    chemical_bond_energy;
+    infrared_energy;
+    nrel_energy_conversion
+};;
+<= nrel_sc_text_translation: ...(*->[Фотосинтез - сложный химический процесс преобразования энергии света (в некоторых случаях инфракрасного излучения) в 
+энергию химических связей органических веществ при участии фотосинтетических пигментов](*<-lang_ru;;*);;*);;
+*);
+
+
+// Утверждение
+<- rrel_key_sc_element: ... (*
+  <- explanation;;
+  => nrel_main_idtf: [Утверждение(фотосинтез*)](*<- lang_ru;;*);;
+  => nrel_using_constants: { 
+    energy;
+    chemical_substance
+};;
+<= nrel_sc_text_translation: ...(*->[В современной физиологии растений под фотосинтезом чаще понимается фотоавтотрофная функция — совокупность процессов 
+поглощения, превращения и использования энергии квантов света в различных эндергонических реакциях, в том числе превращения углекислого газа в 
+органические вещества.](*<-lang_ru;;*);;*);;
+*);
+
+// Домены
+	=> nrel_first_domain:
+	energy;
+	=> nrel_second_domain:
+	energy;
+  => nrel_definitional_domain:
+  energy;
+
+// Свойства
+// Уточнить правильно ли составлено
+<- oriented_relation;
+<- binary_relation; //арность = 2
+<|- symmetric_relation;
+<- antireflexive_relation;
+<|- transitive_relation;;
+
+// Пример
+energy -> chemical_bond_energy;;
+energy -> light_energy;;
+monoxide -> water;;
+organic_compound -> carbon_dioxide;;
+chemical_substance -> subst_O;;
+elementary_substance -> glucose;;
+
+chemical_bond_energy <= nrel_photosynthesis : light_energy;;
+{
+  chemical_bond_energy;
+  water;
+  carbon_dioxide
+} <= nrel_endergonic_reaction : {
+subst_O;
+glucose
+};;
+
+energy
+  <-sc_node_not_relation;
+
+=> nrel_main_idtf: 
+    [энергия] (* <- lang_ru;; *);
+    [energy] (* <- lang_en;; *);;
+
+light_energy
+  <-sc_node_not_relation;
+
+=> nrel_main_idtf: 
+    [энергия света] (* <- lang_ru;; *);
+    [light energy] (* <- lang_en;; *);;
+
+chemical_bond_energy
+  <-sc_node_not_relation;
+
+=> nrel_main_idtf: 
+    [энергия химических связей] (* <- lang_ru;; *);
+    [chemical bond energy] (* <- lang_en;; *);;

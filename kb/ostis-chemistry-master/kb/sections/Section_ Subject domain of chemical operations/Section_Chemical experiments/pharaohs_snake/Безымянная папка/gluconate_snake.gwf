@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GWF version="2.0">
+    <staticSector>
+        <node type="node/const/group" idtf="heating_of_gluconate" shapeColor="0" id="18595152" parent="18684960" left="0" top="0" right="164.25" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1477.21" y="178.22" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/general_node" idtf="_action_gluconate_snake" shapeColor="0" id="18578352" parent="18684960" left="0" top="0" right="188.656" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="766.006" y="261.688" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/group" idtf="gluconate_snake_experiment" shapeColor="0" id="18504368" parent="18684960" left="0" top="0" right="220.812" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="765.775" y="181.154" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/attribute" idtf="1'" shapeColor="0" id="18615856" parent="18684960" left="0" top="0" right="21" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1175.93" y="187.462" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/relation" idtf="nrel_decomposition_of_action" shapeColor="0" id="18101024" parent="18684960" left="0" top="0" right="223.781" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="884.198" y="225.423" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/general_node" idtf="" shapeColor="0" id="18614928" parent="18684960" x="1014.24" y="261.688" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/general_node" idtf="" shapeColor="0" id="18614320" parent="18684960" x="1395.73" y="261.688" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <pair type="pair/var/orient" idtf="" shapeColor="0" id="18715120" parent="18684960" id_b="18614928" id_e="18578352" b_x="1014.24" b_y="261.688" e_x="766.006" e_y="261.688" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="18703472" parent="18684960" id_b="18614928" id_e="18614320" b_x="1014.24" b_y="261.688" e_x="1395.73" e_y="261.688" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="18702768" parent="18684960" id_b="18504368" id_e="18578352" b_x="765.775" b_y="181.154" e_x="766.006" e_y="261.688" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="18708064" parent="18684960" id_b="18615856" id_e="18703472" b_x="1175.93" b_y="187.462" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.419441">
+            <points/>
+        </arc>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="18711088" parent="18684960" id_b="18595152" id_e="18614320" b_x="1477.21" b_y="178.22" e_x="1395.73" e_y="261.688" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="18594528" parent="18684960" id_b="18101024" id_e="18715120" b_x="884.198" b_y="225.423" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.526831">
+            <points/>
+        </arc>
+        <contour type="" idtf="" shapeColor="193" id="18684960" parent="0">
+            <points>
+                <point x="703.837" y="146"/>
+                <point x="1641.84" y="140"/>
+                <point x="1641.84" y="617"/>
+                <point x="703.837" y="617"/>
+            </points>
+        </contour>
+        <node type="node/const/group" idtf="chemical_experiment" shapeColor="0" id="18678560" parent="0" left="0" top="0" right="163.125" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="658.246" y="385.25" haveBus="false" idtf_pos="2">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/attribute" idtf="rrel_key_sc_element" shapeColor="0" id="18666272" parent="0" left="0" top="0" right="154.812" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1066.98" y="95.419" haveBus="false" idtf_pos="2">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/group" idtf="gluconate_snake" shapeColor="0" id="18648768" parent="0" left="0" top="0" right="130.359" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1172.84" y="28.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="18714112" parent="0" id_b="18678560" id_e="18684960" b_x="658.246" b_y="385.25" e_x="1172.84" e_y="378.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="18713104" parent="0" id_b="18648768" id_e="18684960" b_x="1172.84" b_y="28.5" e_x="1172.84" e_y="378.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="18712096" parent="0" id_b="18666272" id_e="18713104" b_x="1066.98" b_y="95.419" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.541239">
+            <points/>
+        </arc>
+    </staticSector>
+</GWF>

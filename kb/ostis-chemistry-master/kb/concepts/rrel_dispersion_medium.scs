@@ -1,0 +1,34 @@
+rrel_dispersion_medium
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[дисперсионная среда'](* <-lang_ru;; *);;
+
+rrel_dispersion_medium
+<- rrel_key_sc_element:
+	Definition_of_rrel_dispersion_medium
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(дисперсионная среда')] (* <-lang_ru;; *);; 
+        <= nrel_sc_text_translation:...
+        (*
+			-> rrel_example:"file://htmls/rrel_dispersion_medium.html"(* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants:
+		...
+		(*
+			-> dispersion;;
+			-> rrel_dispersed_phase;;
+		*);;
+	*);;
+
+
+rrel_dispersion_medium
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Утв.(дисперсионная среда', дисперсная система)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/rrel_dispersion_medium1.html" (* <-lang_ru;; *);;
+		*);;
+	*);;

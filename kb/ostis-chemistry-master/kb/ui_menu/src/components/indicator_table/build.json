@@ -1,0 +1,13 @@
+{
+     "sources": [
+        
+        "src/indicator_table-common.js",        
+	"src/ui_indicator_table.js",
+	"src/ui_indicator_table_data.js"
+
+    ],
+
+    "component": "src/indicator_table-component.js",
+
+    "target": "static/components/js/chemistry_components/indicator_table.js"
+}

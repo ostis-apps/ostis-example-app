@@ -1,0 +1,12 @@
+molar_amount
+=> nrel_main_idtf:
+	[22,4 л/моль](* <- lang_ru;; *);
+<- value;
+<= nrel_measurement:...
+(*
+	-> rrel_liter_per_mole: ...
+	(*
+		<- number;;
+		=> nrel_main_idtf:[22,4](*<-lang_ru;; <- lang_en;;*);;
+	*);;
+*);;

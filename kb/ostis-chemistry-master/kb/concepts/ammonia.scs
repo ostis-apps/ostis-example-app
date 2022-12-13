@@ -1,0 +1,192 @@
+ammonia
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[аммиак](* <-lang_ru;; *);
+	[ammonia](* <-lang_en;; *);
+
+=> nrel_idtf:
+	[nh3](* <-lang_en;; *);
+// включение и разбиение
+<= nrel_inclusion: chemical_compound;
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку агрегатного состояния](* <-lang_ru;; *);;
+	-> liquid_ammonia;;
+	-> solid_ammonia;;
+*);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(аммиак)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Аммиак - <sc_element sys_idtf = "chemical_compound">химическое cоединение</sc element> с формулой NH3, при н.у. — <sc_element sys_idtf = "no color">бесцветный</sc_element> <sc_element sys_idtf = "gas">газ</sc_element> с резким характерным <sc_element sys_idtf = "smell">запахом</sc_element>.]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->smell;;
+		->gas;;
+		->no_color;;
+		->chemical_compound;;
+	*);;
+*);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (аммиак, шаро-стержневая модель)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/ammonia.jpg"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element: statement_bronsted_base
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+	=>nrel_main_idtf: [Утв.(электронная пара, аммиак, основание Бренстеда, комплексообразователь, протон, ион)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Благодаря наличию неподеленной электронной пары во многих реакциях аммиак выступает как основание Бренстеда или комплексообразователь. Так, он присоединяет протон, образуя ион аммония.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: electron_pair;;
+	-> rrel_key_sc_element: proton;;
+	-> rrel_key_sc_element: ion;;
+	-> rrel_key_sc_element: chelating_agent;;
+	-> rrel_key_sc_element: Bronsted_base;;
+	<- rrel_axiom:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+<- rrel_key_sc_element: statement_aqueous_ammonia_solution
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+	=>nrel_main_idtf: [Утв.(водный раствор аммиака, слабощелочная реакция*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Водный раствор аммиака имеет слабощелочную реакцию](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: aqueous_ammonia_solution;;
+	-> rrel_key_sc_element:  nrel_weakly_alkaline_reaction;;
+	<- rrel_axiom:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+<- rrel_key_sc_element: statement_interaction_with_acids
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+	=>nrel_main_idtf: [Утв.(взаимодействие*, кислота, водный раствор аммиака, соль аммония)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Водный раствор аммиака имеет слабощелочную реакцию](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_interaction;;
+	-> rrel_key_sc_element: acid;;
+	-> rrel_key_sc_element: aqueous_ammonia_solution;;
+	-> rrel_key_sc_element: ammonium_salt;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+<- rrel_key_sc_element: statement_weak_acid
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+	=>nrel_main_idtf: [Утв.(аммиак, слабая кислота, вода, металл, соль, амид, имид, нитрид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Аммиак также является очень слабой кислотой (в 10 000 000 000 раз более слабой, чем вода), способен образовывать с металлами соли — амиды, имиды и нитриды.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: weak_acid;;
+	-> rrel_key_sc_element: water;;
+	-> rrel_key_sc_element: metal;;
+	-> rrel_key_sc_element: salt;;
+	-> rrel_key_sc_element: amide;;
+	-> rrel_key_sc_element: imide;;
+	-> rrel_key_sc_element: nitride;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+<- rrel_key_sc_element: statement_heating_ammonia
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+	=>nrel_main_idtf: [Утв.(нагревание*, аммиак, разложение*, восстановительное свойство)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[При нагревании аммиак разлагается, проявляет восстановительные свойства.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_decomposition;;
+	-> rrel_key_sc_element: nrel_heating;;
+	-> rrel_key_sc_element: reducing_property;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+<- rrel_key_sc_element: statement_nucleophilic_addition_reaction
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+	=>nrel_main_idtf: [Утв.(галогеноалкан, аммиак, реакция нуклеофильного присоединения*, ион, аммоний)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[С галогеноалканами аммиак вступает в реакцию нуклеофильного присоединения, образуя замещённый ион аммония](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: haloalkan;;
+	-> rrel_key_sc_element: nrel_nucleophilic_addition_reaction;;
+	-> rrel_key_sc_element: ion;;
+	-> rrel_key_sc_element: ammonium;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+<- rrel_key_sc_element: statement_reactions_and_results
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+	=>nrel_main_idtf: [Утв.(карбоновая кислота, ангидрид, галогенангидрид, эфир, аммиак, амид, альдегид, кетон, основание Шиффа, восстановление*, амин)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[С карбоновыми кислотами, их ангидридами, галогенангидридами, эфирами и другими производными аммиак даёт амиды. С альдегидами и кетонами — основания Шиффа, которые возможно восстановить до соответствующих аминов](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: carboxylic_acid;;
+	-> rrel_key_sc_element: anhydride;;
+	-> rrel_key_sc_element: acid_halide;;
+	-> rrel_key_sc_element: ether;;
+	-> rrel_key_sc_element: amide;;
+	-> rrel_key_sc_element: aldehyde;;
+	-> rrel_key_sc_element: ketone;;
+	-> rrel_key_sc_element: Schiff_base;;
+	-> rrel_key_sc_element: nrel_reducing;;
+	-> rrel_key_sc_element: amine;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);;

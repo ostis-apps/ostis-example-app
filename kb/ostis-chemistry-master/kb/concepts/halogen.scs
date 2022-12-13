@@ -1,0 +1,104 @@
+halogen
+=> nrel_main_idtf:
+	[галоген]
+	(* <- lang_ru;;	*);
+	[halogen]
+	(* <- lang_en;;	*);;
+halogen
+=> nrel_idtf:
+	[гало́иды]
+	(* <- lang_ru;;	*);;
+halogen
+<- rrel_key_sc_element:
+	Definition_of_halogen
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/halogen.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->nrel_group;;
+				->periodic_table;;
+				
+			*);;
+
+	*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/podgruppaftora.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: halogen_nonmetal
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (галогены, неметаллы)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Все галогены — неметаллы] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: halogen_oxidizer
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (галогены, окислитель)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Галогены являются сильными окислителями. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: halogen_external_shell
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (галогены, внешняя электронная оболочка)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ На внешнем энергетическом уровне 7 электронов] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: halogen_metal
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (галогены, металл, соль)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ При взаимодействии с металлами возникает ионная связь, и образуются соли. ] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+halogen
+->elem_F;
+->elem_Cl;
+->elem_Br;
+->elem_I;
+->elem_At;
+->elem_Uus;;
+
+Definition_of_halogen
+=> nrel_main_idtf:
+	[Опр.(Галогены)]
+	(* <- lang_ru;;	*);;

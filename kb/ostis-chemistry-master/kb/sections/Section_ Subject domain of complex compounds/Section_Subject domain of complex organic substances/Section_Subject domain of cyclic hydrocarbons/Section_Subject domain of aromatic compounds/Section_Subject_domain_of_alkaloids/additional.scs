@@ -1,0 +1,33 @@
+indole_alkaloids<-sc_node_not_relation;;
+indole_alkaloids=> nrel_main_idtf:[индольный алкалоид](* <- lang_ru;; *);;
+indole_alkaloids=> nrel_main_idtf:[indole alkaloid](* <- lang_en;; *);;
+
+isoquinoline_alkaloids<-sc_node_not_relation;;
+isoquinoline_alkaloids=> nrel_main_idtf:[изохинолиновый алкалоид](* <- lang_ru;; *);;
+isoquinoline_alkaloids=> nrel_main_idtf:[isoquinoline alkaloid](* <- lang_en;; *);;
+
+pyridine_alkaloids<-sc_node_not_relation;;
+pyridine_alkaloids=> nrel_main_idtf:[пиридиновый алкалоид](* <- lang_ru;; *);;
+pyridine_alkaloids=> nrel_main_idtf:[pyridine alkaloid](* <- lang_en;; *);;
+
+nrel_measurement_in_gramms_per_mole<-sc_node_norole_relation;;
+nrel_measurement_in_gramms_per_mole=> nrel_main_idtf:[измерение в г/моль](* <- lang_ru;; *);;
+nrel_measurement_in_gramms_per_mole=> nrel_main_idtf:[measurement in g/mole](* <- lang_en;; *);;
+
+nrel_measurement_in_gramms_per_centimeter<-sc_node_norole_relation;;
+nrel_measurement_in_gramms_per_centimeter=> nrel_main_idtf:[измерение в г/см3](* <- lang_ru;; *);;
+nrel_measurement_in_gramms_per_centimeter=> nrel_main_idtf:[measurement in g/ cm3](* <- lang_en;; *);;
+
+nrel_measurement_in_degrees_Celsius<-sc_node_norole_relation;;
+nrel_measurement_in_degrees_Celsius=> nrel_main_idtf:[измерение в градусах Цельсия](* <- lang_ru;; *);;
+nrel_measurement_in_degrees_Celsius=> nrel_main_idtf:[measurement in degrees_Celsius](* <- lang_en;; *);;
+
+nrel_measurement_in_hours<-sc_node_norole_relation;;
+nrel_measurement_in_hours=> nrel_main_idtf:[измерение в часах](* <- lang_ru;; *);;
+nrel_measurement_in_hours=> nrel_main_idtf:[measurement in hours](* <- lang_en;; *);;
+
+solid_matter<-sc_node_not_relation;;
+solid_matter=> nrel_main_idtf:[твердое вещество](* <- lang_ru;; *);;
+solid_matter=> nrel_main_idtf:[solid matter](* <- lang_en;; *);;
+
+

@@ -1,0 +1,71 @@
+subst_Cf
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[californium (substance)](*<- lang_en;;*);
+	[калифорний (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Сf (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (калифорний (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Калифорний (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - радиоактивный <sc_element sys_idtf = "metal">металл</sc_element> серебристо-белого <sc_element sys_idtf = "color">цвета</sc_element>.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> metal;;
+		-> color;;
+
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (калифорний (вещество), радиоактивный металл серебристо-белого цвета)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Californium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:900 (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (калифорний (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы калифорния:  <sup>237</sup>Cf, <sup>238</sup>Cf, <sup>239</sup>Cf, <sup>240</sup>Cf, <sup>241</sup>Cf, <sup>242</sup>Cf, <sup>243</sup>Cf, <sup>244</sup>Cf, <sup>245</sup>Cf, <sup>246</sup>Cf, <sup>247</sup>Cf, <sup>248</sup>Cf, <sup>249</sup>Cf, <sup>250</sup>Cf, <sup>251</sup>Cf, <sup>252</sup>Cf, <sup>253</sup>Cf, <sup>254</sup>Cf, <sup>255</sup>Cf, <sup>256</sup>Cf] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

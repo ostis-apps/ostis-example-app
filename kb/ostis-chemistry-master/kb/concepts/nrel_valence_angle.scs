@@ -1,0 +1,38 @@
+nrel_valence_angle
+<- sc_node_norole_relation;
+=>nrel_main_idtf:
+[валентный угол*](*<-lang_ru;;*);
+     [valence angle*](*<-lang_en;;*);;
+
+nrel_valence_angle
+
+<- rrel_key_sc_element: ... 
+    (*
+       <- definition;;
+       =>nrel_main_idtf: [Опр.(валентный угол*)]  (* <- lang_ru;; *);;
+       <= nrel_sc_text_translation:... (*->rrel_example: [<b>Валентный угол</b> — угол, образованный направлениями <sc_element sys_idtf="nrel_covalent_bond">химических (ковалентных) связей</sc_element>, исходящими из одного атома.](* <- lang_ru;; =>nrel_format: format_html;; *);; *);;
+	<=nrel_using_constants: nrel_covalent_bond;;
+     *);
+
+<-rrel_key_sc_element: ... 
+     (*
+        <- statement;;
+        <=nrel_sc_text_translation: ... (*->rrel_example: [<b>Валентные углы</b> зависят как от индивидуальных особенностей присоединенных атомов, так и от гибридизации атомных орбиталей центрального атома. Для простых молекул валентный угол, как и другие геометрические параметры молекулы, можно рассчитать методами квантовой химии. Экспериментально их определяют из значений моментов инерции молекул, полученных путём анализа их вращательных спектров.] (*<-lang_ru;; *);; *);;
+        => nrel_main_idtf: [Утв. (валентный угол*)] (* <- lang_ru;; *);;
+      *);
+
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_first_domain: atom;
+=> nrel_second_domain: number;
+=> nrel_definitional_domain:...
+(*
+    <= nrel_combination: ...
+    (* 
+        -> number; atom;;
+    *);;
+*);;

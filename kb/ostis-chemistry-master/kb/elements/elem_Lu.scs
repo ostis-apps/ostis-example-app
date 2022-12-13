@@ -1,0 +1,94 @@
+elem_Lu
+
+=> nrel_main_idtf: [атом лютеция] (* <- lang_ru;; *);
+=> nrel_main_idtf: [lutetium atom] (* <- lang_en;; *);
+
+=> nrel_idtf: [Lu] (* <- lang_en;; *);
+
+<- chemical_element;
+<- sc_node_not_relation;
+<= nrel_inclusion: chemical_element;
+
+<- rrel_key_sc_element:
+	Definition_of_lutetium
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf  = "elem_Lu">Лютеций</sc_element></b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element> <sc_element sys_idtf  = "nrel_group">группы</sc_element> лантаноидов. ]
+		(* <-lang_ru;; => nrel_format: format_html;; *);;
+
+		-> rrel_example:[<b><sc_element sys_idtf  = "elem_Lu">Lutetium</sc_element></b> is a <sc_element sys_idtf  = "chemical_element">chemical element</sc_element> of the lantanoid <sc_element sys_idtf  = "nrel_group">group</sc_element>. ]
+		(* <-lang_en;; => nrel_format: format_html;; *);;
+		*);;
+	
+	*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Lu(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:175(*<- number;;*);;
+	*);;
+*);
+<- oxidation_state_plus_three;
+<- valence_three;
+=> nrel_periodic_number: seventy_one;
+
+<- rrel_key_sc_element: ...
+(*
+		
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: [Рис.(атом лютеция)] (* <- lang_ru;;	*);
+	[Pic.(lutetium atom)] (* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://images/lu.png";;
+		*);;
+	*);
+
+<- rrel_key_sc_element: electron_configuration_Lu
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(атом лютеция, электронная конфигурация*)](*<- lang_ru;;*);
+		[Stat.(lutetium atom, electronic configuration*)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Lu 4f<sup>14</sup> 5d<sup>1</sup> 6s<sup>2</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+
+
+
+Definition_of_lutetium
+=> nrel_main_idtf:
+	[Опр.(атом лютеция)]
+	(* <- lang_ru;;	*);
+	[Def.(lutetium atom)]
+	(* <- lang_en;;	*);
+
+<= nrel_using_constants:
+			{
+				chemical_element;
+				nrel_group
+				
+			};;
+
+
+atomic_mass_Lu <- number;
+=> nrel_main_idtf:[174,9668(1)](*<-lang_ru;; <- lang_en;;*);;
+

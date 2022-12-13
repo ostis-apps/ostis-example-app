@@ -1,0 +1,27 @@
+decomposition_temperature<-sc_node_not_relation;;
+
+decomposition_temperature=> nrel_main_idtf:[температура разложения](* <- lang_ru;; *);;
+decomposition_temperature=> nrel_main_idtf:[decomposition temperature](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: decomposition_temperature;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Температура разложения - температура при которой начинается  <b><sc_element sys_idtf="nrel_decomposition">распад</b></sc_element>  <b><sc_element sys_idtf="molecule">молекул</b></sc_element>  <b><sc_element sys_idtf="chemical_compound">химического соединения</b></sc_element>  на отдельные <b><sc_element sys_idtf="molecule">молекулы</b></sc_element> ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Определение (температура разложения)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nrel_decomposition;
+		molecule;
+		chemical_compound
+		};;
+*);;
+
+
+
+

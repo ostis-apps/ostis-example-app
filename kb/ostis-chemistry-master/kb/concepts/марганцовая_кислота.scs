@@ -1,0 +1,62 @@
+sc_node_not_relation->permanganic_acid;;
+
+sc_node_not_relation->manganese_oxide_VII;;
+sc_node_not_relation->unstable_acid;;
+sc_node_not_relation->acid;;
+sc_node_not_relation->strong_acid;;
+
+permanganic_acid=> nrel_main_idtf: [марганцовая кислота](* <- lang_ru;; *);;
+permanganic_acid=> nrel_main_idtf: [permanganic acid](* <- lang_en;; *);;
+permanganic_acid=> nrel_idtf: [HMnO4](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: permanganic_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Марганцовая кислота - сильная,нестабильная, неорганическая кислота фиолетово-красного цвета с химической формулой HMnO4](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (марганцовая кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		acid;
+		strong_acid;
+		inorganic_acid;
+		unstable_acid;
+		chemical_formula
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: permanganic_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Марганцовая кислота может быть получена взаимодействием оксида марганца(VII) с водой на холоде](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(марганцовая кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		water;
+		manganese_oxide_VII;
+		nrel_interaction
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: permanganic_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/marg.png";;*);;
+	=> nrel_main_idtf: [Рисунок(марганцовая кислота)](*<- lang_ru;;*);;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: permanganic_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/марганцовая_кислота_1.png";;*);;
+	=> nrel_main_idtf: [Рисунок(марганцовая кислота,структурная формула)](*<- lang_ru;;*);;
+*);;
+
+permanganic_acid -> permanganic_acid_x;;
+
+permanganic_acid<=nrel_inclusion:strong_acid;;
+permanganic_acid<=nrel_inclusion:nonpersistent_acid;;
+permanganic_acid<=nrel_inclusion:oxyacid;;
+permanganic_acid<=nrel_inclusion:monobasic_acid;;
+permanganic_acid<=nrel_inclusion:inorganic_acid;;
+
+permanganic_acid<-rrel_not_maximum_studied_object_class:subject_domain_of_acids;;

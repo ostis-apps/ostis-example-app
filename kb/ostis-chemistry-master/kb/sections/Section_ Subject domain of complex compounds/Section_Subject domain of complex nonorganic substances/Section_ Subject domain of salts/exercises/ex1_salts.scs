@@ -1,0 +1,24 @@
+ex1_salts
+<- exercises_salts;
+
+-> rrel_key_sc_element: iodide; subst_Na; nrel_chemical_amount;
+
+=> nrel_next: ex2_salts;
+
+=> nrel_main_idtf:
+	[Упражнение 1. Раздел. Предметная область солей]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 1. Section. Subject domain of salts]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex1_salts_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex1_salts_en.html" (* <-lang_en;; *);;
+	*);;

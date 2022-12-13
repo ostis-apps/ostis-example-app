@@ -1,0 +1,75 @@
+.solubility-table, .solubility-table th, .solubility-table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.solubility-table th, .solubility-table td {
+    height: 100%;
+    text-align: center;    
+}
+
+.solubility-table-cell-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding: 5px;
+}
+.solubility-table {
+    cursor: default;
+    margin-bottom: 100px;
+}
+
+.solubility-table-title {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.solubility-table-cation {
+    cursor: pointer;
+    background-color: lightskyblue;
+}
+
+.solubility-table-cation:hover {
+    background-color: lightsteelblue;
+}
+
+.solubility-table-cation-header {
+    background-color: aqua;
+}
+
+.solubility-table-anion {
+    cursor: pointer; 
+    background-color: lightgreen;
+}
+
+.solubility-table-anion:hover {
+    background-color: lightsteelblue;
+}
+
+.solubility-table-anion-header {
+    background-color: aquamarine;
+}
+
+.soluble {
+    background-color: white;
+}
+
+.slightly-soluble {
+    background-color: greenyellow;
+}
+
+.insoluble {
+    background-color: yellow;
+}
+
+.hydrolyzed {
+    background-color: aqua;
+}
+
+.does-not-exist {
+    background-color: lightsteelblue;
+}

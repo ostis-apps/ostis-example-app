@@ -1,0 +1,1178 @@
+subject_domain_of_nitrile
+    => nrel_main_idtf: [Предметная область нитрилов](* <- lang_ru;; *);
+    [Subject domain of nitrile](* <- lang_en;; *);
+
+<-subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+nitrile;
+
+
+<= nrel_sc_text_translation:...(*
+    ->rrel_example :[Нитриилы — органические соединения общей формулы R—C≡N](*<-lang_ru;;*);;
+*);;
+
+
+
+
+
+
+
+
+acetonitrile
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[ацетонитрил](* <-lang_ru;;*);
+    [acetonitrile](* <-lang_en;;*);
+
+<- nitrile;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[41,05](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//плотность
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[41,05](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура кипения
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[81](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[-44](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(ацетонитрил)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Ацетонитри́л (нитрил уксусной кислоты, этаннитрил, метилцианид) — органическое химическое соединение с формулой CH3CN.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(ацетонитрил)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Ацетонитрил смешивается с водой, этиловым спиртом.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (ацетонитрил)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/acetonitrile.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+isoamilnitrile
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[изоамилнитрит](* <-lang_ru;;*);
+    [isoamilnitrile](* <-lang_en;;*);
+
+<- nitrile;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[143,5](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//плотность
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[0.872](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура кипения
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[99](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[50](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(изоамилнитрит)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Изоамилнитрит (CH3)2CHCH2CH2ONO — сложный эфир изоамилового спирта и азотистой кислоты.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(изоамилнитрит)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Жёлтая летучая жидкость с фруктовым запахом](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (изоамилнитрит)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/isoamilnitrile.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+amilnitrile
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[амилнитрит](* <-lang_ru;;*);
+    [amilnitrile](* <-lang_en;;*);
+
+<- nitrile;
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(амилнитрил)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [АМИЛНИТРИл ( Аmylii nitris ). Изоамиловый эфир азотистой кислоты.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(амилнитрил)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Прямое концентрированное вдыхание амилнитрита и других алкилнитритов приводит к расслаблению гладкой мускулатуры, окружающей кровеносные сосуды тела.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (амилнитрил)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/amilnitrile.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+octanitrile
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[октанитрил](* <-lang_ru;;*);
+    [octanitrile](* <-lang_en;;*);
+
+<- nitrile;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[125,21](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(октанитрил)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Октанитрил — органическое соединение класса нитрилов.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(октанитрил)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Бесцветная жидкость со специфическим запахом.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (октанитрил)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/octanitrile.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+
+metocrilonitrile
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[mетакрилонитрил](* <-lang_ru;;*);
+    [metocrilonitrile](* <-lang_en;;*);
+
+<- nitrile;
+
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(метакриловой)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [МЕТАКРИЛОНИТРИЛ (нитрил метакриловой к-ты) CH2=C(CH3)CN, мол. м. 67.0; бесцв. жидкость; ](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(метакриловой)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Получают метакрилонитрил дегидратацией ацетонциангидрина](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (метакриловой)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/metocrilonitrile.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+acrilonitrile
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[акрилонитрил](* <-lang_ru;;*);
+    [acrilonitrile](* <-lang_en;;*);
+
+<- nitrile;
+<- no_color;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[53,06](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//плотность
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[0,8064](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура кипения
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[77](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[-84](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(акрилонитрил)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Акрилонитрил (цианистый винил, винилоцианид, проп-2-енонитрил), CH2=CH-C≡N — нитрил акриловой кислоты.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;;
+	=>nrel_main_idtf:
+	[Утв.(акрилонитрил)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Бесцветная жидкость с характерным запахом миндаля или вишневых косточек, растворима в воде.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (акрилонитрил)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/acrilonitrile.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+nitrilotriacetic_acid
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[нитрилуксусная кислота](* <-lang_ru;;*);
+    [nitrilotriacetic acid](* <-lang_en;;*);
+
+<- nitrile;
+<- concept_acid; 
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[191,14](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура кипения
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[321,4](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[246,14](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(нитрилтриуксусная кислота)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Нитрилотриуксусна кислота (NTA) является аминополикарбоновыми кислотами с формулой N (CH 2 CO 2 H) 3](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;;
+	=>nrel_main_idtf:
+	[Утв.(нитрилтриуксусная кислота)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [ Это бесцветное твердое вещество, которое используется в качестве хелатирующего агента](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (нитрилтриуксусная килсота)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/nitrilotriacetic_acid.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+nitrilotrimethylphosphonic_acid
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[нитрилотриметилфосфоновая кислота](* <-lang_ru;;*);
+    [nitrilotrimethylphosphonic acid](* <-lang_en;;*);
+
+<- nitrile;
+<- concept_acid; 
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[191,14](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура кипения
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[321,4](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[246,14](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(нитрилтриуксусная кислота)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Нитрилотриуксусна кислота (NTA) является аминополикарбоновыми кислотами с формулой N (CH 2 CO 2 H) 3](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;;
+	=>nrel_main_idtf:
+	[Утв.(нитрилтриуксусная кислота)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [ Это бесцветное твердое вещество, которое используется в качестве хелатирующего агента](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (нитрилтриуксусная килсота)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/nitrilotrimethylphosphonic_acid.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+nitrile_fluoride
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[фторид нитрила](* <-lang_ru;;*);
+    [nitrile fluoride](* <-lang_en;;*);
+
+<- nitrile;
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(фторид нитрила)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [фторид нитрила. Изоамиловый эфир азотистой кислоты.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(фторид нитрила)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Прямое концентрированное вдыхание амилнитрита и других алкилнитритов приводит к расслаблению гладкой мускулатуры, окружающей кровеносные сосуды тела.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (фторид нитрила)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/nitrile_fluoride.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+pentenenitrile
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[пентаннитрил](* <-lang_ru;;*);
+    [pentenenitrile](* <-lang_en;;*);
+
+<- nitrile;
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(пентаннитрил)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Пентены (амилены) — общее название для непредельных углеводородов гомологического ряда алкенов с химической формулой С5Н10.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(пентаннитрил)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Всего пентены насчитывают в своём составе 6 изомеров, в т. ч. цис- и транс-изомеров](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (пентаннитрил)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/pentenenitrile.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+hexanetriol
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[гексаннитрил](* <-lang_ru;;*);
+    [hexanetriol](* <-lang_en;;*);
+
+<- nitrile;
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(гексаннитрил)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [гексаннитрилx. Изоамиловый эфир азотистой кислоты.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(гексаннитрил)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Прямое концентрированное вдыхание амилнитрита и других алкилнитритов приводит к расслаблению гладкой мускулатуры, окружающей кровеносные сосуды тела.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (гексаннитрил)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/hexanetriol.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+nitrile_chloride
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[хлорид нитрила](* <-lang_ru;;*);
+    [nitrile chloride](* <-lang_en;;*);
+
+<- nitrile;
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(хлорид нитрила)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Хлорид нитрила (хлористый нитрил) — хлорангидрид азотной кислоты, бесцветный газ.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(хлорид нитрила)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [В промышленности хлорид нитрила получают при воздействии хлора на азотно-серебряную сол](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (хлорид нитрила)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/nitrile chloride.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+nitride_triiodo
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[нитрид трииода](* <-lang_ru;;*);
+    [nitride triiodo](* <-lang_en;;*);
+
+<- nitrile;
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(нитрид трииода)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Нитри́д триио́да (иногда йодистый азот, ошиб. азид йода) — чрезвычайно взрывчатое неорганическое соединение с формулой NI3. ](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(нитрид трииода)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Представляет собой чёрные кристаллы, очень чувствительные к механическим воздействиям.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (нитрид трииода)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/nitride_triiodo.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+
+
+nonunital
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[нонаннитрил](* <-lang_ru;;*);
+    [nonunital](* <-lang_en;;*);
+
+<- nitrile;
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(нонаннитрил)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Металлосодержащие комплексы, каталитические системы и их применение для олигомеризации или полимеризации олефинов](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(нонаннитрил)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Прямое концентрированное вдыхание амилнитрита и других алкилнитритов приводит к расслаблению гладкой мускулатуры, окружающей кровеносные сосуды тела.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (нонаннитрил)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/nonunital.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+nitrosyl_bromide
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[бромид нитрозила](* <-lang_ru;;*);
+    [nitrosyl bromide](* <-lang_en;;*);
+
+<- nitrile;
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(бромид нитрозила)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Бромид нитрозила — неорганическое соединение, бромпроизводное нитрозила с формулой NOBr, бурый газ, реагирует с водой.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(бромид нитрозила)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Бромид нитрозила образует бурый газ, который заметно диссоциирован (≈7 % при комнатной температуре).](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (бромид нитрозила)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/nitrosyl_bromide.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+botanical
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[бутаннитрил](* <-lang_ru;;*);
+    [botanical](* <-lang_en;;*);
+
+<- nitrile;
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(бутаннитрил)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Органические соединения, формально являющиеся C-замещенными производными синильной кислоты.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(бутаннитрил)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Атомы азота и углерода в нитрильной группе находятся в состоянии sp-гибридизации.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (бутаннитрил)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/botanical.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+nitrile_fluoride
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[гептаннитрил](* <-lang_ru;;*);
+    [heptanenitrile](* <-lang_en;;*);
+
+<- nitrile;
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(гептаннитрил)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Органические соединения общей формулы R—C≡N, формально являющиеся C-замещенными производными синильной кислоты HC≡N.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(гептаннитрил)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Нитрилы способны вступать в реакции как с электрофильными реагентами по атому азота](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (гептаннитрил)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/heptanenitrile.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+

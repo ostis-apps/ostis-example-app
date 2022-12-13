@@ -1,0 +1,63 @@
+subst_Mt
+<- sc_node_not_relation;
+=> nrel_main_idtf: [мейтнерий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [meitnerium] (* <- lang_en;; *);
+<- rrel_key_sc_element: definition_of_subst_Mt
+(* 
+	=> nrel_main_idtf: 
+	[Опр.(мейтнерий)] (* <- lang_ru;; *);
+	[Def.(meitnerium)] (* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Mt">Мейтнерий</sc_element></b> — искусственно полученный непереходный <sc_element sys_idtf="radioactive_substance">радиоактивный</sc_element> <sc_element sys_idtf="metal">металл</sc_element>.] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+
+		-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Mt">Meinnerium</sc_element></b> is an artificially received intransitive <sc_element sys_idtf="radioactive_substance">radioactive</sc_element> <sc_element sys_idtf="metal">metal</sc_element>.] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> radioactive_substance;;
+		-> metal;;
+	*);;
+*);
+
+<= nrel_inclusion: chemical_substance;
+
+
+<- rrel_key_sc_element: receiving_Mt
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(мейтнерий, получение*)](*<- lang_ru;;*);
+		[Stat.(meitnerium, receiving*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Мейтнерий получают в результате реакции <sup>209</sup>Bi+<sup>58</sup>Fe → <sup>266</sup>Mt+n.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		-> rrel_example:[ Meitnerium is received in the reaction: <sup>209</sup>Bi+<sup>58</sup>Fe → <sup>266</sup>Mt+n.] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [37,4] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;
+
+atomic_multiplicity_one -> (subst_Mt -> elem_Mt);;

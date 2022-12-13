@@ -1,0 +1,4 @@
+rrel_coulomb 
+=> nrel_main_idtf: [кулон'](* <- lang_ru;; *);
+=> nrel_main_idtf: [coutomb'](* <- lang_en;; *);
+<- sc_node_role_relation;;

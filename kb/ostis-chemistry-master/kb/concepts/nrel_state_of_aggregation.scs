@@ -1,0 +1,80 @@
+nrel_state_of_aggregation
+=> nrel_main_idtf:
+	[агрегатное состояние*]
+	(* <- lang_ru;;	*);
+	[state of aggregation]
+	(* <- lang_en;;	*);;
+
+nrel_state_of_aggregation
+<- rrel_key_sc_element:
+	Definition_of_state_of_aggregation
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/nrel_state_of_aggregation.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				-> chemical_substance;;
+			*);;
+	*);
+
+
+<=nrel_first_domain: chemical_substance;
+
+<=nrel_second_domain:...(*
+			->solid;;
+			->liquid;;
+			->gas;;
+			->plasma;;
+			*);
+
+
+<- rrel_key_sc_element: properties_of_state_of_aggregation
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (агрегатное состояние*, свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Агрегатное состояние характеризуется определёнными, неизменными в пределах указанных интервалов, качественными свойствами
+
+способностью (твёрдое тело) или неспособностью (жидкость, газ, плазма) сохранять объём и форму,] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: changes_in_the_aggregate_state
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (агрегатное состояние*, изменение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Изменение агрегатного состояния может сопровождаться скачкообразным изменением свободной энергии, энтропии, плотности и других физических величин.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: four_state_of_aggregation
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (агрегатное состояние*, твёрдое тело, жидкость, газ, плазма)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Выделяют четыре агрегатных состояния: твёрдое тело, жидкость, газ и плазму] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_state_of_aggregation
+=> nrel_main_idtf:
+	[Опр.(Агрегатное состояние)]
+	(* <- lang_ru;;	*);;
+
+
+

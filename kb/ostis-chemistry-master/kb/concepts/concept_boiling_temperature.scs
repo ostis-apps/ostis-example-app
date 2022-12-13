@@ -1,0 +1,35 @@
+sc_node_not_relation -> boiling_temperature;;
+
+boiling_temperature => nrel_main_idtf:
+	[температура кипения](* <-lang_ru;; *);
+	[точка кипения](* <-lang_ru;; *);
+	[boiling temperature](* <-lang_en;; *);;
+
+boiling_temperature <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: температура кипения] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: boiling temperature] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Температура кипения — температура, при которой происходит кипение жидкости, находящейся под постоянным давлением.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Boiling point - the temperature at which the fluid boils under constant pressure.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+boiling_temperature <= nrel_using_constants: boiling; pressure;;
+
+boiling_temperature <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		-> rrel_key_sc_element: critical_temperature;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Предельной температурой кипения является критическая температура вещества.](*<- lang_ru;;*);;
+			*);;
+		*);;

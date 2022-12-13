@@ -1,0 +1,26 @@
+indicator
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[индикатор](*<-lang_ru;;*);
+     [indicator](*<-lang_en;;*);;
+
+
+indicator <-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(индикатор)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [Индикатор - соединение, позволяющее визуализировать изменение концентрации какого-либо вещества или компонента, например, в растворе при титровании, или быстро определить pH, eH и другие параметры.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: nrel_compound; chemical_substance;;
+*);
+
+<- rrel_key_sc_element: ... 
+      (*
+        ->rrel_key_sc_element: nrel_application;;
+        ->statement;;
+		<-concept_assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_chemistry (*<-concept_subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (* ->rrel_example: [Индикаторы позволяют быстро и достаточно точно контролировать состав жидких и газообразных сред, следить за изменением их состава, или за протеканием химической реакции. Широко используются кислотно-основные индикаторы, разбавленные растворы которых обладают способностью заметно изменять цвет, в зависимости от кислотного раствора. Причина изменения цвета - изменения в строении молекул индикатора в кислой и щелочной среде, что приводит к изменению спектра поглощения раствора. Для определения состава газовых сред используют индикаторые бумажки и индикаторные трубки.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+        =>nrel_main_idtf: [Утв. (индикатор, применение*)](*<-lang_ru;;*);;  
+      *);
+
+=> nrel_inclusion: pH_indicator; oxidation_reduction_indicator; metal_indicator;;

@@ -1,0 +1,69 @@
+oxidation_reduction_indicator  
+<- sc_node_not_relation;
+ => nrel_main_idtf:
+	[oкислительно-восстановительный индикатор](*<-lang_ru;;*);
+     [oxidation reduction indicator](*<-lang_en;;*);;
+
+oxidation_reduction_indicator
+<-rrel_key_sc_element: Definition_of_oxidation_reduction_indicator 
+	(*
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(окислительно-восстановительный индикатор)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation: ... (*-> rrel_example: [<b>Окисли́тельно-восстанови́тельные индика́торы</b> (редо́кс-индика́торы) — <sc_element sys_idtf="chemical_substance">вещества</sc_element>, которые применяются для определения точки эквивалентности в <sc_element sys_idtf="nrel_oxidation_reduction_reaction">окислительно-восстановительных реакциях</sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: chemical_substance; nrel_oxidation_reduction_reaction;;
+	*);
+
+<-rrel_key_sc_element:...
+	(*
+    ->rrel_key_sc_element: oxidation_state; organic_compound; color;;
+    ->statement;;
+	<-concept_assertion_of_the_defining_type;;
+	<-rrel_theorem:subject_domain_of_chemistry (*<-concept_subject_domain;;*);;
+    <=nrel_sc_text_translation: ... (* -> rrel_example: [Чаще всего такими индикаторами являются органические соединения, которые проявляют окислительно-восстановительные свойства, и металлоорганические, в которых по достижении определённого потенциала меняется степень окисления металла. В обоих случаях изменения в структуре сопровождаются изменением окраски соединения.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+    =>nrel_main_idtf: [Утв. (окислительно-восстановительный индикатор, органическое соединение, цвет, степень окисления)](*<-lang_ru;;*);;  
+	*);
+
+<-rrel_key_sc_element:...
+(*
+        ->statement;;
+		<-concept_assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_chemistry (*<-concept_subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (* -> rrel_example: [В зависимости от типа взаимодействия различают индикаторы:
+
+общие — меняют свою окраску в соответствии с потенциалом и независимо от природы веществ в растворе (например, дифениламин, метиленовый синий);
+специфические — дают реакцию только с определёнными соединениями (крахмал является индикатором на иод, тиоцианат-ионы — на катион Fe3+).
+В зависимости от схемы перехода цвета индикаторы делят на:
+
+одноцветные — одна форма имеет цвет, другая — бесцветная;
+двухцветные — обе формы имеют собственные цвета.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+        =>nrel_main_idtf: [Утв. (окислительно-восстановительный индикатор, классификация*)](*<-lang_ru;;*);;  
+*);
+
+<-rrel_key_sc_element: ...
+(*
+        ->statement;;
+		<-concept_assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_chemistry (*<-concept_subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (* -> rrel_example: [Применяемые индикаторы должны соответствовать требованиям:
+
+хорошо растворяться в воде, кислотах и других типичных средах для титрования;
+быть устойчивыми к действию света, воздуха, других компонентов в растворе и стабильным при длительном хранении;
+окраски окисленной и восстановленной форм должны чётко отличаться;
+интервал потенциала, на котором происходит переход между формами, должен быть узким и отвечать скачку на кривой титрования;
+окраска должна меняться быстро, а ответная реакция быть полностью обратимой, не нести влияния посторонних реакций;
+изменение цвета раствора в конечный точке титрования должно быть чётким даже при наименьшем количестве добавленного индикатора.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+        =>nrel_main_idtf: [Утв. (окислительно-восстановительный индикатор, применение*)](*<-lang_ru;;*);;  
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (oкислительно-восстановительный индикатор)] (* <- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://image//oxi.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

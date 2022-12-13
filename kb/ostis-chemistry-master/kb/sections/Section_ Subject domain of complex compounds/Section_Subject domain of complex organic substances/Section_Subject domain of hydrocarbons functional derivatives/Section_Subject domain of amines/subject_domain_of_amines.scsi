@@ -1,0 +1,2951 @@
+subject_domain_of_alicyclic_compounds
+=> nrel_main_idtf: 
+	[Предметная область аминов]
+	(* <- lang_ru;;*);
+	[Subject domain of amies]
+	(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: amine;
+-> rrel_not_maximum_studied_object_class:
+	primary_amine;
+	1_propylamine;
+	amantadine;
+	hexamethylenediamine;
+	isopropylamine;
+	isophorondiamine;
+	cadaverine;
+	lilamine;
+	memantine;
+	methylamine;
+	octadecylamine;
+	porphobilinogen;
+	putrescine;
+	spermine;
+	sphingosine;
+	taurine;
+	tert_butylamine;
+	tris;
+	phenylethylamine;
+	ethanolamine;
+	ethylenediamine;
+	secondary_amine;
+	atomoxetine;
+	vildagliptin;
+	glyphosate;
+	dimethylamine;
+	diethanolamine;
+	diethylamine;
+	methoxetamine;
+	piperazine;
+	pyrrolidine;
+	tertiary_amine;
+	amiton;
+	amitriptyline;
+	benzidamine;
+	gramine;
+	diisopropylethylamine;
+	diltiazem;
+	dimenoxadol;
+	dimethylaminoethanol;
+	diethylaniline;
+	oxeladine;
+	promazin;
+	promethazine;
+	trimethylamine;
+	triethanolamine;
+	triethylamine;
+	urotropin;
+	fluoroacisin;
+	chloromethine;
+	chlorpromazine;
+	chlorprotixen;;
+
+amine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[амин](* <- lang_ru;; *);
+=> nrel_main_idtf:[amine](* <- lang_en;; *);
+=> nrel_inclusion: primary_amine; secondary_amine; tertiary_amine;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (амин)](* <- lang_ru;; *);
+		[Def. (amine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> organic_compound;;
+		-> molecule;;
+		-> elem_H;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="amine">Амин</sc_element></b> - <b><sc_element sys_idtf="organic_compound">органическое вещество</sc_element></b>, в <b><sc_element sys_idtf="molecule">молекуле</sc_element></b> которого один, два или три <sc_element sys_idtf="elem_H">атома водорода</sc_element> замещены на углеводородные радикалы.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "amine">Amin</sc_element></b> - <b><sc_element sys_idtf = "organic_compound">organic matter</sc_element></b>, in <b><sc_element sys_idtf = "molecule">molecule</sc_element></b> of which one, two or three <sc_element sys_idtf = "elem_H">hydrogen atoms</sc_element> are replaced by hydrocarbon radicals.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);;
+
+primary_amine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[первичный амин](* <- lang_ru;; *);
+=> nrel_main_idtf:[primary amine](* <- lang_en;; *);
+=> nrel_amine_group_number: number_one;
+=> nrel_inclusion:
+	1_propylamine;
+	amantadine;
+	hexamethylenediamine;
+	isopropylamine;
+	isophorondiamine;
+	cadaverine;
+	lilamine;
+	memantine;
+	methylamine;
+	octadecylamine;
+	porphobilinogen;
+	putrescine;
+	spermine;
+	sphingosine;
+	taurine;
+	tert_butylamine;
+	tris;
+	phenylethylamine;
+	ethanolamine;
+	ethylenediamine;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (первичный амин)](* <- lang_ru;; *);
+		[Def. (primary amine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> amine;;
+		-> elem_H;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="primary_amine">Первичный амин</sc_element></b> - <b><sc_element sys_idtf="amine">амин</sc_element></b>, в <b><sc_element sys_idtf="molecule">молекуле</sc_element></b> которого один <sc_element sys_idtf="elem_H">атом водорода</sc_element> замещены на углеводородные радикалы.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "primary_amine">Primary amine</sc_element></b> - <b><sc_element sys_idtf = "amine">amine</sc_element></b>, in <b><sc_element sys_idtf = "molecule">molecule</sc_element></b> of which one <sc_element sys_idtf = "elem_H">hydrogen atoms</sc_element> are replaced by hydrocarbon radicals.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (первичный амин)](* <- lang_ru;; *);
+		[Pic. (primary_amine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/primary_amine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+1_propylamine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[1-пропиламин](* <- lang_ru;; *);
+=> nrel_main_idtf:[1-propylamine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (первичный амин)](* <- lang_ru;; *);
+		[Def. (primary amine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> primary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="1_propylamine">1-пропиламин</sc_element></b> - <b><sc_element sys_idtf="primary_amine">первичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "1_propylamine">1-propylamine</sc_element></b> - <b><sc_element sys_idtf = "primary_amine">primary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (1-пропиламин)](* <- lang_ru;; *);
+		[Stat. (1-propylamine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>3</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>9</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>3</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>9</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (первичный амин)](* <- lang_ru;; *);
+		[Pic. (primary_amine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/propylamine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+amantadine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[амантадин](* <- lang_ru;; *);
+=> nrel_main_idtf:[amantadine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (амантадин)](* <- lang_ru;; *);
+		[Def. (amantadine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> primary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="amantadine">Амантадин</sc_element></b> - <b><sc_element sys_idtf="primary_amine">первичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "amantadine">Amantadine</sc_element></b> - <b><sc_element sys_idtf = "primary_amine">primary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (амантадин)](* <- lang_ru;; *);
+		[Stat. (amantadine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>10</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>17</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>10</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>17</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (амантидин)](* <- lang_ru;; *);
+		[Pic. (amantadine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/amantadine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+hexamethylenediamine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[амантадин](* <- lang_ru;; *);
+=> nrel_main_idtf:[hexamethylenediamine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (амантадин)](* <- lang_ru;; *);
+		[Def. (hexamethylenediamine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> primary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="hexamethylenediamine">Гексаметилендиамин</sc_element></b> - <b><sc_element sys_idtf="primary_amine">первичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "hexamethylenediamine">Hexamethylenediamine</sc_element></b> - <b><sc_element sys_idtf = "primary_amine">primary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (гексаметилендиамин)](* <- lang_ru;; *);
+		[Stat. (hexamethylenediamine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>6/sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>16</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>6</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>16</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (гексаметилендиамин)](* <- lang_ru;; *);
+		[Pic. (hexamethylenediamine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/hexamethylenediamine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+isopropylamine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[изопропиламин](* <- lang_ru;; *);
+=> nrel_main_idtf:[isopropylamine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (изопропиламин)](* <- lang_ru;; *);
+		[Def. (isopropylamine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> primary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="isopropylamine">Изопропиламин</sc_element></b> - <b><sc_element sys_idtf="primary_amine">первичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "isopropylamine">Isopropylamine</sc_element></b> - <b><sc_element sys_idtf = "primary_amine">primary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (изопропиламин)](* <- lang_ru;; *);
+		[Stat. (isopropylamine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>3/sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>9</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>3</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>9</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (гексаметилендиамин)](* <- lang_ru;; *);
+		[Pic. (isopropylamine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/isopropylamine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+isophorondiamine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[изофорондиамин](* <- lang_ru;; *);
+=> nrel_main_idtf:[isophorondiamine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (изофорондиамин)](* <- lang_ru;; *);
+		[Def. (isophorondiamine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> primary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="isophorondiamine">Изофорондиамин</sc_element></b> - <b><sc_element sys_idtf="primary_amine">первичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "isophorondiamine">Isopropylamine</sc_element></b> - <b><sc_element sys_idtf = "primary_amine">primary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (изофорондиамин)](* <- lang_ru;; *);
+		[Stat. (isophorondiamine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>10/sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>22</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>10</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>22</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (изофорондиамин)](* <- lang_ru;; *);
+		[Pic. (isophorondiamine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/isophorondiamine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+cadaverine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[кадаверин](* <- lang_ru;; *);
+=> nrel_main_idtf:[cadaverine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (кадаверин)](* <- lang_ru;; *);
+		[Def. (cadaverine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> primary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="cadaverine">Кадаверин</sc_element></b> - <b><sc_element sys_idtf="primary_amine">первичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "cadaverine">Сadaverine</sc_element></b> - <b><sc_element sys_idtf = "primary_amine">primary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (кадаверин)](* <- lang_ru;; *);
+		[Stat. (cadaverine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>5/sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>14</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>5</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>14</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (кадаверин)](* <- lang_ru;; *);
+		[Pic. (cadaverine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/cadaverine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+lilamine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[лиламин](* <- lang_ru;; *);
+=> nrel_main_idtf:[lilamine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (кадаверин)](* <- lang_ru;; *);
+		[Def. (lilamine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> primary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="lilamine">Лиламин</sc_element></b> - <b><sc_element sys_idtf="primary_amine">первичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "lilamine">Lilamine</sc_element></b> - <b><sc_element sys_idtf = "primary_amine">primary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (лиламин)](* <- lang_ru;; *);
+		[Stat. (lilamine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>20/sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>31</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>20</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>31</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (лиламин)](* <- lang_ru;; *);
+		[Pic. (lilamine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/lilamine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+memantine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[мемантин](* <- lang_ru;; *);
+=> nrel_main_idtf:[memantine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (мемантин)](* <- lang_ru;; *);
+		[Def. (memantine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> primary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="memantine">Мемантин</sc_element></b> - <b><sc_element sys_idtf="primary_amine">первичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "memantine">Memantine</sc_element></b> - <b><sc_element sys_idtf = "primary_amine">primary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (мемантин)](* <- lang_ru;; *);
+		[Stat. (memantine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>12/sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>21</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>12</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>21</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (мемантин)](* <- lang_ru;; *);
+		[Pic. (memantine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/memantine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+methylamine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[метиламин](* <- lang_ru;; *);
+=> nrel_main_idtf:[methylamine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (метиламин)](* <- lang_ru;; *);
+		[Def. (methylamine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> primary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="methylamine">Метиламин</sc_element></b> - <b><sc_element sys_idtf="primary_amine">первичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "methylamine">Methylamine</sc_element></b> - <b><sc_element sys_idtf = "primary_amine">primary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (метиламин)](* <- lang_ru;; *);
+		[Stat. (methylamine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>5</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>5</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (мемантин)](* <- lang_ru;; *);
+		[Pic. (methylamine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/methylamine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+octadecylamine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[октадециламин](* <- lang_ru;; *);
+=> nrel_main_idtf:[octadecylamine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (октадециламин)](* <- lang_ru;; *);
+		[Def. (octadecylamine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> primary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="octadecylamine">Октадециламин</sc_element></b> - <b><sc_element sys_idtf="primary_amine">первичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "octadecylamine">Octadecylamine</sc_element></b> - <b><sc_element sys_idtf = "primary_amine">primary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (метиламин)](* <- lang_ru;; *);
+		[Stat. (octadecylamine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>18</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>39</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>18</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>39</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (мемантин)](* <- lang_ru;; *);
+		[Pic. (octadecylamine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/octadecylamine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+porphobilinogen
+<- sc_node_not_relation;
+=> nrel_main_idtf:[порфобилиноген](* <- lang_ru;; *);
+=> nrel_main_idtf:[porphobilinogen](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (порфобилиноген)](* <- lang_ru;; *);
+		[Def. (porphobilinogen)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> primary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="porphobilinogen">Порфобилиноген</sc_element></b> - <b><sc_element sys_idtf="primary_amine">первичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "porphobilinogen">Porphobilinogen</sc_element></b> - <b><sc_element sys_idtf = "primary_amine">primary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (порфобилиноген)](* <- lang_ru;; *);
+		[Stat. (porphobilinogen)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>10</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>14</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>4</sub>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>10</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>14</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>4</sub>](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (порфобилиноген)](* <- lang_ru;; *);
+		[Pic. (porphobilinogen)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/porphobilinogen.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+putrescine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[путресцин](* <- lang_ru;; *);
+=> nrel_main_idtf:[putrescine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (порфобилиноген)](* <- lang_ru;; *);
+		[Def. (putrescine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> primary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="putrescine">Путресцин</sc_element></b> - <b><sc_element sys_idtf="primary_amine">первичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "putrescine">Putrescine</sc_element></b> - <b><sc_element sys_idtf = "primary_amine">primary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (путресцин)](* <- lang_ru;; *);
+		[Stat. (putrescine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>12</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>12</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (путресцин)](* <- lang_ru;; *);
+		[Pic. (putrescine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/putrescine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+spermine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[спермин](* <- lang_ru;; *);
+=> nrel_main_idtf:[spermine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (спермин)](* <- lang_ru;; *);
+		[Def. (spermine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> primary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="spermine">Спермин</sc_element></b> - <b><sc_element sys_idtf="primary_amine">первичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "spermine">Spermine</sc_element></b> - <b><sc_element sys_idtf = "primary_amine">primary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (спермин)](* <- lang_ru;; *);
+		[Stat. (spermine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>10</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>26</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>4</sub>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>10</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>26</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>4</sub>](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (спермин)](* <- lang_ru;; *);
+		[Pic. (spermine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/spermine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+sphingosine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[сфингозин](* <- lang_ru;; *);
+=> nrel_main_idtf:[sphingosine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (сфингозин)](* <- lang_ru;; *);
+		[Def. (sphingosine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> primary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="sphingosine">Сфингозин</sc_element></b> - <b><sc_element sys_idtf="primary_amine">первичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "sphingosine">Sphingosine</sc_element></b> - <b><sc_element sys_idtf = "primary_amine">primary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (сфингозин)](* <- lang_ru;; *);
+		[Stat. (sphingosine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>18</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>37</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>2</sub>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>18</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>37</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>2</sub>](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (сфингозин)](* <- lang_ru;; *);
+		[Pic. (sphingosine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/sphingosine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+taurine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[таурин](* <- lang_ru;; *);
+=> nrel_main_idtf:[taurine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (таурин)](* <- lang_ru;; *);
+		[Def. (taurine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> primary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="taurine">Таурин</sc_element></b> - <b><sc_element sys_idtf="primary_amine">первичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "taurine">Taurine</sc_element></b> - <b><sc_element sys_idtf = "primary_amine">primary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (таурин)](* <- lang_ru;; *);
+		[Stat. (taurine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>7</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>3</sub>
+				<sc_element sys_idtf="elem_S">S</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>7</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>3</sub>
+				<sc_element sys_idtf="elem_S">S</sc_element>](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (таурин)](* <- lang_ru;; *);
+		[Pic. (taurine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/taurine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+tert_butylamine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[трет-бутиламин](* <- lang_ru;; *);
+=> nrel_main_idtf:[tert-butylamine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (трет-бутиламин)](* <- lang_ru;; *);
+		[Def. (tert-butylamine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> primary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="tert_butylamine">трет-бутиламин</sc_element></b> - <b><sc_element sys_idtf="primary_amine">первичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "tert_butylamine">Tert-Butylamine</sc_element></b> - <b><sc_element sys_idtf = "primary_amine">primary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (трет-бутиламин)](* <- lang_ru;; *);
+		[Stat. (tert-butylamine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>11</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>11</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (трет-бутиламин)](* <- lang_ru;; *);
+		[Pic. (tert-butylamine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/tert_butylamine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+tris
+<- sc_node_not_relation;
+=> nrel_main_idtf:[трис](* <- lang_ru;; *);
+=> nrel_main_idtf:[tris](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (трис)](* <- lang_ru;; *);
+		[Def. (tris)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> primary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="tris">трис</sc_element></b> - <b><sc_element sys_idtf="primary_amine">первичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "tris">tris</sc_element></b> - <b><sc_element sys_idtf = "primary_amine">primary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (трис)](* <- lang_ru;; *);
+		[Stat. (tris)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>11</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>3</sub>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>11</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>3</sub>](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (трис)](* <- lang_ru;; *);
+		[Pic. (tris)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/tris.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+phenylethylamine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[фенилэтиламин](* <- lang_ru;; *);
+=> nrel_main_idtf:[phenylethylamine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (фенилэтиламин)](* <- lang_ru;; *);
+		[Def. (phenylethylamine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> primary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="phenylethylamine">фенилэтиламин</sc_element></b> - <b><sc_element sys_idtf="primary_amine">первичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "phenylethylamine">phenylethylamine</sc_element></b> - <b><sc_element sys_idtf = "primary_amine">primary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (фенилэтиламин)](* <- lang_ru;; *);
+		[Stat. (phenylethylamine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>8</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>11</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>8</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>11</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (фенилэтиламин)](* <- lang_ru;; *);
+		[Pic. (phenylethylamine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/phenylethylamine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+ethanolamine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[этаноламин](* <- lang_ru;; *);
+=> nrel_main_idtf:[ethanolamine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (этаноламин)](* <- lang_ru;; *);
+		[Def. (ethanolamine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> primary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="ethanolamine">этаноламин</sc_element></b> - <b><sc_element sys_idtf="primary_amine">первичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "ethanolamine">ethanolamine</sc_element></b> - <b><sc_element sys_idtf = "primary_amine">primary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (этаноламин)](* <- lang_ru;; *);
+		[Stat. (ethanolamine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>7</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>
+				<sc_element sys_idtf="elem_O">O</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>7</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>
+				<sc_element sys_idtf="elem_O">O</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (этаноламин)](* <- lang_ru;; *);
+		[Pic. (ethanolamine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/ethanolamine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+ethylenediamine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[этилендиамин](* <- lang_ru;; *);
+=> nrel_main_idtf:[ethylenediamine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (этилендиамин)](* <- lang_ru;; *);
+		[Def. (ethylenediamine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> primary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="ethylenediamine">этилендиамин</sc_element></b> - <b><sc_element sys_idtf="primary_amine">первичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "ethylenediamine">ethylenediamine</sc_element></b> - <b><sc_element sys_idtf = "primary_amine">primary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (этилендиамин)](* <- lang_ru;; *);
+		[Stat. (ethylenediamine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>8</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>8</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (этилендиамин)](* <- lang_ru;; *);
+		[Pic. (ethylenediamine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/ethylenediamine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+secondary_amine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[вторичный амин](* <- lang_ru;; *);
+=> nrel_main_idtf:[secondary amine](* <- lang_en;; *);
+=> nrel_amine_group_number: number_two;
+=> nrel_inclusion:
+	atomoxetine;
+	vildagliptin;
+	glyphosate;
+	dimethylamine;
+	diethanolamine;
+	diethylamine;
+	methoxetamine;
+	piperazine;
+	pyrrolidine;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (вторичный амин)](* <- lang_ru;; *);
+		[Def. (secondary amine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> amine;;
+		-> elem_H;;
+		-> molecule;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="secondary_amine">Вторичный амин</sc_element></b> - <b><sc_element sys_idtf="amine">амин</sc_element></b>, в <b><sc_element sys_idtf="molecule">молекуле</sc_element></b> которого два <sc_element sys_idtf="elem_H">атом водорода</sc_element> замещены на углеводородные радикалы.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "secondary_amine">Secondary amine</sc_element></b> - <b><sc_element sys_idtf = "amine">amine</sc_element></b>, in <b><sc_element sys_idtf = "molecule">molecule</sc_element></b> of which two <sc_element sys_idtf = "elem_H">hydrogen atoms</sc_element> are replaced by hydrocarbon radicals.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (вторичный амин)](* <- lang_ru;; *);
+		[Pic. (secondary amine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/secondary_amine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+atomoxetine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[этилендиамин](* <- lang_ru;; *);
+=> nrel_main_idtf:[atomoxetine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (атомоксетин)](* <- lang_ru;; *);
+		[Def. (atomoxetine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> secondary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="atomoxetine">атомоксетин</sc_element></b> - <b><sc_element sys_idtf="secondary_amine">вторичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "atomoxetine">atomoxetine</sc_element></b> - <b><sc_element sys_idtf = "secondary_amine">secondary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (атомоксетин)](* <- lang_ru;; *);
+		[Stat. (atomoxetine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>17</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>21</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>
+				<sc_element sys_idtf="elem_O">O</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>17</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>21</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>
+				<sc_element sys_idtf="elem_O">O</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (атомоксетин)](* <- lang_ru;; *);
+		[Pic. (atomoxetine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/atomoxetine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+vildagliptin
+<- sc_node_not_relation;
+=> nrel_main_idtf:[вилдаглиптин](* <- lang_ru;; *);
+=> nrel_main_idtf:[vildagliptin](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (вилдаглиптин)](* <- lang_ru;; *);
+		[Def. (vildagliptin)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> secondary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="vildagliptin">вилдаглиптин</sc_element></b> - <b><sc_element sys_idtf="secondary_amine">вторичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "vildagliptin">vildagliptin</sc_element></b> - <b><sc_element sys_idtf = "secondary_amine">secondary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (вилдаглиптин)](* <- lang_ru;; *);
+		[Stat. (vildagliptin)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>17</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>25</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>3</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>2</sub>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<<sc_element sys_idtf="elem_C">C</sc_element><sub>17</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>25</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>3</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>2</sub>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (вилдаглиптин)](* <- lang_ru;; *);
+		[Pic. (vildagliptin)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/vildagliptin.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+glyphosate
+<- sc_node_not_relation;
+=> nrel_main_idtf:[глифосат](* <- lang_ru;; *);
+=> nrel_main_idtf:[glyphosate](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (глифосат)](* <- lang_ru;; *);
+		[Def. (glyphosate)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> secondary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="glyphosate">глифосат</sc_element></b> - <b><sc_element sys_idtf="secondary_amine">вторичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "glyphosate">glyphosate</sc_element></b> - <b><sc_element sys_idtf = "secondary_amine">secondary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (глифосат)](* <- lang_ru;; *);
+		[Stat. (glyphosate)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>3</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>8</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>5</sub>
+				<sc_element sys_idtf="elem_P">P</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>3</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>8</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>5</sub>
+				<sc_element sys_idtf="elem_P">P</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (глифосат)](* <- lang_ru;; *);
+		[Pic. (glyphosate)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/glyphosate.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+dimethylamine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[диметиламин](* <- lang_ru;; *);
+=> nrel_main_idtf:[dimethylamine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (диметиламин)](* <- lang_ru;; *);
+		[Def. (dimethylamine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> secondary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="dimethylamine">диметиламин</sc_element></b> - <b><sc_element sys_idtf="secondary_amine">вторичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "dimethylamine">dimethylamine</sc_element></b> - <b><sc_element sys_idtf = "secondary_amine">secondary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (диметиламин)](* <- lang_ru;; *);
+		[Stat. (dimethylamine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>7</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<<sc_element sys_idtf="elem_C">C</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>7</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (диметиламин)](* <- lang_ru;; *);
+		[Pic. (dimethylamine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/dimethylamine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+diethanolamine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[диэтаноламин](* <- lang_ru;; *);
+=> nrel_main_idtf:[diethanolamine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (диэтаноламин)](* <- lang_ru;; *);
+		[Def. (diethanolamine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> secondary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="diethanolamine">диэтаноламин</sc_element></b> - <b><sc_element sys_idtf="secondary_amine">вторичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "diethanolamine">diethanolamine</sc_element></b> - <b><sc_element sys_idtf = "secondary_amine">secondary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (диэтаноламин)](* <- lang_ru;; *);
+		[Pic. (diethanolamine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/diethanolamine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+diethylamine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[диэтиламин](* <- lang_ru;; *);
+=> nrel_main_idtf:[diethylamine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (диэтаноламин)](* <- lang_ru;; *);
+		[Def. (diethylamine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> secondary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="diethylamine">диэтиламин</sc_element></b> - <b><sc_element sys_idtf="secondary_amine">вторичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "diethylamine">diethylamine</sc_element></b> - <b><sc_element sys_idtf = "secondary_amine">secondary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (диэтиламин)](* <- lang_ru;; *);
+		[Stat. (diethylamine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>11</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>11</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (диэтиламин)](* <- lang_ru;; *);
+		[Pic. (diethylamine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/diethylamine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+methoxetamine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[метоксетамин](* <- lang_ru;; *);
+=> nrel_main_idtf:[methoxetamine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (метоксетамин)](* <- lang_ru;; *);
+		[Def. (methoxetamine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> secondary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="methoxetamine">метоксетамин</sc_element></b> - <b><sc_element sys_idtf="secondary_amine">вторичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "methoxetamine">methoxetamine</sc_element></b> - <b><sc_element sys_idtf = "secondary_amine">secondary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (метоксетамин)](* <- lang_ru;; *);
+		[Stat. (methoxetamine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>15</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>21</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>2</sub>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>15</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>21</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>2</sub>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (метоксетамин)](* <- lang_ru;; *);
+		[Pic. (methoxetamine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/methoxetamine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+piperazine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[пиперазин](* <- lang_ru;; *);
+=> nrel_main_idtf:[piperazine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (пиперазин)](* <- lang_ru;; *);
+		[Def. (piperazine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> secondary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="piperazine">пиперазин</sc_element></b> - <b><sc_element sys_idtf="secondary_amine">вторичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "piperazine">piperazine</sc_element></b> - <b><sc_element sys_idtf = "secondary_amine">secondary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (пиперазин)](* <- lang_ru;; *);
+		[Stat. (piperazine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>10</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>10</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (пиперазин)](* <- lang_ru;; *);
+		[Pic. (piperazine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/piperazine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+pyrrolidine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[пирролидин](* <- lang_ru;; *);
+=> nrel_main_idtf:[pyrrolidine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (пирролидин)](* <- lang_ru;; *);
+		[Def. (pyrrolidine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> secondary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="pyrrolidine">пирролидин</sc_element></b> - <b><sc_element sys_idtf="secondary_amine">вторичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "pyrrolidine">pyrrolidine</sc_element></b> - <b><sc_element sys_idtf = "secondary_amine">secondary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (пирролидин)](* <- lang_ru;; *);
+		[Stat. (pyrrolidine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>9</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>9</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (пирролидин)](* <- lang_ru;; *);
+		[Pic. (pyrrolidine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/pyrrolidine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+tertiary_amine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[третичный амин](* <- lang_ru;; *);
+=> nrel_main_idtf:[tertiary_amine](* <- lang_en;; *);
+=> nrel_amine_group_number: three;
+=> nrel_inclusion:
+	amiton;
+	amitriptyline;
+	benzidamine;
+	gramine;
+	diisopropylethylamine;
+	diltiazem;
+	dimenoxadol;
+	dimethylaminoethanol;
+	diethylaniline;
+	oxeladine;
+	promazin;
+	promethazine;
+	trimethylamine;
+	triethanolamine;
+	triethylamine;
+	urotropin;
+	fluoroacisin;
+	chloromethine;
+	chlorpromazine;
+	chlorprotixen;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (третичный амин)](* <- lang_ru;; *);
+		[Def. (tertiary amine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> amine;;
+		-> elem_H;;
+		-> molecule;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b> - <b><sc_element sys_idtf="amine">амин</sc_element></b>, в <b><sc_element sys_idtf="molecule">молекуле</sc_element></b> которого три <sc_element sys_idtf="elem_H">атом водорода</sc_element> замещены на углеводородные радикалы.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b> - <b><sc_element sys_idtf = "amine">amine</sc_element></b>, in <b><sc_element sys_idtf = "molecule">molecule</sc_element></b> of which three <sc_element sys_idtf = "elem_H">hydrogen atoms</sc_element> are replaced by hydrocarbon radicals.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (третичный амин)](* <- lang_ru;; *);
+		[Pic. (tertiary_amine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/ternary_amine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+amiton
+<- sc_node_not_relation;
+=> nrel_main_idtf:[амитон](* <- lang_ru;; *);
+=> nrel_main_idtf:[amiton](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (амитон)](* <- lang_ru;; *);
+		[Def. (amiton)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> tertiary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="amiton">амитон</sc_element></b> - <b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "amiton">amiton</sc_element></b> - <b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (амитон)](* <- lang_ru;; *);
+		[Stat. (amiton)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>10</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>24</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>3</sub>
+				<sc_element sys_idtf="elem_P">P</sc_element>
+				<sc_element sys_idtf="elem_S">S</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>10</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>24</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>3</sub>
+				<sc_element sys_idtf="elem_P">P</sc_element>
+				<sc_element sys_idtf="elem_S">S</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (амитон)](* <- lang_ru;; *);
+		[Pic. (amiton)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/amiton.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+amitriptyline
+<- sc_node_not_relation;
+=> nrel_main_idtf:[амитриптилин](* <- lang_ru;; *);
+=> nrel_main_idtf:[amitriptyline](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (амитриптилин)](* <- lang_ru;; *);
+		[Def. (amitriptyline)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> tertiary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="amitriptyline">амитриптилин</sc_element></b> - <b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "amitriptyline">amitriptyline</sc_element></b> - <b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (амитриптилин)](* <- lang_ru;; *);
+		[Stat. (amitriptyline)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>20</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>23</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>20</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>23</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (амитриптилин)](* <- lang_ru;; *);
+		[Pic. (amitriptyline)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/amitriptyline.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+benzidamine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[бензидамин](* <- lang_ru;; *);
+=> nrel_main_idtf:[benzidamine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (бензидамин)](* <- lang_ru;; *);
+		[Def. (benzidamine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> tertiary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="benzidamine">бензидамин</sc_element></b> - <b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "benzidamine">benzidamine</sc_element></b> - <b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (бензидамин)](* <- lang_ru;; *);
+		[Stat. (benzidamine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>19</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>23</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>3</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>19</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>23</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>3</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (бензидамин)](* <- lang_ru;; *);
+		[Pic. (benzidamine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/benzidamine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+gramine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[грамин](* <- lang_ru;; *);
+=> nrel_main_idtf:[gramine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (грамин)](* <- lang_ru;; *);
+		[Def. (gramine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> tertiary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="gramine">грамин</sc_element></b> - <b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "gramine">gramine</sc_element></b> - <b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (грамин)](* <- lang_ru;; *);
+		[Stat. (gramine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>11</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>14</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>11</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>14</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (грамин)](* <- lang_ru;; *);
+		[Pic. (gramine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/gramine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+diisopropylethylamine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[диизопропилэтиламин](* <- lang_ru;; *);
+=> nrel_main_idtf:[diisopropylethylamine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (диизопропилэтиламин)](* <- lang_ru;; *);
+		[Def. (diisopropylethylamine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> tertiary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="diisopropylethylamine">диизопропилэтиламин</sc_element></b> - <b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "diisopropylethylamine">diisopropylethylamine</sc_element></b> - <b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (диизопропилэтиламин)](* <- lang_ru;; *);
+		[Stat. (diisopropylethylamine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>8</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>19</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>8</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>19</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (диизопропилэтиламин)](* <- lang_ru;; *);
+		[Pic. (diisopropylethylamine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/diisopropylethylamine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+diltiazem
+<- sc_node_not_relation;
+=> nrel_main_idtf:[дилтиазем](* <- lang_ru;; *);
+=> nrel_main_idtf:[diltiazem](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (дилтиазем)](* <- lang_ru;; *);
+		[Def. (diltiazem)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> tertiary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="diltiazem">дилтиазем</sc_element></b> - <b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "diltiazem">diltiazem</sc_element></b> - <b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (дилтиазем)](* <- lang_ru;; *);
+		[Stat. (diltiazem)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>22</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>16</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_P">P</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>22</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>16</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_P">P</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (дилтиазем)](* <- lang_ru;; *);
+		[Pic. (diltiazem)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/diltiazem.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+dimenoxadol
+<- sc_node_not_relation;
+=> nrel_main_idtf:[дименоксадол](* <- lang_ru;; *);
+=> nrel_main_idtf:[dimenoxadol](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (дименоксадол)](* <- lang_ru;; *);
+		[Def. (dimenoxadol)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> tertiary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="dimenoxadol">дименоксадол</sc_element></b> - <b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "dimenoxadol">dimenoxadol</sc_element></b> - <b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (дименоксадол)](* <- lang_ru;; *);
+		[Pic. (dimenoxadol)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/dimenoxadol.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+dimethylaminoethanol
+<- sc_node_not_relation;
+=> nrel_main_idtf:[диметиламиноэтанол](* <- lang_ru;; *);
+=> nrel_main_idtf:[dimethylaminoethanol](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (диметиламиноэтанол)](* <- lang_ru;; *);
+		[Def. (dimethylaminoethanol)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> tertiary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="dimethylaminoethanol">диметиламиноэтанол</sc_element></b> - <b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "dimethylaminoethanol">dimethylaminoethanol</sc_element></b> - <b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (диметиламиноэтанол)](* <- lang_ru;; *);
+		[Stat. (dimethylaminoethanol)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>11</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>
+				<sc_element sys_idtf="elem_O">O</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>11</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>
+				<sc_element sys_idtf="elem_O">O</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (диметиламиноэтанол)](* <- lang_ru;; *);
+		[Pic. (dimethylaminoethanol)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/dimethylaminoethanol.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+diethylaniline
+<- sc_node_not_relation;
+=> nrel_main_idtf:[диэтиланилин](* <- lang_ru;; *);
+=> nrel_main_idtf:[diethylaniline](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (диэтиланилин)](* <- lang_ru;; *);
+		[Def. (diethylaniline)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> tertiary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="diethylaniline">диэтиланилин</sc_element></b> - <b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "diethylaniline">diethylaniline</sc_element></b> - <b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (диэтиланилин)](* <- lang_ru;; *);
+		[Stat. (diethylaniline)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>10</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>15</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>10</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>15</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (диэтиланилин)](* <- lang_ru;; *);
+		[Pic. (diethylaniline)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/diethylaniline.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+oxeladine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[окселадин](* <- lang_ru;; *);
+=> nrel_main_idtf:[oxeladine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (окселадин)](* <- lang_ru;; *);
+		[Def. (oxeladine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> tertiary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="oxeladine">окселадин</sc_element></b> - <b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "oxeladine">oxeladine</sc_element></b> - <b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (окселадин)](* <- lang_ru;; *);
+		[Pic. (oxeladine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/oxeladine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+promazin
+<- sc_node_not_relation;
+=> nrel_main_idtf:[промазин](* <- lang_ru;; *);
+=> nrel_main_idtf:[promazin](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (промазин)](* <- lang_ru;; *);
+		[Def. (promazin)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> tertiary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="promazin">промазин</sc_element></b> - <b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "promazin">promazin</sc_element></b> - <b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (промазин)](* <- lang_ru;; *);
+		[Stat. (promazin)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>17</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>20</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_S">S</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>17</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>20</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_S">S</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (промазин)](* <- lang_ru;; *);
+		[Pic. (promazin)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/promazin.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+promethazine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[прометазин](* <- lang_ru;; *);
+=> nrel_main_idtf:[promethazine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (прометазин)](* <- lang_ru;; *);
+		[Def. (promethazine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> tertiary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="promethazine">прометазин</sc_element></b> - <b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "promethazine">promethazine</sc_element></b> - <b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (прометазин)](* <- lang_ru;; *);
+		[Stat. (promethazine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>17</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>20</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_S">S</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>17</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>20</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_S">S</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (прометазин)](* <- lang_ru;; *);
+		[Pic. (promethazine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/promethazine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+trimethylamine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[триметиламин](* <- lang_ru;; *);
+=> nrel_main_idtf:[trimethylamine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (триметиламин)](* <- lang_ru;; *);
+		[Def. (trimethylamine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> tertiary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="trimethylamine">триметиламин</sc_element></b> - <b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "trimethylamine">trimethylamine</sc_element></b> - <b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (триметиламин)](* <- lang_ru;; *);
+		[Stat. (trimethylamine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>3</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>9</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>3</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>9</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (триметиламин)](* <- lang_ru;; *);
+		[Pic. (trimethylamine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/trimethylamine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+triethanolamine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[триэтаноламин](* <- lang_ru;; *);
+=> nrel_main_idtf:[triethanolamine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (триэтаноламин)](* <- lang_ru;; *);
+		[Def. (triethanolamine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> tertiary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="triethanolamine">триэтаноламин</sc_element></b> - <b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "triethanolamine">triethanolamine</sc_element></b> - <b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (триэтаноламин)](* <- lang_ru;; *);
+		[Stat. (triethanolamine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>6</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>15</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>3</sub>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>6</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>15</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>
+				<sc_element sys_idtf="elem_O">O</sc_element><sub>3</sub>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (триэтаноламин)](* <- lang_ru;; *);
+		[Pic. (triethanolamine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/triethanolamine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+triethylamine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[триэтиламин](* <- lang_ru;; *);
+=> nrel_main_idtf:[triethylamine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (триэтиламин)](* <- lang_ru;; *);
+		[Def. (triethylamine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> tertiary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="triethylamine">триэтиламин</sc_element></b> - <b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "triethylamine">triethanolamine</sc_element></b> - <b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (триэтиламин)](* <- lang_ru;; *);
+		[Stat. (triethylamine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>6</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>15</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>6</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>15</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (триэтиламин)](* <- lang_ru;; *);
+		[Pic. (triethylamine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/triethylamine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+urotropin
+<- sc_node_not_relation;
+=> nrel_main_idtf:[уротропин](* <- lang_ru;; *);
+=> nrel_main_idtf:[urotropin](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (уротропин)](* <- lang_ru;; *);
+		[Def. (urotropin)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> tertiary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="urotropin">уротропин</sc_element></b> - <b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "urotropin">urotropin</sc_element></b> - <b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (уротропин)](* <- lang_ru;; *);
+		[Stat. (urotropin)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>6</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>12</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>4</sub>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>6</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>12</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>4</sub>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (уротропин)](* <- lang_ru;; *);
+		[Pic. (urotropin)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/urotropin.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+fluoroacisin
+<- sc_node_not_relation;
+=> nrel_main_idtf:[фторацизин](* <- lang_ru;; *);
+=> nrel_main_idtf:[fluoroacisin](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (фторацизин)](* <- lang_ru;; *);
+		[Def. (fluoroacisin)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> tertiary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="fluoroacisin">фторацизин</sc_element></b> - <b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "fluoroacisin">fluoroacisin</sc_element></b> - <b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (фторацизин)](* <- lang_ru;; *);
+		[Stat. (fluoroacisin)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>20</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>21</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_F">F</sc_element><sub>3</sub>
+				<sc_element sys_idtf="elem_O">H</sc_element>
+				<sc_element sys_idtf="elem_S">N</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>20</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>21</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_F">F</sc_element><sub>3</sub>
+				<sc_element sys_idtf="elem_O">H</sc_element>
+				<sc_element sys_idtf="elem_S">N</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (фторацизин)](* <- lang_ru;; *);
+		[Pic. (fluoroacisin)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/fluoroacisin.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+chloromethine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[хлорометин](* <- lang_ru;; *);
+=> nrel_main_idtf:[chloromethine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (хлорометин)](* <- lang_ru;; *);
+		[Def. (chloromethine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> tertiary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="chloromethine">хлорометин</sc_element></b> - <b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "chloromethine">chloromethine</sc_element></b> - <b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (хлорометин)](* <- lang_ru;; *);
+		[Stat. (chloromethine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>5</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>11</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub></sub>
+				<sc_element sys_idtf="elem_Cl">Cl</sc_element><sub>2</sub>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>5</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>11</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub></sub>
+				<sc_element sys_idtf="elem_Cl">Cl</sc_element><sub>2</sub>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (хлорометин)](* <- lang_ru;; *);
+		[Pic. (chloromethine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/chloromethine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+chlorpromazine
+<- sc_node_not_relation;
+=> nrel_main_idtf:[хлорпромазин](* <- lang_ru;; *);
+=> nrel_main_idtf:[chlorpromazine](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (хлорпромазин)](* <- lang_ru;; *);
+		[Def. (chlorpromazine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> tertiary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="chlorpromazine">хлорпромазин</sc_element></b> - <b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "chlorpromazine">chlorpromazine</sc_element></b> - <b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (хлорпромазин)](* <- lang_ru;; *);
+		[Stat. (chlorpromazine)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>17</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>19</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_Cl">Cl</sc_element><sub></sub>
+				<sc_element sys_idtf="elem_S">S</sc_element><sub></sub>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>17</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>19</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>
+				<sc_element sys_idtf="elem_Cl">Cl</sc_element><sub></sub>
+				<sc_element sys_idtf="elem_S">S</sc_element><sub></sub>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (хлорпромазин)](* <- lang_ru;; *);
+		[Pic. (chlorpromazine)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/chlorpromazine.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+chlorprotixen
+<- sc_node_not_relation;
+=> nrel_main_idtf:[хлорпротиксен](* <- lang_ru;; *);
+=> nrel_main_idtf:[chlorprotixen](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (хлорпротиксен)](* <- lang_ru;; *);
+		[Def. (chlorprotixen)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> tertiary_amine;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="chlorprotixen">хлорпротиксен</sc_element></b> - <b><sc_element sys_idtf="tertiary_amine">третичный амин</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf = "chlorprotixen">chlorprotixen</sc_element></b> - <b><sc_element sys_idtf = "tertiary_amine">tertiary amine</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (хлорпротиксен)](* <- lang_ru;; *);
+		[Stat. (chlorprotixen)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>18</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>18</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub></sub>
+				<sc_element sys_idtf="elem_Cl">Cl</sc_element><sub></sub>
+				<sc_element sys_idtf="elem_S">S</sc_element><sub></sub>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Сhemical formula</sc_element></b> - 
+				<sc_element sys_idtf="elem_C">C</sc_element><sub>18</sub>
+				<sc_element sys_idtf="elem_H">H</sc_element><sub>18</sub>
+				<sc_element sys_idtf="elem_N">N</sc_element><sub></sub>
+				<sc_element sys_idtf="elem_Cl">Cl</sc_element><sub></sub>
+				<sc_element sys_idtf="elem_S">S</sc_element><sub></sub>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (хлорпротиксен)](* <- lang_ru;; *);
+		[Pic. (chlorprotixen)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/chlorprotixen.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;

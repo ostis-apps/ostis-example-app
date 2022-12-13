@@ -1,0 +1,73 @@
+nrel_direct_action<-sc_node_norole_relation;;
+
+nrel_direct_action=> nrel_main_idtf:[прямое действие*](* <- lang_ru;; *);;
+nrel_direct_action=> nrel_main_idtf:[direct action*](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: nrel_direct_action;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Прямое действие - действие,которое оказывают <b><sc_element sys_idtf="medicine">лекарственные средства</b></sc_element>, прямо воздействующие на рецепторы.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (прямое действие*)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{ 
+		medicine
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:nrel_direct_action ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[К прямому действию относится усиление сердечных сокращений сердечными гликозидами вследствие блокады Na+, K+ - АТФ-азы мышечных клеток миокарда.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(прямое действие*)](*<- lang_ru;;*);;
+*);;
+
+
+
+chemical_substance->salbutamol;;
+action->adrenoreceptor_stimulation;;
+adrenoreceptor_stimulation<=nrel_direct_action:salbutamol;;
+
+oriented_relation -> nrel_direct_action;;
+norole_relation-> nrel_direct_action;;
+
+antireflexive_relation -> nrel_direct_action;; 
+antitransitive_relation -> nrel_direct_action;;
+antisymmetric_relation -> nrel_direct_action;;
+
+
+nrel_direct_action => nrel_first_domain: chemical_substance;;
+nrel_direct_action => nrel_second_domain: action;;
+
+nrel_direct_action=>nrel_definitional_domain: ...(* 
+<=nrel_combination: 
+{ 
+chemical_substance; 
+action 
+};; 
+*);; 
+
+sc_node_not_relation->arity_2;;
+arity_2=>nrel_measurement:2;;
+arity_2->nrel_direct_action;;
+arity_2<-arity;;
+number->2;;
+
+
+salbutamol=> nrel_main_idtf:[сальбутамол](* <- lang_ru;; *);;
+salbutamol=> nrel_main_idtf:[salbutamol](* <- lang_en;; *);;
+
+adrenoreceptor_stimulation=> nrel_main_idtf:[стимулирование адренорецепторов](* <- lang_ru;; *);;
+adrenoreceptor_stimulation=> nrel_main_idtf:[adrenoreceptor stimulation](* <- lang_en;; *);;
+
+

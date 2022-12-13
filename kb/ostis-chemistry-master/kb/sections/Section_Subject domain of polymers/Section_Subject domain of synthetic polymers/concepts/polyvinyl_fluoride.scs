@@ -1,0 +1,113 @@
+polyvinyl_fluoride<-sc_node_not_relation;;
+polyvinyl_fluoride=> nrel_main_idtf:[поливинилфторид](* <- lang_ru;; *);;
+polyvinyl_fluoride=> nrel_main_idtf:[polyvinyl_fluoride](* <- lang_en;; *);;
+polyvinyl_fluoride=> nrel_idtf:[ poly​(1,1-fluoroethylene)​](* <- lang_en;; *);;
+polyvinyl_fluoride=> nrel_idtf:[(C2H3F)n](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: polyvinyl_fluoride;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Поливинилфторид —  фторсодержащий <b><sc_element sys_idtf="polymer">полимер</b></sc_element>
+	 (ПВФ) — <b><sc_element sys_idtf="polymer">полимер</b></sc_element> винилиденфторида.]
+
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (поливинилфторид)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		polymer
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: polyvinyl_fluoride;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Поливинилфторид — получают эмульсионной <b><sc_element sys_idtf="nrel_polymerization">полимеризацией</b></sc_element>
+	винилфторида.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(поливинилфторид,получение)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nrel_polymerization
+		};;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:polyvinyl_fluoride;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Поливинилфторид — применяется для  <b><sc_element sys_idtf="nrel_receiving"> получения </b></sc_element>
+	  различных изделий,пленок. Пленки используются для покрытия <b><sc_element sys_idtf="subst_Al">алюминиевых</b></sc_element>  и 
+	   <b><sc_element sys_idtf="subst_Zn">оцинкованных</b></sc_element>  стальных листов для защиты их от коррозии. ]
+
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(поливинилфторид,применение)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nrel_receiving;
+		subst_Zn
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyvinyl_fluoride;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyvinyl_fluoride.png";;*);;
+	=> nrel_main_idtf: [Рисунок(поливинилфторид,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyvinyl_fluoride;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyvinyl_fluoride_str.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(поливинилфторид,пример)](*<- lang_ru;;*);;
+*);;
+
+
+thermosetting_polymer=>nrel_inclusion:polyvinyl_fluoride;;
+homo_chain_polymer=>nrel_inclusion:polyvinyl_fluoride;;
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> polyvinyl_fluoride;;
+	=> rrel_mol: [18000]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyvinyl_fluoride;;
+	=> rrel_degree_celsius: 198
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyvinyl_fluoride;;
+	=> rrel_joule_per_kelvin_and_mole: 0.4
+	(*
+		<-number;;
+	*);;
+*);;
+
+

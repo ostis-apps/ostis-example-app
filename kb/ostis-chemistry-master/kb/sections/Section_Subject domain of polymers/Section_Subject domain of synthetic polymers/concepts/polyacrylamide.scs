@@ -1,0 +1,127 @@
+polyacrylamide<-sc_node_not_relation;;
+polyacrylamide=> nrel_main_idtf:[полиакриламид](* <- lang_ru;; *);;
+polyacrylamide=> nrel_main_idtf:[polyacrylamide](* <- lang_en;; *);;
+polyacrylamide=> nrel_idtf:[ poly(1-carbamoylethylene)​](* <- lang_en;; *);;
+polyacrylamide=> nrel_idtf:[(-CH2CHCONH2-)n](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: polyacrylamide;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Полиакриламид — представляет собой <b><sc_element sys_idtf="polymer">полимер</b></sc_element>
+	, (-CH 2 CHCONH 2 -) образованы из акриламида субъединиц..]
+		(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (полиакриламид)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		polymer
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: polyacrylamide;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Полиакриламид — основным методом синтеза <b><sc_element sys_idtf="polymer">полимеров</b></sc_element> 
+	на основе акриламида (АА) и других ненасыщенных амидов является радикальная <b><sc_element sys_idtf="nrel_polymerization">полимеризация</b></sc_element> 
+	которую можно проводить всеми известными способами: в массе кристаллических и расплавленных мономеров, в растворе, эмульсии и суспензии.]
+	 
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(полиакриламид,синтез)](*<- lang_ru;;*);;
+	=> nrel_polymerization:
+		{
+		polymer;
+		polyethylene
+		};;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:polyacrylamide;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Полиакриламид — основное применение полиакриламид находит в качестве недорогого водорастворимого 
+	<b><sc_element sys_idtf="polymer">полимера</b></sc_element> со свойствами полиэлектролита. ]
+	
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(полиакриламид,применение)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		synthetic_polymer;
+		polymer
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyacrylamide;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyakrilamid.png";;*);;
+	=> nrel_main_idtf: [Рисунок(полиакриламид,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyacrylamide;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyacrylamide_3d.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(полиакриламид,пример)](*<- lang_ru;;*);;
+*);;
+
+
+thermosetting_polymer=>nrel_inclusion:polyacrylamide;;
+polycondensation_polymer=>nrel_inclusion:polyacrylamide;;
+hetero_chain_polymer=>nrel_inclusion:polyacrylamide;;
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> polyacrylamide;;
+	=> rrel_mol: [100000]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyacrylamide;;
+	=> rrel_degree_celsius: 200
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+
+	<- sc_node_not_relation;;
+	->polyacrylamide;;
+	=> rrel_joule_per_kelvin_and_mole: 0.7
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyacrylamide;;
+	=> rrel_gram_per_cubic_cm: 2.8
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+

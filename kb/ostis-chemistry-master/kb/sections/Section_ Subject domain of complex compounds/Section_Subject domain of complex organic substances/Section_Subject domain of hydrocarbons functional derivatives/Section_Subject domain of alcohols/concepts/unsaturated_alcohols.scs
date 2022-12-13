@@ -1,0 +1,56 @@
+unsaturated_alcohols
+<-sc_node_not_relation;;
+
+unsaturated_alcohols=> nrel_main_idtf:[непредельные спирты](* <- lang_ru;; *);;
+unsaturated_alcohols=> nrel_main_idtf:[unsaturated alcohols](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: unsaturated_alcohols;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Непредельные спирты с
+	 ОН-группой при <b><sc_element sys_idtf="elem_C">атоме углерода</b></sc_element> 
+	 , соединенном с другим атомом двойной связью,
+	 очень неустойчивы и сразу же изомеризуются в 
+	 <b><sc_element sys_idtf="aldehyde">альдегиды</b></sc_element> или 
+	 <b><sc_element sys_idtf="ketone">кетоны</b></sc_element> .]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (непредельные спирты)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+			aldehyde;
+		ketone;
+		elem_C
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: unsaturated_alcohols;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Непредельные 
+	спирты бывают двух типов: <b><sc_element sys_idtf="polyvinyl_alcohol">виниловые спирты</b></sc_element>, 
+	содержаoщие <b><sc_element sys_idtf="hydrooxide_mineral">гидроксил</b></sc_element>
+	 при этиленовом углероде, и аллильные спирты, 
+	в которых <b><sc_element sys_idtf="hydrooxide_mineral">гидроксил</b></sc_element>
+	 отделен от этиленовой связи группой СН2.](*
+	 <-lang_ru;;
+	=>nrel_format:format_html;;
+	 *);;
+	 *);;
+	
+	=> nrel_main_idtf: [Утверждение(непредельные спирты)](*<- lang_ru;;*);;
+		=> nrel_using_constants:
+		{
+		polyvinyl_alcohol;
+		hydrooxide_mineral
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: unsaturated_alcohols;;
+	<= nrel_sc_text_translation: ...(*->"file://image/unsaturated_alcohols.png";;*);;
+	=> nrel_main_idtf: [Рисунок(непредельные спирты)](*<- lang_ru;;*);;
+*);;

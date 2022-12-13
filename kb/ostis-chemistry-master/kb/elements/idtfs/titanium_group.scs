@@ -1,0 +1,6 @@
+titanium_group
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[подгруппа титана](* <- lang_ru;; *);
+	[titanium group](* <- lang_en;; *);;
+	

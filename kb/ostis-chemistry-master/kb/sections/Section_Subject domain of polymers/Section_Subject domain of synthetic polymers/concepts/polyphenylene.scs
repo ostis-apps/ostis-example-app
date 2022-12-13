@@ -1,0 +1,127 @@
+polyphenylene<-sc_node_not_relation;;
+polyphenylene=> nrel_main_idtf:[полифенилен](* <- lang_ru;; *);;
+polyphenylene=> nrel_main_idtf:[polyphenylene](* <- lang_en;; *);;
+polyphenylene=> nrel_idtf:[ poly(phenylene)​](* <- lang_en;; *);;
+polyphenylene=> nrel_idtf:[(OS)n](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: polyphenylene;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Полифенилен — <b><sc_element sys_idtf="polymer">полимер</b></sc_element> 
+	линейного строения в <b><sc_element sys_idtf="molecule">молекуле</b></sc_element>
+	которого чередуются бензольные кольца связанные в параположении с атомами серы.]
+	
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (полифенилен)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+			molecule;
+		polymer
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: polyphenylene;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Полифенилен — имеет очень низкое водопоглощение, хорошую стабильностью размеров и огнестойкость.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(полифенилен,свойства)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		polymer
+		};;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:polyphenylene;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Линейный полифенилен
+	 <b><sc_element sys_idtf="synthetic_polymer">синтетические материалы</b></sc_element>
+	 имеет давольно высокую прочность и удлиняется при <b><sc_element sys_idtf="nrel_breaking_ties">разрыве связей</b></sc_element>
+	  в нутри цепи.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(полифенилен, высокопрочный материал)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		synthetic_polymer;
+		nrel_breaking_ties
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyphenylene;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyphenylene_formula.png";;*);;
+	=> nrel_main_idtf: [Рисунок(полифенилен,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyphenylene;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyphenylene_3d.png";;*);;
+	=> nrel_main_idtf: [Рисунок(полифенилен,пример)](*<- lang_ru;;*);;
+*);;
+
+
+thermoplastic_polymer=>nrel_inclusion:polyphenylene;;
+homo_chain_polymer=>nrel_inclusion:polyphenylene;;
+polymerisation_polymer=>nrel_inclusion:polyphenylene;;
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> polyphenylene;;
+	=> rrel_mol: [1700]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyphenylene;;
+	=> rrel_degree_celsius:  235
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyphenylene;;
+	=> rrel_joule_per_kelvin_and_mole: 0.49
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyphenylene;;
+	=> rrel_gram_per_cubic_cm: 1.78
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+

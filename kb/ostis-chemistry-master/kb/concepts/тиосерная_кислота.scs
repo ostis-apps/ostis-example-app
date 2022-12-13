@@ -1,0 +1,46 @@
+sc_node_not_relation->thiosulfuric_acid;;
+
+thiosulfuric_acid=> nrel_main_idtf: [тиосерная кислота] (* <- lang_ru;; *);;
+thiosulfuric_acid=> nrel_main_idtf: [thiosulfuric acid](* <- lang_en;; *);;
+thiosulfuric_acid=> nrel_idtf: [H2SO3S](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: thiosulfuric_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Тиосерная кислота — неорганическое соединение, двухосновная сильная кислота с формулой H2SO3S. ](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (тиосерная кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nonorganic_compound;
+		strong_acid;
+		dibasic_acid;
+		chemical_formula
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: thiosulfuric_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Тиосерная кислота образует бесцветную вязкую жидкость, не замерзающую даже при очень низкой температуре.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(тиосерная кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		no_color;
+		liquid
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: thiosulfuric_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/тиосерная_кислота.png";;*);;
+	=> nrel_main_idtf: [Рисунок(тиосерная кислота, структурная формула)](*<- lang_ru;;*);;
+*);;
+
+thiosulfuric_acid -> thiosulfuric_acid_x;;
+strong_acid=>nrel_inclusion:thiosulfuric_acid;;
+dibasic_acid=>nrel_inclusion:thiosulfuric_acid;;
+oxyacid=>nrel_inclusion:thiosulfuric_acid;;
+inorganic_acid=>nrel_inclusion:thiosulfuric_acid;;
+
+thiosulfuric_acid<-rrel_not_maximum_studied_object_class:subject_domain_of_acids;;

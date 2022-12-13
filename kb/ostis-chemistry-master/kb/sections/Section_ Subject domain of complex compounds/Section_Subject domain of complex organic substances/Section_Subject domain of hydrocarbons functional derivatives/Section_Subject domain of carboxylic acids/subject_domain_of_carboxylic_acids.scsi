@@ -1,0 +1,1472 @@
+subject_domain_of_carboxylic_acids
+=> nrel_main_idtf:
+	[Предметная область карбоновых кислот]
+	(* <- lang_ru;;*);
+	[Subject domain of carboxylic acids]
+	(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: carboxylic_acid;
+
+-> rrel_not_maximum_studied_object_class:
+carboxyl_group;
+functional_group;
+caproic_acid;
+enanthic_acid;
+malonic_acid;
+succinic_acid;
+formic_acid;
+oxalic_acid;
+valeric_acid;
+butyric_acid;
+propionic_acid;
+acetic_acid;;
+
+carboxylic_acid<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[карбоновая кислота](* <-lang_ru;;*);
+	[carboxylic acid](* <-lang_en;; *);
+=>nrel_idtf:
+	[R-COOH](* <-lang_en;;*);
+
+<=nrel_inclusion:organic_acid;
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (Карбоновая кислота)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (Carboxylic acid)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->class;;
+		->organic_compound;;
+		->molecule;;
+		->functional_group;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[Карбоновые кислоты — класс органических соединений, молекулы которых содержат одну или несколько функциональных карбоксильных групп COOH.](*<-lang_ru;;*);;
+	->rrel_example :[A carboxylic acid is an organic compound that contains a carboxyl group COOH.](*<-lang_en;;*);;
+	*);;
+*);
+
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	->rrel_key_sc_element:proton;;
+
+	=>nrel_main_idtf:[Утв. (карбоновая ксилота, протон)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (carboxylic acid, proton)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[За редкими исключениями карбоновые кислоты являются слабыми. Кислые свойства объясняются тем, что данная группа может сравнительно легко отщеплять протон.](*<-lang_ru;;*);;
+	->rrel_example :[With rare exceptions, carboxylic acids are weak. Acidic properties are explained by the fact that this group can relatively easily split off the proton.](*<-lang_en;;*);;
+	*);;
+*);
+
+<=nrel_subdividing:
+    subdividing_by_type_of_carboxyl_radical(*
+		=>nrel_main_idtf:
+			[разбиение по признаку карбоксильного радикала](* <-lang_ru;;*);
+    		[subdividing by type of carboxyl radical](* <-lang_en;;*);;
+        ->aromatic_compound;;
+        ->alicyclic_compound;;
+        ->heterocyclic_compound;;
+        ->aliphatic_compound;;
+    *);
+
+<=nrel_subdividing:
+    subdividing_by_the_number_of_carboxyl_groups(*
+		=>nrel_main_idtf:
+			[разбиение числу карбоксильных групп](* <-lang_ru;;*);
+    		[subdividing by the number of carboxyl groups](* <-lang_en;;*);;
+        ->monobasic_acid;;
+        ->polybasic_acid;;
+        ->dibasic_acid;;
+    *);
+
+<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element: elem_C; acid;;
+	<-explanation;;
+	=>nrel_main_idtf:[Утв. (углерод, кислота)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (carbon atom, acid)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[По международной номенклатуре ИЮПАК, карбоновые кислоты называют, выбирая за основу наиболее длинную углеродную цепочку, содержащую группу -СООН, и добавляя к названию
+ соответствующего углеводорода окончание «овая» и слово «кислота». При этом атому углерода, входящему в состав карбоксильной группы, присваивается первый номер](*<-lang_ru;;*);;
+	->rrel_example :[Carboxylic acids are commonly identified using their trivial names, and usually have the suffix -ic acid.
+	IUPAC-recommended names also exist; in this system, carboxylic acids have an -oic acid suffix.](*<-lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (Карбоновая кислота(шаро-стрержневая модель)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Рис. (Carboxylic acid(spherical-rod model)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/carboxylic_acid.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+functional_group<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[functional group]
+	(* <- lang_en;; *);
+
+=>nrel_inclusion:carboxyl_group;
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (Функциональная группа)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (Functional group)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->class;;
+		->atom;;
+		->organic_compound;;
+		->chemical_compound;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[Функциональная группа — совокупность атомов, определяющая характерные химические свойства данного класса соединений.
+	Старшая функциональная группа соединения является критерием его отнесения к тому или иному классу органических соединений.](*<-lang_ru;;*);;
+	->rrel_example :[A functional group is a set of atoms that determines the characteristic chemical properties of a class of compounds.
+	The senior functional group of the compound is the criterion for its attribution to a particular class of organic compounds](*<-lang_en;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:molecule; nrel_reaction;;
+	<-explanation;;
+	=>nrel_main_idtf:[Утв. (молекула, химическая реакция, )](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (carboxylic acid, proton)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[Функциональные группы, входящие в состав различных молекул, обычно ведут себя одинаково в одной и той же химической реакции, хотя их химическая активность может быть различной.](*<-lang_ru;;*);;
+	->rrel_example :[The functional groups that make up the various molecules usually behave identically in the same chemical reaction, although their chemical activity may be different.](*<-lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (Функциональные группы веществ)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Рис. (Functional groups of substances)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/functional_group.jpg"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+formic_acid<-sc_node_not_relation;
+=>nrel_idtf:
+	[метановая кислота](* <-lang_ru;;*);
+	[H-COOH](* <-lang_en;;*);
+
+<-monobasic_acid;
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (Муравьиная кислота)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (Formic acid)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->organic_compound;;
+		->carboxylic_acid;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example:[Муравьиная кислота — органическое соединение, первый представитель в ряду насыщенных одноосновных карбоновых кислот.](*<-lang_ru;;*);;
+	->rrel_example:[Formic acid, systematically named methanoic acid, is the simplest carboxylic acid.](*<-lang_en;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:food_additive_E236; salt; anion; acid;;
+	<-explanation;;
+	=>nrel_main_idtf:[Утв. (пищевая добавка E236, соль, анион, кислота)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (food additive E236, salt, anion, acid)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[Зарегистрирована в качестве пищевой добавки под обозначением E236. В природе также обнаружена у пчёл, в крапиве, хвое.
+	Соли и анионы муравьиной кислоты называются формиатами.](*<-lang_ru;;*);;
+	->rrel_example :[It is registered as a food additive under the designation E236. In nature, bees are also found in bees, in nettles.
+Salts and anions of formic acid are called formates.](*<-lang_en;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:strong_smell; no_color; liquid; nrel_solubility;  benzene; glycerol; water; diethyl_ether; ethanol;;
+	<-explanation;;
+	=>nrel_main_idtf:[Утв. (муравьиная кислота, резкий запах, бесцвветный, жидкость, растворимость*, бензол, глицерин, вода, диэтиловый эфир, этанол)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (formic acid, colorless, liquid, solubility, benzene, glycerol, water, diethyl ether, ethanol)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[При нормальных условиях муравьиная кислота представляет собой резко пахнущую бесцветную жидкость. Растворима в ацетоне, бензоле, глицерине, толуоле.
+	Смешивается с водой, диэтиловым эфиром, этанолом.](*<-lang_ru;;*);;
+	->rrel_example :[Under normal conditions, formic acid is a dramatically odorless, colorless liquid. Soluble in acetone, benzene, glycerol, toluene.
+	Miscible with water, diethyl ether, ethanol.](*<-lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (Муравьиная кислота)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Pic. (Formic acid)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/muravinaya-kislota.jpg"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> liquid;;
+*);
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[46,025](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_density_of_substance: ...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[1,22] (* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[373,7](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[281,3](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_molar_heat_capacity:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_joule_per_kelvin_and_mole:...
+		(*
+			=>nrel_main_idtf:[98,74](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_ionization_energy:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kilojoule_per_mole:...
+		(*
+			=>nrel_main_idtf:[1066,325](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);;
+
+caproic_acid<-sc_node_not_relation;
+=>nrel_main_idtf:
+[капроновая кислота](* <-lang_ru;;*);
+[caproic acid](* <-lang_en;;*);
+=>nrel_idtf:
+	[гексановая кислота](* <-lang_ru;;*);
+	[C5H11-COOH](* <-lang_en;;*);
+
+<-monobasic_acid;
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (Капроновая кислота)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (Caproic acid)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->monobasic_acid;;
+		->carboxylic_acid;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example:[Капроновая кислота — одноосновная предельная карбоновая кислота.](*<-lang_ru;;*);;
+	->rrel_example:[Caproic acid, is monobasic carboxylic acid.](*<-lang_en;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:no_color; liquid; smell; ether; fatd;;
+	<-explanation;;
+	=>nrel_main_idtf:[Утв. (бесцветный, жидкость, запах, эфир, жир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (colorless, liquid, smell, ether, fat)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[Капроновая кислота — бесцветная маслянистая жидкость с неприятным запахом. В природе эфиры капроновой кислоты находятся в различных животных жирах.](*<-lang_ru;;*);;
+	->rrel_example :[Capronic acid is a colorless oily liquid with an unpleasant odor. In nature, caproic acid esters are found in various animal fats.](*<-lang_en;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (Капроновая кислота(шаро-стержневая модель)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Pic. (Capronic acid(spherical-rod model)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/capronic_acid.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> liquid;;
+*);
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[116,158](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_density_of_substance: ...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[0,92] (* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[475,5](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[269,6](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);;
+
+enanthic_acid<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[энантовая кислота](* <-lang_ru;;*);
+	[enanthic acid](* <-lang_en;; *);
+=>nrel_idtf:
+	[гептановая кислота](* <-lang_ru;;*);
+	[C6H13-COOH](* <-lang_en;;*);
+
+<-monobasic_acid;
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (Энантовая кислота)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (Enanthic acid)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->monobasic_acid;;
+		->carboxylic_acid;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example:[Энантовая кислота — одноосновная предельная карбоновая кислота.](*<-lang_ru;;*);;
+	->rrel_example:[Enanthic acid is monobasic carboxylic acid.](*<-lang_en;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:no_color; liquid; smell;;
+	<-explanation;;
+	=>nrel_main_idtf:[Утв. (энантовая кислота, бесцветный, жидкость, запах, масло)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (enanthic acid, colorless, liquid, smell, oil)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[Энантовая кислота — бесцветная маслянистая жидкость с неприятным запахом прогорклого масла.](*<-lang_ru;;*);;
+	->rrel_example :[Enanthic acid is colorless oily liquid with an unpleasant odor of rancid oil.](*<-lang_en;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:salt; anion; nrel_solubility; water; ethanol;;
+	<-explanation;;
+	=>nrel_main_idtf:[Утв. (соль, анион, энантовая кислота, растворимость*, вода, этанол)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (salt, anion, enanthic acid, solubility, water, ethanol)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[Соли и анионы энантовой кислоты называют энантатами. Энантовая кислота мало растворима в воде, но хорошо растворима в этаноле.](*<-lang_ru;;*);;
+	->rrel_example :[Salts and anions of enanthic acid are called enantates. Enanthic acid is slightly soluble in water, but is highly soluble in ethanol.](*<-lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (Муравьиная кислота)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Pic. (Formic acid)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/enanthic_acid.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> liquid;;
+*);
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[130,19](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_density_of_substance: ...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[0,910] (* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[496](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[264,3](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);;
+
+malonic_acid<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[малоновая кислота](* <-lang_ru;;*);
+	[malonic acid](* <-lang_en;; *);
+=>nrel_idtf:
+	[пропандиовая кислота](* <-lang_ru;;*);
+	[НООС-СН2-СООН](* <-lang_en;;*);
+
+<-dibasic_acid;
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (Малоновая кислота)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (Malonic acid)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->dibasic_acid;;
+		->carboxylic_acid;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example:[Малоновая кислотa — двухосновная предельная карбоновая кислота. Обладает всеми химическими свойствами, характерными для карбоновых кислот.](*<-lang_ru;;*);;
+	->rrel_example:[Malonic acid is a dibasic carboxylic acid. Has all the chemical properties characteristic of carboxylic acids](*<-lang_en;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:salt; ester; nrel_solubility; water; ethanol; diethyl_ether; benzene;;
+	<-explanation;;
+	=>nrel_main_idtf:[Утв. (соль, сложный эфир, растворимость, вода, этанол, диэтиловый эфир, бензол)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (slat, ester, solubility*, water, ethanol, diethyl ether, benzene)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[Соли и сложные эфиры малоновой кислоты называются малонатами. Малонат кальция содержится в соке сахарной свёклы.
+	Малоновая кислота хорошо растворима в воде и этаноле, а также в пиридине и диэтиловом эфире. В бензоле малоновая кислота не растворяется.](*<-lang_ru;;*);;
+	->rrel_example :[Salts and esters of malonic acid are called malonates. Malonate of calcium is contained in the juice of sugar beet.
+    Malonic acid is soluble in water and ethanol, as well as in pyridine and diethyl ether. In benzene, malonic acid does not dissolve.](*<-lang_en;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:alkali_metal; subst_Pb; subst_Ba; water; acid; nrel_melting_temperature; acetic_acid; monobasic_acid;;
+	<-explanation;;
+	=>nrel_main_idtf:[Утв. (щелочной металл, вода, свинец, барий, кислота, температура плавнения*, уксусная кислота, одноосновная кислота)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (formic acid, water, plumbum, barium, acid, melting temperature*, acetic acid, monobasic acid )](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[Cоли щелочных металлов малоновой кислоты хорошо растворяются в воде, в отличие от малонатов свинца и бария.
+	При нагревании кислоты выше температуры плавления или нагревания её водного раствора выше 70°C малоновая кислота легко декарбоксилируется с образованием уксусной кислоты.
+	Декарбоксилированию подвергаются также замещённые малоновые кислоты, которые превращаются в одноосновные кислоты.](*<-lang_ru;;*);;
+	->rrel_example :[Salts of alkali metals of malonic acid are readily soluble in water, unlike lead and barium malonates.
+	When the acid is heated above the melting point or by heating its aqueous solution above 70 ° C, malonic acid is readily decarboxylated to form acetic acid.
+	Decarboxylation is also effected by substituted malonic acids, which are converted into monobasic acids.](*<-lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (Малоновая кислота(шаро-стержневая модель)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Pic. (Malonic acid(spherical-rod model)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/malonic_acid.jpg"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[104,03](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_density_of_substance: ...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[1,6305] (* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[408,6](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);;
+
+succinic_acid<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[янтарная кислота](* <-lang_ru;;*);
+	[succinic acid](* <-lang_en;; *);
+=>nrel_idtf:
+	[бутандиовая кислота](* <-lang_ru;;*);
+	[НООС-С2Н4-СООН](* <-lang_en;;*);
+
+<-dibasic_acid;
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (Янтарная кислота)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (Succinic acid)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->dibasic_acid;;
+		->carboxylic_acid;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example:[Янтарная кислотa — двухосновная предельная карбоновая кислота.](*<-lang_ru;;*);;
+	->rrel_example:[Succinic acid is a dibasic carboxylic acid.](*<-lang_en;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:no_color; crystall; nrel_solubility; water;;
+	<-explanation;;
+	=>nrel_main_idtf:[Утв. (бесцветный, кристалл, растворимость*, вода)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (colorless, crystall, solubility*, water)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[Бесцветные кристаллы, растворимые в воде и спирте. Содержится в небольших количествах во многих растениях, янтаре.](*<-lang_ru;;*);;
+	->rrel_example :[Colorless crystals, soluble in water and alcohol. Contained in small quantities in many plants, amber.](*<-lang_en;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:succinic_acid; nrel_receiving;;
+	<-explanation;;
+	=>nrel_main_idtf:[Утв. (янтарная кислота, получение*)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (succinic acid, receiving*)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[В промышленности янтарную кислоту получают главным образом гидрированием малеинового ангидрида.](*<-lang_ru;;*);;
+	->rrel_example :[In industry, succinic acid is mainly obtained by hydrogenation of maleic anhydride.](*<-lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (Янтарная кислота)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Pic. (Succinic acid)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/succinic_acid.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[118.09](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_density_of_substance: ...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[1,56] (* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[486](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);;
+
+oxalic_acid<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[щавелевая кислота](* <-lang_ru;;*);
+	[oxalic acid](* <-lang_en;; *);
+=>nrel_idtf:
+	[этандиовая кислота](* <-lang_ru;;*);
+	[HOOC-COOH](* <-lang_en;;*);
+
+<-dibasic_acid;
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (Щавелевая кислота)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (Oxalic acid)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->dibasic_acid;;
+		->homolog_series;;
+		->organic_compound;;
+		->carboxylic_acid;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example:[Щавелевая кислота — органическое соединение, первый член гомологического ряда двухосновных предельных карбоновых кислот.](*<-lang_ru;;*);;
+	->rrel_example:[Oxalic acid is an organic compound, the first member of the homologous series of dibasic carboxylic acids.](*<-lang_en;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:salt; ester;;
+	<-explanation;;
+	=>nrel_main_idtf:[Утв. (соль, сложный эфир, щавелевая кислота)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (salt, ester, oxalic acid)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[Соли и сложные эфиры щавелевой кислоты называются оксалатами.
+	В природе содержится в щавеле, ревене, карамболе и некоторых других растениях в свободном виде и в виде оксалатов калия и кальция.](*<-lang_ru;;*);;
+	->rrel_example :[Salts and esters of oxalic acid are called oxalates.
+	In nature it is contained in sorrel, rhubarb, carambola and some other plants in a free form and in the form of potassium and calcium oxalates.](*<-lang_en;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:reagent; organic_chemistry;;
+	<-explanation;;
+	=>nrel_main_idtf:[Утв. (щавелевая кислота, реагент, органическая химия)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (oxalic acid, reagent, organic chemistry)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[Щавелевая кислота является хорошим стимулятором работы мышц и нервов.
+	Щавелевая кислота и оксалаты являются реагентами, используемыми в аналитической и органической химии.](*<-lang_ru;;*);;
+	->rrel_example :[Oxalic acid is a good stimulator for the work of muscles and nerves.
+	Oxalic acid and oxalates are reagents used in analytical and organic chemistry.](*<-lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (Щавелевая кислота(шаровая модель))](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Pic. (Oxalic acid(spherical model)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/oxalic_acid.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[90,04](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_density_of_substance: ...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[1,36] (* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[373,7](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[462,5](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_molar_heat_capacity:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_joule_per_kelvin_and_mole:...
+		(*
+			=>nrel_main_idtf:[108,8](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);;
+
+valeric_acid<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[валериановая кислота](* <-lang_ru;;*);
+	[valeric acid](* <-lang_en;; *);
+=>nrel_idtf:
+	[пентановая кислота](* <-lang_ru;;*);
+	[С4H9-COOH](* <-lang_en;;*);
+
+<-monobasic_acid;
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (Валериановая кислота)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (Valeric acid)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->monobasic_acid;;
+		->no_color;;
+		->liquid;;
+		->smell;;
+		->carboxylic_acid;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example:[Валериановая кислота — одноосновная предельная карбоновая кислота, бесцветная жидкость с неприятным запахом.](*<-lang_ru;;*);;
+	->rrel_example:[Valeric acid is a monobasic carboxylic acid, a colorless liquid with an unpleasant smell.](*<-lang_en;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:pressure; water; diluted_solution;;
+	<-explanation;;
+	=>nrel_main_idtf:[Утв. (давление, вода, разбавленный раствор)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (pressure, water, dilute solution)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[При попадании на кожу или слизистые оболочки может вызвать ожоги.
+	Валериановая кислота имеет низкое давление пара при нормальных условиях и не угрожает дыхательным путям.
+	Она может быть опасна водной фауне и флоре, поэтому при сливании должна быть сильно разбавлена.](*<-lang_ru;;*);;
+	->rrel_example :[Caused burns of skin or mucous membranes.
+	Valeric acid has a low vapor pressure under normal conditions and does not threaten the respiratory tract.
+	It can be dangerous to aquatic fauna and flora, so when drained, it must be diluted.](*<-lang_en;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (Муравьиная кислота)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Pic. (Formic acid)](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/valeric_acid.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> liquid;;
+*);
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[102,13](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_density_of_substance: ...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[0,94] (* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[458](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[241](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);;
+
+butyric_acid<-sc_node_not_relation;
+=>nrel_idtf:
+	[бутановая кислота](* <-lang_ru;;*);
+	[С3H7-COOH](* <-lang_en;;*);
+
+<-monobasic_acid;
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (Масляная кислота)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (Butyric acid)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->no_color;;
+		->liquid;;
+		->strong_smell;;
+		->monobasic_acid;;
+		->carboxyl_group;;
+		->organic_compound;;
+		->carboxylic_acid;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example:[Масляная кислота —  бесцветная жидкость с резким запахом прогорклого масла, которая имеет в своей структуре одну карбоксильную группу и относится к одноосновным (короткоцепочным) насыщенным жирным кислотам.](*<-lang_ru;;*);;
+	->rrel_example:[Butyric acid is a colorless liquid with a pungent odor of rancid oil, which has in its structure one carboxyl group and refers to monobasic (short chain) saturated fatty acids.](*<-lang_en;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:food_additive_E236; salt; anion; acid;;
+	<-explanation;;
+	=>nrel_main_idtf:[Утв. (масляная кислота, эфир, целлюлоза)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (butyric acid, ether,cellulose)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[Масляная кислота и её эфиры в небольших количествах содержатся в сливочном масле и нефти.
+	Масляная кислота используется в производстве ацетобутиратов целлюлозы, пищевых и кормовых добавок.
+	Масляная кислота проявляет противораковое и противоспалительное действие, влияет на аппетит, предупреждает развитие окислительного стресса.](*<-lang_ru;;*);;
+	->rrel_example :[Butyric acid and its esters are contained in small amounts in butter and oil.
+	Butyric acid is used in the production of cellulose acetobutyrates, food and feed additives.
+	Butyric acid shows anti-cancer and anti-inflammatory effect, affects the appetite, prevents the development of oxidative stress.](*<-lang_en;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:strong_smell; no_color; liquid; nrel_solubility;  benzene; glycerol; water; diethyl_ether; ethanol;;
+	<-explanation;;
+	=>nrel_main_idtf:[Утв. (масляная кислота, кислота)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (butyric acid, acid)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[Масляная кислота — одна из самых важных низкомолекулярных кислот, которые синтезируются природным образом в кишечнике.
+	Она является основным энергетическим материалом для эпителиоцитов и поддерживает кишечный гомеостаз.
+	Также доказана корреляционная связь между дефицитом низкомолекулярных кислот и частотой развития и обострения заболеваний толстого кишечника.](*<-lang_ru;;*);;
+	->rrel_example :[Oleic acid is one of the most important low molecular weight acids that are synthesized naturally in the intestine.
+	It is the main energy material for epithelial cells and supports intestinal homeostasis.
+	Correlation between the deficiency of low-molecular acids and the frequency of development and exacerbation of diseases of the large intestine has also been proved.](*<-lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (Масляная кислота(шаровая модель))](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Pic. (Butyric acid(spherical-rod model))](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/buturic_acid.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> liquid;;
+*);
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[88,105](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_density_of_substance: ...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[0,956] (* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[373,7](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[436](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);;
+
+carboxyl_group<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[карбоксильная группа](* <-lang_ru;;*);
+	[carboxyl group](* <-lang_en;; *);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (Карбоксильная группа)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (Carboxyl group)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->functional_group;;
+		->carboxylic_acid;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[Карбоксильная группа — функциональная одновалентная группа, входящая в состав карбоновых кислот и определяющая их кислотные свойства.](*<-lang_ru;;*);;
+	->rrel_example :[The carboxyl group is a functional monovalent group that is part of the carboxylic acids and determines their acid properties.](*<-lang_en;;*);;
+	*);;
+*);;
+
+acetic_acid<-sc_node_not_relation;
+=>nrel_idtf:
+	[метановая кислота](* <-lang_ru;;*);
+	[CH3-COOH](* <-lang_en;;*);
+
+<-monobasic_acid;
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (Уксусная кислота)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (Acetic acid)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->organic_compound;;
+		->monobasic_acid;;
+		->carboxylic_acid;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example:[Уксусная кислота — органическое соединение, cлабая, предельная одноосновная карбоновая кислота.](*<-lang_ru;;*);;
+	->rrel_example:[Acetic acid is an organic compound, weak, limiting monobasic carboxylic acid.](*<-lang_en;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:ester; salt;;
+	<-explanation;;
+	=>nrel_main_idtf:[Утв. (соль, сложный эфир, ацетат)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (salt, ester, acetate)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[Соли и сложные эфиры уксусной кислоты называются ацетатами.](*<-lang_ru;;*);;
+	->rrel_example :[Salts and esters of acetic acid are called acetates.](*<-lang_en;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:no_color; liquid; strong_smell; taste; nrel_solubility; water;;
+	<-explanation;;
+	=>nrel_main_idtf:[Утв. (уксусная кислота, бесцветный, жидкость, резкий запах, вкус, растворимость*, вода)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (acetic acid, colorless, liquid, strong smell, taste, solubility*, water)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[Уксусная кислота представляет собой бесцветную жидкость с характерным резким запахом и кислым вкусом.
+	Гигроскопична. Неограниченно растворима в воде.](*<-lang_ru;;*);;
+	->rrel_example :[Acacetic acid is a colorless liquid with a characteristic sharp odor and sour taste.
+	It is hygroscopic. Unlimitedly soluble in water.](*<-lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (Муравьиная кислота(шаро-стержневая модель)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Pic. (Formic acid(spherical-rod model))](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/acetic_acid.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> liquid;;
+*);
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[60,05](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_density_of_substance: ...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[1,0492] (* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[391,1](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[289,75](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_molar_heat_capacity:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_joule_per_kelvin_and_mole:...
+		(*
+			=>nrel_main_idtf:[123,4](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_ionization_energy:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kilojoule_per_mole:...
+		(*
+			=>nrel_main_idtf:[−409,19](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);;
+
+propionic_acid<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[пропионовая кислота](* <-lang_ru;;*);
+	[propionic acid](* <-lang_en;; *);
+=>nrel_idtf:
+	[пропановая кислота](* <-lang_ru;;*);
+	[С2H5-COOH](* <-lang_en;;*);
+
+<-monobasic_acid;
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (Пропионовая кислота)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (Propionic acid)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->organic_compound;;
+		->monobasic_acid;;
+		->carboxylic_acid;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example:[Пропионовая кислота — органическое соединение, одноосновная карбоновая кислота.](*<-lang_ru;;*);;
+	->rrel_example:[Propionic acid is an organic compound, monobasic carboxylic acid.](*<-lang_en;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:no_color; liquid; strong_smell; salt; anion; acid;;
+	<-explanation;;
+	=>nrel_main_idtf:[Утв. (пропионовая кислота, бесцветный, жидкость, резкий запах, соль, анион, кислота)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (propionic acid, colorless, liquid, strong smell, salt, anion, acid)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[Пропионовая кислота — бесцветная едкая жидкость с резким запахом. Соли и анионы пропионовой кислоты называются пропионатами.](*<-lang_ru;;*);;
+	->rrel_example :[Propionic acid is a colorless, corrosive liquid with a pungent odor. Salts and anions of propionic acid are called propionates.](*<-lang_en;;*);;
+	*);;
+*);
+////
+<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:water; carboxylic_acid; ether; amide;;
+	<-explanation;;
+	=>nrel_main_idtf:[Утв. (вода, карбоновая кислота, эфир, амид)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (water, carboxylic acid, ether, amide)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    ->rrel_example :[Смешивается с водой (неограниченно) и органическими растворителями.
+	По химическим свойствам — типичный представитель насыщеных карбоновых кислот; образует эфиры, амиды, галогенангидриды и т. д.](*<-lang_ru;;*);;
+	->rrel_example :[Miscible with water (unlimited) and organic solvents.
+	By chemical properties - a typical representative of saturated carboxylic acids; forms esters, amides, halides, etc.](*<-lang_en;;*);;
+	*);;
+*);
+////
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (Пропионовая кислота(шаровая модель)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Pic. (Propionic acid(spherical model))](* <-lang_en;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/propionic_acid.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> liquid;;
+*);
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[74,08](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_density_of_substance: ...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[0,99] (* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[414](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[252](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);;

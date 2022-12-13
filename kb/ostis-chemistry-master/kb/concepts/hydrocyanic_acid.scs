@@ -1,0 +1,109 @@
+hydrocyanic_acid
+=> nrel_main_idtf:
+	[синильная кислота](* <- lang_ru;; *);
+	[hydrocyanic acid](* <- lang_en;; *);
+=> nrel_idtf:
+	[цианистый водород](* <-lang_ru;; *);
+	[HCN](* <-lang_en;; *);
+=> molecular_mass:...
+(*
+	<-quantity;;
+	<=nrel_value:...
+	(*
+		->rrel_gram_per_mole: [27,0253]
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=> nrel_density_of_substance:...
+(*
+	<-quantity;;
+	<=nrel_value:...
+	(*
+		->rrel_gram_per_cubic_cm: [0,687]
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=> nrel_boiling_temperature
+(*
+	<-quantity;;
+	<=nrel_value:...
+	(*
+		->rrel_degree_celsius: [-13,4]
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(синильная кислота)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://html/hydrocyanic_acid_definition.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->no_color;;
+		->strong_smell;;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(смесь, кислород, фтор)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://html/hydrocyanic_acid_oxygen.html"(* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: mixture; oxygen; subst_F;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(синильная кислота, органический синтез, карбонильное соединение, циангидрин)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://html/hydrocyanic_acid_with_carbonyl_compound.html"(* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: organic_synthesis; carbonyl_compound; cyanohydrin;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(синильная кислота, хлор, бром, иод, циангалогенид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://html/hydrocyanic_acid_with_Cl_Br_I.html"(* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: subst_Cl; subst_Br; subst_I; cyanohalide;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(синильная кислота, галогеноалкан, нитрил)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://html/hydrocyanic_acid_with_haloalkan.html"(* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: haloalkan;;
+*);;

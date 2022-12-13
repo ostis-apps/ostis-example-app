@@ -1,0 +1,41 @@
+density<-sc_node_not_relation;;
+
+density=> nrel_main_idtf:[плотность](* <- lang_ru;; *);;
+density=> nrel_main_idtf:[density](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: density;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Плотность — скалярная физическая величина, определяемая как отношение <b><sc_element sys_idtf="mass">массы</b></sc_element> тела к занимаемому этим телом объёму. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Определение (плотность)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		mass
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: density;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://destiny.html"
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Утверждение(плотность)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nrel_measurement
+		};;
+*);;
+
+
+
+

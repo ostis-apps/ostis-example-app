@@ -1,0 +1,14 @@
+section_subject_domain_of_metals 
+=> nrel_main_idtf: 
+	[Раздел. Предметная область металлов]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of metals]
+	(* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_metals = [*^"file://section_subject_domain_of_metals.scsi"*];;
+
+section_subject_domain_of_metals
+-> rrel_key_sc_element: subject_domain_of_metals;;

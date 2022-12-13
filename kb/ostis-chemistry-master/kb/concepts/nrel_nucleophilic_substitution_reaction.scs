@@ -1,0 +1,31 @@
+nrel_nucleophilic_substitution_reaction
+<- sc_node_norole_relation;
+=>nrel_main_idtf:
+[реакция нуклеофильного замещения*](*<-lang_ru;;*);
+     [nucleophilic substitution reaction](*<-lang_en;;*);;
+
+nrel_nucleophilic_substitution_reaction
+
+<- rrel_key_sc_element: ... 
+    (*
+       <- definition;;
+       =>nrel_main_idtf: [Опр.(реакция нуклеофильного замещения*)]  (* <- lang_ru;; *);;
+       <= nrel_sc_text_translation:... (*->rrel_example: [<b>Реакции нуклеофильного замещения</b> (англ. nucleophilic substitution reaction) — реакции замещения, в которых атаку осуществляет <sc_element sys_idtf="nucleophile">нуклеофил</sc_element> — реагент, несущий неподеленную электронную пару.](* <- lang_ru;; =>nrel_format: format_html;; *);; *);;
+	<=nrel_using_constants: nucleophile;;
+     *);
+
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_first_domain: chemical_substance;
+=> nrel_second_domain: chemical_substance;
+=> nrel_definitional_domain:...
+(*
+    <= nrel_combination: ...
+    (* 
+        -> chemical_substance;;
+    *);;
+*);;

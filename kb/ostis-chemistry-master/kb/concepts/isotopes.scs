@@ -1,0 +1,47 @@
+isotopes
+=> nrel_main_idtf:
+	[изотопы]
+	(* <- lang_ru;;	*);
+	[isotopes]
+	(* <- lang_en;;	*);;
+isotopes
+<- rrel_key_sc_element:
+	Definition_of_isotopes
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/isotopes.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+
+<- rrel_key_sc_element: properties_of_isotopes
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (элемент, заряд, ядро, нейтрон)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Все изотопы одного элемента имеют одинаковый заряд ядра, отличаясь лишь числом нейтронов. Обычно изотоп обозначается символом химического элемента, к которому он относится, с добавлением верхнего левого индекса, означающего массовое число.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: isotopes_name
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (случай, молекула, вещество, растворитель)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Название связано с тем, что все изотопы одного атома помещаются в одно и то же место (в одну клетку) таблицы Менделеева. Химические свойства атома зависят от строения электронной оболочки, которая, в свою очередь, определяется в основном зарядом ядра Z (то есть количеством протонов в нём), и почти не зависят от его массового числа A (то есть суммарного числа протонов Z и нейтронов N).] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+Definition_of_isotopes
+=> nrel_main_idtf:
+	[Опр.(Изотопы)]
+	(* <- lang_ru;;	*);;

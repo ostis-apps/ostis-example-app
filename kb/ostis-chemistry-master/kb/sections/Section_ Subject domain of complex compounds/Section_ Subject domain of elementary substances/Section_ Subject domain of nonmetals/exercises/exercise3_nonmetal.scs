@@ -1,0 +1,24 @@
+exercise3_nonmetal
+<- exercises_nonmetal;
+
+-> rrel_key_sc_element: nrel_amount; air; hydrosulfuric_acid; water; subst_S; nrel_mass;
+
+=> nrel_next_exercise: exercise4_nonmetal;
+
+=> nrel_main_idtf:
+	[Упражнение 3. Раздел. Предметная область неметаллов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 3. Section. Subject domain of nonmetals]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise3_nonmetal_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise3_nonmetal_en.html" (* <-lang_en;; *);;
+	*);;

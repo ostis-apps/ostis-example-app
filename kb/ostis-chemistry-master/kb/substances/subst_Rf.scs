@@ -1,0 +1,27 @@
+subst_Rf
+<= nrel_inclusion: chemical_substance;
+<- sc_node_not_relation;
+=> nrel_main_idtf: [резерфордий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [rutherfordium] (* <- lang_en;; *);
+=> nrel_idtf: [Rf](*<- lang_en;;*);
+
+<- rrel_key_sc_element: definition_of_subst_Rf
+(* 
+	=> nrel_main_idtf: [Опр.(Резерфордий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество резерфордий</b> - <sc_element sys_idtf = "metal">металл</sc_element>, о котором мало что известно, поскольку он никогда не был получен в макроскопических количествах. Цвет резерфордия неизвестен.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> metal;;
+	*);;
+*);;
+
+atomic_multiplicity_one -> (subst_Rf -> elem_Rf);;

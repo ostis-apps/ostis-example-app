@@ -1,0 +1,6 @@
+copper_group
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[подгруппа меди](* <- lang_ru;; *);
+	[copper group](* <- lang_en;; *);;
+	

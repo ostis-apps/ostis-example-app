@@ -1,0 +1,77 @@
+pressure 
+=> nrel_main_idtf: 
+	[давление](* <- lang_ru;; *);
+	[pressure](* <- lang_en;; *);
+<- sc_node_not_relation;
+<- parameter;;
+
+pressure
+-> pascal; bar; millimeter_of_mercury; millimetres_water_column; pound_per_square_inch;;
+
+pascal 
+=> nrel_main_idtf: 
+	[паскаль](* <- lang_ru;; *);
+	[pascal](* <- lang_en;; *);
+=> nrel_idtf: 
+	[Па](* <- lang_ru;; *);
+	[Pa](* <- lang_en;; *);
+<- sc_node_not_relation;;
+
+pascal_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: pascal;;
+
+bar 
+=> nrel_main_idtf: 
+	[бар](* <- lang_ru;; *);
+	[bar](* <- lang_en;; *);
+<- sc_node_not_relation;;
+
+bar_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: bar;;
+
+millimeter_of_mercury 
+=> nrel_main_idtf: 
+	[миллиметр ртутного столба](* <- lang_ru;; *);
+	[millimeter of mercury](* <- lang_en;; *);
+=> nrel_idtf: 
+	[мм рт. ст.](* <- lang_ru;; *);
+	[mm Hg](* <- lang_en;; *);
+	[торр](* <- lang_ru;; *);
+	[Torr](* <- lang_en;; *);
+<- sc_node_not_relation;;
+
+millimeter_of_mercury_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: millimeter_of_mercury;;
+
+millimetres_water_column 
+=> nrel_main_idtf: 
+	[метр водяного столба](* <- lang_ru;; *);
+	[millimetres water column](* <- lang_en;; *);
+=> nrel_idtf: 
+	[м вод. ст.](* <- lang_ru;; *);
+	[m H2O](* <- lang_en;; *);
+<- sc_node_not_relation;;
+
+millimetres_water_column_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: millimetres_water_column;;
+
+pound_per_square_inch 
+=> nrel_main_idtf: 
+	[фунт сила на квадратный дюйм](* <- lang_ru;; *);
+	[pound per square inch](* <- lang_en;; *);
+=> nrel_idtf: 
+	[psi](* <- lang_en;; *);
+<- sc_node_not_relation;;
+
+pound_per_square_inch_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: pound_per_square_inch;;

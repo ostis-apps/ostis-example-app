@@ -1,0 +1,60 @@
+crystalline_hydrate
+=> nrel_main_idtf:
+	[кристаллогидрат]
+	(* <- lang_ru;;	*);
+	[crystalline hydrate]
+	(* <- lang_en;;	*);;
+crystalline_hydrate
+<- rrel_key_sc_element:
+	Definition_of_crystalline_hydrate
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/crystalline_hydrates.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+	<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://images/crystalline_hydrates.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: properties_of_crystalline_hydrate
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (температура, кристаллогидрат, катион, анион, соль, кислота, основание, раствор)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ При низких температурах вода в кристаллогидратах может быть связана как с катионами, так и с анионами солей. Многие соли, а также кислоты и основания выпадают из водных растворов в виде кристаллогидратов. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: examples_of_crystalline
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кристаллогидрат, минерал)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Типичными кристаллогидратами являются многие природные минералы, например гипс CaSO4·2H2O, карналлит MgCl2·KCl·6H2O. Кристаллизационная вода обычно может быть удалена нагреванием, при этом разложение кристаллогидрата часто идёт ступенчато. Так, медный купорос CuSO4·5H2O (синий) выше 105 °C переходит в тригидрат CuSO4·3H2O (голубой), при 150 °C в моногидрат CuSO4·H2O (белый); полное обезвоживание происходит выше 250 °C. Однако некоторые соединения (например, BeC2O4·H2O) устойчивы только в форме кристаллогидрата и не могут быть обезвожены без разложения. Другие примеры: железный купорос FeSO4·7H2O, кристаллическая сода Na2CO3·10H2O.] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+Definition_of_crystalline_hydrate
+=> nrel_main_idtf:
+	[Опр.(Кристаллогидрат)]
+	(* <- lang_ru;;	*);;

@@ -1,0 +1,107 @@
+histamine<-sc_node_not_relation;;
+histamine=> nrel_main_idtf:[гистамин](* <- lang_ru;; *);;
+histamine=> nrel_main_idtf:[anabasine](* <- lang_en;; *);;
+histamine=> nrel_idtf:[4-​​(2-​Аминоэтил)​-​имидазол, или β-​имидазолил-​этиламин](* <- lang_ru;; *);;
+histamine=> nrel_idtf:[ C5H9N3](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: histamine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Гистамин — <b><sc_element sys_idtf="organic_compound"> органическое соединение</b></sc_element>, <b><sc_element sys_idtf="true_alkaloids">истинный алкалоид</b></sc_element>, медиатор аллергических реакций немедленного типа, также является регулятором многих физиологических процессов.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (гистамин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		true_alkaloids;
+		organic_compound
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: histamine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://histamine.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(гистамин,фармакологический эффект*)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: histamine ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://histamine2.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(гистамин,побочный эффект*)](*<- lang_ru;;*);;
+	
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:histamine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/histamine.png";;*);;
+	=> nrel_main_idtf: [Рисунок(гистамин,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:histamine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/histamine2.png";;*);;
+	=> nrel_main_idtf: [Рисунок(гистамин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+
+solid_matter=>nrel_inclusion:histamine;;
+true_alkaloids=>nrel_inclusion:histamine;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> histamine;;
+	=> nrel_measurement_in_gramms_per_mole: [111,15]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->histamine;;
+	=> nrel_measurement_in_degrees_Celsius: [83,5]
+	(*
+		<-number;;
+	*);;
+*);;
+drag_half_life->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->histamine;;
+	=> nrel_measurement_in_degrees_Celsius: 5
+	(*
+		<-number;;
+	*);;
+*);;
+boiling_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->histamine;;
+	=> nrel_measurement_in_degrees_Celsius: [209,5]
+	(*
+		<-number;;
+	*);;
+*);;
+

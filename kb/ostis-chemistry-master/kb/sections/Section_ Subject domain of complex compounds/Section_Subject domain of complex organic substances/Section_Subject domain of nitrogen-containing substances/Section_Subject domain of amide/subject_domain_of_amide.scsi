@@ -1,0 +1,2262 @@
+subject_domain_of_amide
+    => nrel_main_idtf: [Предметная область амидов](* <- lang_ru;; *);
+    [Subject domain of amide](* <- lang_en;; *);
+
+<-subject_domain;
+
+<= nrel_sc_text_translation:...(*
+    ->rrel_example :[Производные кислородсодержащих кислот, в которых гидроксильная группа кислотного остатка заменена аминогруппой. ](*<-lang_ru;;*);;
+*);;
+
+
+propamide
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[пропанамид](* <-lang_ru;;*);
+    [propamide](* <-lang_en;;*);
+<- amide;
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[276](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            ->alkane;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(пропаномид)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Белый кристаллический порошок без запаха и вкуса. Нерастворим в воде, растворим в спирте и хлороформе.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(пропаномид)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Стимулирует высвобождение инсулина из бета-клеток поджелудочной железы и увеличивает количество рецепторов к инсулину в органах-мишенях. Обладает антидиуретической активностью.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (пропаномид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/propamide.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+carbamide
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[карбамид](* <-lang_ru;;*);
+    [carbamide](* <-lang_en;;*);
+<- amide;
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[60](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//плотность
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[1.32](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура кипения
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[174](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[132](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            ->alkane;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(карбамид)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Химическое соединение, диамид угольной кислоты. Белые кристаллы, растворимые в полярных растворителях.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(карбамид)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Мочевина хорошо растворима в полярных растворителях.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (пропаномид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/carbamide.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+
+phormamide
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[формамид](* <-lang_ru;;*);
+    [phormamide](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[45](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//плотность
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[1.13](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура кипения
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[210](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[2](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            ->alkane;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(формамид)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Формамид представляет собой бесцветную жидкость без запаха, гигроскопичен, смешивается с водой, низшими спиртами, хлороформом, ацетоном, нерастворим в углеводородах.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(формамид)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [В промышленности формамид синтезируют из аммиака и оксида углерода, при этом используются два варианта процесса синтеза.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (формамид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/phormamide.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+
+
+acrilamide
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[акриламид](* <-lang_ru;;*);
+    [acrilamide](* <-lang_en;;*);
+
+<- amide;
+
+//плотность
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[1,12](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура кипения
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[215](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[84](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            ->alkane;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(акриламид)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Амид акриловой кислоты, мономер, применяемый в основном в многотоннажном производстве важных полимеров, имеющих общее название полиакриламиды.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(акриламид)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Представляет собой бесцветные кристаллы.](* <-lang_ru;;*);;
+     *);;
+*);;
+
+
+
+
+
+
+
+
+
+
+bensamide
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[бензамид](* <-lang_ru;;*);
+    [bensamide](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[122,12](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//плотность
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[1,32](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура кипения
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[249](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[122,4](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            ->alkane;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(бензамид)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Простейшая одноосновная карбоновая кислота ароматического ряда.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(бензамид)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [xxx](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (бензамид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/bensamide.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+nicotinamide
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[никатинамид](* <-lang_ru;;*);
+    [nicotinamide](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[143,2](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//плотность
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[2,06](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура кипения
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[120](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[70](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            ->alkane;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(никатинамид)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Никотинами́д (ниацинами́д, nicotinamide) — амид никотиновой кислоты, витаминное средство.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(никатинамид)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Является важным компонентом в молекуле фермента кодегидрогеназы I ](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (никатинамид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/nicotinamide.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+
+acetatamide
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[ацетатамид](* <-lang_ru;;*);
+    [acetatamide](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[59,07](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//плотность
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[1,16](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура кипения
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[221](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[81](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            ->alkane;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(ацетатамид)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Ацетамид CH3CONH2 — амид уксусной кислоты.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(ацетатамид)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Ацетамид представляет собой игольчатые кристаллы с мышиным запахом, расплывающиеся на влажном воздухе. ](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (ацетатамид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/acetatamide.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+cianeamide_of_calicium
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[цанамид кальция](* <-lang_ru;;*);
+    [cianeamide_of_calicium](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[80,1](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//плотность
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[2,29](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[1340](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(цианамид кальция)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Цианамид кальция — кальциевая соль амида циановой кислоты (цианамида) с формулой CaCN2.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(цианамид кальция)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Для синтеза цианамида кальция карбид кальция спекают с углеродом в атмосфере азот](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (цанамид кальция)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/cianeamide_of_calicium.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+cesium_amide
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[цианамид](* <-lang_ru;;*);
+    [cesium_amide](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[70](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//плотность
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[1,28](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура кипения
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[286](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[113](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(цианамид)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [химическое вещество, применяемое в лечении алкоголизма в качестве водного раствора, лекарственная форма - капли для приема внутрь .](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(цианамид)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Он существует в виде двух таутомеров, один из которых (NC)NH2 а другой HNCNH](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (цианамид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/cesium_amide.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+sodium_amide
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[амид натрия](* <-lang_ru;;*);
+    [sodium_amide](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[39,01](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//плотность
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[1,37](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура кипения
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[400](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[210](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(амид натрия)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Ами́д на́трия  — неорганическое вещество с формулой NaNH2, производное аммиака.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(амид натрия)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Амид натрия NaNH2 представляет собой белое кристаллическое вещество. Технические образцы имеют серый цвет из-за присутствия небольших количеств металлического железа.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (xxx)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/sodium_amide.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+
+
+potassium_amide
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[амид калия](* <-lang_ru;;*);
+    [potassium_amide](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[55,12](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//плотность
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[1,03](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[338](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(амид калия)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Ами́д калия  — неорганическое вещество с формулой KNH2, производное аммиака. Белые или желтоватые кристаллы.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(амид калия)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [При нагревании разлагается.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (амид калия)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/potassium_amide.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+lithium_amide
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[амид лития](* <-lang_ru;;*);
+    [lithium_amide](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[22,96](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//плотность
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[1,178](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура кипения
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[430](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[373](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(амид лития)](* 
+		<- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Амид лития — неорганическое вещество с формулой LiNH2, может рассматриваться как производное аммиака.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(амид лития)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Белый порошок, реагирует с водой.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (амид лития)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/lithium_amide.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+oxyamide
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[оксамид](* <-lang_ru;;*);
+    [oxyamide](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[88,06](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//плотность
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[1,667](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура кипения
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[181](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[130](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(оксамид)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Оксамид-это органическое соединение с формулой (CONH2) 2. ](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(оксамид)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Это белое кристаллическое твердое вещество растворимо в этаноле, слабо растворимо в воде и нерастворимо в диэтиловом эфире.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (оксамид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/oxyamide.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+acril_amide
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[xxx](* <-lang_ru;;*);
+    [acril_amide](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[71,079](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//плотность
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[1,322](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура кипения
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[427](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[138](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(акриламид)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Акриламид (или акриловый Амид) - это органическое соединение с химической формулой CH2=CHC(O) NH2. ](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(акриламид)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Это белое твердое вещество без запаха, растворимое в воде и нескольких органических растворителях.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (акриламид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/acril_amide.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+chlorepropamide
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[хлорпропамид](* <-lang_ru;;*);
+    [chlorepropamide](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[276,74](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура кипения
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[188](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[126](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(хлорпропамид)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Хлорпропамид-это препарат класса сульфонилмочевины, используемый для лечения сахарного диабета 2-го типа.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(хлорпропамид)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Как и другие сульфонилмочевины, Хлорпропамид действует для увеличения секреции инсулина](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (хлорпропамид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/chlorepropamide.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+tolbutamide
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[толбутамид](* <-lang_ru;;*);
+    [tolbutamide](* <-lang_en;;*);
+
+<- amide;
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(толбутамид)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Талидомид — седативное снотворное лекарственное средство](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(толбутамид)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [По физическим свойствам талидомид представляет собой белый кристаллический порошок, без вкуса и запаха.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (толбутамид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/tolbutamide.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+
+tolaseamide
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[толазамид](* <-lang_ru;;*);
+    [tolaseamide](* <-lang_en;;*);
+
+<- amide;
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(толазамид)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Толазамид-это пероральный препарат для снижения уровня глюкозы в крови](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(толазамид)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Используемый для людей с сахарным диабетом 2 типа. Он входит в состав семейства сульфонилмочевин.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (толазамид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/tolaseamide.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+sulfanilamide
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[сульфаниламид](* <-lang_ru;;*);
+    [sulfanilamide](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[172,20](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[Белый мелкокристаллический порошок слабогорького вкуса.](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(сульфаниламид)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Сульфанилами́д (лат. sulfanilamidum) — антибактериальный препарат из группы сульфаниламидов.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(сульфаниламид)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [xxx](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (сульфаниламид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/sulfanilamide.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+purpr_acid
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[пурпуровая кислота](* <-lang_ru;;*);
+    [purpr_acid](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[284,19](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(пурпуровая кислота)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Мурексид — органический краситель, пурпурат аммония, аммиачная соль 5,5'-нитрилодибарбитуровой кислоты.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(пурпуровая кислота)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Тёмно-красные, коричневатые или пурпурные мелкие кристаллы с зеленоватым блеском](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (пурпуровая кислота)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/purpr_acid.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+ergin
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[эргин](* <-lang_ru;;*);
+    [ergin](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[267,326](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[135](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(эргин)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Эргин (ЛСА, Амид d-лизергиновой кислоты) — психоактивное вещество семейства лизергамидов](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(эргин)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Применяется в основном в качестве рекреационного ПАВ.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (эргин)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/ergin.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+
+glypisyde
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[глипизид](* <-lang_ru;;*);
+    [glypisyde](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[445,536](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//плотность
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[1,55](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура кипения
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[280,3](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[203](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(глипизид)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Глипизид ( латинский: Glipizidum ) - противодиабетический препарат, препарат сульфанилмочевины 2-й генерации.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(глипизид)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Общие побочные эффекты включают тошноту, диарею, низкий уровень сахара в крови и головную боль.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (глипизид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/glypisyde.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+glyclasyde
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[гликлазид](* <-lang_ru;;*);
+    [glyclasyde](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[323,412](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(гликлазид)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [xxx](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(гликлазид)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [xxx](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (xxx)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/glyclasyde.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+glymperede
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[глимепирид](* <-lang_ru;;*);
+    [glymperede](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[490,617](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(глимепирид)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Глимепирид — лекарственное средство, обладает гипогликемическим действием.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(глимепирид)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Общие побочные эффекты включают головную боль, тошноту и головокружение. ](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (глимепирид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/glymperede.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+etosol
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[этазол](* <-lang_ru;;*);
+    [etosol](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[xxx](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(этазол)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Этазол - ветеринарный препарат с обширным спектром атимикробного действия.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(этазол)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Белый или слегка желтоватый порошок, нерастворим в воде, растворим в разбавленных кислотах и щелочах.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (этазол)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/etosol.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+aminocaproicum_acid
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[аминокапроновая кислота](* <-lang_ru;;*);
+    [aminocaproicum_acid](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[131,17](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(аминокапроновая кислота)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Аминокапроновая кислота (6-аминогексановая кислота или ε-аминокапроновая кислота) — лекарственное гемостатическое средство.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(аминокапроновая кислота)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Гемостатическое средство, тормозит превращение профибринолизина в фибринолизин.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (аминокапроновая кислота)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/aminocaproicum_acid.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+phenmedipham
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[фенмедифам](* <-lang_ru;;*);
+    [phenmedipham](* <-lang_en;;*);
+
+<- amide;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[300,31](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура кипения
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[200](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+//температура плавления
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[143](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(фенмедифам)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Фенмедифам — гербицид из группы карбанилатов или бискарбаматов, обладающий системным избирательным действием.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(фенмедифам)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Препараты на основе таких действующих веществ обладают более широким спектром действия.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (фенмедифам)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/phenmedipham.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;

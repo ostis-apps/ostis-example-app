@@ -1,0 +1,75 @@
+nonmetal
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[неметалл](* <-lang_ru;; *);
+	[nonmetal](* <- lang_en;; *);;
+
+nonmetal
+<- rrel_key_sc_element:
+	Definition_of_nonmetal
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(неметалл*)] (* <-lang_ru;; *);; 
+        <= nrel_sc_text_translation:...
+        (*
+			-> rrel_example:"file://htmls/nonmetal.html"(* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+			-> section_periodic_table_of_chemical_elements;;
+		*);;
+	*);;
+	
+nonmetal
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://htmls/nonmetal_table.html";;
+		*);;
+
+nonmetal
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Прим.(неметалл, металл, энергетический уровень*, окислительная активность*)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/nonmetal1.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+nonmetal	
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Прим.(неметалл, аллотропия*)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/nonmetal3.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+	
+nonmetal
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Прим.(неметалл, атом, ковалентная связь*)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/nonmetal2.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+nonmetal
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Прим.(неметалл, нахождение в природе*)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/nonmetal4.html" (* <-lang_ru;; *);;
+		*);;
+	*);;

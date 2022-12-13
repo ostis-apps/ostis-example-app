@@ -1,0 +1,52 @@
+sc_node_not_relation->tungstic_acid;;
+
+tungstic_acid=> nrel_main_idtf: [вольфрамовая кислота](* <- lang_ru;; *);;
+tungstic_acid=> nrel_main_idtf: [tungstic acid](* <- lang_en;; *);;
+tungstic_acid=> nrel_idtf: [H2WO4](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: tungstic_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Вольфрамовая кислота — трудно растворимый в воде порошок белого или слегка желтоватого цвета, который проявляет слабые кислотные свойства, с химической формулой H2WO4](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (вольфрамовая кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		powder;
+		color_white;
+		acid;
+		chemical_formula
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: tungstic_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Вольфрамовая кислота является промежуточным продуктом в производстве вольфрама](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(вольфрамовая кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		subst_W;
+		product
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: tungstic_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/вольфрамовая_кислота.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(вольфрамовая кислота)](*<- lang_ru;;*);;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: tungstic_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/вольфрамовая_кислота_стр.png";;*);;
+	=> nrel_main_idtf: [Рисунок(вольфрамовая кислота, структурная формула)](*<- lang_ru;;*);;
+*);;
+
+tungstic_acid -> tungstic_acid_x;;
+tungstic_acid<=nrel_inclusion:oxyacid;;
+tungstic_acid<=nrel_inclusion:dibasic_acid;;
+tungstic_acid<=nrel_inclusion:inorganic_acid;;
+
+tungstic_acid<-rrel_not_maximum_studied_object_class:subject_domain_of_acids;;

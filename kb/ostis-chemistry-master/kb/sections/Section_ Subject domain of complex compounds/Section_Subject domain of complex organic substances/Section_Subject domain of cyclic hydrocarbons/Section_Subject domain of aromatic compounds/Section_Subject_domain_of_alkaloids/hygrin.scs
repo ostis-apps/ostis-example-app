@@ -1,0 +1,89 @@
+hygrin<-sc_node_not_relation;;
+hygrin=> nrel_main_idtf:[гигрин](* <- lang_ru;; *);;
+hygrin=> nrel_main_idtf:[hygrin](* <- lang_en;; *);;
+hygrin=> nrel_idtf:[C8H15NO](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: hygrin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Гигрин — <b><sc_element sys_idtf="true_alkaloids">истинный алкалоид</b></sc_element>, производное пирролидина, <b><sc_element sys_idtf="no_color">бесцветная </b></sc_element> летучая <b><sc_element sys_idtf="liquid">жидкость.</b></sc_element>]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (гигрин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		true_alkaloids;
+		liquid;
+		no_color
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: hygrin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Гигрин впервые был обнаружен в листьях одной из разновидностей коки в 1862 году.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(гигрин)](*<- lang_ru;;*);;
+	
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element:hygrin;;
+	<= nrel_sc_text_translation: ...(*->"file://images/hygrin.png";;*);;
+	=> nrel_main_idtf: [Рисунок(гигрин,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:hygrin;;
+	<= nrel_sc_text_translation: ...(*->"file://images/hygrin2.png";;*);;
+	=> nrel_main_idtf: [Рисунок(гигрин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+liquid=>nrel_inclusion:hygrin;;
+true_alkaloids=>nrel_inclusion:hygrin;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> hygrin;;
+	=> nrel_measurement_in_gramms_per_mole: [141,21]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+boiling_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->hygrin;;
+	=> nrel_measurement_in_degrees_Celsius: 195
+	(*
+		<-number;;
+	*);;
+*);;
+
+destiny->...
+(* 
+	
+	<- sc_node_not_relation;;
+	-> hygrin;;
+	=> nrel_measurement_in_degrees_Celsius: [0,935]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+

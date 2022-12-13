@@ -1,0 +1,14 @@
+period_one => nrel_main_idtf:	[период I](* <- lang_ru;; *);
+<= nrel_inclusion: period;;
+period_two => nrel_main_idtf:	[период II](* <- lang_ru;; *);
+<= nrel_inclusion: period;;
+period_three => nrel_main_idtf:	[период III](* <- lang_ru;; *);
+<= nrel_inclusion: period;;
+period_four => nrel_main_idtf:	[период IV](* <- lang_ru;; *);
+<= nrel_inclusion: period;;
+period_five => nrel_main_idtf:	[период V](* <- lang_ru;; *);
+<= nrel_inclusion: period;;
+period_six => nrel_main_idtf:	[период VI](* <- lang_ru;; *);
+<= nrel_inclusion: period;;
+period_seven => nrel_main_idtf:	[период VII](* <- lang_ru;; *);
+<= nrel_inclusion: period;;

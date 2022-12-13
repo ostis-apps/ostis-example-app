@@ -1,0 +1,11 @@
+{
+     "sources": [
+        
+        "src/enter-common.js",
+        "src/enter-paintPanel.js"
+    ],
+
+    "component": "src/enter-component.js",
+
+    "target": "static/components/js/chemistry_components/enter.js"
+}

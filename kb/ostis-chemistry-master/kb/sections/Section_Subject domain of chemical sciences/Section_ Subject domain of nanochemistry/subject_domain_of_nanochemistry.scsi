@@ -1,0 +1,48 @@
+subject_domain_of_nanochemistry
+  => nrel_main_idtf:
+    [Предметная область нанохимии] (* <- lang_ru;;*);
+    [Subject domain of nanochemistry] (* <- lang_en;; *);
+
+  <- subject_domain;
+  -> rrel_maximum_studied_object_class: nanochemistry;;
+
+nanochemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [нанохимия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [nanochemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (нанохимия)] (* <- lang_ru;; *);
+      [Def. (nanochemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Нанохимия — раздел химии, исследующий свойства, строение и особенности химических превращений наночастиц.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (нанохимия)](* <- lang_ru;; *);
+      [Stat. (nanochemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Отличительной особенностью нанохимии является наличие размерного эффекта — качественного изменения физико-химических свойств и реакционной способности при изменении числа атомов или молекул в частице.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (нанохимия)](* <- lang_ru;; *);
+      [Pic. (nanochemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/nanochemistry.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;

@@ -1,0 +1,131 @@
+polyvinyl_methyl_ketone<-sc_node_not_relation;;
+polyvinyl_methyl_ketone=> nrel_main_idtf:[поливинил метил кетон](* <- lang_ru;; *);;
+polyvinyl_methyl_ketone=> nrel_main_idtf:[polyvinyl methyl ketone](* <- lang_en;; *);;
+polyvinyl_methyl_ketone=> nrel_idtf:[ poly(methyl ketone)​](* <- lang_en;; *);;
+polyvinyl_methyl_ketone=> nrel_idtf:[C4H6O](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: polyvinyl_methyl_ketone;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Поливинил метил кетон —  представляет собой <b><sc_element sys_idtf="no_color">бесцветная</b></sc_element>,
+	 маслянистая <b><sc_element sys_idtf="liquid">жидкость</b></sc_element> , 
+	обладающая редкими физическими и химическими свойствами и широко применяемая в технике и в быту.]
+
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (поливинил метил кетон)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		no_color;
+		liquid
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: polyvinyl_methyl_ketone;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Из хлорангидрида хлоруксусной кислоты и 
+	кадмийорганических соединений с удовлетворительным выходом образуются <b><sc_element sys_idtf="nrel_homologue">гомологи</b></sc_element> 
+	 поливинил метил кетонов ]
+	 
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(поливинил метил кетон,имеет гомологи)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nrel_homologue;
+		liquid
+		};;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:polyvinyl_methyl_ketone;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Разбавленным раствором <b><sc_element sys_idtf="potassium_permanganate">перманганата калия</b></sc_element>
+	 при низкой <b><sc_element sys_idtf="temperature">температуре</b></sc_element> 
+	  можно окислить метильную группу в  поливинил метил кетонах ]
+	
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(поливинил метил кетон,окисляется)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		potassium_permanganate;
+		temperature
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyvinyl_methyl_ketone;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyvinyl_methyl_ketone.png";;*);;
+	=> nrel_main_idtf: [Рисунок(поливинил метил кетон,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyvinyl_methyl_ketone;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyvinyl_methyl_ketone_3d.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(поливинил метил кетон,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+
+polycondensation_polymer=>nrel_inclusion:polyvinyl_methyl_ketone;;
+hetero_chain_polymer=>nrel_inclusion:polyvinyl_methyl_ketone;;
+rrel_liquid_solvent=>nrel_inclusion:polyvinyl_alcohol;;
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> polyvinyl_methyl_ketone;;
+	=> rrel_mol: [70]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyvinyl_methyl_ketone;;
+	=> rrel_degree_celsius: 160
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyvinyl_methyl_ketone;;
+	=> rrel_joule_per_kelvin_and_mole: 0.9
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyvinyl_methyl_ketone;;
+	=> rrel_gram_per_cubic_cm: 1.12
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+

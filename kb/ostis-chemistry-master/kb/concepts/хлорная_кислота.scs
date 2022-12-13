@@ -1,0 +1,57 @@
+sc_node_not_relation->perchloric_acid;;
+
+perchloric_acid=> nrel_main_idtf: [хлорная кислота] (* <- lang_ru;; *);;
+perchloric_acid=> nrel_main_idtf: [perchloric acid](* <- lang_en;; *);;
+perchloric_acid=> nrel_idtf: [HClO4](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: perchloric_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Хлорная кислота  — одноосновная кислота, одна из самых сильных, так как содержит хлор в высшей степени окисления +7. ](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (хлорная кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		monobasic_acid;
+		strong_acid;
+		elem_Cl;
+		oxidation_state_plus_seven
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: perchloric_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Соли хлорной кислоты называются перхлоратами.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(хлорная кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		salt
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: perchloric_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/хлорная_кислота_стр.png";;*);;
+	=> nrel_main_idtf: [Рисунок(хлорная кислота,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: perchloric_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/хлорная_кислота_модель.png";;*);;
+	=> nrel_main_idtf: [Рисунок(хлорная кислота,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: perchloric_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/хлорная кислота.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(хлорная кислота)](*<- lang_ru;;*);;
+*);;
+
+perchloric_acid -> perchloric_acid_x;;
+perchloric_acid <=nrel_inclusion:oxyacid;;
+perchloric_acid <=nrel_inclusion:monobasic_acid;;
+perchloric_acid<=nrel_inclusion:strong_acid;;
+perchloric_acid <=nrel_inclusion:inorganic_acid;;
+
+perchloric_acid <-rrel_not_maximum_studied_object_class:subject_domain_of_acids;;

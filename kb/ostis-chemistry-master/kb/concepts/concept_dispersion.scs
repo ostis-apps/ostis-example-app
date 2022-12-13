@@ -1,0 +1,71 @@
+sc_node_not_relation -> dispersion;;
+
+dispersion => nrel_main_idtf:
+	[дисперсная система](* <-lang_ru;; *);
+	[disperse system](* <-lang_en;; *);;
+
+dispersion => nrel_idtf:
+	[disperse system](* <-lang_en;; *);;
+
+dispersion
+<- rrel_key_sc_element:
+	Definition_of_dispersion
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(дисперсная система)] (* <-lang_ru;; *);; 
+        <= nrel_sc_text_translation:...
+        (*
+			-> rrel_example:"file://htmls/dispersion.html"(* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants:
+		...
+		(*
+			-> rrel_dispersed_phase;;
+			-> rrel_dispersion_medium;;
+		*);;
+	*);;
+	
+
+
+dispersion
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Прим.(дисперсная система, классификация*)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/dispersion1.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://htmls/dispersion_table.html";;
+		*);;
+	*);;
+
+dispersion <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Дисперсная система представляет собой системы веществ: первое (дисперсная фаза) мелко распределено во втором (дисперсионная среда). Если фаз несколько, их можно отделить друг от друга физическим способом, например центрифугировать.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Dispersion is a system of substances: the first one (dispersed phase) finely distributed in the second (dispersion medium). If multiple phases, they can be separated by physical means such as centrifuge.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+dispersion <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Классификация дисперсных систем основана на различии в агрегатном состоянии дисперсионной среды и дисперсной фазы (фаз).](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Classification of disperse systems based on the difference in the aggregate state of the dispersion medium and the dispersed phase (s).](*<- lang_en;;*);;
+			*);;
+		<-sc_illustration;;
+			<=nrel_sc_text_translation:...
+				(*->rrel_example: "file://disp_sist.png";;*) ;;
+		*);;

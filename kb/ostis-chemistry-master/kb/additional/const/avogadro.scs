@@ -1,0 +1,12 @@
+avogadro
+=> nrel_main_idtf:
+	[6,022 * 10^23 моль^(-1)](* <- lang_ru;; *);
+<- value;
+<= nrel_measurement:...
+(*
+	-> rrel_10_in_23_mole: ...
+	(*
+		<- number;;
+		=> nrel_main_idtf:[6,022](*<-lang_ru;; <- lang_en;;*);;
+	*);;
+*);;

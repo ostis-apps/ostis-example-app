@@ -1,0 +1,58 @@
+anesthetic<-sc_node_not_relation;;
+anesthetic=> nrel_main_idtf:[анестетик](* <- lang_ru;; *);;
+anesthetic=> nrel_main_idtf:[anesthetic](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: anesthetic;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Анестетик — <b><sc_element sys_idtf="medicine">лекарственное средство</b></sc_element>, обладающее способностью вызывать анестезию. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (анестетик)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		medicine
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: anesthetic;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[До середины XIX века в качестве анестетика в основном использовался <b><sc_element sys_idtf="chloroform">хлороформ</b></sc_element>, Уильям Мортон впервые ввел в практику применение <b><sc_element sys_idtf="diethyl_ether">диэтилового эфира.</b></sc_element> ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(анестетик)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		diethyl_ether;
+		chloroform
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: anesthetic;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://anesthetic.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(анестетик,классификация*)](*<- lang_ru;;*);;
+	
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: anesthetic;;
+	<= nrel_sc_text_translation: ...(*->"file://images/anesthetic.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(анестетик)](*<- lang_ru;;*);;
+*);;
+anesthetic=>nrel_inclusion:chloroform;;
+anesthetic=>nrel_inclusion:diethyl_ether;;
+anesthetic=>nrel_inclusion:morphine;;

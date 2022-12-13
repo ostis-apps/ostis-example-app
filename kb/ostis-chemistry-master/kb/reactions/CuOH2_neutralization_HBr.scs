@@ -1,0 +1,20 @@
+CuOH2_neutralization_HBr
+=>nrel_main_idtf:
+	[кислотно-щелочная реакция гидроксида меди (II) и бромоводорода](*<-lang_ru;;*);
+	[сopper hydroxide (II) and hydrogen bromide acid-base reaction](*<-lang_en;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (кислотно-щелочная реакция гидроксида меди (II) и бромоводорода)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Cu(OH)2 + 2HBr ---> CuBr2 + 2H2O]
+		(*
+			<- lang_ru;;
+			<- lang_en;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;

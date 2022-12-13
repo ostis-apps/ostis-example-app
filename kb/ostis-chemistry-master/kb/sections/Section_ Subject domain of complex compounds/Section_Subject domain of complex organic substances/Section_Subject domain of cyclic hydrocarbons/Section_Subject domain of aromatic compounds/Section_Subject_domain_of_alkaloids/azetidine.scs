@@ -1,0 +1,101 @@
+azetidine<-sc_node_not_relation;;
+azetidine=> nrel_main_idtf:[азетидин](* <- lang_ru;; *);;
+azetidine=> nrel_main_idtf:[aziridine](* <- lang_en;; *);;
+azetidine=> nrel_idtf:[C3H7N](* <- lang_en;; *);;
+azetidine=> nrel_idtf:[азетан](* <- lang_ru;; *);;
+azetidine=> nrel_idtf:[азациклобутан](* <- lang_ru;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: azetidine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Азетидин — <b><sc_element sys_idtf="true_alkaloids">истинный алкалоид</b></sc_element>, азотсодержащее <b><sc_element sys_idtf="heterocyclic_compound">гетероциклическое соединение </b></sc_element>, четырехчленный <b><sc_element sys_idtf="cycle">цикл</b></sc_element> с одним <b><sc_element sys_idtf="elem_N">атомом азота.</b></sc_element>]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (азетидин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		true_alkaloids;
+		heterocyclic_compound;
+		cycle;
+		elem_N
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: azetidine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Азетидин и его производные редко встречаются в природных биохимических соединениях.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(азетидин)](*<- lang_ru;;*);;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element:azetidine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/azetidine.png";;*);;
+	=> nrel_main_idtf: [Рисунок(азетидин,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:azetidine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/azetidine2.png";;*);;
+	=> nrel_main_idtf: [Рисунок(азетидин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+liquid=>nrel_inclusion:azetidine;;
+toxin=>nrel_inclusion:azetidine;;
+true_alkaloids=>nrel_inclusion:azetidine;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> azetidine;;
+	=> nrel_measurement_in_gramms_per_mole: [57,09]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+boiling_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->azetidine;;
+	=> nrel_measurement_in_degrees_Celsius: 63
+	(*
+		<-number;;
+	*);;
+*);;
+
+destiny->...
+(* 
+	
+	<- sc_node_not_relation;;
+	-> azetidine;;
+	=> nrel_measurement_in_degrees_Celsius: [0,8436]
+	(*
+		<-number;;
+	*);;
+*);;
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	-> azetidine;;
+	=> nrel_measurement_in_degrees_Celsius: [-83]
+	(*
+		<-number;;
+	*);;
+*);;
+

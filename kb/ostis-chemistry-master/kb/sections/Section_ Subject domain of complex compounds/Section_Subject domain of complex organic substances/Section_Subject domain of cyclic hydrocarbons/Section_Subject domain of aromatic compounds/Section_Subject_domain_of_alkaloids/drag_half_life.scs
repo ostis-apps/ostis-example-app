@@ -1,0 +1,28 @@
+drag_half_life<-sc_node_not_relation;;
+
+drag_half_life=> nrel_main_idtf:[период полувыведения](* <- lang_ru;; *);;
+drag_half_life=> nrel_main_idtf:[drag half-life](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: drag_half_life;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Период полувыведения вещества  — время, нужное <b><sc_element sys_idtf="chemical_substance">веществу</b></sc_element> для потери половины его <b><sc_element sys_idtf="nrel_pharmachologic_effect">фармакологического</b></sc_element>, <b><sc_element sys_idtf="nrel_psychotropic_effect">психотропного</b></sc_element> действия.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Определение (период полувыведения)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nrel_psychotropic_effect;
+		nrel_pharmachologic_effect;
+		chemical_substance
+		};;
+*);;
+
+
+
+
+

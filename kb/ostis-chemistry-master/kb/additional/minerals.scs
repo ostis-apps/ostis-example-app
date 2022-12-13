@@ -1,0 +1,125 @@
+ampholyte <- sc_node_not_relation;
+	=> nrel_main_idtf:[амфолит](* <- lang_ru;; *);
+	=> nrel_inclusion: acid; basis;;
+cuprite => nrel_main_idtf:
+    [куприт](*<-lang_ru;;*);
+    <- sc_node_not_relation;;
+corundum => nrel_main_idtf:
+    [корунд](*<-lang_ru;;*);
+    <- sc_node_not_relation;;
+diaspora => nrel_main_idtf:
+    [диаспор](*<-lang_ru;;*);
+    <- sc_node_not_relation;;
+bauxite => nrel_main_idtf:
+    [боксит](*<-lang_ru;;*);
+    <- sc_node_not_relation;;
+spinel => nrel_main_idtf:
+    [шпинель](*<-lang_ru;;*);
+    <- sc_node_not_relation;;
+chromite => nrel_main_idtf:
+    [хромит](*<-lang_ru;;*);
+    <- sc_node_not_relation;;
+manganite => nrel_main_idtf:
+    [манганит](*<-lang_ru;;*);
+    <- sc_node_not_relation;;
+microlite => nrel_main_idtf:
+    [микролит](*<-lang_ru;;*);
+    <- sc_node_not_relation;;
+purpurite=> nrel_main_idtf:
+    [пурпурит](* <- lang_ru;; *);
+    <- sc_node_not_relation;;
+carnallit=> nrel_main_idtf:
+    [карналит](* <- lang_ru;; *);
+    <- sc_node_not_relation;;
+bischofite=> nrel_main_idtf:
+    [бисковит](* <- lang_ru;; *);
+    <- sc_node_not_relation;;
+kieserite=> nrel_main_idtf:
+    [кисерит](* <- lang_ru;; *);
+    <- sc_node_not_relation;;
+epsomite=> nrel_main_idtf:
+    [эпсомит](* <- lang_ru;; *);
+    <- sc_node_not_relation;;
+cainite=> nrel_main_idtf:
+    [каинит](* <- lang_ru;; *);
+    <- sc_node_not_relation;;
+magnesite=> nrel_main_idtf:
+    [магнезит](* <- lang_ru;; *);
+    <- sc_node_not_relation;;
+dolomite=> nrel_main_idtf:
+    [доломит](* <- lang_ru;; *);
+    <- sc_node_not_relation;;
+brucite=> nrel_main_idtf:
+    [брусит](* <- lang_ru;; *);
+    <- sc_node_not_relation;;
+azide=> nrel_main_idtf:
+    [азид](* <- lang_ru;; *);
+    <- sc_node_not_relation;;
+pyrolusite=> nrel_main_idtf:
+    [пиролюцит](* <- lang_ru;; *);
+    <- sc_node_not_relation;;
+manganite=> nrel_main_idtf:
+    [манганит](* <- lang_ru;; *);
+    <- sc_node_not_relation;;
+rhodochrosite=> nrel_main_idtf:
+    [родохрозит](* <- lang_ru;; *);
+    <- sc_node_not_relation;;
+psilomelan=> nrel_main_idtf:
+    [псиломелан](* <- lang_ru;; *);
+    <- sc_node_not_relation;;
+quartz => nrel_main_idtf:[кварц](*<-lang_ru;;*);;
+calcite => nrel_main_idtf:[кальцит](*<-lang_ru;;*);;
+belemnite => nrel_main_idtf:[белемнит](*<-lang_ru;;*);;
+ammonite => nrel_main_idtf:[аммонит](*<-lang_ru;;*);;
+molybdenite 
+    => nrel_main_idtf: 
+        [молибденит](*<- lang_ru;;*);;
+
+chalcopyrite 
+    => nrel_main_idtf: 
+        [халькопирит](*<- lang_ru;;*);;
+
+cassiterite 
+    => nrel_main_idtf: 
+        [касситерит](*<- lang_ru;;*);;
+
+nugget 
+    => nrel_main_idtf: [самородок](*<- lang_ru;;*);;
+aguilarite 
+    => nrel_main_idtf: [агвиларит](*<- lang_ru;;*);;
+pyrargyrite 
+    => nrel_main_idtf: [пираргирит](*<- lang_ru;;*);;
+chlorargyrite 
+    => nrel_main_idtf: [кераргирит](*<- lang_ru;;*);;
+proustite 
+    => nrel_main_idtf: [прустит](*<- lang_ru;;*);;
+argentite 
+    => nrel_main_idtf: [аргентит](*<- lang_ru;;*);;
+electrum 
+    => nrel_main_idtf: [электрум](*<- lang_ru;;*);;
+nepheline => nrel_main_idtf: [нефелин](*<- lang_ru;;*);;
+chrysoberyl => nrel_main_idtf: [хризоберилл](*<- lang_ru;;*);;
+beryl => nrel_main_idtf: [берилл](*<- lang_ru;;*);;
+kaolinite => nrel_main_idtf: [каолинит](*<- lang_ru;;*);;
+feldspar => nrel_main_idtf: [полевой шпат](*<- lang_ru;;*);;
+alunite => nrel_main_idtf: [алунит](*<- lang_ru;;*);;
+loellingite => nrel_main_idtf: [леллингит](*<- lang_ru;;*);;
+scorodite => nrel_main_idtf: [скородит](*<- lang_ru;;*);;
+realgar => nrel_main_idtf: [реальгар](*<- lang_ru;;*);;
+orpiment => nrel_main_idtf: [аурипигмент](*<- lang_ru;;*);;
+arsenopyrit => nrel_main_idtf: [арсенопирит](*<- lang_ru;;*);;
+bismuthinite => nrel_main_idtf: [висмутин](*<- lang_ru;;*);;
+aikinite => nrel_main_idtf: [айкинит](*<- lang_ru;;*);;
+tetramorph => nrel_main_idtf: [тетрадимит](*<- lang_ru;;*);;
+cosalite => nrel_main_idtf: [козалит](*<- lang_ru;;*);;
+bismit => nrel_main_idtf: [бисмит](*<- lang_ru;;*);;
+bismuth => nrel_main_idtf: [бисмутит](*<- lang_ru;;*);;
+wittichenit => nrel_main_idtf: [виттихенит](*<- lang_ru;;*);;
+
+auride
+=> nrel_main_idtf:
+    [аурид]
+    (* <- lang_ru;; *);
+    [auride]
+    (* <- lang_en;; *);;
+

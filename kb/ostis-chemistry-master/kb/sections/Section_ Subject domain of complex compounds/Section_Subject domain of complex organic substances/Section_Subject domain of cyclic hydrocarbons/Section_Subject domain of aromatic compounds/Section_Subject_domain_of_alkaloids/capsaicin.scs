@@ -1,0 +1,97 @@
+capsaicin<-sc_node_not_relation;;
+capsaicin=> nrel_main_idtf:[капсаицин](* <- lang_ru;; *);;
+capsaicin=> nrel_main_idtf:[capsaicin](* <- lang_en;; *);;
+capsaicin=> nrel_idtf:[8-​метил-​N-​ванилил-​транс-​6-​ноненамид](* <- lang_ru;; *);;
+capsaicin=> nrel_idtf:[C18H27NO3](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: capsaicin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Капсаицин — <b><sc_element sys_idtf="protoalkaloids">протоалкалоид</b></sc_element>, содержащийся в различных видах стручкового перца Capsicum (например, в плодах перца овощного его содержится около 0,03 %).]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (капсаицин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		protoalkaloids
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: capsaicin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://capsaicin2.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(капсаицин,фармакологический эффект*)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: capsaicin ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://capsaicin.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(капсаицин,побочный эффект*)](*<- lang_ru;;*);;
+	
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:capsaicin;;
+	<= nrel_sc_text_translation: ...(*->"file://images/capsaicin.png";;*);;
+	=> nrel_main_idtf: [Рисунок(капсаицин,структурная формула](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: capsaicin;;
+	<= nrel_sc_text_translation: ...(*->"file://images/capsaicin2.png";;*);;
+	=> nrel_main_idtf: [Рисунок(капсаицин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+solid_matter=>nrel_inclusion:capsaicin;;
+protoalkaloids=>nrel_inclusion:capsaicin;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> capsaicin;;
+	=> nrel_measurement_in_gramms_per_mole: [305,41]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->capsaicin;;
+	=> nrel_measurement_in_degrees_Celsius: 65
+	(*
+		<-number;;
+	*);;
+*);;
+
+boiling_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->capsaicin;;
+	=> nrel_measurement_in_degrees_Celsius: 220
+	(*
+		<-number;;
+	*);;
+*);;
+
+

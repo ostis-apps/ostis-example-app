@@ -1,0 +1,52 @@
+nrel_electric_charge
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_main_idtf:
+	[электрический заряд*](* <- lang_ru;;	*);
+	[electric charge*](* <- lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_nrel_electric_charge
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Электрический заряд*)](* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "nrel_electric_charge">Электрический заряд</sc_element></b> - это физическая скалярная величина, определяющая способность тел быть источником электромагнитных полей и принимать участие в электромагнитном взаимодействии.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;	
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Единица измерения заряда в Международной системе единиц (СИ) — кулон — электрический заряд, проходящий через поперечное сечение проводника с током 1 А за время 1 с.] (* <-lang_ru;; *);;
+		*);;
+*);
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Впервые электрический заряд был введён в законе Кулона в 1785 году. ] (* <-lang_ru;; *);;
+		*);;
+*);
+=>nrel_first_domain: ion;
+=>nrel_second_domain: value;;

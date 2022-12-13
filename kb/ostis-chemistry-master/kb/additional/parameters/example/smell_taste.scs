@@ -1,0 +1,21 @@
+smell -> no_smell;;
+smell -> strong_smell;;
+taste -> no_taste;;
+
+no_smell 
+=> nrel_main_idtf: 
+	[без запаха](*<- lang_ru;;*);;
+
+strong_smell 
+=> nrel_main_idtf: 
+	[резкий запах](*<- lang_ru;;*);;
+
+no_taste 
+=> nrel_main_idtf: 
+	[без вкуса](*<- lang_ru;;*);;
+
+sweet
+<- sc_node_not_relation;
+<= nrel_inclusion: taste;
+=> nrel_main_idtf:
+	[сладкий вкус](* <- lang_ru;; *);;

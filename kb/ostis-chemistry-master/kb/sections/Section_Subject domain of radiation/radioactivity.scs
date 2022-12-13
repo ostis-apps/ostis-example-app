@@ -1,0 +1,49 @@
+radioactivity
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[радиоактивность]
+	(* <- lang_ru;;	*);
+	[radioactivity]
+	(* <- lang_en;;	*);;
+radioactivity
+<- rrel_key_sc_element:
+	Definition_of_radioactivity
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/radioactivity.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				atom;
+				isotope
+			};
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[При радиоактивном распаде исходный атом превращается в атом другого элемента. В результате выбрасывания из ядра атома альфа-частицы, представляющей собой совокупность двух протонов и двух нейтронов, массовое число образующегося атома (см.) уменьшается на четыре единицы.] (* <-lang_ru;; *);;
+		*);;
+*);;
+
+
+
+
+Definition_of_radioactivity
+=> nrel_main_idtf:
+	[Опр.(Радиоактивность)]
+	(* <- lang_ru;;	*);;
+
+
+
+
+
+
+

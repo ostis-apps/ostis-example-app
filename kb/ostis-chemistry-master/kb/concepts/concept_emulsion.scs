@@ -1,0 +1,48 @@
+sc_node_not_relation -> emulsion;;
+
+emulsion => nrel_main_idtf:
+	[эмульсия](* <-lang_ru;; *);
+	[emulsion](* <-lang_en;; *);;
+
+emulsion <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(эмульсия)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(emulsion)] (* <- lang_en;; *);;
+		<= nrel_using_constants: dispersion;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Эму́льсия — дисперсная система, состоящая из микроскопических капель жидкости (дисперсной фазы), распределенных в другой жидкости (дисперсионной среде).](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[An emulsion is a dispersion consisting of microscopic liquid droplets (disperse phase) dispersed in another liquid (dispersion medium).](*<- lang_en;;*);;
+			*);;
+		*);;
+
+emulsion <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утв.(эмульсия) ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Stat.(emulsion) ] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Эмульсии широко используют в: пищевой промышленности; мыловарении; переработке натурального каучука; строительной промышленности; автомобильной промышленности; сельском хозяйстве; медицине; живописи.](*<- lang_ru;;*);;
+			*);;
+		*);;
+
+emulsion <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утв.(эмульсия) ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Stat.(emulsion) ] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Эмульсии могут быть образованы двумя любыми несмешивающимися жидкостями; в большинстве случаев одной из фаз эмульсий является вода](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Emulsions can be formed by any two immiscible fluids; in most cases, one of the phases is water emulsions](*<- lang_en;;*);;
+			*);;
+		*);;
+

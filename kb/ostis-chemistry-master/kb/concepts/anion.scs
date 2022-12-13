@@ -1,0 +1,66 @@
+anion
+=> nrel_main_idtf:
+	[анион](* <- lang_ru;; *);
+	[anion](* <- lang_en;; *);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(анион)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Анион — отрицательно заряженный ион.]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->ion;;
+		->nrel_negative_charge;;
+	*);;
+*);
+//утверждение
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(анион, электрическое поле, отрицательный заряд*, анод)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[В электрическом поле анионы, будучи заряженными отрицательно, перемещаются к положительному электроду — аноду.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: electric_field;;
+	-> rrel_key_sc_element: nrel_negative_charge;;
+	-> rrel_key_sc_element: anode;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(анион, сложное неорганическое соединение, кислотный остаток)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Анион в сложном неорганическом соединении называется кислотным остатком.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: acid_residue;;
+	-> rrel_key_sc_element: complex_inorganic_compound;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(анион, заряд, элементарный заряд, кислотный остаток, серная кислота)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/anion_charge.html"(* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_charge;;
+	-> rrel_key_sc_element: elementary_charge;;
+	-> rrel_key_sc_element:acid_residue;;
+	-> rrel_key_sc_element:sulfuric_acid;;
+*);;

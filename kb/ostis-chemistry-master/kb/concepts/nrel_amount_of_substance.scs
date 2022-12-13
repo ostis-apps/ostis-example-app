@@ -1,0 +1,49 @@
+nrel_chemical_amount
+<- sc_node_norole_relation;
+=>nrel_main_idtf:
+[химическое количество*](*<-lang_ru;;*);
+[chemical amount*](*<-lang_en;;*);
+
+=> nrel_idtf: 
+  [chemical amount of substance*] 
+  (* <-lang_en;;*);
+  [amount of substance*] 
+  (* <-lang_en;;*);
+  [химическое количество вещества*] 
+  (* <-lang_ru;;*);
+  [количество вещества*] 
+  (* <-lang_ru;;*);;
+
+nrel_chemical_amount
+<- rrel_key_sc_element: ... 
+    (*
+       <- definition;;
+       =>nrel_main_idtf: [Опр.(химическое количество*)]  (* <- lang_ru;; *);;
+       <= nrel_sc_text_translation:... (*->rrel_example: [<b>Количество вещества</b> — физическая величина, характеризующая количество однотипных структурных единиц, содержащихся в <sc_element sys_idtf="chemical_substance">веществе</sc_element>.](* <- lang_ru;; =>nrel_format: format_html;; *);; *);;
+	<=nrel_using_constants: chemical_substance;;
+     *);
+
+<-rrel_key_sc_element: ... 
+     (*
+        <- statement;;
+		<-concept_assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_sets (*<-concept_subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (*->rrel_example: [Эта физическая величина используется для измерения макроскопических количеств веществ в тех случаях, когда для численного описания изучаемых процессов необходимо принимать во внимание микроскопическое строение вещества, например, в химии, при изучении процессов электролиза, или в термодинамике, при описании уравнений состояния идеального газа.](*<-lang_ru;; =>nrel_format: format_html;;*);; *);;
+        => nrel_main_idtf: [Утв. (химическое количество*, применение*)] (* <- lang_ru;; *);;
+      *);
+
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_first_domain: chemical_substance; chemical_element;
+=> nrel_second_domain: number;
+=> nrel_definitional_domain:...
+(*
+    <= nrel_combination: ...
+    (* 
+        -> number; chemical_substance; chemical_element;;
+    *);;
+*);;

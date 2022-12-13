@@ -1,0 +1,14 @@
+section_subject_domain_of_mucopolysaccharides
+=> nrel_main_idtf: 
+	[Раздел. Предметная область мукополисахаридов]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of mucopolysaccharides]
+	(* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_mucopolysaccharides = [*^"file://subject_domain_of_mucopolysaccharides.scsi"*];;
+
+section_subject_domain_of_mucopolysaccharides
+-> rrel_key_sc_element: subject_domain_of_mucopolysaccharides;;

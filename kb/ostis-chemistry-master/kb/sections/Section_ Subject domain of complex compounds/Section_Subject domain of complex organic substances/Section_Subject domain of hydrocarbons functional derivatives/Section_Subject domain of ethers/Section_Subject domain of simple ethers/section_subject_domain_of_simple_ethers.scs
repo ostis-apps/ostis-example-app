@@ -1,0 +1,14 @@
+section_subject_domain_of_simple_ethers
+=> nrel_main_idtf: 
+	[Раздел. Предметная область простых эфиров]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of simple ethers]
+	(* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_chemical_elements = [*^"file://section_subject_domain_of_simple_ethers.scsi"*];;
+
+section_subject_domain_of_simple_ethers
+-> rrel_key_sc_element: subject_domain_of_simple_ethers;;

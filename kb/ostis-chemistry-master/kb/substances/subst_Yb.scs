@@ -1,0 +1,78 @@
+subst_Yb
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[ytterbium (substance)](*<- lang_en;;*);
+	[иттербий (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Yb (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (иттербий (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Иттербий (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - серебристый глянцевитый, вязкий и ковкий <sc_element sys_idtf = "metal">металл</sc_element>.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> metal;;
+		-> color;;
+
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (иттербий (вещество), серебристый глянцевитый, вязкий и ковкий металл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Ytterbium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:819 (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1196 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (иттербий (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы иттербия: <sup>148</sup>Yb, <sup>149</sup>Yb, <sup>150</sup>Yb, <sup>151</sup>Yb, <sup>152</sup>Yb, <sup>153</sup>Yb, <sup>154</sup>Yb, <sup>155</sup>Yb, <sup>156</sup>Yb, <sup>157</sup>Yb, <sup>158</sup>Yb, <sup>159</sup>Yb, <sup>160</sup>Yb, <sup>161</sup>Yb, <sup>162</sup>Yb, <sup>163</sup>Yb, <sup>164</sup>Yb, <sup>165</sup>Yb, <sup>166</sup>Yb, <sup>167</sup>Yb, <sup>168</sup>Yb, <sup>169</sup>Yb, <sup>170</sup>Yb, <sup>171</sup>Yb, <sup>172</sup>Yb, <sup>173</sup>Yb, <sup>174</sup>Yb, <sup>175</sup>Yb, <sup>176</sup>Yb, <sup>177</sup>Yb, <sup>178</sup>Yb, <sup>179</sup>Yb, <sup>180</sup>Yb, <sup>181</sup>Yb] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

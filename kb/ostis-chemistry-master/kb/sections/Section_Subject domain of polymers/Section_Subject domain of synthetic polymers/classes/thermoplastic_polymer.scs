@@ -1,0 +1,61 @@
+thermoplastic_polymer
+<-sc_node_not_relation;;
+
+thermoplastic_polymer=> nrel_main_idtf:[термопластичный полимер](* <- lang_ru;; *);;
+thermoplastic_polymer=> nrel_main_idtf:[thermoplastic polymer](* <- lang_en;; *);;
+
+
+
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: thermoplastic_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Термопластичные полимеры
+ <b><sc_element sys_idtf="polymer">полимеры</b></sc_element> с линейной структурой 
+ <b><sc_element sys_idtf="molecule">молекул</b></sc_element> .]
+	 
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (термопластичный полимер)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+			molecule;
+		polymer
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: thermoplastic_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Термопластичные полимеры становятся мягкими
+	 при <b><sc_element sys_idtf="nrel_heating">нагревании</b></sc_element>
+	 , и вновь <b><sc_element sys_idtf="nrel_solod_state">затвердевают</b></sc_element>
+	  при снижении <b><sc_element sys_idtf="temperature">температуры</b></sc_element>.]
+	   
+	 (*
+	 <-lang_ru;;
+	=>nrel_format:format_html;;
+	 *);;
+	 *);;
+	
+	=> nrel_main_idtf: [Утверждение(термопластичный полимер)](*<- lang_ru;;*);;
+		=> nrel_using_constants:
+		{
+		temperature;
+		nrel_heating;
+		nrel_solod_state
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: thermoplastic_polymer;;
+	<= nrel_sc_text_translation: ...(*->"file://image/thermoplastic_polymer.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(термопластичный полимер)](*<- lang_ru;;*);;
+*);;
+
+	
+	

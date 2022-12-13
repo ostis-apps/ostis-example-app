@@ -1,0 +1,14 @@
+section_subject_domain_of_esters
+=> nrel_main_idtf: 
+	[Раздел. Предметная область сложных эфиров]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of esters]
+	(* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_chemical_elements = [*^"file://section_subject_domain_of_esters.scsi"*];;
+
+section_subject_domain_of_esters
+-> rrel_key_sc_element: subject_domain_of_esters;;

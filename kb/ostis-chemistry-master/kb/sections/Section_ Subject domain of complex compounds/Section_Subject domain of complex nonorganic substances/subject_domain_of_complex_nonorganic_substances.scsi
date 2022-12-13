@@ -1,0 +1,142 @@
+subject_domain_of_complex_nonorganic_substances
+=> nrel_main_idtf: 
+	[Предметная область сложных неорганических веществ]
+	(* <- lang_ru;;*);
+	[Subject domain of complex nonorganic substances]
+	(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	complex_substance;
+
+-> rrel_not_maximum_studied_object_class:
+	complex_substance_structure;
+	chemical_substance;;
+
+complex_substance
+=> nrel_main_idtf: 
+	[complex substance]
+	(*<- lang_en;;*);
+	[сложное вещество]
+	(*<- lang_ru;;*);
+	
+<- rrel_key_sc_element:
+	Definition_of_complex_substance
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="complex_substance">Сложное вещество</sc_element></b> — это <sc_element sys_idtf="chemical_substance">вещество</sc_element>, состоящее из <sc_element sys_idtf="atom">атомов</sc_element> двух и более разных <sc_element sys_idtf="chemical_element">химических элементов</sc_element>.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="complex_substance">Complex substance</sc_element></b> is a <sc_element sys_idtf="chemical_substance">substance</sc_element> consisting of at least 2 different <sc_element sys_idtf="chemical_element">chemical elements'</sc_element> <sc_element sys_idtf="atom">atoms</sc_element>.] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+	
+<= nrel_subdividing:
+	complex_substance_structure
+	(* 
+    -> binary_compound;;
+	-> multielement_compound;;
+	*);;
+	
+Definition_of_complex_substance
+=> nrel_main_idtf:
+	[Опр.(сложное вещество)]
+	(* <- lang_ru;;	*);
+	[Def.(complex substance)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+	(*
+	-> chemical_substance; atom; chemical_element;;
+	*);;
+
+complex_substance_structure
+=> nrel_main_idtf:
+	[Разбиение сложных веществ по структуре]
+	(* <- lang_ru;;	*);
+	[Partitioning complex substances by structure]
+	(* <- lang_en;;	*);;
+
+chemical_substance
+=> nrel_inclusion: mixture;
+=> nrel_inclusion: elementary_substance;
+=> nrel_inclusion: complex_substance;
+
+=> nrel_main_idtf:
+	[химическое вещество]
+	(* <- lang_ru;;	*);
+	[chemical substance]
+	(* <- lang_en;;	*);
+
+=> nrel_idtf:
+	[вещество]
+	(* <- lang_ru;; *);
+	[substance]
+	(* <- lang_en;; *);
+	[вещество, изучаемое химией]
+	(* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+	Definition_of_chemical_substance
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="chemical_substance">Химическое вещество</sc_element></b> - вещество, состоящее из <sc_element sys_idtf="atom">атомов</sc_element>; вещества, в которых выделение атомов невозможно или теряет физический смысл (например, <sc_element sys_idtf="plasma">плазма</sc_element> или звёздное вещество), к предмету рассмотрения химией не относят.]
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b> <sc_element sys_idtf = "chemical_substance">Chemical </ sc_element> </ b> is a substance consisting of <sc_element sys_idtf = "atom"> atoms </ sc_element >. Substances in which the separation of atoms is impossible or loses its physical meaning (for example, <sc_element sys_idtf = "plasma"> plasma </ sc_element> or stellar matter), are not considered chemistry.]
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: classification_of_chemical_substance
+
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (химическое вещество, индивидуальное вещество)](*<- lang_ru;;*);
+			[Stat. (chemical substance, individual substance)](*<- lang_en;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[В отечественной литературе по химии принято делить вещества на <i>индивидуальные (чистые) вещества</i> (<sc_element sys_idtf="elementary_substance">простые</sc_element> и <sc_element sys_idtf="complex_substance">сложные</sc_element>) и их <sc_element sys_idtf="mixture">смеси</sc_element>. На сегодняшний день стандартизированная дефиниция индивидуального вещества отсутствует. Согласно одному из вариантов индивидуальным называют вещество, которое нельзя разделить на более простые составные части только физическими методами (речь идёт о принципиальной осуществимости такого разделения, а не о практическом реализации теоретически возможного метода). Второй вариант дефиниции основан на связи постоянства свойств вещества с его чистотой. Для установления свойств вещества оно должно быть возможно более чистым, так как <sc_element sys_idtf="impurity">примеси</sc_element> изменяют числовые значения характеризующих вещество физических параметров, в частности, температур фазовых переходов. Вещество с минимально достижимым содержанием примесей (в идеале — нулевым) называют индивидуальным веществом. В физической химии используют не термин «индивидуальное вещество», а его ИЮПАКовский синоним — составляющее вещество, понимая под ним любое вещество, которое может быть выделено из системы и существовать вне её (иногда говорят не о составляющих веществах и независимых составляющих веществах — компонентах, — а о компонентах и независимых компонентах). Отказ от использования терминов «чистое вещество» и «индивидуальное вещество» исключает произвол, связанный с привязкой этих понятий к степени чистоты вещества и требованиям постоянства его состава и свойств.] 
+			(* 
+			<-lang_ru;;
+			=> nrel_format: format_html;; 
+			*);;
+
+			-> rrel_example:[In the domestic literature on chemistry, it is customary to divide substances into <i> individual (pure) substances </ i> (<sc_element sys_idtf = "elementary_substance"> simple </ sc_element> and <sc_element sys_idtf = "complex_substance"> complex </ sc_element>) And their <sc_element sys_idtf = "mixture"> mixes </ sc_element>. To date, there is no standardized definition of an individual substance. According to one of the variants, an individual is called a substance that can not be divided into simpler constituent parts only by physical methods (this is the principle feasibility of such a separation, and not the practical implementation of a theoretically possible method). The second version of the definition is based on the connection between the constancy of the properties of the substance and its purity. To establish the properties of the substance, it must be as clean as possible, since the <sc_element sys_idtf = "impurity"> impurities </ sc_element> change the numerical values ​​of the physical parameters characterizing the substance, in particular, the phase transition temperatures. A substance with a minimum achievable content of impurities (ideally zero) is called an individual substance. In physical chemistry, not the term "individual substance" is used, but its IUPAC synonym is a constituent substance, meaning any substance under it that can be isolated from the system and exist outside it (sometimes they are not talking about constituent substances and independent constituent substances - components, But about components and independent components). Refusal to use the terms "pure substance" and "individual substance" excludes the arbitrariness associated with binding these concepts to the purity of the substance and to the requirements of the constancy of its composition and properties.] 
+			(* 
+			<-lang_en;;
+			=> nrel_format: format_html;; 
+			*);;
+		*);;
+	*);;
+
+Definition_of_chemical_substance
+=> nrel_main_idtf:
+	[Опр.(химическое вещество)]
+	(* <- lang_ru;;	*);
+	[Def.(chemical substance)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+	(*
+	-> atom; plasma;;
+	*);;

@@ -1,0 +1,41 @@
+non_molecular_structure_substance
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[вещество немолекулярного строения]
+	(* <- lang_ru;;	*);
+	[non-molecular structure of the substance]
+	(* <- lang_en;;	*);;
+non_molecular_structure_substance
+<- rrel_key_sc_element:
+	Definition_of_non_molecular_structure_substance
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/non_molecular_structure_substance.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[кристаллическая решётка - ионная, атомная, металлическая] (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+Definition_of_non_molecular_structure_substance
+=> nrel_main_idtf:
+	[Опр.(вещество немолекулярного строения)]
+	(* <- lang_ru;;	*);;
+
+
+
+
+
+
+

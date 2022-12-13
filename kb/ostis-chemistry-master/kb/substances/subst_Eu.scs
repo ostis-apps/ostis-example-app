@@ -1,0 +1,75 @@
+subst_Eu
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[europium (substance)](*<- lang_en;;*);
+	[европий (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Eu (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (европий (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Европий (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - мягкий серебристо-белый <sc_element sys_idtf = "metal">металл</sc_element>.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> metal;;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	=> nrel_main_idtf: [Рис. (европий (вещество), мягкий серебристо-белый металл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Europium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:822 (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1527 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (европий (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы европия:  <sup>130</sup>Eu, <sup>131</sup>Eu, <sup>132</sup>Eu, <sup>133</sup>Eu, <sup>134</sup>Eu, <sup>135</sup>Eu, <sup>136</sup>Eu, <sup>137</sup>Eu, <sup>138</sup>Eu, <sup>139</sup>Eu, <sup>140</sup>Eu, <sup>141</sup>Eu, <sup>142</sup>Eu, <sup>143</sup>Eu, <sup>144</sup>Eu, <sup>145</sup>Eu, <sup>146</sup>Eu, <sup>147</sup>Eu, <sup>148</sup>Eu, <sup>149</sup>Eu, <sup>150</sup>Eu, <sup>151</sup>Eu, <sup>152</sup>Eu, <sup>153</sup>Eu, <sup>154</sup>Eu, <sup>155</sup>Eu, <sup>156</sup>Eu, <sup>157</sup>Eu, <sup>158</sup>Eu, <sup>159</sup>Eu, <sup>160</sup>Eu, <sup>161</sup>Eu, <sup>162</sup>Eu, <sup>163</sup>Eu, <sup>164</sup>Eu, <sup>165</sup>Eu, <sup>166</sup>Eu, <sup>167</sup>Eu] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

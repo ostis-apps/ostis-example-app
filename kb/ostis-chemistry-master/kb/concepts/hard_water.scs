@@ -1,0 +1,54 @@
+hard_water
+=> nrel_main_idtf:
+	[hard water](* <-lang_en;; *);
+	[жёсткая вода](* <- lang_ru;; *);
+
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(жёсткая вода)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[<b>Жёсткая вода</b> - <sc_element sys_idtf = "water">вода</sc_element>, с большим содержанием <sc_element sys_idtf = "salt">солей</sc_element>.]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->water;;
+                ->salt;;
+              
+	*);;
+*);
+
+
+//утверждения
+<- rrel_key_sc_element: statement_zhestkost
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(химическая формула, дейтерий-протиевая вода, смесь, молекула, дейтериевая вода, вода)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Различают временную (карбонатную) жёсткость, обусловленную гидрокарбонатами кальция и магния <b>Са(НСО<sub>3</sub>)<sub>2</sub></b>; <b>Mg(НСО<sub>3</sub>)<sub>2</sub></b>, и постоянную (некарбонатную) жёсткость, вызванную присутствием других солей, не выделяющихся при кипячении воды: в основном, сульфатов и хлоридов <b>Са</b> и <b>Mg</b> (<b>CaSO<sup>4</sup>, <b>CaCl<sub>2</sub></b>, <b>MgSO<sub>4</sub></b>, <b>MgCl<sub>2</sub>)</b>.]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	-> rrel_key_sc_element: carbonate;;
+        -> rrel_key_sc_element: salt;;
+        -> rrel_key_sc_element: sulfate;;
+        -> rrel_key_sc_element: chloride;;
+
+	<- rrel_axiom:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);;
+

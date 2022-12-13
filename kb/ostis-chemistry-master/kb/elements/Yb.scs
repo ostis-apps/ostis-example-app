@@ -1,0 +1,101 @@
+elem_Yb
+=> nrel_main_idtf:
+	[ytterbium atom](*<- lang_en;;*);
+	[атом иттербия](*<- lang_ru;;*);
+<- rrel_key_sc_element:
+	Definition_of_ytterbium
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Yb.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
+				
+			*);;
+	*);
+
+<- group_three;
+<- period_six;
+=> nrel_periodic_number: seventy;
+
+<- metal;
+
+<- oxidation_state_plus_three; oxidation_state_plus_two;
+<- valence_three; valence_two;
+
+
+=> nrel_atomic_radius: atomic_radius_of_Yb
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:194(*<- number;;*);;
+	*);;
+*);
+=> nrel_electronegativity: electronegativity_Yb
+			(* <- number;;
+			=> nrel_main_idtf:[1,1](*<-lang_ru;; <- lang_en;;*);;
+			*);
+
+
+=> nrel_covalent_radius: covalent_radius_of_Yb
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:170(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: atomic_mass_of_Yb
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_aem: atomic_mass_Yb;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Yb
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (атом иттербия, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Yb 4f<sup>14</sup>6s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	illustration_of_Yb
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис.(атом иттербия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(ytterbium atom)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/Ytterbium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+atomic_mass_Yb <- number;
+=> nrel_main_idtf:[173,045(10)](*<-lang_ru;; <- lang_en;;*);;
+
+Definition_of_ytterbium
+=> nrel_main_idtf:
+	[Опр.(ytterbium atom)]
+	(* <- lang_ru;;	*);
+	[Def.(атом иттербия)]
+	(* <- lang_en;;	*);;

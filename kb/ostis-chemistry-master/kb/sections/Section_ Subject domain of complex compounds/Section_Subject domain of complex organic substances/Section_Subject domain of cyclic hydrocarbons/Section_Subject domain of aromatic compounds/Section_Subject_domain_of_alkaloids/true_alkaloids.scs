@@ -1,0 +1,34 @@
+true_alkaloids<-sc_node_not_relation;;
+true_alkaloids=> nrel_main_idtf:[истинный алкалоид](* <- lang_ru;; *);;
+true_alkaloids=> nrel_main_idtf:[true alkaloid](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: true_alkaloids;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Истинные алкалоиды -  <b><sc_element sys_idtf="alkaloids">алкалоиды</b></sc_element>, которые образовались от <b><sc_element sys_idtf="amino_acid">аминокислот</b></sc_element> и содержат <b><sc_element sys_idtf="elem_N">азот</b></sc_element> в <b><sc_element sys_idtf="heterocyclic_compound">гетероцикле</b></sc_element>]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (истинный алкалоид)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		heterocyclic_compound;
+		alkaloids;
+		amino_acid
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: true_alkaloids;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Истинные алкалоиды синтезируются преимущественно из растений.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(истинный алкалоид)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: true_alkaloids;;
+	<= nrel_sc_text_translation: ...(*->"file://images/true_alkaloids.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(истинный алкалоид)](*<- lang_ru;;*);;
+*);;

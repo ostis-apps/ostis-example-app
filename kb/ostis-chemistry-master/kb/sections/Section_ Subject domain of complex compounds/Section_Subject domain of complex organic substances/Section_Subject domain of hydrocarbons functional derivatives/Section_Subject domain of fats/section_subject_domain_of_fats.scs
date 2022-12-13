@@ -1,0 +1,10 @@
+section_subject_domain_of_fats
+=> nrel_main_idtf:
+	[Раздел. Предметная область жиров](* <- lang_ru;; *);
+	[Section. Subject domain of fats](* <- lang_en;; *);
+<- not_enough_formed_structure;
+<- atomic_section;;
+section_subject_domain_of_fats = [*^"file://section_subject_domain_of_fats.scsi"*];;
+
+section_subject_domain_of_fats
+-> rrel_key_sc_element: subject_domain_of_fats;;		

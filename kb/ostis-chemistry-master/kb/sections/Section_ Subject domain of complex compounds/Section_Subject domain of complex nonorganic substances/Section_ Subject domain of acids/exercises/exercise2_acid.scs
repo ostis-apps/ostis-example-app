@@ -1,0 +1,24 @@
+exercise2_acid
+<- exercises_acid;
+
+-> rrel_key_sc_element: neutralization_reaction; acid; basis; sulfate; subst_Al;
+
+=> nrel_next_exercise: exercise3_acid;
+
+=> nrel_main_idtf:
+	[Упражнение 2. Раздел. Предметная область кислот]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 2. Section. Subject domain of acids]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise2_acid_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise2_acid_en.html" (* <-lang_en;; *);;
+	*);;

@@ -1,0 +1,78 @@
+subst_Gd
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[gadolinium (substance)](*<- lang_en;;*);
+	[гадолиний (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Gd (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (гадолиний (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Гадолиний (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - мягкий вязкий <sc_element sys_idtf = "metal">металл</sc_element> серебристо-белого <sc_element sys_idtf = "color">цвета</sc_element>.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> metal;;
+		-> color;;
+
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гадолиний (вещество), мягкий вязкий металл серебристо-белого цвета)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Gadolinium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1313 (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:3250 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (гадолиний (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы гадолиния:  <sup>134</sup>Gd, <sup>135</sup>Gd, <sup>136</sup>Gd, <sup>137</sup>Gd, <sup>138</sup>Gd, <sup>139</sup>Gd, <sup>140</sup>Gd, <sup>141</sup>Gd, <sup>142</sup>Gd, <sup>143</sup>Gd, <sup>144</sup>Gd, <sup>145</sup>Gd, <sup>146</sup>Gd, <sup>147</sup>Gd, <sup>148</sup>Gd, <sup>149</sup>Gd, <sup>150</sup>Gd, <sup>151</sup>Gd, <sup>152</sup>Gd, <sup>153</sup>Gd, <sup>154</sup>Gd, <sup>155</sup>Gd, <sup>156</sup>Gd, <sup>157</sup>Gd, <sup>158</sup>Gd, <sup>159</sup>Gd, <sup>160</sup>Gd, <sup>161</sup>Gd, <sup>162</sup>Gd, <sup>163</sup>Gd, <sup>164</sup>Gd, <sup>165</sup>Gd, <sup>166</sup>Gd, <sup>167</sup>Gd, <sup>168</sup>Gd, <sup>169</sup>Gd] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

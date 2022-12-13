@@ -1,0 +1,99 @@
+elem_V
+=> nrel_main_idtf: [атом ванадия] (* <- lang_ru;; *);
+=> nrel_idtf: [V] (* <- lang_en;; *);
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+	Definition_of_vanadium
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/v.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
+	*);
+
+<- group_five;
+<- period_four;
+=> nrel_periodic_number: twenty_three;
+
+<- metal;
+ 
+<= nrel_inclusion: oxidation_state_plus_five;oxidation_state_plus_four;oxidation_state_plus_two;oxidation_state_plus_three;
+<= nrel_inclusion: valence_two;valence_three;valence_four;valence_five;
+
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:one_hundred_thirty_four(*<- number;;*);;
+	*);;
+*);
+=> nrel_electronegativity: electronegativity_V;
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:one_hundred_fifty_three(*<- number;;*);;
+	*);;
+*);
+
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_V;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_V
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (ванадий, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ V 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>3</sup> 4s<sup>2</sup>] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис.(атом ванадия)] (* <- lang_ru;;	*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/vanadium.jpg";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>]	(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+
+Definition_of_vanadium
+=> nrel_main_idtf:
+	[Опр. (ванадий)]
+	(* <- lang_ru;;	*);;
+
+atomic_mass_V <- number;
+=> nrel_main_idtf:[51](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_V <- number;
+=> nrel_main_idtf:[1,63](*<-lang_ru;; <- lang_en;;*);;

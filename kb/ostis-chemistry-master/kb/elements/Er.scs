@@ -1,0 +1,96 @@
+elem_Er
+=> nrel_main_idtf:
+	[erbium atom](*<- lang_en;;*);
+	[атом эрбия](*<- lang_ru;;*);
+<- rrel_key_sc_element:
+	Definition_of_erbium
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Er.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
+				
+			*);;
+	*);
+
+<- group_three;
+<- period_five;
+=> nrel_periodic_number: sixty_eight;
+
+<- metal;
+
+<- oxidation_state_plus_three;
+<- valence_three;
+
+
+=> nrel_atomic_radius: atomic_radius_of_Er
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:178(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_covalent_radius: covalent_radius_of_Er
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:157(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: atomic_mass_of_Er
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_aem: atomic_mass_Er;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Er
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (атом эрбия, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Er 4f<sup>12</sup>6s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	illustration_of_Er
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис.(атом эрбия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(erbium atom)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/Erbium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+atomic_mass_Er <- number;
+=> nrel_main_idtf:[167,259(3)](*<-lang_ru;; <- lang_en;;*);;
+
+Definition_of_erbium
+=> nrel_main_idtf:
+	[Опр.(атом эрбия)]
+	(* <- lang_ru;;	*);
+	[Def.(erbium atom)]
+	(* <- lang_en;;	*);;

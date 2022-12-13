@@ -1,0 +1,57 @@
+subst_metal_P
+<= nrel_inclusion: chemical_substance;
+<- sc_node_not_relation;
+=> nrel_main_idtf: [металлический фосфор] (* <- lang_ru;; *);
+=> nrel_main_idtf: [metal phosphorus] (* <- lang_en;; *);
+=> nrel_idtf: [P4](*<- lang_en;;*);
+
+<- rrel_key_sc_element: definition_of_subst_metal_P
+(* 
+	=> nrel_main_idtf: [Опр.(Металлический фосфор)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество металлический фосфор</b> - это фаза высокого давления, которая образуется из других модификаций фосфора при давлении 83 ГПа, обладающая металлической проводимостью и с плотностью 3,56 г/см^3. При снятии давления фаза не сохраняется и в зависимости от скорости снятия давления образуются <sc_element sys_idtf = "subst_white_P">белый</sc_element> или <sc_element sys_idtf = "subst_black_P">черный</sc_element> фосфор.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> subst_white_P;;
+		-> subst_black_P;;
+	*);;
+*);
+
+<- solid;
+<- color_metal;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(металлический фосфор, твердое вещество)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_metal_P.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [3,56] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;
+
+atomic_multiplicity_four -> (subst_metal_P -> elem_P);;

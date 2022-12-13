@@ -1,0 +1,69 @@
+subst_black_P
+<= nrel_inclusion: chemical_substance;
+<- sc_node_not_relation;
+=> nrel_main_idtf: [черный фосфор] (* <- lang_ru;; *);
+=> nrel_main_idtf: [black phosphorus] (* <- lang_en;; *);
+=> nrel_idtf: [P4](*<- lang_en;;*);
+
+<- rrel_key_sc_element: definition_of_subst_black_P
+(* 
+	=> nrel_main_idtf: [Опр.(Черный фосфор)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество черный фосфор</b> - чёрное <sc_element sys_idtf = "chemical_substance">вещество</sc_element> с металлическим блеском, жирное на ощупь и весьма похожее на графит, и с полностью отсутствующей растворимостью в воде или органических растворителях. </p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_substance;;
+	*);;
+*);
+
+<- solid;
+<- color_black;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(черный фосфор, твердое вещество)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_black_P.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [2,69] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [1000] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;
+
+atomic_multiplicity_four -> (subst_black_P -> elem_P);;

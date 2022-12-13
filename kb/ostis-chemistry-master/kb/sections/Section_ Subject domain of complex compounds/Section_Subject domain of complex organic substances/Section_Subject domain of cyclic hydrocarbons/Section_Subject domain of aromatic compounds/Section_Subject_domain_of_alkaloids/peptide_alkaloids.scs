@@ -1,0 +1,34 @@
+peptide_alkaloids<-sc_node_not_relation;;
+
+peptide_alkaloids=> nrel_main_idtf:[пептидный алкалоид](* <- lang_ru;; *);;
+peptide_alkaloids=> nrel_main_idtf:[peptide alkaloid](* <- lang_en;; *);;
+ 
+definition ->...
+(*
+	->rrel_key_sc_element: peptide_alkaloids;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пептидные алкалоиды -  <b><sc_element sys_idtf="alkaloids">алкалоиды</b></sc_element>, которые содержат в молекуле остаток <b><sc_element sys_idtf="peptide">пептида</b></sc_element>, обычно циклический.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (пептидный алкалоид)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		peptide;
+		alkaloids
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: peptide_alkaloids;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пептидные алкалоиды наиболее распространены в растениях семейства крушиновых (Rhamnaceae),содержатся в листьях, коре, корнях и других частях растений в кол-ве от 0,02 до 1%.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(пептидный алкалоид)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: peptide_alkaloids;;
+	<= nrel_sc_text_translation: ...(*->"file://images/peptide.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(пептидный алкалоид)](*<- lang_ru;;*);;
+*);;

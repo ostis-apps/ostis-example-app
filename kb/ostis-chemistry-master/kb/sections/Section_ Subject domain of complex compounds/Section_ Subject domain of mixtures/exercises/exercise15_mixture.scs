@@ -1,0 +1,24 @@
+exercise15_mixture
+<- exercises_mixture;
+
+-> rrel_key_sc_element: sulfuric_acid; metal; nrel_mass_fraction;
+
+=> nrel_next_exercise: exercise16_mixture;
+
+=> nrel_main_idtf:
+	[Упражнение 15. Раздел. Предметная область смесей]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 15. Section. Subject domain of mixtures]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise15_mixture_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise15_mixture_en.html" (* <-lang_en;; *);;
+	*);;

@@ -1,0 +1,55 @@
+sc_node_not_relation->hydroselenic_acid;;
+
+hydroselenic_acid=> nrel_main_idtf: [селеноводородная кислота](* <- lang_ru;; *);;
+hydroselenic_acid=> nrel_main_idtf: [hydroselenic acid](* <- lang_en;; *);;
+hydroselenic_acid=> nrel_idtf: [H2Se](* <- lang_en;; *);;
+hydroselenic_acid=> nrel_idtf: [селеноводород](* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: hydroselenic_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Селеноводород— неорганическое бинарное соединение водорода и селена с формулой H2Se.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (селеноводородная кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nonorganic_compound;
+		binary_compound;
+		elem_Se;
+		elem_H;
+		chemical_formula
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: hydroselenic_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Селеноводород— самое токсичное соединение селена с опасным периодом воздействия.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(селеноводородная кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		elem_Se;
+		nonorganic_compound;
+		toxin
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: hydroselenic_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/селеноводородная_кислота.png";;*);;
+	=> nrel_main_idtf: [Рисунок(селеноводородная кислота, структурная формула)](*<- lang_ru;;*);;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: hydroselenic_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/селеноводородная_кислота_модель.png";;*);;
+	=> nrel_main_idtf: [Рисунок(селеноводородная кислота, трехмерная модель модекулы)](*<- lang_ru;;*);;
+*);;
+hydroselenic_acid -> hydroselenic_acid_x;;
+inorganic_acid=>nrel_inclusion:hydroselenic_acid;;
+hydroselenic_acid<=nrel_inclusion:oxygen_free_acid;;
+hydroselenic_acid<=nrel_inclusion:dibasic_acid;;
+
+hydroselenic_acid<-rrel_not_maximum_studied_object_class:subject_domain_of_acids;;
+

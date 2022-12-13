@@ -1,0 +1,44 @@
+periodic_law
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[периодический закон]
+	(* <- lang_ru;;	*);
+	[periodic law]
+	(* <- lang_en;;	*);;
+
+periodic_law
+<- rrel_key_sc_element:
+	Definition_of_periodic_law
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/periodic_law.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				atomic_mass
+			};
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Свойства химических элементов, а также формы и свойства образуемых ими простых веществ и соединений находятся в периодической зависимости от величины зарядов ядер их атомов.] (* <-lang_ru;; *);;
+		*);;
+*);;
+	
+
+Definition_of_periodic_law
+=> nrel_main_idtf:
+	[Опр.(Периодический закон)]
+	(* <- lang_ru;;	*);;
+
+

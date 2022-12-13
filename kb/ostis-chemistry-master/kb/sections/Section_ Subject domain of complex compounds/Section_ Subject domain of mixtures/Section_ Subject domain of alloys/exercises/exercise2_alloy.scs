@@ -1,0 +1,24 @@
+exercise2_alloy
+<- exercises_alloy;
+ 
+-> rrel_key_sc_element: alloy; subst_Mg; subst_Zn; subst_O; mixture; product; nrel_mass;  subst_Cl; nrel_mass_fraction;
+
+=> nrel_next_exercise: exercise3_alloy;
+
+=> nrel_main_idtf:
+	[Упражнение 2. Раздел. Предметная область сплавов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 2. Section. Subject domain of alloys]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise2_alloy_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise2_alloy_en.html" (* <-lang_en;; *);;
+	*);;

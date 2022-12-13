@@ -1,0 +1,17 @@
+solar_mass
+=> nrel_main_idtf:
+	[cолнечная масса](* <- lang_ru;; *);
+	[solar mass](* <- lang_en;; *);
+=> nrel_idtf:
+	[масса Солнца](* <- lang_ru;; *);
+	[1,988 92(25)*10^(30) кг](* <- lang_ru;; *);
+	[1,988 92(25)*10^(30) kg](* <- lang_en;; *);
+<- value;
+<= nrel_measurement:...
+(*
+	-> rrel_10_in_30_kg: ...
+	(*
+		<- number;;
+		=> nrel_main_idtf:[1,988](*<-lang_ru;; <- lang_en;;*);;
+	*);;
+*);;

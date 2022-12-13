@@ -1,0 +1,36 @@
+gardening
+=> nrel_main_idtf:
+	[садоводство](* <- lang_ru;; *);
+	[gardening](* <- lang_en;; *);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(садоводство)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Садоводство - отрасль растениеводства, занимающаяся возделыванием многолетних плодовых или ягодных культур и выращиванием декоративных растений.]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->plant_growing;;
+	*);;
+*);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (садоводство)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/gardening.jpg"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

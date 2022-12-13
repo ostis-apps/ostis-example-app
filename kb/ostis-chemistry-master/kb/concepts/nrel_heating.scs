@@ -1,0 +1,35 @@
+nrel_heating
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[нагревание*](* <-lang_ru;; *);
+	[heating*](* <-lang_en;; *);
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+// домены
+=>nrel_second_domain: chemical_substance;
+=>nrel_first_domain: chemical_substance;
+=>nrel_definitional_domain:chemical_substance;
+
+//определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(нагревание*)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Нагревание — искусственный либо естественный процесс повышения температуры тела, либо за счёт внутренней энергии, либо за счёт подведения к нему энергии извне.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->chemical_solid;;
+		->chemical_process;;
+	*);;
+*);;

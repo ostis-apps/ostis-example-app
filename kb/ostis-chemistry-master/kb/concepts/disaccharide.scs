@@ -1,0 +1,97 @@
+disaccharide
+<- sc_node_not_relation;
+<= nrel_inclusion: oligosaccharide;
+
+=> nrel_main_idtf:
+	[дисахарид](* <-lang_ru;; *);
+	[disaccharide](* <- lang_en;; *);
+
+=> nrel_idtf:
+	[biose](* <- lang_en;; *);
+	[double sugar](* <- lang_en;; *);
+
+<= nrel_subdividing: ...
+(*
+	-> reducing_disaccherides;;
+	-> non_reducing_disaccherides;;
+	=> nrel_main_idtf:
+		[Разбиение по признаку способности к восстановлению](*<-lang_ru;;*);
+		[Subdividing by reason of the ability to restore](*<-lang_en;;*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (дисахарид)](* <-lang_ru;; *);
+		[Def. (disaccharide)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:
+			[<b><sc_element sys_idtf  = "disaccharide">Дисахаридами</sc_element></b> называются <sc_element sys_idtf  = "organic_compound">органические соединения</sc_element>, одна из основных групп <sc_element sys_idtf  = "carbohydrate">углеводов</sc_element>.]
+			(*
+				<- lang_ru;; 
+				=> nrel_format: format_html;;
+			*);
+			[<b><sc_element sys_idtf  = "disaccharide">Disaccharides</sc_element></b> are <sc_element sys_idtf  = "organic_compound">organic compounds</sc_element>, one of the main groups of <sc_element sys_idtf  = "carbohydrate">carbohydrates</sc_element>.]
+			(*
+				<- lang_en;; 
+				=> nrel_format: format_html;;
+			*);;
+    *);;
+    <= nrel_using_constants:...
+	(*
+		-> organic_compound;;
+		-> carbohydrate;;
+	*);;
+*);
+
+<- sweet;
+<- solid;
+
+<- rrel_key_sc_element:...
+(*
+	-> rrel_key_sc_element: chemical_substance; water; nrel_optical_activity;;
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (дисахарид, вещество, вода, спирт, оптическая активность, растворимость)](*<- lang_ru;;*);
+		[Expl. (disaccharide, substance, water, alcohol, optical activity*, solubility)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<sc_element sys_idtf  = "disaccharide">Дисахариды</sc_element> — твёрдые, кристаллические <sc_element sys_idtf  = "chemical_substance">вещества</sc_element>, от слегка белого до коричневатого цвета, хорошо растворимые в <sc_element sys_idtf  = "water">воде</sc_element> и в 45 — 48°-градусном спирте, плохо растворимы в 96-градусном спирте, имеют <sc_element sys_idtf  = "nrel_optical_activity">оптическую активность</sc_element>.]
+			(*
+				<- lang_ru;; 
+				=> nrel_format: format_html;;
+			*);
+			[<sc_element sys_idtf  = "disaccharide">Disaccharides</sc_element> are solid, crystalline <sc_element sys_idtf  = "chemical_substance">substances</sc_element>, from slightly white to brownish color, readily soluble in <sc_element sys_idtf  = "water">water</sc_element> and in 45 - 48 ° -gradus alcohol, poorly soluble in 96-degree alcohol, have <sc_element sys_idtf  = "nrel_optical_activity">optical activity</sc_element>.]
+			(*
+				<- lang_en;; 
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	-> rrel_key_sc_element: molecule; monosaccharide; hydroxyl_group;;
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (дисахарид, молекула, моносахарид, гидроксильная группа)](*<- lang_ru;;*);
+		[Expl. (disaccharide, molecule, monosaccharide, hydroxyl group)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<sc_element sys_idtf  = "molecule">Молекулы</sc_element> <sc_element sys_idtf  = "disaccharide">дисахаридов</sc_element> состоят из двух остатков <sc_element sys_idtf  = "monosaccharide">моносахаридов</sc_element>, соединённых друг с другом за счёт взаимодействия <sc_element sys_idtf  = "hydroxyl_group">гидроксильных групп</sc_element>.]
+			(*
+				<- lang_ru;; 
+				=> nrel_format: format_html;;
+			*);
+			[The <sc_element sys_idtf  = "molecule">molecules</sc_element> of <sc_element sys_idtf  = "disaccharide">disaccharides</sc_element> consist of two residues of <sc_element sys_idtf  = "monosaccharide">monosaccharides</sc_element> connected to each other due to the interaction of <sc_element sys_idtf  = "hydroxyl_group">hydroxyl groups</sc_element>.]
+			(*
+				<- lang_en;; 
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+*);;
+

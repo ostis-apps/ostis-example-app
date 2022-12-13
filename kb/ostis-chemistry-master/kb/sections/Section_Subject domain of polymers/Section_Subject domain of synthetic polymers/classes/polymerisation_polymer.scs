@@ -1,0 +1,66 @@
+polymerisation_polymer
+<-sc_node_not_relation;;
+
+polymerisation_polymer=> nrel_main_idtf:[полимеризационный полимер](* <- lang_ru;; *);;
+polymerisation_polymer=> nrel_main_idtf:[polymerisation polymer](* <- lang_en;; *);;
+
+
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: polymerisation_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Полимеризационные полимеры - получают <b><sc_element sys_idtf="nrel_polymerization">полимеризацией</b></sc_element>
+	исходных 
+	с раскрытием кратных связей ненасыщенных 
+	углеводородов и соединением элементарных звеньев <b><sc_element sys_idtf="monomer">мономера</b></sc_element> 
+	в длинные <b><sc_element sys_idtf="chain">цепи</b></sc_element> . 
+	.]
+
+	 
+	 
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (полимеризационный полимер)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+			chain;
+		nrel_polymerization;
+		monomer
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: polymerisation_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[ Полимеризационные полимеры не летучи и не обладают ясно 
+	выраженной температурой <b><sc_element sys_idtf="nrel_melting_temperature">плавления</b></sc_element>;
+	 при <b><sc_element sys_idtf="nrel_heating">нагревании</b></sc_element> они постепенно размягчаются 
+	 и плавятся, а многие <b><sc_element sys_idtf="nrel_decomposition">разлагаются</b></sc_element>
+	  без плавления..]
+	 (*
+	 <-lang_ru;;
+	=>nrel_format:format_html;;
+	 *);;
+	 *);;
+	
+	=> nrel_main_idtf: [Утверждение(полимеризационный полимер)](*<- lang_ru;;*);;
+		=> nrel_using_constants:
+		{
+			nrel_decomposition;
+		nrel_melting_temperature;
+		nrel_heating
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: polymerisation_polymer;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polymerisation_polymer.png";;*);;
+	=> nrel_main_idtf: [Рисунок(полимеризационный полимер)](*<- lang_ru;;*);;
+*);;
+
+	
+	

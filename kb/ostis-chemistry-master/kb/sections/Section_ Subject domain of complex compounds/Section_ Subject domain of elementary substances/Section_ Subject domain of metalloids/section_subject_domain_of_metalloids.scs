@@ -1,0 +1,14 @@
+section_subject_domain_of_metalloids
+=> nrel_main_idtf: 
+	[Раздел. Предметная область полуметаллов]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of metalloids]
+	(* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_metalloids = [*^"file://section_subject_domain_of_metalloids.scsi"*];;
+
+section_subject_domain_of_metalloids
+-> rrel_key_sc_element: subject_domain_of_metalloids;;

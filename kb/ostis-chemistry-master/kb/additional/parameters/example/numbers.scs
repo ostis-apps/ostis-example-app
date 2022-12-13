@@ -1,0 +1,637 @@
+zero 
+	=> nrel_main_idtf:	[0](* <- lang_ru; lang_en;; *);
+	<- number;;
+one
+	=> nrel_main_idtf:	[1](* <- lang_ru; lang_en;; *);
+	<- number;;
+two
+	=> nrel_main_idtf:	[2](* <- lang_ru; lang_en;; *);
+	<- number;;
+three
+	=> nrel_main_idtf:	[3](* <- lang_ru; lang_en;; *);
+	<- number;;
+four
+	=> nrel_main_idtf:	[4](* <- lang_ru; lang_en;; *);
+	<- number;;
+five
+	=> nrel_main_idtf:	[5](* <- lang_ru; lang_en;; *);
+	<- number;;
+six
+	=> nrel_main_idtf:	[6](* <- lang_ru; lang_en;; *);
+	<- number;;
+seven
+	=> nrel_main_idtf:	[7](* <- lang_ru; lang_en;; *);
+	<- number;;
+eight
+	=> nrel_main_idtf:	[8](* <- lang_ru; lang_en;; *);
+	<- number;;
+nine
+	=> nrel_main_idtf:	[9](* <- lang_ru; lang_en;; *);
+	<- number;;
+ten
+	=> nrel_main_idtf:	[10](* <- lang_ru; lang_en;; *);
+	<- number;;
+eleven
+	=> nrel_main_idtf:	[11](* <- lang_ru; lang_en;; *);
+	<- number;;
+twelve
+	=> nrel_main_idtf:	[12](* <- lang_ru; lang_en;; *);
+	<- number;;
+thirteen
+	=> nrel_main_idtf:	[13](* <- lang_ru; lang_en;; *);
+	<- number;;
+fourteen
+	=> nrel_main_idtf:	[14](* <- lang_ru; lang_en;; *);
+	<- number;;
+fifteen
+	=> nrel_main_idtf:	[15](* <- lang_ru; lang_en;; *);
+	<- number;;
+sixteen
+	=> nrel_main_idtf:	[16](* <- lang_ru; lang_en;; *);
+	<- number;;
+seventeen
+	=> nrel_main_idtf:	[17](* <- lang_ru; lang_en;; *);
+	<- number;;
+eighteen
+	=> nrel_main_idtf:	[18](* <- lang_ru; lang_en;; *);
+	<- number;;
+nineteen
+	=> nrel_main_idtf:	[19](* <- lang_ru; lang_en;; *);
+	<- number;;
+twenty
+	=> nrel_main_idtf:	[20](* <- lang_ru; lang_en;; *);
+	<- number;;
+twenty_one
+	=> nrel_main_idtf:	[21](* <- lang_ru; lang_en;; *);
+	<- number;;
+twenty_two
+	=> nrel_main_idtf:	[22](* <- lang_ru; lang_en;; *);
+	<- number;;
+twenty_three
+	=> nrel_main_idtf:	[23](* <- lang_ru; lang_en;; *);
+	<- number;;
+twenty_four
+	=> nrel_main_idtf:	[24](* <- lang_ru; lang_en;; *);
+	<- number;;
+twenty_five
+	=> nrel_main_idtf:	[25](* <- lang_ru; lang_en;; *);
+	<- number;;
+twenty_six
+	=> nrel_main_idtf:	[26](* <- lang_ru; lang_en;; *);
+	<- number;;
+twenty_seven
+	=> nrel_main_idtf:	[27](* <- lang_ru; lang_en;; *);
+	<- number;;
+twenty_eight
+	=> nrel_main_idtf:	[28](* <- lang_ru; lang_en;; *);
+	<- number;;
+twenty_nine
+	=> nrel_main_idtf:	[29](* <- lang_ru; lang_en;; *);
+	<- number;;
+thirty
+	=> nrel_main_idtf:	[30](* <- lang_ru; lang_en;; *);
+	<- number;;
+thirty_one
+	=> nrel_main_idtf:	[31](* <- lang_ru; lang_en;; *);
+	<- number;;
+thirty_two
+	=> nrel_main_idtf:	[32](* <- lang_ru; lang_en;; *);
+	<- number;;
+thirty_three
+	=> nrel_main_idtf:	[33](* <- lang_ru; lang_en;; *);
+	<- number;;
+thirty_four
+	=> nrel_main_idtf:	[34](* <- lang_ru; lang_en;; *);
+	<- number;;
+thirty_five
+	=> nrel_main_idtf:	[35](* <- lang_ru; lang_en;; *);
+	<- number;;
+thirty_six
+	=> nrel_main_idtf:	[36](* <- lang_ru; lang_en;; *);
+	<- number;;
+thirty_seven
+	=> nrel_main_idtf:	[37](* <- lang_ru; lang_en;; *);
+	<- number;;
+thirty_eight
+	=> nrel_main_idtf:	[38](* <- lang_ru; lang_en;; *);
+	<- number;;
+thirty_nine
+	=> nrel_main_idtf:	[39](* <- lang_ru; lang_en;; *);
+	<- number;;
+forty
+	=> nrel_main_idtf:	[40](* <- lang_ru; lang_en;; *);
+	<- number;;
+forty_one
+	=> nrel_main_idtf:	[41](* <- lang_ru; lang_en;; *);
+	<- number;;
+forty_two
+	=> nrel_main_idtf:	[42](* <- lang_ru; lang_en;; *);
+	<- number;;
+forty_three
+	=> nrel_main_idtf:	[43](* <- lang_ru; lang_en;; *);
+	<- number;;
+forty_four
+	=> nrel_main_idtf:	[44](* <- lang_ru; lang_en;; *);
+	<- number;;
+forty_five
+	=> nrel_main_idtf:	[45](* <- lang_ru; lang_en;; *);
+	<- number;;
+forty_six
+	=> nrel_main_idtf:	[46](* <- lang_ru; lang_en;; *);
+	<- number;;
+forty_seven
+	=> nrel_main_idtf:	[47](* <- lang_ru; lang_en;; *);
+	<- number;;
+forty_eight
+	=> nrel_main_idtf:	[48](* <- lang_ru; lang_en;; *);
+	<- number;;
+forty_nine
+	=> nrel_main_idtf:	[49](* <- lang_ru; lang_en;; *);
+	<- number;;
+fifty
+	=> nrel_main_idtf:	[50](* <- lang_ru; lang_en;; *);
+	<- number;;
+fifty_one
+	=> nrel_main_idtf:	[51](* <- lang_ru; lang_en;; *);
+	<- number;;
+fifty_two
+	=> nrel_main_idtf:	[52](* <- lang_ru; lang_en;; *);
+	<- number;;
+fifty_three
+	=> nrel_main_idtf:	[53](* <- lang_ru; lang_en;; *);
+	<- number;;
+fifty_four
+	=> nrel_main_idtf:	[54](* <- lang_ru; lang_en;; *);
+	<- number;;
+fifty_five
+	=> nrel_main_idtf:	[55](* <- lang_ru; lang_en;; *);
+	<- number;;
+fifty_six
+	=> nrel_main_idtf:	[56](* <- lang_ru; lang_en;; *);
+	<- number;;
+fifty_seven
+	=> nrel_main_idtf:	[57](* <- lang_ru; lang_en;; *);
+	<- number;;
+fifty_eight
+	=> nrel_main_idtf:	[58](* <- lang_ru; lang_en;; *);
+	<- number;;
+fifty_nine
+	=> nrel_main_idtf:	[59](* <- lang_ru; lang_en;; *);
+	<- number;;
+sixty
+	=> nrel_main_idtf:	[60](* <- lang_ru; lang_en;; *);
+	<- number;;
+sixty_one
+	=> nrel_main_idtf:	[61](* <- lang_ru; lang_en;; *);
+	<- number;;
+sixty_two
+	=> nrel_main_idtf:	[62](* <- lang_ru; lang_en;; *);
+	<- number;;
+sixty_three
+	=> nrel_main_idtf:	[63](* <- lang_ru; lang_en;; *);
+	<- number;;
+sixty_four
+	=> nrel_main_idtf:	[64](* <- lang_ru; lang_en;; *);
+	<- number;;
+sixty_five
+	=> nrel_main_idtf:	[65](* <- lang_ru; lang_en;; *);
+	<- number;;
+sixty_six
+	=> nrel_main_idtf:	[66](* <- lang_ru; lang_en;; *);
+	<- number;;
+sixty_seven
+	=> nrel_main_idtf:	[67](* <- lang_ru; lang_en;; *);
+	<- number;;
+sixty_eight
+	=> nrel_main_idtf:	[68](* <- lang_ru; lang_en;; *);
+	<- number;;
+sixty_nine
+	=> nrel_main_idtf:	[69](* <- lang_ru; lang_en;; *);
+	<- number;;
+seventy
+	=> nrel_main_idtf:	[70](* <- lang_ru; lang_en;; *);
+	<- number;;
+seventy_one
+	=> nrel_main_idtf:	[71](* <- lang_ru; lang_en;; *);
+	<- number;;
+seventy_two
+	=> nrel_main_idtf:	[72](* <- lang_ru; lang_en;; *);
+	<- number;;
+seventy_three
+	=> nrel_main_idtf:	[73](* <- lang_ru; lang_en;; *);
+	<- number;;
+seventy_four
+	=> nrel_main_idtf:	[74](* <- lang_ru; lang_en;; *);
+	<- number;;
+seventy_five
+	=> nrel_main_idtf:	[75](* <- lang_ru; lang_en;; *);
+	<- number;;
+seventy_six
+	=> nrel_main_idtf:	[76](* <- lang_ru; lang_en;; *);
+	<- number;;
+seventy_seven
+	=> nrel_main_idtf:	[77](* <- lang_ru; lang_en;; *);
+	<- number;;
+seventy_eight
+	=> nrel_main_idtf:	[78](* <- lang_ru; lang_en;; *);
+	<- number;;
+seventy_nine
+	=> nrel_main_idtf:	[79](* <- lang_ru; lang_en;; *);
+	<- number;;
+eighty
+	=> nrel_main_idtf:	[80](* <- lang_ru; lang_en;; *);
+	<- number;;
+eighty_one
+	=> nrel_main_idtf:	[81](* <- lang_ru; lang_en;; *);
+	<- number;;
+eighty_two
+	=> nrel_main_idtf:	[82](* <- lang_ru; lang_en;; *);
+	<- number;;
+eighty_three
+	=> nrel_main_idtf:	[83](* <- lang_ru; lang_en;; *);
+	<- number;;
+eighty_four
+	=> nrel_main_idtf:	[84](* <- lang_ru; lang_en;; *);
+	<- number;;
+eighty_five
+	=> nrel_main_idtf:	[85](* <- lang_ru; lang_en;; *);
+	<- number;;
+eighty_six
+	=> nrel_main_idtf:	[86](* <- lang_ru; lang_en;; *);
+	<- number;;
+eighty_seven
+	=> nrel_main_idtf:	[87](* <- lang_ru; lang_en;; *);
+	<- number;;
+eighty_eight
+	=> nrel_main_idtf:	[88](* <- lang_ru; lang_en;; *);
+	<- number;;
+eighty_nine
+	=> nrel_main_idtf:	[89](* <- lang_ru; lang_en;; *);
+	<- number;;
+ninety
+	=> nrel_main_idtf:	[90](* <- lang_ru; lang_en;; *);
+	<- number;;
+ninety_one
+	=> nrel_main_idtf:	[91](* <- lang_ru; lang_en;; *);
+	<- number;;
+ninety_two
+	=> nrel_main_idtf:	[92](* <- lang_ru; lang_en;; *);
+	<- number;;
+ninety_three
+	=> nrel_main_idtf:	[93](* <- lang_ru; lang_en;; *);
+	<- number;;
+ninety_four
+	=> nrel_main_idtf:	[94](* <- lang_ru; lang_en;; *);
+	<- number;;
+ninety_five
+	=> nrel_main_idtf:	[95](* <- lang_ru; lang_en;; *);
+	<- number;;
+ninety_six
+	=> nrel_main_idtf:	[96](* <- lang_ru; lang_en;; *);
+	<- number;;
+ninety_seven
+	=> nrel_main_idtf:	[97](* <- lang_ru; lang_en;; *);
+	<- number;;
+ninety_eight
+	=> nrel_main_idtf:	[98](* <- lang_ru; lang_en;; *);
+	<- number;;
+ninety_nine
+	=> nrel_main_idtf:	[99](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred
+	=> nrel_main_idtf:	[100](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_and_one
+	=> nrel_main_idtf:	[101](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_and_two
+	=> nrel_main_idtf:	[102](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_and_three
+	=> nrel_main_idtf:	[103](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_and_four
+	=> nrel_main_idtf:	[104](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_and_five
+	=> nrel_main_idtf:	[105](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_and_six
+	=> nrel_main_idtf:	[106](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_and_seven
+	=> nrel_main_idtf:	[107](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_and_eight
+	=> nrel_main_idtf:	[108](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_and_nine
+	=> nrel_main_idtf:	[109](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_and_ten
+	=> nrel_main_idtf:	[110](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_and_eleven
+	=> nrel_main_idtf:	[111](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_and_twelve
+	=> nrel_main_idtf:	[112](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_and_thirteen
+	=> nrel_main_idtf:	[113](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_and_fourteen
+	=> nrel_main_idtf:	[114](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_and_fifteen
+	=> nrel_main_idtf:	[115](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_and_sixteen
+	=> nrel_main_idtf:	[116](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_and_seventeen
+	=> nrel_main_idtf:	[117](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_and_eighteen
+	=> nrel_main_idtf:	[118](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_and_nineteen
+	=> nrel_main_idtf:	[119](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_and_twenty
+	=> nrel_main_idtf:	[120](* <- lang_ru; lang_en;; *);
+	<- number;;
+
+one_hundred_twenty_two
+	=> nrel_main_idtf:	[122](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_twenty_three
+	=> nrel_main_idtf:	[123](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_twenty_four
+	=> nrel_main_idtf:	[124](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_twenty_five
+	=> nrel_main_idtf:	[125](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_twenty_six
+	=> nrel_main_idtf:	[126](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_twenty_seven
+	=> nrel_main_idtf:	[127](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_thirty
+	=> nrel_main_idtf:	[130](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_thirty_two
+	=> nrel_main_idtf:	[132](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_thirty_four
+	=> nrel_main_idtf:	[134](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_thirty_five
+	=> nrel_main_idtf:	[135](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_thirty_six
+	=> nrel_main_idtf:	[136](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_thirty_eight
+	=> nrel_main_idtf:	[138](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_thirty_nine
+	=> nrel_main_idtf:	[139](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_fourty
+	=> nrel_main_idtf:	[140](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_fourty_one
+	=> nrel_main_idtf:	[141](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_fourty_five
+	=> nrel_main_idtf:	[145](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_fourty_six
+	=> nrel_main_idtf:	[146](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_fourty_seven
+	=> nrel_main_idtf:	[147](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_fourty_nine
+	=> nrel_main_idtf:	[149](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_fifty_three
+	=> nrel_main_idtf:	[153](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_sixty
+	=> nrel_main_idtf:	[160](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_sixty_two
+	=> nrel_main_idtf:	[162](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_sixty_four
+	=> nrel_main_idtf:	[164](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_seventy
+	=> nrel_main_idtf:	[170](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_seventy_one
+	=> nrel_main_idtf:	[171](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_seventy_seven
+	=> nrel_main_idtf:	[177](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_eighty
+	=> nrel_main_idtf:	[180](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_eighty_one
+	=> nrel_main_idtf:	[181](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_eighty_two
+	=> nrel_main_idtf:	[182](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_eighty_four
+	=> nrel_main_idtf:	[184](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_ninety
+	=> nrel_main_idtf:	[190](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_ninety_four
+	=> nrel_main_idtf:	[194](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_ninety_five
+	=> nrel_main_idtf:	[195](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_ninety_six
+	=> nrel_main_idtf:	[196](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_hundred_ninety_eight
+	=> nrel_main_idtf:	[198](* <- lang_ru; lang_en;; *);
+	<- number;;
+
+two_hundred_six
+	=> nrel_main_idtf:	[206](* <- lang_ru; lang_en;; *);
+	<- number;;
+two_hundred_fifteen
+	=> nrel_main_idtf:	[215](* <- lang_ru; lang_en;; *);
+	<- number;;
+two_hundred_thirty_two
+	=> nrel_main_idtf:	[232](* <- lang_ru; lang_en;; *);
+	<- number;;
+
+
+three_hundred_four
+	=> nrel_main_idtf:	[304](* <- lang_ru; lang_en;; *);
+	<- number;;
+
+four_hundred_fifty
+	=> nrel_main_idtf:	[450](* <- lang_ru; lang_en;; *);
+	<- number;;
+
+six_hundred_and_sixty
+	=> nrel_main_idtf:	[660](* <- lang_ru; lang_en;; *);
+	<- number;;
+six_hundred_eighty_eight
+	=> nrel_main_idtf:	[688](* <- lang_ru; lang_en;; *);
+	<- number;;
+
+seven_hundred_twenty_nine
+	=> nrel_main_idtf:	[729](* <- lang_ru; lang_en;; *);
+	<- number;;
+seven_hundred_sixty_nine
+	=> nrel_main_idtf:	[769](* <- lang_ru; lang_en;; *);
+	<- number;;
+seven_hundred_seventy_four
+	=> nrel_main_idtf:	[774](* <- lang_ru; lang_en;; *);
+	<- number;;
+
+eight_hundred_eighty_three
+	=> nrel_main_idtf:	[883](* <- lang_ru; lang_en;; *);
+	<- number;;
+
+nine_hundred_thirty_seven
+	=> nrel_main_idtf:	[937](* <- lang_ru; lang_en;; *);
+	<- number;;
+nine_hundred_sixty_two
+	=> nrel_main_idtf:	[962](* <- lang_ru; lang_en;; *);
+	<- number;;
+nine_hundred_ninety
+	=> nrel_main_idtf:	[990](* <- lang_ru; lang_en;; *);
+	<- number;;
+
+one_thousand_and_forty_seven
+	=> nrel_main_idtf:	[1047](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_thousand_and_sixty_four
+	=> nrel_main_idtf:	[1064](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_thousand_and_seventy_seven
+	=> nrel_main_idtf:	[1077](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_thousand_one_hundred_thirty_two
+	=> nrel_main_idtf:	[1132](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_thousand_one_hundred_seventy_six
+	=> nrel_main_idtf:	[1176](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_thousand_three_hundred_fourty
+	=> nrel_main_idtf:	[1340](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_thousand_three_hundred_and_fifty_six
+	=> nrel_main_idtf:	[1356](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_thousand_three_hundred_and_eighty_four
+	=> nrel_main_idtf:	[1384](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_thousand_four_hundred_and_fifty
+	=> nrel_main_idtf:	[1415](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_thousand_four_hundred_seventy_three
+	=> nrel_main_idtf:	[1473](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_thousand_five_hundred_fourty_five
+	=> nrel_main_idtf:	[1545](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_thousand_five_hundred_sixty_four
+	=> nrel_main_idtf:	[1564](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_thousand_six_hundred_and_thirty_seven
+	=> nrel_main_idtf:	[1637](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_thousand_six_hundred_sixty
+	=> nrel_main_idtf:	[1660](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_thousand_seven_hundred_fifty_five
+	=> nrel_main_idtf:	[1755](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_thousand_seven_hundred_and_eighty_nine
+	=> nrel_main_idtf:	[1789](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_thousand_eight_hundred_eighty_seven
+	=> nrel_main_idtf:	[1887](* <- lang_ru; lang_en;; *);
+	<- number;;
+one_thousand_nine_hundred_fourty_seven
+	=> nrel_main_idtf:	[1947](* <- lang_ru; lang_en;; *);
+	<- number;;
+
+two_hundred_and_seventy_one
+	=> nrel_main_idtf:	[2071](* <- lang_ru; lang_en;; *);
+	<- number;;
+two_thousand_one_hundred_and_fifty_seven
+	=> nrel_main_idtf:	[2157](* <- lang_ru; lang_en;; *);
+	<- number;;
+two_thousand_one_hundred_sixty_two
+	=> nrel_main_idtf:	[2162](* <- lang_ru; lang_en;; *);
+	<- number;;
+two_thousand_two_hundred_and_four
+	=> nrel_main_idtf:	[2204](* <- lang_ru; lang_en;; *);
+	<- number;;
+two_thousand_three_hundred_and_fifty
+	=> nrel_main_idtf:	[2350](* <- lang_ru; lang_en;; *);
+	<- number;;
+two_thousand_six_hundred
+	=> nrel_main_idtf:	[2600](* <- lang_ru; lang_en;; *);
+	<- number;;
+two_thousand_eight_hundred_and_thirty
+	=> nrel_main_idtf:	[2830](* <- lang_ru; lang_en;; *);
+	<- number;;
+two_thousand_eight_hundred_and_fifty_six
+	=> nrel_main_idtf:	[2856](* <- lang_ru; lang_en;; *);
+	<- number;;
+
+three_thousand_and_seventeen
+	=> nrel_main_idtf:	[3017](* <- lang_ru; lang_en;; *);
+	<- number;;
+three_thousand_and_twenty_three
+	=> nrel_main_idtf:	[3023](* <- lang_ru; lang_en;; *);
+	<- number;;
+three_thousand_one_hundred_ninety_seven
+	=> nrel_main_idtf:	[3197](* <- lang_ru; lang_en;; *);
+	<- number;;
+three_thousand_two_hundred_and_eighty_seven
+	=> nrel_main_idtf:	[3287](* <- lang_ru; lang_en;; *);
+	<- number;;
+three_thousand_three_hundred_and_seventy_seven
+	=> nrel_main_idtf:	[3377](* <- lang_ru; lang_en;; *);
+	<- number;;
+three_thousand_four_hundred_and_twenty_two
+	=> nrel_main_idtf:	[3422](* <- lang_ru; lang_en;; *);
+	<- number;;
+three_thousand_seven_hundred_and_fourty_five
+	=> nrel_main_idtf:	[3745](* <- lang_ru; lang_en;; *);
+	<- number;;
+
+four_thousand_seven_hundred_and_eighty_seven
+	=> nrel_main_idtf:	[4787](* <- lang_ru; lang_en;; *);
+	<- number;;
+four_thousand_two_hundred_and_sixty_five
+	=> nrel_main_idtf:	[4265](* <- lang_ru; lang_en;; *);
+	<- number;;
+
+
+
+five_thousand_four_hundred_fifty_eight
+	=> nrel_main_idtf:	[5458](* <- lang_ru; lang_en;; *);
+	<- number;;
+five_thousand_five_hundred_and_fifty_five
+	=> nrel_main_idtf:	[5555](* <- lang_ru; lang_en;; *);
+	<- number;;

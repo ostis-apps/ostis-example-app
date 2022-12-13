@@ -1,0 +1,71 @@
+nrel_psychotropic_effect<-sc_node_norole_relation;;
+
+nrel_psychotropic_effect=> nrel_main_idtf:[психотропное действие*](* <- lang_ru;; *);;
+nrel_psychotropic_effect=> nrel_main_idtf:[psychotropic effect*](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: nrel_psychotropic_effect;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Психотропное действие - это действие, которое влияет на функционирование центральной нервной системы, приводя к изменению психического состояния]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (психотропное действие*)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{ 
+		action
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:nrel_psychotropic_effect ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Существуют <b><sc_element sys_idtf="medicine">лекарственные средства</b></sc_element>, вызывающие психотропное действие, которые называются психотропными препаратами или психостимуляторами ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(психотропное действие*)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{ 
+		medicine
+		};;
+*);;
+
+
+
+action->hallucination;;
+hallucination<=nrel_psychotropic_effect:clonidine;;
+
+
+oriented_relation -> nrel_psychotropic_effect;;
+norole_relation-> nrel_psychotropic_effect;;
+ 
+antireflexive_relation -> nrel_psychotropic_effect;; 
+antitransitive_relation -> nrel_psychotropic_effect;;
+antisymmetric_relation -> nrel_psychotropic_effect;;
+
+
+nrel_psychotropic_effect => nrel_first_domain: chemical_substance;;
+nrel_psychotropic_effect=> nrel_second_domain: action;;
+nrel_psychotropic_effect =>nrel_definitional_domain: ...(* 
+<=nrel_combination: 
+{ 
+chemical_substance; 
+action 
+};; 
+*);; 
+
+arity_2->nrel_psychotropic_effect;;
+
+
+
+hallucination=> nrel_main_idtf:[галлюцинация](* <- lang_ru;; *);;
+hallucination=> nrel_main_idtf:[hallucination](* <- lang_en;; *);;
+
+
+

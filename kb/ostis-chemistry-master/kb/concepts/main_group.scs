@@ -1,0 +1,34 @@
+main_group<= nrel_inclusion: nrel_group;;
+main_group
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[главная группа]
+	(* <- lang_ru;;	*);
+	[main group]
+	(* <- lang_en;;	*);;
+
+main_group
+<- rrel_key_sc_element:
+	Definition_of_main_group
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/main_group.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				group;
+				period
+			};;
+
+	
+
+Definition_of_main_group
+=> nrel_main_idtf:
+	[Опр.(Главная группа)]
+	(* <- lang_ru;;	*);;
+

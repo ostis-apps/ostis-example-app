@@ -1,0 +1,92 @@
+codeine<-sc_node_not_relation;;
+codeine=> nrel_main_idtf:[кодеин](* <- lang_ru;; *);;
+codeine=> nrel_main_idtf:[codeine](* <- lang_en;; *);;
+codeine=> nrel_idtf:[(5-α, 6-α)-7,8-дидегидро-4,5-эпокси-3-метокси-17-метилморфинан-6-ол](* <- lang_ru;; *);;
+codeine=> nrel_idtf:[C18H21NO3](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: codeine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Кодеин — <b><sc_element sys_idtf="true_alkaloids">истинный алкалоид</b></sc_element> опиума, используется как противокашлевое <b><sc_element sys_idtf="medicine">лекарственное средство</b></sc_element> центрального действия, обычно в сочетании с другими]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (кодеин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		true_alkaloids;
+		medicine
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: codeine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://codeine2.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(кодеин,фармакологический эффект*)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: codeine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://codeine.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(кодеин,побочный эффект*)](*<- lang_ru;;*);;
+	
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:codeine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/codeine.png";;*);;
+	=> nrel_main_idtf: [Рисунок(кодеин,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: codeine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/codeine2.png";;*);;
+	=> nrel_main_idtf: [Рисунок(кодеин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+
+solid_matter=>nrel_inclusion:codeine;;
+true_alkaloids=>nrel_inclusion:codeine;;
+analgesic=>nrel_inclusion:codeine;;
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> codeine;;
+	=> nrel_measurement_in_gramms_per_mole: [299,364]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+drag_half_life->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->codeine;;
+	=> nrel_measurement_in_degrees_Celsius: [2,5]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+
+
+

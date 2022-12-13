@@ -1,0 +1,122 @@
+polyvinyl_alcohol<-sc_node_not_relation;;
+polyvinyl_alcohol=> nrel_main_idtf:[поливиниловый спирт](* <- lang_ru;; *);;
+polyvinyl_alcohol=> nrel_main_idtf:[polyvinyl_alcohol](* <- lang_en;; *);;
+polyvinyl_alcohol=> nrel_idtf:[ Poly(Ethenol)](* <- lang_en;; *);;
+polyvinyl_alcohol=> nrel_idtf:[(C2H4O)x](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: polyvinyl_alcohol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Поливиниловый спирт(ПВС) — искусственный, водорастворимый, <b><sc_element sys_idtf="thermoplastic_polymer">термопластичный</b></sc_element>
+	<b><sc_element sys_idtf="polymer">полимер</b></sc_element>.]
+		(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (поливиниловый спирт)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		thermoplastic_polymer;
+		polymer
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: polyvinyl_alcohol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Синтез поливинилового спирта осуществляется реакцией 
+	щелочного/кислотного <b><sc_element sys_idtf="polymer">гидролиза</b></sc_element> или  <b><sc_element sys_idtf="nrel_alcoholysis">алкоголиза</b></sc_element>  
+	 сложных <b><sc_element sys_idtf="polyester">поливиниловых эфиров</b></sc_element>.]
+	
+	  
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(поливиниловый спирт,синтез)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nrel_hydrolysis;
+		nrel_alcoholysis;
+		polyester
+		};;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:polyvinyl_alcohol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Центры разветвленности являются наиболее слабыми местами полимерной цепи поливинилового спирта
+	 и именно по ним происходит <b><sc_element sys_idtf="nrel_breaking_ties">разрыв связей</b></sc_element>
+	  цепи при реакции омыления и, как следствие, уменьшение<b><sc_element sys_idtf="molecular_mass"> молекулярной массы </b></sc_element>
+	   <b><sc_element sys_idtf="polymer">полимера</b></sc_element>.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(поливиниловый спирт, разрыв связей)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nrel_breaking_ties;
+		molecular_mass;
+		polymer
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyvinyl_alcohol;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyvinyl_alcohol_1.png";;*);;
+	=> nrel_main_idtf: [Рисунок(поливиниловый спирт,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyvinyl_alcohol;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyvinyl_alcohol_1_3d.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(поливиниловый спирт,пример)](*<- lang_ru;;*);;
+*);;
+
+
+thermoplastic_polymer=>nrel_inclusion:polyvinyl_alcohol;;
+polycondensation_polymer=>nrel_inclusion:polyvinyl_alcohol;;
+rrel_liquid_solvent=>nrel_inclusion:polyvinyl_alcohol;;
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> polyvinyl_alcohol;;
+	=> rrel_mol: [1500]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyvinyl_alcohol;;
+	=> rrel_degree_celsius: 200
+	(*
+		<-number;;
+	*);;
+*);;
+
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyvinyl_alcohol;;
+	=> rrel_gram_per_cubic_cm:1.19
+	(*
+		<-number;;
+	*);;
+*);;
+
+

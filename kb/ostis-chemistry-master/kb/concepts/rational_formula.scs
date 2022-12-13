@@ -1,0 +1,38 @@
+rational_formula <= nrel_inclusion: chemical_formula;;
+rational_formula
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[рациональная формула]
+	(* <- lang_ru;;	*);
+	[rational formula]
+	(* <- lang_en;;	*);;
+rational_formula
+<- rrel_key_sc_element:
+	Definition_of_rational_formula
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/rational_formula.html" (* <-lang_ru;; *);;
+		*);;
+	*);
+<= nrel_using_constants:
+			{
+				atom;
+				chemical_compound
+			};;
+	
+	
+
+Definition_of_rational_formula
+=> nrel_main_idtf:
+	[Опр.(рациональная формула)]
+	(* <- lang_ru;;	*);;
+
+
+
+
+
+
+

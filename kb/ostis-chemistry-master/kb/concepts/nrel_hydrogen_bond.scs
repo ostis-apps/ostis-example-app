@@ -1,0 +1,38 @@
+nrel_hydrogen_bond
+<- sc_node_norole_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_main_idtf:
+	[hydrogen bond*](*<- lang_en;;*);
+	[водородная связь*](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Def. (hydrogen bond*)](*<- lang_en;;*);;
+	=> nrel_main_idtf: [Опр. (водородная связь*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			"file://html/hydrogen_bond rus.html"(*<- lang_ru;;*);
+			"file://html/hydrogen_bond eng.html"(*<- lang_en;;*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> molecule;;
+		-> elem_H;;
+		-> atom;;
+		-> elem_O;;
+		-> elem_N;;
+		-> elem_F;;
+		-> chemical_substance;;
+		-> water;;
+	*);;
+*);
+
+=> nrel_first_domain: atom;
+=> nrel_second_domain: atom;
+=> nrel_definitional_domain: atom;;

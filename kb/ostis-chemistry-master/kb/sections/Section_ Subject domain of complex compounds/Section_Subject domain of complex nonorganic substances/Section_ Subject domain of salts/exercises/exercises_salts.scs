@@ -1,0 +1,9 @@
+exercises_salts
+<= nrel_exercises: section_subject_domain_of_salts;
+
+=> nrel_main_idtf:
+	[Множество упражнений раздела предметной области солей]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Set of exercises. Section of subject domain of salts]
+	(* <- lang_en;; *);;

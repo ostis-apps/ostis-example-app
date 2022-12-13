@@ -1,0 +1,138 @@
+thermoplastic_elastomer<-sc_node_not_relation;;
+thermoplastic_elastomer=> nrel_main_idtf:[термоэластопласт](* <- lang_ru;; *);;
+thermoplastic_elastomer=> nrel_main_idtf:[thermoplastic_elastomer](* <- lang_en;; *);;
+thermoplastic_elastomer=> nrel_idtf:[ poly(1,1,2,2-tetrafluoroethylene)​](* <- lang_en;; *);;
+thermoplastic_elastomer=> nrel_idtf:[C2F4](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: thermoplastic_elastomer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Термоэластопласт - это 
+	<b><sc_element sys_idtf="synthetic_polymer">полимер синтетического происхождения</b></sc_element>, который при невысокой 
+	<b><sc_element sys_idtf="temperature">температуре</b></sc_element> может
+	 обладать свойствами <b><sc_element sys_idtf="rubber">резины</b></sc_element>
+	 , а при высокой <b><sc_element sys_idtf="temperature">температуре</b></sc_element>
+	  становится размягченным, как термопласт.]
+	  
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (термоэластопласт)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+			rubber;
+			temperature;
+		synthetic_polymer
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: thermoplastic_elastomer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Из этого материала 
+	<b><sc_element sys_idtf="synthetic_polymer">(полимера)</b></sc_element> 
+	делают и подошву для обуви (обувь с такой подошвой, долговечная, прочная, удобная за счёт гибкости подошвы, 
+	причём эластичность сохраняется даже при экстремально низких <b><sc_element sys_idtf="temperature">температурах</b></sc_element>, 
+	-50-т и даже ниже), корпусы различной бытовой техники и прочее..]
+	 
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(термоэластопласт, широко применяется)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		synthetic_polymer;
+		temperature
+		};;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:thermoplastic_elastomer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Из термоэластопластов делают различные уплотнители, 
+	которые обладают высокой <b><sc_element sys_idtf="alloy_hardening">прочностью</b></sc_element>
+	, эластичностью и морозоустойчивостью. Этот материал безопасен и долговечен ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(термоэластопласт, безопасен и долговечен)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		synthetic_polymer;
+		alloy_hardening
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:thermoplastic_elastomer;;
+	<= nrel_sc_text_translation: ...(*->"file://image/thermoplastic_elastomer_formula.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(термоэластопласт, виды)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:thermoplastic_elastomer;;
+	<= nrel_sc_text_translation: ...(*->"file://image/thermoplastic_elastomer_3d.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(термоэластопласт, пример)](*<- lang_ru;;*);;
+*);;
+
+
+thermoplastic_polymer=>nrel_inclusion:thermoplastic_elastomer;;
+homo_chain_polymer=>nrel_inclusion:thermoplastic_elastomer;;
+artificial_polymers=>nrel_inclusion:thermoplastic_elastomer;;
+thermosetting_polymer=>nrel_inclusion:thermoplastic_elastomer;;
+
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> thermoplastic_elastomer;;
+	=> rrel_mol: [23000]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->thermoplastic_elastomer;;
+	=> rrel_degree_celsius: 189
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->thermoplastic_elastomer;;
+	=> rrel_joule_per_kelvin_and_mole: 0.4
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->thermoplastic_elastomer;;
+	=> rrel_gram_per_cubic_cm: 2.7
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+

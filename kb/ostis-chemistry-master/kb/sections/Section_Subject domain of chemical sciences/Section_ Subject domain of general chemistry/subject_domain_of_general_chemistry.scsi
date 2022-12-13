@@ -1,0 +1,48 @@
+subject_domain_of_general_chemistry
+  => nrel_main_idtf:
+    [Предметная область общей химии] (* <- lang_ru;;*);
+    [Subject domain of general chemistry] (* <- lang_en;; *);
+
+  <- subject_domain;
+  -> rrel_maximum_studied_object_class: general_chemistry;;
+
+general_chemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [общая химия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [general chemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (общая химия)] (* <- lang_ru;; *);
+      [Def. (general chemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [О́бщая химия — курс химии в ВУЗах и в средних школах, изучаемый в 8-11 классах, представляющий собой совокупность ряда разделов неорганической, органической, физической, аналитической химии, а также других направлений химической науки.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (общая химия)](* <- lang_ru;; *);
+      [Stat. (general chemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Общая химия обычно включает информацию о химических и физических свойствах важнейших неорганических, органических веществ, основные сведения о теории строения вещества, элементы химической термодинамики и кинетики, учение о растворах, сведения о закономерности органического синтеза, основы физикохимического анализа веществ и др.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (общая химия)](* <- lang_ru;; *);
+      [Pic. (general chemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/general_chemistry.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;

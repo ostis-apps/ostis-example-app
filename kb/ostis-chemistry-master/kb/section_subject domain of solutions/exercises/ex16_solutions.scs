@@ -1,0 +1,24 @@
+ex16_solutions
+<- exercises_solutions;
+
+-> rrel_key_sc_element: sulfate; subst_Fe; nrel_mass; subst_NaOH; chemical_substance; solution;
+
+=> nrel_next_exercise: ex17_solutions;
+
+=> nrel_main_idtf:
+	[Упражнение 16. Раздел. Предметная область растворов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 16. Section. Subject domain of solutions]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex16_solutions_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex16_solutions_en.html" (* <-lang_en;; *);;
+	*);;

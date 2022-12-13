@@ -1,0 +1,564 @@
+ionizing_radiation
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[ионизирующее излучение](* <- lang_ru;; *);;
+electron_capture
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[захват электрона](* <- lang_ru;; *);;
+rocket_technology
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[ракетная техника](* <- lang_ru;; *);;
+space_technology
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[космическая техника](* <- lang_ru;; *);;
+cryogenic_equipment <- sc_node_not_relation;
+	=> nrel_main_idtf:[криогенная техника](* <- lang_ru;; *);;
+
+breathing_mixture <- sc_node_not_relation;
+	=> nrel_main_idtf:[дыхательная смесь](* <- lang_ru;; *);;
+
+welding <- sc_node_not_relation;
+	=> nrel_main_idtf:[сварка](* <- lang_ru;; *);;
+
+ocean <- sc_node_not_relation;
+	=> nrel_main_idtf:[океан](* <- lang_ru;; *);;
+sea <- sc_node_not_relation;
+	=> nrel_main_idtf:[море](* <- lang_ru;; *);;
+lake <- sc_node_not_relation;
+	=> nrel_main_idtf:[озеро](* <- lang_ru;; *);;
+river <- sc_node_not_relation;
+	=> nrel_main_idtf:[река](* <- lang_ru;; *);;
+ice <- sc_node_not_relation;
+	=> nrel_main_idtf:[лёд](* <- lang_ru;; *);;
+groundwater <- sc_node_not_relation;
+	=> nrel_main_idtf:[грунтовые воды](* <- lang_ru;; *);;
+precipitation <- sc_node_not_relation;
+	=> nrel_main_idtf:[осадки](* <- lang_ru;; *);;
+gas_nebula=> nrel_main_idtf:
+	[газовая туманность](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+solar_atmosphere=> nrel_main_idtf:
+	[солнечная атмосфера](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+hydrosphere=> nrel_main_idtf:
+	[гидросфера](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+heating_element=> nrel_main_idtf:
+	[нагревательный элемент](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+incandescent_lamp=> nrel_main_idtf:
+	[лампа накаливания](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+cryotherapy=> nrel_main_idtf:
+	[криотерапия](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+earths_crust=> nrel_main_idtf:
+	[земная кора](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+magnets_manufacture=> nrel_main_idtf:
+	[производство магнитов](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+dielectric=> nrel_main_idtf:
+	[диэлектрик](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+neodymium_glass=> nrel_main_idtf:
+	[неодимовое стекло](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+atmosphere=> nrel_main_idtf:
+	[атмосфера](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+cell=> nrel_main_idtf:
+	[клетка](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+signal_lamp=> nrel_main_idtf:
+	[сигнальная лампа](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+photocell=> nrel_main_idtf:
+	[фотоэлемент](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+rectifier=> nrel_main_idtf:
+	[выпрямитель](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+gas_laser=> nrel_main_idtf:
+	[газовый лазер](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+advertising=> nrel_main_idtf:
+	[реклама](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+chalcophile=> nrel_main_idtf:
+	[халькофил](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+tissue=> nrel_main_idtf:
+	[ткань](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+skin=> nrel_main_idtf:
+	[кожа](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+erythrocyte=> nrel_main_idtf:
+	[эритроцит](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+leukocyte=> nrel_main_idtf:
+	[лейкоцит](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+muscle=> nrel_main_idtf:
+	[мышца](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+liver=> nrel_main_idtf:
+	[печень](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+pancreas=> nrel_main_idtf:
+	[поджелудочная железа](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+metabolism=> nrel_main_idtf:
+	[обмен веществ](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+immunity=> nrel_main_idtf:
+	[иммунитет](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+hormones_functioning=> nrel_main_idtf:
+	[функционирование гормонов](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+exchange_process=> nrel_main_idtf:
+	[обменный процесс](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+regeneration=> nrel_main_idtf:
+	[регенерация](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+reproduction=> nrel_main_idtf:
+	[репродукция](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+cell_division=> nrel_main_idtf:
+	[деление клетки](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+cell_growth=> nrel_main_idtf:
+	[рост клетки](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+receptors_functioning=> nrel_main_idtf:
+	[функционирование рецепторов](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+normal_evolution=> nrel_main_idtf:
+	[нормальное развитие](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+enzymatic_reaction=> nrel_main_idtf:
+	[ферментативная реакция](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+contact_dermatitis=> nrel_main_idtf:
+	[аллергия](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+lowering_of_blood_pressure=> nrel_main_idtf:
+	[снижение давления](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+vitiligo=> nrel_main_idtf:
+	[витилиго](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+cornified_tissue=> nrel_main_idtf:
+	[ороговевшая ткань](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+endemic=> nrel_main_idtf:
+	[эндемическое заболевание](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+parathyroid=> nrel_main_idtf:
+	[околощитовидная железа](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+narcotic_effect=> nrel_main_idtf:
+	[наркотический эффект](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+neurological_high_pressure_syndrome=> nrel_main_idtf:
+	[синдром повышенного давления](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+blood_plasma=> nrel_main_idtf:
+	[плазма крови](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+atomic_hydrogen_welding=> nrel_main_idtf:
+	[сварка атомарным водородом](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+coal => nrel_main_idtf:[уголь](*<-lang_ru;;*);;
+graphite => nrel_main_idtf:[графит](*<-lang_ru;;*);;
+paint => nrel_main_idtf:[краска](*<-lang_ru;;*);;
+pen => nrel_main_idtf:[ручка](*<-lang_ru;;*);;
+table => nrel_main_idtf:[стол](*<-lang_ru;;*);;
+rubber => nrel_main_idtf:[резина](*<-lang_ru;;*);;
+paper => nrel_main_idtf:[бумага](*<-lang_ru;;*);;
+carbonated_water => nrel_main_idtf:[газированная вода](*<-lang_ru;;*);;
+soap => nrel_main_idtf:[мыло](*<-lang_ru;;*);;
+wood => nrel_main_idtf:[древесина](*<-lang_ru;;*);;
+lead => nrel_main_idtf:[грифель](*<-lang_ru;;*);;
+ink => nrel_main_idtf:[чернила](*<-lang_ru;;*);;
+polymer => nrel_main_idtf:[полимер](*<-lang_ru;;*);;
+caoutchouc => nrel_main_idtf:[каучук](*<-lang_ru;;*);;
+vulcanizing_agent => nrel_main_idtf:[вулканизирующий агент](*<-lang_ru;;*);;
+vulcanization_accelerator => nrel_main_idtf:[ускоритель вулканизации](*<-lang_ru;;*);;
+activator => nrel_main_idtf:[активатор](*<-lang_ru;;*);;
+antioxidant => nrel_main_idtf:[противостаритель](*<-lang_ru;;*);;
+active_filler => nrel_main_idtf:[активный наполнитель](*<-lang_ru;;*);;
+inactive_filler => nrel_main_idtf:[неактивный наполнитель](*<-lang_ru;;*);;
+dye => nrel_main_idtf:[краситель](*<-lang_ru;;*);;
+caffeine => nrel_main_idtf:[кофеин](*<-lang_ru;;*);;
+cyclamate => nrel_main_idtf:[цикломат](*<-lang_ru;;*);;
+structurant => nrel_main_idtf:[структурообразователь](*<-lang_ru;;*);;
+solvent => nrel_main_idtf:[сольвент](*<-lang_ru;;*);;
+stabilizer => nrel_main_idtf:[стабилизатор](*<-lang_ru;;*);;
+antibacterial_agent => nrel_main_idtf:[антибактериальное вещество](*<-lang_ru;;*);;
+clay => nrel_main_idtf:[глина](*<-lang_ru;;*);;
+sludge => nrel_main_idtf:[ил](*<-lang_ru;;*);;
+soot => nrel_main_idtf:[сажа](*<-lang_ru;;*);;
+starch => nrel_main_idtf:[крахмал](*<-lang_ru;;*);;
+kaolin => nrel_main_idtf:[каолин](*<-lang_ru;;*);;
+chalk => nrel_main_idtf:[мел](*<-lang_ru;;*);;
+modifier => nrel_main_idtf:[модификатор](*<-lang_ru;;*);;
+preservative => nrel_main_idtf:[консервант](*<-lang_ru;;*);;
+photography
+=> nrel_main_idtf: 
+[фотография](* <- lang_ru;;	*);
+[photography](* <- lang_en;; *);;
+
+electronics
+=> nrel_main_idtf: 
+[электроника](* <- lang_ru;;	*);
+[electronics](* <- lang_en;;	*);;
+
+leather_industry
+=> nrel_main_idtf: 
+[кожевенная промышленность](* <- lang_ru;; *);
+[leather industry](* <- lang_en;; *);;
+
+textile_industry
+=> nrel_main_idtf: 
+[текстильная промышленность](* <- lang_ru;; *);
+[textile industry](* <- lang_en;; *);;
+
+flotation
+=> nrel_main_idtf: 
+[флотирование](* <- lang_ru;; *);
+[flotation](* <- lang_en;; *);;
+
+war_industry
+=> nrel_main_idtf: 
+[военная промышленность](* <- lang_ru;;	*);
+[war industry](* <- lang_en;;	*);;
+
+mining
+=> nrel_main_idtf: 
+[горное дело](* <- lang_ru;;	*);
+[mining](* <- lang_en;;	*);;
+
+construction
+=> nrel_main_idtf: 
+[строительство](* <- lang_ru;;	*);
+[construction](* <- lang_en;;	*);;
+
+seismic_survey
+=> nrel_main_idtf: 
+[сейсморазведка](* <- lang_ru;;	*);
+[seismic survey](* <- lang_en;;	*);;
+
+material_processing
+=> nrel_main_idtf: 
+[обработка материалов](* <- lang_ru;;	*);
+[material processing](* <- lang_en;;	*);;
+
+fertilizer
+=> nrel_main_idtf: 
+[удобрения](* <- lang_ru;;	*);
+[fertilizer](* <- lang_en;;	*);;
+
+medicine
+=> nrel_main_idtf: 
+[медицина](* <- lang_ru;;	*);
+[medicine](* <- lang_en;;	*);;
+
+metallurgy
+=> nrel_main_idtf: 
+[металлургия]
+(* <- lang_ru;;	*);
+[metallurgy]
+(* <- lang_en;;	*);;
+
+agriculture <- sc_node_not_relation;
+	=> nrel_main_idtf:[земледелие](* <- lang_ru;; *);;
+cooking <- sc_node_not_relation;
+	=> nrel_main_idtf:[приготовление пищи](* <- lang_ru;; *);;
+heat_transfer_agent <- sc_node_not_relation;
+	=> nrel_main_idtf:[теплоноситель](* <- lang_ru;; *);;
+moderator <- sc_node_not_relation;
+	=> nrel_main_idtf:[замедлитель](* <- lang_ru;; *);;
+tool <- sc_node_not_relation;
+	=> nrel_main_idtf:[инструмент](* <- lang_ru;; *);;
+grease <- sc_node_not_relation;
+	=> nrel_main_idtf:[смазка](* <- lang_ru;; *);;
+
+food_industry=> nrel_main_idtf:
+	[пищевая промышленность](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+margarine_production=> nrel_main_idtf:
+	[производство маргарина](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+food_additive_E949=> nrel_main_idtf:
+	[пищевая добавка E949](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+meteorology=> nrel_main_idtf:
+	[метеорология](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+rocket_fuel=> nrel_main_idtf:
+	[ракетное топливо](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+electric_power_industry=> nrel_main_idtf:
+	[электроэнергетика](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+
+aeronautics_filling=> nrel_main_idtf:
+	[аэронавтика](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+geology=> nrel_main_idtf:
+	[геология](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+foam
+	=> nrel_main_idtf: 
+		[пена](*<- lang_ru;;*);;
+quantum_mechanics 
+	=> nrel_main_idtf: 
+		[квантовая механика](*<- lang_ru;;*);;
+radioisotope_generator 
+	=> nrel_main_idtf: 
+		[радиоизотопный источник энергии](*<- lang_ru;;*);;
+
+money 
+	=> nrel_main_idtf: [деньги](*<- lang_ru;;*);;
+jewelry 
+	=> nrel_main_idtf: [ювелирное изделие](*<- lang_ru;;*);;
+disinfection 
+	=> nrel_main_idtf: [дезинфекция](*<- lang_ru;;*);;
+battery 
+	=> nrel_main_idtf: [аккумулятор](*<- lang_ru;;*);;
+
+
+
+aircraft_industry => nrel_main_idtf: [авиационная промышленность](*<- lang_ru;;*);;
+aerospace_industry => nrel_main_idtf: [авиакосмическая промышленность](*<- lang_ru;;*);;
+flatware => nrel_main_idtf: [столовый прибор](*<- lang_ru;;*);;
+
+radiochemical_research => nrel_main_idtf: [радиохимическое исследование](*<- lang_ru;;*);;
+inspection_tool => nrel_main_idtf: [контрольно-измерительный  прибор](*<- lang_ru;;*);;
+nuclear_fuel => nrel_main_idtf: [ядерное топливо](*<- lang_ru;;*);;
+
+air => nrel_main_idtf: [воздух](*<- lang_ru;;*);;
+
+laser => nrel_main_idtf: [лазер](*<- lang_ru;;*);;
+firefighting => nrel_main_idtf: [пожаротушение](*<- lang_ru;;*);;
+diving => nrel_main_idtf: [дайвинг](*<- lang_ru;;*);;
+plasmatron => nrel_main_idtf: [плазматрон](*<- lang_ru;;*);;
+
+painting => nrel_main_idtf: [живопись](*<- lang_ru;;*);;
+pyrotechnics => nrel_main_idtf: [пиротехника](*<- lang_ru;;*);;
+military_industry => nrel_main_idtf: [военная промышленность](*<- lang_ru;;*);;
+
+none_in_nature => nrel_main_idtf: [в природе нет](*<- lang_ru;;*);;
+
+semiconductor => nrel_main_idtf: [полупроводник](*<- lang_ru;;*);;
+nuclear_radiation_detector => nrel_main_idtf: [детектор ядерного излучения](*<- lang_ru;;*);;
+nuclear_engineering => nrel_main_idtf: [ядерная энергетика](*<- lang_ru;;*);;
+pigment => nrel_main_idtf: [пигмент](*<- lang_ru;;*);;
+cosmetics => nrel_main_idtf: [косметика](*<- lang_ru;;*);;
+
+sweetener
+=> nrel_main_idtf:
+	[подсластитель]
+	(* <- lang_ru;;	*);
+	[sweetener]
+	(* <- lang_en;;	*);;
+
+polycrystal
+=> nrel_main_idtf:
+	[поликристалл]
+	(* <- lang_ru;;	*);
+	[polycrystal]
+	(* <- lang_en;;	*);;
+
+crystallite
+=> nrel_main_idtf:
+	[кристаллит]
+	(* <- lang_ru;;	*);
+	[crystallite]
+	(* <- lang_en;;	*);;
+  
+physics=>nrel_main_idtf:
+[физика](* <- lang_ru;;*);
+[physics](* <- lang_en;;*);;
+
+biology=>nrel_main_idtf:
+[биология](* <- lang_ru;;*);
+[biology](* <- lang_en;;*);;
+
+medicine=>nrel_main_idtf:
+[медицина](* <- lang_ru;;*);
+[medicine](* <- lang_en;;*);;
+
+gas_explosive
+=> nrel_main_idtf:
+    [gas explosive]
+    (*<- lang_en;;*);
+	[газообразное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+liquid_explosive
+=> nrel_main_idtf:
+    [liquid explosive]
+    (*<- lang_en;;*);
+	[жидкое взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+gel_explosive
+=> nrel_main_idtf:
+    [gel explosive]
+    (*<- lang_en;;*);
+	[гелеобразное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+solid_explosive
+=> nrel_main_idtf:
+    [solid explosive]
+    (*<- lang_en;;*);
+	[твёрдое взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+elastic_explosive
+=> nrel_main_idtf:
+    [elastic explosive]
+    (*<- lang_en;;*);
+	[эластичное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+emulsion_explosive
+=> nrel_main_idtf:
+    [emulsion explosive]
+    (*<- lang_en;;*);
+	[эмульсионное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+plastic_explosive
+=> nrel_main_idtf:
+    [plastic explosive]
+    (*<- lang_en;;*);
+	[пластичное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+suspension_explosive
+=> nrel_main_idtf:
+    [suspension explosive]
+    (*<- lang_en;;*);
+	[суспензионное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+pressed_explosive
+=> nrel_main_idtf:
+    [pressed explosive]
+    (*<- lang_en;;*);
+	[прессованное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+cast_explosive
+=> nrel_main_idtf:
+    [cast explosive]
+    (*<- lang_en;;*);
+	[литое взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+patronized_explosive
+=> nrel_main_idtf:
+    [patronized explosive]
+    (*<- lang_en;;*);
+	[патронированное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+absolute_humidity
+=> nrel_main_idtf:
+    [absolute humidity]
+    (*<- lang_en;;*);
+	[абсолютная влажность]
+	(* <- lang_ru;;	*);;
+
+relative_humidity
+=> nrel_main_idtf:
+    [relative humidity]
+    (*<- lang_en;;*);
+	[относительная влажность]
+	(* <- lang_ru;;	*);;
+
+antroll
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[антрол](* <-lang_ru;; *);
+	[antroll](* <-lang_en;; *);;
+
+phenanthrol
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[фенантрол](* <-lang_ru;; *);
+	[phenanthrol](* <-lang_en;; *);;
+
+benzotetrol
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[бензотетрол](* <-lang_ru;; *);
+	[benzotetrol](* <-lang_en;; *);;
+
+naphthene
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[нафтен](* <-lang_ru;; *);
+	[naphthene](* <-lang_en;; *);;
+
+rrel_degree_fahrenheit
+<- sc_node_role_relation;
+=> nrel_main_idtf:
+	[нафтен](* <-lang_ru;; *);
+	[naphthene](* <-lang_en;; *);;
+
+dihydroxybenzene
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[дигидроксибензол](* <-lang_ru;; *);
+	[dihydroxybenzene](* <-lang_en;; *);;
+
+plants
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[растения](* <-lang_ru;; *);
+	[plants](* <-lang_en;; *);;
+
+alkali_solution
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[раствор аммиака](* <-lang_ru;; *);
+	[alkali solution](* <-lang_en;; *);;
+
+ethanol
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[этанол](* <-lang_ru;; *);
+	[ethanol](* <-lang_en;; *);;
+
+
+ether
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[эфир](* <-lang_ru;; *);
+	[ether](* <-lang_en;; *);;
+
+nrel_isomer
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[изомер*](* <-lang_ru;; *);
+	[isomer*](* <-lang_en;; *);;
+
+strong_base
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[сильное основание](* <-lang_ru;; *);
+	[strong base](* <-lang_en;; *);;
+
+weak_base
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[слабое основание](* <-lang_ru;; *);
+	[weak base](* <-lang_en;; *);;
+

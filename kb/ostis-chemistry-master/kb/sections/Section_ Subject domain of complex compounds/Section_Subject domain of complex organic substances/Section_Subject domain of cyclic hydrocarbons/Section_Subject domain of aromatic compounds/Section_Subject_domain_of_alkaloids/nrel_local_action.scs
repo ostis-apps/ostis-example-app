@@ -1,0 +1,72 @@
+nrel_local_action<-sc_node_norole_relation;;
+
+nrel_local_action=> nrel_main_idtf:[местное действие*](* <- lang_ru;; *);;
+nrel_local_action=> nrel_main_idtf:[local action*](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: nrel_local_action;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Местное действие - действие,которое развивается при непосредственном контакте <b><sc_element sys_idtf="medicine">лекарственного средства</b></sc_element> с тканями организма, например, с кожей, слизистыми оболочками.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (местное действие*)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{ 
+		medicine
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:nrel_local_action ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[К местному действию также относится реакция тканей организма на инъекцию  <b><sc_element sys_idtf="medicine">лекарственных средств</b></sc_element>.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(местное действие*)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{ 
+		medicine
+		};;
+*);;
+
+
+
+chemical_substance->ibuprofen;;
+action->distracting_action;;
+distracting_action<=nrel_local_action:ibuprofen;;
+
+
+oriented_relation -> nrel_local_action;;
+norole_relation-> nrel_local_action;;
+antireflexive_relation -> nrel_local_action;; 
+antitransitive_relation -> nrel_local_action;;
+antisymmetric_relation -> nrel_local_action;;
+
+
+nrel_local_action => nrel_first_domain: chemical_substance;;
+nrel_local_action => nrel_second_domain: action;;
+nrel_local_action=>nrel_definitional_domain: ...(* 
+<=nrel_combination: 
+{ 
+chemical_substance; 
+action 
+};; 
+*);; 
+
+arity_2->nrel_local_action;;
+
+
+ibuprofen=> nrel_main_idtf:[ибупрофен](* <- lang_ru;; *);;
+ibuprofen=> nrel_main_idtf:[ibuprofen](* <- lang_en;; *);;
+
+distracting_action=> nrel_main_idtf:[отвлекающее действие](* <- lang_ru;; *);;
+distracting_action=> nrel_main_idtf:[distracting action](* <- lang_en;; *);;
+
+

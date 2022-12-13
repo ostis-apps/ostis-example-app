@@ -1,0 +1,57 @@
+nrel_atomic_radius
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[радиус атома*](* <-lang_ru;; *);
+	[atomic radius*](* <- lang_en;; *);;
+
+nrel_atomic_radius
+<- rrel_key_sc_element:
+	Definition_of_nrel_atomic_radius
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(радиус атома*)] (* <-lang_ru;; *);; 
+        <= nrel_sc_text_translation:...
+        (*
+			-> rrel_example:"file://htmls/nrel_atomic_radius.html"(* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants:
+		...
+		(*
+			-> nrel_nucleus;;
+			-> orbital;;
+		*);;	
+	*);;
+	
+nrel_atomic_radius
+	=> nrel_first_domain:chemical_element;;
+nrel_atomic_radius
+	=> nrel_second_domain:value;;
+
+nrel_atomic_radius
+	<- rrel_key_sc_element:...
+		(* 
+		<- sc_explanation;;
+		=> nrel_main_idtf: [Прим.(оценка радиуса атома)] (* <-lang_ru;; *);; 
+		<= nrel_sc_text_translation:...
+			(* 
+			-> rrel_example: "file://htmls/nrel_atomic_radius1.html" (* <-lang_ru;; *);;
+			*);;
+		*);;
+
+nrel_atomic_radius
+	<- rrel_key_sc_element:...
+		(* 
+		<- sc_explanation;;
+		=> nrel_main_idtf: [Прим.(радиус атома*, измерение*)] (* <-lang_ru;; *);; 
+		<= nrel_sc_text_translation:...
+			(* 
+			-> rrel_example: "file://htmls/nrel_atomic_radius2.html" (* <-lang_ru;; *);;
+			*);;
+		*);;
+
+nrel_atomic_radius
+	<-rrel_key_sc_element:...
+				(*<-sc_illustration;;
+				<=nrel_sc_text_translation:...
+						(*->rrel_example: "file://img/radius-atoma.jpg";;*) ;;	
+				*);;

@@ -1,0 +1,204 @@
+subst_Zn
+<- sc_node_not_relation;
+=> nrel_main_idtf: [цинк] (* <- lang_ru;; *);
+=> nrel_main_idtf: [zincum] (* <- lang_en;; *);
+<= nrel_inclusion: chemical_substance;
+<- rrel_key_sc_element: definition_of_subst_Zn
+(* 
+	=> nrel_main_idtf: [Опр. (цинк)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество цинк</b> — хрупкий <sc_element sys_idtf = "transition_metal">переходный металл</sc_element> <sc_element sys_idtf = "color_white_blue">голубовато-белого цвета</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> transition_metal;;
+		-> color_white_blue;;
+	*);;
+*);
+
+<- color_white_blue;
+<- toxic_substance;
+
+=> nrel_being_in_nature: ...
+(*
+	-> mineral;;
+	-> earths_crust;;
+	-> thermal_water;;
+*);
+
+=> nrel_receiving: ...
+(*
+	-> nrel_electrolysis;;
+	-> selective_flotation;;
+*);
+
+=> nrel_applying: ...
+(*
+	-> ...
+	(*
+		<= nrel_recuperation: noble_metal;;
+	*);;
+	-> galvanizing;;
+	-> battery;;
+	-> polygraphy;;
+	-> antiseptic;;
+	-> alloys_production;;
+	-> rubber_tires_manufacture;;
+	-> oil_paint;;
+*);
+
+<- rrel_key_sc_element: interaction_zn_and_air
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (цинк, взаимодействие*, воздух, оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ На воздухе цинк покрывается тонкой пленкой оксида ZnO.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_zn_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (цинк, взаимодействие*, кислота)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Цинк активно реагирует с растворами кислот.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_zn_and_halogen
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (цинк, взаимодействие*, нагревание, галоген, галогенид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ При нагревании цинк реагирует с галогенами с образованием галогенидов ZnHal2. ] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_zn_and_phosphorus
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (цинк, взаимодействие*, фосфор, фосфид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ С фосфором цинк образует фосфиды Zn3P2 и ZnP2.
+фосфор] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (цинк, твёрдое тело)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_Zincum.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [7,133] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [692,75] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [1179,35] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [7,28] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [114,8] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [25,4] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_volume: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_cubic_cm_per_mole:...
+		(*
+			=> nrel_main_idtf: [9,2] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;

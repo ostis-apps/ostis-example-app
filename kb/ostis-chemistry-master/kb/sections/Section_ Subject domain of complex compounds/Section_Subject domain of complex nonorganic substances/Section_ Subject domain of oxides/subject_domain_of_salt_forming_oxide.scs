@@ -1,0 +1,365 @@
+subject_domain_of_salt_forming_oxide
+=> nrel_main_idtf:
+	[Предметная область солеобразующих оксидов]
+	(* <- lang_ru;; *);
+	[Subject domain of salt forming oxides]
+	(* <- lang_en;; *);
+		
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	salt_forming_oxide;
+
+-> rrel_not_maximum_studied_object_class:
+	acid_oxide;
+	amphoteric_oxide;
+	basic_oxide;
+
+<= nrel_sc_text_translation: ...
+(* 
+	-> rrel_example: "file://content_html/salt_forming_oxides.html" (* <-lang_ru;; *);;
+*);
+<= nrel_sc_text_translation: ...
+(* 
+	-> rrel_example: "file://content_html/salt_forming_oxides_eng.html" (* <-lang_en;; *);;
+*);;
+
+acid_oxide
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[acid oxide](*<- lang_en;;*);
+	[кислотный оксид](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[ангидрид](*<- lang_ru;;*);
+
+<= nrel_sc_text_translation: ...
+(* 
+	=> nrel_main_idtf: 		
+		[Видео (Кислотные оксиды и их свойства)](*<- lang_ru;;*);
+		[Video (Acid oxides and their properties)](*<- lang_en;;*);;
+	-> rrel_example: [lBK6dKULkWQ]
+		(*
+			=> nrel_format: format_youtubelink;;
+			<-lang_ru;;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+		[Опр. (кислотный оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[<b>Кислотные оксиды</b> - <sc_element sys_idtf="oxide">оксиды</sc_element>, проявляющие кислотные свойства и образующие соответствующие кислородсодержащие <sc_element sys_idtf="acid">кислоты</sc_element>.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> oxide;;
+		-> oxidation_state;;
+		-> acid;;
+	*);;
+*);
+
+=> nrel_inclusion: carbon_dioxide; sulphur_dioxide; silicon_dioxide; chromium_trioxide; phosphorus_pentoxide; dinitrogen_pentoxide; sulphur_trioxide; manganese_heptoxide; dichlorine_monoxide;
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		
+		[Утв. (кислотный оксид, неметалл, переходный элемент, получение*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Образованы типичными <sc_element sys_idtf="nonmetal">неметаллами</sc_element> и некоторыми переходными элементами.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+=> nrel_receiving: ...
+(*
+	-> ...
+	(*
+		<= nrel_dehydration: acid;;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_acid_oxide_and_water
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		
+		[Утв. (кислотный оксид, вода, кислота)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Кислотный оксид + вода → кислота](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_acid_oxide_and_basis
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		
+		[Утв. (кислотный оксид, основание, соль, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Кислотный оксид + основание → соль + вода] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_acid_oxide_and_basic_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		
+		[Утв. (кислотный оксид, основный оксид, соль)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Кислотный оксид + основный оксид → соль](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_acid_oxide_and_amphoteric_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		
+		[Утв. (кислотный оксид, амфотерный оксид, средняя соль)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Кислотный оксид + амфотерный оксид → средняя соль](*<- lang_ru;;*);;
+	*);;
+*);;
+
+amphoteric_oxide
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[amphoteric oxide](*<- lang_en;;*);
+	[амфотерный оксид](*<- lang_ru;;*);
+
+<= nrel_sc_text_translation: ...
+(* 
+	=> nrel_main_idtf: 		
+		[Видео (Амфотерные оксиды и гидроксиды)](*<- lang_ru;;*);
+		[Video (Amphoteric oxides and hydroxides)](*<- lang_en;;*);;
+	-> rrel_example: [HFbZyaObDJI]
+		(*
+			=> nrel_format: format_youtubelink;;
+			<-lang_ru;;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+		[Опр. (амфотерный оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[<b>Амфотерные оксиды</b> - <sc_element sys_idtf="salt_forming_oxide">солеобразующие оксиды</sc_element>, проявляющие в зависимости от условий либо основные, либо кислотные свойства.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> salt_forming_oxide;;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_acid_oxide_and_amphoteric_oxide;
+<- rrel_key_sc_element: interaction_basic_oxide_and_amphoteric_oxide;
+
+<- rrel_key_sc_element: interaction_amphoteric_oxide_and_strong_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		
+		[Утв. (амфотерный оксид, сильная кислота, соль, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Амфотерный оксид + сильная кислота → соль + вода](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_amphoteric_oxide_and_strong_basis
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		
+		[Утв. (амфотерный оксид, сильная щелочь, соль, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Амфотерный оксид + сильная щелочь → соль + вода](*<- lang_ru;;*);;
+	*);;
+*);
+
+=> nrel_receiving: amphoteric_oxide_receiving
+(*
+	=> nrel_sedimentation: aqueous_solution_of_ammonia_hydrate;;
+*);
+
+=> nrel_inclusion: zinc_oxide;chromium_oxide_3;aluminium_oxide;lead_oxide_2;beryllium_oxide;iron_oxide_3;;
+
+basic_oxide
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[basic oxide](*<- lang_en;;*);
+	[основный оксид](*<- lang_ru;;*);
+
+<= nrel_sc_text_translation: ...
+(* 
+	=> nrel_main_idtf: 		
+		[Видео (Основные оксиды и их свойства)](*<- lang_ru;;*);
+		[Video (Basic oxides and their properties)](*<- lang_en;;*);;
+	-> rrel_example: [y41Tt5AN8iw]
+		(*
+			=> nrel_format: format_youtubelink;;
+			<-lang_ru;;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+		[Опр. (основный оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[<b>Основные оксиды</b> - это <sc_element sys_idtf="oxide">оксиды</sc_element> <sc_element sys_idtf="metal">металлов</sc_element> в <sc_element sys_idtf="oxidation_state">степенях окисления</sc_element> +1 и +2.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+
+	<= nrel_using_constants:...
+	(*
+		-> oxide;;
+		-> metal;;
+		-> oxidation_state;;
+		-> acid;;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (основный оксид, оксид, кислота, взаимодействие*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Основные оксиды — это <sc_element sys_idtf="oxide">оксиды</sc_element>, способные реагировать с <sc_element sys_idtf="acid">кислотами</sc_element>.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_basic_oxide_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		
+		[Утв. (основный оксид, вода, кислота, соль)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Основный оксид + кислота → соль + вода](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_basic_oxide_and_water
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		
+		[Утв. (основный оксид, щелочь, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Основный оксид + вода → щелочь] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_acid_oxide_and_basic_oxide;
+
+<- rrel_key_sc_element: interaction_basic_oxide_and_amphoteric_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		
+		[Утв. (основный оксид, амфотерный оксид, соль)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Основный оксид + амфотерный оксид → соль](*<- lang_ru;;*);;
+	*);;
+*); 
+
+<- rrel_key_sc_element: interaction_basic_oxide_and_hydrogen
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		
+		[Утв. (основный оксид, водород (вещество), металл, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Основный оксид + водород → металл + вода](*<- lang_ru;;*);;
+	*);;
+*);
+
+=> nrel_inclusion: sodium_oxide; magnesium_oxide; copper_oxide_II;;
+
+salt_forming_oxide
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[salt-forming oxide](*<- lang_en;;*);
+	[солеобразующий оксид](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+		[Опр. (солеобразующий оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[<b>Солеобразующие оксиды</b> - <sc_element sys_idtf="oxide">оксиды</sc_element> <sc_element sys_idtf="nonmetal">неметаллов</sc_element> и <sc_element sys_idtf="metal">металлов</sc_element>, при взаимодействии с <sc_element sys_idtf="water">водой</sc_element> образующие соответствующие <sc_element sys_idtf="acid">кислоты</sc_element>, при взаимодействии с <sc_element sys_idtf="basis">основаниями</sc_element> — соответствующие нормальные и кислые <sc_element sys_idtf="salt">соли</sc_element>.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> oxide;;
+		-> nonmetal;;
+		-> metal;;
+		-> acid;;
+		-> basis;;
+		-> salt;;
+	*);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:[Разбиение по признаку наличия основных свойств](*<-lang_ru;; *);;
+	-> acid_oxide;;
+	-> amphoteric_oxide;;
+	-> basic_oxide;;
+*);;

@@ -1,0 +1,9 @@
+exercises_solutions
+<= nrel_exercises: section_subject_domain_of_solutions;
+
+=> nrel_main_idtf:
+	[Множество упражнений раздела предметной области растворов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Set of exercises. Section of subject domain of solutions]
+	(* <- lang_en;; *);;

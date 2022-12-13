@@ -1,0 +1,24 @@
+section_subject_domain_of_mixtures 
+=> nrel_main_idtf: 
+	[Раздел. Предметная область смесей]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of mixtures]
+	(* <- lang_en;; *);
+
+<= nrel_section_decomposition:
+{
+	section_subject_domain_of_alloys
+	(*
+	=> nrel_section_base_order: 
+		section_subject_domain_of_solutions;;
+	*);
+	section_subject_domain_of_solutions
+};
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_mixtures = [*^"file://section_subject_domain_of_mixtures.scsi"*];;
+
+section_subject_domain_of_mixtures
+-> rrel_key_sc_element: subject_domain_of_mixtures;;

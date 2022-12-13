@@ -1,0 +1,18 @@
+lib_ui_menu_na_kb_chemistry
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команды запроса химии]
+	(* <- lang_ru;; *);
+	[Library component. Command to request of chemistry]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+<- library_of_non_atomic_reusable_components;
+
+<= nrel_library_component_decomposition:
+	{		
+		lib_component_find_compound_reaction_of_chemical_entity;
+		lib_component_agent_of_finding_chemical_amount_of_substance;
+		lib_component_agent_of_finding_mass_of_substance
+	};;
+
+lib_ui_menu_na_kb_chemistry = [*^"file://ui_menu_na_view_kb_chemistry.scsi"*];;

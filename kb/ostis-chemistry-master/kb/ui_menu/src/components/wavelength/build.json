@@ -1,0 +1,11 @@
+{
+     "sources": [
+        
+        "src/wavelength-common.js",
+        "src/wavelength-paintPanel.js"
+    ],
+
+    "component": "src/wavelength-component.js",
+
+    "target": "static/components/js/chemistry_components/wavelength_ui_component.js"
+}

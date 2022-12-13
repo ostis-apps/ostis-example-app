@@ -1,0 +1,887 @@
+subject_domain_of_aromatic_compounds
+	=> nrel_main_idtf:[Предметная область ароматических соединений](* <- lang_ru;; *);
+	=> nrel_main_idtf:[Subject domain of aromatic compounds](* <- lang_en;; *);
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: aromatic_compound;
+
+-> rrel_not_maximum_studied_object_class:
+		//nrel_aromaticity;
+		cyclic_compound;
+		cycle;
+		carbocyclic_compound;
+		heterocyclic_compound;		
+		heteroatom;
+		benzene_cycle;
+		benzene_aromatic_compound;
+		nonbenzene_aromatic_compound;
+		pi_bond;
+		sydnone;
+		polycycle_compound;;
+
+aromatic_compound
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[ароматическое соединение](* <- lang_ru;; *);
+	=> nrel_idtf:[арен](* <- lang_ru;; *);
+	=> nrel_main_idtf:[aromatic compound](* <- lang_en;; *);
+	=> nrel_idtf:[aromatic](* <- lang_en;; *);
+
+	=>inclusion:nonbenzene_aromatic_compound;
+	=>inclusion:benzene_aromatic_compound;
+
+	<= nrel_subdividing:
+	...
+	(*	
+		=> nrel_main_idtf:[Разбиение по количеству π-электронов](* <- lang_ru;; *);;
+		-> 2pi_bond_system;;
+		-> 6pi_bond_system;;
+		-> 10pi_bond_system;;
+		-> 14pi_bond_system;;
+		-> 14_and_more_pi_bond_system;;
+		-> sydnone;;
+	*);
+
+	<- rrel_key_sc_element:
+	Definition_of_aromatic_compound
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (ароматическое соединение)](* <- lang_ru;; *);
+			[Def. (aromatic compound)](* <- lang_en;; *);;
+		<= nrel_using_constants:...
+		(*
+			-> aromatic_compound;;
+			-> cyclic_compound;;
+			-> organic_compound;;
+		*);;
+		<= nrel_sc_text_translation:...
+		(*
+		
+			-> rrel_example:"file://html/definition_of_aromatic_compound_ru.html"(* <- lang_ru;; => nrel_format: format_html;; *);;
+			-> rrel_example:"file://html/definition_of_aromatic_compound_eng.html"(* <- lang_eng;; => nrel_format: format_html;; *);;
+		*);;
+	*);
+
+	<- rrel_key_sc_element:...
+	(*
+		->rrel_key_sc_element:nrel_substitution_reaction;;
+        ->rrel_key_sc_element:nrel_addition_reaction;;
+		<- explanation;;
+		=> nrel_main_idtf:
+			[Утв. (ароматическое соединение, реакция замещения*, реакция присоединения*)](* <- lang_ru;; *);
+			[Stat. (aromatic compound, substitution reaction*, addition reaction*)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:"file://html/aromatic_compound_expl1_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+				-> rrel_example:"file://html/aromatic_compound_expl1_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+			*);;
+	*);
+
+	<- rrel_key_sc_element:...
+	(*
+		->rrel_key_sc_element:nrel_binding_energy;;
+		->rrel_key_sc_element:nrel_covalent_bond;;
+		<- explanation;;
+		=> nrel_main_idtf:
+			[Утв. (ароматическое соединение, энергия связи*, ковалентная связь*)](* <- lang_ru;; *);
+			[Stat. (aromatic compound, binding energy*, covalent bond*)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:"file://html/aromatic_compound_expl2_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+				-> rrel_example:"file://html/aromatic_compound_expl2_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+			*);;
+	*);
+
+	<- rrel_key_sc_element:...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf:
+			[Утв. (ароматическое соединение)](* <- lang_ru;; *);
+			[Stat. (aromatic compound)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:"file://html/aromatic_compound_expl3_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+				-> rrel_example:"file://html/aromatic_compound_expl3_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+			*);;
+	*);
+
+	<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf:
+			[Рис. (Бензол — одно из наиболее распространённых ароматических соединений.)](* <- lang_ru;; *);
+			[Pic. (Benzene - one of the most common aromatic compounds.)](* <- lang_en;; *);;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example: "file://images/aromatic_compound_pic1.png"(* => nrel_format: format_png;;*);;
+			*);;
+	*);;
+
+carbocyclic_compound
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[карбоциклическое соединение](* <- lang_ru;; *);
+	=> nrel_main_idtf:[carbocyclic compound](* <- lang_en;; *);
+
+	<= nrel_subdividing:
+		...
+		(*	
+			=> nrel_main_idtf:[Разбиение по строению соединения](* <- lang_ru;; *);;
+			-> aromatic_compound;;
+			-> saturated_hydrocarbons;;
+			-> unsaturated_hydrocarbons;;
+			
+		*);
+
+	<- rrel_key_sc_element:
+	Definition_of_carbocyclic_compound
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (карбоциклическое соединение)](* <- lang_ru;; *);
+			[Def. (carbocyclic compound)](* <- lang_en;; *);;
+		<= nrel_using_constants:...
+		(*
+			-> cycle;;
+			-> carbocyclic_compound;;
+			-> organic_compound;;
+			-> elem_C;;
+		*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/carbocyclic_compound_def_ru.html"(* <- lang_ru;; => nrel_format: format_html;; *);;
+			-> rrel_example:"file://html/carbocyclic_compound_def_eng.html"(* <- lang_eng;; => nrel_format: format_html;; *);;
+		*);;
+	*);
+
+	<- rrel_key_sc_element:...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf:
+			[Утв. (ароматическое соединение)](* <- lang_ru;; *);
+			[Stat. (aromatic compound)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:"file://html/aromatic_compound_expl3_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+				-> rrel_example:"file://html/aromatic_compound_expl3_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+			*);;
+	*);
+
+	
+	<- rrel_key_sc_element:...
+		(*
+			<- illustration;;
+			=> nrel_main_idtf:
+				[Рис. (Насыщенные (или циклопарафины), ненасыщенные и ароматические карбоциклические соединения)](* <- lang_ru;; *);
+				[Pic. (Saturated (or cycloparaffins), unsaturated and aromatic carbocyclic compounds.)](* <- lang_en;; *);;
+				<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example: "file://images/carbocyclic.gif"(* => nrel_format: format_gif;;*);;
+				*);;
+		*);;
+
+heterocyclic_compound
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[гетероциклическое соединение](* <- lang_ru;; *);
+	=> nrel_main_idtf:[heterocyclic compound](* <- lang_en;; *);
+	=> nrel_idtf:[гетероцикл](* <- lang_ru;; *);
+	=> nrel_idtf:[heterocycle](* <- lang_en;; *);
+
+	<- rrel_key_sc_element:
+	Definition_of_heterocyclic_compound
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (гетероциклическое соединение)](* <- lang_ru;; *);
+			[Def. (heterocyclic compound)](* <- lang_en;; *);;
+		<= nrel_using_constants:...
+		(*
+			-> cycle;;
+			-> heterocyclic_compound;;
+			-> organic_compound;;
+			-> elem_C;;
+		*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/heterocyclic_compound_def_ru.html"(* <- lang_ru;; => nrel_format: format_html;; *);;
+			-> rrel_example:"file://html/heterocyclic_compound_def_eng.html"(* <- lang_eng;; => nrel_format: format_html;; *);;
+		*);;
+	*);
+
+	<- rrel_key_sc_element:...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf:
+			[Утв. (гетероциклическое соединение)](* <- lang_ru;; *);
+			[Stat. (heterocyclic compound)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:"file://html/heterocyclic_compound_expl1_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+				-> rrel_example:"file://html/heterocyclic_compound_expl1_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+			*);;
+	*);
+
+	<- rrel_key_sc_element:...
+		(*
+			<- illustration;;
+			=> nrel_main_idtf:
+				[Рис. (Номенклатура гетероциклических соединений.)](* <- lang_ru;; *);
+				[Pic. (Nomenclature of heterocyclic compounds.)](* <- lang_en;; *);;
+				<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example: "file://images/heterocyclic.png"(* => nrel_format: format_png;;*);;
+				*);;
+		*);;
+
+heteroatom
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[гетероатом](* <- lang_ru;; *);
+	=> nrel_main_idtf:[heteroatom](* <- lang_en;; *);
+
+	<= nrel_subdividing:
+	...
+	(*	
+		=> nrel_main_idtf:[Разбиение по виду возможных атомов для замещения](* <- lang_ru;; *);;
+		-> elem_O;;
+		-> elem_N;;
+		-> elem_S;;
+		-> elem_P;;
+		-> halogen;;
+		-> organoelement_compound;;
+	*);
+
+	<- rrel_key_sc_element:
+	Definition_of_heteroatom
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (гетероатом)](* <- lang_ru;; *);
+			[Def. (heteroatom)](* <- lang_en;; *);;
+		<= nrel_using_constants:...
+		(*
+			-> heteroatom;;
+			-> organic_compound;;
+			-> elem_H;;
+			-> elem_C;;
+		*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/heteroatom_def_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:"file://html/heteroatom_def_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+	<- rrel_key_sc_element:...
+			(*
+				<- illustration;;
+				=> nrel_main_idtf:
+					[Рис. (Пиридин является гетероциклическим соединением, в котором гетероатомом является азот.)](* <- lang_ru;; *);
+					[Pic. (Pyridine is a heterocyclic compound in which the heteroatom is nitrogen.)](* <- lang_en;; *);;
+					<= nrel_sc_text_translation:...
+					(*
+						-> rrel_example: "file://images/heteroatom.png"(* => nrel_format: format_png;;*);;
+					*);;
+			*);;
+
+benzene_aromatic_compound
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[бензоидное ароматическое соединение](* <- lang_ru;; *);
+	=> nrel_main_idtf:[benzene aromatic compounds](* <- lang_en;; *);
+
+	=>inclusion:carbocyclic_compound;
+
+	<- rrel_key_sc_element:
+	Definition_of_benzene_aromatic_compound
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (бензоидное ароматическое соединение)](* <- lang_ru;; *);
+			[Def. (benzene aromatic compounds)](* <- lang_en;; *);;
+		<= nrel_using_constants:...
+		(*
+			-> benzene_aromatic_compound;;
+			-> aromatic_compound;;
+			-> benzene_cycle;;
+		*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/benzene_aromatic_compound_def_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:"file://html/benzene_aromatic_compound_def_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+	<- rrel_key_sc_element:...
+			(*
+				<- illustration;;
+				=> nrel_main_idtf:
+					[Рис. (Нафталин.)](* <- lang_ru;; *);
+					[Pic. (Naphthalene.)](* <- lang_en;; *);;
+					<= nrel_sc_text_translation:...
+					(*
+						-> rrel_example: "file://images/naftalin.png"(* => nrel_format: format_png;;*);;
+					*);;
+			*);;
+
+nonbenzene_aromatic_compound
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[небензоидное ароматическое соединение](* <- lang_ru;; *);
+	=> nrel_main_idtf:[nonbenzene aromatic compounds](* <- lang_en;; *);
+
+	=>inclusion:heterocyclic_compound;
+
+	<- rrel_key_sc_element:
+	Definition_of_nonbenzene_aromatic_compound
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (небензоидное ароматическое соединение)](* <- lang_ru;; *);
+			[Def. (nonbenzene aromatic compounds)](* <- lang_en;; *);;
+		<= nrel_using_constants:...
+		(*
+			-> nonbenzene_aromatic_compound;;
+			-> aromatic_compound;;
+			-> benzene_cycle;;
+			
+		*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/nonbenzene_aromatic_compound_def_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:"file://html/nonbenzene_aromatic_compound_def_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+	<- rrel_key_sc_element:...
+				(*
+					<- illustration;;
+					=> nrel_main_idtf:
+						[Рис. (Циклопередин.)](* <- lang_ru;; *);
+						[Pic. (Cycloperald.)](* <- lang_en;; *);;
+						<= nrel_sc_text_translation:...
+						(*
+							-> rrel_example: "file://images/cycloperedin .png"(* => nrel_format: format_png;;*);;
+						*);;
+				*);;
+
+pi_bond
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[π-связь](* <- lang_ru;; *);
+	=> nrel_main_idtf:[pi-bond](* <- lang_en;; *);
+	=> nrel_idtf:[пи-связь](* <- lang_ru;; *);
+
+	<= nrel_subdividing:
+		...
+		(*	
+			=> nrel_main_idtf:[Разбиение по количеству π-электронов](* <- lang_ru;; *);;
+			-> 2pi_bond_system;;
+			-> 6pi_bond_system;;
+			-> 10pi_bond_system;;
+			-> 14pi_bond_system;;
+			-> 14_and_more_pi_bond_system;;
+		*);
+
+	Definition_of_pi_bond
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (π-связь)](* <- lang_ru;; *);
+			[Def. (pi-bond)](* <- lang_en;; *);;
+		<= nrel_using_constants:...
+		(*
+			-> pi_bond;;
+			-> nrel_covalent_bond;;
+			-> orbital;;
+			
+		*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/pi_bond_def_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:"file://html/pi_bond_def_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+	<- rrel_key_sc_element:...
+	(*
+		->rrel_key_sc_element:orbital;;
+		<- explanation;;
+		=> nrel_main_idtf:
+			[Утв. (π-связь,сигма-связь)](* <- lang_ru;; *);
+			[Stat. (pi-bond, sigma-bond)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:"file://html/pi_bond_expl1_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+				-> rrel_example:"file://html/pi_bond_expl1_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+			*);;
+	*);
+
+	<- rrel_key_sc_element:...
+		(*
+			<- illustration;;
+			=> nrel_main_idtf:
+				[Рис. (Пример π-связи)](* <- lang_ru;; *);
+				[Pic. (Example of pi-bond.)](* <- lang_en;; *);;
+				<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example: "file://images/pibond.gif"(* => nrel_format: format_gif;;*);;
+				*);;
+		*);;
+
+2pi_bond_system
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[система с 2 π-электронами](* <- lang_ru;; *);
+	=> nrel_main_idtf:[2pi bond system](* <- lang_en;; *);
+
+	<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (система с 2 π-электронами)](* <- lang_ru;; *);
+		[Def. (2 pi-bond system)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		->2pi_bond_system;;
+		->pi_bond;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Система с 2 π-электронами — система, содержащая две π-связи.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[2 pi-bond system — system, which contain 2 pi-bonds.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+6pi_bond_system
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[система с 6 π-электронами](* <- lang_ru;; *);
+	=> nrel_main_idtf:[6 pi-bond system](* <- lang_en;; *);
+
+	<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (система с 6 π-электронами)](* <- lang_ru;; *);
+		[Def. (6 pi-bond system)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		->2pi_bond_system;;
+		->pi_bond;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Система с 6 π-электронами — система, содержащая 6 π-связей.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[6 pi-bond system — system, which contain 6 pi-bonds.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+10pi_bond_system
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[система с 10 π-электронами](* <- lang_ru;; *);
+	=> nrel_main_idtf:[10 pi-bond system](* <- lang_en;;*);
+
+	<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (система с 10 π-электронами)](* <- lang_ru;; *);
+		[Def. (10 pi-bond system)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		->2pi_bond_system;;
+		->pi_bond;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Система с 10 π-электронами — система, содержащая 10 π-связей.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[10 pi-bond system — system, which contain 10 pi-bonds.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+14pi_bond_system
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[система с 14 π-электронами](* <- lang_ru;; *);
+	=> nrel_main_idtf:[14pi bond system](* <- lang_en;; *);
+
+	<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (система с 14 π-электронами)](* <- lang_ru;; *);
+		[Def. (14 pi-bond system)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		->2pi_bond_system;;
+		->pi_bond;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Система с 14 π-электронами — система, содержащая 14 π-связей.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[14 pi-bond system — system, which contain 14 pi-bonds.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+14_and_more_pi_bond_system
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[система с 14 или более π-электронами](* <- lang_ru;; *);
+	=> nrel_main_idtf:[14 and more pi bond system](* <- lang_en;; *);
+
+	<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (система с 14 или более π-электронами)](* <- lang_ru;; *);
+		[Def. (14 and more pi-bond system)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		->2pi_bond_system;;
+		->pi_bond;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Cистема с 14 или более π-электронами — система, содержащая 14 или более π-связи.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[2 pi-bond system — system, which contain 14 and more pi-bonds.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+sydnone
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[сиднон](* <- lang_ru;; *);
+	=> nrel_main_idtf:[sydnone](* <- lang_en;; *);
+
+	<- rrel_key_sc_element:
+	Definition_of_sydnone
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (сиднон)](* <- lang_ru;; *);
+			[Def. (sydnone)](* <- lang_en;; *);;
+		<= nrel_using_constants:...
+		(*
+			-> sydnone;;
+			
+		*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/sydnone_def_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:"file://html/sydnone_def_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+	<- rrel_key_sc_element:...
+		(*
+			<- illustration;;
+			=> nrel_main_idtf:
+				[Рис. (Химическое строение сиднона.)](* <- lang_ru;; *);
+				[Pic. (Chemical structure of the sydnone.)](* <- lang_en;; *);;
+				<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example: "file://images/sydnone.png"(* => nrel_format: format_png;;*);;
+				*);;
+		*);;
+
+cyclic_compound
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[циклическое соединение](* <- lang_ru;; *);
+	=> nrel_main_idtf:[cyclic compound](* <- lang_en;; *);
+
+	<= nrel_subdividing:
+		...
+		(*	
+			=> nrel_main_idtf:[Разбиение по атомарному составу](* <- lang_ru;; *);;
+			-> organic_compound;;
+			-> carbocyclic_compound;;
+			-> heterocyclic_compound;;
+			-> nonorganic_compound;;
+		*);
+
+		<= nrel_subdividing:
+		...
+		(*	
+			=> nrel_main_idtf:[Разбиение по количеству циклов](* <- lang_ru;; *);;
+			-> monocycle_compound;;
+			-> polycycle_compound;;
+		*);
+
+		<= nrel_subdividing:
+		...
+		(*	
+			=> nrel_main_idtf:[Разбиение по наличию ароматическое кольца](* <- lang_ru;; *);;
+			-> nonbenzene_aromatic_compound;;
+			-> benzene_aromatic_compound;;
+		*);
+
+	<- rrel_key_sc_element:
+	Definition_of_cyclic_compound
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (циклическое соединение)](* <- lang_ru;; *);
+			[Def. (cyclic compound)](* <- lang_en;; *);;
+		<= nrel_using_constants:...
+		(*
+			-> cyclic_compound;;
+			-> chemical_compound;;
+			-> cycle;;
+			
+		*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/cyclic_compound_def_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:"file://html/cyclic_compound_def_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+	<- rrel_key_sc_element:...
+	(*
+		->rrel_key_sc_element:macrocycle_compound;;
+		<- explanation;;
+		=> nrel_main_idtf:
+			[Утв. (циклическое соединение, макроциклическое соединение)](* <- lang_ru;; *);
+			[Stat. (cyclic compound, macrocyclic compound)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:"file://html/cyclic_compound_expl1_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+				-> rrel_example:"file://html/cyclic_compound_expl1_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+			*);;
+	*);;
+
+nrel_aromaticity
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[ароматичность*](* <- lang_ru;; *);
+	=> nrel_main_idtf:[aromaticity*](* <- lang_en;; *);
+	=> nrel_idtf:[ароматическая система*](* <- lang_ru;; *);;
+
+cycle
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[цикл](* <- lang_ru;; *);
+	=> nrel_main_idtf:[cycle](* <- lang_en;; *);
+	=> nrel_idtf:[кольцо](* <- lang_ru;; *);
+
+	<- rrel_key_sc_element:
+	Definition_of_cycle
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (цикл)](* <- lang_ru;; *);
+			[Def. (cycle)](* <- lang_en;; *);;
+		<= nrel_using_constants:...
+		(*
+			-> cycle;;
+			
+		*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/cycle_def_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:"file://html/cycle_def_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+	*);;
+
+benzene_cycle
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[бензольное кольцо](* <- lang_ru;; *);
+	=> nrel_main_idtf:[benzene cycle](* <- lang_en;; *);
+	=> nrel_idtf:[бензольное ядро](* <- lang_ru;; *);
+	=> nrel_idtf:[benzene ring](* <- lang_en;; *);
+
+	<- rrel_key_sc_element:
+	Definition_of_benzene_cycle
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (бензольное кольцо)](* <- lang_ru;; *);
+			[Def. (benzene cycle)](* <- lang_en;; *);;
+		<= nrel_using_constants:...
+		(*
+			-> benzene_cycle;;
+			-> organic_compound;;
+			
+		*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/benzene_cycle_def_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:"file://html/benzene_cycle_def_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+	<- rrel_key_sc_element:...
+		(*
+			<- illustration;;
+			=> nrel_main_idtf:
+				[Рис. (Бензольное кольцо можно изобразить в виде правильного шестиугольника с тремя простыми и тремя двойными связями внутри.)](* <- lang_ru;; *);
+				[Pic. (The benzene ring can be represented as a regular hexagon with three simple and three double bonds inside.)](* <- lang_en;; *);;
+				<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example: "file://images/bcycle1.gif"(* => nrel_format: format_gif;;*);;
+				*);;
+		*);
+
+		<- rrel_key_sc_element:...
+		(*
+			<- illustration;;
+			=> nrel_main_idtf:
+				[Рис. (Бензольное кольцо можно так же изобразить в виде правильного шестиугольника, но только с окружностью внутри. Шестиугольник обозначает шесть атомов углерода (так называемый сигма-каркас), а окружность обозначает п-систему электронов.)](* <- lang_ru;; *);
+				[Pic. (The benzene ring can also be depicted as a regular hexagon, but only with a circle inside. The hexagon represents six carbon atoms (the so-called sigma-frame), and the circle denotes the n-system of electrons.)](* <- lang_en;; *);;
+				<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example: "file://images/bcycle2.png"(* => nrel_format: format_png;;*);;
+				*);;
+		*);;
+
+nrel_substitution_reaction
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf:[реакция замещения*](* <- lang_ru;; *);
+	=> nrel_main_idtf:[substitution reaction*](* <- lang_en;; *);;
+
+nrel_addition_reaction
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf:[реакция присоединения*](* <- lang_ru;; *);
+	=> nrel_main_idtf:[addition reaction*](* <- lang_en;; *);;
+
+saturated_hydrocarbons
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[насыщенные углеводороды](* <- lang_ru;; *);
+	=> nrel_main_idtf:[saturated hydrocarbons](* <- lang_en;; *);
+	=> nrel_idtf:[cycloparaffins](* <- lang_eng;; *);
+	=> nrel_idtf:[предельные углеводороды](* <- lang_ru;; *);
+
+	<- rrel_key_sc_element:
+	Definition_of_saturated_hydrocarbons
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (насыщенные углеводороды)](* <- lang_ru;; *);
+			[Def. (saturated hydrocarbons)](* <- lang_en;; *);;
+		<= nrel_using_constants:...
+		(*
+			-> organic_compound;;
+			-> saturated_hydrocarbons;;
+			
+		*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/saturated_hydrocarbons_def_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:"file://html/saturated_hydrocarbons_def_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+	*);;
+
+unsaturated_hydrocarbons
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[ненасыщенные углеводороды](* <- lang_ru;; *);
+	=> nrel_main_idtf:[unsaturated hydrocarbons](* <- lang_en;; *);
+
+	<- rrel_key_sc_element:
+	Definition_of_unsaturated_hydrocarbons
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (ненасыщенные углеводороды)](* <- lang_ru;; *);
+			[Def. (unsaturated hydrocarbons)](* <- lang_en;; *);;
+		<= nrel_using_constants:...
+		(*
+			-> organic_compound;;
+			-> unsaturated_hydrocarbons;;
+			
+		*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/unsaturated_hydrocarbons_def_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:"file://html/unsaturated_hydrocarbons_def_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+	*);;
+
+organoelement_compound
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[элементоорганическое соединение](* <- lang_ru;; *);
+	=> nrel_main_idtf:[organoelement compound](* <- lang_en;; *);;
+
+nonorganic_compound
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[неорганическое соединение](* <- lang_ru;; *);
+	=> nrel_main_idtf:[nonorganic compound](* <- lang_en;; *);;
+
+monocycle_compound
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[моноциклическое соединение](* <- lang_ru;; *);
+	=> nrel_main_idtf:[monocycle compound](* <- lang_en;; *);
+
+	<- rrel_key_sc_element:
+	Definition_of_monocycle_compound
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (бензольное кольцо)](* <- lang_ru;; *);
+			[Def. (benzene cycle)](* <- lang_en;; *);;
+		<= nrel_using_constants:...
+		(*
+			-> monocycle_compound;;
+			-> chemical_compound;;
+			-> cycle;;
+			
+		*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/monocycle_compound_def_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:"file://html/monocycle_compound_def_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+	*);;
+
+polycycle_compound
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[полициклическое соединение](* <- lang_ru;; *);
+	=> nrel_main_idtf:[polycycle compound](* <- lang_en;; *);
+	=> nrel_idtf:[полиароматический углеводород](* <- lang_ru;; *);
+	=> nrel_idtf:[polyaromatic hydrocarbon](* <- lang_en;; *);
+	=> nrel_idtf:[PAH](* <- lang_en;; *);
+
+	<- rrel_key_sc_element:
+	Definition_of_polycycle_compound
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (полициклическое соединение)](* <- lang_ru;; *);
+			[Def. (polycycle compound)](* <- lang_en;; *);;
+		<= nrel_using_constants:...
+		(*
+			->polycycle_compound;;
+			->organic_compound;;
+			->benzene_cycle;;
+		*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/polycycle_compound_def_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:"file://html/polycycle_compound_def_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+	<- rrel_key_sc_element:...
+		(*
+			<- illustration;;
+			=> nrel_main_idtf:
+				[Рис. (Основные представители.)](* <- lang_ru;; *);
+				[Pic. (Key representatives.)](* <- lang_en;; *);;
+				<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example: "file://images/polycycle.png"(* => nrel_format: format_png;;*);;
+				*);;
+		*);;
+
+macrocycle_compound
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[макроциклическое соединение](* <- lang_ru;; *);
+	=> nrel_main_idtf:[macrocycle compound](* <- lang_en;; *);
+
+	<- rrel_key_sc_element:
+	Definition_of_macrocycle_compound
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (макроциклическое соединение)](* <- lang_ru;; *);
+			[Def. (macrocycle compound)](* <- lang_en;; *);;
+		<= nrel_using_constants:...
+		(*
+			->macrocycle_compound;;
+			->organic_compound;;
+			->cycle;;
+		*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/macrocycle_compound_def_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:"file://html/macrocycle_compound_def_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+	*);;

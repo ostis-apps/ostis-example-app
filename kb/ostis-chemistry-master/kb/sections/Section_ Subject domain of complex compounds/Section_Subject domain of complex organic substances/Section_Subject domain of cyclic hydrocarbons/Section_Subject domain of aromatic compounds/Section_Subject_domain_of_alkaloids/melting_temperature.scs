@@ -1,0 +1,39 @@
+melting_temperature<-sc_node_not_relation;;
+
+melting_temperature=> nrel_main_idtf:[температура плавления](* <- lang_ru;; *);;
+melting_temperature=> nrel_main_idtf:[melting temperature](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: melting_temperature;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Температура плавления  — температура, при которой <b><sc_element sys_idtf="nrel_solod_state">твердое</b></sc_element> <b><sc_element sys_idtf="crystall">кристаллическое тело</b></sc_element> совершает переход в жидкое состояние и наоборот.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Определение (температура плавдения)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nrel_solod_state;
+		crystall
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: melting_temperature;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Температуру плавления при нормальном атмосферном давлении (101 325 Па, или 760 мм ртутного столба) называют точкой плавления. ](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(температура плавления)](*<- lang_ru;;*);;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: melting_temperature;;
+	<= nrel_sc_text_translation: ...(*->"file://images/melting_temperature.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(температура плавления)](*<- lang_ru;;*);;
+*);;
+
+
+

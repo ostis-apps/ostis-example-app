@@ -1,0 +1,48 @@
+subject_domain_of_theoretical_chemistry
+  => nrel_main_idtf:
+    [Предметная область теоретической химии] (* <- lang_ru;;*);
+    [Subject domain of theoretical chemistry] (* <- lang_en;; *);
+
+  <- subject_domain;
+  -> rrel_maximum_studied_object_class: theoretical_chemistry;;
+
+theoretical_chemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [теоретическая химия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [theoretical chemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (теоретическая химия)] (* <- lang_ru;; *);
+      [Def. (theoretical chemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Теоретическая химия — раздел химии, в котором главное место занимают теоретические обобщения, входящие в теоретический арсенал современной химии, например, концепции химической связи, химической реакции, валентности, поверхности потенциальной энергии, молекулярных орбиталей, орбитальных взаимодействий, активации молекул и др. методами физики и математики.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (теоретическая химия)](* <- lang_ru;; *);
+      [Stat. (theoretical chemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Теоретическая химия объединяет принципы и представления, общие для всех ветвей химической науки. В рамках теоретической химии происходит систематизация химических законов, принципов и правил, их уточнение и детализация, построение иерархии.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (теоретическая химия)](* <- lang_ru;; *);
+      [Pic. (theoretical chemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/theoretical_chemistry.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;

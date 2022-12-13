@@ -1,0 +1,41 @@
+nrel_half_life
+	<-sc_node_norole_relation;
+	=>nrel_main_idtf:
+		[период полураспада*](*<-lang_ru;;*);
+		[half-life*](*<-lang_en;;*);
+                [T1/2*](*<-lang_en;;*);;
+
+nrel_half_life
+		=>nrel_first_domain:chemical_element;;
+nrel_half_life
+		=> nrel_second_domain:quantity;;
+
+nrel_half_life <-rrel_key_sc_element:
+	Definition_of_half_life
+			(*<-sc_definition;;
+			<=nrel_sc_text_translation:...
+					(*->[Пери́од полураспа́да (Т1/2) — время, в течение которого система распадается в примерном отношении 1/2. ]  (* <-lang_ru;; *);;
+					*);;	
+			=>nrel_idtf:[Опр.(период полураспада*)](* <-lang_ru;; *);;
+			*);;
+nrel_half_life <=nrel_using_constants:...
+				(*->energy_level;elementary_particle;core;atom;;
+				*);;
+
+nrel_half_life
+	<-rrel_key_sc_element:...
+			(*<-sc_statement;;
+			<=nrel_sc_text_translation:...
+					(*->[Если рассматривается ансамбль независимых частиц, то в течение одного периода полураспада количество выживших частиц уменьшится в среднем в 2 раза.] (* <-lang_ru;; *);;
+					*);;
+			=>nrel_idtf:[Утв.(период полураспада*, ансабль, частица)] (* <-lang_ru;; *);;
+			*);;
+
+nrel_half_life
+	<-rrel_key_sc_element:...
+			(*<-sc_statement;;
+			<=nrel_sc_text_translation:...
+					(*->[Период полураспада считается неизменным, так как во всех наблюдавшихся случаях (кроме некоторых изотопов, распадающихся путём электронного захвата) он был постоянным] (* <-lang_ru;; *);;
+					*);;
+			=>nrel_idtf:[Утв.(период полураспада*, изотоп, электронный захват)] (* <-lang_ru;; *);;
+			*);;

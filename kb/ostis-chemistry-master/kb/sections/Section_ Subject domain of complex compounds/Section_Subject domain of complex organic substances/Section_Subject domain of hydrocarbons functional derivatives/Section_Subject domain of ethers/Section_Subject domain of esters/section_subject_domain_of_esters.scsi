@@ -1,0 +1,840 @@
+subject_domain_of_esters
+	<-subject_domain;
+	=>nrel_main_idtf:[Предметная область сложных эфиров](*<-lang_ru;;*);
+	=>nrel_main_idtf:[Subject domain of esters](*<-lang_en;;*);
+	->rrel_maximum_studied_object_class:ester;
+	->rrel_not_maximum_studied_object_class:
+		ester_of_inorganic_acid;
+		ester_of_carboxylic_acid;
+		ester_of_formic_acid;
+		ester_of_acetic_acid;
+		ester_of_butyric_acid;
+		ester_of_isovaleric_acid;
+		phosphoric_ester;
+		nitrate_ester;
+		nitrite_ester;
+		sulfite_ester;
+		carbonate_ester;
+		boric_ester;
+	=>nrel_studied_relations:
+		nrel_derived_ester;;
+
+ester
+<-sc_node_not_relation;
+=>nrel_main_idtf:[сложный эфир](*<-lang_ru;;*);
+=>nrel_main_idtf:[ester](*<-lang_en;;*);
+<=nrel_subdividing:...
+(*
+	=>nrel_main_idtf:[Разбиение по классу кислот.](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Subdividing by acid class.](*<-lang_en;;*);;
+	->ester_of_inorganic_acid;;
+	->ester_of_carboxylic_acid;;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (сложный эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (ester)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->ether;;
+		->chemical_substance;;
+		->hydrocarbon_radical;;
+		->chemical_formula;;
+		->elem_O;;
+		->elem_H;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="ester">Сложные эфиры</sc_element> - 
+			<sc_element sys_idtf="chemical_substance">химические вещества</sc_element>, подкласс
+			<sc_element sys_idtf="ether">эфиров</sc_element>, 
+			<sc_element sys_idtf="chemical_formula">химическая формула</sc_element> которых
+			R<sub>k</sub>E(=<sc_element sys_idtf="elem_O">O</sc_element>)<sub>l</sub>
+			(<sc_element sys_idtf="elem_O">O</sc_element><sc_element sys_idtf="elem_H">H</sc_element>)<sub>m</sub>,
+			где l не равен 0, а R - 
+			<sc_element sys_idtf="hydrocarbon_radical">углеводородный радикал</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="ester">Esters</sc_element> are 
+			<sc_element sys_idtf="chemical_substance">chemical substances</sc_element>, subclass of 
+			<sc_element sys_idtf="ether">ethers</sc_element>, 
+			<sc_element sys_idtf="chemical_formula">chemical formula</sc_element> of which шы
+			R<sub>k</sub>E(=<sc_element sys_idtf="elem_O">O</sc_element>)<sub>l</sub>
+			(<sc_element sys_idtf="elem_O">O</sc_element><sc_element sys_idtf="elem_H">H</sc_element>)<sub>m</sub>,
+			where l is not equal 0 and R is 
+			<sc_element sys_idtf="hydrocarbon_radical">hydrocarbon radical</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	->rrel_key_sc_element:simple_ether;hydrocarbon_radical;elem_O;;
+	=>nrel_main_idtf:[Утв. (сложный эфир, простой эфир, углеводородный радикал, атом кислорода)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (ester, simple ether, hydrocarbon radical? oxygen atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="ester">Сложные эфиры</sc_element> отличаются от
+			<sc_element sys_idtf="simple_ether">простых эфиров</sc_element>, в которых два
+			<sc_element sys_idtf="hydrocarbon_radical">углеводородных радикала</sc_element> соединены с
+			<sc_element sys_idtf="elem_O">атомом кислорода</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="ester">Esters</sc_element> differ from
+			<sc_element sys_idtf="simple_ether">simple ethers</sc_element>, in which two
+			<sc_element sys_idtf="hydrocarbon_radical">hydrocarbon radical</sc_element> connected with
+			<sc_element sys_idtf="elem_O">oxygen atom</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:[Рис. (сложный эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Pic. (ester)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/ester.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+ester_of_inorganic_acid
+<=nrel_derived_ester:inorganic_acid;
+<-sc_node_not_relation;
+=>nrel_main_idtf:[сложный эфир неорганической кислоты](*<-lang_ru;;*);
+=>nrel_main_idtf:[ester of inorganic acid](*<-lang_en;;*);
+<=nrel_subdividing:...
+(*
+	=>nrel_main_idtf:[Разбиение по кислотe.](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Subdividing by acid.](*<-lang_en;;*);;
+	->phosphoric_ester;;
+	->nitrate_ester;;
+	->nitrite_ester;;
+	->sulfite_ester;;
+	->carbonate_ester;;
+	->boric_ester;;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (сложный эфир неорганической кислоты)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (ester of inorganic acid)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->ester;;
+		->inorganic_acid;;
+		->hydrocarbon_radical;;
+		->elem_H;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="ester_of_inorganic_acid">Сложные эфиры неорганической кислоты</sc_element> - 
+			<sc_element sys_idtf="ester">сложные эфиры</sc_element>, в которых 
+			<sc_element sys_idtf="hydrocarbon_radical">углеводородный радикал</sc_element> замещает один или несколько
+			<sc_element sys_idtf="elem_H">атомов водорода</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="ester_of_inorganic_acid">Esters of inorganic acid</sc_element> are 
+			<sc_element sys_idtf="ester">esters</sc_element> in which 
+			<sc_element sys_idtf="hydrocarbon_radical">hydrocarbon radical</sc_element> substitute one or many
+			<sc_element sys_idtf="elem_H">hydrogen atom</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	->rrel_key_sc_element:salt;acid;;
+	=>nrel_main_idtf:[Утв. (сложный эфир, соль, кислота)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (ester, salt, acid)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="ester">Сложные эфиры</sc_element> по своему строению похожи на 
+			<sc_element sys_idtf="salt">соли</sc_element>
+			<sc_element sys_idtf="acid">кислот</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="ester">Сложные эфиры</sc_element> by structure resemble 
+			<sc_element sys_idtf="acid">acid</sc_element>
+			<sc_element sys_idtf="salt">salts</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+phosphoric_ester
+<=nrel_derived_ester:orthophosphoric_acid;
+<-sc_node_not_relation;
+=>nrel_main_idtf:[фосфорный эфир](*<-lang_ru;;*);
+=>nrel_main_idtf:[phosphoric ester](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (фосфорной эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (phosphoric ester)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->ester_of_inorganic_acid;;
+		->chemical_formula;;
+		->hydrocarbon_radical;;
+		->elem_H;;
+		->elem_O;;
+		->elem_P;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="phosphoric_ester">Фосфорный эфир</sc_element> - 
+			<sc_element sys_idtf="ester_of_inorganic_acid">сложный эфир неорганической кислоты</sc_element>, 
+			<sc_element sys_idtf="chemical_formula">химическая формула</sc_element> которого
+			(R<sc_element sys_idtf="elem_O">O</sc_element>)
+			<sub>n</sub><sc_element sys_idtf="elem_P">P</sc_element>
+			(<sc_element sys_idtf="">O</sc_element>)
+			(<sc_element sys_idtf="elem_O">O</sc_element><sc_element sys_idtf="elem_H">H</sc_element>)
+			<sub>3 − n</sub>, где R - 
+			<sc_element sys_idtf="hydrocarbon_radical">углеводородный радикал</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="phosphoric_ester">Phosphoric ester</sc_element> is 
+			<sc_element sys_idtf="ester_of_inorganic_acid">ester of inorganic acid</sc_element>, 
+			<sc_element sys_idtf="chemical_formula">chemical formula</sc_element> of which
+			(R<sc_element sys_idtf="elem_O">O</sc_element>)
+			<sub>n</sub><sc_element sys_idtf="elem_P">P</sc_element>
+			(<sc_element sys_idtf="">O</sc_element>)
+			(<sc_element sys_idtf="elem_O">O</sc_element><sc_element sys_idtf="elem_H">H</sc_element>)
+			<sub>3 − n</sub>, where R is 
+			<sc_element sys_idtf="hydrocarbon_radical">hydrocarbon radical</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	->rrel_key_sc_element:orthophosphoric_acid;acid;chemical_property;;
+	=>nrel_main_idtf:[Утв. (фосфорный эфир, ортофосфорная кислота, кислота, химическое свойство)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (ester, salt, orthophosphoric acid, acid, chemical property)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="phosphoric_ester">Фосфорные эфиры</sc_element> проявляют более сильные
+			<sc_element sys_idtf="acid">кислотные</sc_element>
+			<sc_element sys_idtf="chemical_property">химические свойства</sc_element>, чем
+			<sc_element sys_idtf="orthophosphoric_acid">ортофосфорная кислота</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="phosphoric_ester">Phosphoric esters</sc_element> more
+			<sc_element sys_idtf="acid">acidic</sc_element>
+			<sc_element sys_idtf="chemical_property">chemical propertis</sc_element> than
+			<sc_element sys_idtf="orthophosphoric_acid">orthophosphoric acid</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:[Рис. (фосфорный эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Pic. (phosphoric ester)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/phosphoric_ester.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+nitrate_ester
+<=nrel_derived_ester:nitric_acid;
+<-sc_node_not_relation;
+=>nrel_main_idtf:[нитратный эфир](*<-lang_ru;;*);
+=>nrel_main_idtf:[nitrate ester](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (нитратный эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (nitrate ester)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->ester_of_inorganic_acid;;
+		->nrel_covalent_bond;;
+		->elem_N;;
+		->elem_O;;
+		->elem_C;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="nitrate_ester">Нитратный эфир</sc_element> - 
+			<sc_element sys_idtf="ester_of_inorganic_acid">сложный эфир неорганической кислоты</sc_element>, 
+			содержащий одну или несколько групп 
+			<sc_element sys_idtf="elem_O">O</sc_element> - 
+			<sc_element sys_idtf="elem_N">N</sc_element><sc_element sys_idtf="elem_O">O</sc_element><sub>2</sub>,
+			соединенных 
+			<sc_element sys_idtf="nrel_covalent_bond">ковалентной связью</sc_element> c 
+			<sc_element sys_idtf="elem_C">атомами углерода</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="nitrate_ester">Nitrate ester</sc_element> is 
+			<sc_element sys_idtf="ester_of_inorganic_acid">ester of inorganic acid</sc_element>, 
+			containig one or more
+			<sc_element sys_idtf="elem_O">O</sc_element> - 
+			<sc_element sys_idtf="elem_N">N</sc_element><sc_element sys_idtf="elem_O">O</sc_element><sub>2</sub> groups,
+			connetcted by a 
+			<sc_element sys_idtf="nrel_covalent_bond">covalent bond</sc_element> with 
+			<sc_element sys_idtf="elem_C">carbon atoms</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	->rrel_key_sc_element:nrel_decomposition;explosive;;
+	=>nrel_main_idtf:[Утв. (нитратный эфир, разложение*, взрывчатое вещество)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (nitrate ester, decomposition*, explosive)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="nitrate_ester">Нитратные эфиры</sc_element> способны
+			<sc_element sys_idtf="nrel_decomposition">разлагаться</sc_element> со
+			<sc_element sys_idtf="explosive">взрывом</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="nitrate_ester">Nitrate ethers</sc_element> can
+			<sc_element sys_idtf="nrel_decomposition">decompose</sc_element> with
+			<sc_element sys_idtf="explosive">explosion</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:[Рис. (нитратный эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Pic. (nitrate ester)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/nitrate_ester.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+nitrite_ester
+<=nrel_derived_ester:nitrious_acid;
+<-sc_node_not_relation;
+=>nrel_main_idtf:[нитритный эфир](*<-lang_ru;;*);
+=>nrel_main_idtf:[nitrite ester](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (нитритный эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (nitrite ester)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->ester_of_inorganic_acid;;
+		->hydrocarbon_radical;;
+		->chemical_formula;;
+		->elem_N;;
+		->elem_O;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="nitrite_ester">Нитритный эфир</sc_element> - 
+			<sc_element sys_idtf="ester_of_inorganic_acid">сложный эфир неорганической кислоты</sc_element> с  
+			<sc_element sys_idtf="chemical_formula">химической формулой</sc_element> 
+			R - <sc_element sys_idtf="elem_O">O</sc_element><sc_element sys_idtf="elem_N">N</sc_element><sc_element sys_idtf="elem_O">O</sc_element>,
+			где R -  
+			<sc_element sys_idtf="hydrocarbon_radical">углеводородный радикал</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="nitrite_ester">Nitrite ester</sc_element> is 
+			<sc_element sys_idtf="ester_of_inorganic_acid">ester of inorganic acid</sc_element> with  
+			<sc_element sys_idtf="chemical_formula">chemical formula</sc_element>  
+			R - <sc_element sys_idtf="elem_O">O</sc_element><sc_element sys_idtf="elem_N">N</sc_element><sc_element sys_idtf="elem_O">O</sc_element>,
+			where R is  
+			<sc_element sys_idtf="hydrocarbon_radical">hydrocarbon radical</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	->rrel_key_sc_element:nrel_heating;nrel_decomposition;nrel_chemical_bond;elem_O;elem_N;;
+	=>nrel_main_idtf:[Утв. (нитритный эфир, нагревание*, разложение*, химическая связь*, атом кислорода, атом азота)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (nitrite ester, heating*, decomposition*, chemical bond*, oxygen atom, nitrogenium atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="nitrite_ester">Нитритные эфиры</sc_element> при
+			<sc_element sys_idtf="nrel_heating">нагревании</sc_element>
+			<sc_element sys_idtf="nrel_decomposition">разлагаются</sc_element> с разрывом
+			<sc_element sys_idtf="elem_N">N</sc_element> - 
+			<sc_element sys_idtf="elem_O">O</sc_element>
+			<sc_element sys_idtf="nrel_chemical_bond">связи</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			When <sc_element sys_idtf="nrel_heating">heated</sc_element>,
+			<sc_element sys_idtf="nitrite_ester">nitrite esters</sc_element>
+			<sc_element sys_idtf="nrel_decomposition">decompose</sc_element> with disruption of
+			<sc_element sys_idtf="elem_N">N</sc_element> - 
+			<sc_element sys_idtf="elem_O">O</sc_element>
+			<sc_element sys_idtf="nrel_chemical_bond">bond</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:[Рис. (нитритный эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Pic. (nitrite ester)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/nitrite_ester.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+sulfite_ester
+<=nrel_derived_ester:sulfurous_acid;
+<-sc_node_not_relation;
+=>nrel_main_idtf:[сульфитный эфир](*<-lang_ru;;*);
+=>nrel_main_idtf:[sulfite ester](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (сульфитный эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (sulfite ester)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->ester_of_inorganic_acid;;
+		->hydrocarbon_radical;;
+		->chemical_formula;;
+		->elem_S;;
+		->elem_O;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="sulfite_ester">Сульфитный эфир</sc_element> - 
+			<sc_element sys_idtf="ester_of_inorganic_acid">сложный эфир неорганической кислоты</sc_element> с  
+			<sc_element sys_idtf="chemical_formula">химической формулой</sc_element>  
+			R<sc_element sys_idtf="elem_O">O</sc_element><sc_element sys_idtf="elem_S">S</sc_element>(<sc_element sys_idtf="elem_O">O</sc_element>)<sc_element sys_idtf="elem_O">O</sc_element>R',
+			где R и R' -  
+			<sc_element sys_idtf="hydrocarbon_radical">углеводородные радикалы</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="sulfite_ester">Sulfite ester</sc_element> is 
+			<sc_element sys_idtf="ester_of_inorganic_acid">ester of inorganic acid</sc_element> with  
+			<sc_element sys_idtf="chemical_formula">chemical formula</sc_element>  
+			R<sc_element sys_idtf="elem_O">O</sc_element><sc_element sys_idtf="elem_S">S</sc_element>(<sc_element sys_idtf="elem_O">O</sc_element>)<sc_element sys_idtf="elem_O">O</sc_element>R',
+			where R and R' are  
+			<sc_element sys_idtf="hydrocarbon_radical">hydrocarbon radicals</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	->rrel_key_sc_element:nrel_hydrolysis;acid;basis;nrel_chemical_bond;elem_O;elem_S;;
+	=>nrel_main_idtf:[Утв. (сульфитный эфир, гидролиз*, кислота, основание, химическая связь*, атом кислорода, атом серы)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (nitrite ester, hydrolysis*, acid, basis, chemical bond*, oxygen atom, sulfur atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="sulfite_ester">Сульфитные эфиры</sc_element>
+			<sc_element sys_idtf="nrel_hydrolysis">гидролизируются</sc_element> под действием
+			<sc_element sys_idtf="basis">оснований</sc_element> и 
+			<sc_element sys_idtf="acid">кислот</sc_element> с разрывом
+			<sc_element sys_idtf="elem_S">S</sc_element> - 
+			<sc_element sys_idtf="elem_O">O</sc_element>
+			<sc_element sys_idtf="nrel_chemical_bond">связи</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="sulfite_ester">Sulfite esters</sc_element>
+			<sc_element sys_idtf="nrel_hydrolysis">hydrolyse</sc_element> under the action of
+			<sc_element sys_idtf="basis">basises</sc_element> and 
+			<sc_element sys_idtf="acid">acids</sc_element> with disruption of 
+			<sc_element sys_idtf="elem_S">S</sc_element> - 
+			<sc_element sys_idtf="elem_O">O</sc_element>
+			<sc_element sys_idtf="nrel_chemical_bond">bond</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+carbonate_ester
+<=nrel_derived_ester:carbonic_acid;
+<-sc_node_not_relation;
+=>nrel_main_idtf:[угольный эфир](*<-lang_ru;;*);
+=>nrel_main_idtf:[carbon ester](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (угольный эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (carbonate ester)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->ester_of_inorganic_acid;;
+		->hydrocarbon_radical;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_O;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="carbonate_ester">Угольный эфир</sc_element> - 
+			<sc_element sys_idtf="ester_of_inorganic_acid">сложный эфир неорганической кислоты</sc_element> с  
+			<sc_element sys_idtf="chemical_formula">химической формулой</sc_element>  
+			(R<sub>1</sub><sc_element sys_idtf="elem_O">O</sc_element>)
+			<sc_element sys_idtf="elem_C">C</sc_element>
+			(=<sc_element sys_idtf="elem_O">O</sc_element>)
+			(R<sub>2</sub><sc_element sys_idtf="elem_O">O</sc_element>),
+			где R<sub>1</sub> и R<sub>2</sub> -  
+			<sc_element sys_idtf="hydrocarbon_radical">углеводородные радикалы</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="carbonate_ester">Carbon ester</sc_element> is 
+			<sc_element sys_idtf="ester_of_inorganic_acid">ester of inorganic acid</sc_element> with  
+			<sc_element sys_idtf="chemical_formula">chemical formula</sc_element>  
+			(R<sub>1</sub><sc_element sys_idtf="elem_O">O</sc_element>)
+			<sc_element sys_idtf="elem_C">C</sc_element>
+			(=<sc_element sys_idtf="elem_O">O</sc_element>)
+			(R<sub>2</sub><sc_element sys_idtf="elem_O">O</sc_element>),
+			where R<sub>1</sub> and R<sub>2</sub> are  
+			<sc_element sys_idtf="hydrocarbon_radical">hydrocarbon radicals</sc_element>
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	->rrel_key_sc_element:nrel_solubility;water;ammonia;;
+	=>nrel_main_idtf:[Утв. (угольный эфир, растворимость*, вода, аммиак)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (carbonate ester, solubility*, water, ammonia)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="carbonate_ester">Угольные эфиры</sc_element> плохо
+			<sc_element sys_idtf="nrel_solubility">растворимы</sc_element> в 
+			<sc_element sys_idtf="water">воде</sc_element> и 
+			<sc_element sys_idtf="ammonia">аммиаке</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="carbonate_ester">Carbonate esters</sc_element> are hardly
+			<sc_element sys_idtf="nrel_solubility">soluble</sc_element> in 
+			<sc_element sys_idtf="water">water</sc_element> и 
+			<sc_element sys_idtf="ammonia">ammonia</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:[Рис. (борный эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Pic. (boric ester)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/сarbonate_ester.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+boric_ester
+<=nrel_derived_ester:boric_acid;
+<-sc_node_not_relation;
+=>nrel_main_idtf:[борный эфир](*<-lang_ru;;*);
+=>nrel_main_idtf:[boric ester](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (борный эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (boric ester)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->ester_of_inorganic_acid;;
+		->hydrocarbon_radical;;
+		->chemical_formula;;
+		->elem_B;;
+		->elem_O;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="boric_ester">Борный эфир</sc_element> - 
+			<sc_element sys_idtf="ester_of_inorganic_acid">сложный эфир неорганической кислоты</sc_element> с  
+			<sc_element sys_idtf="chemical_formula">химической формулой</sc_element>  
+			(R<sc_element sys_idtf="elem_O">O</sc_element>)<sub>3</sub><sc_element sys_idtf="elem_B">B</sc_element>
+			<sc_element sys_idtf="elem_C">C</sc_element>
+			где R -  
+			<sc_element sys_idtf="hydrocarbon_radical">углеводородный радикал</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="boric_ester">Boric ester</sc_element> is 
+			<sc_element sys_idtf="ester_of_inorganic_acid">ester of inorganic acid</sc_element> with  
+			<sc_element sys_idtf="chemical_formula">chemical formula</sc_element>  
+			(R<sc_element sys_idtf="elem_O">O</sc_element>)<sub>3</sub><sc_element sys_idtf="elem_B">B</sc_element>
+			<sc_element sys_idtf="elem_C">C</sc_element>
+			where R is  
+			<sc_element sys_idtf="hydrocarbon_radical">hydrocarbon radical</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:[Рис. (борный эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Pic. (boric ester)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/boric_ester.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+ester_of_carboxylic_acid
+<=nrel_derived_ester:carboxylic_acid;
+<-sc_node_not_relation;
+=>nrel_main_idtf:[сложный эфир карбоновой кислоты](*<-lang_ru;;*);
+=>nrel_main_idtf:[ester of carboxylic acid](*<-lang_en;;*);
+<=nrel_subdividing:...
+(*
+	=>nrel_main_idtf:[Разбиение по кислотe.](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Subdividing by acid.](*<-lang_en;;*);;
+	->ester_of_formic_acid;;
+	->ester_of_acetic_acid;;
+	->ester_of_butyric_acid;;
+	->ester_of_isovaleric_acid;;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (сложный эфир карбоновой кислоты)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (ester of carboxylic acid)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->ester;;
+		->carboxylic_acid;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="ester_of_carboxylic_acid">Сложные эфиры карбоновой кислоты</sc_element> - подкласс
+			<sc_element sys_idtf="ester">сложных эфиров</sc_element>, которые являются производными 
+			<sc_element sys_idtf="carboxylic_acid">карбоновых кислот</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="ester_of_carboxylic_acid">Esters of carboxylic acid</sc_element> is subclass of
+			<sc_element sys_idtf="ester">esters</sc_element>, which are derived of  
+			<sc_element sys_idtf="carboxylic_acid">carboxylic acids</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	->rrel_key_sc_element:nrel_hydrolysis;catalyst;;
+	=>nrel_main_idtf:[Утв. (сложный эфир карбоновой кислоты, гидролиз*, катализатор)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Exp. (ester of carboxylic acid, hydrolysis*, catalyst)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="nrel_hydrolysis">Гидролиз</sc_element> 
+			<sc_element sys_idtf="esters_of_carboxylic_acid">сложных эфиров карбоновых кислот</sc_element> в условиях 
+			<sc_element sys_idtf="acid">кислотного</sc_element> 
+			<sc_element sys_idtf="catalyst">катализа</sc_element> является обратимым
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="nrel_hydrolysis">Hydrolysis</sc_element> of 
+			<sc_element sys_idtf="esters_of_carboxylic_acid">esters of carboxylic acid</sc_element> under 
+			<sc_element sys_idtf="acid">acid</sc_element> 
+			<sc_element sys_idtf="catalyst">catalysis</sc_element> is reversible.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+ester_of_formic_acid
+<=nrel_derived_ester:formic_acid;
+<-sc_node_not_relation;
+=>nrel_main_idtf:[сложный эфир муравьиной кислоты](*<-lang_ru;;*);
+=>nrel_main_idtf:[ester of formic acid](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (сложный эфир муравьиной кислоты)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (ester of formic acid)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->ester;;
+		->formic_acid;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="ester_of_formic_acid">Сложный эфир муравиьной кислоты</sc_element> - 
+			<sc_element sys_idtf="ester">сложный эфир</sc_element>, который является производным 
+			<sc_element sys_idtf="formic_acid">муравьиной кислоты</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="ester_of_formic_acid">Ester of formic acid</sc_element> is 
+			<sc_element sys_idtf="ester">ester</sc_element>, which is derived of  
+			<sc_element sys_idtf="formic_acid">formic acid</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+ester_of_acetic_acid
+<=nrel_derived_ester:acetic_acid;
+<-sc_node_not_relation;
+=>nrel_main_idtf:[сложный эфир уксусной кислоты](*<-lang_ru;;*);
+=>nrel_main_idtf:[ester of acetic acid](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (сложный эфир уксусной кислоты)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (ester of acetic acid)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->ester;;
+		->acetic_acid;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="ester_of_acetic_acid">Сложный эфир уксусной кислоты</sc_element> - 
+			<sc_element sys_idtf="ester">сложный эфир</sc_element>, который является производным 
+			<sc_element sys_idtf="acetic_acid">уксусной кислоты</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="ester_of_acetic_acid">Ester of acetic acid</sc_element> is 
+			<sc_element sys_idtf="ester">ester</sc_element>, which is derived of  
+			<sc_element sys_idtf="acetic_acid">acetic acid</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+ester_of_isovaleric_acid
+<=nrel_derived_ester:isovaleric_acid;
+<-sc_node_not_relation;
+=>nrel_main_idtf:[сложный эфир изовалериановой кислоты](*<-lang_ru;;*);
+=>nrel_main_idtf:[ester of isovaleric acid](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (сложный эфир изовалериановой кислоты)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (ester of isovaleric acid)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->ester;;
+		->isovaleric_acid;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="ester_of_isovaleric_acid">Сложный эфир изовалериановой кислоты</sc_element> - 
+			<sc_element sys_idtf="ester">сложный эфир</sc_element>, который является производным 
+			<sc_element sys_idtf="isovaleric_acid">изовалериановой кислоты</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="ester_of_isovaleric_acid">Ester of isovaleric acid</sc_element> is 
+			<sc_element sys_idtf="ester">ester</sc_element>, which is derived of  
+			<sc_element sys_idtf="isovaleric_acid">isovaleric acid</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+ester_of_butyric_acid
+<=nrel_derived_ester:butyric_acid;
+<-sc_node_not_relation;
+=>nrel_main_idtf:[сложный эфир масляной кислоты](*<-lang_ru;;*);
+=>nrel_main_idtf:[ester of butyric acid](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (сложный эфир масляной кислоты)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (ester of butyric acid)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->ester;;
+		->butyric_acid;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="ester_of_butyric_acid">Сложный эфир масляной кислоты</sc_element> - 
+			<sc_element sys_idtf="ester">сложный эфир</sc_element>, который является производным 
+			<sc_element sys_idtf="butyric_acid">масляной кислоты</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf="ester_of_butyric_acid">Ester of butyric acid</sc_element> is 
+			<sc_element sys_idtf="ester">ester</sc_element>, which is derived of  
+			<sc_element sys_idtf="butyric_acid">butyric acid</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+nrel_derived_ester
+=>nrel_main_idtf:[производный сложный эфир*](*<-lang_ru;;*);
+=>nrel_main_idtf:[derived ester*](*<-lang_en;;*);
+<-sc_no_role_relation;
+<-binary_relation;
+<-oriented_relation;
+<-antisymmetric_relation;
+<-antitransitive_relation;
+<-antireflexive_relation;
+=>nrel_first_domain:acid;
+=>nrel_second_domain:ester;
+=>nrel_definitional_domain:...
+(*
+	<=nrel_combination:...
+	(*
+		->acid;;
+		->ester;;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (производный сложный эфир*)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (derived ester*)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->binary_relation;;
+		->oriented_relation;;
+		->acid;;
+		->ester;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="nrel_derived_ester">Производный сложный эфир*</sc_element> - 
+			<sc_element sys_idtf="binary_relation">бинарное</sc_element> <sc_element sys_idtf="oriented_relation">ориентированное отношение</sc_element>, связывающее <sc_element sys_idtf="acid">кислоту</sc_element> и производный от нее <sc_element sys_idtf="ester">сложный эфир</sc_element>.  
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[
+			<sc_element sys_idtf = "nrel_derived_ester">Derived ester*</sc_element> - <sc_element sys_idtf = "binary_relation"> binary </sc_element> <sc_element sys_idtf = "nrel_derivative_ester"> oriented relation </sc_element> that links <sc_element sys_idtf = "acid"> acid </sc_element> and the derivative <sc_element sys_idtf = "ester">ester</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;

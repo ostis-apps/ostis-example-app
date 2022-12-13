@@ -1,0 +1,24 @@
+exercise3_acid
+<- exercises_acid;
+
+-> rrel_key_sc_element: oxide; subst_P; orthophosphoric_acid;
+
+=> nrel_next_exercise: exercise4_acid;
+
+=> nrel_main_idtf:
+	[Упражнение 3. Раздел. Предметная область кислот]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 3. Section. Subject domain of acids]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise3_acid_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise3_acid_en.html" (* <-lang_en;; *);;
+	*);;

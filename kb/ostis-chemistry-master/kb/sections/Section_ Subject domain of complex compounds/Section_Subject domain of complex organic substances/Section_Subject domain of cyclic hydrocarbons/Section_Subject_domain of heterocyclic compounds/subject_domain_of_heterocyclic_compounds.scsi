@@ -1,0 +1,8 @@
+subject_domain_of_heterocyclic_compounds
+=> nrel_main_idtf: 
+	[Предметная область гетероциклических углеводородов]
+	(* <- lang_ru;;*);
+	[Subject domain of heterocyclic compounds]
+	(* <- lang_en;; *);
+
+<- subject_domain;;

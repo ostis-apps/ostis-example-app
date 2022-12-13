@@ -1,0 +1,24 @@
+section_subject_domain_of_ethers
+=> nrel_main_idtf: 
+	[Раздел. Предметная область эфиров]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of ethers]
+	(* <- lang_en;; *);
+
+<= nrel_section_decomposition:
+{
+	section_subject_domain_of_simple_ethers
+	(*
+	=> nrel_section_base_order: 
+		section_subject_domain_of_esters;;
+	*);
+	section_subject_domain_of_esters
+};
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_ethers = [*^"file://section_subject_domain_of_ethers.scsi"*];;
+
+section_subject_domain_of_ethers
+-> rrel_key_sc_element: subject_domain_of_ethers;;

@@ -1,0 +1,48 @@
+subject_domain_of_quantum_chemistry
+  => nrel_main_idtf:
+    [Предметная область квантовой химии] (* <- lang_ru;;*);
+    [Subject domain of quantum chemistry] (* <- lang_en;; *);
+
+  <- subject_domain;
+  -> rrel_maximum_studied_object_class: quantum_chemistry;;
+
+quantum_chemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [квантовая химия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [quantum chemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (квантовая химия)] (* <- lang_ru;; *);
+      [Def. (quantum chemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Квантовая химия — это направление химии, рассматривающее строение и свойства химических соединений, реакционную способность, кинетику и механизм химических реакций на основе квантовой механики.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (квантовая химия)](* <- lang_ru;; *);
+      [Stat. (quantum chemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Квантовая химия занимается рассмотрением химических и физических свойств веществ на атомарном уровне (моделях электронно-ядерного строения и взаимодействий, представленных с точки зрения квантовой механики). ](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (квантовая химия)](* <- lang_ru;; *);
+      [Pic. (quantum chemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/quantum_chemistry.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;

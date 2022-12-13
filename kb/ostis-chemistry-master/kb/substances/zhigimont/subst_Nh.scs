@@ -1,0 +1,130 @@
+subst_Nh
+<- sc_node_not_relation;
+=> nrel_main_idtf: [нихоний] (* <- lang_ru;; *);
+=> nrel_main_idtf: [nihonium] (* <- lang_en;; *);
+<- rrel_key_sc_element: definition_of_subst_Nh
+(* 
+	=> nrel_main_idtf: 
+	[Опр.(нихоний)] (* <- lang_ru;; *);
+	[Def.(nihonium)] (* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Nh">Нихоний</sc_element></b> — тяжёлый легкоплавкий непереходный <sc_element sys_idtf="radioactive_substance">радиоактивный</sc_element> <sc_element sys_idtf="metal">металл</sc_element>.] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+
+			-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Nh">Nihonium</sc_element></b> is a heavy fusible intransitive <sc_element sys_idtf="radioactive_substance">radioactive</sc_element> <sc_element sys_idtf="metal">metal</sc_element>.] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> radioactive_substance;;
+		-> metal;;
+	*);;
+*);
+
+<= nrel_inclusion: chemical_substance;
+
+
+<- rrel_key_sc_element: receiving_Nh_from_Mc
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(нихоний, получение*)](*<- lang_ru;;*);
+		[Stat.(nihonium, receiving*)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Нихоний получают в результате α-распада изотопов московия.] (*<- lang_ru;;*);;
+
+		-> rrel_example:[ Nihonium can be received by moscovium's isotopes' α-decay.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: receiving_Nh_from_Np
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(нихоний , получение*)](*<- lang_ru;;*);
+		[Stat.(nihonium, receiving*)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Нихоний получают в результате ядерной реакции нептуния.] (*<- lang_ru;;*);;
+
+		-> rrel_example:[ Nihonium can be received in neptunium's nuclear reaction.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: receiving_Nh_from_Bi
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(нихоний , получение*)](*<- lang_ru;;*);
+		[Stat.(nihonium, receiving*)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Нихоний получают в результате ядерной реакции висмута.] (*<- lang_ru;;*);;
+
+		-> rrel_example:[ Nihonium can be received in bismuth's nuclear reaction.] (*<- lang_en;;*);;
+	*);;
+*);
+
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 700 (*<- number;;*);;
+	*);;
+*);
+
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_kg:...
+		(*
+			=> nrel_main_idtf: [7,61] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_kg: 130 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 1430 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm: 16 (*<- number;;*);;
+	*);;
+*);;
+
+atomic_multiplicity_one -> (subst_Nh -> elem_Nh);;

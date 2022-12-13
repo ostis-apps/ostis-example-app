@@ -1,0 +1,46 @@
+sc_node_not_relation->manganese_acid;;
+
+manganese_acid=> nrel_main_idtf: [марганцовистая кислота](* <- lang_ru;; *);;
+manganese_acid=> nrel_main_idtf: [manganese acid](* <- lang_en;; *);;
+manganese_acid=> nrel_idtf: [H2MnO4](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: manganese_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Марганцовистая кислота — слабая двухосновная неорганическая кислота, имеет химическую формулу H2MnO4](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (марганцовистая кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		dibasic_acid;
+		weak_acid;
+		inorganic_acid;
+		chemical_formula
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: manganese_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Марганцовистая кислота образуется при подкислении растворов манганатов, но сразу распадется на оксид марганца(IV) и марганцовую кислоту.](*<-	lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(марганцовистая кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		nrel_acidification;
+		permanganic_acid
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: manganese_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/марганцовистая_кислота.png";;*);;
+	=> nrel_main_idtf: [Рисунок(марганцовистая кислота)](*<- lang_ru;;*);;
+*);;
+
+manganese_acid -> manganese_acid_x;;
+inorganic_acid=>nrel_inclusion:manganese_acid;;
+manganese_acid<=nrel_inclusion:oxyacid;;
+manganese_acid<=nrel_inclusion:dibasic_acid;;
+manganese_acid<=nrel_inclusion:weak_acid;;
+
+manganese_acid<-rrel_not_maximum_studied_object_class:subject_domain_of_acids;;

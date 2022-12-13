@@ -1,0 +1,54 @@
+nrel_brominezation<-sc_node_norole_relation;;
+
+nrel_brominezation=> nrel_main_idtf:[бромирование амидов* ](* <- lang_ru;; *);;
+nrel_brominezation=> nrel_main_idtf:[amide brominezation* ](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: nrel_brominezation;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[При действии галогенов (галогены в присутствии оснований) на N- незамещенные и монозамещенные амиды происходит замещение атомов водорода при азоте с образованием N-галогенамидов.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (бромирование*)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{
+		amide;
+		subst_Br
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:nrel_brominezation ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Водород в аминогруппах алифатических первичных и вторичных аминах может быть замещен на бром под действием различных галогенизирующих агентов, таких как гипогалогенит натрия.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(бромирование*)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{
+		amide;
+		subst_Br
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element:nrel_brominezation;;
+	<= nrel_sc_text_translation: ...(*->"file://img/nrel_brominezation.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(бромирование*)](*<- lang_ru;;*);;
+*);;
+
+nrel_brominezation => nrel_first_domain: chemical_substance;;
+nrel_brominezation => nrel_second_domain: chemical_substance;;
+
+
+arity_2->nrel_brominezation;;
+
+bromine_propamide<=nrel_brominezation:propamide;;

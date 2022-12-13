@@ -1,0 +1,10 @@
+section_subject_domain_of_poisons
+=> nrel_main_idtf:
+	[Раздел. Предметная область ядов](* <- lang_ru;; *);
+	[Section. Subject domain of poisons](* <- lang_en;; *);
+<- not_enough_formed_structure;
+<- atomic_section;;
+section_subject_domain_of_poisons = [*^"file://section_subject_domain_of_poisons.scsi"*];;
+
+section_subject_domain_of_poisons
+-> rrel_key_sc_element: subject_domain_of_poisons;;		

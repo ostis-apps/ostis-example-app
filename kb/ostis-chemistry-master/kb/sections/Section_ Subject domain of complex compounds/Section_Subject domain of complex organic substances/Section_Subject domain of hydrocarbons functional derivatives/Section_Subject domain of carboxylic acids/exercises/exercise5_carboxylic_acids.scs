@@ -1,0 +1,24 @@
+exercise5_carboxylic_acids
+<- exercises_carboxylic_acids;
+
+-> rrel_key_sc_element: steam; nrel_density_of_substance; monobasic_acid; carboxylic_acid; air;
+
+=> nrel_next_exercise: exercise6_carboxylic_acids;
+
+=> nrel_main_idtf:
+	[Упражнение 5. Раздел. Предметная область карбоновых кислот]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 5. Section. Subject domain of carboxylicacids]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise5_carboxylic_acids_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise5_carboxylic_acids_en.html" (* <-lang_en;; *);;
+	*);;

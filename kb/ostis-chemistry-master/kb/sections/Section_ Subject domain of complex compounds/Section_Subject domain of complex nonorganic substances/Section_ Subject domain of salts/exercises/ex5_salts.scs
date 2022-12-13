@@ -1,0 +1,22 @@
+ex5_salts
+<- exercises_salts;
+
+-> rrel_key_sc_element: metasilicic_acid; carbonic_acid; nrel_hydrolysis; sodium_carbonate; silicate; subst_Na; salt; solution;
+
+=> nrel_main_idtf:
+	[Упражнение 5. Раздел. Предметная область солей]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 5. Section. Subject domain of salts]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex5_salts_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex5_salts_en.html" (* <-lang_en;; *);;
+	*);;

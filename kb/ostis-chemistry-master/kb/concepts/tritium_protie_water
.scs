@@ -1,0 +1,60 @@
+
+tritium_protie_water
+=> nrel_main_idtf:
+	[tritium protie water](* <-lang_en;; *);
+	[тритий-протиевая вода](* <- lang_ru;; *);
+=> nrel_idtf:
+        [THO](* <-lang_en;; *);
+
+
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(тритий-протиевая вода)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[<b>Тритий-протиевая вода</b> - <sc_element sys_idtf = "water">вода</sc_element>, в <sc_element sys_idtf = "molecule">молекулах</sc_element> которой один <sc_element sys_idtf = "atom">атом</sc_element> <sc_element sys_idtf = "protie">протия</sc_element> замещён <sc_element sys_idtf = "atom">атомом</sc_element> <sc_element sys_idtf = "tritium">трития</sc_element> (тяжёлого радиоактивного <sc_element sys_idtf = "isotope">изотопа</sc_element> <sc_element sys_idtf = "hydrogen">водорода</sc_element>).]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->water;;
+		->atom;;
+		->isotope;;
+		->hydrogen;;
+		->tritium;;
+		->protie;;
+              
+	*);;
+*);
+
+
+//утверждения
+<- rrel_key_sc_element: statement_formula_tr_pr
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(химическая формула, тритий-протиевая вода)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Формула тритий-протиевой воды обычно записывается как <b>THO</b>.]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	-> rrel_key_sc_element: chemical_formula;;
+        -> rrel_key_sc_element: tritium_protie_water;;
+	<- rrel_axiom:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);;
+
+

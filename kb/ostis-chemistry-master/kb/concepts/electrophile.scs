@@ -1,0 +1,23 @@
+electrophile
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[электрофил](*<-lang_ru;;*);
+     [electrophile](*<-lang_en;;*);;
+
+electrophile
+
+<- rrel_key_sc_element: ... 
+    (*
+       <- definition;;
+       =>nrel_main_idtf: [Опр.(электрофил)]  (* <- lang_ru;; *);;
+       <= nrel_sc_text_translation:... (*->rrel_example: [<b>Электрофил (от др.-греч. ἤλεκτρον — «янтарь» + др.-греч. φιλέω — «любить», дословно «любящий электроны») — <sc_element sys_idtf="reagent">реагент</sc_element> или <sc_element sys_idtf="molecule">молекула</sc_element>, имеющая свободную орбиталь на внешнем электронном уровне.](* <- lang_ru;; =>nrel_format: format_html;; *);; *);;
+	<=nrel_using_constants: reagent; molecule;;
+     *);
+
+<-rrel_key_sc_element: ... 
+     (*
+	-> rrel_key_sc_element: cation;;
+        <- statement;;
+        <=nrel_sc_text_translation: ... (*->rrel_example: [Электрофилы проявляют свойства электронодефицитных реагентов, стремящихся к заполнению вакантной орбитали электронами. К электрофилам относятся положительно заряженные ионы — катионы (самый простой пример протон H<sup>+</sup>, карбокатионы, NO<sub>2</sub><sup>+</sup>), электронодефицитные нейтральные молекулы — SO<sub>3</sub>, а также молекулы с сильнополяризованной связью (HCOO<sup>-</sup>Br<sup>+</sup>).] (* <- lang_ru;; =>nrel_format: format_html;; *);; *);;
+        => nrel_main_idtf: [Утв. (электрофил, катион)] (* <- lang_ru;; *);;
+      *);;

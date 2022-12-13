@@ -1,0 +1,44 @@
+sc_node_not_relation->peroxymonosulfuric_acid;;
+
+peroxymonosulfuric_acid=> nrel_main_idtf: [надсерная кислота] (* <- lang_ru;; *);;
+peroxymonosulfuric_acid=> nrel_main_idtf: [peroxymonosulfuric acid](* <- lang_en;; *);;
+peroxymonosulfuric_acid=> nrel_idtf: [H2SO5](* <- lang_en;; *);;
+peroxymonosulfuric_acid=> nrel_idtf: [Кислота Каро](* <- lang_ru;; *);;
+peroxymonosulfuric_acid=> nrel_idtf: [пероксомоносерная кислота](* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: peroxymonosulfuric_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Надсерная кислота — неорганическое соединение с формулой H2SO5 ](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (надсерная кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nonorganic_compound;
+		chemical_formula
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: peroxymonosulfuric_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Соли надсерной кислоты  называются пероксомоносульфатами или кароатами. ](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(надсерная кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		salt
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: peroxymonosulfuric_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/надсерная_кислота.png";;*);;
+	=> nrel_main_idtf: [Рисунок(надсерная кислота,структурная)](*<- lang_ru;;*);;
+*);;
+
+peroxymonosulfuric_acid -> peroxymonosulfuric_acid_x;;
+peroxymonosulfuric_acid <=nrel_inclusion:oxyacid;;
+peroxymonosulfuric_acid <=nrel_inclusion:dibasic_acid;;
+peroxymonosulfuric_acid <=nrel_inclusion:inorganic_acid;;
+
+peroxymonosulfuric_acid <-rrel_not_maximum_studied_object_class:subject_domain_of_acids;;

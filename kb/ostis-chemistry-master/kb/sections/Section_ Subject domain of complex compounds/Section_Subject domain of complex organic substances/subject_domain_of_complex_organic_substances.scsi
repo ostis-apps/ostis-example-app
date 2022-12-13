@@ -1,0 +1,11 @@
+subject_domain_of_complex_organic_substances
+=> nrel_main_idtf: 
+	[Предметная область сложных органических веществ]
+	(* <- lang_ru;;*);
+	[Subject domain of complex organic substances]
+	(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	organic_substance;;

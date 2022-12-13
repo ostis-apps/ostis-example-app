@@ -1,0 +1,38 @@
+radionuclide
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[радионуклид]
+	(* <- lang_ru;;	*);
+	[radionuclide]
+	(* <- lang_en;;	*);;
+radionuclide
+<- rrel_key_sc_element:
+	Definition_of_radionuclide
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/radionuclide.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				atom;
+				radioactivity
+			};;
+
+
+
+Definition_of_radionuclide
+=> nrel_main_idtf:
+	[Опр.(Радионуклид)]
+	(* <- lang_ru;;	*);;
+
+
+
+
+
+
+

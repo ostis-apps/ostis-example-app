@@ -1,0 +1,5 @@
+chain
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[цепь](* <-lang_ru;; *);
+	[chain](* <- lang_en;; *);;

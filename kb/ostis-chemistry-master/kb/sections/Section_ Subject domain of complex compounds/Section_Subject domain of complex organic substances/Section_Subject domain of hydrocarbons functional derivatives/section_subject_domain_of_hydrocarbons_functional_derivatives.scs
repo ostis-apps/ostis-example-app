@@ -1,0 +1,74 @@
+section_subject_domain_of_hydrocarbons_functional_derivatives
+=> nrel_main_idtf: 
+	[Раздел. Предметная область функциональных производных углеводородов]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of hydrocarbons functional derivatives]
+	(* <- lang_en;; *);
+
+<= nrel_section_decomposition:
+{
+	section_subject_domain_of_alcohols
+	(*
+	=> nrel_section_base_order: 
+		section_subject_domain_of_phenols;;
+	*);
+	section_subject_domain_of_phenols
+	(*
+	=> nrel_section_base_order: 
+		section_subject_domain_of_ethers;;
+	*);
+	section_subject_domain_of_ethers
+	(*
+	=> nrel_section_base_order: 
+		section_subject_domain_of_aldehydes;;
+	*);
+	section_subject_domain_of_aldehydes
+	(*
+	=> nrel_section_base_order: 
+		section_subject_domain_of_ketones;;
+	*);
+	section_subject_domain_of_ketones
+	(*
+	=> nrel_section_base_order: 
+		section_subject_domain_of_carboxylic_acids;;
+	*);
+	section_subject_domain_of_carboxylic_acids
+	(*
+	=> nrel_section_base_order: 
+		section_subject_domain_of_fats;;
+	*);
+	section_subject_domain_of_fats
+	(*
+	=> nrel_section_base_order: 
+		section_subject_domain_of_carbohydrates;;
+	*);
+	section_subject_domain_of_carbohydrates
+	(*
+	=> nrel_section_base_order: 
+		section_subject_domain_of_amines;;
+	*);
+	section_subject_domain_of_amines
+	(*
+	=> nrel_section_base_order: 
+		section_subject_domain_of_amino_acids;;
+	*);
+	section_subject_domain_of_amino_acids
+	(*
+	=> nrel_section_base_order: 
+		section_subject_domain_of_proteins;;
+	*);
+	section_subject_domain_of_proteins
+	(*
+	=> nrel_section_base_order: 
+		section_subject_domain_of_nucleic_acids;;
+	*);
+	section_subject_domain_of_nucleic_acids
+};
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_hydrocarbons_functional_derivatives = [*^"file://subject_domain_of_hydrocarbons_functional_derivatives.scsi"*];;
+
+section_subject_domain_of_hydrocarbons_functional_derivatives
+-> rrel_key_sc_element: subject_domain_of_hydrocarbons_functional_derivatives;;

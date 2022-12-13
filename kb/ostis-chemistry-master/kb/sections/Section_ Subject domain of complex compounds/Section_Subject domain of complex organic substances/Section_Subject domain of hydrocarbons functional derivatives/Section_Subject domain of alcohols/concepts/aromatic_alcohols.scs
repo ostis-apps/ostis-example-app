@@ -1,0 +1,58 @@
+aromatic_alcohols
+<-sc_node_not_relation;;
+
+aromatic_alcohols=> nrel_main_idtf:[ароматический спирт](* <- lang_ru;; *);;
+aromatic_alcohols=> nrel_main_idtf:[aromatic alcohol](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: aromatic_alcohols;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Ароматические спирты - 
+	это соединения, в которых 
+	<b><sc_element sys_idtf="hydroxyl_group">гидроксильная группа</b></sc_element>  находится в "боковой цепи", 
+	то есть не связана непосредственно с <b><sc_element sys_idtf="benzene">бензольным</b></sc_element>
+	 ядром.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (ароматический спирт)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+			benzene;
+		hydroxyl_group
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: aromatic_alcohols;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[ Большинство 
+	ароматических спиртов при нормальных условиях представляют 
+	собой <b><sc_element sys_idtf="no_color">бесцветные</b></sc_element>
+	кристаллические вещества с невысокой 
+	<b><sc_element sys_idtf="temperature">температурой</b></sc_element> плавления и характерным запахом.
+ Малорастворимы в <b><sc_element sys_idtf="water">воде</b></sc_element>, хорошо 
+растворяются в <b><sc_element sys_idtf="organic_compound">органических растворителях</b></sc_element>, токсичны, п
+ри хранении на воздухе постепенно темнеют в результате окисления. ](*
+	 <-lang_ru;;
+	=>nrel_format:format_html;;
+	 *);;
+	 *);;
+	
+	=> nrel_main_idtf: [Утверждение(ароматический спирт)](*<- lang_ru;;*);;
+		=> nrel_using_constants:
+		{
+		no_color;
+		water;
+		organic_compound;
+		temperature
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: aromatic_alcohols;;
+	<= nrel_sc_text_translation: ...(*->"file://image/aromatic_alcohols.png";;*);;
+	=> nrel_main_idtf: [Рисунок(ароматический спирт)](*<- lang_ru;;*);;
+*);;

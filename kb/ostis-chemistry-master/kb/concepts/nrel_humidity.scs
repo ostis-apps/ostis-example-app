@@ -1,0 +1,70 @@
+nrel_humidity
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[влажность*](* <-lang_ru;; *);
+	[humidity*](* <-lang_en;; *);
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+//разбиение
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку характеристики влаги.](* <-lang_ru;; *);;
+	-> relative_humidity;;
+	-> absolute_humidity;;
+*);
+// домены
+=>nrel_second_domain: integer;
+=>nrel_first_domain: chemical_solid;
+=>nrel_definitional_domain:...
+(*
+	<=nrel_combination:...
+	(*
+		->chemical_solid; integer;;
+	*);;
+*);
+//определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(влажность*)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://html/nrel_moisture_definition.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->water;;
+		->chemical_solid;;
+	*);;
+*);
+//утверждение
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(влажность*, твердое тело, измельчённость*, пористость*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Влажность зависит от природы вещества, а в твёрдых телах, кроме того, от степени измельчённости или пористости.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: solid; nrel_crumbling; nrel_porosity;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(влажность*, вода, химическое вещество)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Влажность обычно характеризуется количеством воды в веществе, выраженным в процентах (%) от первоначальной массы влажного вещества (массовая влажность) или её объёма (объёмная влажность).](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: water; chemical_substance;;
+*);;

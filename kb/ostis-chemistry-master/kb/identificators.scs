@@ -1,0 +1,41 @@
+rrel_atom
+	=>nrel_main_idtf:
+	[атом']
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[atom']
+	(* <- lang_en;; *);;
+
+rrel_gram_per_mole
+	=>nrel_main_idtf:
+	[грамм/моль']
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[gram/mole']
+	(* <- lang_en;; *);;
+
+rrel_gram_per_liter
+	=>nrel_main_idtf:
+	[грамм/литр']
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[gram/liter']
+	(* <- lang_en;; *);;
+
+
+rrel_gram
+	=>nrel_main_idtf:
+	[грамм']
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[gram']
+	(* <- lang_en;; *);;
+
+
+rrel_cubic_m
+	=>nrel_main_idtf:
+	[м3']
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[m3']
+	(* <- lang_en;; *);;

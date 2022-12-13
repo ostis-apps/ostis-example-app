@@ -1,0 +1,47 @@
+copper_acetylide
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[ацетиленид меди](*<-lang_ru;;*);
+     [copper acetylide](*<-lang_en;;*);
+=> nrel_idtf:
+	[карби меди]
+	(* <- lang_ru;; *);
+	[copper carbide]
+	(* <- lang_en;; *);
+	[Cu2C2]
+	(* <- lang_en;; *);;
+
+copper_acetylide
+
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(ацетиленид меди)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b>Ацетилени́д ме́ди(I)</b> — бинарное неорганическое соединение <sc_element sys_idtf="subst_Cu">меди</sc_element> и <sc_element sys_idtf="subst_C">углерода</sc_element>, химическая формула Cu<sub>2</sub>C<sub>2</sub> красно-коричневые, иногда черные кристаллы. ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: subst_Cu; subst_C;;
+*);
+
+<-rrel_key_sc_element: ... 
+     (*
+	->rrel_key_sc_element: nrel_receiving;;
+        <- statement;;
+	=>nrel_main_idtf: [Утв. (ацетиленид меди, получение*)](*<-lang_ru;;*);;
+        <=nrel_sc_text_translation: ... (*->rrel_example: [Образуется в виде осадка при пропускании ацетилена в аммиачные растворы солей меди(I).<br> C<sub>2</sub>H<sub>2</sub>+2Cu<sub>2</sub>Cl<sub>2</sub>↓+2HCl] (*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+      *);
+
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [151,11] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+<- color_reddish_brown;
+<- acetylide;
+<- crystall;;

@@ -1,0 +1,6 @@
+atomic_multiplicity 
+	=> nrel_main_idtf: 
+		[количество вхождений атома](* <- lang_ru;; *);
+		[atomic multiplicity](* <- lang_en;; *);
+	<- sc_node_not_relation;
+	<- parameter;;

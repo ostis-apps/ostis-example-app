@@ -1,0 +1,116 @@
+thiocyanate_decomposition
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[разложение роданида](*<- lang_ru;;*);
+	[decomposition of thiocyanate](*<- lang_en;;*);
+=> nrel_idtf:
+	[разложение тиоцианата ртути](*<- lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (разложение тиоцианата ртути)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Разложение тиоцианата ртути - первая из открытых реакций этого типа. Ее первооткрыватель - студент Гейдельбергского университета Фридрих Вёлер (1800—1882). Как-то раз осенью 1820 года, смешивая водные растворы тиоцианата аммония NH4NCS и нитрата ртути Hg(NO3)2, он обнаружил, что из раствора выпадает белый осадок. Вёлер отфильтровал раствор и высушил осадок полученного тиоцианата ртути Hg(NCS)2. Из любопытства исследователь поджег его. Осадок загорелся и произошло чудо: из невзрачного белого комочка, извиваясь, выползла и стала расти длинная черно-желтая "змея".]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (разложение тиоцианата ртути пропорции)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Из 1 г тиоцианата аммония и 2,5 г нитрата ртути в умелых руках может получиться змея длиной 20-30 см.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+<= nrel_sc_text_translation: ...
+(* 
+	=> nrel_main_idtf: 		
+		[Видео (разложение тиоцианата ртути)](*<- lang_ru;;*);;
+	-> rrel_example: [M9pGUxreJZ8]
+		(*
+			=> nrel_format: format_youtubelink;;
+			<-lang_ru;;
+		*);;
+*);;
+
+thiocyanate_decomposition_experiment
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[опыт по разложению роданида](*<- lang_ru;;*);;
+
+heating_of_mercuric_thiocyanate
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[нагревание роданида ртути](*<- lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (нагревание роданида ртути)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[При нагревании роданида ртути образуются черная соль - сульфид ртути, нитрид углерода желтого цвета и дисульфид углерода CS2.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;
+
+carbon_nitride_swelling
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[взаимодействие кислорода O2 с дисульфидом углерода CS2](*<- lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (взаимодействие кислорода O2 с дисульфидом углерода CS2)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Дисульфид углерода CS2 на воздухе воспламеняется и сгорает, образуя диоксид углерода CO2 и диоксид серы SO2.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;
+
+cs2_ignition
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[взаимодействие нитрида углерода с черным сульфидом ртути (II)](*<- lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (взаимодействие нитрида углерода с черным сульфидом ртути (II))](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Нитрид углерода вспучивается образующимися газами, при движении он захватывает черный сульфид ртути (II), и получается желто-черная пористая масса.
+
+		Из кусочка роданида ртути вылезает большая "змея" черно-желтого цвета, похожая на ужа.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;

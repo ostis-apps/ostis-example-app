@@ -1,0 +1,45 @@
+viper_from_soda_and_sugar
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[гадюка из соды и сахара](*<- lang_ru;;*);
+	[viper from soda and sugar](*<- lang_en;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (гадюка из соды и сахара)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Змея состоит из карбоната натрия Na2CO3, смешанного с мельчайшими частичками угля, образованного при горении сахара.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+<= nrel_sc_text_translation: ...
+(* 
+	=> nrel_main_idtf: 		
+		[Видео (гадюка из соды и сахара)](*<- lang_ru;;*);;
+	-> rrel_example: [IaNdpf0cjs0]
+		(*
+			=> nrel_format: format_youtubelink;;
+			<-lang_ru;;
+		*);;
+*);
+
+
+//В столовую тарелку насыпать 3–4 ложки сухого просеянного речного песка и сделать из него горку с углублением в вершине. 
+//Приготовить смесь, состоящую из 1 чайной ложки сахарной пудры и 1/4 чайной ложки гидрокарбоната натрия NaHCO3 (питьевая сода). 
+//Песок пропитать 96–98%-м раствором этанола C2H5OH и насыпать в углубление горки приготовленную реакционную смесь.
+//Поджечь горку.
+
+=> nrel_ingredient: ...
+(*
+	-> river_sand;;
+	-> powdered_sugar;;
+	-> sodium_bicarbonate;;
+	-> ethanol;;
+*);;

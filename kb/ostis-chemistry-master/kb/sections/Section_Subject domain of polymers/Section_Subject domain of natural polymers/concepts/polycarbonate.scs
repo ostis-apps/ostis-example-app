@@ -1,0 +1,132 @@
+polycarbonate<-sc_node_not_relation;;
+polycarbonate=> nrel_main_idtf:[поликарбонат](* <- lang_ru;; *);;
+polycarbonate=> nrel_main_idtf:[polycarbonate](* <- lang_en;; *);;
+polycarbonate=> nrel_idtf:[ poly(carbonate)​](* <- lang_en;; *);;
+polycarbonate=> nrel_idtf:[(-O-R-O-CO-)n](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: polycarbonate;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Поликарбонат – это прозрачный
+	 <b><sc_element sys_idtf="polymer">полимерный</b></sc_element>
+	  пластик, который хранится в виде 
+	  <b><sc_element sys_idtf="granule">гранул</b></sc_element> до самого момента переработки.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (поликарбонат)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+			granule;
+		polymer
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: polycarbonate;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В состав поликарбонат 
+	входит: двухатомный <b><sc_element sys_idtf="phenol">фенол</b></sc_element>
+	,  <b><sc_element sys_idtf="water">вода</b></sc_element>, <b><sc_element sys_idtf="carbonic_acid">угольная кислота</b></sc_element>
+	, растворители и красители.]
+	 
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(поликарбонат,сложный состав)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		phenol;
+		carbonic_acid;
+		water
+		};;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:polycarbonate;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Поликарбонат при высоких <b><sc_element sys_idtf="temperature">температурах</b></sc_element> не теряет своих
+	 <b><sc_element sys_idtf="physical_property">свойств</b></sc_element>, 
+	способен к самовосстановлению, а потому и экологически безопасен. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(поликарбонат, экологически безопасен)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		temperature;
+		physical_property
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polycarbonate;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polycarbonate_formula.png";;*);;
+	=> nrel_main_idtf: [Рисунок(поликарбонат,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polycarbonate;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polycarbonate_3d.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(поликарбонат, пример)](*<- lang_ru;;*);;
+*);;
+
+thermoplastic_polymer=>nrel_inclusion:polycarbonate;;
+polycondensation_polymer=>nrel_inclusion:polycarbonate;;
+homo_chain_polymer=>nrel_inclusion:polycarbonate;;
+artificial_polymers=>nrel_inclusion:polycarbonate;;
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> polycarbonate;;
+	=> rrel_mol: [13 000]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polycarbonate;;
+	=> rrel_degree_celsius: 314
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polycarbonate;;
+	=> rrel_joule_per_kelvin_and_mole: 0.71
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polycarbonate;;
+	=> rrel_gram_per_cubic_cm: 2.8
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+

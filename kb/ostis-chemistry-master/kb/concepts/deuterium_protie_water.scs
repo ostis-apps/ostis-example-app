@@ -1,0 +1,87 @@
+
+deuterium_protie_water
+=> nrel_main_idtf:
+	[deuterium protie water](* <-lang_en;; *);
+	[дейтерий-протиевая вода](* <- lang_ru;; *);
+=> nrel_idtf:
+        [DHO](* <-lang_en;; *);
+
+
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(дейтерий-протиевая вода)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[<b>Дейтерий-протиевая вода</b> - <sc_element sys_idtf = "water">вода</sc_element>, в <sc_element sys_idtf = "molecule">молекулах</sc_element> которой один <sc_element sys_idtf = "atom">атом</sc_element> <sc_element sys_idtf = "protie">протия</sc_element> замещён <sc_element sys_idtf = "atom">атомом</sc_element> <sc_element sys_idtf = "deuterium">дейтерия</sc_element>.]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->water;;
+		->atom;;
+		->isotope;;
+		->hydrogen;;
+		->deuterium;;
+		->protie;;
+              
+	*);;
+*);
+
+//утверждения
+<- rrel_key_sc_element: statement_formula_de_pr
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(химическая формула, дейтерий-протиевая вода)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Формула тритий-дейтериевой воды обычно записывается как <b>DHO</b>.]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	-> rrel_key_sc_element: chemical_formula;;
+        -> rrel_key_sc_element: deuterium_protie_water;;
+	<- rrel_axiom:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+
+<- rrel_key_sc_element: statement_sostav_de_pr
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(химическая формула, дейтерий-протиевая вода, смесь, молекула, дейтериевая вода, вода)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Вода, имеющая формальный состав <b>DHO</b>, вследствие реакций изотопного обмена реально будет состоять из смеси молекул <b>DHO</b>, <b>D<sub>2</sub>O</b> и <b>H<sub>2</sub>O</b> (в пропорции примерно 2:1:1).]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	-> rrel_key_sc_element: chemical_formula;;
+        -> rrel_key_sc_element: deuterium_protie_water;;
+        -> rrel_key_sc_element: mixture;;
+        -> rrel_key_sc_element: molecule;;
+        -> rrel_key_sc_element: D2O;;
+        -> rrel_key_sc_element: H2O;;
+	<- rrel_axiom:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);;
+
+
+

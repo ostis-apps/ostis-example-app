@@ -1,0 +1,21 @@
+planck_mass
+=> nrel_main_idtf:
+	[планковская единица массы](* <- lang_ru;; *);
+	[Planck mass](* <- lang_ru;; *);
+=> nrel_idtf:
+	[2,176 51(13)*10^(−8) кг](* <- lang_ru;; *);
+	[Масса Планка](* <- lang_ru;; *);
+	[максима](* <- lang_ru;; *);
+	[планковская масса](* <- lang_ru;; *);
+	[2,176 51(13)*10^(−8) kg](* <- lang_en;; *);
+	[2,176 51(13)*10^(−8) кг](* <- lang_ru;; *);
+	[MPl](* <- lang_en;; *);
+<- value;
+<= nrel_measurement:...
+(*
+	-> rrel_10_in_minus_8_kg: ...
+	(*
+		<- number;;
+		=> nrel_main_idtf:[2,176](*<-lang_ru;; <- lang_en;;*);;
+	*);;
+*);;

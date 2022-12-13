@@ -1,0 +1,1155 @@
+chemical_wepon
+<-sc_node_not_relation;
+=> nrel_main_idtf:[химическое оружие](* <- lang_ru;; *);
+=> nrel_main_idtf:[chemical wepon](* <- lang_en;; *);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (химическое оружие)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->chemical_agent;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="chemical_wepon">Химическое оружие</sc_element></b> - 
+		 оружие массового поражения, действие которого основано на токсических свойствах 
+         <sc_element sys_idtf="chemical_agent">отравляющих веществ (ОВ)</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);;
+
+chemical_agent
+  <-sc_node_not_relation;
+  => nrel_main_idtf:[отравляющее вещество](* <- lang_ru;; *);
+  => nrel_main_idtf:[chemical agent](* <- lang_en;; *);
+
+  => nrel_subdividing:...(*
+	=> nrel_main_idtf:[Разбиение по характеру физиологического воздействия на организм человека](* <- lang_ru;; *);;
+    -> nerve_agent;;
+    -> blister_agent;;
+    -> irritant_agent;;
+    -> incapacitating_agent;;
+    -> choking_agent;;
+    -> blood_agent;;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (отравляющее вещество)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+        ->toxin;;
+        ->chemical_compound;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="chemical_agent">Отравляющее вещество</sc_element></b> - 
+		<sc_element sys_idtf="toxin">токсичное</sc_element> 
+        <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element>, 
+        предназначенное для поражения живой силы противника.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	    [Утв. (отравляющее вещество)](*<-lang_ru;;*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<sc_element sys_idtf="chemical_agent">Отравляющие вещества</sc_element>
+			  могут воздействовать на организм через органы дыхания, 
+              кожные покровы и пищеварительный тракт.]
+             (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);;
+
+
+nerve_agent
+  <-sc_node_not_relation;
+  => nrel_main_idtf:[нервно-паралитическое отравляющее вещество](* <- lang_ru;; *);
+  => nrel_main_idtf:[nerve agent](* <- lang_en;; *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (нервно-паралитическое отравляющее вещество)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+        ->toxin;;
+        ->chemical_compound;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="nerve_agent">Нервно-паралитические отравляющие вещестао</sc_element></b> - 
+		<sc_element sys_idtf="toxin">токсичные</sc_element> 
+        <sc_element sys_idtf="chemical_compound">химические соединения</sc_element>, 
+        которые поражают центральную нервную систему человека и 
+        парализуют ее нормальное функционирование.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	    [Утв. (нервно-паралитическое отравляющее вещество)](*<-lang_ru;;*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[Целью применения <sc_element sys_idtf="nerve_agent">нервно-паралитических отравляющих веществ</sc_element>
+			  является быстрый и массовый вывод личного состава из строя с возможно бо́льшим числом смертельных исходов.]
+             (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);;
+
+blister_agent
+  <-sc_node_not_relation; 
+  => nrel_main_idtf:[кожно-нарывное отравляющее вещество](* <- lang_ru;; *);
+  => nrel_main_idtf:[vesicant](* <- lang_en;; *);
+  => nrel_main_idtf:[blister agent](* <- lang_en;; *);
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (кожно-нарывное отравляющее вещество)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+        ->toxin;;
+        ->chemical_compound;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="blister_agent">Кожно-нарывные отравляющие вещества</sc_element></b> - 
+		<sc_element sys_idtf="toxin">токсичные</sc_element> 
+        <sc_element sys_idtf="chemical_compound">химические соединения</sc_element>, 
+        обладающие многосторонним поражающим действием(в капельно-жидком и парообразном состояниях 
+        поражают кожу и глаза, при вдыхании паров - дыхательные пути и легкие, при попада­нии в 
+        организм с пищей и водой - органы пищеварения).]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+	*);;
+  *);;
+
+irritant_agent
+  <-sc_node_not_relation;
+  => nrel_main_idtf:[раздражающее вещество](* <- lang_ru;; *);
+  => nrel_main_idtf:[irritant agent](* <- lang_en;; *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (раздражающее вещество)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+        ->toxin;;
+        ->chemical_compound;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="irritant_agent">Раздражающие вещества</sc_element></b> - 
+		<sc_element sys_idtf="toxin">токсичные</sc_element> 
+        <sc_element sys_idtf="chemical_compound">химические соединения</sc_element>, 
+        которые вызывают жжение и боль во рту, горле и в гла­зах, сильное слезотечение, кашель, затруднение дыхания.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	    [Утв. (раздражающее вещество)](*<-lang_ru;;*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[Для борьбы с преступными элементами правоохранительные органы широко используют в основном 
+            <sc_element sys_idtf="irritant_agent">раздражающие вещества</sc_element>.]
+             (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);;
+
+incapacitating_agent
+  <-sc_node_not_relation;
+  => nrel_main_idtf:[психохимическое отравляющее вещество](* <- lang_ru;; *);
+  => nrel_main_idtf:[incapacitating_agent](* <- lang_en;; *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (психохимическое отравляющее вещество)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+        ->toxin;;
+        ->chemical_compound;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="incapacitating_agent">Психохимические отравляющее вещества</sc_element></b> - 
+		<sc_element sys_idtf="toxin">токсичные</sc_element> 
+        <sc_element sys_idtf="chemical_compound">химические соединения</sc_element>, 
+        которые действуют на центральную нервную систему и вызы­вают психологические 
+        (галлюцинации, страх, подавленность) или фи­зические (слепота, глухота) расстройства.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	    [Утв. (психохимическое отравляющее вещество)](*<-lang_ru;;*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[Целью применения <sc_element sys_idtf="incapacitating_agent">психохимических отравляющих веществ</sc_element>
+			  является вывод из строя живой силы противника на некоторое время.]
+             (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);;
+
+choking_agent
+  <-sc_node_not_relation;
+  => nrel_main_idtf:[удушающее отравляющее вещество](* <- lang_ru;; *);
+  => nrel_main_idtf:[pulmonary agent](* <- lang_en;; *);
+  => nrel_main_idtf:[choking agent](* <- lang_en;; *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (удушающее отравляющее вещество)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+        ->toxin;;
+        ->chemical_compound;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="choking_agent">Удушающие отравляющее вещества</sc_element></b> - 
+		<sc_element sys_idtf="toxin">токсичные</sc_element> 
+        <sc_element sys_idtf="chemical_compound">химические соединения</sc_element>, 
+        которые действуют и поражают органы дыхания.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+	*);;
+  *);;
+
+blood_agent
+  <-sc_node_not_relation;
+  => nrel_main_idtf:[общееядовитое отравляющее вещество](* <- lang_ru;; *);
+  => nrel_main_idtf:[blood agent](* <- lang_en;; *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (общееядовитое отравляющее вещество)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+        ->toxin;;
+        ->chemical_compound;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="blood_agent">Общеядовитые отравляющее вещества</sc_element></b> - 
+		<sc_element sys_idtf="toxin">токсичные</sc_element> 
+        <sc_element sys_idtf="chemical_compound">химические соединения</sc_element>, 
+        которые, попадая в организм, нарушают передачу кислорода из крови к тканям.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	    [Утв. (общееядовитое отравляющее вещество)](*<-lang_ru;;*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<sc_element sys_idtf="blood_agent">Общеядовитые отравляющих веществ</sc_element>
+			  являются одними из самых быстродействующих отравляющих веществ.]
+             (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);;
+
+sarin <= nrel_inclusion: nerve_agent;;
+yperite <= nrel_inclusion: blister_agent;;
+hydrocyanic_acid <= nrel_inclusion: blood_agent;;
+
+soman
+  <-sc_node_not_relation;
+  <= nrel_inclusion: nerve_agent;
+  => nrel_main_idtf:[зоман](* <- lang_ru;; *);
+  => nrel_main_idtf:[soman](* <- lang_en;; *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (зоман)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->chemical_agent;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+    ->elem_F;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="soman">Зоман</sc_element></b> - 
+		<sc_element sys_idtf="chemical_agent">отравляющее вещество</sc_element>, c 
+		<sc_element sys_idtf="chemical_formula">химической формулой</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element><sub>7</sub>
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>16</sub>
+    <sc_element sys_idtf="elem_F">F</sc_element>
+		<sc_element sys_idtf="elem_O">O</sc_element><sub>2</sub>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (зоман, бесцветный, жидкость, запах)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="soman">Зоман</sc_element> - 
+		<sc_element sys_idtf="no_color">бесцетная</sc_element> 
+		<sc_element sys_idtf="liquid">жидкость</sc_element>, имеющая, 
+    по разным данным, <sc_element sys_idtf="smell">запах</sc_element> 
+    яблок, камфоры или слабый запах скошенного сена.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (зоман)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/soman.png"(* => nrel_format: format_png;;*);;
+	*);;
+  *);;
+
+tabun
+  <-sc_node_not_relation;
+  <= nrel_inclusion: nerve_agent;
+  => nrel_main_idtf:[табун](* <- lang_ru;; *);
+  => nrel_main_idtf:[tabun](* <- lang_en;; *);
+  
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (табун)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->chemical_agent;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+    ->elem_N;;
+    ->elem_P;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="tabun">Табун</sc_element></b> - 
+		<sc_element sys_idtf="chemical_agent">отравляющее вещество</sc_element>, c 
+		<sc_element sys_idtf="chemical_formula">химической формулой</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element><sub>5</sub>
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>11</sub>
+    <sc_element sys_idtf="elem_N">N</sc_element><sub>2</sub>
+		<sc_element sys_idtf="elem_O">O</sc_element><sub>2</sub>
+    <sc_element sys_idtf="elem_P">P</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (табун, бесцветный, жидкость, запах)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="tabun">Табун</sc_element> - 
+		<sc_element sys_idtf="no_color">бесцетная</sc_element>, подвижная, 
+		<sc_element sys_idtf="liquid">жидкость</sc_element>, с 
+    приятным фруктовым <sc_element sys_idtf="smell">запахом</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (табун)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/tabun.png"(* => nrel_format: format_png;;*);;
+	*);;
+  *);;
+
+novichok
+  <-sc_node_not_relation;
+  <= nrel_inclusion: nerve_agent;
+  => nrel_main_idtf:["Новичок"](* <- lang_ru;; *);
+  => nrel_main_idtf:["Novichok"](* <- lang_en;; *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. ("Новичок")](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->chemical_agent;;
+		->structural_formula;;
+    ->elem_F;;
+    ->elem_P;;
+		->elem_O;;
+    ->radical;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="novichok">"Новичок"</sc_element></b> - семейство 
+		<sc_element sys_idtf="chemical_agent">отравляющих веществ</sc_element>, которые 
+    являются фторфосфонатами, cо <sc_element sys_idtf="structural_formula">структурной 
+    формулой</sc_element> R<sub>2</sub>-(<sc_element sys_idtf="elem_P">P</sc_element>
+		<sc_element sys_idtf="elem_O">0</sc_element>
+    <sc_element sys_idtf="elem_F">F</sc_element>)
+    <sc_element sys_idtf="elem_O">0</sc_element>-
+		R<sub>1</sub>, где R<sub>2</sub>, R<sub>1</sub> - некоторые 
+    <sc_element sys_idtf="radical">радикалы</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. ("Новичок")](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Семейство <sc_element sys_idtf="novichok">"Новичков"</sc_element> 
+    состоит из более чем шестидесяти похожих соединеий.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);;
+
+lewisite
+  <-sc_node_not_relation;
+  <= nrel_inclusion: blister_agent;
+  => nrel_main_idtf:[люизит](* <- lang_ru;; *);
+  => nrel_main_idtf:[lewisite](* <- lang_en;; *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (люизит)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->chemical_agent;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+    ->elem_As;;
+    ->elem_Cl;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="lewisite">Люизит</sc_element></b> - 
+		<sc_element sys_idtf="chemical_agent">отравляющее вещество</sc_element>, c 
+		<sc_element sys_idtf="chemical_formula">химической формулой</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element><sub>2</sub>
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>2</sub>
+    <sc_element sys_idtf="elem_As">As</sc_element>
+		<sc_element sys_idtf="elem_Cl">Cl</sc_element><sub>3</sub>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (люизит, ядовитый, жидкость, запах)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="lewisite">Люизит</sc_element> - 
+		темно-коричневая <sc_element sys_idtf="poison">ядовитая</sc_element>, 
+		<sc_element sys_idtf="liquid">жидкость</sc_element>, с 
+    резким раздражающим <sc_element sys_idtf="smell">запахом</sc_element>, 
+    напоминающим запах герани.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (люизит)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Военными в просторечии <sc_element sys_idtf="lewisite">люизит</sc_element> 
+		называется «роса смерти»]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (табун)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/lewisite.png"(* => nrel_format: format_png;;*);;
+	*);;
+  *);;
+
+cyanogen_chloride
+  <-sc_node_not_relation;
+  <= nrel_inclusion: blood_agent;
+  => nrel_main_idtf:[хлорциан](* <- lang_ru;; *);
+  => nrel_main_idtf:[cyanogen chloride](* <- lang_en;; *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (хлорциан)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->chemical_agent;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_N;;
+    ->elem_Cl;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="cyanogen_chloride">Хлорциан</sc_element></b> - 
+		<sc_element sys_idtf="chemical_agent">отравляющее вещество</sc_element>, c 
+		<sc_element sys_idtf="chemical_formula">химической формулой</sc_element> 
+		<sc_element sys_idtf="elem_Cl">Cl</sc_element>
+    <sc_element sys_idtf="elem_C">C</sc_element>
+		<sc_element sys_idtf="elem_N">N</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (хлорциан, бесцветный, газ, запах)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="cyanogen_chloride">Хлорциан</sc_element> - 
+		<sc_element sys_idtf="no_color">бесцетный</sc_element> высокотоксичный 
+		<sc_element sys_idtf="gas">газ</sc_element>, с 
+    резким <sc_element sys_idtf="smell">запахом</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (хлорциан)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/cyanogen_chloride.png"(* => nrel_format: format_png;;*);;
+	*);;
+  *);;
+
+phosgene
+  <-sc_node_not_relation;
+  <= nrel_inclusion: choking_agent;
+  => nrel_main_idtf:[фосген](* <- lang_ru;; *);
+  => nrel_main_idtf:[phosgene](* <- lang_en;; *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (фосген)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->chemical_agent;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_O;;
+    ->elem_Cl;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="phosgene">Фосген</sc_element></b> - 
+		<sc_element sys_idtf="chemical_agent">отравляющее вещество</sc_element>, c 
+		<sc_element sys_idtf="chemical_formula">химической формулой</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element>
+    <sc_element sys_idtf="elem_O">O</sc_element>
+    <sc_element sys_idtf="elem_Cl">Cl</sc_element><sub>2</sub>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (фосген, бесцветный, газ, запах)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="phosgene">Фосген</sc_element> - 
+		<sc_element sys_idtf="no_color">бесцетный</sc_element> высокотоксичный и удушливый 
+		<sc_element sys_idtf="gas">газ</sc_element>, с 
+    <sc_element sys_idtf="smell">запахом</sc_element> прелого сена.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (фосген)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/phosgene.png"(* => nrel_format: format_png;;*);;
+	*);;
+  *);;
+
+diphosgene
+  <-sc_node_not_relation;
+  <= nrel_inclusion: choking_agent;
+  => nrel_main_idtf:[дифосген](* <- lang_ru;; *);
+  => nrel_main_idtf:[diphosgene](* <- lang_en;; *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (дифосген)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->chemical_agent;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_O;;
+    ->elem_Cl;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="diphosgene">Дифосген</sc_element></b> - 
+		<sc_element sys_idtf="chemical_agent">отравляющее вещество</sc_element>, c 
+		<sc_element sys_idtf="chemical_formula">химической формулой</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element><sub>2</sub>
+    <sc_element sys_idtf="elem_Cl">Cl</sc_element><sub>4</sub>
+    <sc_element sys_idtf="elem_O">O</sc_element><sub>2</sub>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (дифосген, бесцветный, жидкость, запах)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="diphosgene">Дифосген</sc_element> - 
+		<sc_element sys_idtf="no_color">бесцетная</sc_element> подвижная 
+		<sc_element sys_idtf="liquid">жидкость</sc_element>, с характерным 
+    <sc_element sys_idtf="smell">запахом</sc_element> прелого сена, на воздухе дымит.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (дифосген)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/diphosgene.png"(* => nrel_format: format_png;;*);;
+	*);;
+  *);;
+
+3_quinuclidinyl_benzilate
+  <-sc_node_not_relation;
+  <= nrel_inclusion: incapacitating_agent;
+  => nrel_main_idtf:[хинуклидил-3-бензилат](* <- lang_ru;; *);
+  => nrel_main_idtf:[3-quinuclidinyl benzilate](* <- lang_en;; *);;
+  
+lysergic_acid_diethylamide
+  <-sc_node_not_relation;
+  <= nrel_inclusion: incapacitating_agent;
+  => nrel_main_idtf:[ЛСД](* <- lang_ru;; *);
+  => nrel_main_idtf:[диэтиламид лизергиновой кислоты](* <- lang_ru;; *);
+  => nrel_main_idtf:[LSD](* <- lang_en;; *);
+  => nrel_main_idtf:[lysergic acid diethylamide](* <- lang_en;; *);;
+
+chloroacetophenone
+  <-sc_node_not_relation;
+  <= nrel_inclusion: irritant_agent;
+  => nrel_main_idtf:[хлорацетофенон](* <- lang_ru;; *);
+  => nrel_main_idtf:[chloroacetophenone](* <- lang_en;; *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (хлорацетофенон)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->chemical_agent;;
+		->chemical_formula;;
+		->elem_C;;
+    ->elem_H;;
+		->elem_O;;
+    ->elem_Cl;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="chloroacetophenone">Хлорацетофенон</sc_element></b> - 
+		<sc_element sys_idtf="chemical_agent">отравляющее вещество</sc_element>, c 
+		<sc_element sys_idtf="chemical_formula">химической формулой</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element><sub>8</sub>
+    <sc_element sys_idtf="elem_H">H</sc_element><sub>7</sub>    
+    <sc_element sys_idtf="elem_O">O</sc_element>
+    <sc_element sys_idtf="elem_Cl">Cl</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (хлорацетофенон, белый, кристалл, запах)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="chloroacetophenone">Хлорацетофенон</sc_element> - 
+		<sc_element sys_idtf="color_white">белые</sc_element> 
+		<sc_element sys_idtf="crystall">кристаллы</sc_element>, с 
+    <sc_element sys_idtf="smell">запахом</sc_element> черёмухи или цветущих яблонь.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (хлорацетофенон)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="chloroacetophenone">Хлорацетофенон</sc_element> - 
+    полицейское средство для разгона демонстрантов, 
+    захвата преступников и пр.; средство самообороны.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (хлорацетофенон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/chloroacetophenone.png"(* => nrel_format: format_png;;*);;
+	*);;
+  *);;
+
+chloropicrin
+  <-sc_node_not_relation;
+  <= nrel_inclusion: irritant_agent;
+  => nrel_main_idtf:[хлорпикрин](* <- lang_ru;; *);
+  => nrel_main_idtf:[chloropicrin](* <- lang_en;; *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (хлорпикрин)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->chemical_agent;;
+		->chemical_formula;;
+		->elem_C;;
+    ->elem_H;;
+		->elem_O;;
+    ->elem_Cl;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="chloropicrin">Хлорпикрин</sc_element></b> - 
+		<sc_element sys_idtf="chemical_agent">отравляющее вещество</sc_element>, c 
+		<sc_element sys_idtf="chemical_formula">химической формулой</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element>
+    <sc_element sys_idtf="elem_Cl">Cl</sc_element><sub>3</sub>
+    <sc_element sys_idtf="elem_N">N</sc_element>   
+    <sc_element sys_idtf="elem_O">O</sc_element><sub>2</sub>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (хлорпикрин, бесцветный, жидкость, запах)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="chloropicrin">Хлорпикрин</sc_element> - 
+		<sc_element sys_idtf="no_color">бесцветная</sc_element>, маслянистая 
+		<sc_element sys_idtf="liquid">жидкость</sc_element>, с 
+    резким специфическим <sc_element sys_idtf="smell">запахом</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (хлорпикрин)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Пары <sc_element sys_idtf="chloropicrin">хлорпикрина</sc_element> - 
+    обладают сильным <sc_element sys_idtf="irritant_agent">слезоточивым</sc_element>, 
+    а в высоких концентрациях — <sc_element sys_idtf="choking_agent">удушающим</sc_element> 
+    и <sc_element sys_idtf="blood_agent">общеядовитым</sc_element> действием.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (хлорпикрин)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/chloropicrin.png"(* => nrel_format: format_png;;*);;
+	*);;
+  *);;
+
+adamsite
+  <-sc_node_not_relation;
+  <= nrel_inclusion: irritant_agent;
+  => nrel_main_idtf:[адамсит](* <- lang_ru;; *);
+  => nrel_main_idtf:[adamsite](* <- lang_en;; *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (адамсит)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->chemical_agent;;
+		->chemical_formula;;
+		->elem_C;;
+    ->elem_H;;
+		->elem_As;;
+    ->elem_N;;
+    ->elem_Cl;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="adamsite"> Адамсит</sc_element></b> - 
+		<sc_element sys_idtf="chemical_agent">отравляющее вещество</sc_element>, c 
+		<sc_element sys_idtf="chemical_formula">химической формулой</sc_element> 
+		<sc_element sys_idtf="elem_H">H</sc_element>
+    <sc_element sys_idtf="elem_N">N</sc_element>
+    (<sc_element sys_idtf="elem_C">C</sc_element><sub>6</sub>
+    <sc_element sys_idtf="elem_H">H</sc_element><sub>4</sub>)<sub>2</sub>
+    <sc_element sys_idtf="elem_As">As</sc_element>
+    <sc_element sys_idtf="elem_Cl">Cl</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (адамсит, кристалл)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="adamsite">Адамсит</sc_element> - 
+		желто-зеленые  
+		<sc_element sys_idtf="crystall">кристаллы</sc_element>, 
+    без <sc_element sys_idtf="no_smell">запаха</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (адамсит)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="adamsite">Адамсит</sc_element> - 
+    <sc_element sys_idtf="irritant_agent">раздражает</sc_element> верхние дыхательные пути, 
+    с этой целью в виде аэрозолей применялся в I мировую войну.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (адамсит)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/adamsite.png"(* => nrel_format: format_png;;*);;
+	*);;
+  *);;
+
+diphenylchlorarsine
+  <-sc_node_not_relation;
+  <= nrel_inclusion: irritant_agent;
+  => nrel_main_idtf:[дифенилхлорарсин](* <- lang_ru;; *);
+  => nrel_main_idtf:[diphenylchlorarsine](* <- lang_en;; *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (дифенилхлорарсин)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->chemical_agent;;
+		->chemical_formula;;
+		->elem_C;;
+    ->elem_H;;
+		->elem_As;;
+    ->elem_Cl;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="diphenylchlorarsine">Дифенилхлорарсин</sc_element></b> - 
+		<sc_element sys_idtf="chemical_agent">отравляющее вещество</sc_element>, c 
+		<sc_element sys_idtf="chemical_formula">химической формулой</sc_element> 
+    <sc_element sys_idtf="elem_C">C</sc_element><sub>12</sub>
+    <sc_element sys_idtf="elem_H">H</sc_element><sub>10</sub>
+    <sc_element sys_idtf="elem_As">As</sc_element>
+    <sc_element sys_idtf="elem_Cl">Cl</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (дифенилхлорарсин, бесцветный, кристалл)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="diphenylchlorarsine">Дифенилхлорарсин</sc_element> - 
+		<sc_element sys_idtf="no_color">бесцетные</sc_element> 
+		<sc_element sys_idtf="crystall">кристаллы</sc_element>, 
+    без <sc_element sys_idtf="no_smell">запаха</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (дифенилхлорарсин)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/diphenylchlorarsine.png"(* => nrel_format: format_png;;*);;
+	*);;
+  *);;
+
+diphenylcyanoarsine
+  <-sc_node_not_relation;
+  <= nrel_inclusion: irritant_agent;
+  => nrel_main_idtf:[дифенилцианарсин](* <- lang_ru;; *);
+  => nrel_main_idtf:[diphenylcyanoarsine](* <- lang_en;; *);
+    <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (дифенилцианарсин)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->chemical_agent;;
+		->chemical_formula;;
+		->elem_C;;
+    ->elem_H;;
+		->elem_As;;
+    ->elem_N;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="diphenylcyanoarsine">Дифенилцианарсин</sc_element></b> - 
+		<sc_element sys_idtf="chemical_agent">отравляющее вещество</sc_element>, c 
+		<sc_element sys_idtf="chemical_formula">химической формулой</sc_element> 
+    <sc_element sys_idtf="elem_C">C</sc_element><sub>13</sub>
+    <sc_element sys_idtf="elem_H">H</sc_element><sub>10</sub>
+    <sc_element sys_idtf="elem_As">As</sc_element>
+    <sc_element sys_idtf="elem_N">N</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (дифенилцианарсин, бесцветный, кристалл)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="diphenylcyanoarsine">Дифенилцианарсин</sc_element> - 
+		<sc_element sys_idtf="no_color">бесцетные</sc_element> 
+		<sc_element sys_idtf="crystall">кристаллы</sc_element>, 
+    без <sc_element sys_idtf="no_smell">запаха</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (дифенилцианарсин)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/diphenylcyanoarsine.png"(* => nrel_format: format_png;;*);;
+	*);;
+  *);;

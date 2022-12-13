@@ -1,0 +1,61 @@
+sc_node_not_relation -> pollucite;;
+
+pollucite => nrel_main_idtf:
+	[поллуцит](* <-lang_ru;; *);
+	[поллукс](* <-lang_ru;; *);
+	[pollucite](* <-lang_en;; *);;
+
+pollucite <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: поллуцит] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: pollucite] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Поллуцит — белый, розоватый, бесцветный минерал, водный алюмосиликат натрия и цезия. ](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Pollucite is white, pink, colorless mineral water of sodium aluminum silicate and cesium.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+pollucite <= nrel_using_constants:
+{
+	mineral; aluminosilicate; elem_Na; elem_Cs
+};;
+
+pollucite <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Используется как основной природный источник цезия, иногда из поллуцита добывается и рубидий, доля которого составляет 0,3-1,2 масс.%.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Used as the main natural source of cesium from pollucite sometimes extracted and rubidium, which accounts for 0.3-1.2 wt.%.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+pollucite <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Основные месторождения поллуцита находятся в Канаде (озеро Берник-Лейк). Известны месторождения в Намибии, Зимбабве, США, Китае, России. ](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The main deposits of pollucite are in Canada (Lake Bernik Lake). Known deposits in Namibia, Zimbabwe, United States, China, Russia.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+
+pollucite <-rrel_key_sc_element:...
+				(*<-sc_illustration;;
+				<=nrel_sc_text_translation:...
+						(*->rrel_example: "file://polluzit.png";;*) ;;	
+				*);;

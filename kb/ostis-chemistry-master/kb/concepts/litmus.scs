@@ -1,0 +1,68 @@
+litmus 
+<- sc_node_not_relation;
+=> nrel_main_idtf:[лакмус](* <- lang_ru;; *);
+=> nrel_main_idtf:[litmus](* <- lang_en;; *);
+
+<-pH_indicator;
+
+<- rrel_key_sc_element:
+Definition_of_litmus
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (лакмус)](* <- lang_ru;; *);
+		[Def. (litmus)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> pH_indicator;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="litmus">Лакмус</sc_element></b> —  красящее вещество природного происхождения, один из первых и наиболее широко известных <sc_element sys_idtf="pH_indicator">кислотно-основных индикаторов</sc_element>.](* <- lang_ru;;
+		     => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="litmus">Litmus</sc_element></b>  is a dye of natural origin, one of the first and most widely known <sc_element sys_idtf="pH_indicator">acid-base indicators</sc_element>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element: nrel_applying;;
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (лакмус, применение*)](* <- lang_ru;; *);
+		[Stat. (litmus, applying*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Применяется как индикатор для определения реакции среды. На практике используется несколько препаративных форм лакмуса: водный раствор лакмуса, полоски и клочки ленты фильтровальной бумаги, пропитанные лакмусом — т. н. лакмусовая бумага, «лакмусовое молоко» ](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[It is used as an indicator to determine the response of the medium. In practice, several preparative forms of litmus are used: an aqueous solution of litmus, stripes and scraps of filter paper tape impregnated with litmus - so-called. litmus paper, "litmus milk"](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (лакмус, свойства*)](* <- lang_ru;; *);
+		[Stat. (litmus, properties*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[В чистом виде представляет собой тёмный порошок со слабым запахом <sc_element sys_idtf="ammonia">аммиака</sc_element>. Хорошо растворяется в чистой воде, образуя растворы фиолетового цвета. В кислых средах (pH<4,5) <sc_element sys_idtf="litmus">лакмус</sc_element> приобретает красную окраску, в щелочных (pH>8,3) — синюю.
+<br>
+У лакмуса, по сравнению с остальными индикаторами, сравнительно небольшая погрешность в определении среды вещества.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[In pure form, it is a dark powder with a faint odor <sc_element sys_idtf = "ammonia"> ammonia </sc_element>. It is well dissolved in pure water, forming solutions of violet color. In acidic environments (pH less 4.5) <sc_element sys_idtf = "litmus"> litmus </sc_element> becomes red in alkaline (pH> 8.3) - blue.
+<br>
+The litmus, compared with other indicators, has a relatively small error in determining the medium of a substance.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (лакмус)](* <- lang_ru;; *);
+		[Pic. (litmus)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/litmus.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;

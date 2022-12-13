@@ -1,0 +1,15 @@
+ui_menu_find_element_periodic_number <- ui_user_command_class_atom; ui_user_command_class_view_kb;
+
+=> nrel_main_idtf: [Найти периодический номер заданного химического элемента] (* <- lang_ru;;*);
+=> nrel_main_idtf: [Find the periodic number of given chemical element] (* <- lang_en;;*);;
+ui_menu_find_element_periodic_number => ui_nrel_command_template:
+	[*
+		action_find_element_periodic_number _-> ._action_find_element_periodic_number_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._action_find_element_periodic_number_instance _<- question;;
+	*];;
+
+ui_menu_find_element_periodic_number => ui_nrel_command_lang_template: [Какую периодический номер имеет заданный химический элемент: $ui_arg_1] (* <- lang_ru;;*);;
+ui_menu_find_element_periodic_number => ui_nrel_command_lang_template: [What is the periodic number of given chemical element: $ui_arg_1] (* <- lang_en;;*);;

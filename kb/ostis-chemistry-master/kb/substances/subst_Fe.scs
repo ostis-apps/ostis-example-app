@@ -1,0 +1,234 @@
+subst_Fe
+<- sc_node_not_relation;
+=> nrel_main_idtf: [железо] (* <- lang_ru;; *);
+=> nrel_main_idtf: [iron] (* <- lang_en;; *);
+<- rrel_key_sc_element: definition_of_subst_Fe
+(* 
+	=> nrel_main_idtf: [Опр. (железо)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (iron)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество железо</b> — ковкий, вязкий <sc_element sys_idtf  = "metal">металл</sc_element> <sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element> с высокой химической реакционной способностью: железо быстро корродирует при высоких <sc_element sys_idtf  = "temperature">температурах</sc_element> или при высокой <sc_element sys_idtf  = "moisture">влажности</sc_element> на <sc_element sys_idtf  = "air">воздухе</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:
+			[<p><b>Iron (elementary substance)</b> is a malleable, viscous <sc_element sys_idtf  = "color_white_silver">silver-white</sc_element> <sc_element sys_idtf  = "metal">metal</sc_element> with a high chemical reactivity: iron corrodes rapidly at high <sc_element sys_idtf  = "temperature">temperatures</sc_element> or at high <sc_element sys_idtf  = "air">air</sc_element> <sc_element sys_idtf  = "moisture">humidity</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver;;
+		-> metal;;
+		-> moisture;;
+		-> temperature;;
+		-> air;;
+	*);;
+*);
+<- solid;
+<- liquid;
+<= nrel_inclusion: chemical_substance;
+<- color_white_silver;
+
+<- rrel_key_sc_element: interaction_fe_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (железо, взаимодействие*, кислота)](*<- lang_ru;;*);
+		[Expl. (iron, interaction*, acid)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Железо взаимодействует с кислотами c образованием соли и выделением водорода.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Iron interacts with acids with forming a salt and excretion hydrogen.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_fe_and_oxygen
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (железо, взаимодействие*, кислород)](*<- lang_ru;;*);
+		[Expl. (iron, interaction*, oxygen)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Железо взаимодействует с кислородом.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Iron interacts with oxygen.] (*<- lang_en;;*);;
+	*);;
+	-> rrel_key_sc_element: elem_O;;
+*);
+
+<- rrel_key_sc_element: interaction_fe_and_S
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (железо, взаимодействие*, сера)](*<- lang_ru;;*);
+		[Expl. (iron, interaction*, sulfur)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Железо взаимодействует с порошком серы.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Iron interacts with sulfur powder.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_fe_and_halogen
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (железо, взаимодействие*, галоген)](*<- lang_ru;;*);
+		[Expl. (iron, interaction*, halogen)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Железо взаимодействует с галогенами.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Iron interacts with halogen.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_fe_and_nonmetal
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (железо, взаимодействие*, неметалл)](*<- lang_ru;;*);
+		[Expl. (iron, interaction*, nonmetal)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Железо взаимодействует с неметаллами.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Iron interacts with nonmetal.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<= nrel_inclusion: iron_ore;
+
+=> nrel_receiving: ...
+(*
+	-> domain_process;;
+	-> direct_iron_production_process;;
+	-> ...
+	(*
+		<= nrel_electrolysis: salt;;
+	*);;
+*);
+
+=> nrel_applying: ...
+(*
+	-> metallurgy;;
+	-> building;;
+	-> production;;
+	-> toner;;
+	-> electrical_engineering;;
+	-> radio_engineering;;
+	-> gardening;;
+	-> battery;;
+	-> coagulant;;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: 
+		[Рис. (железо, твёрдое тело)] (* <- lang_ru;;	*);
+		[Pic. (iron, solid)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_Fe.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [7,874] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [1812] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [3134] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_kg:...
+		(*
+			=> nrel_main_idtf: [247,1] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_kg:...
+		(*
+			=> nrel_main_idtf: [6088] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [25,14] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_volume: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_cubic_cm_per_mole:...
+		(*
+			=> nrel_main_idtf: [7,1] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;

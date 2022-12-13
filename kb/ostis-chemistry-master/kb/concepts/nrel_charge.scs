@@ -1,0 +1,77 @@
+nrel_charge
+<- sc_node_norole_relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_main_idtf:
+	[заряд*](* <-lang_ru;; *);
+	[charge*](* <-lang_en;; *);
+
+=>nrel_idtf:
+	[иметь заряд*](* <-lang_ru;; *);
+// домены
+=>nrel_second_domain: integer;
+=>nrel_first_domain: chemical_solid;
+=>nrel_definitional_domain:...
+(*
+	<=nrel_combination:...
+	(*
+		->chemical_solid; integer;;
+	*);;
+*);
+//разбиение
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку знака заряда.](* <-lang_ru;; *);;
+	-> nrel_positive_charge;;
+	-> nrel_negative_charge;;
+*);
+//определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(заряд*)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Заряд - количество электричества, содержащееся в данном теле.]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->quantity;;
+		->nrel_electric_charge;;
+	*);;
+*);
+//утверждение
+<- rrel_key_sc_element: statement_reactions_and_results
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(заряд*, электрический заряд*, электромагнитное взаимодействие*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Если заряд определяет способность тел быть источником электромагнитных полей и принимать участие в электромагнитном взаимодействии, то это электрический заряд.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_electric_charge;;
+	-> rrel_key_sc_element: nrel_electromagnetic_interaction;;
+*);
+//иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (заряд)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/nrel_charge.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;

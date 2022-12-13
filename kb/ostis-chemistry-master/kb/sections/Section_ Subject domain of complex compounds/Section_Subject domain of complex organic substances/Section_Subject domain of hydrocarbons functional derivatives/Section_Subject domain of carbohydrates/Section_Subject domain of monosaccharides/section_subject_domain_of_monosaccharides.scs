@@ -1,0 +1,14 @@
+section_section_subject_domain_of_monosaccharides
+=> nrel_main_idtf: 
+	[Раздел. Предметная область моносахаридов]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of monosaccharides]
+	(* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_section_subject_domain_of_monosaccharides = [*^"file://subject_domain_of_monosaccharides.scsi"*];;
+
+section_section_subject_domain_of_monosaccharides
+-> rrel_key_sc_element: subject_domain_of_monosaccharides;;

@@ -1,0 +1,24 @@
+ex3_oxides
+<- exercises_oxides;
+
+-> rrel_key_sc_element: oxide; hydrochloric_acid; subst_NaOH; phosphorus_pentoxide; aluminum_oxide; silicon_suboxide; potassium_oxide;
+
+=> nrel_next: ex4_oxides;
+
+=> nrel_main_idtf:
+	[Упражнение 3. Раздел. Предметная область оксидов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 3. Section. Subject domain of oxides]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex3_oxides_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex3_oxides_en.html" (* <-lang_en;; *);;
+	*);;

@@ -1,0 +1,61 @@
+azirin<-sc_node_not_relation;;
+azirin=> nrel_main_idtf:[азирин](* <- lang_ru;; *);;
+azirin=> nrel_main_idtf:[azirin](* <- lang_en;; *);;
+azirin=> nrel_idtf:[ C2H3N](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: azirin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Азирин — <b><sc_element sys_idtf="true_alkaloids">истинный алкалоид</b></sc_element>, азотсодержащее <b><sc_element sys_idtf="heterocyclic_compound">гетероциклическое соединение </b></sc_element>, трехчленный <b><sc_element sys_idtf="cycle">цикл</b></sc_element> с одной двойной связью и одним <b><sc_element sys_idtf="elem_N">атомом азота.</b></sc_element>]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (азирин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		true_alkaloids;
+		elem_N;
+		heterocyclic_compound;
+		cycle
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: azirin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В свободном виде незамещенный азирин не получен]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(азирин)](*<- lang_ru;;*);;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element:azirin;;
+	<= nrel_sc_text_translation: ...(*->"file://images/azirin.png";;*);;
+	=> nrel_main_idtf: [Рисунок(азирин,структурная формула)](*<- lang_ru;;*);;
+*);;
+
+
+liquid=>nrel_inclusion:azirin;;
+true_alkaloids=>nrel_inclusion:azirin;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> azirin;;
+	=> nrel_measurement_in_gramms_per_mole: [41,052]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+

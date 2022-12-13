@@ -1,0 +1,134 @@
+polyacrylate<-sc_node_not_relation;;
+polyacrylate=> nrel_main_idtf:[полиакрилат](* <- lang_ru;; *);;
+polyacrylate=> nrel_main_idtf:[polyacrylate](* <- lang_en;; *);;
+polyacrylate=> nrel_idtf:[ poly(acrylate)​](* <- lang_en;; *);;
+polyacrylate=> nrel_idtf:[(-CH2-CR'(COOR)-)n](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: polyacrylate;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Полиакрилат — 
+	<b><sc_element sys_idtf="polymer">полимер</b></sc_element>
+	 <b><sc_element sys_idtf="ester">сложных эфиров</b></sc_element> акриловой, метакриловой или цианакриловой
+	 <b><sc_element sys_idtf="acid">кислот</b></sc_element>.]
+	  
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (полиакрилат)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		ester;
+		acid;
+		polymer
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: polyacrylate;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[На основе полиакрилатов также производятся различные <b><sc_element sys_idtf="polymer">полимерные</b></sc_element> композиции
+	, в частности акриловые краски и лаки, 
+	базирующиеся на <b><sc_element sys_idtf="water">водных</b></sc_element> дисперсиях 
+	полиакрилатов или их <b><sc_element sys_idtf="copolymer">сополимеров</b></sc_element>, 
+	которые при высыхании образуют стойкую плёнку.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(полиакрилат,при высыхании образует стойкую плёнку)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+			copolymer;
+		polymer;
+		water
+		};;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:polyacrylate;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Большую часть полиакрилатов и полиметакрилатов получают радикальной 
+	<b><sc_element sys_idtf="nrel_polymerization">полимеризацией</b></sc_element>. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(полиакрилат,получают полимеризацией)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nrel_polymerization;
+		metal
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyacrylate;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyacrylate_formula.png";;*);;
+	=> nrel_main_idtf: [Рисунок(полиакрилат,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyacrylate;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyacrylate_3d.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(полиакрилат,пример)](*<- lang_ru;;*);;
+*);;
+
+
+polycondensation_polymer=>nrel_inclusion:polyacrylate;;
+artificial_polymers=>nrel_inclusion:polyacrylate;;
+thermosetting_polymer=>nrel_inclusion:polyacrylate;;
+hetero_chain_polymer=>nrel_inclusion:polyacrylate;;
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> polyacrylate;;
+	=> rrel_mol: [2900]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyacrylate;;
+	=> rrel_degree_celsius: 97
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyacrylate;;
+	=> rrel_joule_per_kelvin_and_mole: 0.17
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyacrylate;;
+	=> rrel_gram_per_cubic_cm: 0.78
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+

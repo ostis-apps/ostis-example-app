@@ -1,0 +1,24 @@
+exercise4_nonmetal
+<- exercises_nonmetal;
+
+-> rrel_key_sc_element: molecule; subst_O; subst_N; air;
+
+=> nrel_next_exercise: exercise5_nonmetal;
+
+=> nrel_main_idtf:
+	[Упражнение 4. Раздел. Предметная область неметаллов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 4. Section. Subject domain of nonmetals]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise4_nonmetal_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise4_nonmetal_en.html" (* <-lang_en;; *);;
+	*);;

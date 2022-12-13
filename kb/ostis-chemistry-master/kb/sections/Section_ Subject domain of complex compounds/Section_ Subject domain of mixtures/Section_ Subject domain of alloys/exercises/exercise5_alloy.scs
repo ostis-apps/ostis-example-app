@@ -1,0 +1,24 @@
+exercise5_alloy
+<- exercises_alloy;
+
+-> rrel_key_sc_element: alloy; subst_Ag; subst_Cu; 
+
+=> nrel_next_exercise: exercise6_alloy;
+
+=> nrel_main_idtf:
+	[Упражнение 5. Раздел. Предметная область сплавов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 5. Section. Subject domain of alloys]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise5_alloy_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise5_alloy_en.html" (* <-lang_en;; *);;
+	*);;

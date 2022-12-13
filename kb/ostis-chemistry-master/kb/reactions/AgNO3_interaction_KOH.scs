@@ -1,0 +1,23 @@
+AgNO3_interaction_KOH => nrel_main_idtf:
+	[взаимодействие нитрата серебра и гидроксида калия](*<-lang_ru;;*);
+	[silver nitrateсopper and potassium hydroxide interaction](*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (взаимодействие нитрата серебра(I) и гидроксида калия)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[AgNO3 + KOH -(t=-45C)-> AgOH_ + KNO3]
+		(*
+			<- lang_ru;;
+			<- lang_en;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;
+
+temperature_minus_45
+		<- temperature;
+		<- exact_value;
+		=> celsium_measurement_of_fixed_measure: minus_forty_five;;

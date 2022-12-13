@@ -1,0 +1,586 @@
+subject_domain_of_fats
+	=> nrel_main_idtf:[Предметная область жиров](* <- lang_ru;; *);
+	=> nrel_main_idtf:[Subject domain of fats](* <- lang_en;; *);
+<- subject_domain;
+-> rrel_maximum_studied_object_class: fats;
+-> rrel_not_maximum_studied_object_class:
+	animal_fat;
+	vegetable_oil;
+	lipids;
+	simple_lipids;
+	complex_lipids;
+	oxylipids; 
+	fatty_acid;
+	wax; 
+	vegetable_wax;
+	animal_wax;
+	nrel_rancidification;
+	nrel_biochemical_rancidification;
+	nrel_chemical_rancidification;;
+
+fats
+<- sc_node_not_relation;
+=> nrel_main_idtf:[жиры](* <- lang_ru;; *);
+=> nrel_main_idtf:[fats](* <- lang_en;; *);
+=> nrel_idtf:[триглицериды](* <- lang_ru;; *);
+
+<= nrel_inclusion: lipids;
+
+=> nrel_applying:food_industry;
+=> nrel_applying:pharmaceutical_chemistry;
+=> nrel_applying:cosmetics;
+=> nrel_applying:production_of_lubricants;
+
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по нахождению в природе](* <-lang_ru;; *);;
+	-> animal_fat;;
+	-> vegetable_oil;;
+*);
+
+=> nrel_object_structure: fatty_acid;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (жиры)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[Жиры, также триглицериды — органические вещества, продукты этерификации карбоновых кислот и трёхатомного спирта глицерина.](* <- lang_ru;;*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> organic_substance;;
+		-> product;;
+		-> nrel_esterification;;
+		-> carboxylic_acid;;
+		-> glycerol;;
+		-> alcohol;;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (триглицерид, шаро-стержневая модель)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/fats.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (общая формула состава жиров)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/fats_composition.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: 
+		[Утв.(жиры, нагревание*, глицерин, вода, смесь, карбоновая кислота, жирные кислоты, предельные жирные кислоты, непредельные жирные кислоты, непредельные алкадиеновые кислоты, непредельные алкатриеновые кислоты)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/fats_composition.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_heating;;
+	-> rrel_key_sc_element: glycerol;;
+	-> rrel_key_sc_element: water;;
+	-> rrel_key_sc_element: mixture;;
+	-> rrel_key_sc_element: carboxylic_acid;;
+	-> rrel_key_sc_element: fatty_acid;;
+	-> rrel_key_sc_element: saturated_fatty_acids;;
+	-> rrel_key_sc_element: unsaturated_fatty_acids;;
+	-> rrel_key_sc_element: unsaturated_alkadienic_acids;;
+	-> rrel_key_sc_element: unsaturated_alkatrienic_acids;;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: 
+		[Утв.(химическое свойство, гидролиз*, эфир, глицерин, карбоновая кислота, мыло)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/fat_properties.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	-> rrel_key_sc_element: chemical_property;;
+	-> rrel_key_sc_element: nrel_hydrolysis;;
+	-> rrel_key_sc_element: ester;;
+	-> rrel_key_sc_element: glycerol;;
+	-> rrel_key_sc_element: carboxylic_acid;;
+	-> rrel_key_sc_element: soap;;
+*);;
+
+animal_fat
+<- sc_node_not_relation;
+=> nrel_main_idtf:[животный жир](* <- lang_ru;; *);
+=> nrel_main_idtf:[animal fat](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (животный жир)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://html/animal_fat_def.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> fats;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: 
+		[Утв.(состав*, химическое свойство, жиры, атом углерода, глицерин, жирная кислота, карбоновая кислота)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/animal_fat_properties.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_object_structure;;
+	-> rrel_key_sc_element: chemical_property;;
+	-> rrel_key_sc_element: fats;;
+	-> rrel_key_sc_element: elem_C;;
+	-> rrel_key_sc_element: glycerol;;
+	-> rrel_key_sc_element: carboxylic_acid;;
+	-> rrel_key_sc_element: fatty_acid;;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: 
+		[Утв.(классификация*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/af_classification.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+=> nrel_applying:food_industry;;
+
+vegetable_oil
+<- sc_node_not_relation;
+=> nrel_main_idtf:[растительный жир](* <- lang_ru;; *);
+=> nrel_main_idtf:[vegetable_oil](* <- lang_en;; *);
+=> nrel_idtf:[растительное масло ](* <- lang_ru;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (растительный жир)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://html/vegetable_oil.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> organic_substance;;
+		-> product;;
+		-> nrel_esterification;;
+		-> carboxylic_acid;;
+		-> glycerol;;
+		-> alcohol;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: 
+		[Утв.(сырьё для получения*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/vegetable_oil_raw.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_raw_material;;
+*);;
+
+lipids
+<- sc_node_not_relation;
+=> nrel_main_idtf:[липиды](* <- lang_ru;; *);
+=> nrel_main_idtf:[lipids](* <- lang_en;; *);
+
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку структуры](* <-lang_ru;; *);;
+	->simple_lipids;;
+	->complex_lipids;;
+*);
+
+=> nrel_applying:food_industry;
+=> nrel_applying:medicine;
+=> nrel_applying:industry;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (липиды)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://html/lipids.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> lipids;;
+		-> organic_compound;;
+		-> fats;;
+		-> simple_lipids;;
+		-> complex_lipids;;
+		-> fatty_acid;;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: 
+		[Утв.(жиры, углеводы)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/lipids_bioproperties.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	-> rrel_key_sc_element: fats;;
+	-> rrel_key_sc_element: carbohydrate;;
+*);;
+
+simple_lipids
+<- sc_node_not_relation;
+=> nrel_main_idtf:[простые липиды](* <- lang_ru;; *);
+=> nrel_main_idtf:[simple lipids](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (простые липиды)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://html/simple_lipids.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elem_H;;
+		-> elem_O;;
+		-> elem_C;;
+		-> fats;;
+		-> wax;;
+		-> fatty_acid;;
+	*);;
+*);;
+
+complex_lipids
+<- sc_node_not_relation;
+=> nrel_main_idtf:[сложные липиды](* <- lang_ru;; *);
+=> nrel_main_idtf:[complex lipids](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (сложные липиды)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://html/complex_lipids.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elem_H;;
+		-> elem_O;;
+		-> elem_C;;
+		-> elem_P;;
+		-> elem_S;;
+		-> elem_N;;
+		-> lipids;;
+		
+	*);;
+*);;
+
+oxylipids
+<- sc_node_not_relation;
+=> nrel_main_idtf:[оксилипиды](* <- lang_ru;; *);
+=> nrel_main_idtf:[oxylipids](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (оксилипиды)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://html/oxylipids.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> chemical_substance;;
+		-> fatty_acid;;
+	*);;
+*);;
+
+fatty_acid
+<- sc_node_not_relation;
+=> nrel_main_idtf:[жирные кислоты](* <- lang_ru;; *);
+=> nrel_main_idtf:[fatty acid](* <- lang_en;; *);
+
+<-wax;
+<-animal_fat;
+<-vegetable_oil;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (жирные кислоты)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://html/fatty_acids.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> carboxylic_acid;;
+		-> fats;;
+		-> wax;;
+		-> elem_C;;
+	*);;
+*);
+
+=> nrel_applying:food_industry;
+
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по характеру связи атомов углерода](* <-lang_ru;; *);;
+	->saturated_fatty_acids;; 
+	->unsaturated_fatty_acids;;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: 
+		[Утв.(карбоновая кислота, этерификация*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/fatty_acid_reactions.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	-> rrel_key_sc_element: carboxylic_acid;;
+	-> rrel_key_sc_element: nrel_esterification;;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: 
+		[Утв.(автоокисление*, прогоркание*, углеводород, кетон)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/fatty_acids_rancidification.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_rancidification;;
+	-> rrel_key_sc_element: hydrocarbon;;
+	-> rrel_key_sc_element: nrel_autoxidation;;
+	-> rrel_key_sc_element: ketone;;
+*);;
+
+wax
+<- sc_node_not_relation;
+=> nrel_main_idtf:[воск](* <- lang_ru;; *);
+=> nrel_main_idtf:[wax](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (воск)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://html/wax.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> mixture;;
+		-> simple_lipids;;
+		-> molecule;;
+		-> lipids;;
+	*);;
+*);
+
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку происхождения.](* <-lang_ru;; *);;
+	-> vegetable_wax;;
+	-> animal_wax;;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<-statement;;
+	=>nrel_main_idtf: 
+		[Утв.(вода, эфир, растворимость*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/wax_properties.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	-> rrel_key_sc_element: water;;
+	-> rrel_key_sc_element: nrel_solubility;;
+	-> rrel_key_sc_element: ether;;
+*);
+
+=> nrel_applying:food_industry;
+=> nrel_applying:cosmetics;
+=> nrel_applying:medicine;;
+
+vegetable_wax
+<- sc_node_not_relation;
+=> nrel_main_idtf:[растительный воск](* <- lang_ru;; *);
+=> nrel_main_idtf:[vegetable wax](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (растительный воск)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://html/vegetable_wax.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> wax;;
+		-> fatty_acid;;
+		-> fats;;
+	*);;
+*);;
+
+animal_wax
+<- sc_node_not_relation;
+=> nrel_main_idtf:[животный воск](* <- lang_ru;; *);
+=> nrel_main_idtf:[animal wax](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (животный воск)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://html/animal_wax.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> wax;;
+		-> animal_wax;;
+	*);;
+*);;
+
+nrel_rancidification
+<- sc_node_norole_relation;
+=> nrel_main_idtf:[прогоркание*](* <- lang_ru;; *);
+=> nrel_main_idtf:[rancidification*](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (прогоркание*)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://html/nrel_rancidification.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> wax;;
+		-> animal_wax;;
+	*);;
+*);
+
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку условия реакции](* <-lang_ru;; *);;
+	-> nrel_biochemical_rancidification;;
+	-> nrel_chemical_rancidification;;
+*);;
+
+nrel_biochemical_rancidification
+<- sc_node_norole_relation;
+=> nrel_main_idtf:[биохимическое прогоркание*](* <- lang_ru;; *);
+=> nrel_main_idtf:[biochemical rancidification*](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (биохимическое прогоркание*)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://html/nrel_biochemical_rancidification.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> fats;;
+		-> protein;;
+		-> water;;
+		-> nrel_hydrolysis;;
+		-> carbohydrate;;
+	*);;
+*);;
+
+nrel_chemical_rancidification
+<- sc_node_norole_relation;
+=> nrel_main_idtf:[химическое прогоркание*](* <- lang_ru;; *);
+=> nrel_main_idtf:[chemical rancidification*](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (химическое прогоркание*)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://html/nrel_chemical_rancidification.html"
+			(* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> nrel_oxidation;;
+		-> elem_O;;
+		-> air;;
+	*);;
+*);;

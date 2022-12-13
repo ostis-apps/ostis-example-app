@@ -1,0 +1,59 @@
+thermosetting_polymer
+<-sc_node_not_relation;;
+
+thermosetting_polymer=> nrel_main_idtf:[термореактивный полимер](* <- lang_ru;; *);;
+thermosetting_polymer=> nrel_main_idtf:[thermosetting polymer](* <- lang_en;; *);;
+
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: thermosetting_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Термопластичный полимер является <b><sc_element sys_idtf="polymer">полимером</b></sc_element> ,
+  который необратимо закален из мягкого твердого или вязкого
+   <b><sc_element sys_idtf="liquid">жидкостного</b></sc_element> фолимерполимера или 
+  <b><sc_element sys_idtf="polymer">полимера</b></sc_element>. ]
+ 
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (термореактивный полимер)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+			liquid;
+		polymer
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: thermosetting_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Термореактивные полимеры 
+	 , как правило , сильнее , чем <b><sc_element sys_idtf="thermoplastic_polymer">термопластичные</b></sc_element> материалы
+	    пластмассы вследствие трехмерной сетки связей (сшивании), 
+	   а также лучше подходит для  <b><sc_element sys_idtf="temperature">высокотемпературных</b></sc_element> 
+	    применений.]
+	 (*
+	 <-lang_ru;;
+	=>nrel_format:format_html;;
+	 *);;
+	 *);;
+	
+	=> nrel_main_idtf: [Утверждение(термореактивный полимер)](*<- lang_ru;;*);;
+		=> nrel_using_constants:
+		{
+		temperature;
+		thermoplastic_polymer
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: thermosetting_polymer;;
+	<= nrel_sc_text_translation: ...(*->"file://image/thermosetting_polymer.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(термореактивный полимер)](*<- lang_ru;;*);;
+*);;
+
+	
+	

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GWF version="2.0">
+    <staticSector>
+        <node type="node/const/group" idtf="heating_sulfanilamide_pharaoh_snake" shapeColor="0" id="33351104" parent="33441104" left="0" top="0" right="286.25" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1477.21" y="178.22" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/general_node" idtf="_action_sulfanilamide_pharaoh_snake" shapeColor="0" id="33334304" parent="33441104" left="0" top="0" right="282.016" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="766.006" y="261.688" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/group" idtf="sulfanilamide_pharaoh_snake_experiment" shapeColor="0" id="33260304" parent="33441104" left="0" top="0" right="314.172" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="765.775" y="181.154" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/attribute" idtf="1'" shapeColor="0" id="33371776" parent="33441104" left="0" top="0" right="21" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1175.93" y="187.462" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/relation" idtf="nrel_decomposition_of_action" shapeColor="0" id="32856928" parent="33441104" left="0" top="0" right="223.781" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="884.198" y="225.423" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/general_node" idtf="" shapeColor="0" id="33370736" parent="33441104" x="1014.24" y="261.688" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/general_node" idtf="" shapeColor="0" id="33368448" parent="33441104" x="1395.73" y="261.688" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <pair type="pair/var/orient" idtf="" shapeColor="0" id="33471088" parent="33441104" id_b="33370736" id_e="33334304" b_x="1014.24" b_y="261.688" e_x="766.006" e_y="261.688" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="33459440" parent="33441104" id_b="33370736" id_e="33368448" b_x="1014.24" b_y="261.688" e_x="1395.73" e_y="261.688" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="33458736" parent="33441104" id_b="33260304" id_e="33334304" b_x="765.775" b_y="181.154" e_x="766.006" e_y="261.688" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="33464032" parent="33441104" id_b="33371776" id_e="33459440" b_x="1175.93" b_y="187.462" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.419441">
+            <points/>
+        </arc>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="33467056" parent="33441104" id_b="33351104" id_e="33368448" b_x="1477.21" b_y="178.22" e_x="1395.73" e_y="261.688" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="33350480" parent="33441104" id_b="32856928" id_e="33471088" b_x="884.198" b_y="225.423" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.526831">
+            <points/>
+        </arc>
+        <contour type="" idtf="" shapeColor="0" id="33441104" parent="0">
+            <points>
+                <point x="703.837" y="146"/>
+                <point x="1641.84" y="140"/>
+                <point x="1641.84" y="617"/>
+                <point x="703.837" y="617"/>
+            </points>
+        </contour>
+        <node type="node/const/group" idtf="chemical_experiment" shapeColor="0" id="33441744" parent="0" left="0" top="0" right="163.125" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="658.246" y="385.25" haveBus="false" idtf_pos="2">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/attribute" idtf="rrel_key_sc_element" shapeColor="0" id="33422288" parent="0" left="0" top="0" right="154.812" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1066.98" y="95.419" haveBus="false" idtf_pos="2">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/group" idtf="sulfanilamide_pharaoh_snake" shapeColor="0" id="33404784" parent="0" left="0" top="0" right="223.719" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1172.84" y="28.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="33470080" parent="0" id_b="33441744" id_e="33441104" b_x="658.246" b_y="385.25" e_x="1172.84" e_y="378.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="33469072" parent="0" id_b="33404784" id_e="33441104" b_x="1172.84" b_y="28.5" e_x="1172.84" e_y="378.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="33468064" parent="0" id_b="33422288" id_e="33469072" b_x="1066.98" b_y="95.419" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.541239">
+            <points/>
+        </arc>
+    </staticSector>
+</GWF>

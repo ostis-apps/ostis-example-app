@@ -1,0 +1,124 @@
+carbon_dioxide
+=> nrel_main_idtf:
+	[углекислый газ](* <- lang_ru;; *);
+	[carbon dioxide](* <- lang_en;; *);
+=>nrel_idtf:
+	[диоксид углерода](* <-lang_ru;; *);
+=>nrel_applying:food_industry;cryosurgery;
+<-non_toxic_substance;
+=>nrel_being_in_nature:ocean;atmosphere;
+=>nrel_molar_mass: [44];
+<-no_smell;
+<-no_color;
+=>nrel_sublimation_temperature:...
+(*
+	<-quantity;;
+	<=nrel_value:...
+	(*
+		->rrel_degree_celsius: [-78]
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(углекислый газ)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Углекислый газ — бесцветный газ (в нормальных условиях) без запаха, с химической формулой CO2.]
+		(*
+			<-lang_ru;;
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->smell;;
+		->gas;;
+		->chemical_formula;;
+	*);;
+*);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (углекислый газ, шаро-стержневая модель)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/carbon_dioxide.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(углекислый газ, нетоксичное вещество, воздух, удушающий газ)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Углекислый газ нетоксичен, но по воздействию его повышенных концентраций в воздухе на воздуходышащие живые организмы его относят к удушающим газам.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: non_toxic_substance;;
+	-> rrel_key_sc_element: air;;
+	-> rrel_key_sc_element: asphyxiant_gas;;
+*);
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(углекислый газ, горение, активный металл)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/carbon_dioxide_combustion_of_active_metals.html"(* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_combustion;;
+	-> rrel_key_sc_element: active_metal;;
+*);
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(углекислый газ, взаимодействие*, активный металл, оксид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/carbon_dioxide_interaction_with_active_metal_oxide.html"(* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_interaction;;
+	-> rrel_key_sc_element: active_metal;;
+	-> rrel_key_sc_element: oxide;;
+*);
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(углекислый газ, растворение*, угольная кислота)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/carbon_dioxide_dissolution_in_water.html"(* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: carbonic_acid;;
+*);
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(углекислый газ, щелочь, карбонат, гидрокарбонат)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/carbon_dioxide_interaction_with_alkali.html"(* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: alkali;;
+	-> rrel_key_sc_element: carbonate;;
+*);;

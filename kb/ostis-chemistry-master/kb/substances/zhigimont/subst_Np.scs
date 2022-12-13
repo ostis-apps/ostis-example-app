@@ -1,0 +1,149 @@
+subst_Np
+<- sc_node_not_relation;
+=> nrel_main_idtf: [нептуний] (* <- lang_ru;; *);
+=> nrel_main_idtf: [neptunium] (* <- lang_en;; *);
+<- rrel_key_sc_element: definition_of_subst_Np
+(* 
+	=> nrel_main_idtf: 
+	[Опр.(нептуний)] (* <- lang_ru;; *);
+	[Def.(neptunium)] (* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Np">Нептуний</sc_element></b> — ковкий, сравнительно мягкий <sc_element sys_idtf="radioactive_substance">радиоактивный</sc_element> <sc_element sys_idtf="metal">металл</sc_element> с <sc_element sys_idtf  = "color_white_silver">серебристым блеском</sc_element>.] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+
+			-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Np">Neptunium</sc_element></b> is a forgeable, relatively soft <sc_element sys_idtf="radioactive_substance">radioactive</sc_element> <sc_element sys_idtf="metal">metal</sc_element> with <sc_element sys_idtf  = "color_white_silver">silver shine</sc_element>.] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver;;
+		-> metal;;
+		-> radioactive_substance;;
+	*);;
+*);
+
+<= nrel_inclusion: chemical_substance;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: 
+	[Рис.(нептуний, твёрдое тело)] (* <- lang_ru;;	*);
+	[Pic.(neptunium, solid)] (* <- lang_en;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_Np.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: receiving_Np_from_fluoride
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(нептуний, получение*)](*<- lang_ru;;*);
+		[Stat.(neptunium, receiving*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Нептуний получают восстановлением фторида нептуния парами бария при 1600 К.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+
+		-> rrel_example:[ Neptunium is received by restoration of neptunium flupride with barium vapor at 1600 К.] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 913 (*<- number;;*);;
+	*);;
+*);
+
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_kg:...
+		(*
+			=> nrel_main_idtf: [9,6] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_kg: 336 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 4175 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm: ...
+		(*
+			=> nrel_main_idtf: [20,25] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [29,62] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_volume: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_cubic_cm_per_mole:...
+		(*
+			=> nrel_main_idtf: [21,1] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;
+
+atomic_multiplicity_one -> (subst_Np -> elem_Np);;

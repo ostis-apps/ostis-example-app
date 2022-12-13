@@ -1,0 +1,63 @@
+amide
+=> nrel_main_idtf:
+	[амид](* <-lang_ru;; *);
+	[amide](* <-lang_en;; *);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(амид)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://html/amide_definition.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->hydroxyl_group;amine;elem_N;imide;;
+	*);;
+*);
+//утверждение
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(амид, вода, водяной пар, гидролиз*, сильная щёлочь, водный раствор, сильная кислота)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[При действии горячей воды или водного пара амиды гидролизуются. Быстрее идёт гидролиз сильными щелочами и водными растворами сильных кислот.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: water; water_vapor;;
+	-> rrel_key_sc_element: nrel_hydrolysis; strong_basis;;
+	-> rrel_key_sc_element: aqueous_solution; strong_acid;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(амид, протон, сильная кислота, соль, основание)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Амиды способны присоединять протон сильной кислоты, образуя соли, в которых они выступают в качестве оснований.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: proton; strong_acid;;
+	-> rrel_key_sc_element: salt;;
+	-> rrel_key_sc_element: basis;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(амид, атом водорода, азот, радикал, замещение*, разложение*, карбоновая кислота)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://html/amide_with_alkali_solution.html"(* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: elem_H; subst_N; radical; nrel_substitution; nrel_decomposition; carboxylic_acid;;
+*);;

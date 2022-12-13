@@ -1,0 +1,72 @@
+dolphin<-sc_node_not_relation;;
+dolphin=> nrel_main_idtf:[дельфинин](* <- lang_ru;; *);;
+dolphin=> nrel_main_idtf:[dolphin](* <- lang_en;; *);;
+dolphin=> nrel_idtf:[C33H45NO9](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: dolphin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Дельфинин — <b><sc_element sys_idtf="pseudoalkaloids">псевдоалкалоид</b></sc_element> , бесцветные или белые горькие <b><sc_element sys_idtf="crystall">кристаллы</b></sc_element>. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (дельфинин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		pseudoalkaloids;
+		crystall
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: dolphin ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[У дельфинина имеется два <b><sc_element sys_idtf="nrel_isomer">изомера</b></sc_element> - дельфизин и дельфиноидин.   ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(дельфинин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nrel_isomer
+		};;
+*);;
+
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: dolphin;;
+	<= nrel_sc_text_translation: ...(*->"file://images/dolphin.png";;*);;
+	=> nrel_main_idtf: [Рисунок(дельфинин,структурная формула](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: dolphin;;
+	<= nrel_sc_text_translation: ...(*->"file://images/dolphin2.png";;*);;
+	=> nrel_main_idtf: [Рисунок(дельфинин,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+solid_matter=>nrel_inclusion:dolphin;;
+pseudoalkaloids=>nrel_inclusion:dolphin;;
+toxin=>nrel_inclusion:dolphin;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> dolphin;;
+	=> nrel_measurement_in_gramms_per_mole: [599,711]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+
+
+

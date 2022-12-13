@@ -1,0 +1,143 @@
+heptanol<-sc_node_not_relation;;
+heptanol=> nrel_main_idtf:[гептанол](* <- lang_ru;; *);;
+heptanol=> nrel_main_idtf:[heptanol](* <- lang_en;; *);;
+heptanol=> nrel_idtf:[heptanol-1](* <- lang_en;; *);;
+heptanol=> nrel_idtf:[C7H16](* <- lang_en;; *);;
+
+
+
+
+heptanol<=nrel_intramolecular_dehydration:heptane;;
+aromatic_alcohols=>nrel_inclusion:heptanol;;
+triatomic_alcohol=>nrel_inclusion:heptanol;;
+higher_fatty_alcohols=>nrel_inclusion:heptanol;;
+
+
+
+heptanol<=nrel_poisoning_way:peroral_way;;
+organic_artificial_poison=>nrel_inclusion:heptanol;;
+rrel_liquid_solvent=>nrel_inclusion:heptanol;;
+
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: heptanol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Гептанол — 
+	<b><sc_element sys_idtf="organic_compound">органическое вещество</b></sc_element>, которое
+	 представляет собой <b><sc_element sys_idtf="alcohol">спирт</b></sc_element> с участком углеродной цепи.]
+		
+		(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (гептанол)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		organic_compound;
+		alcohol
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: heptanol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Это прозрачная бесцветная 
+	<b><sc_element sys_idtf="liquid">жидкость</b></sc_element> ,
+	 которая очень слабо <b><sc_element sys_idtf="nrel_solubility">растворим</b></sc_element>
+	  в <b><sc_element sys_idtf="water">воде</b></sc_element>
+	  , но смешивается с эфиром и этанолом .	
+]
+
+	  
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(гептанол, прозрачная бесцветная жидкость)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+			water;
+		liquid;
+		nrel_solubility
+		};;	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:heptanol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Гептанол 
+	обычно используется в электрофизиологических экспериментах ,
+	 чтобы блокировать щелевые контактов и увеличить осевое сопротивление между 
+	 <b><sc_element sys_idtf="myotoxin">миоцитами</b></sc_element> .]
+	
+	  
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(гептанол, хорошо растворим в спирте)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		myotoxin
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:heptanol;;
+	<= nrel_sc_text_translation: ...(*->"file://image/heptanol_1.png";;*);;
+	=> nrel_main_idtf: [Рисунок(гептанол,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:heptanol;;
+	<= nrel_sc_text_translation: ...(*->"file://image/heptanol_1_3d.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(гептанол,пример)](*<- lang_ru;;*);;
+*);;
+
+
+nrel_relative_molar_mass->...
+(* 
+	<- sc_node_not_relation;;
+	-> heptanol;;
+	=> rrel_mol: [127.4]
+	(*
+		<-number;;
+	*);;
+*);;
+
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->heptanol;;
+	=> rrel_gram_per_cubic_cm:1.91
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->heptanol;;
+	=> rrel_joule_per_kelvin_and_mole: 0.24
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->heptanol;;
+	=> rrel_degree_celsius: 176
+	(*
+		<-number;;
+	*);;
+*);;

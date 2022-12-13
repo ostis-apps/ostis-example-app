@@ -1,0 +1,12 @@
+section_library_of_reusable_scp_programs_for_validation
+<- atomic_section;
+=> nrel_main_idtf:
+	[Раздел. Библиотека многократно используемых scp-программ для валидации]
+	(* <- lang_ru;; *);
+	[Section. Library of reusable scp-programs for validation]
+	(* <- lang_en;; *);
+<- not_enough_formed_structure;;
+
+section_library_of_reusable_scp_programs_for_validation = [*^"file://section_library_of_reusable_scp_programs_for_validation.scsi"*];;
+
+rrel_key_sc_element -> (section_library_of_reusable_scp_programs_for_validation -> library_of_reusable_scp_programs_for_validation);;

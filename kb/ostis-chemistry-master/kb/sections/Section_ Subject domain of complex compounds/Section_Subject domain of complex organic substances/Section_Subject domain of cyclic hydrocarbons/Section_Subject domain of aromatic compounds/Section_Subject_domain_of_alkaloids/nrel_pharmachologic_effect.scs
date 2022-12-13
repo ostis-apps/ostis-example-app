@@ -1,0 +1,75 @@
+nrel_pharmachologic_effect<-sc_node_norole_relation;;
+
+nrel_pharmachologic_effect=> nrel_main_idtf:[фармакологическое действие*](* <- lang_ru;; *);;
+nrel_pharmachologic_effect=> nrel_main_idtf:[pharmachologic effect*](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: nrel_pharmachologic_effect;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Фармакологическое действие - фармакологическая активность <b><sc_element sys_idtf="medicine">лекарственного средства</b></sc_element>, ради которой оно применяется в клинической практике с профилактической или лечебной целбю при конкретном заболевании.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (фармакологическое действие*)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{ 
+		medicine
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:nrel_pharmachologic_effect ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[При назначении <b><sc_element sys_idtf="medicine">лекарственных средств</b></sc_element> в зависимости от их свойств и природы происхождения, локализации их действия, могут проявляться различные виды фармакологического действия]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(фармакологическое действие*)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{ 
+		medicine
+		};;
+*);;
+
+
+
+chemical_substance->clonidine;;
+action->antihypertensive_effect;;
+antihypertensive_effect<=nrel_pharmachologic_effect:clonidine;;
+
+
+oriented_relation -> nrel_pharmachologic_effect;;
+norole_relation-> nrel_pharmachologic_effect;; 
+antireflexive_relation -> nrel_pharmachologic_effect;; 
+antitransitive_relation -> nrel_pharmachologic_effect;;
+antisymmetric_relation -> nrel_pharmachologic_effect;;
+
+
+nrel_pharmachologic_effect => nrel_first_domain: chemical_substance;;
+nrel_pharmachologic_effect => nrel_second_domain: action;;
+
+nrel_pharmachologic_effect =>nrel_definitional_domain: ...(* 
+<=nrel_combination: 
+{ 
+chemical_substance; 
+action 
+};; 
+*);; 
+arity_2->nrel_pharmachologic_effect;;
+
+
+clonidine=> nrel_main_idtf:[клофелин](* <- lang_ru;; *);;
+clonidine=> nrel_main_idtf:[clonidine](* <- lang_en;; *);;
+
+antihypertensive_effect=> nrel_main_idtf:[гипотензивное действие](* <- lang_ru;; *);;
+antihypertensive_effect=> nrel_main_idtf:[antihypertensive_effect](* <- lang_en;; *);;
+
+action<-sc_node_not_relation;;
+
+action=> nrel_main_idtf:[действие](* <- lang_ru;; *);;
+actiont=> nrel_main_idtf:[action](* <- lang_en;; *);;

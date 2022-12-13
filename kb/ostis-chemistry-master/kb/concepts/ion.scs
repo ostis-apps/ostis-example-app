@@ -1,0 +1,97 @@
+ion
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[ион](* <-lang_ru;; *);
+	[ion](* <-lang_en;; *);
+//разбиение
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку количества атомных ядер](* <-lang_ru;; *);;
+	-> 	simple_ion;;
+	-> complex_ion;;
+*);
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку общего числа протонов и знака заряда](* <-lang_ru;; *);;
+	-> 	cation;;
+	-> anion;;
+*);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(ион)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Ион — частица, в которой общее число протонов не эквивалентно общему числу электронов.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->particle;;
+		->proton;;
+		->electron;;
+		->number;;
+	*);;
+*);
+//утверждение
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+	=>nrel_main_idtf: [Утв.(ион, частица, агрегатное состояние*, газ, жидкость, кристалл, плазма)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[В виде самостоятельных частиц ионы встречаются во всех агрегатных состояниях вещества: в газах (в частности, в атмосфере), в жидкостях (в расплавах и растворах), в кристаллах и в плазме (в частности, в межзвёздном пространстве).](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: particle;;
+	-> rrel_key_sc_element: nrel_state_of_aggregation;;
+	-> rrel_key_sc_element: gas;;
+	-> rrel_key_sc_element: liquid;;
+	-> rrel_key_sc_element: crystal;;
+	-> rrel_key_sc_element: plasma;;
+	<- rrel_axiom:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+	=>nrel_main_idtf: [Утв.(простой ион, электрон, атомное ядро*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Простые ионы состоят из одного атомного ядра и электронов.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: simple_ion;;
+	-> rrel_key_sc_element: electron;;
+	-> rrel_key_sc_element: nrel_nucleus;;
+	<- rrel_axiom:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+	=>nrel_main_idtf: [Утв.(ион, химическая реакция, атом, молекула)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Ионы вступают в реакции с атомами, молекулами и между собой.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_reaction;;
+	-> rrel_key_sc_element: atom;;
+	-> rrel_key_sc_element: molecule;;
+	<- rrel_axiom:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);;

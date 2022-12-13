@@ -1,0 +1,11 @@
+{
+     "sources": [
+        
+        "src/salt-common.js",
+        "src/salt-paintPanel.js"
+    ],
+
+    "component": "src/salt-component.js",
+
+    "target": "static/components/js/chemistry_components/salt_ui_component.js"
+}

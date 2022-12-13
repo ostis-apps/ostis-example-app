@@ -1,0 +1,13 @@
+{
+     "sources": [
+        
+        "src/periodic_table-common.js",        
+	"src/ui_periodic_table.js",
+	"src/ui_periodic_table_data.js"
+
+    ],
+
+    "component": "src/periodic_table-component.js",
+
+    "target": "static/components/js/chemistry_components/periodic_table.js"
+}

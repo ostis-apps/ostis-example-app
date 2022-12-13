@@ -1,0 +1,49 @@
+chemistry
+=>nrel_main_idtf:
+[химия](* <- lang_ru;;*);
+[chemistry](* <-lang_en;;*);
+
+<=nrel_subdividing:
+    subdividing_chemistry_by_studied_object
+(*
+    =>nrel_main_idtf:
+    [Разбиение по признаку изучаемых объектов](* <-lang_ru;; *);
+    [Partitioning chemistry by studied objects](* <-lang_en;; *);;
+-> inorganic_chemistry;;
+-> organic_chemistry;;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- definition;;
+    <=nrel_using_constants:...(*
+        ->chemistry;;
+        ->substance;;
+        ->nrel_object_structure;;
+        ->nrel_reaction;;  
+        ->chemical_compound;;
+        ->atom;;    
+        ->chemical_element;;
+        ->molecule;;
+    *);;
+    =>nrel_main_idtf:
+    [Опр. (химия)](* <-lang_ru;; *);
+    [Def. (chemistry)](* <-lang_en;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://html/chemistry.html"(* <-lang_ru;; *);; 
+        -> rrel_example: "file://html/chemistry_en.html"(* <-lang_en;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    quantum_chemistry;
+    chemical_physics;
+    physical_chemistry;
+    biochemistry;;
+	=>nrel_main_idtf:
+	[Утв. (химия, квантовая химия, химическая физика, физическая химия, биохимия)](* <-lang_ru;;*);
+	[Expl. (chemistry, quantum chemistry, chemical physics, physical chemistry, biochemistry)](* <-lang_en;;*);;
+	-> rrel_example: "file://html/chemistry_1.html"(* <-lang_ru;; *);;
+	-> rrel_example: "file://html/chemistry_1_en.html"(* <-lang_en;; *);;
+*);;

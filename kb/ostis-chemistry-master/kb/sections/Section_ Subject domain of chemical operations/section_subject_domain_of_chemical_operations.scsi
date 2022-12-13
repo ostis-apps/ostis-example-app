@@ -1,0 +1,19 @@
+subject_domain_of_chemical_operations
+=> nrel_main_idtf: 
+	[Предметная область химических операций]
+	(* <- lang_ru;;*);
+	[Subject domain of chemical operations]
+	(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	chemical_operation;;
+
+chemical_operation
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[химическая операция]
+	(* <- lang_ru;;	*);
+	[chemical operation]
+	(* <- lang_en;;	*);;

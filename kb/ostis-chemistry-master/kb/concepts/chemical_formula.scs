@@ -1,0 +1,40 @@
+chemical_formula
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[химическая формула]
+	(* <- lang_ru;;	*);
+	[chemical formula]
+	(* <- lang_en;;	*);;
+chemical_formula
+<- rrel_key_sc_element:
+	Definition_of_chemical_formula
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/chemical_formula.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+
+	
+
+Definition_of_chemical_formula
+=> nrel_main_idtf:
+	[Опр.(химическая формула)]
+	(* <- lang_ru;;	*);
+	
+<= nrel_using_constants:
+			{
+				chemical_compound;
+				chemical_element
+			};;
+
+
+
+
+
+
+

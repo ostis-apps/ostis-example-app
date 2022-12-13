@@ -1,0 +1,104 @@
+polynitroethylene<-sc_node_not_relation;;
+polynitroethylene=> nrel_main_idtf:[полинитроэтилен](* <- lang_ru;; *);;
+polynitroethylene=> nrel_main_idtf:[polynitroethylene](* <- lang_en;; *);;
+polynitroethylene=> nrel_idtf:[ Poly(nitroethylene)](* <- lang_en;; *);;
+polynitroethylene=> nrel_idtf:[(CH2=CHNO2)n](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: polynitroethylene;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[полинитроэтилен — <b><sc_element sys_idtf="polymer">полимер</b></sc_element>
+	 нитроэтилена.]
+		(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (полинитроэтилен)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		polymer
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: polynitroethylene;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Имеются сведения о том, что полинитроэтилен, полученный <b><sc_element sys_idtf="nrel_intramolecular_dehydration">дегидратацией</b></sc_element>
+	 нитроэтинола в присутствии фосфорной кислоты, 
+	  <b><sc_element sys_idtf="polymer">полимеризуется</b></sc_element>  при комнатной температуре в течение двух-трех дней.
+	 ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(полинитроэтилен,полимеризуется)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nrel_intramolecular_dehydration;
+		nrel_polymerization
+		};;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:polynitroethylene;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Полинитроэтилен — можно  получить непосредственно путем <b><sc_element sys_idtf="nrel_mixing">смешивания</b></sc_element> динитроэтана с нитро-этилнитратом. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(полинитроэтилен,смешение)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nrel_mixing;
+		polymer
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polynitroethylene;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polynitroethylene.png";;*);;
+	=> nrel_main_idtf: [Рисунок(полинитроэтилен,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polynitroethylene;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polynitroethylene_3d.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(полинитроэтилен,пример)](*<- lang_ru;;*);;
+*);;
+
+
+thermoplastic_polymer=>nrel_inclusion:polynitroethylene;;
+polymerisation_polymer=>nrel_inclusion:polynitroethylene;;
+homo_chain_polymer=>nrel_inclusion:polynitroethylene;;
+rrel_liquid_solvent=>nrel_inclusion:polynitroethylene;;
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> polynitroethylene;;
+	=> rrel_mol: [150]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polynitroethylene;;
+	=> rrel_degree_celsius: 116
+	(*
+		<-number;;
+	*);;
+*);;
+
+

@@ -1,0 +1,80 @@
+plasma
+=> nrel_main_idtf:
+	[плазма]
+	(* <- lang_ru;;	*);
+	[plasma]
+	(* <- lang_en;;	*);;
+
+plasma
+<- rrel_key_sc_element:
+	Definition_of_plasma
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/plasma.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:..
+			(*
+				->nrel_state_of_aggregation;;
+				-> chemical_substance;;
+			*);;
+	*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Plasma_lamp.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: particles_of_plasma
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (Плазма, частица)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Плазма может состоять из любых заряженных частиц] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: capacity_of_plasma
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (плазма, электрический ток)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Плазма обладает способностью проводить электрический ток] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: property_of_plasma
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (плазма, плотность*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Плазма обладает достаточной плотностью(заряженные частицы должны находиться достаточно близко друг к другу)] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+Definition_of_plasma
+=> nrel_main_idtf:
+	[Опр.(Плазма)]
+	(* <- lang_ru;;	*);;

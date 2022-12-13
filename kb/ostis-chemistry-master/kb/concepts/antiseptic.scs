@@ -1,0 +1,33 @@
+antiseptic
+=> nrel_main_idtf:
+	[антисептик](* <- lang_ru;; *);
+	[antiseptic](* <- lang_en;; *);
+=> nrel_applying: medicine; food_industry;
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку характера действия против микробов](* <-lang_ru;; *);;
+	-> germicide_antiseptic;;
+	-> bacteriostatic_antiseptic;;
+*);
+=> nrel_inclusion: alcohol;boric_acid;iodine_solution;carbolic_acid;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(антисептик)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Антисептики — противогнилостные средства, предназначенные для предупреждения процессов разложения на поверхности открытых ран, например в ранах, образующихся после больших операций или ушибов, или для задержания уже начавшихся изменений в крови.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->decomposition;;
+		->energy_level;;
+		->antifouling_agents;;
+		->blood;;
+	*);;
+*);;

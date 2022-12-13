@@ -1,0 +1,67 @@
+solid
+=> nrel_main_idtf:
+	[твёрдое тело]
+	(* <- lang_ru;;	*);
+	[solid]
+	(* <- lang_en;;	*);;
+solid
+<- rrel_key_sc_element:
+	Definition_of_solid
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/solid.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:..
+			(*
+				->nrel_state_of_aggregation;;
+				-> chemical_substance;;
+			*);;
+	*);
+
+
+
+
+
+<- rrel_key_sc_element: state_of_solid
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (твёрдое тело, состояние*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Твёрдые тела могут быть в кристаллическом и аморфном состоянии. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: solid_atom_and_molecule
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (твёрдое тело, атом, молекула)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Атомы и молекулы, составляющие твёрдое тело, плотно упакованы вместе. Другими словами, молекулы твёрдого тела практически сохраняют своё взаимное положение относительно других молекул и удерживаются между собой межмолекулярным взаимодействием.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: solid_crystal
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (твёрдое тело, кристалл)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Многие твёрдые тела содержат в себе кристаллические структуры.  ] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+Definition_of_solid
+=> nrel_main_idtf:
+	[Опр.(Твёрдые тела)]
+	(* <- lang_ru;;	*);;

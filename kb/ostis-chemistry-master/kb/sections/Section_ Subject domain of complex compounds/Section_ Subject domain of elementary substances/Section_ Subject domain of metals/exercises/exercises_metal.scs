@@ -1,0 +1,9 @@
+exercises_metal
+<= nrel_exercises: section_subject_domain_of_metals;
+
+=> nrel_main_idtf:
+	[Множество упражнений. Раздел. Предметная область металлов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Set of exercises. Section. Subject domain of metals]
+	(* <- lang_en;; *);;

@@ -1,0 +1,134 @@
+primary_alcohol<-sc_node_not_relation;;
+primary_alcohol=> nrel_main_idtf:[первичный спирт](* <- lang_ru;; *);;
+primary_alcohol=> nrel_main_idtf:[primary_alcohol](* <- lang_en;; *);;
+primary_alcohol=> nrel_idtf:[primary alcohol-1](* <- lang_en;; *);;
+primary_alcohol=> nrel_idtf:[СH3–CH2–CH2–OH](* <- lang_en;; *);;
+
+
+
+saturated_alcohols=>nrel_inclusion:primary_alcohol;;
+
+primary_alcohol<=nrel_poisoning_way:peroral_way;;
+higher_fatty_alcohols=>nrel_inclusion:primary_alcohol;;
+organic_artificial_poison=>nrel_inclusion:primary_alcohol;;
+rrel_liquid_solvent=>nrel_inclusion:primary_alcohol;;
+triatomic_alcohol=>nrel_inclusion:primary_alcohol;;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: primary_alcohol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Первичный спирт — 
+	представляет собой 
+	<b><sc_element sys_idtf="alcohol">спирт</b></sc_element>
+	 , который имеет гидроксильную группу , связанную с первичным 
+	 <b><sc_element sys_idtf="elem_C">атомом углерода</b></sc_element>.  ]
+		(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (первичный спирт)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		alcohol;
+		elem_C
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: primary_alcohol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[При растворении первичного 
+	спирта в <b><sc_element sys_idtf="water">воде</b></sc_element>
+	образуются  <b><sc_element sys_idtf="elem_H">водородные</b></sc_element>
+	связи между молекулами спирта и <b><sc_element sys_idtf="water">воды</b></sc_element>.]
+	
+	  
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(первичный спирт, растворяется)](*<- lang_ru;;*);;	
+	=> nrel_using_constants:
+		{
+			elem_H;
+		water
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:primary_alcohol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Первичные спирты при 
+	<b><sc_element sys_idtf="temperature">температуре</b></sc_element> выше 33°C может 
+	образовать взрывоопасныe смеси пар/воздух.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(первичный спирт, взрывоопасен)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		temperature
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:primary_alcohol;;
+	<= nrel_sc_text_translation: ...(*->"file://image/primary_alcohol_1.png";;*);;
+	=> nrel_main_idtf: [Рисунок(первичный спирт,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:primary_alcohol;;
+	<= nrel_sc_text_translation: ...(*->"file://image/primary_alcohol_1_3d.png";;*);;
+	=> nrel_main_idtf: [Рисунок(первичный спирт,пример)](*<- lang_ru;;*);;
+*);;
+
+
+
+nrel_relative_molar_mass->...
+(* 
+	<- sc_node_not_relation;;
+	-> primary_alcohol;;
+	=> rrel_mol: [213.73]
+	(*
+		<-number;;
+	*);;
+*);;
+
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->primary_alcohol;;
+	=> rrel_gram_per_cubic_cm:1.19
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->primary_alcohol;;
+	=> rrel_joule_per_kelvin_and_mole: 1.02
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->primary_alcohol;;
+	=> rrel_degree_celsius: 111
+	(*
+		<-number;;
+	*);;
+*);;

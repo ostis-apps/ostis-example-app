@@ -1,0 +1,94 @@
+elem_Tm
+=> nrel_main_idtf: [атом тулия] (* <- lang_ru;; *);
+=> nrel_idtf: [Tm] (* <- lang_en;; *);
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+	Definition_of_thulium
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/tm.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
+	*);
+
+<- group_sixteen;
+<- period_six;
+=> nrel_periodic_number: sixty_nine;
+
+<- metal;
+
+<= nrel_inclusion: oxidation_state_plus_two;oxidation_state_plus_three; 
+<= nrel_inclusion: valence_three;valence_two;
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:one_hundred_seventy_seven(*<- number;;*);;
+	*);;
+*);
+=> nrel_electronegativity: electronegativity_Tm;
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:one_hundred_ninety(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Tm;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_Tm
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (тулий, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Tm 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 4s<sup>2</sup>p<sup>6</sup>d<sup>10</sup>f<sup>13</sup> 5s<sup>2</sup>p<sup>6</sup> 6s<sup>2</sup>] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис.(атом тулия)] (* <- lang_ru;;	*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/thulium.jpg";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+Definition_of_thulium
+=> nrel_main_idtf:
+	[Опр. (тулий)]
+	(* <- lang_ru;;	*);;
+
+atomic_mass_Tm <- number;
+=> nrel_main_idtf:[232](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Ti <- number;
+=> nrel_main_idtf:[1,25](*<-lang_ru;; <- lang_en;;*);;

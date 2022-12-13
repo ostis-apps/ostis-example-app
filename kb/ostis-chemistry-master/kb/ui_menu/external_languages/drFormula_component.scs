@@ -1,0 +1,8 @@
+drFormula_component 
+<- ui_user_command_class_noatom;
+<- ui_external_languages;
+=> nrel_main_idtf:
+    [Компонент построения структурной формулы]
+    (*<- lang_ru;;*);
+    [Visual component of building structural formula]
+    (* <- lang_en;; *);;

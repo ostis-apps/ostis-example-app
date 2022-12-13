@@ -1,0 +1,129 @@
+polyethylene_oxide<-sc_node_not_relation;;
+polyethylene_oxide=> nrel_main_idtf:[полиэтиленоксид](* <- lang_ru;; *);;
+polyethylene_oxide=> nrel_main_idtf:[polyethylene_oxide](* <- lang_en;; *);;
+polyethylene_oxide=> nrel_idtf:[ polyethylene​ oxide](* <- lang_en;; *);;
+polyethylene_oxide=> nrel_idtf:[СН2—СН2—О—СН2—СН2—0](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: polyethylene_oxide;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Полиэтиленоксид – 
+    <b><sc_element sys_idtf="polymer">полимер</b></sc_element> этиленоксида. В зависимости от способа 
+    получения и <b><sc_element sys_idtf="molecular_mass">молекулярной массы</b></sc_element> резко различается по свойствам и областям применения.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (полиэтиленоксид)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+			molecular_mass;
+		polymer
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: polyethylene_oxide;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[ В результате 
+    <b><sc_element sys_idtf="nrel_polymerization">полимеризации</b></sc_element> образуется 
+    <b><sc_element sys_idtf="polymer">полимер</b></sc_element> с концевыми 
+    гидроксилъными группами, 
+    который используют главным образом в производстве 
+    полиуретанов для придания им высокой прочности, эластичности и низкой 
+    <b><sc_element sys_idtf="temperature">температуры</b></sc_element> хрупкости. ]
+	 
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(полиэтиленоксид,сложный состав)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		polymer;
+		nrel_polymerization;
+		temperature
+		};;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:polyethylene_oxide;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Высокомолекулярный полиэтиленоксид может применяться в 
+    текстильной промышленности для шлихтования 
+    тканей, изготовления нетканых материалов и т. п.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(полиэтиленоксид, применяется в промышленности)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyethylene_oxide;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyethylene_oxide_formula.png";;*);;
+	=> nrel_main_idtf: [Рисунок(полиэтиленоксид,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:polyethylene_oxide;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polyethylene_oxide_3d.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(полиэтиленоксид, пример)](*<- lang_ru;;*);;
+*);;
+
+thermosetting_polymer=>nrel_inclusion:polyethylene_oxide;;
+polycondensation_polymer=>nrel_inclusion:polyethylene_oxide;;
+hetero_chain_polymer=>nrel_inclusion:polyethylene_oxide;;
+artificial_polymers=>nrel_inclusion:polyethylene_oxide;;
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> polyethylene_oxide;;
+	=> rrel_mol: [40 000]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyethylene_oxide;;
+	=> rrel_degree_celsius: 277
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyethylene_oxide;;
+	=> rrel_joule_per_kelvin_and_mole: 0.64
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->polyethylene_oxide;;
+	=> rrel_gram_per_cubic_cm: 2.6
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+

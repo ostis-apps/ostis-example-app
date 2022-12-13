@@ -1,0 +1,20 @@
+section_subject_domain_of_chemical_operations
+=> nrel_main_idtf: 
+	[Раздел. Предметная область химических операций]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of chemical operations]
+	(* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+
+<- atomic_section;
+
+<= nrel_section_decomposition:
+{
+	section_subject_domain_of_chemical_experiments
+};;
+
+section_subject_domain_of_chemical_operations = [*^"file://section_subject_domain_of_chemical_operations.scsi"*];;
+
+section_subject_domain_of_chemical_operations
+-> rrel_key_sc_element: subject_domain_of_chemical_operations;;

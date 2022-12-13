@@ -1,0 +1,24 @@
+exercise2_mixture
+<- exercises_mixture;
+
+-> rrel_key_sc_element: mixture; subst_Cu; subst_Fe; nrel_mass; hydrochloric_acid; nrel_mass_fraction; metal; gas;
+
+=> nrel_next_exercise: exercise3_mixture;
+
+=> nrel_main_idtf:
+	[Упражнение 2. Раздел. Предметная область смесей]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 2. Section. Subject domain of mixtures]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise2_mixture_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise2_mixture_en.html" (* <-lang_en;; *);;
+	*);;

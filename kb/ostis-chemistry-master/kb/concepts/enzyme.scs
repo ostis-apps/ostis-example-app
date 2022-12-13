@@ -1,0 +1,75 @@
+enzyme
+=> nrel_main_idtf:
+	[фермент](* <- lang_ru;; *);
+	[enzyme](* <- lang_en;; *);
+=> nrel_idtf:
+	[энзима](* <-lang_ru;; *);
+// включение и разбиение
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку агрегатного состояния](* <-lang_ru;; *);;
+	-> oxidoreductase;;
+	-> transferase;;
+	-> hydrolase;;
+	-> lyase;;
+	-> isomerase;;
+	-> ligase;;
+*);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(фермент)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://html/enzyme_definition.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->protein; molecule; nrel_reaction;;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(фермент, клетка, катализатор)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Ферменты присутствуют во всех живых клетках и способствуют превращению одних веществ в другие. Ферменты выступают в роли катализаторов практически во всех биохимических реакциях, протекающих в живых организмах. Они играют важнейшую роль во всех процессах жизнедеятельности, направляя и регулируя обмен веществ организма.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: catalyst;;
+	-> rrel_key_sc_element: cell;;
+	-> rrel_key_sc_element: metabolism;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(реагент, химическая реакция, фермент, субстрат, химическое вещество, продукт)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Реагенты в реакции, катализируемой ферментами, называются субстратами, а получающиеся вещества — продуктами. ](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: reagent; nrel_reaction; substratum; chemical_substance; product;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(фермент, химическая реакция, молекула, субстрат, продукт)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://html/enzyme_reaction.html"(* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: molecule; nrel_reaction; substratum; product;;
+*);;

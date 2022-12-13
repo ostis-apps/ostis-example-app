@@ -1,0 +1,22 @@
+ex24_solutions
+<- exercises_solutions;
+
+-> rrel_key_sc_element: salt; solution; subst_NaOH; rrel_solute;
+
+=> nrel_main_idtf:
+	[Упражнение 24. Раздел. Предметная область растворов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 24. Section. Subject domain of solutions]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex2_solutions_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex2_solutions_en.html" (* <-lang_en;; *);;
+	*);;

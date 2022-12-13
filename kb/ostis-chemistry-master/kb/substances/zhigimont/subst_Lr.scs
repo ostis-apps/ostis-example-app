@@ -1,0 +1,56 @@
+subst_Lr
+<- sc_node_not_relation;
+=> nrel_main_idtf: [лоуренсий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [lawrencium] (* <- lang_en;; *);
+<- rrel_key_sc_element: definition_of_subst_Lr
+(* 
+	=> nrel_main_idtf: 
+	[Опр.(лоуренсий)] (* <- lang_ru;; *);
+	[Def.(lawrencium)] (* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Lr">Лоуренсий</sc_element></b> - искусственно полученный <sc_element sys_idtf="radioactive_substance">радиоактивный</sc_element> <sc_element sys_idtf="metal">металл</sc_element>, не встречающийся в природе.] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+
+		-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Lr">Lawrencium</sc_element></b> is an artificially received <sc_element sys_idtf="radioactive_substance">radioactive</sc_element> <sc_element sys_idtf="metal">metal</sc_element>that doesn't exist in nature.] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> radioactive_substance;;
+		-> metal;;
+	*);;
+*);
+
+<- solid;
+<= nrel_inclusion: chemical_substance;
+
+=> nrel_ionization_energy: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole: 470 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 1900 (*<- number;;*);;
+	*);;
+*);;
+
+
+atomic_multiplicity_one -> (subst_Lr -> elem_Lr);;

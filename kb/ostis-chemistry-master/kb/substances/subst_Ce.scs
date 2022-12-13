@@ -1,0 +1,78 @@
+subst_Ce
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[cerium (substance)](*<- lang_en;;*);
+	[церий (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Сe (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (церий (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Церий (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - ковкий, вязкий <sc_element sys_idtf = "metal">металл</sc_element> железно-серого <sc_element sys_idtf = "color">цвета</sc_element>.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> metal;;
+		-> color;;
+
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (церий (вещество), ковкий, вязкий металл железно-серого цвета)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Cerium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:28 (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:671 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (церий (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы церия:  <sup>119</sup>Се, <sup>120</sup>Се, <sup>121</sup>Се, <sup>122</sup>Се, <sup>123</sup>Се, <sup>124</sup>Се, <sup>125</sup>Се, <sup>126</sup>Се, <sup>127</sup>Се, <sup>128</sup>Се, <sup>129</sup>Се, <sup>130</sup>Се, <sup>131</sup>Се, <sup>132</sup>Се, <sup>133</sup>Се, <sup>134</sup>Се, <sup>135</sup>Се, <sup>136</sup>Се, <sup>137</sup>Се, <sup>138</sup>Се, <sup>139</sup>Се, <sup>140</sup>Се, <sup>141</sup>Се, <sup>142</sup>Се, <sup>143</sup>Се, <sup>144</sup>Се, <sup>145</sup>Се, <sup>146</sup>Се, <sup>147</sup>Се, <sup>148</sup>Се, <sup>149</sup>Се, <sup>150</sup>Се, <sup>151</sup>Се, <sup>152</sup>Се, <sup>153</sup>Се, <sup>154</sup>Се, <sup>155</sup>Се, <sup>156</sup>Се, <sup>157</sup>Се] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

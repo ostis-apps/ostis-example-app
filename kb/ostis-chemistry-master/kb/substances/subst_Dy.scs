@@ -1,0 +1,76 @@
+subst_Dy
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[dysprosium (substance)](*<- lang_en;;*);
+	[диспрозий (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Dy (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (диспрозий (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Диспрозий (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> -мягкий глянцевитый серебристый <sc_element sys_idtf = "metal">металл</sc_element>.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> metal;;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (диспрозий (вещество), мягкий глянцевитый серебристый металл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Dysprosium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1412 (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:2567 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (диспрозий (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы диспрозия: <sup>138</sup>Dy, <sup>139</sup>Dy, <sup>140</sup>Dy, <sup>141</sup>Dy, <sup>142</sup>Dy, <sup>143</sup>Dy, <sup>144</sup>Dy, <sup>145</sup>Dy, <sup>146</sup>Dy, <sup>147</sup>Dy, <sup>148</sup>Dy, <sup>149</sup>Dy, <sup>150</sup>Dy, <sup>151</sup>Dy, <sup>152</sup>Dy, <sup>153</sup>Dy, <sup>154</sup>Dy, <sup>155</sup>Dy, <sup>156</sup>Dy, <sup>157</sup>Dy, <sup>158</sup>Dy, <sup>159</sup>Dy, <sup>160</sup>Dy, <sup>161</sup>Dy, <sup>162</sup>Dy, <sup>163</sup>Dy, <sup>164</sup>Dy, <sup>165</sup>Dy, <sup>166</sup>Dy, <sup>167</sup>Dy, <sup>168</sup>Dy, <sup>169</sup>Dy, <sup>170</sup>Dy, <sup>171</sup>Dy, <sup>172</sup>Dy, <sup>173</sup>Dy] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

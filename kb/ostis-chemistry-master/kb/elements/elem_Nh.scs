@@ -1,0 +1,105 @@
+elem_Nh
+
+=> nrel_main_idtf: [атом нихония] (* <- lang_ru;; *);
+=> nrel_main_idtf: [nihonium atom] (* <- lang_en;; *);
+
+=> nrel_idtf: [Nh] (* <- lang_en;; *);
+
+<- chemical_element;
+<- sc_node_not_relation;
+<= nrel_inclusion: chemical_element;
+
+<- rrel_key_sc_element:
+	Definition_of_nihonium
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="elem_Nh">Нихоний</sc_element></b> - <sc_element sys_idtf="chemical_element">химический элемент</sc_element> тринадцатой <sc_element sys_idtf="nrel_group">группы</sc_element> 7-го <sc_element sys_idtf="period">периода</sc_element> периодической системы химических элементов.] 
+		(* <-lang_ru;; => nrel_format: format_html;;*);;
+
+
+		-> rrel_example:[<b><sc_element sys_idtf="elem_Nh">Nihonium</sc_element></b> is a <sc_element sys_idtf="chemical_element">chemical element</sc_element> of the 13th <sc_element sys_idtf="nrel_group">group</sc_element> of the 7th <sc_element sys_idtf="period">period</sc_element> of periodic table.] 
+		(* <-lang_en;; => nrel_format: format_html;;*);;
+		*);;
+	
+	*);
+
+<- oxidation_state_plus_three;
+<- oxidation_state_plus_one;
+<- oxidation_state_minus_one;
+<- oxidation_state_plus_two;
+<- oxidation_state_plus_five;
+
+<- group_thirteen;
+<- period_seven;
+=> nrel_periodic_number: one_hundred_and_thirteen;
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: 286(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:170(*<- number;;*);;
+	*);;
+*);
+
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:176(*<- number;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: nihonium_atom_picture
+(*
+	<- illustration;;
+	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: [Рис.(атом нихония)] (* <- lang_ru;;	*);
+	[Pic.(nihonium atom)] (* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://images/nh.png"
+		(*=> nrel_format: format_jpg;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Nh
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(атом нихония, электронная конфигурация*)](*<- lang_ru;;*);
+		[Stat.(nihonium atom, electronic configuration*)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Nh 5f<sup>14</sup> 6d<sup>10</sup> 7s<sup>2</sup> 7p<sup>1</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+Definition_of_nihonium
+=> nrel_main_idtf:
+	[Опр.(атом нихония)]
+	(* <- lang_ru;;	*);
+	[Def.(nihonium atom)]
+	(* <- lang_en;;	*);
+
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};;

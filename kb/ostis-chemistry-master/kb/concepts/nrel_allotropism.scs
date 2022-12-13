@@ -1,0 +1,40 @@
+nrel_allotropism
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[аллотропия*](* <-lang_ru;; *);
+	[allotropism*](* <- lang_en;; *);;
+
+nrel_allotropism
+<- rrel_key_sc_element:
+	Definition_of_nrel_allotropism
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(аллотропия*)] (* <-lang_ru;; *);; 
+        <= nrel_sc_text_translation:...
+        (*
+			-> rrel_example:"file://htmls/nrel_allotropism.html"(* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+			-> allotropic_modification;;
+		*);;
+	*);;
+	
+nrel_allotropism
+	=> nrel_first_domain:chemical_element;;
+nrel_allotropism
+	=> nrel_second_domain:elementary_substance;;
+
+
+nrel_allotropism
+	<- rrel_key_sc_element:...
+		(* 
+		<- sc_explanation;;
+		=> nrel_main_idtf: [Прим.(аллотропия*, причины, аллотропия состава, аллотропия формы)] (* <-lang_ru;; *);; 
+		<= nrel_sc_text_translation:...
+			(* 
+			-> rrel_example: "file://htmls/nrel_allotropism1.html" (* <-lang_ru;; *);;
+			*);;
+		*);;

@@ -1,0 +1,113 @@
+chloroform<-sc_node_not_relation;;
+chloroform=> nrel_main_idtf:[хлороформ](* <- lang_ru;; *);;
+chloroform=> nrel_main_idtf:[chloroform](* <- lang_en;; *);;
+chloroform=> nrel_idtf:[CHCl3](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: chloroform;;
+	<= nrel_sc_text_translation: ...(*->rrel_example: [Хлороформ — <b><sc_element sys_idtf="organic_compound">органическое</b></sc_element> <b><sc_element sys_idtf="chemical_compound">химическое соединение</b></sc_element> с формулой CHCl3,при нормальных условиях — <b><sc_element sys_idtf="no_color">бесцветная</b></sc_element> летучая <b><sc_element sys_idtf="liquid">жидкость</b></sc_element> c эфирным запахом и сладким вкусом.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (хлороформ)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		organic_compound;
+		chemical_compound;
+		no_color;
+		liquid
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: chloroform;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://chloroform.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(хлороформ,фармакологический эффект*)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: chloroform;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://chloroform2.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(хлороформ,побочный эффект*)](*<- lang_ru;;*);;
+	
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:chloroform;;
+	<= nrel_sc_text_translation: ...(*->"file://images/chloroform.png";;*);;
+	=> nrel_main_idtf: [Рисунок(хлороформ,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: chloroform;;
+	<= nrel_sc_text_translation: ...(*->"file://images/chloroform2.png";;*);;
+	=> nrel_main_idtf: [Рисунок(хлороформ,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+
+liquid=>nrel_inclusion:chloroform;;
+chemical_compound=>nrel_inclusion:chloroform;;
+toxin=>nrel_inclusion:chloroform;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> chloroform;;
+	=> nrel_measurement_in_gramms_per_mole: [119,38]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->chloroform;;
+	=> nrel_measurement_in_degrees_Celsius: [-63,5]
+	(*
+		<-number;;
+	*);;
+*);;
+boiling_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->chloroform;;
+	=> nrel_measurement_in_degrees_Celsius: [61,2]
+	(*
+		<-number;;
+	*);;
+*);;
+destiny->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->chloroform;;
+	=> nrel_measurement_in_degrees_Celsius: [1,483]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+
+

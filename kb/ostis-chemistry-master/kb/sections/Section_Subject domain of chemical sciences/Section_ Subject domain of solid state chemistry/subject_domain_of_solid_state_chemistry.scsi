@@ -1,0 +1,48 @@
+subject_domain_of_solid_state_chemistry
+  => nrel_main_idtf:
+    [Предметная область химии твердого тела] (* <- lang_ru;;*);
+    [Subject domain of solid state chemistry] (* <- lang_en;; *);
+
+  <- subject_domain;
+  -> rrel_maximum_studied_object_class: solid_state_chemistry;;
+
+solid_state_chemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [химия твердого тела] (* <- lang_ru;; *);
+  => nrel_main_idtf: [solid state chemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (химия твердого тела)] (* <- lang_ru;; *);
+      [Def. (solid state chemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Химия твёрдого тела — раздел химии, изучающий разные аспекты твердофазных веществ, в частности, их синтез, структуру, свойства, применение и др.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (химия твердого тела)](* <- lang_ru;; *);
+      [Stat. (solid state chemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Объектами исследования химии твердого тела являются кристаллические и аморфные, неорганические и органические вещества.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (химия твердого тела)](* <- lang_ru;; *);
+      [Pic. (solid state chemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/solid_state_chemistry.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;

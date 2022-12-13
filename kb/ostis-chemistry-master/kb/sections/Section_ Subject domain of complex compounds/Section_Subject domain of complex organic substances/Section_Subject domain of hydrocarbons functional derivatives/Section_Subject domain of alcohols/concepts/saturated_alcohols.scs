@@ -1,0 +1,54 @@
+saturated_alcohols
+<-sc_node_not_relation;;
+
+saturated_alcohols=> nrel_main_idtf:[предельный спирт](* <- lang_ru;; *);;
+saturated_alcohols=> nrel_main_idtf:[saturated alcohol](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: saturated_alcohols;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Предельные спирты -  производные 
+	<b><sc_element sys_idtf="hydrocarbon">углеводородов</b></sc_element>, в 
+	<b><sc_element sys_idtf="molecule">молекулах</b></sc_element>
+	 которых один или несколько <b><sc_element sys_idtf="elem_H">атомов водорода</b></sc_element>
+	  заменены функциональной группой OH.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (предельные спирты)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+			elem_H;
+			hydrocarbon;
+		molecule
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: saturated_alcohols;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[ спирты - это 
+	<b><sc_element sys_idtf="liquid">жидкости</b></sc_element> или твёрдые вещества в зависимости от количества 
+	<b><sc_element sys_idtf="elem_H">атомов углерода</b></sc_element>. 
+	Предельные спирты образуют изомеры по гидроксильной, метильной группе и с простыми эфирами.> 
+	 и других элементов. ](*
+	 <-lang_ru;;
+	=>nrel_format:format_html;;
+	 *);;
+	 *);;
+	
+	=> nrel_main_idtf: [Утверждение(предельные спирты)](*<- lang_ru;;*);;
+		=> nrel_using_constants:
+		{
+		liquid;
+		elem_H
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: saturated_alcohols;;
+	<= nrel_sc_text_translation: ...(*->"file://image/saturated_alcohols.png";;*);;
+	=> nrel_main_idtf: [Рисунок(предельные спирты)](*<- lang_ru;;*);;
+*);;

@@ -1,0 +1,205 @@
+ozone
+=> nrel_main_idtf:
+	[озон](* <- lang_ru;; *);
+	[ozone](* <- lang_en;; *);
+=> nrel_applying: medicine; industry;rocket_technology;
+=> molecular_mass:...
+(*
+	<-quantity;;
+	<=nrel_value:...
+	(*
+		->rrel_aem: 48
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=> nrel_density_of_substance:...
+(*
+	<-quantity;;
+	<=nrel_value:...
+	(*
+		->rrel_gram_per_cubic_cm: [2144.5]
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=> nrel_boiling_temperature
+(*
+	<-quantity;;
+	<=nrel_value:...
+	(*
+		->rrel_kelvin: [161.3]
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_melting_temperature
+(*
+	<-quantity;;
+	<=nrel_value:...
+	(*
+		->rrel_kelvin: [75,9]
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+<- strong_smell;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(озон)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://html/ozone_definition.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->oxygen;;
+		->molecule;;
+		->allotropic_modification;;
+	*);;
+*);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (озон, шаро-стержневая модель)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/ozone.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(озон, нормальные условия, голубой цвет, газ, жидкость, цвет индиго, твёрдое тело, темно-синий цвет, чёрный цвет, кристалл)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Озон при нормальных условиях — голубой газ. При сжижении превращается в жидкость цвета индиго. В твёрдом виде представляет собой тёмно-синие, практически чёрные кристаллы.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: blue_color;gas;liquid;color_indigo;solid;dark_blue_color;black_color;crystal;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(молекула, озон, неполярная ковалентная связь*, длина*, ангстрем')](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Обе связи O—O в молекуле озона имеют одинаковую длину 1,272 Å. Угол между связями составляет 116,78°.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: molecule;nrel_non_polar_covalent_bond;nrel_lengt;rrel_angstrem;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(озон, окислитель', кислород, металл, степень окисления, неметалл, продукт)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://html/ozone_oxidizer.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	-> rrel_key_sc_element: rrel_oxidizer;oxygen;metal;nonmetal;product;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(озон, степень окисления, оксид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://html/ozone_with_oxides.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	-> rrel_key_sc_element: oxidation_state;oxide;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(озон, аммиак, нитрат аммония)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://html/ozone_with_ammonia.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	-> rrel_key_sc_element: ammonia;ammonium_nitrate;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(озон, водород, вода, кислород)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://html/ozone_with_hydrogen.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	-> rrel_key_sc_element: hydrogen;water;oxygen;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(озон, сульфид, сульфат)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://html/ozone_with_sulphide.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	-> rrel_key_sc_element: sulfide;sulfate;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(озон, серная кислота, сера, диоксид серы, сероводород)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://html/ozone_recieving_sulfiric_acid.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	-> rrel_key_sc_element: sulfuric_acid; subst_S; sulfur_dioxide; hydrogen_sulphide;;
+*);;

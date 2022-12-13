@@ -1,0 +1,47 @@
+nrel_precipitation
+	=>nrel_main_idtf:
+		[осаждение*](*<-lang_ru;;*);
+                [precipitation*](*<-lang_en;;*);;
+
+nrel_precipitation
+		=>nrel_first_domain:chemical_element;;
+nrel_precipitation
+		=> nrel_second_domain:solution;;
+
+nrel_precipitation <-rrel_key_sc_element:...
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: осаждение*] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: precipitation*] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Осаждение* — это образование твердого осадка в растворе в ходе химической реакции.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Precipitation* is the formation of a solid precipitate in the solution by a chemical reaction.](*<- lang_en;;*);;
+			*);;
+		*);;
+nrel_precipitation <=nrel_using_constants:...
+				(*->precipitate; nrel_reaction;;
+				*);;
+
+nrel_precipitation <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[По окончании реакции, образовавшийся сухой остаток называют преципитатом, а жидкость выше него — супернатантом.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[After the reaction, the resulting precipitate is called the dry residue and the liquid above it is supernatant.](*<- lang_en;;*);;
+			*);;
+		-> rrel_key_sc_element: precipitate;;
+		*);;
+
+nrel_precipitation <-rrel_key_sc_element:...
+				(*<-sc_illustration;;
+				<=nrel_sc_text_translation:...
+						(*->rrel_example: "file://precipitation.png";;*) ;;	
+				*);;

@@ -1,0 +1,41 @@
+cathode
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[катод](*<-lang_ru;;*);
+     [cathode](*<-lang_en;;*);;
+
+cathode
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(катод)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b>Катод</b> (от греч. κάθοδος — ход вниз; нисхождение) — <sc_element sys_idtf="electrode">электрод</sc_element> некоторого прибора, присоединённый к отрицательному полюсу источника тока.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: electrode;;
+*);
+
+<-rrel_key_sc_element: ...
+(*
+	 ->rrel_key_sc_element: electrochemistry; electrode; nrel_reducing_reaction;;
+	->statement;;
+	<-concept_assertion_of_the_defining_type;;
+	<-rrel_theorem:subject_domain_of_chemistry (*<-concept_subject_domain;;*);;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [В <sc_element sys_idtf="electrochemistry">электрохимии</sc_element> катод — <sc_element sys_idtf="electrode">электрод</sc_element>, на котором происходят <sc_element sys_idtf="nrel_reducing_reaction">реакции восстановления</sc_element>. 
+Например, при электролитическом рафинировании металлов (меди, никеля и пр.) на катоде осаждается очищенный металл. Получаемый металл также именуется катодом (катод медный, катод никелевый, катод цинковый и т.п.) и используется для последующего изготовления металлической
+ продукции (проволоки, фольги, порошка, изделий и пр.). Для сдирания готового катода с постоянной катодной основы используются катодосдирочные машины.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (катод, электрод, электрохимия, реакция восстановления*)](*<-lang_ru;;*);; 
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (катод)] (* <- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://image//cathode.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+electrode=>nrel_inclusion: cathode;;

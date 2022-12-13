@@ -1,0 +1,57 @@
+polycondensation_polymer
+<-sc_node_not_relation;;
+
+polycondensation_polymer=> nrel_main_idtf:[поликонденсационный полимер](* <- lang_ru;; *);;
+polycondensation_polymer=> nrel_main_idtf:[polycondensation polymer](* <- lang_en;; *);;
+
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: polycondensation_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Поликонденсационные полимеры получают в 
+	процессе реакции поликонденсации. 
+	Она протекает обычно при <b><sc_element sys_idtf="nrel_heating">нагревании</b></sc_element>
+	 или под действием 
+	<b><sc_element sys_idtf="catalyst">катализаторов</b></sc_element>.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (поликонденсационный полимер)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nrel_heating;
+		catalyst
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: polycondensation_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[ Поликонденсационные полимеры получают
+	 при взаимодействии бифункциональных 
+	 <b><sc_element sys_idtf="molecule">молекул</b></sc_element> с выделением 
+	 <b><sc_element sys_idtf="water">воды</b></sc_element>.]
+	 (*<-lang_ru;;
+	=>nrel_format:format_html;;
+	 *);;
+	 *);;
+	
+	=> nrel_main_idtf: [Утверждение(поликонденсационный полимер)](*<- lang_ru;;*);;
+		=> nrel_using_constants:
+		{
+		water;
+		molecule
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: polycondensation_polymer;;
+	<= nrel_sc_text_translation: ...(*->"file://image/polycondensation_polymer.png";;*);;
+	=> nrel_main_idtf: [Рисунок(поликонденсационный полимер)](*<- lang_ru;;*);;
+*);;
+
+	
+	

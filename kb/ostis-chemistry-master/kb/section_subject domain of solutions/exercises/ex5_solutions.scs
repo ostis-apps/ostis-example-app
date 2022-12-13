@@ -1,0 +1,24 @@
+ex5_solutions
+<- exercises_solutions;
+
+-> rrel_key_sc_element: metasilicic_acid; carbonic_acid; nrel_hydrolysis; sodium_carbonate; silicate; subst_Na; salt; solution;
+
+=> nrel_next_exercise: ex6_solutions;
+
+=> nrel_main_idtf:
+	[Упражнение 5. Раздел. Предметная область растворов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 5. Section. Subject domain of solutions]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex5_solutions_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex5_solutions_en.html" (* <-lang_en;; *);;
+	*);;

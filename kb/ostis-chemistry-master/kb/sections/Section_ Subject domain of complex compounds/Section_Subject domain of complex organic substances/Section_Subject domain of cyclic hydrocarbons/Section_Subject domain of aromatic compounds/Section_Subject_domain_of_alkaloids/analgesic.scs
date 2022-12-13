@@ -1,0 +1,50 @@
+analgesic<-sc_node_not_relation;;
+analgesic=> nrel_main_idtf:[анальгетик](* <- lang_ru;; *);;
+analgesic=> nrel_main_idtf:[analgesic](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: analgesic;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Анальгетик  — <b><sc_element sys_idtf="medicine">лекарственное средство</b></sc_element> природного, полусинтетического и синтетического происхождения, предназначенное для снятия болевых ощущений — анальгезии. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (анальгетик)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		medicine
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: analgesic;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[До появления современных анальгетиков для снятия боли использовались различные способы снятия болевых ощущений: например, при проведении операции их утоляли алкоголем, <b><sc_element sys_idtf="scopolamine">скополамином</b></sc_element>, опием, индийской коноплей. В крайних случаях использовали и действия, противоречащие медицине: употребление грубой силы, например, удар по голове, приводящий к потере сознания, или частичные удушения для того же эффекта.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(анальгетик)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		scopolamine
+		};;
+*);;
+statement ->...
+(*
+	->rrel_key_sc_element: analgesic;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://analgesic.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(анальгетик,классификация*)](*<- lang_ru;;*);;
+	
+*);;
+
+
+analgesic=>nrel_inclusion:scopolamine;;
+analgesic=>nrel_inclusion:morphine;;

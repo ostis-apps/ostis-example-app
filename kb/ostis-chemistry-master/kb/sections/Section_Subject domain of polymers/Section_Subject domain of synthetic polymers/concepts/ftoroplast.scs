@@ -1,0 +1,123 @@
+ftoroplast<-sc_node_not_relation;;
+ftoroplast=> nrel_main_idtf:[фторопласт](* <- lang_ru;; *);;
+ftoroplast=> nrel_main_idtf:[ftoroplast](* <- lang_en;; *);;
+ftoroplast=> nrel_idtf:[ poly(1,1,2,2-tetrafluoroethylene)​](* <- lang_en;; *);;
+ftoroplast=> nrel_idtf:[C2F4](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: ftoroplast;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Фторопласт — 
+	<b><sc_element sys_idtf="polymer">полимер</b></sc_element> тетрафторэтилена (ПТФЭ), пластмасса, обладающая редкими физическими и химическими свойствами и широко применяемая в технике и в быту.]
+	  
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (фторопласт)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		polymer
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: ftoroplast;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Фторопласт — <b><sc_element sys_idtf="color_white">белое</b></sc_element>, в тонком слое прозрачное вещество, по виду напоминающее парафин или <b><sc_element sys_idtf="polyethylene">полиэтилен</b></sc_element>.]
+	 
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(фторопласт,вещество)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		color_white;
+		polyethylene
+		};;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:ftoroplast;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Фторопласт —по своей химической стойкости превосходит все известные  <b><sc_element sys_idtf="synthetic_polymer">синтетические материалы</b></sc_element> и благородные <b><sc_element sys_idtf="metal">металлы</b></sc_element>.Не разрушается под влиянием щелочей, кислот и даже смеси азотной и соляной кислот. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(фторопласт,химически стойкое вещество)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		synthetic_polymer;
+		metal
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:ftoroplast;;
+	<= nrel_sc_text_translation: ...(*->"file://image/ftoroplast_formula.png";;*);;
+	=> nrel_main_idtf: [Рисунок(фторопласт,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:ftoroplast;;
+	<= nrel_sc_text_translation: ...(*->"file://image/ftoroplast_3d.png";;*);;
+	=> nrel_main_idtf: [Рисунок(фторопласт,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+
+thermoplastic_polymer=>nrel_inclusion:ftoroplast;;
+homo_chain_polymer=>nrel_inclusion:ftoroplast;;
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> ftoroplast;;
+	=> rrel_mol: [140 000]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->ftoroplast;;
+	=> rrel_degree_celsius: 327
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->ftoroplast;;
+	=> rrel_joule_per_kelvin_and_mole: 0.25
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->ftoroplast;;
+	=> rrel_gram_per_cubic_cm: 2.2
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+

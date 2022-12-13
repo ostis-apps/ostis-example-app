@@ -1,0 +1,10 @@
+section_subject_domain_of_alkanes
+=> nrel_main_idtf:
+    [Раздел. Предметная область алканов](* <- lang_ru;; *);
+    [Section. Subject domain of alkanes](* <- lang_en;; *);
+<- not_enough_formed_structure;
+<- atomic_section;;
+section_subject_domain_of_alkanes = [*^"file://subject_domain_of_alcanes.scsi"*];;
+
+subject_domain_of_alkanes
+-> rrel_key_sc_element: subject_domain_of_alkanes;;

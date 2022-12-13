@@ -1,0 +1,33 @@
+protoalkaloids<-sc_node_not_relation;;
+protoalkaloids=> nrel_main_idtf:[протоалкалоид](* <- lang_ru;; *);;
+protoalkaloids=> nrel_main_idtf:[protoalkaloid](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: protoalkaloids;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Протоалкалоиды - низкомолекулярные относительно простые азотсодержащие <b><sc_element sys_idtf="chemical_compound">соединения</b></sc_element>, имеющие, как правило, генетическую связь с <b><sc_element sys_idtf="amino_acid">аминокислотами.</b></sc_element> ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (протоалкалоид)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		chemical_compound;
+		amino_acid
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: protoalkaloids;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Основным структурным признаком протоалкалоидов является экзоциклическая аминная функция](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(протоалкалоид)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: protoalkaloids;;
+	<= nrel_sc_text_translation: ...(*->"file://images/protoalcaloids.gif";;*);;
+	=> nrel_main_idtf: [Рисунок(протоалкалоид)](*<- lang_ru;;*);;
+*);;

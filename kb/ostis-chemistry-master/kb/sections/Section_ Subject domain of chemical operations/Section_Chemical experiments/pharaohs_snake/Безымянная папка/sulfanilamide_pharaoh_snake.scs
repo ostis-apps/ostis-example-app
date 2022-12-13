@@ -1,0 +1,72 @@
+sulfanilamide_pharaoh_snake
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[фараонова змея из сульфаниламида](*<- lang_ru;;*);
+	[sulfanilamide pharaoh snake](*<- lang_en;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (фараонова змея из сульфаниламида)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Очень простой способ получения «фараоновых змей» – это окислительное разложение сульфаниламидных лекарственных препаратов (к ним относятся, например, стрептоцид, сульгин, сульфадиметоксин, этазол, сульфадимезин, фталазол, бисептол). В ходе окисления сульфаниламидных препаратов выделяется много газообразных продуктов реакции ( SO2, H2S , N2, пары воды), которые вспучивают массу и формируют пористую «змею».]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (фараонова змея из сульфаниламида, предостережение)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Опыт выполняется под тягой.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+<= nrel_sc_text_translation: ...
+(* 
+	=> nrel_main_idtf: 		
+		[Видео (фараонова змея из сульфаниламида)](*<- lang_ru;;*);;
+	-> rrel_example: [XBCdeKRm48w]
+		(*
+			=> nrel_format: format_youtubelink;;
+			<-lang_ru;;
+		*);;
+*);;
+
+sulfanilamide_pharaoh_snake_experiment
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[опыт по разложению роданида](*<- lang_ru;;*);;
+
+heating_sulfanilamide_pharaoh_snake
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[поджигание горючего (фараонова змея из сульфаниламида)](*<- lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (поджигание горючего (фараонова змея из сульфаниламида))](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[На таблетку сухого горючего помещают 1 таблетку лекарственного препарата и поджигают горючее.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;

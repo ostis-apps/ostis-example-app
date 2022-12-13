@@ -1,0 +1,48 @@
+subject_domain_of_organometallic_chemistry
+  => nrel_main_idtf:
+    [Предметная область металлоорганической химии] (* <- lang_ru;;*);
+    [Subject domain of organometallic chemistry] (* <- lang_en;; *);
+
+  <- subject_domain;
+  -> rrel_maximum_studied_object_class: organometallic_chemistry;;
+
+organometallic_chemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [металлоорганическая химия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [organometallic chemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (металлоорганическая химия)] (* <- lang_ru;; *);
+      [Def. (organometallic chemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Металлоорганическая химия — раздел химии, возникший на стыке органической химии и неорганической химии.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (металлоорганическая химия)](* <- lang_ru;; *);
+      [Stat. (organometallic chemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Предметом изучения металлоорганической химии являются органические производные металлов, содержащие связь углерод-металл.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (металлоорганическая химия)](* <- lang_ru;; *);
+      [Pic. (organometallic chemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/organometallic_chemistry.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;

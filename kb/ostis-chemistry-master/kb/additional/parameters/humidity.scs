@@ -1,0 +1,17 @@
+humidity 
+=> nrel_main_idtf: 
+	[влажность](* <- lang_ru;; *);
+	[humidity](* <- lang_en;; *);
+<- sc_node_not_relation;
+<- parameter;;
+
+humidity
+-> percent;;
+
+percent 
+=> nrel_main_idtf: 
+	[процент](* <- lang_ru;; *);
+	[percent](* <- lang_en;; *);
+=> nrel_idtf: 
+	[%](* <- lang_ru; lang_en;; *);
+<- sc_node_not_relation;;

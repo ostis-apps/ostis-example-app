@@ -1,0 +1,110 @@
+decanol<-sc_node_not_relation;;
+decanol=> nrel_main_idtf:[деканол](* <- lang_ru;; *);;
+decanol=> nrel_main_idtf:[decanol](* <- lang_en;; *);;
+decanol=> nrel_idtf:[decanol](* <- lang_en;; *);;
+decanol=> nrel_idtf:[C10H22O](* <- lang_en;; *);;
+
+
+
+
+decanol<=nrel_intermolecular_dehydration:decane;;
+
+
+decanol<=nrel_poisoning_way:peroral_way;;
+
+organic_artificial_poison=>nrel_inclusion:decanol;;
+rrel_liquid_solvent=>nrel_inclusion:decanol;;
+monohydric_alcohol=>nrel_inclusion:decanol;;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: decanol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Деканол — 
+	<b><sc_element sys_idtf="organic_compound">органическое</b></sc_element> 
+	 вещество,
+	 относится к классу 
+	 <b><sc_element sys_idtf="alcohol">спиртов</b></sc_element>. ]
+		(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (деканол)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		organic_compound;
+		polymer
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: decanol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Деканол раздражает 
+	кожу и глаза, вызывая необратимые повреждения, если оно достигает глаз. 
+	Вдыхание и проглатывание вредны и оказывают обезболивающее действие. 
+	Вредно для окружающей среды.]
+	
+	  
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(деканол,вредное вещество)](*<- lang_ru;;*);;	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:decanol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Деканол и его ацетаты применяют как компоненты 
+	парфюмерных композиций и пищевых эссенций, а также для получения 
+	<b><sc_element sys_idtf="n_decane">деканаля</b></sc_element> и моющих средств.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(деканол, применяют в порфюмерии)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		n_decane
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:decanol;;
+	<= nrel_sc_text_translation: ...(*->"file://image/decanol_1.png";;*);;
+	=> nrel_main_idtf: [Рисунок(деканол,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:decanol;;
+	<= nrel_sc_text_translation: ...(*->"file://image/decanol_1_3d.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(деканол,пример)](*<- lang_ru;;*);;
+*);;
+
+
+nrel_relative_molar_mass->...
+(* 
+	<- sc_node_not_relation;;
+	-> decanol;;
+	=> rrel_mol: [140]
+	(*
+		<-number;;
+	*);;
+*);;
+
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->decanol;;
+	=> rrel_gram_per_cubic_cm:1.17
+	(*
+		<-number;;
+	*);;
+*);;

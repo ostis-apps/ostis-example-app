@@ -1,0 +1,154 @@
+alkali
+=> nrel_main_idtf:
+	[щёлочь](* <- lang_ru;; *);
+	[alkali](* <- lang_en;; *);
+=>nrel_idtf:
+	[щелочь](* <-lang_ru;; *);
+//включение
+=>nrel_inclusion: NaOH;KOH;LiOH;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(щёлочь)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Щёлочи — растворимые в воде сильные основания, создающие в водном растворе большую концентрацию ионов ОН-.]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->nrel_solubility;;
+		->strong_basis;;
+		->aqueous_solution;;
+		->ion;;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	<-statement_of_defining_type;;
+
+	=>nrel_main_idtf: [Утв.(щёлочь, гидроксид, щелочной металл, щелочноземельный металл, основание, периодическая система)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Щёлочи — гидроксиды щелочных, щёлочноземельных металлов, растворимые в воде основания, гидроксиды металлов подгрупп Iа и IIа (начиная с кальция) периодической системы](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: hydroxide;;
+	-> rrel_key_sc_element: alkali_metal;;
+	-> rrel_key_sc_element: alkaline_earth_metal;;
+	-> rrel_key_sc_element: basis;;
+	-> rrel_key_sc_element: periodic_system;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(щёлочь, H2O, CO2, воздух, раствор, превращение*, карбонат)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[В твёрдом состоянии все щёлочи поглощают H2O из воздуха, а также CO2 (также и в состоянии раствора) из воздуха, постепенно превращаясь в карбонаты.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: H2O;;
+	-> rrel_key_sc_element: CO2;;
+	-> rrel_key_sc_element: air;;
+	-> rrel_key_sc_element: solution;;
+	-> rrel_key_sc_element: carbonate;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+<- rrel_key_sc_element:alkali_interaction_with_acid_oxides
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(взаимодействие, кислотный оксид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/alkali_interaction_with_acid_oxides.html" (* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: acid_oxide;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+<- rrel_key_sc_element:alkali_interaction_with_acids
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(взаимодействие, кислота)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/alkali_interaction_with_acids.html" (* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: acid;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+<- rrel_key_sc_element:alkali_interaction_with_amphoteric_metals
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(взаимодействие, амфотерный металл)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/alkali_interaction_with_amphoteric_metals.html" (* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: amphoteric_metal;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+<- rrel_key_sc_element:alkali_interaction_with_amphoteric_oxides
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(взаимодействие, амфотерный оксид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/alkali_interaction_with_amphoteric_oxides.html" (* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: amphoteric_oxide;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+<- rrel_key_sc_element:alkali_interaction_with_salt_solutions
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(взаимодействие, раствор солей)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/alkali_interaction_with_salt_solutions.html" (* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: salt_solution;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+=>nrel_applying: industry;medicine;; 

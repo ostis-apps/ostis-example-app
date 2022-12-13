@@ -1,0 +1,45 @@
+isotope<= nrel_inclusion: complex_substance;;
+isotope
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[изотоп]
+	(* <- lang_ru;;	*);
+	[isotope]
+	(* <- lang_en;;	*);;
+
+isotope
+<- rrel_key_sc_element:
+	Definition_of_isotope
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/isotope.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				atom;
+				chemical_element;
+				nrel_periodic_number
+			};
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Все изотопы одного элемента имеют одинаковый заряд ядра, отличаясь лишь числом нейтронов.] (* <-lang_ru;; *);;
+		*);;
+*);;
+
+	
+
+Definition_of_isotope
+=> nrel_main_idtf:
+	[Опр.(Изотопы)]
+	(* <- lang_ru;;	*);;
+

@@ -1,0 +1,23 @@
+membrane_protein
+=> nrel_main_idtf:
+	[мембранный белок](* <- lang_ru;; *);
+	[membrane protein](* <- lang_en;; *);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(мембранный белок)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://html/membrane_protein_definition.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->protein;;
+	*);;
+*);;

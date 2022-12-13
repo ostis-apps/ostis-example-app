@@ -1,0 +1,89 @@
+methyl_orange
+<- sc_node_not_relation;
+=> nrel_main_idtf:[метилоранж](* <- lang_ru;; *);
+=> nrel_main_idtf:[methyl orange](* <- lang_en;; *);
+=> nrel_idtf:[метиловый оранжевый](* <- lang_ru;; *);
+
+<-pH_indicator;
+
+<- rrel_key_sc_element:
+Definition_of_methyl
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (метилоранж)](* <- lang_ru;; *);
+		[Def. (methyl orange)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> pH_indicator;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="methyl_orange">Метилоранж</sc_element></b> —  известный <sc_element sys_idtf="pH_indicator">кислотно-основный индикатор</sc_element>, синтетический органический краситель из группы азокрасителей, является солью натрия.](* <- lang_ru;;
+		     => nrel_format: format_html;; *);;
+		-> rrel_example:[<b> <sc_element sys_idtf = "methyl_orange"> Metilorange </ sc_element> </ b> —the well-known <sc_element sys_idtf = "pH_indicator"> acid-base indicator </ sc_element>, a synthetic organic dye from the azo dye group, is a sodium salt .](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element: nrel_applying;;
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (метилоранж, применение*)](* <- lang_ru;; *);
+		[Stat. (methyl orange, applying*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Применяется в качестве <sc_element sys_idtf = "methyl_orange">кислотно-основного индикатора</sc_element>, титранта при определении сильных окислителей, спектрофотометрическом определении окислителей (хрома, брома).
+<br>
+0,1%-ный водный раствор применяется в аналитической химии как индикатор.
+<br>
+Изменяет цвет от красного в кислотной среде (pH 3,1 до 4,4) к оранжевому в нейтральной и жёлтому в щелочной.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[It is used as a <sc_element sys_idtf = "methyl_orange"> acid-base indicator </ sc_element>, a titrant in the determination of strong oxidizing agents, spectrophotometric determination of oxidizing agents (chromium, bromine).
+<br>
+0.1% aqueous solution is used in analytical chemistry as an indicator.
+<br>
+Changes color from red in acidic medium (pH 3.1 to 4.4) to orange in neutral and yellow in alkaline.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (метилоранж, свойства*)](* <- lang_ru;; *);
+		[Stat. (methyl orange, properties*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Внешний вид при обычных условиях: оранжево-жёлтые листочки или порошок, чешуйки. Метилоранж растворим в воде 0,2 г. на 100 г., лучше в горячей.
+<br>
+В растворах с рН 2 максимум поглощения находится на длине волны 505 нм (λmax=505 нм). Изобестическая точка соответствует длине волны 460 нм.
+<br>
+Переход окраски в водных растворах от красной к оранжево-жёлтой наблюдается в области рН 3,1-4,4 (в кислой среде красный, в щелочной — жёлтый).
+<br>
+На интервал перехода окраски влияют: температура, наличие в растворе солей, органических растворителей, белковых веществ и других. Влияние температуры наиболее значительно для индикаторов, являющихся слабыми основаниями: например, для метилового оранжевого при комнатной температуре окраска изменяется в пределах рН 3,1-4,4, а при 100°С — в пределах рН 2,5-3,7.
+<br>
+Токсичен.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Appearance under normal conditions: orange-yellow leaves or powder, scales. Methilorange soluble in water 0.2 g per 100 g, preferably in hot.
+<br>
+In solutions with pH 2, the absorption maximum is at a wavelength of 505 nm (λmax = 505 nm). Isobestic point corresponds to a wavelength of 460 nm.
+<br>
+The transition of color in aqueous solutions from red to orange-yellow is observed in the pH range 3.1-4.4 (red in acidic medium and yellow in alkaline medium).
+<br>
+The color transition interval is affected by: temperature, the presence of salts, organic solvents, proteins and others in the solution. The effect of temperature is most significant for indicators that are weak bases: for example, for methyl orange at room temperature, the color changes within the range of 3.1-4.4, and at 100 ° C - within the range of 2.5-3.7.
+<br>
+Toxic.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (метилоранж)](* <- lang_ru;; *);
+		[Pic. (methyl orange)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/methyl_orange.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;

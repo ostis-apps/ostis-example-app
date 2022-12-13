@@ -1,0 +1,122 @@
+tritium
+=> nrel_main_idtf:
+        [тритий](* <-lang_ru;; *);
+	[tritium](* <-lang_en;; *);;
+
+protie
+=> nrel_main_idtf:
+        [протий](* <-lang_ru;; *);
+	[protie](* <-lang_en;; *);;
+
+beta_decay
+=> nrel_main_idtf:
+        [бета-распад](* <-lang_ru;; *);
+	[beta decay](* <-lang_en;; *);;
+
+
+tritium_water
+=> nrel_main_idtf:
+	[tritium water](* <-lang_en;; *);
+	[тритиевая вода](* <- lang_ru;; *);
+=> nrel_idtf:
+        [T2O](* <-lang_en;; *);
+        [сверхтяжёлая вода](* <-lang_ru;; *);
+        [оксид трития](* <-lang_ru;; *);
+        [супертяжёлая вода](* <-lang_ru;; *);
+
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(тритиевая вода)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[<b>Тритиевая вода</b> - <sc_element sys_idtf = "water">вода</sc_element>, в <sc_element sys_idtf = "molecule">молекулах</sc_element> которой <sc_element sys_idtf = "atom">атомы</sc_element> <sc_element sys_idtf = "protie">протия</sc_element> замещены <sc_element sys_idtf = "atom">атомами</sc_element> <sc_element sys_idtf = "tritium">трития</sc_element> (тяжёлого радиоактивного <sc_element sys_idtf = "isotope">изотопа</sc_element> <sc_element sys_idtf = "hydrogen">водорода</sc_element>).]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->water;;
+		->atom;;
+		->isotope;;
+		->hydrogen;;
+		->protie;;
+                ->tritium;;
+              
+	*);;
+*);
+
+
+//утверждения
+<- rrel_key_sc_element: statement_formula_tr
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(химическая формула, тритиевая вода)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Формула тритиевой воды обычно записывается как <b>T<sub>2</sub>O</b> или <b><sup>3</sup>H<sub>2</sub>O</b>.]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	-> rrel_key_sc_element: chemical_formula;;
+        -> rrel_key_sc_element: tritium_water;;
+	<- rrel_axiom:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+
+<- rrel_key_sc_element: statement_beta_raspad_tr
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(радиоактивность, бета-распад, тритевая вода, тритий, гелий, кислород)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Из-за собственной радиоактивности чистый T2O имеет высокую коррозионную активность — при спонтанном бета-распаде трития в <b><sup>3</sup>He</b> происходит выделение атомарного кислорода. ](* <-lang_ru;; 
+               =>nrel_format: format_html;;
+             *);;
+	*);;
+        -> rrel_key_sc_element: radioactivity;;
+        -> rrel_key_sc_element: beta_decay;;
+        -> rrel_key_sc_element: tritium_water;;
+        -> rrel_key_sc_element: tritium;;
+        -> rrel_key_sc_element: helium;;
+        -> rrel_key_sc_element: oxygen;;
+	<- rrel_axiom:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+
+<- rrel_key_sc_element: statement_water_stream_reserch
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(тритиевая вода, соединение*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Тритиевая вода применяется как меченое соединение для исследования водного обмена.]
+		(* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_compound;;
+        -> rrel_key_sc_element: tritium_water;;
+	<- rrel_axiom:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);;
+
+

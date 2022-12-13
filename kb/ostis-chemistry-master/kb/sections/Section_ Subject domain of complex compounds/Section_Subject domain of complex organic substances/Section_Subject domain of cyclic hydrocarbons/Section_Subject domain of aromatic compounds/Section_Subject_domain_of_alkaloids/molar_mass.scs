@@ -1,0 +1,51 @@
+molar_mass<-sc_node_not_relation;;
+
+molar_mass=> nrel_main_idtf:[молярная масса](* <- lang_ru;; *);;
+molar_mass=> nrel_main_idtf:[molar mass](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: molar_mass;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Молярная масса — характеристика <b><sc_element sys_idtf="chemical_substance">вещества</b></sc_element>, отношение <b><sc_element sys_idtf="mass">массы</b></sc_element> вещества к его <b><sc_element sys_idtf="nrel_chemical_amount">количеству</b></sc_element>.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Определение (молярная масса)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nrel_chemical_amount;
+		mass;
+		chemical_substance
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: molar_mass;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Молярная масса численно равна <b><sc_element sys_idtf="mass">массе</b></sc_element> одного моля <b><sc_element sys_idtf="chemical_substance">вещества</b></sc_element>, то есть массе вещества, содержащего число частиц, равное <b><sc_element sys_idtf="avogadro_number">числу Авогадро</b></sc_element>. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	*);;
+	=> nrel_main_idtf: [Утверждение(молярная масса)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		avogadro_number;
+		mass;
+		chemical_substance
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: molar_mass;;
+	<= nrel_sc_text_translation: ...(*->"file://images/molar_mass.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(молярная масса, неорганическое вещество)](*<- lang_ru;;*);;
+*);;
+
+
+

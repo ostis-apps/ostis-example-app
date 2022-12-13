@@ -1,0 +1,30 @@
+nrel_quality_composition
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+[качественный состав вещества*](*<-lang_ru;;*);
+     [quality composition*](*<-lang_en;;*);;
+
+nrel_quality_composition
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(качественный состав вещества*)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b>Качественный состав вещества</b> показывает, из <sc_element sys_idtf:"atom">атомов</sc_element> каких элементов <sc_element sys_idtf="chemical_substance">вещество</sc_element> состоит. ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: atom; chemical_substance;;
+*);
+
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_first_domain: chemical_substance;
+=> nrel_second_domain: chemical_element;
+=> nrel_definitional_domain:...
+(*
+    <= nrel_combination: ...
+    (* 
+        -> chemical_element; chemical_substance;;
+    *);;
+*);;

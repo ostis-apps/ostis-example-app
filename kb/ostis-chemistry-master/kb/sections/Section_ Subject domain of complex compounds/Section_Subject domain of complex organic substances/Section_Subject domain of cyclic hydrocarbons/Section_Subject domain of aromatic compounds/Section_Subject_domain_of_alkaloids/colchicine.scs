@@ -1,0 +1,81 @@
+colchicine<-sc_node_not_relation;;
+colchicine=> nrel_main_idtf:[колхицин](* <- lang_ru;; *);;
+colchicine=> nrel_main_idtf:[colchicine](* <- lang_en;; *);;
+colchicine=> nrel_idtf:[(R)-4-(1-гидрокси-2-(метиламино)этил)-бензен-1,2-диол](* <- lang_ru;; *);;
+colchicine=> nrel_idtf:[C22H25NO6](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: colchicine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Колхицин - <b><sc_element sys_idtf="protoalkaloids">протоалкалоид</b></sc_element> трополонового ряда, основной представитель семейства колхициновых алкалоидов (гомоморфинанов). ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (колхицин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		protoalkaloids
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: colchicine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:"file://colchicine.html"
+	(*
+	<-lang_ru;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(колхицин,фармакологический эффект*)](*<- lang_ru;;*);;
+	
+*);;
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element:colchicine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/colchicine.png";;*);;
+	=> nrel_main_idtf: [Рисунок(колхицин,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: colchicine;;
+	<= nrel_sc_text_translation: ...(*->"file://images/colchicine.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(колхицин,растение)](*<- lang_ru;;*);;
+*);;
+
+
+solid_matter=>nrel_inclusion:colchicine;;
+protoalkaloids=>nrel_inclusion:colchicine;;
+
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> colchicine;;
+	=> nrel_measurement_in_gramms_per_mole: [399,437]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->colchicine;;
+	=> nrel_measurement_in_degrees_Celsius: 157
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+
+
+

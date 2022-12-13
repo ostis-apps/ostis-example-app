@@ -1,0 +1,31 @@
+nrel_carbonylation_reaction 
+<- sc_node_norole_relation;
+=>nrel_main_idtf:
+[реакция карбонилирования*](*<-lang_ru;;*);
+     [carbonylation reaction*](*<-lang_en;;*);;
+
+nrel_carbonylation_reaction
+
+<- rrel_key_sc_element: ... 
+    (*
+       <- definition;;
+       =>nrel_main_idtf: [Опр.(реакция карбонилирования*)]  (* <- lang_ru;; *);;
+       <= nrel_sc_text_translation:... (*->rrel_example: [<b>Карбонилирование</b> — химическая реакция введения карбонильных групп С=О путём взаимодействия с <sc_element sys_idtf="carbon_monoxide">оксидом углерода</sc_element>.](* <- lang_ru;; =>nrel_format: format_html;; *);; *);;
+	<=nrel_using_constants: carbon_monoxide;;
+     *);
+
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_first_domain: chemical_substance;
+=> nrel_second_domain: chemical_substance;
+=> nrel_definitional_domain:...
+(*
+    <= nrel_combination: ...
+    (* 
+        -> chemical_substance;;
+    *);;
+*);;

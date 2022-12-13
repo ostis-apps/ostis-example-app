@@ -1,0 +1,24 @@
+exercise8_mixture
+<- exercises_mixture;
+
+-> rrel_key_sc_element: solution; alkali; nrel_concentration;
+
+=> nrel_next_exercise: exercise9_mixture;
+
+=> nrel_main_idtf:
+	[Упражнение 8. Раздел. Предметная область смесей]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 8. Section. Subject domain of mixtures]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise8_mixture_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise8_mixture_en.html" (* <-lang_en;; *);;
+	*);;

@@ -1,0 +1,42 @@
+sc_node_not_relation->vanadium_acid;;
+
+vanadium_acid=> nrel_main_idtf: [ванадиевая кислота] (* <- lang_ru;; *);;
+vanadium_acid=> nrel_main_idtf: [vanadium acid](* <- lang_en;; *);;
+vanadium_acid=> nrel_idtf: [HVO3](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: vanadium_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Ванадиевая кислота — неорганическое соединение с формулой  HVO3](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (ванадиевая кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		nonorganic_compound;
+		chemical_formula
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: vanadium_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Ванадиевая кислота образует жёлтые кристаллы. ](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(ванадиевая кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		crystall
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: vanadium_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/ванадиевая_кислота.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(ванадиевая кислота)](*<- lang_ru;;*);;
+*);;
+
+vanadium_acid -> vanadium_acid_x;;
+vanadium_acid <=nrel_inclusion:oxyacid;;
+vanadium_acid <=nrel_inclusion:monobasic_acid;;
+vanadium_acid <=nrel_inclusion:inorganic_acid;;
+
+vanadium_acid <-rrel_not_maximum_studied_object_class:subject_domain_of_acids;;

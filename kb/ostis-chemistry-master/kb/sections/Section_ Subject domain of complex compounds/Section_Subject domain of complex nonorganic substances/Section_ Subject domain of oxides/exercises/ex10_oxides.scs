@@ -1,0 +1,22 @@
+ex6_oxides
+<- exercises_oxides;
+
+-> rrel_key_sc_element: chemical_substance; oxide;
+
+=> nrel_main_idtf:
+	[Упражнение 6. Раздел. Предметная область оксидов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 6. Section. Subject domain of oxides]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex6_oxides_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex6_oxides_en.html" (* <-lang_en;; *);;
+	*);;

@@ -1,0 +1,86 @@
+volume 
+=> nrel_main_idtf: 
+	[объём](* <- lang_ru;; *);
+	[volume](* <- lang_en;; *);
+<- sc_node_not_relation;
+<- parameter;;
+
+volume
+-> liter;
+-> milliliters;
+-> barrel;
+-> gallon;
+-> pint;
+-> cubic_inch;;
+
+liter 
+=> nrel_main_idtf: 
+	[литр](* <- lang_ru;; *);
+	[liter](* <- lang_en;; *);
+<- sc_node_not_relation;
+<- parameter;;
+
+liter_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: liter;;
+
+milliliters 
+=> nrel_main_idtf: 
+	[миллилитр](* <- lang_ru;; *);
+	[milliliters](* <- lang_en;; *);
+<- sc_node_not_relation;
+<- parameter;;
+
+milliliters_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: milliliters;;
+
+barrel 
+=> nrel_main_idtf: 
+	[баррель](* <- lang_ru;; *);
+	[barrel](* <- lang_en;; *);
+<- sc_node_not_relation;
+<- parameter;;
+
+barrel_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: barrel;;
+
+gallon 
+=> nrel_main_idtf: 
+	[галлон](* <- lang_ru;; *);
+	[gallon](* <- lang_en;; *);
+<- sc_node_not_relation;
+<- parameter;;
+
+gallon_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: gallon;;
+
+pint 
+=> nrel_main_idtf: 
+	[пинта](* <- lang_ru;; *);
+	[pint](* <- lang_en;; *);
+<- sc_node_not_relation;
+<- parameter;;
+
+pint_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: pint;;
+
+cubic_inch 
+=> nrel_main_idtf: 
+	[кубический дюйм](* <- lang_ru;; *);
+	[cubic_inch](* <- lang_en;; *);
+<- sc_node_not_relation;
+<- parameter;;
+
+cubic_inch_measurement_of_fixed_measure
+<- sc_node_norole_relation;
+<- measurement_of_fixed_measure;
+=> nrel_measure: cubic_inch;;

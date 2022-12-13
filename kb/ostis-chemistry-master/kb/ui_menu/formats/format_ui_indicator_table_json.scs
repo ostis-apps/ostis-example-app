@@ -1,0 +1,15 @@
+format_ui_indicator_table_json
+<- sc_node_not_relation;
+<- format;
+=> nrel_main_idtf: 
+	[Таблица индикаторов (json)] 
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf: 
+	[Indicator table (json)] 
+	(* 
+	<- lang_en;;
+	*);
+=> nrel_mimetype:
+	[application/json];;

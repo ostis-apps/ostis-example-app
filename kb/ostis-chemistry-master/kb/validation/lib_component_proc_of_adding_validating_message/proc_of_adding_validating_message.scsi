@@ -1,0 +1,88 @@
+scp_program -> proc_of_adding_validating_message
+	(*
+  	-> rrel_params: .proc_of_adding_validating_message_params 
+		(*
+		-> rrel_1: rrel_in: _quest;;
+		-> rrel_2: rrel_in: _message;;
+    		*);;
+
+	-> rrel_operators: .proc_of_adding_validating_message_operator_set
+    		(*
+    		-> rrel_init: .proc_of_adding_validating_message_operator_gen_answer_node_for_wrong_param
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_const: rrel_node: _answer_for_wrong_param;;	
+
+			=> nrel_goto: .proc_of_adding_validating_message_operator_add_wrong_param_to_answer;;   
+			*);;
+
+		-> .proc_of_adding_validating_message_operator_add_wrong_param_to_answer 
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _wrong_param;;
+			
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_wrong_param;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_for_wrong_param;;
+
+			=> nrel_goto: .proc_of_adding_validating_message_operator_call_proc_of_generating_comment;;
+			*);;
+
+		-> .proc_of_adding_validating_message_operator_call_proc_of_generating_comment 
+			(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_validation_comment;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .proc_of_adding_validating_message_operator_call_proc_of_generating_comment_params 
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: _message;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _answer_for_wrong_param;;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .proc_of_adding_validating_message_operator_waitreturn_proc_of_generating_comment;;
+			*);;
+
+		-> .proc_of_adding_validating_message_operator_waitreturn_proc_of_generating_comment
+			(*
+		  	<- waitReturn;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .proc_of_adding_validating_message_operator_gen_wrong_param_answer;;
+			*);;		
+
+		-> .proc_of_adding_validating_message_operator_gen_wrong_param_answer
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_for_wrong_param;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: .proc_of_adding_validating_message_operator_success_question;;
+			*);;
+
+		-> .proc_of_adding_validating_message_operator_success_question
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_unsuccessfully;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .proc_of_adding_validating_message_operator_return;; 
+			*);;	
+
+		-> .proc_of_adding_validating_message_operator_return 
+			(*
+			<- return;;
+			*);;
+		*);;
+	*);;

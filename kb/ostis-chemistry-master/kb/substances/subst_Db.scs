@@ -1,0 +1,46 @@
+subst_Db
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[dubnium (substance)](*<- lang_en;;*);
+	[дубний (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Db (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (дубний (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Дубний (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - серебристо-белый <sc_element sys_idtf = "metal">металл.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> metal;;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (дубний (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы дубния:  <sup>255</sup>Db, <sup>256</sup>Db, <sup>257</sup>Db, <sup>258</sup>Db, <sup>259</sup>Db, <sup>260</sup>Db, <sup>261</sup>Db, <sup>262</sup>Db, <sup>263</sup>Db, <sup>264</sup>Db, <sup>265</sup>Db, <sup>266</sup>Db, <sup>267</sup>Db, <sup>268</sup>Db] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

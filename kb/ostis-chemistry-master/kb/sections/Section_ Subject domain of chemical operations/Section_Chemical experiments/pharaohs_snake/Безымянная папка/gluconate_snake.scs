@@ -1,0 +1,88 @@
+gluconate_snake
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[глюконатная змея](*<- lang_ru;;*);
+	[gluconate snake](*<- lang_en;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (глюконатная змея)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Это самый простой и безопасный способ получения глюконатной змеи]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (разложение глюконата кальция)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Разложение глюконата кальция, имеющего состав Са(CH2OH(CHOH)4COO)2 · H2O приводит к образованию оксида кальция, углерода, углекислого газа и воды.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (глюконатная змея, недостаток)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Недостатком образующейся «змеи» является ее хрупкость - она достаточно легко рассыпается.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+<= nrel_sc_text_translation: ...
+(* 
+	=> nrel_main_idtf: 		
+		[Видео (глюконатная змея)](*<- lang_ru;;*);;
+	-> rrel_example: [AVFhlmaezhs]
+		(*
+			=> nrel_format: format_youtubelink;;
+			<-lang_ru;;
+		*);;
+*);;
+
+gluconate_snake_experiment
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[опыт по разложению роданида](*<- lang_ru;;*);;
+
+heating_of_gluconate
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[поджигание глюконата](*<- lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (поджигание глюконата)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Поднести к пламени таблетку глюконата кальция.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,62 @@
+potassium_acetylide
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[ацетиленид калия](*<-lang_ru;;*);
+     [potassium acetylide](*<-lang_en;;*);
+=> nrel_idtf:
+	[карбид калия]
+	(* <- lang_ru;; *);
+	[potassium carbide]
+	(* <- lang_en;; *);
+	[KHC2]
+	(* <- lang_en;; *);;
+
+potassium_acetylide
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(ацетиленид калия)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b>Ацетиленид калия</b> — <sc_element sys_idtf="<sc_element sys_idtf="subst_Na">">химическое соединение</sc-element>, однозамещённый ацетилид калия с формулой KHC<sub>2</sub>, бесцветные (белые) кристаллы.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: chemical_compound;;
+*);
+
+<-rrel_key_sc_element: ... 
+     (*
+	->rrel_key_sc_element: nrel_receiving;;
+        <- statement;;
+	=>nrel_main_idtf: [Утв. (ацетиленид калия, получение*)](*<-lang_ru;;*);;
+        <=nrel_sc_text_translation: ... (*->rrel_example: [ 
+Пропускание ацетилена через раствор калия в аммиаке: <br>
+2K+2C<sub>2</sub>H<sub>2</sub> -> <sup>-40°C</sup> 2KHC<sub>2</sub>+H<sub>2</sub>↑
+ ] (*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+      *);
+
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [64,13] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [1,37] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+<- no_color;
+<- acetylide;
+<- crystall;;

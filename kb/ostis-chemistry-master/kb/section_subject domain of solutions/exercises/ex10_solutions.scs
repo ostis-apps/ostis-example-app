@@ -1,0 +1,24 @@
+ex10_solutions
+<- exercises_solutions;
+
+-> rrel_key_sc_element: solution; sulfate; subst_Cu; subst_Mg; nrel_mass_fraction;
+
+=> nrel_next_exercise: ex11_solutions;
+
+=> nrel_main_idtf:
+	[Упражнение 10. Раздел. Предметная область растворов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 10. Section. Subject domain of solutions]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex10_solutions_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex10_solutions_en.html" (* <-lang_en;; *);;
+	*);;

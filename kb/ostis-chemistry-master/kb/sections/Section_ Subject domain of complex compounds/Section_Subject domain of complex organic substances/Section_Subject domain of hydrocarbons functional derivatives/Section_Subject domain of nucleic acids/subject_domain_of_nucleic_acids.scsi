@@ -1,0 +1,8 @@
+subject_domain_of_nucleic_acids
+=> nrel_main_idtf: 
+	[Предметная область нуклеиновых кислот]
+	(* <- lang_ru;;*);
+	[Subject domain of nucleic acids]
+	(* <- lang_en;; *);
+
+<- subject_domain;;

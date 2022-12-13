@@ -1,0 +1,26 @@
+lib_component_proc_of_adding_validating_message
+=> nrel_main_idtf:
+	[Компонент библиотеки. scp-программа добавления сообщения об ошибке]
+	(* <- lang_ru;; *);
+	[Library component. scp-program of adding validation message]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+
+-> rrel_key_sc_element: 
+	proc_of_adding_validating_message;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/proc_of_adding_validating_message.html" 
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_component_proc_of_adding_validating_message = [*^"file://proc_of_adding_validating_message.scsi"*];;

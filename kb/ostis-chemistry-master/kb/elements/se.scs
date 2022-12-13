@@ -1,0 +1,101 @@
+elem_Se
+=> nrel_main_idtf: [атом селена] (* <- lang_ru;; *);
+=> nrel_idtf: [Se] (* <- lang_en;; *);
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+	Definition_of_selenium
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/se.html" (* <-lang_ru;; *);;		
+
+		*);;
+	<= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
+	*);
+
+<- group_sixteen;
+<- period_four;
+=> nrel_periodic_number: thirty_four;
+
+<- nonmetal;
+
+<= nrel_inclusion: oxidation_state_plus_six;oxidation_state_plus_four;oxidation_state_minus_two;oxidation_state_plus_two;  
+<= nrel_inclusion: valence_six;valence_two;valence_four;
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:one_hundred_fourty(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Se;
+
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:one_hundred_twenty(*<- number;;*);;
+	*);;
+*);
+
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Se;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_Se
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (селен, электронная конфигурация*)](*<- lang_ru;;*);;
+
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Se 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 4s<sup>2</sup>p<sup>4</sup>] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис.(атом селена)] (* <- lang_ru;;	*);;
+
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/selenium.jpg";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;; => nrel_format: format_html;;*);;
+
+		*);;
+	*);;
+
+
+Definition_of_selenium
+=> nrel_main_idtf:
+	[Опр. (селен)]
+	(* <- lang_ru;;	*);;
+atomic_mass_Se <- number;
+=> nrel_main_idtf:[79](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Se <- number;
+=> nrel_main_idtf:[2,55](*<-lang_ru;; <- lang_en;;*);;

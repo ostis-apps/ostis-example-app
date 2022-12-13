@@ -1,0 +1,79 @@
+chemical_substance_multiplicity_one 
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
+	[коэффициент 1](* <- lang_ru;;  *);
+	[coefficient 1](* <- lang_en;;  *);
+<- chemical_substance_multiplicity;
+=> nrel_measurement:one;;
+
+chemical_substance_multiplicity_two  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
+	[коэффициент 2](* <- lang_ru;;  *);
+	[coefficient 2](* <- lang_en;;  *);
+<- chemical_substance_multiplicity;
+=> nrel_measurement:two;;
+
+chemical_substance_multiplicity_three  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
+	[коэффициент 3](* <- lang_ru;;  *);
+	[coefficient 3](* <- lang_en;;  *);
+<- chemical_substance_multiplicity;
+=> nrel_measurement:three;;
+
+chemical_substance_multiplicity_four  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
+	[коэффициент 4](* <- lang_ru;;  *);
+	[coefficient 4](* <- lang_en;;  *);
+<- chemical_substance_multiplicity;
+=> nrel_measurement:four;;
+
+chemical_substance_multiplicity_five  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
+	[коэффициент 5](* <- lang_ru;;  *);
+	[coefficient 5](* <- lang_en;;  *);
+<- chemical_substance_multiplicity;
+=> nrel_measurement:five;;
+
+chemical_substance_multiplicity_six  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
+	[коэффициент 6](* <- lang_ru;;  *);
+	[coefficient 6](* <- lang_en;;  *);
+<- chemical_substance_multiplicity;
+=> nrel_measurement:six;;
+
+chemical_substance_multiplicity_seven  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
+	[коэффициент 7](* <- lang_ru;;  *);
+	[coefficient 7](* <- lang_en;;  *);
+<- chemical_substance_multiplicity;
+=> nrel_measurement:seven;;
+
+chemical_substance_multiplicity_eight  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
+	[коэффициент 8](* <- lang_ru;;  *);
+	[coefficient 8](* <- lang_en;;  *);
+<- chemical_substance_multiplicity;
+=> nrel_measurement:eight;;
+
+chemical_substance_multiplicity_nine  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
+	[коэффициент 9](* <- lang_ru;;  *);
+	[coefficient 9](* <- lang_en;;  *);
+<- chemical_substance_multiplicity;
+=> nrel_measurement:nine;;
+
+chemical_substance_multiplicity_ten  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
+	[коэффициент 10](* <- lang_ru;;  *);
+	[coefficient 10](* <- lang_en;;  *);
+<- chemical_substance_multiplicity;
+=> nrel_measurement:ten;;

@@ -1,0 +1,67 @@
+proton
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[протон](*<-lang_ru;;*);
+     [proton](*<-lang_en;;*);;
+
+proton
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(протон)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b>Прото́н</b> (от др.-греч. πρῶτος — первый, основной) — <sc_element sys_idtf="elementary_particle">элементарная частица</sc_element>. Относится к барионам, имеет спин 1/2. Стабилен.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: elementary_particle;;
+*);
+
+<-rrel_key_sc_element: ...
+(*
+	 ->rrel_key_sc_element: ion; hydrogen;;
+	->statement;;
+	<-concept_assertion_of_the_defining_type;;
+	<-rrel_theorem:subject_domain_of_chemistry (*<-concept_subject_domain;;*);;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [ Химическое обозначение <b>протона</b> (рассматриваемого в качестве положительного <sc_element sys_idtf="ion">иона</sc_element> <sc_element sys_idtf="hydrogen">водорода</sc_element>) — H<sup>+</sup>](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (протон, ион, водород)](*<-lang_ru;;*);; 
+*);
+
+<-rrel_key_sc_element: ...
+(*
+	->statement;;
+	<-concept_assertion_of_the_defining_type;;
+	<-rrel_theorem:subject_domain_of_chemistry (*<-concept_subject_domain;;*);;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [Относится к барионам, имеет спин 1⁄2, <sc_element sys_idtf="nrel_electric_charge">электрический заряд</sc_element> +1 (в единицах элементарного электрического заряда). В физике элементарных частиц рассматривается как <sc_element sys_idtf="nucleon">нуклон</sc_element> с проекцией изоспина +1⁄2 (в ядерной физике принят противоположный знак проекции изоспина). Состоит из трёх <sc_element sys_idtf="quark">кварков</sc_element> (один d-кварк и два u-кварка). Стабилен.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (протон, свойства*)](*<-lang_ru;;*);; 
+*);
+
+<-rrel_key_sc_element: ...
+(*
+	 ->rrel_key_sc_element: nrel_mass;;
+	->statement;;
+	<-concept_assertion_of_the_defining_type;;
+	<-rrel_theorem:subject_domain_of_chemistry (*<-concept_subject_domain;;*);;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [<sc_element sys_idtf="nrel_mass">Масса</sc_element> протона, выраженная в разных единицах, составляет: <ul> <br />
+<li> 938,272 0813(58) МэВ
+<li> 1,007 276 466 879(91) а. е. м.
+<li> 1,672 621 898(21)·10<sup>−27</sup> кг
+<li> 1836,152 673 89(17) массы <sc_element sys_idtf="electron">электрона</sc_element>](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (протон, масса*)](*<-lang_ru;;*);; 
+*);
+
+<-rrel_key_sc_element: ...
+(*
+	 ->rrel_key_sc_element: atomic_nucleus; nrel_periodic_number; chemical_element;;
+	->statement;;
+	<-concept_assertion_of_the_defining_type;;
+	<-rrel_theorem:subject_domain_of_chemistry (*<-concept_subject_domain;;*);;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [Протоны (вместе с <sc_element sys_idtf="neutron">нейтронами</sc_element>) являются основными составляющими <sc_element sys_idtf="atomic_nucleus">атомных ядер</sc_element>. <sc_element sys_idtf="nrel_periodic_number">Порядковый номер</sc_element> <sc_element sys_idtf="chemical_element">химического элемента</sc_element> в периодической таблице (и, соответственно, все его химические свойства) полностью определяются зарядом ядра его атомов, который, в свою очередь, равен количеству протонов в ядре (протонному числу).](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (протон, атомное ядро, порядковый номер*, химический элемент)](*<-lang_ru;;*);; 
+*);
+
+<-rrel_key_sc_element: ...
+(*
+	 ->rrel_key_sc_element: nrel_applying;;
+	->statement;;
+	<-concept_assertion_of_the_defining_type;;
+	<-rrel_theorem:subject_domain_of_chemistry (*<-concept_subject_domain;;*);;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [Пучки ускоренных протонов используются в экспериментальной физике элементарных частиц (изучение процессов рассеяния и получение пучков других частиц), в медицине (протонная терапия онкологических заболеваний)](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (протон, применение*)](*<-lang_ru;;*);; 
+*);;

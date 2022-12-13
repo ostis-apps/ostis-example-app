@@ -1,0 +1,24 @@
+exercise14_mixture
+<- exercises_mixture;
+
+-> rrel_key_sc_element: mixture; subst_H; nrel_mass; volume; gas; subst_O; nitric_acid; nrel_volume_fraction; nrel_mass_fraction;
+
+=> nrel_next_exercise: exercise15_mixture;
+
+=> nrel_main_idtf:
+	[Упражнение 14. Раздел. Предметная область смесей]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 14. Section. Subject domain of mixtures]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise14_mixture_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise14_mixture_en.html" (* <-lang_en;; *);;
+	*);;

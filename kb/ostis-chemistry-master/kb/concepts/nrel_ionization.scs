@@ -1,0 +1,44 @@
+nrel_ionization
+<- sc_node_norole_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_main_idtf:
+    [ionization*](*<- lang_en;;*);
+    [ионизация*](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+    <- definition;;
+    => nrel_main_idtf: 
+        [Опр. (ионизация*)](*<- lang_ru;;*);
+        [Def. (ionization*)](*<- lang_en;;*);;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example: "file://html/ionization rus.html"(*<- lang_ru;;*);;
+        -> rrel_example: "file://html/ionization eng.html"(*<- lang_en;;*);;
+    *);;
+    <= nrel_using_constants:...
+    (*
+        -> atom;;
+        -> molecule;;
+        -> electron;;
+        -> ion;;
+    *);;
+*);
+
+=> nrel_first_domain: ...
+(*
+    -> atom;;
+    -> molecule;;
+*);
+=> nrel_second_domain: ion;
+=> nrel_definitional_domain:...
+(*
+    <= nrel_combination: ...
+    (* 
+        -> atom; molecule; ion;;
+    *);;
+*);;

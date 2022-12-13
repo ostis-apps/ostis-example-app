@@ -1,0 +1,172 @@
+subst_Mn
+<- sc_node_not_relation;
+=> nrel_main_idtf: [марганец (вещество)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [manganesium (substance)] (* <- lang_en;; *);
+<= nrel_inclusion: chemical_substance;
+<- rrel_key_sc_element: definition_of_subst_Mn
+(* 
+	=> nrel_main_idtf: [Опр. (марганец (вещество))] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Марганец</b> - твёрдый, хрупкий <sc_element sys_idtf = "metal">металл</sc_element> <sc_element sys_idtf = "color_white_silver">серебристо-белого цвета</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> metal;;
+		-> color_white_silver;;
+	*);;
+*);
+
+<- color_white_silver;
+<- solid;
+<- toxic_substance;
+
+=> nrel_being_in_nature: ...
+(*
+	-> pyrolusite;;
+	-> manganite;;
+	-> brownhead;;
+	-> hausmanite;;
+	-> rhodochrosite;;
+	-> psilomelan;;
+	-> purpurite;;
+*);
+
+=> nrel_applying: ...
+(*
+	-> metallurgy;;
+	-> chemistry;;
+	-> organic_synthesis;;
+	-> thermoelectric_material;;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (марганец (вещество), твёрдое тело)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_Manganesium.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_receiving: ...
+(*
+	-> aluminothermic_method;;
+	-> coke_reduction;;
+	-> nrel_electrolysis;;
+*);
+
+<- rrel_key_sc_element: interaction_mn_and_oxygen
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (марганец (вещество), горение, кислород)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Порошкообразный марганец сгорает в кислороде.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_mn_and_water
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (марганец (вещество), нагревание, вода, водород (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Марганец при нагревании разлагает воду, вытесняя водород.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [7,21] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 1517 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 2235 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [13,4] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [221] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [26,3] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_volume: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_cubic_cm_per_mole:...
+		(*
+			=> nrel_main_idtf: [7,39] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,50 @@
+sc_agent_find_element_periodic_number
+=> nrel_main_idtf:	
+	[sc-агент поиска периодического номера заданного химического элемента] (* <- lang_ru;; *);
+	[sc-agent search periodic number of given chemical element] (* <- lang_en;; *);
+	
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+	
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_find_element_periodic_number_condition => ..sc_agent_find_element_periodic_number_result);
+	
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	action_find_element_periodic_number
+	};
+	
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_find_element_periodic_number
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_find_element_periodic_number
+		};;
+		
+	-> sc_agent_find_element_periodic_number_scp 
+		(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_find_element_periodic_number_condition
+= [*
+	action_find_element_periodic_number _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter1;;
+*];;
+
+..sc_agent_find_element_periodic_number_result
+= [*
+	action_find_element_periodic_number _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer_for_checking_domains_of_relation;;
+	.._question _-> .._parameter1;;
+	
+*];;

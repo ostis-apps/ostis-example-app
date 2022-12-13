@@ -1,0 +1,31 @@
+thermal_water
+=> nrel_main_idtf:
+	[термальная вода](* <- lang_ru;; *);
+	[thermal water](* <- lang_en;; *);
+=>nrel_applying: cosmetics;
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку концентрации солей](* <-lang_ru;; *);;
+	-> hypotonic_thermal_water;;
+	-> isotonic_thermal_water;;
+	-> hypertensive_thermal_water;;
+*);
+=> nrel_object_structure:subst_F;subst_Mn;subst_Cu;subst_Zn;subst_Si;subst_Fe;subst_Cl;subst_Br;subst_I;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(термальная вода)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/thermal_water_definition.html"
+		(*
+			 <-lang_ru;;
+			=>nrel_format: format_html;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->water;;
+	*);;
+*);;

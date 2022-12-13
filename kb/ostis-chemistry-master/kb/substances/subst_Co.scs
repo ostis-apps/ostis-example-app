@@ -1,0 +1,76 @@
+subst_Co
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[cobaltum (substance)](*<- lang_en;;*);
+	[кобальт (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Сo (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (кобальт (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Кобальт (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - блестящий, серебристо-белый <sc_element sys_idtf = "metal">металл</sc_element>.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> metal;;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (кобальт (вещество), блестящий, серебристо-белый металл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Cobaltum.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1495 (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:2927 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (кобальт (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы кобальта:  <sup>47</sup>Co, <sup>48</sup>Co, <sup>49</sup>Co, <sup>50</sup>Co, <sup>51</sup>Co, <sup>52</sup>Co, <sup>53</sup>Co, <sup>54</sup>Co, <sup>55</sup>Co, <sup>56</sup>Co, <sup>57</sup>Co, <sup>58</sup>Co, <sup>59</sup>Co, <sup>60</sup>Co, <sup>61</sup>Co, <sup>62</sup>Co, <sup>63</sup>Co, <sup>64</sup>Co, <sup>65</sup>Co, <sup>66</sup>Co, <sup>67</sup>Co, <sup>68</sup>Co, <sup>69</sup>Co, <sup>70</sup>Co, <sup>71</sup>Co, <sup>72</sup>Co, <sup>73</sup>Co, <sup>74</sup>Co, <sup>75</sup>Co] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

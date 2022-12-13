@@ -1,0 +1,6 @@
+boron_group 
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[подгруппа бора](* <- lang_ru;; *);
+	[boron group](* <- lang_en;; *);;
+

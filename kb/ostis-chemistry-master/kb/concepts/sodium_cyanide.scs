@@ -1,0 +1,40 @@
+sodium_cyanide
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[цианид натрия](*<-lang_ru;;*);
+     [sodium cyanide](*<-lang_en;;*);;
+
+
+sodium_cyanide
+
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(цианид натрия)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b>Цианид натрия, цианистый натрий, NaCN</b> — натриевая <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="hydrocyanic_acid">синильной кислоты</sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: salt; hydrocyanic_acid;;
+*);
+
+<-rrel_key_sc_element: ... 
+     (*
+	->rrel_key_sc_element: nrel_receiving;;
+        <- statement;;
+	=>nrel_main_idtf: [Утв. (цианид натрия, получение*)](*<-lang_ru;;*);;
+        <=nrel_sc_text_translation: ... (*->rrel_example: [В промышленности цианид натрия получают главным образом нейтрализацией синильной кислоты гидроксидом натрия NaOH.] (*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+      *);
+
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [49,01] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+<- no_color;
+<- crystall;;

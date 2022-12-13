@@ -1,0 +1,49 @@
+subject_domain_of_radiation
+<-subject_domain;
+=>nrel_main_idtf:[Предметная область радиации](*<-lang_ru;;*);
+=>nrel_main_idtf:[Subject domain of radiation](*<-lang_en;;*);
+->rrel_maximum_studied_object_class:radiation;
+->rrel_not_maximum_studied_object_class:
+	radioactive_element;
+	radionuclide;
+	radioactivity;;
+
+radiation
+<-sc_node_not_relation;
+=>nrel_main_idtf:[радиация](*<-lang_ru;;*);
+=>nrel_main_idtf:[radiation](*<-lang_en;;*);
+=>nrel_idtf:[излучение](*<-lang_ru;;*);
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (радиация)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (radiation)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->elementary_particle;;
+		->atom;;
+		->radioactivity;;
+		->nrel_ionization;;
+		->chemical_substance;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[
+			<sc_element sys_idtf="radiation">Радиация</sc_element> - потоки
+			<sc_element sys_idtf="elementary_particle">элементарных частиц</sc_element> или осколки
+			<sc_element sys_idtf="radioactivity">распада</sc_element>
+			<sc_element sys_idtf="atom">атомов</sc_element>, способные
+			<sc_element sys_idtf="nrel_ionization">ионизировать</sc_element>
+			<sc_element sys_idtf="chemical_substance">вещество</sc_element>.
+		](*<-lang_ru;;=>nrel_format:format_html;;*);;
+
+		->[
+			<sc_element sys_idtf="radiation">Radiation</sc_element> is fluxes of 
+			<sc_element sys_idtf="elementary_particle">elementary particles</sc_element> or fragments of
+			<sc_element sys_idtf="radioactivity">decay</sc_element> of 
+			<sc_element sys_idtf="atom">atoms</sc_element> that can
+			<sc_element sys_idtf="nrel_ionization">ionize</sc_element>
+			<sc_element sys_idtf="chemical_substance">substance</sc_element>.
+		](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;

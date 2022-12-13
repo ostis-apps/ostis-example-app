@@ -1,0 +1,58 @@
+coolant
+=> nrel_main_idtf:
+	[хладагент](* <-lang_ru;; *);
+	[coolant](* <-lang_en;; *);
+=> nrel_idtf:
+	[холодильный агент](* <-lang_ru;; *);
+=> nrel_applying:chemical_industry;
+//включение
+=> nrel_inclusion:air;ammonia;ethyl_chloride;methyl_chloride;sulfurous_anhydride;carbon_dioxide;nitrous_oxide;ethylene;propane;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(хладагент)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Хладагент - рабочее вещество холодильной машины. которое при кипении отнимает теплоту от охлаждаемого объекта и затем после сжатия передаёт её охлаждающей среде за счёт конденсации.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->substance;boiling;nrel_object;condensation;;
+	*);;
+*);
+//утверждение
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(молекула, хладагент, химическая стабильность)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Молекулы синтетических хладагентов имеют высокую химическую стабильноть](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: molecule;chemical_stability;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);;
+/* //иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (хладагент)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/coolant.jpg"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);; */

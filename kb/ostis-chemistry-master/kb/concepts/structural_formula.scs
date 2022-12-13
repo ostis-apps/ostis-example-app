@@ -1,0 +1,38 @@
+structural_formula <= nrel_inclusion: chemical_formula;;
+structural_formula
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[структурная формула]
+	(* <- lang_ru;;	*);
+	[structural formula]
+	(* <- lang_en;;	*);;
+structural_formula
+<- rrel_key_sc_element:
+	Definition_of_structural_formula
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/structural_formula.html" (* <-lang_ru;; *);;
+		*);;
+	*);
+<= nrel_using_constants:
+			{
+				atom;
+				chemical_compound
+			};;
+	
+	
+
+Definition_of_structural_formula
+=> nrel_main_idtf:
+	[Опр.(структурная формула)]
+	(* <- lang_ru;;	*);;
+
+
+
+
+
+
+

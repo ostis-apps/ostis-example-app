@@ -1,0 +1,72 @@
+noble_gas
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[noble gas](*<- lang_en;;*);
+	[благородный газ](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[инертный газ](*<- lang_ru;;*);
+	[редкий газ](*<- lang_ru;;*);
+
+-> elem_He; elem_Ne; elem_Ar; elem_Kr; elem_Xe; elem_Rn; elem_Og;
+
+<= nrel_inclusion: gas;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+		[Опр. (благородный газ)](*<- lang_ru;;*);
+		[Def. (noble gas)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<b>Благородные газы</b> — группа <sc_element sys_idtf  = "chemical_element">химических элементов</sc_element> со схожими свойствами: при нормальных условиях они представляют собой одноатомные <sc_element sys_idtf  = "gas">газы</sc_element> без цвета и запаха с очень низкой химической реактивностью.]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);
+			[<b>Noble gases</b> are a group of <sc_element sys_idtf  = "chemical_element">chemical elements</sc_element> with similar properties: under normal conditions they are monatomic <sc_element sys_idtf  = "gas">gases</sc_element> without color and odor with very low chemical reactivity.]
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> chemical_element;;
+		-> gas;;
+	*);;
+*);
+
+<- valence_eight;
+
+=> nrel_applying: ...
+(*
+	-> cryogenic_equipment;;
+	-> breathing_mixture;;
+	-> welding;;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	-> rrel_key_sc_element: elem_He;elem_Ne;elem_Ar;elem_Kr;elem_Xe;elem_Rn;elem_Og;;
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (благородный газ)](*<- lang_ru;;*);
+		[Expl. (noble gas)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[К <sc_element sys_idtf  = "noble_gas">благородным газам относятся <sc_element sys_idtf  = "elem_He">гелий (He)</sc_element>, <sc_element sys_idtf  = "elem_Ne">неон (Ne)</sc_element>, <sc_element sys_idtf  = "elem_Ar">аргон (Ar)</sc_element>, <sc_element sys_idtf  = "elem_Kr">криптон (Kr)</sc_element>, <sc_element sys_idtf  = "elem_Xe">ксенон (Xe)</sc_element> и <sc_element sys_idtf  = "elem_Rn">радиоактивный радон (Rn)</sc_element>. В последнее время к этой группе также причисляют <sc_element sys_idtf  = "elem_Og">оганесон</sc_element>.]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);
+			[The <sc_element sys_idtf  = "noble_gas">noble gases</sc_element> include <sc_element sys_idtf = "elem_He">helium (He)</sc_element>, <sc_element sys_idtf = "elem_Ne">neon (Ne)</sc_element>, <sc_element sys_idtf = "elem_Ar">argon (Ar)</sc_element>, <sc_element sys_idtf = "elem_Kr">krypton (Kr)</sc_element>, <sc_element sys_idtf = "elem_Xe">xenon (Xe)</sc_element> and <sc_element sys_idtf = "elem_Rn">radioactive radon (Rn)</sc_element>. Recently, this group is also include <sc_element sys_idtf = "elem_Og">Oganeson (Og)</sc_element>.]
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+*);;

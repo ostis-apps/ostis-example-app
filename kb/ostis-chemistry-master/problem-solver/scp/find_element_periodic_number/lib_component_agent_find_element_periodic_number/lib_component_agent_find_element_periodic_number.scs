@@ -1,0 +1,37 @@
+lib_component_agent_find_element_periodic_number
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент поиска периодического номера заданного химического элемента]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent search periodic number of given chemical element]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components;
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_find_element_periodic_number;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_find_element_periodic_number; 
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Domains.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+sc_node_not_relation -> action_find_element_periodic_number;;
+
+action_find_element_periodic_number => nrel_main_idtf:
+	[действие. Поиск периодического номера заданного химического элемента]
+	(* <- lang_ru;;	*);
+	[action. Search periodic number of given chemical element]
+	(* <- lang_en;;	*);;
+

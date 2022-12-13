@@ -1,0 +1,46 @@
+amorphousness
+=> nrel_main_idtf:
+	[аморфность]
+	(* <- lang_ru;;	*);
+	[amorphousness]
+	(* <- lang_en;;	*);;
+amorphousness
+<- rrel_key_sc_element:
+	Definition_of_amorphousness
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/amorphousness.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+<- rrel_key_sc_element: structure_of_amorphous_solids
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (состав, соединение)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Одни из аморфных тел весьма сложны по составу (обычное стекло), другие же представляют собой простые химические соединения, например, стекловидные кварц, бура, борный ангидрид и др. Обычное стекло - наиболее характерный пример аморфного тела.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: properties_of_amorphous_solids
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (свойство, структура, кристалл)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Свойства аморфных тел определяются их структурой. В кристаллах атомы или ионы расположены в кристаллической решётке с определённой периодичной закономерностью; у аморфного тела атомы и молекулы расположены хаотически.] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+Definition_of_amorphousness
+=> nrel_main_idtf:
+	[Опр.(Аморфность)]
+	(* <- lang_ru;;	*);;

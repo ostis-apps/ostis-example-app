@@ -1,0 +1,84 @@
+subject_domain_of_chemical_experiments
+=> nrel_main_idtf: 
+	[Предметная область химических опытов]
+	(* <- lang_ru;;*);
+	[Subject domain of chemical experiments]
+	(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	chemical_experiment;
+
+-> rrel_not_maximum_studied_class:
+	pharaohs_snake;
+	nrel_equipment;
+	nrel_ingredient;;
+
+chemical_experiment
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[chemical experiment](*<- lang_en;;*);
+	[химический опыт](*<- lang_ru;;*);;
+
+pharaohs_snake
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[pharaoh's snake](*<- lang_en;;*);
+	[Фараонова змея](*<- lang_ru;;*);
+
+<= nrel_subdividing: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Разбиение по типу реакции](*<-lang_ru;; *);
+		[Subdividing based on reaction type](*<-lang_en;; *);;
+	-> thiocyanate_decomposition;
+		black_boa;
+		dichromate_snake;
+		gluconate_snake;
+		nitrate_worm;
+		nitroacetanilide_decomposition;
+		sulfanilamide_pharaoh_snake;
+		urotropin_snake;;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (фараонова змея)](*<-lang_ru;; *);;
+
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Фараоновыми змеями называют целый ряд реакций, которые сопровождаются образованием пористого продукта из небольшого объема реагирующих веществ. Эти реакции сопровождаются бурным выделением газа. В итоге выглядит реакция так, будто из смеси реагентов выползает большая змея и ползет по столу, как настоящая.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+<= nrel_sc_text_translation: ...
+(* 
+	=> nrel_main_idtf: 		
+		[Видео (фараонова змея)](*<- lang_ru;;*);;
+	-> rrel_example: [lTrFoLSUDgs]
+		(*
+			=> nrel_format: format_youtubelink;;
+			<-lang_ru;;
+		*);;
+*);;
+
+nrel_equipment
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[оборудование*](*<- lang_en;;*);
+	[equipment*](*<- lang_ru;;*);;
+
+nrel_ingredient
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[ингредиент*](*<- lang_en;;*);
+	[ingredient*](*<- lang_ru;;*);;

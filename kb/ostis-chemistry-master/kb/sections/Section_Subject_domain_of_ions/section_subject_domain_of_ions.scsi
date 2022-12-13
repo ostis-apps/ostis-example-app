@@ -1,0 +1,1611 @@
+subject_domain_of_ions
+	=> nrel_main_idtf:
+	[Предметная область ионов]
+	(* <- lang_ru;; *);
+	[Subject domain of ions]
+	(* <- lang_en;; *);
+		
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	ion;
+
+-> rrel_not_maximum_studied_object_class:
+	anion;
+	cation;
+
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content_html/subject_domain_of_ions.html" (* <-lang_ru;; *);;
+		*);;
+
+ion
+=> nrel_main_idtf:
+        [ion](*<- lang_en;;*);
+        [ион](*<- lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_ion
+(* 
+	=> nrel_main_idtf: 
+	[Опр.(ион)] (* <- lang_ru;; *);
+	[Def.(ion)] (* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "ion">Ион</sc_element></b> - частица, в которой общее число <sc_element sys_idtf  = "proton">протонов</sc_element> не равно общему числу <sc_element sys_idtf  = "electron'">электронов</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "ion">Ion</sc_element></b> a particle in which the total number of <sc_element sys_idtf  = "proton">protons</sc_element> is not equal to the total number of <sc_element sys_idtf  = "electron'">electrons</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		->proton;;
+		->electron;;
+	*);;
+*);  
+
+=>nrel_inclusion:
+	anion;
+	cation;;
+
+
+anion
+=> nrel_main_idtf:
+	[анион](*<- lang_ru;;*);
+	[anion](*<- lang_en;;*);
+<- rrel_key_sc_element:	Definition_of_dibasic_anion
+	(* 
+	=> nrel_main_idtf:
+	[Опр.(анион)](* <- lang_ru;; *);
+	[Def.(anion)](* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "anion">Анион</sc_element></b> - <sc_element sys_idtf  = "ion">ион</sc_element>, <sc_element sys_idtf  = "nrel_electric_charge">электрический заряд</sc_element> которой отрицателен.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "anion">Anion</sc_element></b> is an <sc_element sys_idtf  = "ion">ion</sc_element> whose <sc_element sys_idtf  = "nrel_electric_charge">electric charge</sc_element> is negative.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+		(*
+			->ion;;
+			->nrel_electric_charge;;
+		*);;
+*);
+
+=>nrel_inclusion:
+	hydroxide_ion;
+  	fluoride_ion;
+  	chloride_ion;
+	bromide_ion;
+	iodide_ion;
+	sulfide_ion;
+	sulfite_ion;
+	sulfate_ion;
+	phosphate_ion;
+	carbonate_ion;
+	metasilicate_ion;
+	nitrate_ion;
+	acetate_ion;
+	chromate_ion;
+	chlorate_ion;;
+
+
+cation
+=> nrel_main_idtf:
+	[катион](*<- lang_ru;;*);
+	[cation](*<- lang_en;;*);
+<- rrel_key_sc_element:	Definition_of_dibasic_cation
+	(* 
+	=> nrel_main_idtf:
+	[Опр.(катион)](* <- lang_ru;; *);
+	[Def.(cation)](* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "cation">Катион</sc_element></b> - <sc_element sys_idtf  = "ion">ион</sc_element>, <sc_element sys_idtf  = "nrel_electric_charge">электрический заряд</sc_element> которой положителен.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "cation">Cation</sc_element></b> is an <sc_element sys_idtf  = "ion">ion</sc_element> whose <sc_element sys_idtf  = "nrel_electric_charge">electric charge</sc_element> is positive.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+		(*
+			->ion;;
+			->nrel_electric_charge;;
+		*);;
+*);
+
+=>nrel_inclusion:
+	hydrogen_ion;
+	lithium_ion;
+	potassium_ion;
+	sodium_ion;
+	ammonium_ion;
+	magnesium_ion;
+	calcium_ion;
+	barium_ion;
+	strontium_ion;
+	aluminium_ion;
+	chromium_ion;
+	ferrous_ion;
+	ferric_ion;
+	zinc_ion;
+	argentous_ion;
+	plumbous_ion;
+	cupric_ion;
+	mercurous_ion;
+	mercuric_ion;
+	manganese_ion;
+	stannous_ion;
+	nickel_ion;
+	cobalt_ion;;
+
+
+hydroxide_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [гидроксид-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [hydroxide ion] (* <-lang_en;;*);
+=> nrel_idtf: [OH(-)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_hydroxide_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Гидроксид-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Гидроксид-ион</b> - одноразрядный <sc_element sys_idtf = "anion">анион</sc_element> гидроксида</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> anion;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_hydroxide_ion;;
+	*);;
+*);;
+
+electric_charge_hydroxide_ion <- number;
+=> nrel_main_idtf:[-1](*<-lang_ru;; <- lang_en;;*);;
+
+
+fluoride_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [фторид-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [fluoride ion] (* <-lang_en;;*);
+=> nrel_idtf: [F(-)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_fluoride_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Фторид-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Фторид-ион</b> - одноразрядный <sc_element sys_idtf = "anion">анион</sc_element> фторида</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> anion;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_fluoride_ion;;
+	*);;
+*);;
+
+electric_charge_fluoride_ion <- number;
+=> nrel_main_idtf:[-1](*<-lang_ru;; <- lang_en;;*);;
+
+
+chloride_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [хлорид-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [chloride ion] (* <-lang_en;;*);
+=> nrel_idtf: [Cl(-)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_chloride_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Хлорид-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Хлорид-ион</b> - одноразрядный <sc_element sys_idtf = "anion">анион</sc_element> хлорида</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> anion;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_chloride_ion;;
+	*);;
+*);;
+
+electric_charge_chloride_ion <- number;
+=> nrel_main_idtf:[-1](*<-lang_ru;; <- lang_en;;*);;
+
+
+bromide_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [бромид-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [bromide ion] (* <-lang_en;;*);
+=> nrel_idtf: [Br(-)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_bromide_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Бромид-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Бромид-ион</b> - одноразрядный <sc_element sys_idtf = "anion">анион</sc_element> бромида</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> anion;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_bromide_ion;;
+	*);;
+*);;
+
+electric_charge_bromide_ion <- number;
+=> nrel_main_idtf:[-1](*<-lang_ru;; <- lang_en;;*);;
+
+
+iodide_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [йодид-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [iodide ion] (* <-lang_en;;*);
+=> nrel_idtf: [I(-)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_iodide_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Йодид-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Йодид-ион</b> - одноразрядный <sc_element sys_idtf = "anion">анион</sc_element> йодида</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> anion;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_iodide_ion;;
+	*);;
+*);;
+
+electric_charge_iodide_ion <- number;
+=> nrel_main_idtf:[-1](*<-lang_ru;; <- lang_en;;*);;
+
+
+sulfide_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [сульфид-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [sulfide ion] (* <-lang_en;;*);
+=> nrel_idtf: [S(2-)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_sulfide_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Сульфид-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Сульфид-ион</b> - двухразрядный <sc_element sys_idtf = "anion">анион</sc_element> сульфида</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> anion;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_sulfide_ion;;
+	*);;
+*);;
+
+electric_charge_sulfide_ion <- number;
+=> nrel_main_idtf:[-2](*<-lang_ru;; <- lang_en;;*);;
+
+
+sulfite_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [сульфит-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [sulfite ion] (* <-lang_en;;*);
+=> nrel_idtf: [SO3(2-)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_sulfite_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Сульфит-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Сульфит-ион</b> - двухразрядный <sc_element sys_idtf = "anion">анион</sc_element> сульфита</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> anion;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_sulfite_ion;;
+	*);;
+*);;
+
+electric_charge_sulfite_ion <- number;
+=> nrel_main_idtf:[-2](*<-lang_ru;; <- lang_en;;*);;
+
+
+sulfate_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [сульфат-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [sulfate ion] (* <-lang_en;;*);
+=> nrel_idtf: [SO4(2-)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_sulfate_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Сульфат-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Сульфат-ион</b> - двухразрядный <sc_element sys_idtf = "anion">анион</sc_element> сульфата</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> anion;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_sulfate_ion;;
+	*);;
+*);;
+
+electric_charge_sulfate_ion <- number;
+=> nrel_main_idtf:[-2](*<-lang_ru;; <- lang_en;;*);;
+
+
+phosphate_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [фосфат-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [phosphate ion] (* <-lang_en;;*);
+=> nrel_idtf: [PO4(3-)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_phosphate_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Фосфат-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Фосфат-ион</b> - трехразрядный <sc_element sys_idtf = "anion">анион</sc_element> фосфата</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> anion;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_phosphate_ion;;
+	*);;
+*);;
+
+electric_charge_phosphate_ion <- number;
+=> nrel_main_idtf:[-3](*<-lang_ru;; <- lang_en;;*);;
+
+
+carbonate_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [карбонат-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [carbonate ion] (* <-lang_en;;*);
+=> nrel_idtf: [CO3(2-)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_carbonate_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Карбонат-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Карбонат-ион</b> - двухразрядный <sc_element sys_idtf = "anion">анион</sc_element> карбоната</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> anion;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_carbonate_ion;;
+	*);;
+*);;
+
+electric_charge_carbonate_ion <- number;
+=> nrel_main_idtf:[-2](*<-lang_ru;; <- lang_en;;*);;
+
+
+metasilicate_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [метасиликат-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [metasilicate ion] (* <-lang_en;;*);
+=> nrel_idtf: [SiO3(2-)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_metasilicate_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Метасиликат-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Метасиликат-ион</b> - двухразрядный <sc_element sys_idtf = "anion">анион</sc_element> метасиликата</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> anion;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_metasilicate_ion;;
+	*);;
+*);;
+
+electric_charge_metasilicate_ion <- number;
+=> nrel_main_idtf:[-2](*<-lang_ru;; <- lang_en;;*);;
+
+
+nitrate_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [нитрат-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [nitrate ion] (* <-lang_en;;*);
+=> nrel_idtf: [NO3(-)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_nitrate_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Нитрат-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Нитрат-ион</b> - одноразрядный <sc_element sys_idtf = "anion">анион</sc_element> нитрата</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> anion;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_nitrate_ion;;
+	*);;
+*);;
+
+electric_charge_nitrate_ion <- number;
+=> nrel_main_idtf:[-1](*<-lang_ru;; <- lang_en;;*);;
+
+
+acetate_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [ацетат-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [acetate ion] (* <-lang_en;;*);
+=> nrel_idtf: [CH3COO(-)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_acetate_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Ацетат-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Ацетат-ион</b> - одноразрядный <sc_element sys_idtf = "anion">анион</sc_element> ацетата</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> anion;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_acetate_ion;;
+	*);;
+*);;
+
+electric_charge_acetate_ion <- number;
+=> nrel_main_idtf:[-1](*<-lang_ru;; <- lang_en;;*);;
+
+
+chromate_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [хромат-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [chromate ion] (* <-lang_en;;*);
+=> nrel_idtf: [CrO4(2-)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_chromate_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Хромат-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Хромат-ион</b> - двухразрядный <sc_element sys_idtf = "anion">анион</sc_element> хромата</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> anion;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_chromate_ion;;
+	*);;
+*);;
+
+electric_charge_chromate_ion <- number;
+=> nrel_main_idtf:[-2](*<-lang_ru;; <- lang_en;;*);;
+
+
+chlorate_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [хлорат-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [chlorate ion] (* <-lang_en;;*);
+=> nrel_idtf: [CIO4(-)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_chlorate_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Хлорат-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Хлорат-ион</b> - одноразрядный <sc_element sys_idtf = "anion">анион</sc_element> хлората</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> anion;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_chlorate_ion;;
+	*);;
+*);;
+
+electric_charge_chlorate_ion <- number;
+=> nrel_main_idtf:[-1](*<-lang_ru;; <- lang_en;;*);;
+
+
+hydrogen_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [водород-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [hydrogen ion] (* <-lang_en;;*);
+=> nrel_idtf: [H(+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_hydrogen_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Водород-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Водород-ион</b> - одноразрядный <sc_element sys_idtf = "cation">катион</sc_element> водорода</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_hydrogen_ion;;
+	*);;
+*);;
+
+electric_charge_hydrogen_ion <- number;
+=> nrel_main_idtf:[+1](*<-lang_ru;; <- lang_en;;*);;
+
+
+lithium_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [литий-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [lithium ion] (* <-lang_en;;*);
+=> nrel_idtf: [Li(+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_lithium_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Литий-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Литий-ион</b> - одноразрядный <sc_element sys_idtf = "cation">катион</sc_element> лития</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_lithium_ion;;
+	*);;
+*);;
+
+electric_charge_lithium_ion <- number;
+=> nrel_main_idtf:[+1](*<-lang_ru;; <- lang_en;;*);;
+
+
+potassium_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [калий-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [potassium ion] (* <-lang_en;;*);
+=> nrel_idtf: [K(+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_potassium_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Калий-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Калий-ион</b> - одноразрядный <sc_element sys_idtf = "cation">катион</sc_element> калия</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_potassium_ion;;
+	*);;
+*);;
+
+electric_charge_potassium_ion <- number;
+=> nrel_main_idtf:[+1](*<-lang_ru;; <- lang_en;;*);;
+
+
+sodium_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [натрий-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [sodium ion] (* <-lang_en;;*);
+=> nrel_idtf: [Na(+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_sodium_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Натрий-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Натрий-ион</b> - одноразрядный <sc_element sys_idtf = "cation">катион</sc_element> натрия</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_sodium_ion;;
+	*);;
+*);;
+
+electric_charge_sodium_ion <- number;
+=> nrel_main_idtf:[+1](*<-lang_ru;; <- lang_en;;*);;
+
+
+ammonium_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [аммоний-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [ammonium ion] (* <-lang_en;;*);
+=> nrel_idtf: [NH4(+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_ammonium_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Аммоний-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Аммоний-ион</b> - одноразрядный <sc_element sys_idtf = "cation">катион</sc_element> аммония</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_ammonium_ion;;
+	*);;
+*);;
+
+electric_charge_ammonium_ion <- number;
+=> nrel_main_idtf:[+1](*<-lang_ru;; <- lang_en;;*);;
+
+
+magnesium_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [магний-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [magnesium ion] (* <-lang_en;;*);
+=> nrel_idtf: [Mg(2+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_magnesium_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Магний-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Магний-ион</b> - двухразрядный <sc_element sys_idtf = "cation">катион</sc_element> магния</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_magnesium_ion;;
+	*);;
+*);;
+
+electric_charge_magnesium_ion <- number;
+=> nrel_main_idtf:[+2](*<-lang_ru;; <- lang_en;;*);;
+
+
+calcium_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [кальций-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [calcium ion] (* <-lang_en;;*);
+=> nrel_idtf: [Ca(2+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_calcium_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Кальций-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Кальций-ион</b> - двухразрядный <sc_element sys_idtf = "cation">катион</sc_element> кальция</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_calcium_ion;;
+	*);;
+*);;
+
+electric_charge_calcium_ion <- number;
+=> nrel_main_idtf:[+2](*<-lang_ru;; <- lang_en;;*);;
+
+
+barium_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [барий-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [barium ion] (* <-lang_en;;*);
+=> nrel_idtf: [Ba(2+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_barium_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Барий-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Барий-ион</b> - двухразрядный <sc_element sys_idtf = "cation">катион</sc_element> бария</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_barium_ion;;
+	*);;
+*);;
+
+electric_charge_barium_ion <- number;
+=> nrel_main_idtf:[+2](*<-lang_ru;; <- lang_en;;*);;
+
+
+strontium_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [стронций-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [strontium ion] (* <-lang_en;;*);
+=> nrel_idtf: [Sr(2+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_strontium_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Стронций-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Стронций-ион</b> - двухразрядный <sc_element sys_idtf = "cation">катион</sc_element> стронция</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_strontium_ion;;
+	*);;
+*);;
+
+electric_charge_strontium_ion <- number;
+=> nrel_main_idtf:[+2](*<-lang_ru;; <- lang_en;;*);;
+
+
+aluminium_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [алюминий-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [aluminium ion] (* <-lang_en;;*);
+=> nrel_idtf: [Al(3+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_aluminium_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Алюминий-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Алюминий-ион</b> - трех-разрядный <sc_element sys_idtf = "cation">катион</sc_element> алюминия</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_aluminium_ion;;
+	*);;
+*);;
+
+electric_charge_aluminium_ion <- number;
+=> nrel_main_idtf:[+3](*<-lang_ru;; <- lang_en;;*);;
+
+
+chromium_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [хром-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [chromium ion] (* <-lang_en;;*);
+=> nrel_idtf: [Cr(3+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_chromium_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Хром-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Хром-ион</b> - трехразрядный <sc_element sys_idtf = "cation">катион</sc_element> хрома(III)</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_chromium_ion;;
+	*);;
+*);;
+
+electric_charge_chromium_ion <- number;
+=> nrel_main_idtf:[+3](*<-lang_ru;; <- lang_en;;*);;
+
+
+ferrous_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [железистый ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [ferrous ion] (* <-lang_en;;*);
+=> nrel_idtf: [Fe(2+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_ferrous_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Железистый-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Железистый-ион</b> - двухразрядный <sc_element sys_idtf = "cation">катион</sc_element> железа(II)</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_ferrous_ion;;
+	*);;
+*);;
+
+electric_charge_ferrous_ion <- number;
+=> nrel_main_idtf:[+2](*<-lang_ru;; <- lang_en;;*);;
+
+
+ferric_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [железный ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [ferric ion] (* <-lang_en;;*);
+=> nrel_idtf: [Fe(3+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_ferric_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Железистый ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Железистый ион</b> - трехразрядный <sc_element sys_idtf = "cation">катион</sc_element> железа(III)</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_ferric_ion;;
+	*);;
+*);;
+
+electric_charge_ferric_ion <- number;
+=> nrel_main_idtf:[+3](*<-lang_ru;; <- lang_en;;*);;
+
+
+zinc_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [цинк-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [zinc ion] (* <-lang_en;;*);
+=> nrel_idtf: [Zn(2+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_zinc_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Цинк-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Цинк-ион</b> - двухразрядный <sc_element sys_idtf = "cation">катион</sc_element> цинка</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_zinc_ion;;
+	*);;
+*);;
+
+electric_charge_zinc_ion <- number;
+=> nrel_main_idtf:[+2](*<-lang_ru;; <- lang_en;;*);;
+
+
+argentous_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [серебро-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [argentous ion] (* <-lang_en;;*);
+=> nrel_idtf: [Ag(+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_argentous_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Серебро-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Серебро-ион</b> - одноразрядный <sc_element sys_idtf = "cation">катион</sc_element> серебра</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_argentous_ion;;
+	*);;
+*);;
+
+electric_charge_argentous_ion <- number;
+=> nrel_main_idtf:[+1](*<-lang_ru;; <- lang_en;;*);;
+
+
+plumbous_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [свинец(II)-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [plumbous ion] (* <-lang_en;;*);
+=> nrel_idtf: [Pb(2+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_plumbous_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Свинец(II)-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Свинец(II)-ион</b> - двухразрядный <sc_element sys_idtf = "cation">катион</sc_element> свинца(II)</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_plumbous_ion;;
+	*);;
+*);;
+
+electric_charge_plumbous_ion <- number;
+=> nrel_main_idtf:[+2](*<-lang_ru;; <- lang_en;;*);;
+
+
+cupric_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [медь(II)-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [cupric ion] (* <-lang_en;;*);
+=> nrel_idtf: [Cu(2+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_cupric_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Медь(II)-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Медь(II)-ион</b> - двухразрядный <sc_element sys_idtf = "cation">катион</sc_element> меди(II)</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_cupric_ion;;
+	*);;
+*);;
+
+electric_charge_cupric_ion <- number;
+=> nrel_main_idtf:[+2](*<-lang_ru;; <- lang_en;;*);;
+
+
+mercurous_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [меркурий(I)-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [mercurous ion] (* <-lang_en;;*);
+=> nrel_idtf: [Hg(+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_mercurous_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Меркурий(I)-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Меркурий(I)-ион</b> - одноразрядный <sc_element sys_idtf = "cation">катион</sc_element> меркурия(I)</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_mercurous_ion;;
+	*);;
+*);;
+
+electric_charge_mercurous_ion <- number;
+=> nrel_main_idtf:[+1](*<-lang_ru;; <- lang_en;;*);;
+
+
+mercuric_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [меркурий(II)-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [mercuric ion] (* <-lang_en;;*);
+=> nrel_idtf: [Hg(2+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_mercuric_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Меркурий(II)-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Меркурий(II)-ион</b> - двухразрядный <sc_element sys_idtf = "cation">катион</sc_element> меркурия(II)</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_mercuric_ion;;
+	*);;
+*);;
+
+electric_charge_mercuric_ion <- number;
+=> nrel_main_idtf:[+2](*<-lang_ru;; <- lang_en;;*);;
+
+
+manganese_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [марганец(II)-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [manganese(II) ion] (* <-lang_en;;*);
+=> nrel_idtf: [Mn(2+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_manganese_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Марганец(II)-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Марганец(II)-ион</b> - двухразрядный <sc_element sys_idtf = "cation">катион</sc_element> марганца(II)</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_manganese_ion;;
+	*);;
+*);;
+
+electric_charge_manganese_ion <- number;
+=> nrel_main_idtf:[+2](*<-lang_ru;; <- lang_en;;*);;
+
+
+stannous_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [олово(II)-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [stannous ion] (* <-lang_en;;*);
+=> nrel_idtf: [Sn(2+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_stannous_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Олово(II)-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Олово(II)-ион</b> - двухразрядный <sc_element sys_idtf = "cation">катион</sc_element> олова(II)</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_stannous_ion;;
+	*);;
+*);;
+
+electric_charge_stannous_ion <- number;
+=> nrel_main_idtf:[+2](*<-lang_ru;; <- lang_en;;*);;
+
+
+nickel_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [никель(II)-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [nickel(II) ion] (* <-lang_en;;*);
+=> nrel_idtf: [Ni(2+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_nickel_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Никель(II)-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Никель(II)-ион</b> - двухразрядный <sc_element sys_idtf = "cation">катион</sc_element> никеля(II)</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_nickel_ion;;
+	*);;
+*);;
+
+electric_charge_nickel_ion <- number;
+=> nrel_main_idtf:[+2](*<-lang_ru;; <- lang_en;;*);;
+
+
+cobalt_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf: [кобальт(II)-ион] (* <-lang_ru;;*);
+=> nrel_main_idtf: [cobalt(II) ion] (* <-lang_en;;*);
+=> nrel_idtf: [Co(2+)] (* <-lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_cobalt_ion
+(* 
+	=> nrel_main_idtf: [Опр.(Кобальт(II)-ион)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Кобальт(II)-ион</b> - двухразрядный <sc_element sys_idtf = "cation">катион</sc_element> кобальта(II)</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> cation;;
+	*);;
+*);
+
+=> nrel_electric_charge: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_coulomb: electric_charge_cobalt_ion;;
+	*);;
+*);;
+
+electric_charge_cobalt_ion <- number;
+=> nrel_main_idtf:[+2](*<-lang_ru;; <- lang_en;;*);;
+

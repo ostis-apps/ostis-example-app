@@ -1,0 +1,22 @@
+exercise20_mixture
+<- exercises_mixture;
+
+-> rrel_key_sc_element: subst_H; subst_O; nrel_mass; nrel_density_of_substance; water; 
+ 
+=> nrel_main_idtf:
+	[Упражнение 20. Раздел. Предметная область смесей]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 20. Section. Subject domain of mixtures]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise20_mixture_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise20_mixture_en.html" (* <-lang_en;; *);;
+	*);;

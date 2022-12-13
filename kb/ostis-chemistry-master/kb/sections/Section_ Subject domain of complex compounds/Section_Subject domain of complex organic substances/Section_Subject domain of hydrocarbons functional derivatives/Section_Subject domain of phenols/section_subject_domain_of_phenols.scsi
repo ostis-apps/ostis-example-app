@@ -1,0 +1,1031 @@
+subject_domain_of_phenols
+    => nrel_main_idtf:[Предметная область фенолов](* <- lang_ru;; *);
+	=> nrel_main_idtf:[Subject domain of phenols](* <- lang_en;; *);
+<- subject_domain;
+-> rrel_maximum_studied_object_class: phenols;
+-> rrel_not_maximum_studied_object_class: 
+    phenol;
+    naphthol;
+    pyrocatechin;
+    resorcinol;
+    cresol;
+    hydroquinone;
+    pyrogallol;
+    floroglucin;
+    ortho_cresol;
+    meta_cresol;
+    para_cresol;;
+
+phenols
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[фенолы (группа)](* <-lang_ru;; *);
+	[phenols (group)](* <-lang_en;; *);
+<- no_color; crystall;
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку числа ароматических ядер](* <-lang_ru;; *);;
+	-> phenols;;
+	-> naphthol;;
+    -> antroll;;
+    -> phenanthrol;;
+    -> benzotetrol;;
+*);
+//определение
+<-rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(фенолы)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://htmls/phenols_definition.html"
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->organic_compound;;
+		->molecule;;
+		->hydroxyl_group;;
+		->elem_C;;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(фенолы, диполь, бензольное кольцо, дипольный момент*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Фенолы представляют собой полярные соединения (диполи). Бензольное кольцо является отрицательным концом диполя, группа — OH — положительным. Дипольный момент направлен в сторону бензольного кольца.](* <-lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(фенолы, растворимость*, вода, органический растворитель, токсичное вещество, окисление*, воздух)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Фенолы малорастворимы в воде, хорошо растворяются в органических растворителях, токсичны, при хранении на воздухе постепенно темнеют в результате окисления.](* <-lang_ru;; *);;
+	*);;
+*);;
+
+phenol
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[фенол](* <-lang_ru;; *);
+	[phenol](* <-lang_en;; *);
+=> nrel_idtf:
+    [гидроксибензол](* <-lang_ru;; *);
+<-no_color; crystall;
+=> nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm: [1,07]
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=> nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_celsius: [40,9]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_celsius: [181,84]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (фенол, шаростержневая модель)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/phenol.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+//определение
+<-rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(фенол)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://htmls/phenol_definition.html"
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->phenols;;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(фенол, химическая формула)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://htmls/phenol_formula.html"(* <-lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(фенол, получение*, кумольный метод)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Более 95% фенола получают кумольным методом.](* <-lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(фенол, ароматическое кольцо, гидроксильная группа, химическое свойство, спирт, ароматический углеводород)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Из-за наличия ароматического кольца и гидроксильной группы фенол проявляет химические свойства, характерные как для спиртов, так и для ароматических углеводородов.](* <-lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(фенол, химическое свойство)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://htmls/phenol_properties.html"(* <-lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+naphthol
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[нафтол](* <-lang_ru;; *);
+	[naphthol](* <-lang_en;; *);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (нафтол, шаростержневая модель)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/naphthol.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+//определение
+<-rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(нафтол)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://htmls/naphtol_definition.html"
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->phenols;;
+        ->naphthene;;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(нафтол, фенол, химическое свойство)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[По свойствам нафтолы близки к фенолам бензольного ряда. В больших количествах нафтолы и их производные применяют в производстве красителей и органических полупродуктов.](* <-lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(нафтол, растворимость*, этанол, диэтиловый эфир, хлороформ, бензол, вода)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Нафтолы хорошо растворимы в органических растворителях, таких как этанол, диэтиловый эфир, хлороформ, бензол; плохо растворимы в холодной воде, несколько лучше растворяются в горячей воде.](* <-lang_ru;; *);;
+	*);;
+*);;
+
+pyrocatechin
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[пирокатехин](* <-lang_ru;; *);
+	[pyrocatechin](* <-lang_en;; *);
+<-color_white; crystall;
+    // иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (пирокатехин, шаростержневая модель)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/pyrocatechin.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+//определение
+<-rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(пирокатехин)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://htmls/pyrocatechin_definition.html"
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->phenols;;
+        ->nrel_isomer;;
+	*);;
+*);
+=> nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm: [1,34]
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=> nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_fahrenheit: [221]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_fahrenheit: [474]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+<-rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(пирокатехин)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Пирокатехин — двухатомный фенол, один из трёх возможных изомеров дигидроксибензола.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->phenols;;
+        ->atom;;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(пирокатехин, химическая формула)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://htmls/pyrocatechin_formula.html"(* <-lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(пирокатехин, аллерген)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Пирокатехин является аллергеном, а также имеет мутагенные и канцерогенные свойства. Вызывает сильное раздражение кожи и дерматиты.](* <-lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(пирокатехин, применение*, производство красителей, производство лекарственных веществ)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Пирокатехин применяют в фотографии как проявитель, в производстве красителей, лекарственных веществ (например, адреналина).](* <-lang_ru;; *);;
+	*);;
+*);;
+
+resorcinol
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[резорцин](* <-lang_ru;; *);
+	[resorcinol](* <-lang_en;; *);
+<-no_color; crystall;
+=> nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm: [1,27]
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=> nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_celsius: [110]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_celsius: [280.8]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (резорцин, шаростержневая модель)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/resorcinol.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+<-rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(резорцин)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Резорцин — мета-дигидроксибензол.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->dihydroxybenzene;;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(резорцин, состав*, пирокатехин, гидрохинон, гидроксильная группа)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Резорцин имеет тот же состав что и пирокатехин и гидрохинон, отличаясь от них лишь относительным расположением гидроксильных групп.](* <-lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(резорцин, пыль, пары, раздражение*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Пыль и пары резорцина раздражают кожу и слизистые оболочки глаз и дыхательных путей, вызывают кашель.](* <-lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(резорцин, фенолы (группа), щелочь, соль, эфир)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Резорцин обладает свойствами фенолов. Со щёлочами образует соли — феноляты, с диметилсульфатом даёт монометиловый эфир резорцина и диметиловый эфир резорцина.](* <-lang_ru;; *);;
+	*);;
+*);;
+
+cresol
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[крезол](* <-lang_ru;; *);
+	[cresol](* <-lang_en;; *);
+=>nrel_applying: medicine;
+<-no_color; crystall; liquid;
+<= nrel_subdividing:...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку изомерии](* <-lang_ru;; *);;
+	-> ortho_cresol;;
+	-> meta_cresol;;
+	-> para_cresol;;
+*);
+<-rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(крезол)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://htmls/cresol_definition.html"
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->ethanol;;
+        -> ether;;
+        -> water;;
+        ->alkali_solution;;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(крезол, реакция нуклеофильного замещения*, альдегид )](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Крезолы легко вступают в реакции электрофильного замещения, конденсации, например с альдегидами.](* <-lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(крезол, растворитель*, органический синтез*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Крезолы используются как растворители и в качестве промежуточных веществ при органическом синтезе.](* <-lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(смесь*, орто-крезол, мета-крезол, пара-крезол, трикрезол)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Техническая смесь орто-, мета- и пара-крезола называется трикрезолом.](* <-lang_ru;; *);;
+	*);;
+*);;
+
+hydroquinone
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[гидрохинон](* <-lang_ru;; *);
+	[hydroquinone](* <-lang_en;; *);
+=> nrel_applying: chemical_industry;cosmetics;
+<- no_color; color_white; crystall;sweet;
+=> nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm: [1,36]
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=> nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_celsius: [174]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_celsius: [286.5]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (гидрохинон)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/hydroquinone.jpg"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+<-rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(гидрохинон)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Гидрохинон — ароматическое органическое соединение, представитель двуатомных фенолов с химической формулой C6H4(OH)2, изомер пирокатехина и резорцина.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->organic_compound;;
+        ->phenols;;
+        ->pyrocatechin;;
+        ->resorcinol;;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(гидрохинон, восстановитель*, химическая промышленность)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Гидрохинон - сильный восстановитель, используется как проявитель в фотографии, антиоксидант в химической промышленности, реагент для определения ниобия, вольфрама, золота и цезия в аналитической химии.](* <-lang_ru;; *);;
+	*);;
+*);;
+
+pyrogallol
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[пирогаллол](* <-lang_ru;; *);
+	[pyrogallol](* <-lang_en;; *);
+<-poison;
+=> nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm: [1,453]
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=> nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_celsius: [133]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_celsius: [309]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (пирогаллол)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/pyrogallol.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+<-rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(пирогаллол)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Пирогаллол — трехатомный фенол, легко окисляется. Обычно представляет собой бесцветные блестящие игольчатые кристаллы, темнеющие на воздухе. Ядовит.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->phenols;;
+        ->poison;;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(пирогаллол, химическая формула)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://htmls/pyrogallol_formula.html"(* <-lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+floroglucin
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[флороглюцин](* <-lang_ru;; *);
+	[floroglucin](* <-lang_en;; *);
+<- no_color; sweet; crystall;
+=>nrel_being_in_nature:plants;
+=> nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm: [1,46]
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=> nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_celsius: [223]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (флороглюцин)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/floroglucin.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+<-rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(флороглюцин)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Флороглюцин — трёхатомный фенол.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->phenols;;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(флороглюцин, химическая формула)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://htmls/floroglucin_formula.html"(* <-lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(флороглюцин, пентоз, фурфурол, гидролиз*, применение*, соляная кислота, осадок, вода)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Флороглюцин применяют для качественного и количественного определения пентоз и пентозанов. Фурфурол, выделяющийся при гидролизе пентоз в присутствии соляной кислоты, образует с флороглюцином красный, нерастворимый в воде осадок.](* <-lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(флороглюцин, нахождение в природе*, флавон, катехин, гликозид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[В природе флороглюцин входит в состав флавонов и катехинов в виде гликозидов. ](* <-lang_ru;; *);;
+	*);;
+*);;
+
+ortho_cresol
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[орто-крезол](* <-lang_ru;; *);
+	[ortho-cresol](* <-lang_en;; *);
+=> nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm: [1,05]
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=> nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_celsius: [29,8]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_celsius: [191]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (орто-крезол)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/ortho_cresol.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+<-rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(орто-крезол)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Орто-крезол - изомер крезола]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->cresol;;
+        ->nrel_isomer;;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(орто-крезол, реакция соединения*, хлорная вода, аммиак, химическое соединение, желто-бурый цвет)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Орто-крезол при смешении с хлорной водой в присутствии NH3 образует желто-бурое соединение.](* <-lang_ru;; *);;
+	*);;
+*);;
+
+meta_cresol
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[мета-крезол](* <-lang_ru;; *);
+	[meta-cresol](* <-lang_en;; *);
+=> nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm: [1,03]
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=> nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_celsius: [11,8]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_celsius: [202]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (мета-крезол)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/meta_cresol.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+<-rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(мета-крезол)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Мета-крезол - изомер крезола]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->cresol;;
+        ->nrel_isomer;;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(мета-крезол, реакция соединения*, хлорная вода, аммиак, химическое соединение, зеленый цвет)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Мета-крезол при смешении с хлорной водой в присутствии NH3 образует зеленое соединение.](* <-lang_ru;; *);;
+	*);;
+*);;
+
+para_cresol
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[пара-крезол](* <-lang_ru;; *);
+	[para-cresol](* <-lang_en;; *);
+=> nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm: [1,02]
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=> nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_celsius: [35,5]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_degree_celsius: [201,9]	
+		(*
+			<-number;;
+		*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (мета-крезол)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/meta_cresol.png"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+<-rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(мета-крезол)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Мета-крезол - изомер крезола]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->cresol;;
+        ->nrel_isomer;;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(пара-крезол, реакция соединения*, хлорная вода, аммиак, химическое соединение, тёмно-желтый цвет)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Пара-крезол при смешении с хлорной водой в присутствии NH3 образует темно-желтое соединение.](* <-lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(пара-крезол, оксид, свинец, магний, железо, кислота, хинон, гидрохинон)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Пара-крезол окисляется оксидами Рb, Мn или Fe до пара-гидроксибензойной кислоты, более сильными окислителями — до хинона или гидрохинона.](* <-lang_ru;; *);;
+	*);;
+*);;

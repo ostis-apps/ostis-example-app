@@ -1,0 +1,76 @@
+hemoglobin
+=> nrel_main_idtf:
+	[гемоглобин](* <- lang_ru;; *);
+	[hemoglobin](* <- lang_en;; *);
+=>nrel_being_in_body:blood_plasma;erythrocyte;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(термальная вода)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/hemoglobin_definition.html"
+		(*
+			 <-lang_ru;;
+			=>nrel_format: format_html;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->oxygen;;
+		->subst_Fe;;
+		->protein;;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(гемоглобин, кровь, содержание гемоглобина*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Нормальным содержанием гемоглобина в крови человека считается: у мужчин — 130—160 г/л (нижний предел — 120, верхний предел — 180 г/л), у женщин — 120—150 г/л; у детей нормальный уровень гемоглобина зависит от возраста и подвержен значительным колебаниям. Так, у детей через 1—3 дня после рождения нормальный уровень гемоглобина максимален и составляет 145—225 г/л, а к 3—6 месяцам снижается до минимального уровня — 95—135 г/л, затем с 1 года до 18 лет отмечается постепенное увеличение нормального уровня гемоглобина в крови.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: blood;;
+	-> rrel_key_sc_element: nrel_hemoglobin_value;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(гемоглобин, кислород)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Главные функции гемоглобина: перенос кислорода и буферная функция.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: oxygen;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(гемоглобин, токсичное вещество, эритроцит, плазма крови)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Гемоглобин высокотоксичен при попадании значительного его количества из эритроцитов в плазму крови.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: toxic_substance;;
+	-> rrel_key_sc_element: erythrocyte;;
+	-> rrel_key_sc_element: blood_plasma;;
+*);
+
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (молекула гемоглобина)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/hemoglobin.jpg"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

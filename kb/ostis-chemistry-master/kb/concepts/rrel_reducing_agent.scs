@@ -1,0 +1,34 @@
+rrel_reducing_agent
+=> nrel_main_idtf: 
+	[reducing agent'](*<- lang_en;;*);
+	[восстановитель'](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+		[Опр. (восстановитель')](*<- lang_ru;;*);
+		[Def. (reducing agent')](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[ <b>Восстановитель</b> - <sc_element sys_idtf = "chemical_substance">вещество</sc_element>, способное отдавать <sc_element sys_idtf = "electron">электроны</sc_element> другому веществу (<sc_element sys_idtf = "rrel_oxidizer">окислителю</sc_element>).]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);
+			[ <b>A reducing agent</b> is a <sc_element sys_idtf = "chemical_substance">substance</sc_element> capable of giving <sc_element sys_idtf = "electron">electrons</sc_element> to another substance (<sc_element sys_idtf = "rrel_oxidizer">oxidant</sc_element>).]
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+    (*
+        -> chemical_substance;;
+        -> electron;;
+        -> rrel_oxidizer;;
+    *);;
+*);
+
+<- sc_node_role_relation;;

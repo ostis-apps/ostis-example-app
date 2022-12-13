@@ -1,0 +1,1665 @@
+subject_domain_of_polymers 
+	=> nrel_main_idtf:[Предметная область полимеров](* <- lang_ru;; *);
+	=> nrel_main_idtf:[Subject domain of polymers](* <- lang_en;; *);
+<- subject_domain;
+-> rrel_maximum_studied_object_class: polymer;
+-> rrel_explored_relation: nrel_polymerization_reaction; nrel_degree_of_polymerization; nrel_copolymerization_reaction;
+-> rrel_not_maximum_studied_object_class:
+	monomer_unit;
+	compound_unit;
+	thermoplastic;
+	reactoplast;
+	monomer;
+	plastic;
+	phenoplast;
+	polyesters;
+	polystyrene;
+	organic_glass;
+	polyolefin;
+	polyethylene;
+	buted;
+	rubber;
+	polypropylene;
+	celluloid;
+	copolymer;
+	heteropolymer;
+	biopolymer;
+	homopolymer;
+	inorganic_polymer;
+	polyvinyl_chloride;
+	polyamide;
+	polyethylene_terephthalate;
+	polyacrylonitrile;
+	polyurethanes;
+	polyimide;
+	elastomer;
+	oligomer;;
+
+polymer
+<- sc_node_not_relation;
+=> nrel_main_idtf:[полимер](* <- lang_ru;; *);
+=> nrel_main_idtf:[polymer](* <- lang_en;; *);
+=> nrel_idtf:[синтетический полимер](* <- lang_ru;; *);
+
+<= nrel_subdividing:
+...
+(*	
+	=> nrel_main_idtf:[Разбиение по признаку связи между макромалекулами](* <- lang_ru;; *);;
+	-> thermoplastic;;
+	-> reactoplast;;
+*);
+
+<- rrel_key_sc_element:
+Definition_of_polymer
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (полимер)](* <- lang_ru;; *);
+		[Def. (polymer)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> chemical_substance;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="polymer">Полиме́ры</sc_element></b> — неорганические и органические, аморфные и кристаллические <sc_element sys_idtf="chemical_substance">вещества</sc_element>, состоящие из «мономерных звеньев», соединённых в длинные макромолекулы химическими или координационными 
+		  связями.](* <- lang_ru;;
+		     => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="polymer">A polymer</sc_element></b> is a large molecule, or macromolecule, composed of many repeated <sc_element sys_idtf="chemical_substance">subunits</sc_element>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (полимер)](* <- lang_ru;; *);
+		[Stat. (polymer)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="polymer">Полимер</sc_element></b> — это высокомолекулярное <sc_element sys_idtf="nrel_compound">соединение</sc_element>, <sc_element sys_idtf="nrel_degree_of_polymerization">степень полимеризации</sc_element> которого должна быть достаточно велика, в ином случае соединение будет называться <sc_element sys_idtf="oligomer">олигомером</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="polymer">The polymer</sc_element></b> is a high-molecular <sc_element sys_idtf="nrel_compound">compound</sc_element>, <sc_element sys_idtf="nrel_degree_of_polymerization">the degree of polymerization</sc_element> of which must be sufficiently large, otherwise the compound will be called an <sc_element sys_idtf="oligomer">oligomer</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	->rrel_key_sc_element: molecular_mass;;
+	=> nrel_main_idtf:
+		[Утв. (полимер, молекулярная масса*)](* <- lang_ru;; *);
+		[Stat. (polymer, molecular mass*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<sc_element sys_idtf="polymer">Полимеры</sc_element> — вещества с <sc_element sys_idtf="molecular_mass">молекулярной массой</sc_element> от нескольких тысяч до нескольких миллионов.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<sc_element sys_idtf="polymer">Polymers</sc_element> - substances with a <sc_element sys_idtf="molecular_mass">molecular mass</sc_element> of from several thousand to several millions.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (полимер, классификация*)](* <- lang_ru;; *);
+		[Stat. (polymer, classification*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[По химическому составу все полимеры подразделяются на <i>органические, элементоорганические, неорганические</i>.<br><ul><li>Органические полимеры. <li>Элементоорганические полимеры. Они содержат в основной цепи органических радикалов неорганические атомы (Si, Ti, Al), сочетающиеся с органическими радикалами. В природе их нет. Искусственно полученный представитель — кремнийорганические соединения.
+<li>Неорганические полимеры. Они не содержат в повторяющемся звене связей C-C, но способны содержать органические радикалы, как боковые заместители.</ul>](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[By chemical composition, all polymers are divided into <i>organic, organoelement, inorganic</i>.
+<ul><li>Organic polymers.
+<li>Organometallic polymers. They contain inorganic atoms (Si, Ti, Al) combined with organic radicals in the main chain of organic radicals. In nature, they are not. Artificially received representative - organosilicon compounds.
+<li>Inorganic polymers. They do not contain C – C bonds in the repeating link, but are capable of containing organic radicals as side substituents.</ul>](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (полимер)](* <- lang_ru;; *);
+		[Pic. (polymer)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/polymer.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+nrel_polymerization_reaction
+<- sc_node_norole_relation;
+=>nrel_main_idtf:[реакция полимеризации*](*<-lang_ru;;*);
+=>nrel_main_idtf:[polymerization reaction*](*<-lang_en;;*);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (реакция полимеризации*)](* <- lang_ru;; *);
+		[Def. (polymerization reaction*)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> polymer;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="nrel_polymerization_reaction">Полимеризация</sc_element></b> — процесс образования <sc_element sys_idtf="polymer"> высокомолекулярного вещества (полимера)</sc_element> путём многократного присоединения молекул низкомолекулярного вещества (мономера, олигомера) к активным центрам в растущей молекуле полимера.](* <- lang_ru;;
+		     => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="nrel_polymerization_reaction">Polymerization</sc_element></b> is the process of formation of <sc_element sys_idtf="polymer">a high-molecular substance (polymer)</sc_element> by multiple addition of molecules of a low-molecular substance (monomer, oligomer) to active centers in a growing polymer molecule.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_first_domain: chemical_substance;
+=> nrel_second_domain: chemical_substance;
+=> nrel_definitional_domain:...
+(*
+    <= nrel_combination: ...
+    (* 
+        -> chemical_substance;;
+    *);;
+*);;
+
+nrel_degree_of_polymerization
+<- sc_node_norole_relation;
+=>nrel_main_idtf:[степень полимеризации*](*<-lang_ru;;*);
+=>nrel_main_idtf:[degree of polymerization*](*<-lang_en;;*);
+
+<- rrel_key_sc_element:
+Definition_of_degree_of_polymerization
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (степень полимеризации*)](* <- lang_ru;; *);
+		[Def. (degree of polymerization*)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> polymer; oligomer; monomer_unit;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="nrel_degree_of_polymerization">Степень полимеризации</sc_element></b> - число <sc_element sys_idtf="monomer_unit">мономерных звеньев</sc_element> в молекуле <sc_element sys_idtf="polymer">полимера</sc_element> или <sc_element sys_idtf="oligomer">олигомера</sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="nrel_degree_of_polymerization">The degree of polymerization</sc_element></b>, or DP, is the number of <sc_element sys_idtf="monomer_unit">monomeric units</sc_element> in a macromolecule or <sc_element sys_idtf="polymer">polymer</sc_element> or <sc_element sys_idtf="oligomer">oligomer</sc_element> molecule.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (степень полимеризации*)](* <- lang_ru;; *);
+		[Stat. (degree of polymerization*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Увеличение <b><sc_element sys_idtf="nrel_degree_of_polymerization">степени полимеризации</sc_element></b> приводит к повышению температуры плавления и механической прочности полимера.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[An increase in <b><sc_element sys_idtf="nrel_degree_of_polymerization">the degree of polymerization</sc_element></b> leads to an increase in the melting point and mechanical strength of the polymer.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_first_domain: polymer;
+=> nrel_second_domain: number;
+=> nrel_definitional_domain:...
+(*
+    <= nrel_combination: ...
+    (* 
+        -> chemical_substance; number;;
+    *);;
+*);;
+
+oligomer
+<- sc_node_not_relation;
+=> nrel_main_idtf:[олигомер](* <- lang_ru;; *);
+=> nrel_main_idtf:[oligomer](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+Definition_of_oligomer
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (олигомер)](* <- lang_ru;; *);
+		[Def. (oligomer)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> molecule; compound_unit;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="oligomer">Олигомер</sc_element></b> - <sc_element sys_idtf="molecule">молекула</sc_element> в виде цепочки из небольшого числа одинаковых <sc_element sys_idtf="compound_link">составных звеньев</sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="oligomer">Oligomer</sc_element></b> is a <sc_element sys_idtf="molecule">molecule</sc_element> in the form of a chain of a small number of identical <sc_element sys_idtf="compound_unit">constituent units</sc_element>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (олигомер)](* <- lang_ru;; *);
+		[Stat. (oligomer)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Свойства <b><sc_element sys_idtf="oligomer">олигомеров</sc_element></b> сильно зависят от изменения количества повторяющихся звеньев в молекуле и природы концевых групп; с момента, когда химические свойства перестают изменяться с увеличением длины цепочки, вещество называется полимером.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[The properties of b><sc_element sys_idtf="oligomer">oligomers</sc_element></b> strongly depend on the change in the number of repeating units in a molecule and the nature of the end groups; from the moment when the chemical properties cease to change with increasing chain length, the substance is called a polymer.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (олигомер)](* <- lang_ru;; *);
+		[Pic. (oligomer)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/oligomer.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+monomer_unit
+<- sc_node_not_relation;
+=> nrel_main_idtf:[мономерное звено](* <- lang_ru;; *);
+=> nrel_main_idtf:[monomer unit](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (мономерное звено)](* <- lang_ru;; *);
+		[Def. (monomer unit)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> compound_unit;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Если при получении полимера мономер полностью входит в его состав, то повторяющееся <sc_element sys_idtf="compound_unit">составное звено</sc_element> является <b><sc_element sys_idtf="monomer_unit">мономерным звеном</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[If upon receipt of the polymer, the monomer is fully incorporated into it, then the repeating <sc_element sys_idtf="compound_unit">constitutional unit</sc_element> is <b><sc_element sys_idtf="monomer_unit">a monomer unit</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);;
+
+monomer
+<- sc_node_not_relation;
+=> nrel_main_idtf:[мономер](* <- lang_ru;; *);
+=> nrel_main_idtf:[monomer](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (мономер)](* <- lang_ru;; *);
+		[Def. (monomer)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> chemical_substance;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="monomer">Мономер</sc_element></b> — низкомолекулярное <sc_element sys_idtf="chemical_substance">вещество</sc_element>, образующее <sc_element sys_idtf="polymer">полимер</sc_element> в <sc_element sys_idtf="nrel_polymerization_reaction">реакции полимеризации</sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="monomer">Monomer</sc_element></b> is a low molecular weight <sc_element sys_idtf="chemical_substance">substance</sc_element> that forms <sc_element sys_idtf="polymer">a polymer</sc_element> in <sc_element sys_idtf="nrel_polymerization_reaction">polymerization reactions</sc_element>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);;
+
+compound_unit
+<- sc_node_not_relation;
+=> nrel_main_idtf:[составное звено](* <- lang_ru;; *);
+=> nrel_main_idtf:[compound unit](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (составное звено)](* <- lang_ru;; *);
+		[Def. (compound unit)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> polymer; atom;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="compound_unit">Составное звено</sc_element></b> - группа <sc_element sys_idtf="atom">атомов</sc_element>, с помощью которой можно описать строение <sc_element sys_idtf="polymer">полимера</sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="compound_unit">The constitutional unit</sc_element></b> is a group of <sc_element sys_idtf="atom">atoms</sc_element> with which one can describe the structure of <sc_element sys_idtf="polymer">a polymer</sc_element>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);;
+
+thermoplastic
+<- sc_node_not_relation;
+=> nrel_main_idtf:[термопласт](* <- lang_ru;; *);
+=> nrel_main_idtf:[thermoplastic](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (термопласт)](* <- lang_ru;; *);
+		[Def. (thermoplastic)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> polymer;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="thermoplastic">Термопласты</sc_element></b> — <sc_element sys_idtf="polymer">полимерные материалы</sc_element>, способные обратимо переходить при нагревании в <sc_element sys_idtf="elastomer">высокоэластичное</sc_element> либо <sc_element sys_idtf="binder">вязкотекучее состояние</sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="thermoplastic">Thermoplastics</sc_element></b> are <sc_element sys_idtf="polymer">polymeric materials</sc_element> that can reversibly turn into <sc_element sys_idtf="elastomer">a highly elastic</sc_element> or <sc_element sys_idtf="binder">viscous flowable state when heated</sc_element>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (термопласт)](* <- lang_ru;; *);
+		[Stat. (thermoplastic)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[При обычной температуре <sc_element sys_idtf="thermoplastic">термопласты</sc_element> находятся в твёрдом состоянии. При повышении температуры они переходят в высокоэластичное и далее — в вязкотекучее состояние, что обеспечивает возможность формования их различными методами. Эти переходы обратимы и могут повторяться многократно, что позволяет, в частности, производить переработку бытовых и производственных отходов из термопластов в новые изделия.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[At normal temperatures, <sc_element sys_idtf="thermoplastic">thermoplastics</sc_element> are in a solid state. When the temperature rises, they turn into a highly elastic and then into a viscous state, which allows them to be molded by various methods. These transitions are reversible and can be repeated many times, which allows, in particular, the processing of household and industrial waste from thermoplastics into new products.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+reactoplast
+<- sc_node_not_relation;
+=> nrel_main_idtf:[реактопласт](* <- lang_ru;; *);
+=> nrel_main_idtf:[reactoplast](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (реактопласт)](* <- lang_ru;; *);
+		[Def. (reactoplast)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> plastic;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="reactoplast">Реактопласты (термореактивные пластмассы)</sc_element></b> — <sc_element sys_idtf="plastic">пластмассы</sc_element>, переработка которых в изделия сопровождается необратимой химической реакцией, приводящей к образованию неплавкого и нерастворимого материала.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="reactoplast">Reactor plastics (thermosetting plastics)</sc_element</b> - <sc_element sys_idtf="plastic">plastics</sc_element>, the processing of which into products is accompanied by an irreversible chemical reaction, leading to the formation of non-meltable and insoluble material.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);;
+
+plastic
+<- sc_node_not_relation;
+=> nrel_main_idtf:[пластмасса](* <- lang_ru;; *);
+=> nrel_main_idtf:[plastic](* <- lang_en;; *);
+=> nrel_idtf:[пластик](* <- lang_ru;; *);
+
+<-polymer;
+
+<= nrel_subdividing:
+...
+(*	
+	=> nrel_main_idtf:[Разбиение по признаку природы полимера и характера его перехода из вязкотекучего в стеклообразное состояние при формовании изделий](* <- lang_ru;; *);;
+	-> thermoplastic_plastic;;
+	-> thermosetting_plastic;;
+*);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (пластмасса)](* <- lang_ru;; *);
+		[Def. (plastic)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> polymer;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="plastic">Пластмассы</sc_element></b> (пластические массы) или пластики — органические материалы, основой которых являются синтетические или природные <sc_element sys_idtf="polymer">высокомолекулярные соединения (полимеры)</sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="plastic">Plastics</sc_element></b> (plastic materials) or plastics are organic materials based on synthetic or natural <sc_element sys_idtf="polymer">high-molecular compounds (polymers)</sc_element>](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (пластмасса, свойства*)](* <- lang_ru;; *);
+		[Stat. (plastic, properties*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Основные механические характеристики пластмасс те же, что и для металлов. <br>
+Пластмассы характеризуются малой плотностью, чрезвычайно низкими электрической и тепловой проводимостями, не очень большой механической прочностью. При нагревании (часто с предварительным размягчением) они разлагаются. Не чувствительны к влажности, устойчивы к действию сильных кислот и оснований, отношение к органическим растворителям различное (в зависимости от химической природы полимера). <br>Физиологически почти безвредны. Свойства пластмасс можно модифицировать методами сополимеризации или стереоспецифической полимеризации, путём сочетания различных пластмасс друг с другом или с другими материалами, такими как стеклянное волокно, текстильная ткань, введением наполнителей и красителей, пластификаторов, тепло- и светостабилизаторов, облучения и др., а также варьированием сырья, например, использование соответствующих полиолов и диизоцианатов при получении полиуретанов.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[The basic mechanical characteristics of plastics are the same as for metals.<br>
+Plastics are characterized by low density, extremely low electrical and thermal conductivities, and not very large mechanical strength. When heated (often with preliminary softening) they decompose. Not sensitive to moisture, resistant to strong acids and bases, relation to organic solvents is different (depending on the chemical nature of the polymer). <br>Physiologically almost harmless. The properties of plastics can be modified by copolymerization or stereospecific polymerization, by combining various plastics with each other or with other materials, such as glass fiber, textile fabric, the introduction of fillers and dyes, plasticizers, heat and light stabilizers, irradiation, etc., as well as by varying raw materials, for example, the use of appropriate polyols and diisocyanates in the preparation of polyurethanes.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (пластмасса, получение*)](* <- lang_ru;; *);
+		[Stat. (plastic, receiving *)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Производство синтетических пластмасс основано на <sc_element sys_idtf="nrel_polymerization_reaction">реакциях полимеризации</sc_element>, поликонденсации или полиприсоединения низкомолекулярных исходных веществ, выделяемых из угля, нефти или природного газа, таких, к примеру, как бензол, этилен, фенол, ацетилен и других мономеров. При этом образуются высокомолекулярные связи с большим числом исходных молекул.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[The production of synthetic plastics is based on <sc_element sys_idtf="nrel_polymerization_reaction">polymerization</sc_element>, polycondensation or polyaddition reactions of low molecular weight raw materials derived from coal, oil or natural gas, such as benzene, ethylene, phenol, acetylene and other monomers. In this case, high-molecular bonds are formed with a large number of initial molecules.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (пластмасса, методы обработки*)](* <- lang_ru;; *);
+		[Stat. (plastic, processing methods*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<ul><li>Литьё/литьё под давлением
+<li>Экструзия
+<li>Прессование
+<li>Виброформование
+<li>Вспенивание
+<li>Отливка
+<li>Сварка
+<li>Вакуумная формовка и пр.
+<li>Механическая обработка](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<ul><li>Casting / casting
+<li>Extrusion
+<li>Pressing
+<li>Vibroforming
+<li>Churning
+<li>Casting
+<li>Welding
+<li>Vacuum forming, etc.
+<li>Mechanical restoration](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (пластмасса)](* <- lang_ru;; *);
+		[Pic. (plastic)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/plastic.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+phenoplast
+<- sc_node_not_relation;
+=> nrel_main_idtf:[фенопласт](* <- lang_ru;; *);
+=> nrel_main_idtf:[phenoplast](* <- lang_en;; *);
+
+<-plastic;
+<-reactoplast;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (фенопласт)](* <- lang_ru;; *);
+		[Def. (phenoplast)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> plastic;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="phenoplast">Фенопласты</sc_element></b> — <sc_element sys_idtf="plastic">пластмассы</sc_element>, получаемые при отверждении при повышенных температурах фенолформальдегидных смол в комбинации с наполнителями.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="phenoplast">Phenoplasts</sc_element></b> are <sc_element sys_idtf="plastic">plastics</sc_element> obtained by curing at elevated temperatures phenol-formaldehyde resins in combination with fillers.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (фенопласт, свойства*)](* <- lang_ru;; *);
+		[Stat. (phenoplast, properties*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<ul><li>механическая устойчивость, прочность
+<li>коррозионная устойчивость
+<li>высокие электроизоляционные свойства
+<li>отличная растворимость в алифатических и ароматических углеводородах, хлорсодержащих растворителях и кетонах. Растворимы в водных растворах щелочей и полярных растворителях, после отверждения превращаются в густосшитые полимеры аморфной микрогетерогенной структуры.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<ul><li>mechanical stability
+<li>corrosion resistance
+<li>high electrical insulating properties
+<li>Excellent solubility in aliphatic and aromatic hydrocarbons, chlorinated solvents and ketones. Soluble in aqueous solutions of alkalis and polar solvents, after curing are converted into densely cross-linked polymers of amorphous microheterogeneous structure.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (фенопласт)](* <- lang_ru;; *);
+		[Pic. (phenoplast)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/phenoplast.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+polyester
+<- sc_node_not_relation;
+=> nrel_main_idtf:[полиэфир](* <- lang_ru;; *);
+=> nrel_main_idtf:[polyester](* <- lang_en;; *);
+
+<-polymer;
+<-reactoplast;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (полиэфир)](* <- lang_ru;; *);
+		[Def. (polyester)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> polymer;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="polyester"> Полиэфиры</sc_element></b> (или полиэстеры) — <sc_element sys_idtf="polymer">полимеры</sc_element>, получаемые поликонденсацией многоосновных кислот или их ангидридов с многоатомными спиртами.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="polyester">Polyesters</sc_element></b> (or polyesters) are <sc_element sys_idtf="polymer">polymers</sc_element> obtained by the polycondensation of polybasic acids or their anhydrides with polyhydric alcohols.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);;
+
+polystyrene
+<- sc_node_not_relation;
+=> nrel_main_idtf:[полистирол](* <- lang_ru;; *);
+=> nrel_main_idtf:[polystyrene](* <- lang_en;; *);
+
+<-polymer;
+<-thermoplastic;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (полистирол)](* <- lang_ru;; *);
+		[Def. (polystyrene)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> polymer;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="polystyrene">Полистирол</sc_element></b> — продукт полимеризации стирола (винилбензола), термопластичный <sc_element sys_idtf="polymer">полимер</sc_element> линейной структуры.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="polystyrene">Polystyrene</sc_element></b> is a polymerization product of styrene (vinyl benzene), a thermoplastic <sc_element sys_idtf="polymer">polymer</sc_element of linear structure.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (полистирол)](* <- lang_ru;; *);
+		[Stat. (polystyrene)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b>Полистирол</b> — жёсткий хрупкий аморфный полимер с высокой степенью оптического светопропускания, невысокой механической прочностью. Полистирол имеет низкую плотность, усадка при литьевой переработке 0,4-0,8 %. Полистирол обладает отличными диэлектрическими свойствами и неплохой морозостойкостью (до −40 <sup>°</sup>C). Имеет невысокую химическую стойкость (кроме разбавленных кислот, спиртов и щелочей).
+
+Растворяется в сероуглероде, пиридине, ацетоне, толуоле, дихлорэтане, хлороформе, четырёххлористом углероде, сложных эфирах, медленнее — в бензине. Нерастворим в воде. Термопластичный материал. Полистирол легко формуется и окрашивается. Хорошо обрабатывается механическими способами. Хорошо склеивается. Обладает низким влагопоглощением, высокой влагостойкостью и морозостойкостью. Полистирол — отличный диэлектрик.
+
+При сильном (выше 300 <sup>°</sup>C) нагревании полистирол разлагается с выделением паров мономера (стирола) и других продуктов распада полимерных цепей. На воздухе горит жёлтым коптящим пламенем.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b>Polystyrene</b> is a hard brittle amorphous polymer with a high degree of optical transmittance, low mechanical strength. Polystyrene has a low density, shrinkage during injection molding 0.4-0.8%. Polystyrene has excellent dielectric properties and good frost resistance (up to −40 <sup>°</sup> C). It has a low chemical resistance (except for dilute acids, alcohols and alkalis).
+
+It dissolves in carbon disulfide, pyridine, acetone, toluene, dichloroethane, chloroform, carbon tetrachloride, esters, and slower in gasoline. Insoluble in water. Thermoplastic material. Polystyrene is easily formed and painted. Well processed by mechanical methods. Good glued. It has low moisture absorption, high moisture resistance and frost resistance. Polystyrene is a great dielectric.
+
+With strong (above 300 <sup>°</sup> C) heating, polystyrene decomposes with the release of monomer vapors (styrene) and other decomposition products of the polymer chains. In the air, it burns with a yellow smoky flame.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (полистирол)](* <- lang_ru;; *);
+		[Pic. (polystyrene)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/polystyrene.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+organic_glass
+<- sc_node_not_relation;
+=> nrel_main_idtf:[органическое стекло](* <- lang_ru;; *);
+=> nrel_main_idtf:[organic glass](* <- lang_en;; *);
+
+<-polymer;
+<-thermoplastic;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (органическое стекло)](* <- lang_ru;; *);
+		[Def. (organic glass)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> polymer;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="organic_glass">Органическое стекло (оргстекло), или полиметилметакрилат (ПММА)</sc_element></b> — акриловая смола, синтетический виниловый <sc_element sys_idtf="polymer">полимер</sc_element> метилметакрилата, термопластичный прозрачный пластик, известный под наименованиями Plexiglas, Deglas, Acrylite, Lucite, Perspex, Setacryl, плексиглас, акрима, карбогласс, новаттро, плексима, лимакрил, плазкрил, акрилекс, акрилайт, акрипласт, акриловое стекло, акрил, метаплекс и многими другими.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="organic_glass">Plexiglass or polymethyl methacrylate (PMMA)</sc_element></b> - acrylic resin, methyl methacrylate synthetic vinyl <sc_element sys_idtf="polymer">polymer</sc_element>, thermoplastic transparent plastic, known as Plexiglas, Deglas, Acrylite, Lucite, Perspex, Setacryl, Plexiglas, Acryma, Hrushlux, Carol, Lucite, Perspex, Setacryl, Plexiglas, Acryma, Sugar, Hearts, Carol, Lucite, Perspex, Setacryl, Plexiglas, Acryma, Sugar, Hearts, Carol, Lucite, Perspex, Setacryl, Plexiglas, Acryl, Sugar, Carol, Lucite, Perspex, Setacryl; , plascryl, acrylex, acrilite, acrylast, acrylic glass, acrylic, metaplex and many others.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (органическое стекло, свойства*)](* <- lang_ru;; *);
+		[Stat. (organic glass, properties*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<ul><li>Формула: (-CH2C(CH3)(COOCH3)-)n
+<li>Температура плавления: 160 °C
+<li>Плотность: 1,19 г/см<sup>3</sup>
+<li>Название ИЮПАК: Poly(methyl 2-methylpropenoate)
+<li>Температура кипения: 200 <sup>°</sup>C](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<ul><li>Formula: (-CH2C (CH3) (COOCH3) -) n
+<li>Melting point: 160 °C
+<li>Density: 1.19 g / cm<sup>3</sup>
+<li>IUPAC name: Poly (methyl 2-methylpropenoate)
+<li>Boiling point: 200 ° C](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (органическое стекло)](* <- lang_ru;; *);
+		[Pic. (organic glass)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/organic_glass.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+polyolefin
+<- sc_node_not_relation;
+=> nrel_main_idtf:[полиолефин](* <- lang_ru;; *);
+=> nrel_main_idtf:[polyolefin](* <- lang_en;; *);
+
+<-polymer;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (полиолефин)](* <- lang_ru;; *);
+		[Def. (polyolefin)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> polymer; monomer;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="polyolefin">Полиолефины</sc_element></b> — класс <sc_element sys_idtf="polymer">высокомолекулярных соединений (полимеров)</sc_element>, получаемых из низкомолекулярных веществ — <sc_element sys_idtf="monomer">олефинов (мономеров)</sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="polyolefin">Polyolefins</sc_element></b> is a class <sc_element sys_idtf="polymer">of high-molecular compounds (polymers)</sc_element> derived from low-molecular substances - <sc_element sys_idtf="monomer">olefins (monomers)</sc_element.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (полиолефин, свойства*)](* <- lang_ru;; *);
+		[Stat. (polyolefin, properties*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Диапазон состояний полиолефинов — от желеобразного до твёрдого. Состояние определяется в первую очередь молекулярной массой и степенью кристаллизации. Кристаллические полиолефины характеризуются высокими диэлектрическими свойствами, механической прочностью и устойчивостью к действию агрессивных сред (кроме сильных окислителей). При нагревании некоторые полиолефины могут выделять вредные для здоровья человека вещества.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[The range of states of polyolefins is from gel to solid. The state is determined primarily by the molecular weight and degree of crystallization. Crystalline polyolefins are characterized by high dielectric properties, mechanical strength and resistance to aggressive media (except for strong oxidizing agents). When heated, some polyolefins can release substances harmful to human health.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (полиолефин)](* <- lang_ru;; *);
+		[Pic. (polyolefin)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/polyolefin.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+polyethylene
+<- sc_node_not_relation;
+=> nrel_main_idtf:[полиэтилен](* <- lang_ru;; *);
+=> nrel_main_idtf:[polyethylene](* <- lang_en;; *);
+
+<-polymer;
+<-thermoplastic;
+<-polyolefin;
+<-color_white;
+<-dielectric;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (полиэтилен)](* <- lang_ru;; *);
+		[Def. (polyethylene)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> polymer; polyolefin;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="polyethylene">Полиэтилен</sc_element></b> — термопластичный <sc_element sys_idtf="polymer">полимер</sc_element> <sc_element sys_idtf="ethene">этилена</sc_element>, относится к классу полиолефинов](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<sc_element sys_idtf="polyethylene">Polyethylene</sc_element> is a thermoplastic <sc_element sys_idtf="polymer">polymer</sc_element> of <sc_element sys_idtf="ethene">ethylene</sc_element>, belongs to the class of polyolefins](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (полиэтилен, свойства*)](* <- lang_ru;; *);
+		[Stat. (polyethylene, properties*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Представляет собой массу белого цвета (тонкие листы прозрачны и бесцветны). Химически стоек, диэлектрик, не чувствителен к удару (амортизатор), при нагревании размягчается (80—120°С), адгезия (прилипание) — чрезвычайно низкая. Часто неверно называется целлофаном.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[It is a mass of white (thin sheets are transparent and colorless). Chemically resistant, dielectric, not sensitive to shock (shock absorber), softens when heated (80-120 ° C), adhesion (sticking) - extremely low. Often incorrectly called cellophane.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (полиэтилен)](* <- lang_ru;; *);
+		[Pic. (polyethylene)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/polyethylene.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+buted
+<- sc_node_not_relation;
+=> nrel_main_idtf:[побутилен](* <- lang_ru;; *);
+=> nrel_main_idtf:[buted](* <- lang_en;; *);
+
+<-polymer;
+<-thermoplastic;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (побутилен)](* <- lang_ru;; *);
+		[Def. (buted)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> polymer;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="buted">Полибутилен</sc_element></b> — термопластичный <sc_element sys_idtf="polymer">полимер</sc_element> <sc_element sys_idtf="butene">бутилена (бутена)</sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="buted">Polybutylene</sc_element> is a thermoplastic <sc_element sys_idtf="polymer">polymer</sc_element> <sc_element sys_idtf="butene"> of butylene (butene)</sc_element>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (побутилен, свойства*)](* <- lang_ru;; *);
+		[Stat. (buted, properties*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Материал имеет высокую устойчивость к растрескиванию под нагрузкой, в 50 раз меньшую в сравнении с полиэтиленом ползучесть, высокие гибкость, износоустойчивость, морозостойкость, химическую стойкость и огнеусточивость. Твердость ниже, чем у полипропилена и полиэтилена низкого давления. Полибутилен применяют в системах холодного и горячего водоснабжения и отопления, в пищевой промышленности и в качестве упаковочного и изоляционного материала. Трубы из полибутилена легко свариваются с образованием высоконадежного сварного соединения.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[The material has a high resistance to cracking under load, 50 times less creep compared to polyethylene, high flexibility, wear resistance, frost resistance, chemical resistance and fire resistance. Hardness is lower than that of polypropylene and low pressure polyethylene. Polybutylene is used in systems of cold and hot water supply and heating, in the food industry and as a packaging and insulating material. Polybutylene pipes can be easily welded to form a highly reliable welded joint.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (побутилен)](* <- lang_ru;; *);
+		[Pic. (buted)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/buted.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+rubber
+<- sc_node_not_relation;
+=> nrel_main_idtf:[каучук](* <- lang_ru;; *);
+=> nrel_main_idtf:[rubber](* <- lang_en;; *);
+
+<-elastomer;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (каучук)](* <- lang_ru;; *);
+		[Def. (rubber)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> elastomer;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="rubber">Каучуки</sc_element></b> — натуральные или синтетические <sc_element sys_idtf="elastomer">эластомеры</sc_element>, характеризующиеся эластичностью, водонепроницаемостью и электроизоляционными свойствами, из которых путём вулканизации получают резины и эбониты.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="rubber">Rubbers</sc_element></b> are natural or synthetic <sc_element sys_idtf="elastomer">elastomers</sc_element> characterized by elasticity, water resistance and electrical insulating properties, from which rubber and ebonite are obtained by vulcanization.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (каучук)](* <- lang_ru;; *);
+		[Pic. (rubber)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/rubber.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+polypropylene
+<- sc_node_not_relation;
+=> nrel_main_idtf:[полипропилен](* <- lang_ru;; *);
+=> nrel_main_idtf:[polypropylene](* <- lang_en;; *);
+
+<-polymer;
+<-thermoplastic;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (полипропилен)](* <- lang_ru;; *);
+		[Def. (polypropylene)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> polymer;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="polypropylene">Полипропилен</sc_element></b> — термопластичный <sc_element sys_idtf="polymer">полимер</sc_element> <sc_element sys_idtf="propene">пропилена (пропена)</sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="polypropylene">Polypropylene</sc_element></b> is a thermoplastic <sc_element sys_idtf="polymer">polymer</sc_element> of <sc_element sys_idtf="propene">propylene (propene)</sc_element>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (полипропилен, получение*)](* <- lang_ru;; *);
+		[Stat. (polypropylene, getting*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Полипропилен получают полимеризацией пропилена в присутствии металлокомплексных катализаторов, например, катализаторов Циглера—Натта (например, смесь TiCl<sub>4</sub> и AlR<sub>3</sub>):
+<br>
+nCH<sub>2</sub>=CH(CH<sub>3</sub>) → (-CH<sub>2</sub>-CH(CH<sub>3</sub>)-)n
+<br>
+Параметры, необходимые для получения полипропилена близки к тем, при которых получают полиэтилен низкого давления. При этом, в зависимости от конкретного катализатора, может получаться любой тип полимера или их смеси.
+<br>
+Полипропилен выпускается в виде порошка белого цвета или гранул с насыпной плотностью 0,4—0,5 г/см³. Полипропилен выпускается стабилизированным, окрашенным и неокрашенным.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Polypropylene is obtained by polymerizing propylene in the presence of metal complex catalysts, for example, Ziegler – Natta catalysts (for example, a mixture of TiCl<sub>4</sub> and AlR<sub>3</sub>):
+<br>
+nCH<sub>2</sub> = CH (CH<sub>3</sub>) → (-CH<sub>2</sub>-CH (CH<sub>3</sub>) -) n
+<br>
+The parameters required to obtain polypropylene are close to those at which low-pressure polyethylene is produced. However, depending on the specific catalyst, any type of polymer or mixtures thereof can be obtained.
+<br>
+Polypropylene is available in the form of white powder or granules with a bulk density of 0.4-0.5 g / cm³. Polypropylene is produced stabilized, painted and unpainted.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (полипропилен)](* <- lang_ru;; *);
+		[Pic. (polypropylene)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/polypropylene.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+celluloid
+<- sc_node_not_relation;
+=> nrel_main_idtf:[целлулоид](* <- lang_ru;; *);
+=> nrel_main_idtf:[celluloid](* <- lang_en;; *);
+
+<-plastic;
+<-polymer;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (целлулоид)](* <- lang_ru;; *);
+		[Def. (celluloid)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> plastic;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="celluloid">Целлулoид</sc_element></b> — <sc_element sys_idtf="plastic">пластмасса</sc_element> на основе нитрата целлюлозы (коллоксилина), содержащая пластификатор (дибутилфталат, касторовое или вазелиновое масло, синтетическая камфора) и краситель. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="celluloid">Celluloid</sc_element></b> is <sc_element sys_idtf="plastic">a plastic</sc_element> based on cellulose nitrate (colloxylin), containing a plasticizer (dibutyl phthalate, castor or petroleum jelly, synthetic camphor) and a dye.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (целлулоид, применение*)](* <- lang_ru;; *);
+		[Stat. (celluloid, application*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Применяется для изготовления кино- и фотоплёнки, планшетов, линеек, корпусов музыкальных инструментов — гармоник, различных галантерейных товаров, игрушек и др. Долгое время служил материалом для изготовления мячей для настольного тенниса, однако в 2014 году от целлулоида отказались по причинам безопасности. Существенный недостаток целлулоида — высокая горючесть, вследствие чего использование его в промышленности значительно сокращено.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[It is used for making film and photographic films, tablets, rulers, musical instrument cases - harmonics, various haberdashery goods, toys, etc. For a long time served as material for the manufacture of table tennis balls, but in 2014 celluloid was abandoned for security reasons. A significant disadvantage of celluloid is its high flammability, as a result of which its use in industry is significantly reduced.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (целлулоид)](* <- lang_ru;; *);
+		[Pic. (celluloid)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/celluloid.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+copolymer
+<- sc_node_not_relation;
+=> nrel_main_idtf:[сополимер](* <- lang_ru;; *);
+=> nrel_main_idtf:[copolymer](* <- lang_en;; *);
+
+<-polymer;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (сополимер)](* <- lang_ru;; *);
+		[Def. (copolymer)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> polymer;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="copolymer">Сополимеры</sc_element></b> — разновидность <sc_element sys_idtf="polymer">полимеров</sc_element>, цепочки молекул которых (макромолекулы) состоят из двух или более различных структурных звеньев.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="copolymer">Copolymers</sc_element></b> are a kind of <sc_element sys_idtf="polymer">polymers</sc_element> whose chains of molecules (macromolecules) consist of two or more different structural units.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (сополимер)](* <- lang_ru;; *);
+		[Pic. (copolymer)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/copolymer.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+heteropolymer
+<- sc_node_not_relation;
+=> nrel_main_idtf:[гетерополимер](* <- lang_ru;; *);
+=> nrel_main_idtf:[heteropolymer](* <- lang_en;; *);
+
+<-polymer;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (гетерополимер)](* <- lang_ru;; *);
+		[Def. (heteropolymer)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> polymer;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="heteropolymer">Гетерополимеры</sc_element></b> — <sc_element sys_idtf="polymer">полимеры</sc_element>, молекулы которых состоят из нескольких разных типов <sc_element sys_idtf="monomer">мономеров</sc_element>. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="heteropolymer">Heteropolymers</sc_element></b> are <sc_element sys_idtf="polymer">polymers</sc_element> whose molecules consist of several different types of <sc_element sys_idtf="monomer">monomers</sc_element>.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (гетерополимер)](* <- lang_ru;; *);
+		[Stat. (heteropolymer)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гетерополимеры бывают регулярными и нерегулярными. В регулярных гетерополимерах чередование звеньев подчиняется определенной закономерности, они выстроены в предсказуемом порядке: -А-В-А-В-А-В- или -А-А-В-А-А-В-А-А-В-, где А и В — разные типы мономеров. К ним относятся, например, гиалуроновая кислота. Это регулярный гетерополимер, в котором два типа мономеров — N-ацетилгюкозамин и глюкуроновая кислота — чередуются как А-В-А-В-А-В-. Такие гетерополимеры близки к гомополимерам, поскольку дисахаридное звено -А-В- можно считать их мономером. Более сложный разветвленный гетерополимер — - пептидогликан.
+<br>
+К нерегулярным гетерополимерам относятся природные белки и нуклеиновые кислоты - ДНК и РНК. Чередование мономеров, которых в белках более 20 типов, а в нуклеиновых кислотах - по 4 основных типа, не подчиняется определенным закономерностям. Искусственным путём могут быть получены белки и нуклеиновые кислоты, представляющие собой гомополимеры. Так, первой искусственно синтезированной молекулой РНК была молекула поли-У - гомополимер из уридиловых нуклеотидов, а синтезированным на её основе белком оказался гомополимер полифенилаланин. В природных молекулах нуклеиновых кислот могут встречаться гомополимерные участки (например. поли-А участок эукариотических мРНК).](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Heteropolymers are regular and irregular. In regular heteropolymers, the alternation of links obeys a certain regularity; they are arranged in a predictable order: -A-B-A-B-A-B- or-A-A-B-A-A-B-A-A-B-, where A and B are different types of monomers. These include, for example, hyaluronic acid. This is a regular heteropolymer, in which two types of monomers - N-acetylgucosamine and glucuronic acid - alternate as ABA-ABA-B-. Such heteropolymers are close to homopolymers, since the disaccharide unit -A-B- can be considered a monomer. More complex branched heteropolymer - - peptidoglycan.
+
+Irregular heteropolymers include natural proteins and nucleic acids - DNA and RNA. The alternation of monomers, of which there are more than 20 types in proteins, and in nucleic acids - 4 basic types each, does not follow certain regularities. Artificially, proteins and nucleic acids, which are homopolymers, can be obtained. Thus, the first artificially synthesized RNA molecule was a poly-U molecule, a homopolymer of uridyl nucleotides, and the polyphenylalanine homopolymer was synthesized on the basis of its protein. In natural nucleic acid molecules, homopolymer regions may be found (for example, the poly-A region of eukaryotic mRNA).](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+biopolymer
+<- sc_node_not_relation;
+=> nrel_main_idtf:[биополимер](* <- lang_ru;; *);
+=> nrel_main_idtf:[biopolymer](* <- lang_en;; *);
+
+<-polymer;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (биополимер)](* <- lang_ru;; *);
+		[Def. (biopolymer)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> polymer;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="biopolymer">Биополимеры</sc_element></b> — класс <sc_element sys_idtf="polymer">полимеров</sc_element>, встречающихся в природе в естественном виде, входящие в состав живых организмов: белки, нуклеиновые кислоты, полисахариды, лигнин](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="biopolymer">Biopolymers</sc_element></b> are a class of <sc_element sys_idtf="polymer">polymers</sc_element> found in nature in their natural form, which are part of living organisms: proteins, nucleic acids, polysaccharides, lignin](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (биополимер)](* <- lang_ru;; *);
+		[Pic. (biopolymer)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/biopolymer.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+homopolymer
+<- sc_node_not_relation;
+=> nrel_main_idtf:[гомополимер](* <- lang_ru;; *);
+=> nrel_main_idtf:[homopolymer](* <- lang_en;; *);
+
+<-polymer;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (гомополимер)](* <- lang_ru;; *);
+		[Def. (homopolymer)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> polymer;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="homopolymer">Гомополимер</sc_element></b> — <sc_element sys_idtf="polymer">полимер</sc_element>, макромолекулы которого состоят из одинаковых по составу и строению повторяющихся структурных единиц (мономерных звеньев).](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="homopolymer">A homopolymer</sc_element></b> is <sc_element sys_idtf="polymer">a polymer</sc_element> whose macromolecules consist of repeating structural units of the same composition and structure (monomer units)](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);;
+
+
+
+nrel_copolymerization_reaction
+<- sc_node_norole_relation;
+=> nrel_main_idtf:[реакция сополимеризации*](* <- lang_ru;; *);
+=> nrel_main_idtf:[copolymerization reaction*](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (реакция сополимеризации*)](* <- lang_ru;; *);
+		[Def. (copolymerization reaction*)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> copolymer;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="nrel_copolymerization_reaction">Сополимеризация</sc_element></b> — реакция получения <sc_element sys_idtf="copolymer">сополимеров</sc_element>, <sc_element sys_idtf="nrel_polymerization_reaction">полимеризация</sc_element>, в которой участвуют два или несколько различных <sc_element sys_idtf="monomer">мономеров</sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="nrel_copolymerization_reaction">Copolymerization</sc_element></b> is a reaction to obtain <sc_element sys_idtf="copolymer">copolymers</sc_element>, <sc_element sys_idtf="nrel_polymerization_reaction">a polymerization</sc_element> in which two or more different <sc_element sys_idtf="monomer">monomers</sc_element> participate.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_first_domain: monomer;
+=> nrel_second_domain: monomer;
+=> nrel_definitional_domain:...
+(*
+    <= nrel_combination: ...
+    (* 
+        -> monomer;;
+    *);;
+*);;
+
+polyvinyl_chloride
+<- sc_node_not_relation;
+=> nrel_main_idtf:[поливинилхлорид](* <- lang_ru;; *);
+=> nrel_main_idtf:[polyvinyl chloride](* <- lang_en;; *);
+
+<-plastic;
+<-polymer;
+<-thermoplastic;
+<-no_color;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (поливинилхлорид)](* <- lang_ru;; *);
+		[Def. (polyvinyl chloride)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> plastic;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="polyvinyl_chloride">Поливинилхлорид</sc_element></b> (ПВХ, полихлорвинил, винил, вестолит, хосталит, виннол, корвик, сикрон, джеон, ниппеон, сумилит, луковил, хелвик, норвик и др.) — бесцветная, прозрачная <sc_element sys_idtf="plastic">пластмасса</sc_element>, термопластичный <sc_element sys_idtf="polymer">полимер</sc_element> винилхлорида. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="polyvinyl_chloride">Polyvinyl chloride</sc_element></b> (PVC, PVC, vinyl, Vestolite, Hostalit, Vinnol, Korvik, Sikron, Jon, Nippon, Sumilit, Lukovil, Helvik, Norvik, etc.) is a colorless, transparent <sc_element sys_idtf="plastic">plastic</sc_element>, thermoplastic <sc_element sys_idtf="polymer">polymer</sc_element> of vinyl chloride.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (поливинилхлорид, применение*)](* <- lang_ru;; *);
+		[Stat. (polyvinyl chloride, application*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Применяется для электроизоляции проводов и кабелей, производства листов, труб (преимущественно хлорированный поливинилхлорид), плёнок, плёнок для натяжных потолков, искусственных кож, поливинилхлоридного волокна, пенополивинилхлорида, линолеума, грязезащитных ковриков, обувных пластикатов, мебельной кромки и т. д. Также применяется для производства «виниловых» грампластинок, профилей для изготовления окон и дверей.
+<br>
+Поливинилхлорид также часто используется в одежде и аксессуарах для создания подобного коже материала, отличающегося гладкостью и блеском. Такая одежда широко распространена в альтернативных направлениях моды, среди участников готической субкультуры и сторонников сексуального фетиша.
+<br>
+Поливинилхлорид используют как уплотнитель в бытовых и профессиональных холодильниках, вместо относительно сложных механических затворов. Это дало возможность применить магнитные затворы в виде намагниченных эластичных вставок, помещаемых в баллоне уплотнителя.
+<br>
+Моющиеся обои покрываются плёнкой из ПВХ с лицевой стороны, для того, чтобы сделать их непромокаемыми.
+<br>
+Также находит широкое применение в пиротехнике как источник хлора, необходимого для создания цветных огней.
+<br>
+Широко применяется в рекламе: для оформления витрин магазинов и торговых точек, создания рекламных баннеров и плакатов. Служит сырьём для производства различного рода продукции от грампластинок и плакатов до наклеек. Слоем ПВХ покрыта металлическая сетка восьмиугольника, где проводят соревнования по MMA. Из ПВХ также делают презервативы для людей с аллергией на латекс.
+<br>
+Поливинилхлорид используется в производстве трикотажных рабочих перчаток для нанесения различных рисунков на трикотажную основу. ПВХ-рисунок на перчатке позволяет обеспечить хороший захват при выполнении различных работ, предотвращает процесс скольжения, увеличивает износостойкость продукции.
+<br>
+Поливинилхлорид используется для производства хлорированного поливинилхлорида, обладающего самыми высокими характеристиками огнестойкости и самой высокой температурой воспламенения (482 °С) среди термопластов.
+<br>
+Также поливинилхлорид находит широкое применение в производстве покрытия колёс и роликов, например для скейтбордов. В сравнении с полиуретаном в этом качестве отличается гораздо большей износостойкостью, но меньшей упругостью и, как следствие, — меньшим комфортом езды.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[It is used for electrical insulation of wires and cables, the production of sheets, pipes (mainly chlorinated polyvinyl chloride), films, films for stretch ceilings, artificial leather, polyvinyl chloride fiber, polyvinyl chloride, linoleum, dirt-proof mats, shoe plasticates, furniture edges, etc. Also applies to production of "vinyl" records, profiles for the manufacture of windows and doors.
+<br>
+Polyvinyl chloride is also often used in clothing and accessories to create a skin-like material that is smooth and shiny. Such clothes are widespread in alternative fashion trends, among the participants of the Gothic subculture and supporters of sexual fetish.
+<br>
+Polyvinyl chloride is used as a compactor in household and professional refrigerators, instead of relatively complex mechanical closures. This made it possible to use magnetic closures in the form of magnetized elastic inserts placed in the sealant balloon.
+<br>
+Washable wallpapers are covered with PVC film on the front side in order to make them waterproof.
+<br>
+It is also widely used in pyrotechnics as a source of chlorine needed to create colored lights.
+<br>
+It is widely used in advertising: for window dressing of shops and retail outlets, creating advertising banners and posters. It serves as raw material for the production of various kinds of products from records and posters to stickers. The PVC layer is covered with a metal grid of the octagon where MMA competitions are held. PVC also makes condoms for people who are allergic to latex.
+<br>
+Polyvinyl chloride is used in the manufacture of knitted working gloves for applying various patterns on a knitted base. PVC-drawing on the glove allows you to ensure a good grip when performing various works, prevents the process of sliding, increases the wear resistance of the product.
+<br>
+Polyvinyl chloride is used to produce chlorinated polyvinyl chloride, which has the highest characteristics of fire resistance and the highest ignition temperature (482 ° C) among thermoplastics.
+<br>
+Also, polyvinyl chloride is widely used in the production of coating wheels and rollers, such as skateboards. In comparison with polyurethane, this quality is much more durable, but less elastic and, as a result, less riding comfort.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (поливинилхлорид)](* <- lang_ru;; *);
+		[Pic. (polyvinyl chloride)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/polyvinyl_chloride.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+polyamide
+<- sc_node_not_relation;
+=> nrel_main_idtf:[полиамид](* <- lang_ru;; *);
+=> nrel_main_idtf:[polyamide](* <- lang_en;; *);
+
+<-plastic;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (полиамид)](* <- lang_ru;; *);
+		[Def. (polyamide)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> plastic;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="polyamide">Полиамиды</sc_element></b> — <sc_element sys_idtf="plastic">пластмассы</sc_element> на основе линейных синтетических высокомолекулярных соединений, содержащих в основной цепи амидные группы −CONH−.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="polyamide">Polyamides</sc_element></b> are <sc_element sys_idtf="plastic">plastics</sc_element> based on linear synthetic high-molecular compounds containing amide groups –CONH– in the main chain.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (полиамид, применение*)](* <- lang_ru;; *);
+		[Stat. (polyamide, application*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[В машиностроении полиамиды наиболее часто применяются как конструкционный материал и могут содержать следующие добавки:
+<ul>
+<li>стекловолокно — армирующий материал, увеличивает прочность на разрыв, повышает стойкость к изгибающим нагрузкам, снижает стойкость к ударным нагрузкам;
+<li>углеволокно — легкий армирующий материал, повышает ряд основных прочностных характеристик, значительно увеличивает хрупкость;
+<li>тальк — увеличивает прочность на разрыв и изгиб, снижает коэффициент трения, снижает ударную вязкость;
+<li>графит — повышает теплопроводность, значительно снижает коэффициент трения;
+<li>дисульфид молибдена — снижает коэффициент трения, в отличии от графита хорошо удерживается в массе полиамида;
+<li>масло — применяется при производстве Капролона со сниженным коэффициентом трения.</ul><br>
+Полиамид также может быть использован как антикоррозийный материал для защиты металлов и бетона.
+<br>
+Из полиамида изготавливают шайбы для лабиринтных уплотнений валов.
+<br>
+В медицинской промышленности полиамидные волокна используются для изготовления протезов, хирургических нитей, искусственных кровеносных сосудов. В виде лаков при производстве ортопедических изделий.
+<br>
+В текстильной промышленности из полиамида изготавливают нити, ткани.
+<br>
+В народном хозяйстве полиамид часто используется в качестве плёнки, клея.
+<br>
+В пищевой промышленности часто используется в виде однослойных и многослойных оболочек, например оболочки для колбасных изделий.
+<br>
+В автомобильной промышленности в виде корпусов различных электронных блоков, защитных частей, топливных и гидравлических трубок, ручек и других изделиях.
+<br>
+Также используется в производстве оружия. Магазин и приклад современных автоматов Калашникова изготавливаются из полиамида.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[In mechanical engineering, polyamides are most often used as a construction material and may contain the following additives:
+<ul>
+<li>fiberglass - reinforcing material, increases tensile strength, increases resistance to bending loads, reduces resistance to shock loads;
+<li>carbon fiber - lightweight reinforcing material, increases the number of basic strength characteristics, significantly increases the fragility;
+<li>Talc - increases tensile strength and bending, reduces friction coefficient, reduces impact strength;
+<li>graphite - increases thermal conductivity, significantly reduces the coefficient of friction;
+<li>molybdenum disulfide - reduces the friction coefficient, unlike graphite, it is well retained in the mass of polyamide;
+<li>oil - used in the production of Kaprolon with a reduced coefficient of friction.</ul><br>
+Polyamide can also be used as an anti-corrosion material to protect metals and concrete.
+<br>
+Washers for labyrinth shaft seals are made of polyamide. 
+<br>
+In the medical industry, polyamide fibers are used for the manufacture of prostheses, surgical sutures, artificial blood vessels. In the form of varnishes in the manufacture of orthopedic products.
+<br>
+In the textile industry, polyamide is made from yarn and fabric.
+<br>
+In the national economy polyamide is often used as a film, glue.
+<br>
+In the food industry, it is often used in the form of single-layer and multi-layered casings, for example, sausage casings.
+<br>
+In the automotive industry in the form of cases of various electronic components, protective parts, fuel and hydraulic tubes, pens and other products.
+<br>
+Also used in the manufacture of weapons. The shop and the butt of modern Kalashnikovs are made of polyamide.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (полиамид)](* <- lang_ru;; *);
+		[Pic. (polyamide)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/polyamide.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+polyethylene_terephthalate
+<- sc_node_not_relation;
+=> nrel_main_idtf:[полиэтилентерефталат](* <- lang_ru;; *);
+=> nrel_main_idtf:[polyethylene terephthalate](* <- lang_en;; *);
+
+<-thermoplastic;
+<-polyester;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (полиэтилентерефталат)](* <- lang_ru;; *);
+		[Def. (polyethylene terephthalate)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> thermoplastic;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="polyethylene_terephthalate">Полиэтилентерефталат</sc_element></b> (полиэтиленгликольтерефталат, ПЭТФ, ПЭТ, ПЭТГ, лавсан, майлар) — <sc_element sys_idtf="thermoplastic">термопластик</sc_element>, наиболее распространённый представитель класса <sc_element sys_idtf="polyester">полиэфиров</sc_element>, известен под разными фирменными названиями](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="polyethylene_terephthalate">Polyethylene terephthalate</sc_element></b> (polyethylene glycol terephthalate, PET, PET, PETG, polyester, mylar) - <sc_element sys_idtf="thermoplastic">a thermoplastic</sc_element>, the most common representative of the class of <sc_element sys_idtf="polyester">polyesters</sc_element>, known by different brand names](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (полиэтилентерефталат, применение*)](* <- lang_ru;; *);
+		[Stat. (polyethylene terephthalate, application*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[В России полиэтилентерефталат используют главным образом для изготовления пластиковых ёмкостей различного вида и назначения (в первую очередь, пластиковых бутылок). В меньшей степени применяется для переработки в волокна (см. Полиэфирное волокно), плёнки, а также литьём в различные изделия. В мире ситуация обратная: большая часть ПЭТФ идет на производство нитей и волокон. Многообразно применение полиэтилентерефталата в машиностроении, химической промышленности, пищевом оборудовании, транспортных и конвейерных технологиях, медицинской промышленности, приборостроении и бытовой технике. Для обеспечения лучших механических, физических, электрических свойств ПЭТФ наполняется различными добавками (стекловолокно, дисульфид молибдена, фторопласт).
+<br>
+Полиэтилентерефталат относится к группе алифатически-ароматических полиэфиров, которые используются для производства волокон, пищевых плёнок и пластиков, представляющих одно из важнейших направлений в полимерной индустрии и смежных отраслях. Область применения полиэфиров:
+<ul>
+<li>самое массовое из всех видов химических волокон для бытовых целей (одежда) и техники;
+<li>ёмкости для жидких продуктов питания, особенно ёмкости (бутылки) для различных напитков;
+<li>основной материал для армирования автомобильных шин, транспортерных лент, шлангов высокого давления и других резинотехнических изделий;
+<li>в недавнем прошлом чрезвычайно важный материал для носителей информации — основа всех современных фото-, кино- и рентгеновских плёнок; основа носителей информации в компьютерной технике (гибкие диски — дискеты), основа магнитных лент для аудио-, видео- и другой записывающей техники;
+<li>материал для ответственных видов изделий в различных отраслях машиностроения, электро- и радиотехнике, например, применяется в качестве изолятора в электрических конденсаторах;
+<li>листовой материал, прозрачный для солнечных лучей (в том числе и УФ) и устойчивый к воздействиям окружающей среды, используемый в сельском хозяйстве и строительстве;
+<li>металлизированная плёнка широко используется в качестве декоративного, термоизоляционного, светоотражающего, архитектурно-строительного материала.
+<li>применяется в качестве материала для вкладышей подшипников и втулок скольжения.
+<li>электроизоляционные материалы, в частности в композициях обмоточных изоляционных лент для электрических машин.
+в пищевой индустрии, скребки, направляющие.</ul><br>
+По итогам 2015 года производство полиэтилентерефталата в первичных формах составило 388,8 тыс. тонн, что на 4,8 % больше, чем по итогам 2014 года (370,9 тыс. тонн).](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[In Russia, polyethylene terephthalate is mainly used for the manufacture of plastic containers of various types and purposes (first of all, plastic bottles). To a lesser extent it is used for processing into fibers (see Polyester fiber), films, as well as casting into various products. In the world, the situation is reversed: most PET goes to the production of filaments and fibers. The use of polyethylene terephthalate in engineering, chemical industry, food processing equipment, transportation and conveyor technologies, medical industry, instrument engineering and household appliances is diverse. To ensure the best mechanical, physical, electrical properties of PET, it is filled with various additives (glass fiber, molybdenum disulfide, fluoroplastic).
+<br>
+Polyethylene terephthalate belongs to the group of aliphatic-aromatic polyesters, which are used to produce fibers, food films and plastics, representing one of the most important areas in the polymer industry and related industries. Scope of polyesters:
+<ul>
+<li>the most mass of all types of chemical fibers for domestic purposes (clothing) and equipment;
+<li>containers for liquid foods, especially containers (bottles) for various beverages;
+<li>the main material for the reinforcement of automobile tires, conveyor belts, high pressure hoses and other rubber products;
+<li>in the recent past, extremely important material for information carriers is the basis of all modern photo, film and X-ray films; the basis of information carriers in computer technology (floppy disks - floppy disks), the basis of magnetic tapes for audio, video and other recording equipment;
+<li>material for critical types of products in various branches of mechanical engineering, electrical and radio engineering, for example, is used as an insulator in electrical capacitors;
+<li>Sheet material, transparent to sunlight (including UV) and resistant to environmental influences, used in agriculture and construction;
+<li>metallized film is widely used as a decorative, thermoinsulating, reflective, architectural and construction material.
+<li>It is used as a material for bearing shells and sliding sleeves.
+<li>electrical insulating materials, in particular in the compositions of winding <li>insulating tapes for electrical machines.
+<li>in the food industry, scrapers, guides.</ul><br>
+At the end of 2015, the production of polyethylene terephthalate in primary forms amounted to 388.8 thousand tons, which is 4.8% more than at the end of 2014 (370.9 thousand tons).](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (полиэтилентерефталат)](* <- lang_ru;; *);
+		[Pic. (polyethylene terephthalate)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/polyethylene_terephthalate.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+polyacrylonitrile
+<- sc_node_not_relation;
+=> nrel_main_idtf:[полиакрилонитрил](* <- lang_ru;; *);
+=> nrel_main_idtf:[polyacrylonitrile](* <- lang_en;; *);
+
+<-polymer;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (полиакрилонитрил)](* <- lang_ru;; *);
+		[Def. (polyacrylonitrile)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> polymer;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="polyacrylonitrile">Полиакрилонитрил</sc_element></b> (-CH2-CH(CN)-)n — <sc_element sys_idtf="polymer">полимер</sc_element> акрилонитрила, в промышленности используется полимер с молекулярной массой 30-100 кДа, плотностью 1.14-1.17 г/см<sup>3</sup>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="polyacrylonitrile">Polyacrylonitrile</sc_element></b> (-CH2-CH (CN) -) n is an acrylonitrile <sc_element sys_idtf="polymer">polymer</sc_element>, a polymer with a molecular weight of 30-100 kDa, density 1.14-1.17 g / cmsup>3</sup> is used in industry.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (полиакрилонитрил)](* <- lang_ru;; *);
+		[Stat. (polyacrylonitrile)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Полиакрилонитрил нерастворим в неполярных и малополярных растворителях (углеводороды, спирты), растворим в полярных апротонных растворителях (диметилформамиде, диметилсульфоксиде), водных растворах электролитов с высокой ионной силой (50-70 % растворах роданидов аммония, калия, натрия, бромида лития, хлорида цинка), с гидролизом нитрильной группы — в водных растворах сильных кислот.
+
+Широко применяется в производстве прочных термически стойких волокон, а также в качестве сополимера в производстве дивинилнитрильного каучука.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Polyacrylonitrile is insoluble in non-polar and low-polar solvents (hydrocarbons, alcohols), soluble in polar aprotic solvents (dimethylformamide, dimethyl sulfoxide), aqueous electrolyte solutions with high ionic strength (50-70% solutions of ammonium, potassium, sodium bromide, lithium chloride, zinc chloride) , with the hydrolysis of the nitrile group - in aqueous solutions of strong acids.
+
+It is widely used in the manufacture of durable thermally stable fibers, and also as a copolymer in the production of divinyl nitrile rubber.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (полиакрилонитрил)](* <- lang_ru;; *);
+		[Pic. (polyacrylonitrile)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/polyacrylonitrile.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+polyurethane
+<- sc_node_not_relation;
+=> nrel_main_idtf:[полиуретан](* <- lang_ru;; *);
+=> nrel_main_idtf:[polyurethane](* <- lang_en;; *);
+
+<-polymer;
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (полиуретан)](* <- lang_ru;; *);
+		[Def. (polyurethane)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> polymer;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="polyurethane">Полиуретаны</sc_element></b> — гетероцепные <sc_element sys_idtf="polymer">полимеры</sc_element>, макромолекула которых содержит незамещённую и/или замещённую уретановую группу —N(R)—C(O)O—, где R = Н, алкилы, арил или ацил.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="polyurethane">Polyurethanes</sc_element></b> are hetero-chain <sc_element sys_idtf="polymer">polymers</sc_element> whose macromolecule contains an unsubstituted and / or substituted urethane group —N (R) —C (O) O—, where R = H, alkyls, aryl, or acyl.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (полиуретан, свойства*)](* <- lang_ru;; *);
+		[Stat. (polyurethane, properties*)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Механические свойства полиуретанов изменяются в очень широких пределах и зависят от природы и длины участков цепи между уретановыми группами, структуры цепей (линейная или сетчатая), молекулярной массы и степени кристалличности. Полиуретаны могут быть вязкими жидкостями или являться твёрдыми веществами в аморфном или кристаллическом состоянии. Их свойства варьируют от высокоэластичных мягких резин (твёрдость по Шору от 15(источник не указан 3142 дня) по шкале А) до жёстких пластиков (твёрдость по Шору 75 по шкале D).
+<br>
+Полиуретан относится к конструкционным материалам (КМ), механические свойства полиуретана дают возможность использовать его в деталях машин и механизмов, подвергающихся силовым нагрузкам. К данному виду промышленных материалов предъявляются очень серьёзные требования с точки зрения сопротивляемости воздействию агрессивной внешней среды.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[The mechanical properties of polyurethanes vary widely and depend on the nature and length of the chain sections between the urethane groups, the structure of the chains (linear or net), the molecular weight and the degree of crystallinity. Polyurethanes can be viscous liquids or be solids in an amorphous or crystalline state. Their properties range from highly elastic soft rubber (Shore hardness from 15 (source not specified 3142 days) on A scale) to hard plastics (Shore 75 hardness on D scale) .
+<br>
+Polyurethane refers to structural materials (KM), the mechanical properties of polyurethane make it possible to use it in the parts of machines and mechanisms subjected to power loads. To this type of industrial materials are very serious requirements in terms of resistance to aggressive environments.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (полиуретан)](* <- lang_ru;; *);
+		[Pic. (polyurethane)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/polyurethanes.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+polyimide
+<- sc_node_not_relation;
+=> nrel_main_idtf:[полиимид](* <- lang_ru;; *);
+=> nrel_main_idtf:[polyimide](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (полиимид)](* <- lang_ru;; *);
+		[Def. (polyimide)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> polymer;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="polyimide">Полиимиды</sc_element></b> (иногда сокращенно PI) — класс <sc_element sys_idtf="polymer">полимеров</sc_element>, содержащих в основной цепи имидные циклы, как правило, конденсированные с ароматическими или иными циклами.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="polyimide">Polyimides</sc_element></b> (sometimes abbreviated PI) is a class of <sc_element sys_idtf="polymer">polymers</sc_element> containing imide cycles in the main chain, as a rule, condensed with aromatic or other cycles.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (полиимид)](* <- lang_ru;; *);
+		[Stat. (polyimide)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[По составу их основной цепи, полиимиды могут быть:
+<ul>
+<li>Алифатические (линейные полиимидов),
+<li>Semi-ароматические,
+<li>Ароматические: R 'и R "являются двумя атомами углерода ароматического кольца Это наиболее часто используемые полиимиды из-за их термостабильности.
+</ul><br>
+В зависимости от типа взаимодействия между основными цепями:<ul>
+
+<li>Термопластичный
+<li>Термореактивный](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[According to the composition of their main chain, polyimides can be:<ul>
+
+<li>Aliphatic (linear polyimides),
+<li>Semi-aromatic,
+<li>Aromatic: R 'and R "are two carbon atoms of the aromatic ring. These are the most commonly used polyimides because of their thermal stability.
+<ul><br>
+Depending on the type of interaction between the main circuits:
+<ul>
+<li>Thermoplastic
+<li>Thermoset](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (полиимид)](* <- lang_ru;; *);
+		[Pic. (polyimide)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/polyimide.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+thermoplastic_plastic
+<- sc_node_not_relation;
+=> nrel_main_idtf:[термопластичная пластмасса](* <- lang_ru;; *);
+=> nrel_main_idtf:[thermoplastic plastic](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (термопластичная пластмасса)](* <- lang_ru;; *);
+		[Def. (thermoplastic plastic)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> plastic;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b>Термопластичные пластмассы</b> — при нагреве расплавляются, а при охлаждении возвращаются в исходное состояние.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b>Thermoplastic plastics</b> - melt when heated and return to their original state upon cooling.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);;
+
+thermosetting_plastic
+<- sc_node_not_relation;
+=> nrel_main_idtf:[термореактивная пластмасса](* <- lang_ru;; *);
+=> nrel_main_idtf:[thermosetting plastic](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (термореактивная пластмасса)](* <- lang_ru;; *);
+		[Def. (thermosetting plastic)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> plastic;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b>Термореактивные пластмассы</b> — в начальном состоянии имеют линейную структуру макромолекул, а при некоторой температуре отверждения приобретают сетчатую. После отверждения не могут переходить в вязкотекучее состояние. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b> Thermosetting plastics </ b> - in the initial state have a linear structure of macromolecules, and at a certain curing temperature they acquire a net. After curing, they cannot become viscous.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);;

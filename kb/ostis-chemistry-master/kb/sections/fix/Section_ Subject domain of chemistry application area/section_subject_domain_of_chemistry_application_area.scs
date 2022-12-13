@@ -1,0 +1,16 @@
+section_subject_domain_of_chemistry_application_area
+=> nrel_main_idtf: 
+	[Раздел. Предметная область применения химии]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of chemistry application area]
+	(* <- lang_en;; *);;
+
+section_subject_domain_of_chemistry_application_area = [*^"file://subject_domain_of_chemistry_application_area.scsi"*];;
+
+section_subject_domain_of_chemistry_application_area
+-> rrel_key_sc_element: subject_domain_of_chemistry_application_area;;
+
+
+section_subject_domain_of_chemistry_application_area
+<- not_enough_formed_structure;
+<- atomic_section;;

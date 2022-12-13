@@ -1,0 +1,188 @@
+subst_Ni
+<- sc_node_not_relation;
+=> nrel_main_idtf: [никель (вещество)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [niccolum (substance)] (* <- lang_en;; *);
+<= nrel_inclusion: chemical_substance;
+<- rrel_key_sc_element: definition_of_subst_Ni
+(* 
+	=> nrel_main_idtf: [Опр. (никель (вещество))] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество никель</b> — это пластичный, ковкий, <sc_element sys_idtf = "transition_metal">переходный металл</sc_element> <sc_element sys_idtf = "color_white_silver">серебристо-белого цвета</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> transition_metal;;
+		-> color_white_silver;;
+	*);;
+*);
+
+<- color_white_silver;
+
+=> nrel_being_in_nature: ...
+(*
+	-> gas_nebula;;
+	-> solar_atmosphere;;
+	-> hydrosphere;;
+*);
+
+=> nrel_receiving: ...
+(*
+	-> ...
+	(*
+		<= nrel_decomposition_reaction: ammonium_nitrite; azide;;
+	*);;
+	-> fractional_distillation;;
+*);
+
+=> nrel_applying: ...
+(*
+	-> coolant;;
+	-> cryotherapy;;
+	-> petrochemistry;;
+	-> compound_synthesis;;
+	-> food_additive_E941;;
+*);
+
+<- rrel_key_sc_element: interaction_ni_and_nitric_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (никель (вещество), растворимость*, азотная кислота)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Никель активно растворяется в разбавленной азотной кислоте.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_ni_and_sulfuric_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (никель (вещество), растворимость*, серная кислота)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Никель активно растворяется в горячей концентрированной серной кислоте.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_ni_and_co
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (никель (вещество), растворимость*, оксид углерода, карбонил)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ С оксидом углерода CO никель легко образует летучий и очень ядовитый карбонил Ni(CO)4.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (никель (вещество), твёрдое тело)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_Niccolum.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [8,902] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [1726] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [3005] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [17,61] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [378,6] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [26,1] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_volume: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_cubic_cm_per_mole:...
+		(*
+			=> nrel_main_idtf: [6,6] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,555 @@
+subject_domain_of_physical_chemistry
+  => nrel_main_idtf:
+    [Предметная область физической химии] (* <- lang_ru;;*);
+    [Subject domain of physical chemistry] (* <- lang_en;; *);
+
+  <- subject_domain;
+  -> rrel_maximum_studied_object_class: physical_chemistry;
+  -> rrel_not_maximum_studied_object_class:
+    electrochemistry;
+    colloid_chemistry;
+    crystal_chemistry;
+    laser_chemistry;
+    sonochemistry;
+    chemical_structure;
+    thermochemistry;
+    photochemistry;
+    high_energy_chemistry;
+    nuclear_chemistry;
+    radiochemistry
+    ;;  
+
+physical_chemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [физическая химия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [physical chemistry] (* <- lang_en;; *);
+
+  <= nrel_subdividing:...
+  (*
+    => nrel_main_idtf: [Разбиение на поднауки] (* <- lang_ru;; *);;
+    -> electrochemistry;;
+    -> colloid_chemistry;;
+    -> crystal_chemistry;;
+    -> laser_chemistry;;
+    -> sonochemistry;;
+    -> chemical_structure;;
+    -> thermochemistry;;
+    -> photochemistry;;
+    -> high_energy_chemistry;;
+    -> nuclear_chemistry;;
+    -> radiochemistry;;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (физическая химия)] (* <- lang_ru;; *);
+      [Def. (physical chemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Физическая химия — раздел химии, наука об общих законах строения, структуры и превращения химических химических веществ.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (физическая химия)](* <- lang_ru;; *);
+      [Stat. (physical chemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Исследует химические явления с помощью теоретических и экспериментальных методов физики. Наиболее обширный раздел химии.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (физическая химия)](* <- lang_ru;; *);
+      [Pic. (physical chemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/physical_chemistry.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+crystal_chemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [кристаллохимия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [crystal chemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (кристаллохимия)] (* <- lang_ru;; *);
+      [Def. (crystal chemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Кристаллохимия — раздел химии, наука о кристаллических структурах и их связи с природой вещества.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (кристаллохимия)](* <- lang_ru;; *);
+      [Stat. (crystal chemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Кристаллохимия изучает пространственное расположение и химическую связь атомов в кристаллах, а также зависимость физических и химических свойств кристаллических веществ от их строения.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (кристаллохимия)](* <- lang_ru;; *);
+      [Pic. (crystal chemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/crystal_chemistry.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;
+
+laser_chemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [лазерная химия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [laser chemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (лазерная химия)] (* <- lang_ru;; *);
+      [Def. (laser chemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Лазерная химия — раздел физической химии, изучающий химические процессы, которые возникают под действием лазерного излучения и в которых специфические свойства лазерного излучения играют решающую роль, а также хемолазерные процессы.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (лазерная химия)](* <- lang_ru;; *);
+      [Stat. (laser chemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Лазерное воздействие на химические реакции может быть тепловым и фотохимическим; лазерная офтальмология и микрохирургия, в конечном счете, та же лазерная химия, но для медицинских целей.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (лазерная химия)](* <- lang_ru;; *);
+      [Pic. (laser chemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/laser_chemistry.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+sonochemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [звукохимия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [sonochemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (звукохимия)] (* <- lang_ru;; *);
+      [Def. (sonochemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Звукохимия — раздел химии, который изучает взаимодействие мощных акустических волн и возникающие при этом химические и физико-химические эффекты.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (звукохимия)](* <- lang_ru;; *);
+      [Stat. (sonochemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Звукохимия исследует кинетику и механизм звукохимических реакций, происходящих в объёме звукового поля.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (звукохимия)](* <- lang_ru;; *);
+      [Pic. (sonochemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/sonochemistry.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+chemical_structure
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [структурная химия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [chemical structure] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (структурная химия)] (* <- lang_ru;; *);
+      [Def. (chemical structure)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Структурная химия — раздел, область химии, изучающая связь различных физических и физико-химических свойств различных веществ с их химическим строением и реакционной способностью.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (структурная химия)](* <- lang_ru;; *);
+      [Stat. (chemical structure)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Структурная химия рассматривает не только геометрическое строение молекул; изучению подвергается следующее — длины химических связей, валентные углы, координационные числа, конформации и конфигурации молекул; эффекты их взаимного влияния, ароматичность.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (структурная химия)](* <- lang_ru;; *);
+      [Pic. (chemical structure)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/chemical_structure.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;
+
+thermochemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [термохимия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [thermochemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (термохимия)] (* <- lang_ru;; *);
+      [Def. (thermochemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Термохимия — раздел химической термодинамики, в задачу которого входит определение и изучение тепловых эффектов реакций, а также установление их взаимосвязей с различными физико-химическими параметрами, ещё одной из задач термохимии является измерение теплоёмкостей веществ и установление их теплот фазовых переходов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (термохимия)](* <- lang_ru;; *);
+      [Stat. (thermochemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Основными экспериментальными методами термохимии являются калориметрия, дифференциальный термический анализ, дериватография.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (термохимия)](* <- lang_ru;; *);
+      [Pic. (thermochemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/thermochemistry.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;
+
+photochemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [фотохимия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [photochemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (фотохимия)] (* <- lang_ru;; *);
+      [Def. (photochemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Фотохимия — часть химии высоких энергий, раздел физической химии — изучает химические превращения, протекающие под действием света в диапазоне от дальнего ультрафиолета до инфракрасного излучения.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (фотохимия)](* <- lang_ru;; *);
+      [Stat. (photochemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Фотохимические изменения происходят только под действием света, поглощаемого системой.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (фотохимия)](* <- lang_ru;; *);
+      [Pic. (photochemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/photochemistry.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;
+
+high_energy_chemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [химия высоких энергий] (* <- lang_ru;; *);
+  => nrel_main_idtf: [high energy chemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (химия высоких энергий)] (* <- lang_ru;; *);
+      [Def. (high energy chemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Химия высоких энергий — раздел физической химии, описывающий химические и физико-химические процессы, происходящие в веществе при воздействии нетепловыми энергетическими агентами — ионизирующим излучением, светом, плазмой, ультразвуком, механическим ударом и другими.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (химия высоких энергий)](* <- lang_ru;; *);
+      [Stat. (high energy chemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Химия высоких энергий изучает химические реакции и превращения, происходящие в веществе под воздействием нетепловой энергии.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+
+  /*<- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (химия высоких энергий)](* <- lang_ru;; *);
+      [Pic. (high energy chemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/high_energy_chemistry.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;*/
+
+nuclear_chemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [ядерная химия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [nuclear chemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (ядерная химия)] (* <- lang_ru;; *);
+      [Def. (nuclear chemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Ядерная химия — часть химии высоких энергий, раздел физической химии — изучает ядерные реакции и сопутствующие им физико-химические процессы, устанавливает взаимосвязь между физико-химическими и ядерными свойствами вещества.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (ядерная химия)](* <- lang_ru;; *);
+      [Stat. (nuclear chemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Термин ядерная химия даже в настоящее время не является общепринятым по причине того, что превращение атомных ядер это изначально область ядерной физики, а химия по определению изучает только химические реакции при которых ядра атомов остаются неизменными.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (ядерная химия)](* <- lang_ru;; *);
+      [Pic. (nuclear chemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/nuclear_chemistry.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+radiochemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [радиохимия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [radiochemistry] (* <- lang_en;; *);
+
+  <= nrel_subdividing:...
+  (*
+    => nrel_main_idtf: [Разбиение на поднауки] (* <- lang_ru;; *);;
+    -> general_radiochemistry;;
+    -> chemistry_of_radioactive_elements;;
+    -> chemistry_of_nuclear_transmutes;;
+    -> applied_radiochemistry;;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (радиохимия)] (* <- lang_ru;; *);
+      [Def. (radiochemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Радиохимия — область химии, изучающая химию радиоактивных изотопов, элементов и веществ, законы их физико-химического поведения, химию ядерных превращений и сопутствующих им физико-химических процессов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (радиохимия)](* <- lang_ru;; *);
+      [Stat. (radiochemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Термин ядерная химия даже в настоящее время не является общепринятым по причине того, что превращение атомных ядер это изначально область ядерной физики, а химия по определению изучает только химические реакции при которых ядра атомов остаются неизменными.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (радиохимия)](* <- lang_ru;; *);
+      [Pic. (radiochemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/radiochemistry.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+general_radiochemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [общая радиохимия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [general radiochemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (общая радиохимия)] (* <- lang_ru;; *);
+      [Def. (general radiochemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Общая радиохимия изучает особенности поведения радиоактивных веществ и отдельных радионуклидов в гетерогенных системах.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (общая радиохимия)](* <- lang_ru;; *);
+      [Stat. (general radiochemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Важнейший раздел общей радиохимии — радиоэкология, изучающая состояние и формы радионуклидов в живых и неживых объектах окружающей среды, миграцию радиоактивных атомов, их накопление, распределение радионуклидов по поверхности и в глубь Земли, по водам Мирового океана и т.п.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+
+chemistry_of_radioactive_elements
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [химия радиоактивных элементов] (* <- lang_ru;; *);
+  => nrel_main_idtf: [chemistry of radioactive elements] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (химия радиоактивных элементов)] (* <- lang_ru;; *);
+      [Def. (chemistry of radioactive elements)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Химия радиоактивных элементов изучает химические превращения радиоактивных элементов, исследование свойств которых часто невозможно или затруднено обычными химическими методами.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (химия радиоактивных элементов)](* <- lang_ru;; *);
+      [Stat. (chemistry of radioactive elements)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Из этого раздела выделяют химию позитрония и других водородоподобных систем.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+
+chemistry_of_nuclear_transmutes
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [химия ядерных превращений] (* <- lang_ru;; *);
+  => nrel_main_idtf: [chemistry of nuclear transmutes] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (химия ядерных превращений)] (* <- lang_ru;; *);
+      [Def. (chemistry of nuclear transmutes)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Химия ядерных превращений изучает свойства и поведение атомов, получающихся при ядерных превращениях, в т. ч. горячие атомы. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);;
+
+
+
+
+
+
+
+
+
+applied_radiochemistry
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [прикладная радиохимия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [applied radiochemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (прикладная радиохимия)] (* <- lang_ru;; *);
+      [Def. (applied radiochemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Прикладная радиохимия включает синтез меченых соединений, применение радионуклидов в исследованиях, разработку методов радиоаналитического контроля, проблемы радиоактивной дезактивации, изготовление изотопных генераторов, решает проблемы получения и переработки ядерного горючего, разрабатывает способы подготовки радиоактивных отходов к захоронению и т. п.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);;

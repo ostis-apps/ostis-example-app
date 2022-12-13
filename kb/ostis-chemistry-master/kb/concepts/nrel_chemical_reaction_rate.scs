@@ -1,0 +1,47 @@
+nrel_chemical_reaction_rate
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[скорость химической реакции*]
+	(* <- lang_ru;;	*);
+	[chemical reaction rate*]
+	(* <- lang_en;;	*);;
+
+nrel_chemical_reaction_rate
+<- rrel_key_sc_element:
+	Definition_of_nrel_chemical_reaction_rate
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/nrel_chemical_reaction_rate.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				quantity;
+				substance;
+                unit_of_time
+			};
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Скорость химической реакции — величина всегда положительная, поэтому, если она определяется по исходному веществу (концентрация которого убывает в процессе реакции), то полученное значение умножается на −1.] (* <-lang_ru;; *);;
+		*);;
+*);;
+
+
+Definition_of_nrel_chemical_reaction_rate
+=> nrel_main_idtf:
+	[Опр.(Cкорость химической реакции)]
+	(* <- lang_ru;;	*);;
+
+
+nrel_chemical_reaction_rate
+=>nrel_first_domain: reaction;
+=>nrel_second_domain: unit_of_measurement_of_time;;

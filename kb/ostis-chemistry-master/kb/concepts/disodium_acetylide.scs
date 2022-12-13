@@ -1,0 +1,50 @@
+disodium_acetylide
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[ацетиленид динатрия](*<-lang_ru;;*);
+     [disodium acetylide](*<-lang_en;;*);
+=> nrel_idtf:
+	[карбид натрия]
+	(* <- lang_ru;; *);
+	[sodium carbide]
+	(* <- lang_en;; *);
+	[Na2C2]
+	(* <- lang_en;; *);;
+
+disodium_acetylide
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(ацетиленид динатрия)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b>Ацетиленид динатрия</b> — бинарное неорганическое соединение <sc_element sys_idtf="subst_Na">натрия</sc_element> и <sc_element sys_idtf="subst_C">углерода</sc_element>, ацетиленид с формулой Na<sub>2</sub>C<sub>2</sub>, бесцветные кристаллы, реагирует с водой.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: subst_Na; subst_C;;
+*);
+
+<-rrel_key_sc_element: ... 
+     (*
+	->rrel_key_sc_element: nrel_receiving;;
+        <- statement;;
+	=>nrel_main_idtf: [Утв. (ацетиленид динатрия, получение*)](*<-lang_ru;;*);;
+        <=nrel_sc_text_translation: ... (*->rrel_example: [<ul> <li>Tермическое разложение ацетиленида натрия в вакууме:<br>
+2NaHC<sub>2</sub> -><sup>145°С</sup> Na<sub>2</sub>C<sub>2</sub>+H<sub>2</sub>C<sub>2</sub>↑
+<li>Реакция газообразного натрия с углеродом: <br>
+2Na+2C -><sup>800-900°C</sup> Na<sub>2</sub>C<sub>2</sub>
+ ] (*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+      *);
+
+=> nrel_relative_molar_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_mole:...
+		(*
+			=> nrel_main_idtf: [70] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+<- no_color;
+<- acetylide;
+<- crystall;;

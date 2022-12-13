@@ -1,0 +1,125 @@
+cellulose_triacetate<-sc_node_not_relation;;
+cellulose_triacetate=> nrel_main_idtf:[целлюлоза триацетат](* <- lang_ru;; *);;
+cellulose_triacetate=> nrel_main_idtf:[cellulose_triacetate](* <- lang_en;; *);;
+cellulose_triacetate=> nrel_idtf:[ cellulose triacetate​](* <- lang_en;; *);;
+cellulose_triacetate=> nrel_idtf:[С6Н7O2(OOCCH3)3п](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: cellulose_triacetate;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Целлюлоза триацетат — представляет 
+	собой <b><sc_element sys_idtf="chemical_compound">химическое соединение</b></sc_element> , 
+	полученное из <b><sc_element sys_idtf="cellulose">целлюлозы</b></sc_element>
+	 и источника 
+	<b><sc_element sys_idtf="cellulose_acetate">ацетатных</b></sc_element> эфиров
+	, обычно уксусного ангидрида .]
+	  
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (целлюлоза триацетат)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+			chemical_compound;
+			cellulose_acetate;
+		cellulose
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: cellulose_triacetate;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Триацетат целлюлозы получает из 
+	<b><sc_element sys_idtf="cellulose">целлюлозы</b></sc_element>  путем ацетилирования <b><sc_element sys_idtf="cellulose">целлюлозы</b></sc_element>
+	 с <b><sc_element sys_idtf="acetic_acid">уксусной кислотой</b></sc_element>
+	 и / или уксусным ангидридом .]
+	 
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(целлюлоза триацетат,вещество)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		cellulose;
+		acetic_acid
+		};;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:cellulose_triacetate;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Целлюлоза триацетат — обычно используется для создания волокон и основы пленки  ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(целлюлоза триацетат,используется для создания волокон)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		synthetic_polymer;
+		metal
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:cellulose_triacetate;;
+	<= nrel_sc_text_translation: ...(*->"file://image/cellulose_triacetate_formula.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(целлюлоза триацетат,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:cellulose_triacetate;;
+	<= nrel_sc_text_translation: ...(*->"file://image/cellulose_triacetate_3d.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(целлюлоза триацетат, пример)](*<- lang_ru;;*);;
+*);;
+
+
+thermosetting_polymer=>nrel_inclusion:cellulose_triacetate;;
+hetero_chain_polymer=>nrel_inclusion:cellulose_triacetate;;
+organic_polymer=>nrel_inclusion:cellulose_triacetate;;
+
+
+nrel_relative_molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> cellulose_triacetate;;
+	=> rrel_mol: [15 000]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->cellulose_triacetate;;
+	=> rrel_degree_celsius: 200
+	(*
+		<-number;;
+	*);;
+*);;
+
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->cellulose_triacetate;;
+	=> rrel_gram_per_cubic_cm: 2.7
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+

@@ -1,0 +1,50 @@
+sc_node_not_relation->arsenic_acid;;
+
+arsenic_acid=> nrel_main_idtf: [ортомышьяковая кислота](* <- lang_ru;; *);;
+arsenic_acid=> nrel_main_idtf: [arsenic acid](* <- lang_en;; *);;
+arsenic_acid=> nrel_idtf: [H3AsO4](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: arsenic_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Ортомышьяковая кислота - трехосновная кислота средней силы с химической формулой H3AsO4](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (ортомышьяковая кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		tribasic_acid;
+		chemical_formula
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: arsenic_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Ортомышьяковая кислота и все ее соли ядовиты. ](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(ортомышьяковая кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		salt;
+		poison
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: arsenic_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/ортомышьяковая_кислота.png";;*);;
+	=> nrel_main_idtf: [Рисунок(ортомышьяковая кислота,структурная формула)](*<- lang_ru;;*);;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: arsenic_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/ортомышьяковая_кислота_модель.png";;*);;
+	=> nrel_main_idtf: [Рисунок(ортомышьяковая кислота,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+arsenic_acid -> arsenic_acid_x;;
+tribasic_acid=>nrel_inclusion:arsenic_acid;;
+arsenic_acid<=nrel_inclusion:oxyacid;;
+arsenic_acid<=nrel_inclusion:inorganic_acid;;
+
+arsenic_acid<-rrel_not_maximum_studied_object_class:subject_domain_of_acids;;

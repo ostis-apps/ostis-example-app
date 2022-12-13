@@ -1,0 +1,49 @@
+subst_Ds
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[darmstadtium (substance)](*<- lang_en;;*);
+	[дармштадтий (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Ds (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (дармштадтий (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Дармштадтий (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - искусственно синтезированное <sc_element sys_idtf = "=substance">вещество</sc_element>.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> chemical_substance;;
+
+	*);;
+*);
+
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (дармштадтий (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы дармштадтия:  <sup>267</sup>Ds, <sup>269</sup>Ds, <sup>270</sup>Ds, <sup>271</sup>Ds, <sup>273</sup>Ds, <sup>279</sup>Ds, <sup>281</sup>Ds] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

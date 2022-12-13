@@ -1,0 +1,51 @@
+hetero_chain_polymer
+<-sc_node_not_relation;;
+
+hetero_chain_polymer=> nrel_main_idtf:[гетероцепный полимер](* <- lang_ru;; *);;
+hetero_chain_polymer=> nrel_main_idtf:[hetero-chain polymer](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: hetero_chain_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Гетероцепные полимеры  - в своем строении содержат главные 
+	<b><sc_element sys_idtf="chain">цепи</b></sc_element>, построенные из атомов разных элементов.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (гетероцепный полимер)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		chain
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: hetero_chain_polymer;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[ Гетероцепные полимеры содержат в основной <b><sc_element sys_idtf="chain">цепи</b></sc_element> кроме
+	<b><sc_element sys_idtf="elem_C"> атомов углерода</b></sc_element> 
+	 еще и <b><sc_element sys_idtf="elem_O">атомы кислорода </b></sc_element> 
+	 или <b><sc_element sys_idtf="elem_N">азота </b></sc_element> 
+	 и других элементов. ](*
+	 <-lang_ru;;
+	=>nrel_format:format_html;;
+	 *);;
+	 *);;
+	
+	=> nrel_main_idtf: [Утверждение(гетероцепный полимер)](*<- lang_ru;;*);;
+		=> nrel_using_constants:
+		{
+		elem_N;
+		elem_O;
+		chain;
+		elem_C
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: hetero_chain_polymer;;
+	<= nrel_sc_text_translation: ...(*->"file://image/hetero_chain_polymer.png";;*);;
+	=> nrel_main_idtf: [Рисунок(гетероцепный полимер)](*<- lang_ru;;*);;
+*);;

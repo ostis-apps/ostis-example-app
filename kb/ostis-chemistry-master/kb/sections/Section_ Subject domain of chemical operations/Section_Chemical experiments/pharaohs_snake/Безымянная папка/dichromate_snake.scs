@@ -1,0 +1,240 @@
+dichromate_snake_one
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[дихроматная змея (1 способ)](*<- lang_ru;;*);
+	[dichromate snake (1 way)](*<- lang_en;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (дихроматная змея (1 способ))](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[При разложении дихромата аммония образуются азот N2, водяной пар и зеленый оксид хрома (III) Cr2O3. Реакция протекает с выделением теплоты. В реакции термического разложения нитрата аммония выделяется бесцветный газ – оксид диазота N2O, который уже при слабом нагревании разлагается на кислород O2 и азот N2. Горение сахара дает еще один газ – диоксид углерода CO2 , вдобавок происходит обугливание – выделение углерода. Большой объем газов плюс твердые продукты окисления – вот секрет «змеиного» поведения смеси.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+<= nrel_sc_text_translation: ...
+(* 
+	=> nrel_main_idtf: 		
+		[Видео (дихроматная змея)](*<- lang_ru;;*);;
+	-> rrel_example: [Db8PAsH8vEQ]
+		(*
+			=> nrel_format: format_youtubelink;;
+			<-lang_ru;;
+		*);;
+*);
+
+=> nrel_ingredient: ...
+(*
+	-> potassium_dichromate;;
+	-> potassium_nitrate;;
+	-> sugar;;
+	-> ethanol;;
+*);
+
+=> nrel_equipment: ...
+(*
+	-> mortar;;
+	-> glass_tube_5_8_mm;;
+*);;
+
+dichromate_snake_one_experiment
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[получение дихроматной змеи (1 способ)](*<- lang_ru;;*);;
+
+mix_for_dichromate_snake_one
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[смешивание ингредиентов](*<- lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (дихроматная змея, смешивание ингредиентов)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Смешать 10 г дихромата калия K2Cr2O7, 5 г нитрата калия KNO3 и 10 г сахара (сахарозы) C12H22O11.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;
+
+dichromate_snake_mixture_with_ethanol
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[обработка смеси спиртом (дихроматная змея)](*<- lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (обработка смеси спиртом (дихроматная змея))](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Растереть смесь и увлажнить этиловым спиртом C2H5OH.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;
+
+dichromate_snake_mixture_compression
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[спрессование смеси (дихроматная змея)](*<- lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (спрессование смеси (дихроматная змея))](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Смесь спрессовать в стеклянной трубочке диаметром 5-8 мм.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;
+
+dichromate_snake_burning
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[сжигание (дихроматная змея)](*<- lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (сжигание (дихроматная змея))](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Полученный столбик выталкать и поджечь с одного конца.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;
+
+dichromate_snake_two
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[дихроматная змея (2 способ)](*<- lang_ru;;*);
+	[dichromate snake (2 way)](*<- lang_en;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (дихроматная змея)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[При разложении дихромата аммония образуются азот N2, водяной пар и зеленый оксид хрома (III) Cr2O3. Реакция протекает с выделением теплоты. В реакции термического разложения нитрата аммония выделяется бесцветный газ – оксид диазота N2O, который уже при слабом нагревании разлагается на кислород O2 и азот N2. Горение сахара дает еще один газ – диоксид углерода CO2 , вдобавок происходит обугливание – выделение углерода. Большой объем газов плюс твердые продукты окисления – вот секрет «змеиного» поведения смеси.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+<= nrel_sc_text_translation: ...
+(* 
+	=> nrel_main_idtf: 		
+		[Видео (дихроматная змея)](*<- lang_ru;;*);;
+	-> rrel_example: [Db8PAsH8vEQ]
+		(*
+			=> nrel_format: format_youtubelink;;
+			<-lang_ru;;
+		*);;
+*);
+
+=> nrel_ingredient: ...
+(*
+	-> ammonium_dichromate;;
+	-> ammonium_nitrate;;
+	-> powdered_sugar;;
+	-> water;;
+*);
+
+=> nrel_equipment: ...
+(*
+	-> glass_beaker;;
+	-> glass_rod;;
+*);;
+
+dichromate_snake_two_experiment
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[получение дихроматной змеи (2 способ)](*<- lang_ru;;*);;
+
+mix_for_dichromate_snake_two
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[смешивание ингредиентов для дихроматной змеи (2 способ)](*<- lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (дихроматная змея, смешивание ингредиентов)](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Смешать 1 г дихромата аммония (NH4)2Cr2O7, 2 г нитрата аммония NH4NO3 и 1 г сахарной пудры.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;
+
+dichromate_snake_mixture_with_water
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[обработка смеси водой (дихроматная змея)](*<- lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (обработка смеси водой (дихроматная змея))](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Смочить смесь водой, вылепить из нее палочку и высушить на воздухе.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;
+
+dichromate_snake_two_burning
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[сжигание (дихроматная змея 2)](*<- lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (сжигание (дихроматная змея 2))](*<-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Поджечь палочку.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;

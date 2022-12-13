@@ -1,0 +1,67 @@
+nrel_melting_temperature
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_main_idtf:
+	[температура плавления*](* <- lang_ru;;	*);
+	[melting_temperature*](* <- lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_nrel_melting_temperature
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Температура плавления*)](* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "nrel_melting_temperature">Температура плавления</sc_element></b> - температура, при которой <sc_element sys_idtf  = "substance">вещество</sc_element> переходит из <sc_element sys_idtf  = "solid">твердого</sc_element> состояния в <sc_element sys_idtf  = "liquid">жидкое</sc_element>.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->solid;;
+				->liquid;;
+			*);;	
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Каждое вещество обладает собственной температурой плавления.] (* <-lang_ru;; *);;
+		*);;
+*);
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Диапазон температур плавления для известных веществ простирается в диапазоне от -269°С для гелия до 3727°С для углерода.] (* <-lang_ru;; *);;
+		*);;
+*);
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Каждое вещество в смеси сохраняет свою собственную температуру плавления.] (* <-lang_ru;; *);;
+		*);;
+*);
+=>nrel_first_domain: chemical_substance;
+=>nrel_second_domain: value;;

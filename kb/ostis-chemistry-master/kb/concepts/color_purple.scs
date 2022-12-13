@@ -1,0 +1,19 @@
+color_purple
+<- sc_node_not_relation;
+=> nrel_main_idtf:[фиолетовый цвет](* <- lang_ru;; *);
+=> nrel_main_idtf:[purple](* <- lang_en;; *);
+=> nrel_idtf:[purple color](* <- lang_en;; *);
+
+<-color;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (фиолетовый цвет)](* <- lang_ru;; *);
+		[Pic. (purple)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/purple.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;

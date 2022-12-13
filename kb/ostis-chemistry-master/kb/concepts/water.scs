@@ -1,0 +1,218 @@
+water
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[water](*<- lang_en;;*);
+	[вода](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[H2O](*<- lang_en;;*);
+	[оксид водорода](*<- lang_ru;;*);
+	[дигидрогена монооксид](*<- lang_ru;;*);
+	[дигидромонооксид](*<- lang_ru;;*);
+	[оксидан](*<- lang_ru;;*);
+	[гидроксильная кислота](*<- lang_ru;;*);
+	[гидроксид водорода](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+		[Опр. (вода)](*<- lang_ru;;*);
+		[Def. (water)](*<- lang_en;;*);;
+	
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<b>Вода</b> — <sc_element sys_idtf = "binary_compound">бинарное химическое соединение</sc_element> с <sc_element sys_idtf = "chemical_formula">химической формулой</sc_element> Н2O.]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);
+			[<b>Water</b> is a <sc_element sys_idtf = "binary_compound">binary chemical compound</sc_element> with the <sc_element sys_idtf = "chemical_formula">chemical formula</sc_element> Н2O.]
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> binary_compound;;
+		-> chemical_formula;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	-> rrel_key_sc_element: molecule; atom; elem_H; elem_O;;
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (вода, состав*, атом кислорода, атом водорода)](*<- lang_ru;;*);
+		[Expl. (water, consist*, oxygen atom, hydrogen atom)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<sc_element sys_idtf = "molecule">Молекула</sc_element> <sc_element sys_idtf = "water">воды</sc_element> состоит из двух <sc_element sys_idtf = "atom">атомов</sc_element> <sc_element sys_idtf = "elem_H">водорода</sc_element> и одного — <sc_element sys_idtf = "elem_O">кислорода</sc_element>, которые соединены между собой <sc_element sys_idtf = "nrel_covalent_bond">ковалентной связью</sc_element>.</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);
+			[The <sc_element sys_idtf = "water">water</sc_element> <sc_element sys_idtf = "molecule">molecule</sc_element> consists of two <sc_element sys_idtf = "elem_H">hydrogen</sc_element> <sc_element sys_idtf = "atom">atoms</sc_element> and one <sc_element sys_idtf = "elem_O">oxygen</sc_element>, which are connected by a <sc_element sys_idtf = "nrel_covalent_bond">covalent bond</sc_element>.]
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+*);
+
+<= nrel_inclusion:solvent;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: 
+		[Рис. (вода, атом)] (* <- lang_ru;; *);
+		[Pic. (water, atom)] (* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://image/water.png"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<= nrel_being_in_nature: ...
+(*
+	=> nrel_main_idtf: 
+		[вода в природе] (* <- lang_ru;; *);
+		[water in nature] (* <- lang_en;; *);;
+	-> ocean;;
+	-> sea;;
+	-> lake;;
+	-> river;;
+	-> ice;;
+	-> groundwater;;
+	-> precipitation;;
+*);
+
+<- ampholyte;
+<- gas;
+<- liquid;
+<- solid;
+
+=> nrel_isotopic_modification:...
+(*
+	-> light_water;;
+	-> deuterium_water;;
+	-> tritium_water;;
+	-> tritium_deuterium_water;;
+	-> tritium_protict_water;;
+	-> deuterium_protie_water;;
+*);
+
+<= nrel_receiving:...
+(*
+	-> reaction;;
+	-> neutralization_reaction;;
+	-> reducing_reaction;;
+*);
+
+<= nrel_applying:...
+(*
+	-> solvent;;
+	-> agriculture;;
+	-> moderator;;
+*);
+
+<= nrel_subdividing: ...
+(*
+    <- explanation;;
+    => nrel_main_idtf:
+    	[Разбиение по содержанию катионов кальция и магния](*<-lang_ru;; *);
+    	[Subdividing by content of calcium and magnesium cations](*<-lang_en;; *);;
+    -> soft_water;;
+    -> hard_water;;
+*);
+
+=> nrel_biological_significance: ...
+(*
+	-> viability;;
+	-> solvent;;
+*);
+
+<- no_color;
+
+<- rrel_key_sc_element: interaction_water_and_active_metal
+(*
+	-> rrel_key_sc_element: active_metal;;
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (вода, взаимодействие*, активный металл)](*<- lang_ru;;*);
+		[Expl. (water, interaction*, active metal)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[ Вода реагирует при комнатной температуре с активными металлами. ] (*<- lang_ru;;*);
+			[ Water interacts at room temperature with active metals.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_water_and_fluorine
+(*
+	-> rrel_key_sc_element: subst_F;;
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (вода, взаимодействие*, фтор)](*<- lang_ru;;*);
+		[Expl. (water, interaction*, fluorine)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[ Вода реагирует при комнатной температуре со фтором. ] (*<- lang_ru;;*);
+			[ Water interacts at room temperature with fluorine.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_water_and_salt
+(*
+	-> rrel_key_sc_element: salt;hydrate;;
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (вода, взаимодействие*, соль, гидрат)](*<- lang_ru;;*);
+		[Expl. (water, interaction*, salt, hydrate)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[ Вода реагирует при комнатной температуре с солями, образуя гидраты. ] (*<- lang_ru;;*);
+			[ Water interacts at room temperature with active salt, forming hydrates.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_water_and_ferrum
+(*
+	-> rrel_key_sc_element: subst_Fe;;
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (вода, взаимодействие*, железо)](*<- lang_ru;;*);
+		[Expl. (water, interaction*, iron)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[ Вода реагирует при нагревании с железом. ] (*<- lang_ru;;*);
+			[ Water interacts with heating with iron.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_water_and_magnesium
+(*
+	-> rrel_key_sc_element: subst_Mg;;
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (вода, взаимодействие*, магний)](*<- lang_ru;;*);
+		[Expl. (water, interaction*, magnesium)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[ Вода реагирует при нагревании с магнием. ] (*<- lang_ru;;*);
+			[ Water interacts with heating with magnesium.] (*<- lang_en;;*);;
+	*);;
+*);;

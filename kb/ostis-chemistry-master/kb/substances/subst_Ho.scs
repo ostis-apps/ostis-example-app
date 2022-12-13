@@ -1,0 +1,76 @@
+subst_Ho
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[holmium (substance)](*<- lang_en;;*);
+	[гольмий (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Ho (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (гольмий (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Гольмий (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - сравнительно мягкий, ковкий, глянцевитый серебристый <sc_element sys_idtf = "metal">металл</sc_element>.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> metal;;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гольмий (вещество), мягкий, ковкий, глянцевитый серебристый металл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Holmium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1474 (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:2700 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (гольмий (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы гольмия:  <sup>141</sup>Ho, <sup>142</sup>Ho, <sup>143</sup>Ho, <sup>144</sup>Ho, <sup>145</sup>Ho, <sup>146</sup>Ho, <sup>147</sup>Ho, <sup>148</sup>Ho, <sup>149</sup>Ho, <sup>150</sup>Ho, <sup>151</sup>Ho, <sup>152</sup>Ho, <sup>153</sup>Ho, <sup>154</sup>Ho, <sup>155</sup>Ho, <sup>156</sup>Ho, <sup>157</sup>Ho, <sup>158</sup>Ho, <sup>159</sup>Ho, <sup>160</sup>Ho, <sup>161</sup>Ho, <sup>162</sup>Ho, <sup>163</sup>Ho, <sup>164</sup>Ho, <sup>165</sup>Ho, <sup>166</sup>Ho, <sup>167</sup>Ho, <sup>168</sup>Ho, <sup>169</sup>Ho, <sup>170</sup>Ho, <sup>171</sup>Ho, <sup>172</sup>Ho, <sup>173</sup>Ho, <sup>174</sup>Ho, <sup>175</sup>Ho, <sup>176</sup>Ho, <sup>177</sup>Ho, <sup>178</sup>Ho, <sup>179</sup>Ho, <sup>180</sup>Ho, <sup>181</sup>Ho, <sup>182</sup>Ho, <sup>183</sup>Ho, <sup>184</sup>Ho, <sup>185</sup>Ho] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

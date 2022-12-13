@@ -1,0 +1,11 @@
+{
+     "sources": [
+        
+        "src/pencil-common.js",
+        "src/pencil-paintPanel.js"
+    ],
+
+    "component": "src/pencil-component.js",
+
+    "target": "static/components/js/chemistry_components/pencil.js"
+}

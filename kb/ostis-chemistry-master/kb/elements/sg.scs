@@ -1,0 +1,76 @@
+elem_Sg
+=> nrel_main_idtf: [атом сиборгия] (* <- lang_ru;; *);
+=> nrel_idtf: [Sg] (* <- lang_en;; *);
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+	Definition_of_seaborgium
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/sg.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
+	*);
+
+<- group_six;
+<- period_seven;
+=> nrel_periodic_number: one_hundred_and_six;
+
+<- metal;
+
+<= nrel_inclusion: oxidation_state_plus_six;oxidation_state_plus_four; 
+<= nrel_inclusion: valence_six;valence_four;
+
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Sg;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_Sg
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (сиборгий, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Sg 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 4s<sup>2</sup>p<sup>6</sup>d<sup>10</sup>f<sup>14</sup> 5s<sup>2</sup>p<sup>6</sup>d<sup>10</sup>f<sup>14</sup> 6s<sup>2</sup>p<sup>6</sup>d<sup>3</sup> 7s<sup>2</sup>] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис.(атом сиборгия)] (* <- lang_ru;;	*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/seaborgium.jpg";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;; => nrel_format: format_html;;*);;
+
+		*);;
+	*);;
+
+
+Definition_of_seaborgium
+=> nrel_main_idtf:
+	[Опр. (сиборгий)]
+	(* <- lang_ru;;	*);;
+
+atomic_mass_Sg <- number;
+=> nrel_main_idtf:[266](*<-lang_ru;; <- lang_en;;*);;

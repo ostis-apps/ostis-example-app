@@ -1,0 +1,51 @@
+electronic_layer
+=> nrel_main_idtf:
+	[электронный слой](* <- lang_ru;; *);
+	[electronic layer](* <- lang_en;; *);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(электронный слой)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Электронный слой — это совокупность электронов, находящихся на одном энергетическом уровне.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->electron;;
+		->energy_level;;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+
+	=>nrel_main_idtf: [Утв.(электронный слой, периодическая система)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Число электронных слоёв равно номеру периода в периодической системе.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: periodic_system;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(электронный слой, электрон)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://html/electronic_layer.html"
+		(*
+			 <-lang_ru;;
+			=>nrel_format: format_html;; 
+		*);;
+	*);;
+	-> rrel_key_sc_element: electron;;
+*);;

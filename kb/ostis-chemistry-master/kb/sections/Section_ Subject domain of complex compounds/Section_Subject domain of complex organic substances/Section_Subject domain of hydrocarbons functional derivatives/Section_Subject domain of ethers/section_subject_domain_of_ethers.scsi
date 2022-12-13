@@ -1,0 +1,88 @@
+subject_domain_of_ethers
+	<-subject_domain;
+	=>nrel_main_idtf:[Предметная область эфиров.](*<-lang_ru;;*);
+	=>nrel_main_idtf:[Subject domain of ethers.](*<-lang_en;;*);
+	->rrel_maximum_studied_object_class:ether;
+	=>nrel_studied_relations:
+		nrel_hydrocarbon_radical_of_ether;;
+
+ether
+<-sc_node_not_relation;
+=>nrel_main_idtf:[эфир](*<-lang_ru;;*);
+=>nrel_main_idtf:[ether](*<-lang_en;;*);
+<=nrel_inclusion:chemical_compound;
+<=nrel_decomposition:...
+(*
+	=>nrel_main_idtf:[Разбиение по признаку сложности](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Decomposition on basis of complexity](*<-lang_en;;*);;
+	->simple_ether;;
+	->ester;;
+*);
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. (эфир)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (ether)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->class;;
+		->chemical_compound;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[<sc_element sys_idrf="ether">Эфир</sc_element> - совокупное название нескольких <sc_element sys_idtf="class">классов</sc_element> <sc_element sys_idtf="chemical_compound">химических соединений</sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[<sc_element sys_idrf ="ether">Ether</sc_element> is the aggregate name of several <sc_element sys_idtf = "class">classes</sc_element> <sc_element sys_idtf = "chemical_compound">chemical compounds</sc_element>.] (*<-lang_en;; =>nrel_format:format_html;; *) ;;
+	*);;
+*);;
+
+nrel_hydrocarbon_radical_of_ether
+<-sc_node_norole_relation;
+=>nrel_main_idtf:[углеводородный радикал эфира*](*<-lang_ru;;*);
+=>nrel_main_idtf:[hydrocarbon radical of ether*](*<-lang_en;;*);
+<-binary_relation;
+<-oriented_relation;
+<-antireflexive_relation;
+<-antisymmetric_relation;
+<-antitransitive_relation;
+=>nrel_first_domain:ether;
+=>nrel_second_domain:hydrocarbon_radical;
+=>nrel_definitional_domain:...
+(*
+	<=nrel_combination:...
+	(*
+		->ether;;
+		->hydrocarbon_radical;;
+	*);;
+*);;
+
+sc_definition->...
+(*
+	->rrel_key_sc_element:nrel_hydrocarbon_radical_of_ether;;
+	=>nrel_main_idtf:[Опр. (углеводородный радикал эфира*)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (hydrocarbon radical of ether*)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->binary_relation;;
+		->oriented_relation;;
+		->ether;;
+		->hydrocarbon_radical;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[
+			<sc_element sys_idtf="nrel_hydrocarbon_radical_of_ether">Углеводородный радикал эфира*</sc_element> - 
+			<sc_element sys_idtf="binary_relation">бинарное</sc_element>
+			<sc_element sys_idtf="oriented_relation">ориентированное отношение</sc_element>, указывающее
+			<sc_element sys_idtf="hydrocarbon_radical">углеводороный радикал</sc_element> для
+			<sc_element sys_idtf="ether">эфира</sc_element>.
+			](*<-lang_ru;;=>nrel_format:format_html;;*);;
+
+		->rrel_example:[
+			<sc_element sys_idtf="nrel_hydrocarbon_radical_of_ether">hydrocarbon radical of ether*</sc_element> is 
+			<sc_element sys_idtf="binary_relation">binary</sc_element>
+			<sc_element sys_idtf="oriented_relation">oriented relation</sc_element> that indicates
+			<sc_element sys_idtf="hydrocarbon_radical">hydrocarbon radical</sc_element> for
+			<sc_element sys_idtf="ether">ether</sc_element>.
+			](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;

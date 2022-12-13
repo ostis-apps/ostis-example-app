@@ -1,0 +1,23 @@
+atomic_mass_unit
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[атомная единица массы](*<-lang_ru;;*);
+     [atomic mass unit](*<-lang_en;;*);;
+
+atomic_mass_unit
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(атомная единица массы)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b>А́томная едини́ца ма́ссы</b> (русское обозначение: а.е.м.; международное: u), она же <b>дальто́н</b> (русское обозначение: Да, международное: Da), она же <b>углеродная единица</b> — внесистемная единица массы, применяемая для масс <sc_element sys_idtf="molecule">молекул</sc_element>, <sc_element sys_idtf="atom">атомов</sc_element>, <sc_element sys_idtf="nrel_nucleus">атомных ядер</sc_element> и элементарных частиц. Атомная единица массы определяется как 1⁄12 массы свободного покоящегося атома углерода 12C, находящегося в основном состоянии.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: molecule; atom; nrel_nucleus;;
+*);
+
+<-rrel_key_sc_element: ...
+(*
+	->statement;;
+	<-concept_assertion_of_the_defining_type;;
+	<-rrel_theorem:subject_domain_of_chemistry (*<-concept_subject_domain;;*);;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: "file://html/atomic_mass_unit.html"(*<-lang_ru;;*);; *);;
+	=>nrel_main_idtf: [Утв. (атомная единица массы, числовое значение*)](*<-lang_ru;;*);; 
+*);;

@@ -1,0 +1,47 @@
+electrolyte
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[электролит](*<-lang_ru;;*);
+     [electrolyte](*<-lang_en;;*);;
+
+electrolyte
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(электролит)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b>Электроли́т</b> — вещество, которое проводит электрический ток вследствие диссоциации на <sc_element sys_idtf="ion">ионы</sc_element>, что происходит в растворах и расплавах, или движения ионов в кристаллических решётках твёрдых электролитов.] (* <- lang_ru;; =>nrel_format: format_html;; *);; *);;
+	<=nrel_using_constants: ion;;
+*);
+
+<-rrel_key_sc_element: ... 
+     (*
+        ->rrel_key_sc_element: acid; salt; base; crystal;;
+        <- statement;;
+		<-concept_assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_sets (*<-concept_subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (*->rrel_example: [Примерами электролитов могут служить <sc_element sys_idtf="acid">кислоты</sc_element>, <sc_element sys_idtf="salt">соли</sc_element> и <sc_element sys_idtf="base">основания</sc_element> и некоторые <sc_element sys_idtf="crystal">кристаллы</sc_element> (например, иодид серебра, диоксид циркония). Электролиты — проводники второго рода, вещества, электропроводность которых обусловлена подвижностью положительно или отрицательно заряженных ионов.](*<-lang_ru;; =>nrel_format: format_html;;*);; *);;
+        => nrel_main_idtf: [Утв. (электролит, аксид, кислота, соль, основание, кристалл)] (* <- lang_ru;; *);;
+      *);
+
+<-rrel_key_sc_element: ... 
+     (*
+        ->rrel_key_sc_element: nrel_electric_dissociation;;
+        <- statement;;
+		<-concept_assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_sets (*<-concept_subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (*->rrel_example: [Процесс распада молекул в растворе или расплаве электролита на ионы называется <sc_element sys_idtf="nrel_electric_dissociation">электролитической диссоциацией</sc_element>.
+ Одновременно в электролите протекают процессы ассоциации ионов в молекулы.
+ При неизменных внешних условиях (температура, концентрация и др.) устанавливается динамическое равновесие
+ между распадами и ассоциациями. Поэтому в электролитах диссоциирована определённая доля молекул вещества.
+ Для количественной характеристики электролитической диссоциации было введено понятие степени диссоциации.](*<-lang_ru;; =>nrel_format: format_html;;*);; *);;
+        => nrel_main_idtf: [Утв. (электролит, электролитическая диссоциация*)] (* <- lang_ru;; *);;
+      *);
+
+<-rrel_key_sc_element: ... 
+     (*
+        <- statement;;
+		<-concept_assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_sets (*<-concept_subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (*->rrel_example: "file://html/electrolyte.html" (*<-lang_ru;; *);; *);;
+        => nrel_main_idtf: [Утв. (электролит, классификация*)] (* <- lang_ru;; *);;
+      *);;

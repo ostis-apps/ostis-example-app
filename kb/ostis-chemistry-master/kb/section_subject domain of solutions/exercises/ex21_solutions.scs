@@ -1,0 +1,25 @@
+ex21_solutions
+<- exercises_solutions;
+
+-> rrel_key_sc_element: water; iodide; nrel_mass; subst_Ba; nrel_mass_fraction; crystalline_hydrate; solution; nrel_volume_fraction;
+
+=> nrel_next_exercise: ex22_solutions;
+
+
+=> nrel_main_idtf:
+	[Упражнение 21. Раздел. Предметная область растворов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 21. Section. Subject domain of solutions]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex21_solutions_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex21_solutions_en.html" (* <-lang_en;; *);;
+	*);;

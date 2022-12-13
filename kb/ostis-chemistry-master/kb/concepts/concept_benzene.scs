@@ -1,0 +1,149 @@
+sc_node_not_relation -> benzene;;
+benzene => nrel_main_idtf:
+[бензол](*<-lang_ru;;*);
+     [benzene](*<-lang_en;;*);;
+
+
+benzene <-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(бензол)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*-> rrel_example: [<b>Бензо́л (C6H6, PhH)</b> — органическое химическое соединение, бесцветная жидкость со специфическим сладковатым запахом. ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: organic_compound; liquid;;
+*);;
+
+
+benzene <- rrel_key_sc_element: ... 
+     (*
+        ->rrel_key_sc_element: catalyst; subst_Cl; nrel_interaction;;
+        ->statement;;
+        <-assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_sets (*<-subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (* -> rrel_example: [Взаимодействие с <sc_element sys_idtf:"subst_Cl">хлором</sc_element> в присутствии <sc_element sys_idtf:"catalyst">катализатора</sc_element> с образованием хлорбензола (реакция электрофильного замещения)](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+        =>nrel_main_idtf: [Утв. (бензол, взаимодействие*, хлор(вещество), катализатор)](*<-lang_ru;;*);;
+     *);
+... 
+    (*
+       ->rrel_key_sc_element: nrel_interaction; subst_Cl;;
+        ->statement;;
+		<-assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_sets (*<-subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (* -> rrel_example: [В отсутствии катализатора при нагревании или освещении идёт радикальная реакция присоединения с образованием смесиизомеров гексалохлорциклогексана ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+        =>nrel_main_idtf: [Утв. (бензол, взаимодействие*, хлор(вещество))](*<-lang_ru;;*);;
+     *);
+... 
+    (* 
+        ->rrel_key_sc_element: nrel_interaction; subst_Br; oleum;;
+        ->statement;;
+		<-assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_sets (*<-subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (*-> rrel_example: [При взаиможействии бензола с бромом в растворе олеума образуется гексабромбензол ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+        =>nrel_main_idtf: [Утв. (бензол, взаимодействие*, бром(вещество), олеум(раствор))](*<-lang_ru;;*);;  
+      *);
+... 
+      (*
+        ->rrel_key_sc_element: nrel_interaction; galogenirovannami_alkan;;
+        ->statement;;
+		<-assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_sets (*<-subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (* -> rrel_example: [Взаимодействие с галогенпроизводными алканов (алкилирование бензола, реакция Фриделя-Крафтса) собразованием алкибензолов ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+        =>nrel_main_idtf: [Утв. (бензол, взаимодействие*, галогенпроизводный алкан)](*<-lang_ru;;*);;  
+      *);
+... 
+     (*
+        ->rrel_key_sc_element: nrel_recovery; catalyst; hydrogen;;
+        ->statement;;
+		<-assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_sets (*<-subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (* -> rrel_example: [Восстановление бензола водородом (каталитическое гидрирование) ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+        =>nrel_main_idtf: [Утв. (бензол, восстановление*, водород(вещество), катализатор)](*<-lang_ru;;*);;  
+      *);  
+... 
+     (*
+        ->rrel_key_sc_element: nrel_interaction; anhydride;;
+        ->statement;;
+		<-assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_sets (*<-subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (* -> rrel_example: [Реакция ацитирования по Фриделю-Крафтсу, бензола ангидридами, галогенангидридами карбонавых кислот приводит к образованию ароматических и жирноароматических кетонов](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+        =>nrel_main_idtf: [Утв. (бензол, взаимодействие*, ангидрид)](*<-lang_ru;;*);;  
+      *);  
+... 
+     (*
+        ->rrel_key_sc_element: nrel_interaction; catalyst; carbon_monoxide; hydrogen_chloride;;
+        ->statement;;
+		<-assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_sets (*<-subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (* -> rrel_example: [Реакция формирования - взаимодействие бензола со смесью СО и HCl, протекает при высоком давлении и под действием катализатора, продуктом реакции является бензальдегид](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+        =>nrel_main_idtf: [Утв. (бензол, взаимодействие*, угарный газ, хлороводород, катализатор)](*<-lang_ru;;*);;  
+      *);  
+... 
+      (*
+        ->rrel_key_sc_element: nrel_interaction; nitric_acid;;
+        ->statement;;
+		<-assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_sets (*<-subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (* -> rrel_example: [Реакция нитрования (электрофильное замещение) ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+        =>nrel_main_idtf: [Утв. (бензол, взаимодействие*, азотная кислота)](*<-lang_ru;;*);;  
+      *);
+... 
+      (*
+        ->rrel_key_sc_element: nrel_interaction; sulfuric_acid;;
+        ->statement;;
+		<-assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_sets (*<-subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (* -> rrel_example: [Реакция сульфирования (электрофильное замещение)) ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+        =>nrel_main_idtf: [Утв. (бензол, взаимодействие*, серная кислота)](*<-lang_ru;;*);;  
+      *);
+... 
+      (*
+        ->rrel_key_sc_element: nrel_oxidation: catalyst;;
+        ->statement;;
+		<-assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_sets (*<-subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (* -> rrel_example: [Бензол, вследствие своего строения, очень устойчив к окислению, на него не действует, например, раствор перманганата калия. Однако окисление до малеинового ангидрида можно провести при помощи катализатора оксида ванадия V ](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+        =>nrel_main_idtf: [Утв. (бензол, окисление*, катализатор)](*<-lang_ru;;*);;  
+      *);
+... 
+      (*
+        ->rrel_key_sc_element: nrel_application;;
+        ->statement;;
+		<-assertion_of_the_defining_type;;
+		<-rrel_theorem:subject_domain_of_sets (*<-subject_domain;;*);;
+        <=nrel_sc_text_translation: ... (* -> rrel_example: [Значительную часть получаемого бензола используют для синтеза других продуктов:
+
+    около 50 % бензола превращают в этилбензол (алкилирование бензола этиленом);
+
+    около 25 % бензола превращают в кумол (алкилирование бензола пропиленом);
+
+    приблизительно 10—15 % бензола гидрируют в циклогексан;
+
+    около 10 % бензола расходуют на производство нитробензола;
+
+    2—3 % бензола превращают в линейные алкилбензолы;
+
+    приблизительно 1 % бензола используется для синтеза хлорбензола.
+
+
+
+В существенно меньших количествах бензол используют для синтеза некоторых других соединений. Изредка и в крайних случаях, ввиду высокой токсичности, бензол используют в качестве растворителя.
+
+
+
+Кроме того, бензол входит в состав бензина. В 1920-х — 1930-х годах, бензол добавлялиrude в прямогонный бензин для повышения его октанового числа, но к 1940-м годам такие смеси не выдержали конкуренции с высокооктановыми бензинами. Ввиду высокой токсичности содержание бензола в топливе ограничено современными стандартами введением до 1 %. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+        =>nrel_main_idtf: [Утв. (бензол, применение*)](*<-lang_ru;;*);;  
+      *);;
+
+*);;
+
+benzene <- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (бензол)] (* <- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://image//Benzene.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

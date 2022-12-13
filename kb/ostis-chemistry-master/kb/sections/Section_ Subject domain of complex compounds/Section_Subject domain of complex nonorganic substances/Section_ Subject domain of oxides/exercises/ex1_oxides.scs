@@ -1,0 +1,24 @@
+ex1_oxides
+<- exercises_oxides;
+
+-> rrel_key_sc_element: oxide; zinc_oxide; copper_oxide_II;
+
+=> nrel_next: ex2_oxides;
+
+=> nrel_main_idtf:
+	[Упражнение 1. Раздел. Предметная область оксидов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 1. Section. Subject domain of oxides]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex1_oxides_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex1_oxides_en.html" (* <-lang_en;; *);;
+	*);;

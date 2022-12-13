@@ -1,0 +1,39 @@
+anode
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[анод](*<-lang_ru;;*);
+     [anode](*<-lang_en;;*);;
+
+anode
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(анод)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: [<b>Ано́д</b> (др.-греч. ἄνοδος — движение вверх) — <sc_element sys_idtf="electrode">электрод</sc_element> некоторого прибора, присоединённый к положительному полюсу источника питания.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	<=nrel_using_constants: electrode;;
+*);
+
+<-rrel_key_sc_element: ...
+(*
+	 ->rrel_key_sc_element: electrochemistry; electrode; nrel_oxidation_reduction_reaction;;
+	->statement;;
+	<-concept_assertion_of_the_defining_type;;
+	<-rrel_theorem:subject_domain_of_chemistry (*<-concept_subject_domain;;*);;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [При процессах <sc_element sys_idtf="nrel_electrolysis">электролиза</sc_element> (получение элементов из солевых растворов и расплавов под действием постоянного электрического тока), анод — электрически положительный полюс, на нём происходят <sc_element sys_idtf="nrel_oxidation_reduction_reaction">окислительно-восстановительные реакции</sc_element>, результатом которых, в определённых условиях, может быть разрушение (растворение) анода, что используется, к примеру, при электрорафинировании металлов.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (анод, электрод, электрохимия, окислительно-восстановительная реакция*)](*<-lang_ru;;*);; 
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (анод)] (* <- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://image//cathode.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+electrode=>nrel_inclusion: anode;;

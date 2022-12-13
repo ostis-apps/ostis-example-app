@@ -1,0 +1,49 @@
+subst_Cn
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[copernicium (substance)](*<- lang_en;;*);
+	[коперниций (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Сn (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (коперниций (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Коперниций (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - жидкий <sc_element sys_idtf = "metal">металл</sc_element>.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> metal;;
+	*);;
+*);
+
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+	-> liquid;;
+*);
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (коперниций (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы коперниция:  <sup>277</sup>Cn, <sup>282</sup>Cn, <sup>283</sup>Cn, <sup>284</sup>Cn, <sup>285</sup>Cn] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

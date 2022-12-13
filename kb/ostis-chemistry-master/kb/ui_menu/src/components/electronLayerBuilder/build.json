@@ -1,0 +1,11 @@
+{
+     "sources": [
+        
+        "src/electronLayer-common.js",
+        "src/electronLayerBuilder.js"
+    ],
+
+    "component": "src/electronLayerBuilder-component.js",
+
+    "target": "static/components/js/chemistry_components/electronLayerBuilder.js"
+}

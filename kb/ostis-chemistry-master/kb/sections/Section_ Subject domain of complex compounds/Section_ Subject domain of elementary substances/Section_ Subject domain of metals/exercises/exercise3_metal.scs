@@ -1,0 +1,24 @@
+exercise3_metal
+<- exercises_metal;
+
+-> rrel_key_sc_element: metal; subst_Mg; nrel_mass; CuSO4; solution; nrel_mass_fraction; nrel_reaction;
+
+=> nrel_next_exercise: exercise4_metal;
+
+=> nrel_main_idtf:
+	[Упражнение 3. Раздел. Предметная область металлов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 3. Section. Subject domain of metals]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise3_metal_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise3_metal_en.html" (* <-lang_en;; *);;
+	*);;

@@ -1,0 +1,39 @@
+molecule
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[молекула](*<-lang_ru;;*);
+     [molecule](*<-lang_en;;*);;
+
+molecule
+<-rrel_key_sc_element:...
+(*	
+	<- definition;; 
+	=> nrel_main_idtf: [Опр.(молекула)](*<-lang_ru;;*);; 
+	<= nrel_sc_text_translation:...(*->rrel_example: "file://html/molecule1.html" (*<-lang_ru;; *);; *);;
+	<=nrel_using_constants: nrel_polar_covalent_bond; atom;;
+*);
+
+<-rrel_key_sc_element: ...
+(*
+	->statement;;
+	<-concept_assertion_of_the_defining_type;;
+	<-rrel_theorem:subject_domain_of_chemistry (*<-concept_subject_domain;;*);;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [В классической теории химического строения молекула рассматривается как наименьшая стабильная частица вещества, обладающая всеми его химическими свойствами.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (молекула)](*<-lang_ru;;*);; 
+*);
+
+<-rrel_key_sc_element: ...
+(*
+	 ->rrel_key_sc_element: chemical_substance; atom; nrel_chemical_bond;;
+	->statement;;
+	<-concept_assertion_of_the_defining_type;;
+	<-rrel_theorem:subject_domain_of_chemistry (*<-concept_subject_domain;;*);;
+	<=nrel_sc_text_translation: ... (* ->rrel_example: [Молекула данного <sc_element sys_idtf="chemical_substance">вещества</sc_element> имеет постоянный состав, то есть одинаковое количество <sc_element sys_idtf="atom">атомов</sc_element>,
+ объединённых <sc_element sys_idtf="nrel_chemical_bond">химическими связями</sc_element>, при этом химическая индивидуальность молекулы определяется именно совокупностью и конфигурацией химических связей,
+ то есть валентными взаимодействиями между входящими в её состав атомами, обеспечивающими её стабильность и основные свойства в достаточно широком
+ диапазоне внешних условий. Невалентные взаимодействия (например, водородные связи), которые зачастую могут существенно влиять на свойства молекул и вещества,
+ образуемого ими, в качестве критерия индивидуальности молекулы не учитываются.](*<-lang_ru;; => nrel_format: format_html;;*);; *);;
+	=>nrel_main_idtf: [Утв. (молекула, химические вещество, атом, химическая связь)](*<-lang_ru;;*);; 
+*);
+
+=>nrel_inclusion: atom;;

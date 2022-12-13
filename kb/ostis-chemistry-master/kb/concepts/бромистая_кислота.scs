@@ -1,0 +1,56 @@
+sc_node_not_relation->bromous_acid;;
+
+bromous_acid=> nrel_main_idtf: [бромистая кислота](* <- lang_ru;; *);;
+bromous_acid=> nrel_main_idtf: [bromous acid](* <- lang_en;; *);;
+bromous_acid=> nrel_idtf: [HBrO2](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: bromous_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Бромистая кислота — неорганическое соединение брома, водорода и кислорода, одноосновная кислота с формулой HBrO2](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (бромистая кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		elem_H;
+		elem_Br;
+		elem_O;
+		monobasic_acid;
+		nonorganic_compound;
+		chemical_formula
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: bromous_acid;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Бромистая кислота существует только в водных растворах, в течение 4 часов разлагается.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(бромистая кислота)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{ 
+		water;
+		solution;
+		nrel_decomposition
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: bromous_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/бромистая_кислота.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(бромистая кислота,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: bromous_acid;;
+	<= nrel_sc_text_translation: ...(*->"file://images/бромистая_кислота_стр.png";;*);;
+	=> nrel_main_idtf: [Рисунок(бромистая кислота,структурная формула)](*<- lang_ru;;*);;
+*);;
+
+bromous_acid -> bromous_acid_x;;
+monobasic_acid=>nrel_inclusion:bromous_acid;;
+inorganic_acid=>nrel_inclusion:bromous_acid;;
+bromous_acid<=nrel_inclusion:oxyacid;;
+
+
+bromous_acid<-rrel_not_maximum_studied_object_class:subject_domain_of_acids;;

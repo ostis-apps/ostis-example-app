@@ -1,0 +1,11 @@
+section_subject_domain_of_organic_bases
+=> nrel_main_idtf:
+	[Раздел. Предметная область органических оснований](* <- lang_ru;; *);
+	[Section. Subject domain of organic bases](* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+section_subject_domain_of_organic_bases = [*^"file://section_subject_domain_of_organic_bases.scsi"*];;
+
+section_subject_domain_of_organic_bases
+-> rrel_key_sc_element: subject_domain_of_organic_bases;;		

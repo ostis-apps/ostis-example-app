@@ -1,0 +1,26 @@
+soft_water
+=> nrel_main_idtf:
+	[soft water](* <-lang_en;; *);
+	[мягкая вода](* <- lang_ru;; *);
+
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(мягкая вода)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[<b>Мягкая вода</b> - <sc_element sys_idtf = "water">вода</sc_element>, с малым содержанием <sc_element sys_idtf = "salt">солей</sc_element>.]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->water;;
+                ->salt;;
+              
+	*);;
+*);;
+

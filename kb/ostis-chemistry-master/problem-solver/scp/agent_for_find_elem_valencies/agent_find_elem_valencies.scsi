@@ -1,0 +1,215 @@
+agent_find_elem_valencies 
+=> nrel_main_idtf: 
+	[агентная scp-программа поиска валентностей заданного элемента](* <- lang_ru;;*);
+	[agent scp-program search valencies of given element](* <- lang_en;;*);
+	<- agent_scp_program;;
+
+scp_program -> agent_find_elem_valencies
+	(*
+	-> rrel_params: .agent_find_elem_valencies_params
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_find_elem_valencies_operators
+		(*
+		-> rrel_init: .agent_find_elem_valencies_operator0A
+        (*
+            <-searchElStr3;;
+
+            ->rrel_1:rrel_assign:rrel_scp_var:_temp;;
+            ->rrel_2:rrel_fixed:rrel_scp_var:_input_arc;;
+            ->rrel_3:rrel_assign:rrel_scp_var:_quest;;
+
+            =>nrel_goto:.agent_find_elem_valencies_operator0B;;
+        *);;
+
+        ->.agent_find_elem_valencies_operator0B
+        (*
+            <-searchElStr3;;
+
+            ->rrel_1:rrel_fixed:rrel_scp_const:action_find_elem_valencies;;
+            ->rrel_2:rrel_assign:rrel_scp_var:rrel_pos_const_perm:_arc1;;
+            ->rrel_3:rrel_fixed:rrel_scp_var:_quest;;
+
+            =>nrel_then:.agent_find_elem_valencies_operator0C;;
+            =>nrel_else:.agent_find_elem_valencies_operator_return;;
+        *);;
+
+        ->.agent_find_elem_valencies_operator0C
+        (*
+            <-searchElStr3;;
+            
+            ->rrel_1:rrel_fixed:rrel_scp_var:_quest;;
+            ->rrel_2:rrel_assign:rrel_scp_var:rrel_pos_const_perm:_arc2;;
+            ->rrel_3:rrel_assign:rrel_scp_var:_pattern;;
+
+            =>nrel_then:.agent_find_elem_valencies_operator_gen_answer;;
+            =>nrel_else:.agent_find_elem_valencies_operator_message;;
+        *);;
+
+        /*->agent_find_elem_valencies_operator_gen_answer0
+        (*
+            <-searchElStr5;;
+
+            ->rrel_1:rrel_fixed:rrel_scp_const:chemical_element;;
+            ->rrel_2:rrel_assign:rrel_scp_var:rrel_common:_arc1;;
+            ->rrel_3:rrel_fixed:rrel_scp_var:_pattern;;
+            ->rrel_4:rrel_assign:rrel_scp_var:rrel_pos_const_perm:_arc2;;
+            ->rrel_5:rrel_fixed:rrel_scp_const:nrel_inclusion;;
+
+            =>nrel_then:.agent_find_elem_valencies_operator_gen_answer;;
+            =>nrel_else:.agent_find_elem_valencies_operator_return;;
+        *);;*/
+
+        ->.agent_find_elem_valencies_operator_gen_answer
+        (*
+            <-genEl;;
+
+            ->rrel_1:rrel_assign:rrel_node:rrel_const:rrel_scp_var:_answer;;
+
+            =>nrel_goto:.agent_find_elem_valencies_operator1;;
+        *);;
+
+        ->.agent_find_elem_valencies_operator1
+        (*
+            <- genEl;;
+
+            -> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _set;;
+
+            => nrel_goto: .agent_find_elem_valencies_operator2;;
+        *);;
+
+        ->.agent_find_elem_valencies_operator2
+        (*
+            <- searchSetStr3;;
+
+            -> rrel_1: rrel_assign: rrel_scp_var: _node;;
+            -> rrel_2: rrel_assign:rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _pattern;;
+
+            -> rrel_set_1: rrel_fixed: rrel_scp_var: rrel_set: _set;;
+            
+            =>nrel_goto: .agent_find_elem_valencies_operator3;;
+        *);;
+
+        ->.agent_find_elem_valencies_operator3
+        (*
+            <- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _el;;
+
+            =>nrel_then:.agent_find_elem_valencies_operator4;;
+            =>nrel_else:.agent_find_elem_valencies_operator_answerC;;
+        *);;
+
+        ->.agent_find_elem_valencies_operator4
+        (*
+            <-eraseEl;;
+
+            ->rrel_1:rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+
+            =>nrel_goto:.agent_find_elem_valencies_operator5;;
+        *);;
+
+        /*->.agent_find_elem_valencies_operator5
+        (*
+            <-searchElStr5;;
+
+            ->rrel_1:rrel_fixed:rrel_scp_const:valence;;
+            ->rrel_2:rrel_assign:rrel_scp_var:rrel_common: _arc1;;
+            ->rrel_3:rrel_fixed:rrel_scp_var: _el;;
+            ->rrel_4:rrel_assign:rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+            ->rrel_5:rrel_fixed:rrel_scp_const: nrel_inclusion;;
+
+            =>nrel_then: .agent_find_elem_valencies_operator6;;
+            =>nrel_else: .agent_find_elem_valencies_operator3;;
+        *);;*/
+
+        ->.agent_find_elem_valencies_operator5
+        (*
+            <-searchElStr3;;
+
+            ->rrel_1:rrel_fixed:rrel_scp_const:valence;;
+            ->rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            ->rrel_3:rrel_fixed:rrel_scp_var: _el;;
+
+            =>nrel_then: .agent_find_elem_valencies_operator6;;
+            =>nrel_else: .agent_find_elem_valencies_operator3;;
+        *);;
+
+	    ->.agent_find_elem_valencies_operator6
+        (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _el;;
+
+            =>nrel_goto:.agent_find_elem_valencies_operator_answerA;;
+        *);;
+
+        ->.agent_find_elem_valencies_operator_answerA
+        (*
+            <- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _el;;
+            -> rrel_2: rrel_assign:rrel_scp_var: rrel_pos_const_perm: _arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _pattern;;
+
+            => nrel_goto: .agent_find_elem_valencies_operator_answerB;;
+        *);;
+        
+        ->.agent_find_elem_valencies_operator_answerB
+        (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_2: rrel_assign:rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _arc;;
+
+            =>nrel_goto:.agent_find_elem_valencies_operator3;;
+        *);;
+
+         -> .agent_find_elem_valencies_operator_answerC
+        (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_2: rrel_assign:rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _pattern;;
+
+            => nrel_goto: .agent_find_elem_valencies_operator_answer;;
+        *);;     
+
+        ->.agent_find_elem_valencies_operator_answer
+        (*
+            <-genElStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common:_arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;							
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+            =>nrel_goto:.agent_find_elem_valencies_operator_prereturn;;
+        *);;
+
+        ->.agent_find_elem_valencies_operator_prereturn
+        (*
+            <-eraseEl;;
+
+            ->rrel_1:rrel_fixed: rrel_scp_var: rrel_erase: _set;;
+
+            =>nrel_goto:.agent_find_elem_valencies_operator_return;;
+        *);;
+
+        -> .agent_find_elem_valencies_operator_return
+			(*
+			    <- return;;
+		*);;
+	*);;
+*);;

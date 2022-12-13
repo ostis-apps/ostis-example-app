@@ -1,0 +1,24 @@
+exercise13_mixture
+<- exercises_mixture;
+
+-> rrel_key_sc_element: mixture; subst_Fe; subst_S; zinc_oxide; chemical_substance; nrel_reaction; chemical_process; 
+
+=> nrel_next_exercise: exercise14_mixture;
+
+=> nrel_main_idtf:
+	[Упражнение 13. Раздел. Предметная область смесей]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 13. Section. Subject domain of mixtures]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise13_mixture_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise13_mixture_en.html" (* <-lang_en;; *);;
+	*);;

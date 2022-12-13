@@ -1,0 +1,6 @@
+chemical_substance_multiplicity 
+	=> nrel_main_idtf: 
+		[коэффициент](* <- lang_ru;; *);
+		[coefficient](* <- lang_en;; *);
+	<- sc_node_not_relation;
+	<- parameter;;

@@ -1,0 +1,51 @@
+sc_node_not_relation -> catalyst;;
+
+catalyst => nrel_main_idtf:
+	[катализатор](* <-lang_ru;; *);
+	[catalyst](* <-lang_en;; *);;
+
+catalyst <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(катализатор)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(catalyst)] (* <- lang_en;; *);;
+		<= nrel_using_constants: nrel_reaction; chemical_substance; reaction_product;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Катализа́тор — химическое вещество, ускоряющее реакцию, но не входящее в состав продуктов реакции.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Catalyst is a chemical substance that accelerates the reaction, but is not part of the reaction products.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+
+catalyst <- rrel_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утв.(катализатор) ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Stat.(catalyst) ] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Катализаторы в условиях реакции дают значительно больше активных частиц ведущих цепной процесс.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Catalysts under reaction conditions provide significantly more active particles leading chain process.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+catalyst <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утв.(катализатор)  ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Stat.(catalyst) ] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Катализаторы увеличивают концентрацию промежуточного соединения, образуя взаимодействие с обеими исходными насыщенными молекулами.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Catalysts increase the concentration of the intermediate to form both the initial interaction with saturated molecules.](*<- lang_en;;*);;
+			*);;
+		*);;

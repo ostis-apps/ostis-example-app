@@ -1,0 +1,135 @@
+pentanol<-sc_node_not_relation;;
+pentanol=> nrel_main_idtf:[пентанол](* <- lang_ru;; *);;
+pentanol=> nrel_main_idtf:[pentanol](* <- lang_en;; *);;
+pentanol=> nrel_idtf:[pentanol-1](* <- lang_en;; *);;
+pentanol=> nrel_idtf:[C₅H₁₁OH](* <- lang_en;; *);;
+
+
+
+saturated_alcohols=>nrel_inclusion:pentanol;;
+pentanol<=nrel_intermolecular_dehydration:pentane;;
+
+pentanol<=nrel_poisoning_way:peroral_way;;
+higher_fatty_alcohols=>nrel_inclusion:pentanol;;
+organic_artificial_poison=>nrel_inclusion:pentanol;;
+rrel_liquid_solvent=>nrel_inclusion:pentanol;;
+triatomic_alcohol=>nrel_inclusion:pentanol;;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: pentanol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пентанол — 
+	<b><sc_element sys_idtf="organic_compound">органическое</b></sc_element> 
+	 вещество,
+	 относится к классу 
+	 <b><sc_element sys_idtf="alcohol">спиртов</b></sc_element>. ]
+		(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (пентанол)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		organic_compound;
+		polymer
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: pentanol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пентанол реагирует бурно с 
+	<b><sc_element sys_idtf="nrel_oxidation">окислителями</b></sc_element>. Агрессивен 
+	в отношении многих щелочных и 
+	щелочноземельных металлов с 
+	образованием огнеопасного/взрывоопасного газа.]
+	
+	  
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(пентанол, вредное вещество)](*<- lang_ru;;*);;	
+	=> nrel_using_constants:
+		{
+		nrel_oxidation
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:pentanol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пентанол при 
+	<b><sc_element sys_idtf="temperature">температуре</b></sc_element> выше 33°C может 
+	образовать взрывоопасныe смеси пар/воздух.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(пентанол, взрывоопасен)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		temperature
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:pentanol;;
+	<= nrel_sc_text_translation: ...(*->"file://image/pentanol_1.png";;*);;
+	=> nrel_main_idtf: [Рисунок(пентанол,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:pentanol;;
+	<= nrel_sc_text_translation: ...(*->"file://image/pentanol_1_3d.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(пентанол,пример)](*<- lang_ru;;*);;
+*);;
+
+
+
+nrel_relative_molar_mass->...
+(* 
+	<- sc_node_not_relation;;
+	-> pentanol;;
+	=> rrel_mol: [171.83]
+	(*
+		<-number;;
+	*);;
+*);;
+
+nrel_density_of_substance->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->pentanol;;
+	=> rrel_gram_per_cubic_cm:1.09
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_molar_heat_capacity->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->pentanol;;
+	=> rrel_joule_per_kelvin_and_mole: 0.35
+	(*
+		<-number;;
+	*);;
+*);;
+nrel_melting_temperature->...
+(* 
+	
+	<- sc_node_not_relation;;
+	->pentanol;;
+	=> rrel_degree_celsius: 132
+	(*
+		<-number;;
+	*);;
+*);;

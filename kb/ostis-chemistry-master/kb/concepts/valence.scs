@@ -1,0 +1,51 @@
+valence
+<- sc_node_not_relation;
+<- parameter;
+=> nrel_main_idtf:
+	[валентность]
+	(* <- lang_ru;;	*);
+	[valence]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element:...
+(* 
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Опр. (валентность)](* <- lang_ru;;*);
+		[Def. (valence)](* <- lang_ru;;*);;
+	<=	nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[ <b>Валентность</b> — способность <sc_element sys_idtf = "atom">атомов</sc_element> <sc_element sys_idtf = "chemical_element">химических элементов</sc_element>  образовывать определённое число <sc_element sys_idtf = "chemical_bond">химических связей</sc_element>.] 
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);
+			[ <b>Valence</b> is the ability of <sc_element sys_idtf = "atom">atoms</sc_element> of <sc_element sys_idtf = "chemical_element">chemical elements</sc_element> to form a certain number of <sc_element sys_idtf = "chemical_bond">chemical bonds</sc_element>.] 
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> atom;;
+		-> chemical_bond;;
+		-> chemical_element;;
+	*);;
+*);
+
+<- rrel_key_sc_element:... 
+(*
+	-> rrel_key_sc_element: chemical_element; group;;
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (валентность, максимум, химический элемент, группа)](* <- lang_ru;;*);
+		[Expl. (valence, maximum, chemical element, group)](* <- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(* 
+		-> rrel_example:
+			[Максимальная валентность элемента численно равна номеру группы в Периодической таблице] (* <-lang_ru;; *);
+			[The maximum valence of an element is numerically equal to the group number in the Periodic Table] (* <-lang_en;; *);;
+	*);;
+*);;

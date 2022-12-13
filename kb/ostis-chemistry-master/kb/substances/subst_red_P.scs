@@ -1,0 +1,56 @@
+subst_red_P
+<= nrel_inclusion: chemical_substance;
+<- sc_node_not_relation;
+=> nrel_main_idtf: [красный фосфор] (* <- lang_ru;; *);
+=> nrel_main_idtf: [red phosphorus] (* <- lang_en;; *);
+=> nrel_idtf: [P](*<- lang_en;;*);
+
+<- rrel_key_sc_element: definition_of_subst_red_P
+(* 
+	=> nrel_main_idtf: [Опр.(Красный фосфор)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество красный фосфор</b> - твердое ядовитое <sc_element sys_idtf = "chemical_substance">вещество</sc_element>. Красный фосфор имеет формулу Рn и представляет собой полимер со сложной структурой. В зависимости от способа получения и степени дробления, красный фосфор имеет оттенки от пурпурно-красного до фиолетового, а в литом состоянии — тёмно-фиолетовый с медным оттенком, имеет металлический блеск.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_substance;;
+	*);;
+*);
+
+<- solid;
+<- color_red;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(красный фосфор, твердое вещество)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_red_P.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [2,4] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;
+
+atomic_multiplicity_one -> (subst_red_P -> elem_P);;

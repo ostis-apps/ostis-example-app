@@ -1,0 +1,24 @@
+exercise1_carboxylic_acids
+<- exercises_carboxylic_acids;
+
+-> rrel_key_sc_element: rrel_gram; mixture; solution; formic_acid; acetic_acid; acid; subst_NaOH; nrel_mass_fraction;
+
+=> nrel_next_exercise: exercise2_carboxylic_acids;
+
+=> nrel_main_idtf:
+	[Упражнение 1. Раздел. Предметная область карбоновых кислот]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 1. Section. Subject domain of carboxylicacids]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise1_carboxylic_acids_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise1_carboxylic_acids_en.html" (* <-lang_en;; *);;
+	*);;

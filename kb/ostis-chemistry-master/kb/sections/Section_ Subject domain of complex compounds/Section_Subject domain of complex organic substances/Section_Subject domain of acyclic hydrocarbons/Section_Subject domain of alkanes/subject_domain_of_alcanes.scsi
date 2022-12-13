@@ -1,0 +1,1370 @@
+subject_domain_of_alkanes
+    => nrel_main_idtf: [Предметная область алканов](* <- lang_ru;; *);
+    [Subject domain of alkanes](* <- lang_en;; *);
+
+<-subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+alkane;
+
+-> rrel_not_maximum_studied_object_class:
+hydrocarbon;
+homolog_series;
+methane;
+ethane;
+propane;
+butane;
+pentane;
+hexane;
+heptane;
+octane;
+nonane;
+decane;
+
+->rrel_explored_relation:
+nrel_homologue;
+nrel_isomer;
+
+<= nrel_sc_text_translation:...(*
+    ->rrel_example :[Алканы — ациклические углеводороды линейного или разветвлённого строения, содержащие только простые связи и образующие гомологический ряд с общей формулой CnH2n+2.](*<-lang_ru;;*);;
+*);;
+
+
+alkane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[алкан](* <-lang_ru;;*);
+    [alkane](* <-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    hydrocarbon;
+    hydrogen;
+    atom;;
+	=>nrel_main_idtf: [Утв.(углеводород, водород, атом)](* <-lang_ru;;*);;
+    <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Алканы являются насыщенными углеводородами и содержат максимально возможное число атомов водорода. Каждый атом углерода в молекулах алканов находится в состоянии sp3-гибридизации — все 4 гибридные орбитали атома С идентичны по форме и энергии, 4 связи направлены в вершины тетраэдра под углами 109°28'.](* <-lang_ru;;*);;
+     *);;
+*);;
+
+alkane->methane; ethane; propane; butane; pentane; hexane; heptane; octane; nonane; decane;;
+
+homolog_series
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[гомологический ряд](* <-lang_ru;;*);
+    [homolog series](* <-lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->chemical_compound;;
+            ->alcohol;;
+            ->structural_unit;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(гомологический ряд)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Гомологический ряд  — ряд химических соединений одного структурного типа (например, алканы или алифатические спирты — спирты жирного ряда), отличающихся друг от друга по составу на определённое число повторяющихся структурных единиц — так называемую гомологическую разность.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    homolog_series;
+    alkane;
+    methane;
+    ethane;
+    propane;;
+	=>nrel_main_idtf:
+	[Утв.(гомологический ряд, алкан, метан, этан, пропан)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Простейший пример гомологического ряда — алканы (общая формула СnH2n+2): метан CH4, этан C2H6, пропан С3H8 и т. д.; гомологической разностью этого ряда является метиленовое звено —СН2—.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (гомологический ряд алканов)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/gomologhichieskii-riad-alkanov_1.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+hydrocarbon
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[углеводород](* <-lang_ru;;*);
+    [hydrocarbon](* <-lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            ->atom;;
+            ->elem_C;;
+            ->elem_H;;
+            ->organic_chemistry;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(углеводород)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Углеводород — органическое соединенияе состоящие из атомов углерода и водорода. Углеводороды считаются базовыми соединениями органической химии — все остальные органические соединения рассматривают их производными.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    elem_C;
+    electron;
+    hydrocarbon;
+    methane;
+    elem_H;
+    atom;;
+	=>nrel_main_idtf:
+	[Утв.(углерод, электрон, водород, метан, углеводород, атом)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Поскольку углерод (C) имеет четыре валентных электрона, а водород (H) — один, простейший углеводород — метан (CH4). При систематизации углеводородов принимают во внимание строение углеродного скелета и тип связей, соединяющих атомы углерода. Большинство углеводородов в природе Земли встречаются в сырой нефти.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<=nrel_subdividing:
+    subdividing_by_multiplicity_of_carbon_carbon_bonds(*
+        ->alkane;;
+        ->alkene;;
+        ->alkyne;;
+        ->diene;;
+    *);;
+
+subdividing_by_multiplicity_of_carbon_carbon_bonds
+=>nrel_main_idtf:
+[кратность углерод-углеродных связей](* <-lang_ru;;*);
+    [multiplicity of carbon-carbon bonds](* <-lang_en;;*);;
+
+
+nrel_homologue
+<-sc_node_norole_relation;
+=>nrel_main_idtf:
+[гомолог*](* <-lang_ru;;*);
+    [homologue*](* <-lang_en;;*);
+<-binary_relation;
+<-non_oriented_relation;
+<-antireflexive_relation;
+<-symmetric_relation;
+<-transitive_relation;
+
+=>nrel_second_domain:hydrocarbon;
+=>nrel_first_domain:hydrocarbon;
+=>nrel_definitional_domain:hydrocarbon;
+
+<- rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->homolog_series;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(гомолог*)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Гомологи — вещества, входящие в один и тот же гомологический ряд.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    organic_chemistry;
+    chemical_substance;
+    molecule;
+    functional_group;;
+	=>nrel_main_idtf:
+	[Утв.(органическая химия, вещество, молекула, функциональная группа)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [В основе понятия гомологии в органической химии лежит фундаментальное положение о том, что химические и физические свойства вещества определяются структурой его молекул: эти свойства определяются как функциональными группами соединения (гидроксил спиртов, карбоксильная группа карбоновых кислот, арильная группа ароматических соединений и т. п.), так и его углеродным скелетом.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_melting_temperature;
+    boiling_temperature;
+    physical_property;
+    nrel_acid_dissociation_constant;
+    molecule;
+    functional_group;;
+	=>nrel_main_idtf:
+	[Утв.(химическое свойство, температура плавления*, температура кипения, физическое свойство, молекула, константа диссоциации кислоты*)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Сам комплекс химических свойств и, соответственно, принадлежность соединения к определённому классу, определяется именно функциональными группами (так, наличие карбоксильной группы определяет проявление соединением кислотных свойств и его принадлежность к классу карбоновых кислот), но на степень проявления химических свойств (например, реакционная способность и константа диссоциации) или физические свойства (температуры кипения и плавления, показатель преломления и т. п.) влияет и углеродный скелет молекулы.](* <-lang_ru;;*);;
+     *);;
+*);;
+
+
+methane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[метан](* <-lang_ru;;*);
+    [methane](* <-lang_en;;*);
+
+=>nrel_idtf:
+[CH4](*<-lang_en;;*);
+
+<-hydrocarbon;
+<=>nrel_homologue:
+ethane;
+propane;
+butane;
+pentane;
+hexane;
+heptane;
+octane;
+nonane;
+decane;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[16,04](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_density_of_substance: ...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[0,000656] (* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[111,5](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[91](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->hydrocarbon;;
+            ->gas;;
+            ->no_smell;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(метан)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Метан — простейший углеводород, бесцветный газ (в нормальных условиях) без запаха](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    toxic_substance;
+    smell;
+    gas;;
+	=>nrel_main_idtf:
+	[Утв.(метан, токсическое вещество, запах, газ)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Метан нетоксичен и неопасен для здоровья человека. Однако имеются данные, что метан относится к токсическим веществам, действующим на центральную нервную систему. При использовании в быту, промышленности в метан обычно добавляют одоранты (обычно тиолы) со специфическим «запахом газа».](* <-lang_ru;;*);;
+     *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    gas;;
+	=>nrel_main_idtf:
+	[Утв.(метан, газ)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Накапливаясь в закрытом помещении, метан становится взрывоопасен. Обогащение одорантами делается для того, чтобы человек вовремя заметил утечку газа. На промышленных производствах эту роль выполняют датчики, и во многих случаях метан для лабораторий и промышленных производств поставляется без добавления одорантов.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    gas;
+    carbon_dioxide;;
+	=>nrel_main_idtf:
+	[Утв.(метан, газ, углекислый газ)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Метан — второй по значимости парниковый газ в атмосфере Земли (после углекислого газа).](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (метан. Полусферическая и шаростержневая модели)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/methane.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
+ethane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[этан](* <-lang_ru;;*);
+    [ethane](* <-lang_en;;*);
+
+=>nrel_idtf:
+[C2H6](*<-lang_en;;*);
+
+<-hydrocarbon;
+<=>nrel_homologue:
+propane;
+butane;
+pentane;
+hexane;
+heptane;
+octane;
+nonane;
+decane;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[30,07](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[0,00136](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[190](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[90,2](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            ->alkane;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(этан)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Этан — органическое соединение класса алканов.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    homolog_series;
+    alkane;
+    gas;
+    hydrocarbon;
+    methane;
+    propane;;
+	=>nrel_main_idtf:
+	[Утв.(этан, гомологический ряд, алкан, газ, углеводород, метан, пропан)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Этан — органическое соединение, второй член гомологического ряда алканов. В природе содержится в составе природного газа, нефти и других углеводородах. По сравнению с метаном и пропаном более пожаро- и взрывоопасен. Малотоксичен. ](* <-lang_ru;;*);;
+     *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    nrel_solubility;
+    water;;
+	=>nrel_main_idtf:
+	[Утв.(растворимость*, вода)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Обладает наркотическим действием, которое ослабляется ничтожной растворимостью в воде и крови. Класс опасности — четвёртый.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (этан. шаростержневая модель)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/ethane.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+propane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[пропан](* <-lang_ru;;*);
+    [propane](* <-lang_en;;*);
+
+=>nrel_idtf:
+[C3H8](*<-lang_en;;*);
+
+<-hydrocarbon;
+<=>nrel_homologue:
+butane;
+pentane;
+hexane;
+heptane;
+octane;
+nonane;
+decane;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[44,1](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[0,00201](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[231](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[85](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            ->alkane;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(пропан)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Пропан — органическое соединение класса алканов.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    gas;
+    smell;
+    hydrocarbon;
+    no_smell;;
+	=>nrel_main_idtf:
+	[Утв.(газ, запах, углеводород, без запаха)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Содержится в природном газе, образуется при крекинге нефтепродуктов, при разделении попутного нефтяного газа, «жирного» природного газа как побочная продукция при различных химических реакциях. Чистый пропан не имеет запаха, однако в технический газ могут добавляться компоненты, обладающие запахом. Как представитель углеводородных газов пожаро- и взрывоопасен. Малотоксичен, но оказывает вредное воздействие на центральную нервную систему (обладает слабыми наркотическими свойствами).](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (пропан)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/propane.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+butane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[бутан](* <-lang_ru;;*);
+    [butane](* <-lang_en;;*);
+
+=>nrel_idtf:
+[C4H10](*<-lang_en;;*);
+
+<-hydrocarbon;
+<=>nrel_homologue:
+pentane;
+hexane;
+heptane;
+octane;
+nonane;
+decane;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[58,12](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[0,6010](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[272,5](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[134,6](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            ->alkane;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(бутан)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Бутан — органическое соединение класса алканов.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    gas;;
+	=>nrel_main_idtf:
+	[Утв.(бутан, газ)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Вдыхание бутана вызывает дисфункцию лёгочно-дыхательного аппарата. Содержится в природном газе, образуется при крекинге нефтепродуктов, при разделении попутного нефтяного газа, «жирного» природного газа.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    hydrocarbon;
+    gas;
+    smell;;
+	=>nrel_main_idtf:
+	[Утв.(углеводород, газ, запах)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Как представитель углеводородных газов пожаро- и взрывоопасен, малотоксичен, имеет специфический характерный запах, обладает наркотическими свойствами.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (бутан)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/butane.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<=>nrel_nrel_structural_isomerism: isobutane; n_butane;;
+
+
+pentane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[пентан](* <-lang_ru;;*);
+    [pentane](* <-lang_en;;*);
+
+=>nrel_idtf:
+[C5H12](*<-lang_en;;*);
+
+<-hydrocarbon;
+<=>nrel_homologue:
+hexane;
+heptane;
+octane;
+nonane;
+decane;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[72.15](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[0,6262](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[309,07](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[143,28](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+		<=nrel_using_constants:...(*
+            ->hydrocarbon;;
+            ->alkane;;
+			 *);;
+    =>nrel_main_idtf:
+    [Опр.(пентан)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Пентан — насыщенный ациклический углеводород класса алканов.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    atom;
+    elem_C;
+    molecule;
+    liquid;
+    smell;
+    gas;;
+	=>nrel_main_idtf:
+	[Утв.(атом, углерод, молекула, жидкость, запах, газ)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Имеют пять атомов углерода в молекуле. Изопентан обладает наркотическим действием. Класс опасности четвёртый. Нормальный пентан и изопентан представляют собой легколетучие подвижные жидкости с характерным запахом, неопентан - бесцветный газ с характерным запахом.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (пентан)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/pentane.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<=>nrel_nrel_structural_isomerism: n_pentane; 2_metil_butane; 2_2_dimetil_propane;;
+
+hexane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[гексан](* <-lang_ru;;*);
+    [hexane](* <-lang_en;;*);
+
+=>nrel_idtf:
+[C6H14](*<-lang_en;;*);
+
+<-hydrocarbon;
+<=>nrel_homologue:
+heptane;
+octane;
+nonane;
+decane;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[86,17848](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[0,6548](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[341](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[178](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+		<=nrel_using_constants:...(*
+            ->organic_compound;;
+            ->alkane;;
+		*);;
+    =>nrel_main_idtf:
+    [Опр.(гексан)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Гексан — органическое соединение класса алканов.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    no_color;
+    liquid;;
+	=>nrel_main_idtf:
+	[Утв.(гексан, бесцветный, жидкость)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Бесцветная жидкость со слабым запахом (напоминающим дихлорэтан). Показатель преломления п20D 1,37506. Ввиду низкого октанового числа, около 24-26 гексан является нежелательной составной частью синтетического бензина. Пары гексана обладают сильным наркотическим действием.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (гексан)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/hexane.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<=>nrel_structural_isomerism: n_hexane; 2_metil_pentane; 3_metil_pentane; 2_3_dimetil_butane; 2_2_dimetil_butane;;
+
+heptane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[гептан](* <-lang_ru;;*);
+    [heptane](* <-lang_en;;*);
+
+=>nrel_idtf:
+[C7H16](*<-lang_en;;*);
+
+<-hydrocarbon;
+<=>nrel_homologue:
+octane;
+nonane;
+decane;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[100,21](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[0,6795](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[371,42](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[182,4](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            ->alkane;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(гептан)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Гептан — органическое соединение класса алканов.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    no_color;
+    liquid;
+    water;
+    alkane;
+    nrel_isomer;;
+	=>nrel_main_idtf:
+	[Утв.(гептан, бесцветный, жидкость, вода, алканы, изомер*)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Гептан и его изомеры — бесцветные жидкости, хорошо растворимые в большинстве органических растворителей, нерастворимые в воде. Обладают всеми химическими свойствами алканов.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (гептан)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/heptane.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);
+<=>nrel_nrel_structural_isomerism: n_heptane; 2_metil_hexane; 3_metil_hexane; 2_3_dimetil_pentane; 2_4_dimetil_pentane; 3_3_dimetil_pentane; 3_etil_pentane; 2_2_3_trimetil_butane; 3_metil_hexane;;
+
+octane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[октан](* <-lang_ru;;*);
+    [octane](* <-lang_en;;*);
+
+=>nrel_idtf:
+[C8H18](*<-lang_en;;*);
+
+<-hydrocarbon;
+<=>nrel_homologue:
+nonane;
+decane;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[114,2285](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[0,703](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[398,52](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[216](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            ->alkane;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(октан)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Октан (н-октан) — органическое соединение класса алканов.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    carbon_monoxide;
+    octane;
+    nrel_isomer;;
+	=>nrel_main_idtf:
+	[Утв.(угарный газ, октан, изомер*)](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Вместе с изооктаном и др. изомерами содержится в нефти, бензине прямой перегонки (до 10 %), а также в большом количестве в синтетическом бензине, получаемом из CO и H2. В промышленности октан выделяют ректификацией, а затем подвергают очистке мочевиной с помощью молекулярных сит. Октан имеет 18 структурных изомеров.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (октан)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/oktane.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<=>nrel_nrel_structural_isomerism: n_octane; 2_metil_heptane; 3_metil_heptane; 4_metil_heptane; 3_etil_hexane; 2_2_dimetil_hexane; 2_3_dimetil_hexane; 2_4_dimetil_haxane; 2_5_dimetil_hexane; 3_3_dimetil_hexane; 3_4_dimetil_hexane; 2_metil_3_etil_pentane; 3_metil_3_etil_pentane; 2_2_3_trimetil_pentane; 2_2_4_trimetil_pentane; 2_3_3_trimetil_pentane; 2_3_4_trimetil_pentane; 2_2_3_3_tetrametil_butane;;
+
+nonane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[нонан](* <-lang_ru;;*);
+    [nonane](* <-lang_en;;*);
+
+=>nrel_idtf:
+[C9H20](*<-lang_en;;*);
+
+<-hydrocarbon;
+<=>nrel_homologue:
+decane;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[128,2](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[0,718](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[424](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[220](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            ->alkane;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(нонан)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Нонан — органическое соединение класса алканов. Содержится в нефти, образуется при крекинге нефтепродуктов.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (нонан)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/nonane.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);
+<=>nrel_nrel_structural_isomerism: n_nonane; 2_metil_octane; 2_2_dimetil_heptane; 2_6_dimetil_heptane; 3_3_dimetil_heptane; 3_5_dimetil_heptane; 4_4_dimetil_heptane; 2_metil_3_etil_hexane; 4_metil_4_etil_hexane; 2_2_3_trimetil_hexane; 3_3_4_trimetil_hexane; 2_3_3_4_tetrametil_heptane;;
+
+decane
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[декан](* <-lang_ru;;*);
+    [decane](* <-lang_en;;*);
+
+=>nrel_idtf:
+[C10H22](*<-lang_en;;*);
+
+<-hydrocarbon;
+
+=>nrel_relative_molar_mass:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_mole:...
+		(*
+			=>nrel_main_idtf:[142,29](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_density_of_substance:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_gram_per_cubic_cm:...
+		(*
+			=>nrel_main_idtf:[0,73](* <- lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_boiling_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[447](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+=>nrel_melting_temperature:...
+(*
+	<-value;;
+	<=nrel_measurement:...
+	(*
+		->rrel_kelvin:...
+		(*
+			=>nrel_main_idtf:[245,1](*<-lang_en;;*);;
+			<-number;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->organic_compound;;
+            ->alkane;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(декан)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Декан (н-декан) — органическое соединение класса алканов.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    no_color;
+    liquid;
+    water;
+    nrel_isomer;
+    rrel_solvent;;
+	=>nrel_main_idtf:
+	[Утв.(изомер*, жидкость, безцветный, вода, растворитель')](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [Декан имеет 75 структурных изомеров. При нормальных условиях вещество представляет собой бесцветную легко воспламеняющуюся жидкость, плотностью 0,73 г/мл, нерастворимую в воде, но зато хорошо растворимую в неполярных растворителях.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (декан)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/decane.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);
+<=>nrel_nrel_structural_isomerism:n_decane; 2_5_dimetil_octane; 4_metil_nonane; 3_metil_2_etil_heptane; 3_isopropil_2_metil_hexane; 2_5_5_trimetil_heptane; 2_2_dimetil_3_etil_hexane; 2_2_4_5_tetrametil_hexane; 2_2_3_4_4_pentametil_pentane;;
+
+nrel_isomer
+<-sc_node_norole_relation;
+=>nrel_main_idtf:
+[изомер*](* <-lang_ru;;*);
+    [isomer*](* <-lang_en;;*);
+<-binary_relation;
+<-non_oriented_relation;
+<-antireflexive_relation;
+<-symmetric_relation;
+<-transitive_relation;
+
+=>nrel_second_domain:hydrocarbon;
+=>nrel_first_domain:hydrocarbon;
+=>nrel_definitional_domain:hydrocarbon;
+
+<- rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->molecule;;
+            ->ion;;
+            ->nrel_relative_molar_mass;;
+            *);;
+    => nrel_main_idtf:
+    [Опр.(изомер*)](* <- lang_ru;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Изомеры — молекулы или ионы, имеющие одинаковые состав и молекулярную массу, но различающиееся строением или расположением атомов или кратной связи в пространстве.](* <-lang_ru;; *);; 
+        *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    atom;
+    nrel_structural_isomerism;
+    nrel_spatial_isomerism;;
+	=>nrel_main_idtf:
+	[Утв.(атом, )](* <-lang_ru;;*);;
+     <= nrel_sc_text_translation:...(*
+	-> rrel_example: [В структурных изомерах атомы соединены по-разному. Пространственные изомеры, которые также называются цистрансизомерами, отличаются симметрией кратных связей, а оптические являются зеркальным отражением друг друга.](* <-lang_ru;;*);;
+     *);;
+*);
+
+<- rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (изомер*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/nrel_isomer_example.png"
+		(*
+			=>nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+=>nrerl_include:nrel_structural_isomerism; nrel_isomerism; nrel_isomerization;;

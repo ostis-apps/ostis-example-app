@@ -1,0 +1,21 @@
+copper_hydroxide_II_calcination
+=>nrel_main_idtf:
+	[прокаливание гидроксида меди (II)](*<-lang_ru;;*);
+	[сopper hydroxide (II) calcination](*<-lang_en;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (прокаливание гидроксида меди (II))](*<-lang_ru;; *);
+		[Утв. (сopper hydroxide (II) calcination)](*<-lang_en;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Cu(OH)2 -(t)-> CuO + H2O]
+		(*
+			<- lang_ru;;
+			<- lang_en;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;

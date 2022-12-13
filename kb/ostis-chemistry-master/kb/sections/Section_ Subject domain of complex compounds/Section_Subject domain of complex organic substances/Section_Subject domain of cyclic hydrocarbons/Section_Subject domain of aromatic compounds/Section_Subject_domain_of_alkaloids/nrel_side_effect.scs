@@ -1,0 +1,77 @@
+nrel_side_effect<-sc_node_norole_relation;;
+
+nrel_side_effect=> nrel_main_idtf:[побочное действие*](* <- lang_ru;; *);;
+nrel_side_effect=> nrel_main_idtf:[side effect*](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: nrel_side_effect;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В медицине побочное действие - это действие, будь то терапевтическое или неблагоприятное, которое является вторичным по отношению к предполагаемому]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (побочное действие*)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{ 
+		action
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:nrel_side_effect ;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Побочные эффекты могут возникать при приеме любых <b><sc_element sys_idtf="medicine">лекарственных средств</b></sc_element>.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(побочное действие*)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{ 
+		medicine
+		};;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element:nrel_side_effect;;
+	<= nrel_sc_text_translation: ...(*->"file://images/sideeffect.png";;*);;
+	=> nrel_main_idtf: [Рисунок(побочное действие*,блокатор кольцевого канала)](*<- lang_ru;;*);;
+*);;
+
+
+action->dizziness;;
+dizziness<=nrel_side_effect:clonidine;;
+
+
+oriented_relation -> nrel_side_effect;;
+norole_relation-> nrel_side_effect;;
+ 
+antireflexive_relation -> nrel_side_effect;; 
+antitransitive_relation -> nrel_side_effect;;
+antisymmetric_relation -> nrel_side_effect;;
+
+
+nrel_side_effect => nrel_first_domain: chemical_substance;;
+nrel_side_effect => nrel_second_domain: action;;
+
+nrel_side_effect =>nrel_definitional_domain: ...(* 
+<=nrel_combination: 
+{ 
+chemical_substance; 
+action 
+};; 
+*);; 
+
+
+arity_2->nrel_side_effect;;
+
+
+
+dizziness=> nrel_main_idtf:[головокружение](* <- lang_ru;; *);;
+dizziness=> nrel_main_idtf:[dizziness](* <- lang_en;; *);;
+
+
+

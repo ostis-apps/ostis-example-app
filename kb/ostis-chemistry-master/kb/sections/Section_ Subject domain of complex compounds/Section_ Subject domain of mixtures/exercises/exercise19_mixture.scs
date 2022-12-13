@@ -1,0 +1,24 @@
+exercise19_mixture
+<- exercises_mixture;
+
+-> rrel_key_sc_element: neutralization_reaction; mixture; subst_NaOH; subst_KOH; H2SO4; nrel_mass; NaOH;
+ 
+=> nrel_next_exercise: exercise20_mixture;
+
+=> nrel_main_idtf:
+	[Упражнение 19. Раздел. Предметная область смесей]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 19. Section. Subject domain of mixtures]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise19_mixture_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise19_mixture_en.html" (* <-lang_en;; *);;
+	*);;

@@ -1,0 +1,24 @@
+ex2_salts
+<- exercises_salts;
+
+-> rrel_key_sc_element: salt; solution; subst_NaOH; rrel_solute;
+
+=> nrel_next: ex3_salts;
+
+=> nrel_main_idtf:
+	[Упражнение 2. Раздел. Предметная область солей]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 2. Section. Subject domain of salts]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex2_salts_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/ex2_salts_en.html" (* <-lang_en;; *);;
+	*);;

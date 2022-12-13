@@ -1,0 +1,148 @@
+subject_domain_of_computer_chemistry
+  => nrel_main_idtf:
+    [Предметная область компьютерной химии] (* <- lang_ru;;*);
+    [Subject domain of computer chemistry] (* <- lang_en;; *);
+
+  <- subject_domain;
+  -> rrel_maximum_studied_object_class: computer_chemistry;
+  -> rrel_not_maximum_studied_object_class:
+        computational_chemistry;
+        mathematical_chemistry;
+        cheminformatics
+    ;;  
+
+computer_chemistry  
+<- sc_node_not_relation;
+  => nrel_main_idtf: [компьютерная химия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [computer chemistry] (* <- lang_en;; *);
+
+  <= nrel_subdividing:...
+  (*
+    => nrel_main_idtf: [Разбиение на поднауки] (* <- lang_ru;; *);;
+    -> computational_chemistry;;
+    -> mathematical_chemistry;;
+    -> cheminformatics;;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (компьютерная химия)] (* <- lang_ru;; *);
+      [Def. (computer chemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Компьютерная химия — область химии, основанная на применении компьютерных методов и дискретной математики, прежде всего, теории графов и комбинаторики, к химическим задачам фундаментального и прикладного характера.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (компьютерная химия)](* <- lang_ru;; *);
+      [Stat. (computer chemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Исходя из общего определения химии как науки о веществах и превращениях их в друг друга, можно сказать, что вещества (молекулы) моделируются в компьютерной химии молекулярными графами, а превращения веществ (химические реакции) — формальными операциями с графами.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (компьютерная химия)](* <- lang_ru;; *);
+      [Pic. (computer chemistry)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/computer_chemistry.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+mathematical_chemistry  
+<- sc_node_not_relation;
+  => nrel_main_idtf: [математическая химия] (* <- lang_ru;; *);
+  => nrel_main_idtf: [mathematical chemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (математическая химия)] (* <- lang_ru;; *);
+      [Def. (mathematical chemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Математическая химия — раздел теоретической химии, область исследований, посвящённая новым применениям математики к химическим задачам.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (математическая химия)](* <- lang_ru;; *);
+      [Stat. (mathematical chemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Основная область интересов — это математическое моделирование гипотетически возможных физико-химических и химических явлений и процессов, а также их зависимость от свойств атомов и структуры молекул.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+
+cheminformatics
+<- sc_node_not_relation;
+  => nrel_main_idtf: [хемоинформатика] (* <- lang_ru;; *);
+  => nrel_main_idtf: [cheminformatics] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (хемоинформатика)] (* <- lang_ru;; *);
+      [Def. (cheminformatics)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Хемоинформатика — применение методов информатики для решения химических проблем.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (хемоинформатика)](* <- lang_ru;; *);
+      [Stat. (cheminformatics)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Сферы приложения хемоинформатики: прогноз физико-химических свойств химических соединений, свойств материалов, токсикологическая и биологическая активность, экотоксикологические свойства, разработка новых лекарственных препаратов и материалов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+
+computational_chemistry
+<- sc_node_not_relation;
+  => nrel_main_idtf: [хемоинформатика] (* <- lang_ru;; *);
+  => nrel_main_idtf: [computational chemistry] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (хемоинформатика)] (* <- lang_ru;; *);
+      [Def. (computational chemistry)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Вычислительная химия — раздел химии, в котором математические методы используются для расчёта молекулярных свойств, моделирования поведения молекул, планирования синтеза, поиска в базах данных и обработки комбинаторных библиотек.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (хемоинформатика)](* <- lang_ru;; *);
+      [Stat. (computational chemistry)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Вычислительная химия использует результаты классической и квантовой теоретической химии, реализованные в виде эффективных компьютерных программ, для вычисления свойств и определения структуры молекулярных систем.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;

@@ -1,0 +1,707 @@
+subject_domain_of_ketones
+=> nrel_main_idtf: 
+	[Предметная область кетонов]
+	(* <- lang_ru;;*);
+	[Subject domain of ketones]
+	(* <- lang_en;; *);
+
+<- subject_domain;
+-> rrel_maximum_studied_object_class: ketone;
+-> rrel_not_maximum_studied_object_class:
+	saturated_ketone;
+	unsaturated_ketone;
+	aromatic_ketone;
+	ketone_with_one_carbonyl_group;
+	diketone;
+	polyatomic_ketone;
+	acetone;
+	acetophenone;
+	benzophenone;
+	methyl_isobutyl_ketone;
+	butanone;
+	cyclohexanone;
+	diethyl_ketone;
+	diacetyl;
+	acetylacetone;
+	para_benzoquinone;
+	benzil;;
+
+ketone
+	<-sc_node_not_relation;
+	=> nrel_main_idtf:[кетон](* <- lang_ru;; *);
+	=> nrel_main_idtf:[ketone](* <- lang_en;; *);
+
+	<= nrel_subdividing:...
+	(*	
+		=> nrel_main_idtf:[Разбиение по признаку насыщенности углеводородного радикала](* <- lang_ru;; *);;
+		-> saturated_ketone;;
+		-> unsaturated_ketone;;
+		-> aromatic_ketone;;
+	*);	
+
+	<= nrel_subdividing:...
+	(*	
+		=> nrel_main_idtf:[Разбиение по числу карбонильных групп](* <- lang_ru;; *);;
+		-> ketone_with_one_carbonyl_group;;
+		-> diketone;;
+		-> polyatomic_ketone;;
+	*);
+
+	<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. (кетон)](*<-lang_ru;;*);
+			[Def. (ketone)](*<-lang_en;;*);;
+		<=nrel_using_constants:... (*
+				->organic_compound;;
+			*);;
+		
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="ketone">Кетон</sc_element></b> - 
+			<sc_element sys_idtf="organic_compound">органическое соединение</sc_element>, 
+			содержащее карбонильную группу связаную с двумя углеводородными радикалами
+			](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+			-> rrel_example:[<b><sc_element sys_idtf="ketone">Ketone</sc_element></b> is 
+			<sc_element sys_idtf="organic_compound">organic compound</sc_element>,
+			that contains carbonyl group connected to two hydrocarbon substituents
+			](* <- lang_en;; => nrel_format: format_html;; *);;
+		*);;
+
+	*);
+
+		<-rrel_key_sc_element:...
+		(*
+			<-explanation;;
+				=>nrel_main_idtf:
+					[Утв. (кетон, промышленность, растворитель', полимер)](*<-lang_ru;;*);
+					[Exp (ketone, industry, solvent', polymer)](*<-lang_en;;*);;
+
+				<=nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[В <sc_element sys_idtf="industry">промышленности</sc_element> 
+						<sc_element sys_idtf="ketone">кетоны</sc_element> 
+						используют как <sc_element sys_idtf="rrel_solvent">растворители</sc_element>, 
+						фармацевтические препараты и для изготовления различных 
+						<sc_element sys_idtf="polymer">полимеров</sc_element>.
+						](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+					-> rrel_example:
+						[<sc_element sys_idtf="ketone">Ketones</sc_element> are produced on 
+						massive scales in <sc_element sys_idtf="industry">industry</sc_element> 
+						as <sc_element sys_idtf="rrel_solvent">solvents</sc_element>, 
+						<sc_element sys_idtf="polymer">polymer</sc_element> precursors, and pharmaceuticals. 
+						](* <- lang_en;; => nrel_format: format_html;; *);;
+				*);;
+		*);
+
+		<- rrel_key_sc_element:...
+		(*
+			<- illustration;;
+			=> nrel_main_idtf:
+				[Рис. (кетон)](* <- lang_ru;; *);
+				[Pic. (ketone)](* <- lang_en;; *);;
+				<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example: "file://image/ketone.png"(* => nrel_format: format_png;;*);;
+				*);;
+		*);;
+
+	
+  saturated_ketone
+	<-sc_node_not_relation;
+	=> nrel_main_idtf:[насыщенный кетон](* <- lang_ru;; *);
+	=> nrel_main_idtf:[saturated ketone](* <- lang_en;; *);
+
+	<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. (насыщенный кетон)](*<-lang_ru;;*);
+			[Def. (saturated ketone)](*<-lang_en;;*);;
+		<=nrel_using_constants:... (*
+				->ketone;;
+				->elem_C;;
+			*);;
+		
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="saturated_ketone">Насыщенный кетон</sc_element></b> - 
+			<sc_element sys_idtf="ketone">кетон</sc_element>,
+			содержащий насыщенный <sc_element sys_idtf="elem_C">углеродный</sc_element> радикал.]
+				(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+			-> rrel_example:[<b><sc_element sys_idtf="saturated_ketone">Saturated ketone</sc_element></b> is 
+			<sc_element sys_idtf="ketone">ketone</sc_element> that contains
+			saturated  <sc_element sys_idtf="elem_C">carbon</sc_element> substituent.]
+				(* <- lang_en;; => nrel_format: format_html;; *);;
+		*);;
+	*);;
+
+
+  unsaturated_ketone
+	<-sc_node_not_relation;
+	=> nrel_main_idtf:[ненасыщенный кетон](* <- lang_ru;; *);
+	=> nrel_main_idtf:[unsaturated ketone](* <- lang_en;; *);
+
+	<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. (ненасыщенный кетон)](*<-lang_ru;;*);
+			[Def. (unsaturated ketone)](*<-lang_en;;*);;
+		<=nrel_using_constants:... (*
+				->ketone;;
+				->elem_C;;
+			*);;
+		
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="unsaturated_ketone">Ненасыщенный кетон</sc_element></b> - 
+			<sc_element sys_idtf="ketone">кетон</sc_element>,
+			содержащий ненасыщенный  <sc_element sys_idtf="elem_C">углеродный</sc_element> радикал.]
+				(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+			-> rrel_example:[<b><sc_element sys_idtf="unsaturated_ketone">Unsaturated ketone</sc_element></b> is 
+			<sc_element sys_idtf="ketone">ketone</sc_element> that contains
+			unsaturated  <sc_element sys_idtf="elem_C">carbon</sc_element> substituent.]
+				(* <- lang_en;; => nrel_format: format_html;; *);;
+		*);;
+	*);;
+
+  aromatic_ketone
+	<-sc_node_not_relation;
+	=> nrel_main_idtf:[ароматический кетон](* <- lang_ru;; *);
+	=> nrel_main_idtf:[aromatic ketone](* <- lang_en;; *);
+	
+	<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. (ароматический кетон)](*<-lang_ru;;*);
+			[Def. (aromatic ketone)](*<-lang_en;;*);;
+		<=nrel_using_constants:... (*
+				->ketone;;
+			*);;
+		
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="aromatic_ketone">Ароматический кетон</sc_element></b> - 
+			<sc_element sys_idtf="ketone">кетон</sc_element>,
+			содержащий два ароматических радикала или ароматический и алифатический радикалы.]
+				(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+			-> rrel_example:[<b><sc_element sys_idtf="aromatic_ketone">Aromatic ketone</sc_element></b> is 
+			<sc_element sys_idtf="ketone">ketone</sc_element> that contains
+			two aromatic substituents or aromatic and alifatic substituents.]
+				(* <- lang_en;; => nrel_format: format_html;; *);;
+		*);;
+	*);;
+
+
+  ketone_with_one_carbonyl_group
+	<-sc_node_not_relation;
+	=> nrel_main_idtf:[кетон с одной карбонильной группой](* <- lang_ru;; *);
+	=> nrel_main_idtf:[ketone with one carbonyl group](* <- lang_en;; *);
+
+	<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. (кетон с одной карбонильной группой)](*<-lang_ru;;*);
+			[Def. (ketone with one carbonyl group)](*<-lang_en;;*);;
+		<=nrel_using_constants:... (*
+				->ketone;;
+				->number_one;;
+			*);;
+		
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="ketone_with_one_carbonyl_group">Кетон с одной карбонильной группой</sc_element></b> - 
+			<sc_element sys_idtf="ketone">кетон</sc_element>,
+			содержащий <sc_element sys_idtf="number_one">одну</sc_element> карбонилную группу.]
+				(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+			-> rrel_example:[<b><sc_element sys_idtf="ketone_with_one_carbonyl_group">Ketone with one carbonyl group</sc_element></b> - 
+			<sc_element sys_idtf="ketone">ketone</sc_element> that contains
+			<sc_element sys_idtf="number_one">one</sc_element> carbonyl group.]
+				(* <- lang_ru;; => nrel_format: format_html;; *);;
+		*);;
+
+	*);;
+
+
+  diketone
+	<-sc_node_not_relation;
+	=> nrel_main_idtf:[дикетон](* <- lang_ru;; *);
+	=> nrel_main_idtf:[diketone](* <- lang_en;; *);
+
+	<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. (дикетон)](*<-lang_ru;;*);
+			[Def. (diketone)](*<-lang_en;;*);;
+		<=nrel_using_constants:... (*
+				->ketone;;
+				->number_two;;
+			*);;
+		
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="diketone">Дикетон</sc_element></b> - 
+			<sc_element sys_idtf="ketone">кетон</sc_element>,
+			содержащий <sc_element sys_idtf="number_two">две</sc_element> карбонилные группы.]
+				(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+			-> rrel_example:[<b><sc_element sys_idtf="diketone">Diketone</sc_element></b> - 
+			<sc_element sys_idtf="ketone">ketone</sc_element> that contains
+			<sc_element sys_idtf="number_two">two</sc_element> carbonyl groups.]
+				(* <- lang_ru;; => nrel_format: format_html;; *);;
+		*);;
+
+	*);;
+
+  polyatomic_ketone
+	<-sc_node_not_relation;
+	=> nrel_main_idtf:[многоатомный кетон](* <- lang_ru;; *);
+	=> nrel_main_idtf:[polyatomic ketone](* <- lang_en;; *);
+
+	<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. (многоатомный кетон)](*<-lang_ru;;*);
+			[Def. (polyatomic ketone)](*<-lang_en;;*);;
+		<=nrel_using_constants:... (*
+				->ketone;;
+				->number_two;;
+				->nrel_more;;
+			*);;
+		
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="polyatomic_ketone">Многоатомный кетон</sc_element></b> - 
+			<sc_element sys_idtf="ketone">кетон</sc_element>,
+			содержащий <sc_element sys_idtf="nrel_more">больше</sc_element> чем
+			<sc_element sys_idtf="number_two">две</sc_element> карбонилные группы.]
+				(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+			-> rrel_example:[<b><sc_element sys_idtf="polyatomic_ketone">Polyatomic ketone</sc_element></b> - 
+			<sc_element sys_idtf="ketone">ketone</sc_element> that contains
+			<sc_element sys_idtf="nrel_more">more</sc_element> than
+			<sc_element sys_idtf="number_two">two</sc_element> carbonyl groups.]
+				(* <- lang_en;; => nrel_format: format_html;; *);;
+		*);;
+
+	*);;
+
+
+acetophenone
+  <-sc_node_not_relation;
+  <= nrel_inclusion:aromatic_ketone;
+  => nrel_main_idtf:[ацетофенон](* <- lang_ru;; *);
+  => nrel_main_idtf:[acetophenone](* <- lang_en;; *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (ацетофенон)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->aromatic_ketone;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="acetophenone">Ацетофенон</sc_element></b> - 
+		<sc_element sys_idtf="aromatic_ketone">ароматический кетон</sc_element>, c 
+		<sc_element sys_idtf="chemical_formula">химический формулой</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element><sub>8</sub>
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>8</sub>
+		<sc_element sys_idtf="elem_O">O</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (ацетофенон, бесцветный, жидкость, запах)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="acetophenone">Ацетофенон</sc_element> - 
+		<sc_element sys_idtf="no_color">бесцетная</sc_element> маслянистая 
+		<sc_element sys_idtf="liquid">жидкость</sc_element> с сильным
+		<sc_element sys_idtf="smell">запахом</sc_element> черемухи.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (ацетофенон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/acetophenone.png"(* => nrel_format: format_png;;*);;
+	*);;
+  *);;
+
+benzophenone
+  <-sc_node_not_relation;
+  <= nrel_inclusion:aromatic_ketone;
+  => nrel_main_idtf:[бензофенон](* <- lang_ru;; *);
+  => nrel_main_idtf:[дифенилкетон](* <- lang_ru;; *);
+  => nrel_main_idtf:[benzophenone](* <- lang_en;; *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (бензофенон)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->aromatic_ketone;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="benzophenone">Бензофенон</sc_element></b> - 
+		<sc_element sys_idtf="aromatic_ketone">ароматический кетон</sc_element>, c 
+		<sc_element sys_idtf="chemical_formula">химический формулой</sc_element> 
+		(<sc_element sys_idtf="elem_C">C</sc_element><sub>6</sub>
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>5</sub>)<sub>2</sub>
+		<sc_element sys_idtf="elem_С">С</sc_element>
+		<sc_element sys_idtf="elem_O">O</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (бензофенон, УФ-излучение)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="benzophenone">Бензофенон</sc_element> 
+		способен поглощать и отражать УФ-излучение, благодаря чему он 
+		может длительное время сохранять вещества от действия света.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (бензофенон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/benzophenone.png"(* => nrel_format: format_png;;*);;
+	*);;
+  *);;
+
+methyl_isobutyl_ketone
+  <-sc_node_not_relation;
+  => nrel_main_idtf:[метилизобутилкетон](* <- lang_ru;; *);
+  => nrel_main_idtf:[methyl isobutyl ketone](* <- lang_en;; *);;
+
+butanone
+  <-sc_node_not_relation;
+  => nrel_main_idtf:[метилэтилкетон](* <- lang_ru;; *);
+  => nrel_main_idtf:[бутанон](* <- lang_ru;; *);
+  => nrel_main_idtf:[butanone](* <- lang_en;; *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (бутанон)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->ketone;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="butanone">Бутанон</sc_element></b> - 
+		алифатический <sc_element sys_idtf="ketone">кетон</sc_element>, c 
+		<sc_element sys_idtf="chemical_formula">химический формулой</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>8</sub>
+		<sc_element sys_idtf="elem_O">O</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (бутанон, бесцветный, жидкость, запах, ацетон)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="butanone">Бутанон</sc_element> - 
+		<sc_element sys_idtf="no_color">бесцетная</sc_element> легколетучая 
+		<sc_element sys_idtf="liquid">жидкость</sc_element> с 
+		<sc_element sys_idtf="smell">запахом</sc_element>, напоминающим 
+		запах <sc_element sys_idtf="acetone">ацетона</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (бутанон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/butanone.png"(* => nrel_format: format_png;;*);;
+	*);;
+  *);;
+
+cyclohexanone
+  <-sc_node_not_relation;
+  => nrel_main_idtf:[циклогексанон](* <- lang_ru;; *);
+  => nrel_main_idtf:[cyclohexanone](* <- lang_en;; *);
+    <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (циклогексанон)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->ketone;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="cyclohexanone">Циклогексанон</sc_element></b> - 
+		алициклический <sc_element sys_idtf="ketone">кетон</sc_element>, c 
+		<sc_element sys_idtf="chemical_formula">химический формулой</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element><sub>6</sub>
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>10</sub>
+		<sc_element sys_idtf="elem_O">O</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (циклогексанон, бесцветный, жидкость, запах, ацетон)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="cyclohexanone">Циклогексанон</sc_element> - 
+		<sc_element sys_idtf="no_color">бесцетная</sc_element> маслянистая 
+		<sc_element sys_idtf="liquid">жидкость</sc_element> с 
+		<sc_element sys_idtf="smell">запахом</sc_element> 
+		<sc_element sys_idtf="acetone">ацетона</sc_element> и мяты.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (циклогексанон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/cyclohexanone.png"(* => nrel_format: format_png;;*);;
+	*);;
+  *);;
+
+diethyl_ketone
+  <-sc_node_not_relation;
+  <= nrel_inclusion:diketone;
+  => nrel_main_idtf:[диэтилкетон](* <- lang_ru;; *);
+  => nrel_main_idtf:[3-pentanone](* <- lang_en;; *);
+  => nrel_main_idtf:[diethyl ketone](* <- lang_en;; *);;
+
+diacetyl
+  <-sc_node_not_relation;
+  <= nrel_inclusion:diketone;
+  => nrel_main_idtf:[диацетил](* <- lang_ru;; *);
+  => nrel_main_idtf:[butanedione](* <- lang_en;; *);
+  => nrel_main_idtf:[diacetyl](* <- lang_en;; *);
+  
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (диацетил)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->aromatic_ketone;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="diacetyl">Диацетил</sc_element></b> - 
+		простейший представитель <sc_element sys_idtf="diketone">дикетонов</sc_element>, c 
+		<sc_element sys_idtf="chemical_formula">химический формулой</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub>
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>6</sub>
+		<sc_element sys_idtf="elem_O">O</sc_element><sub>2</sub>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (диацетил, жидкость, запах, вкус)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="diacetyl">Диацетил</sc_element> - 
+		желто-зеленая <sc_element sys_idtf="liquid">жидкость</sc_element>, имеет 
+		<sc_element sys_idtf="smell">запах</sc_element> сливочного масла и сметаны,
+		но практически <sc_element sys_idtf="no_taste">безвкусен</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (диацетил)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/diacetyl.png"(* => nrel_format: format_png;;*);;
+	*);;
+  *);;
+
+acetylacetone
+  <-sc_node_not_relation;
+  <= nrel_inclusion:diketone;
+  => nrel_main_idtf:[ацетилацетон](* <- lang_ru;; *);
+  => nrel_main_idtf:[acetylacetone](* <- lang_en;; *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (ацетилацетон)](*<- lang_ru;;*);;
+
+	<=nrel_using_constants:...
+	(*
+		->ketone;;
+		->chemical_formula;;
+		->elem_C;;
+		->elem_H;;
+		->elem_O;;
+	*);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<b><sc_element sys_idtf="acetylacetone">Ацетилацетон</sc_element></b> - 
+		<sc_element sys_idtf="diketone">дикетон</sc_element>, c 
+		<sc_element sys_idtf="chemical_formula">химический формулой</sc_element> 
+		<sc_element sys_idtf="elem_C">C</sc_element><sub>5</sub>
+		<sc_element sys_idtf="elem_H">H</sc_element><sub>8</sub>
+		<sc_element sys_idtf="elem_O">O</sc_element><sub>2</sub>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (ацетилацетон, бесцветный, жидкость, запах, ацетон, уксусная кислота)](* <- lang_ru;; *);;
+
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[<sc_element sys_idtf="acetylacetone">Ацетилацетон</sc_element> - 
+		<sc_element sys_idtf="no_color">бесцетная</sc_element> 
+		<sc_element sys_idtf="liquid">жидкость</sc_element> с 
+		<sc_element sys_idtf="smell">запахом</sc_element> 
+		<sc_element sys_idtf="acetone">ацетона</sc_element> и 
+		<sc_element sys_idtf="acetic_acid">уксусной кислоты</sc_element>.]
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+  *);
+
+  <-rrel_key_sc_element:...
+  (*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (ацетилацетон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/acetylacetone.png"(* => nrel_format: format_png;;*);;
+	*);;
+  *);;
+
+para_benzoquinone
+<-sc_node_not_relation;
+<= nrel_inclusion:diketone;
+=> nrel_main_idtf:[парабензохинон](* <- lang_ru;; *);
+=> nrel_main_idtf:[parabenzoquinone](* <- lang_en;; *);;
+
+benzil
+<-sc_node_not_relation;
+<= nrel_inclusion:diketone;
+=> nrel_main_idtf:[бензил](* <- lang_ru;; *);
+=> nrel_main_idtf:[benzil](* <- lang_en;; *);;

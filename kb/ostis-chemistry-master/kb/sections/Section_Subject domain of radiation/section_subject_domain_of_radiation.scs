@@ -1,0 +1,10 @@
+section_subject_domain_of_radiation
+=> nrel_main_idtf:
+	[Раздел. Предметная область радиации](* <- lang_ru;; *);
+	[Section. Subject domain of radiation](* <- lang_en;; *);
+<- not_enough_formed_structure;
+<- atomic_section;;
+section_subject_domain_of_radiation = [*^"file://section_subject_domain_of_radiation.scsi"*];;
+
+section_subject_domain_of_radiation
+-> rrel_key_sc_element: subject_domain_of_radiation;;

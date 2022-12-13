@@ -1,0 +1,58 @@
+nrel_sublimation
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[сублимация*](* <-lang_ru;; *);
+	[sublimation*](* <-lang_en;; *);
+=>nrel_idtf:
+	[возгонка*](* <-lang_ru;; *);
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+// домены
+=>nrel_second_domain: solid;
+=>nrel_first_domain: liquid;
+=>nrel_definitional_domain:...
+(*
+	<=nrel_combination:...
+	(*
+		->liquid; solid;;
+	*);;
+*);
+
+//определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(сублимация*)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Сублимация  — переход вещества из твёрдого состояния сразу в газообразное, минуя жидкое.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->solid;;
+		->liquid;;
+		->chemical_substance;;
+	*);;
+*);
+
+//утверждение
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_main_idtf: [Утв.(сублимация*, химический процесс, десублимация*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Обратным процессом сублимации является десублимация.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: chemical_process;;
+	-> rrel_key_sc_element: nrel_desublimation;;
+*);;

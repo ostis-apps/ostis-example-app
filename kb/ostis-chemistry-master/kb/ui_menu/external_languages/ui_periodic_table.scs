@@ -1,0 +1,6 @@
+ui_periodic_table
+<- ui_user_command_class_noatom;
+<- ui_external_languages;
+=> nrel_main_idtf:
+    [Периодическая таблица] (* <- lang_ru;; *);
+    [Periodic table] (* <- lang_en;; *);;

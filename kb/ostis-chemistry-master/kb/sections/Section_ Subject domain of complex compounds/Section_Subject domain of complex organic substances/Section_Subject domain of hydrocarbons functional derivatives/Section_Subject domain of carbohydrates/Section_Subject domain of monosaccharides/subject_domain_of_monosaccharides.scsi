@@ -1,0 +1,828 @@
+subject_domain_of_monosaccharides
+=> nrel_main_idtf:
+	[Предметная область моносахаридов]
+	(* <- lang_ru;;*);
+	[Subject domain of monosaccharides]
+	(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: monosaccharide;
+-> rrel_not_maximum_studied_object_class:
+	acetone;
+	aldose;
+	carbohydrate_metabolism;
+	crystal_substance;
+	formalin;
+	galactose;
+	glucose;
+	glycogen;
+	heptose;
+	hexose;
+	ketose;
+	lactic_acid;
+	maltose;
+	natural_disaccharide;
+	octose;
+	pentose;
+	ribulose;
+	tetrose;
+	triose;;
+
+monosaccharide
+<- sc_node_not_relation;
+=> nrel_main_idtf:[моносахарид](* <- lang_ru;; *);
+=> nrel_main_idtf:[monosaccharide](* <- lang_en;; *);
+
+<= nrel_subdividing:
+...
+(*
+	=> nrel_main_idtf:[Разбиение по содержаниюn асимметричных атомов углерода](* <- lang_ru;; *);;
+	-> triose;;
+	-> tetrose;;
+	-> pentose;;
+	-> hexose;;
+	-> heptose;;
+	-> octose;;
+*);
+
+<= nrel_subdividing:
+...
+(*
+	=> nrel_main_idtf:[Разбиение по наличию альдо- или кето-группы](* <- lang_ru;; *);;
+	-> aldose;;
+	-> ketose;;
+*);
+
+<- rrel_key_sc_element:
+Definition_of_monosaccharide
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (моносахарид)](* <- lang_ru;; *);
+		[Def. (monosaccharide)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> organic_compound;;
+		-> monosaccharide;;
+		-> carbohydrate;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="monosaccharide">Моносахариды</sc_element></b> - <b><sc_element sys_idtf="organic_compound">органические соединения</sc_element></b>, одна из основных групп <b><sc_element sys_idtf="carbohydrate">углеводов</sc_element></b>; самая простая форма сахара.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="monosaccharide">Monosaccharides</sc_element></b> - <b><sc_element sys_idtf="organic_compound">organic compounds</sc_element></b>, one of the main groups of <b><sc_element sys_idtf="carbohydrate">carbohydrates</sc_element></b>; the simplest form of sugar.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (моносахарид)](* <- lang_ru;; *);
+		[Stat. (monosaccharide)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="monosaccharide">Моносахариды</sc_element></b> — стандартные блоки, из которых синтезируются <b><sc_element sys_idtf="disaccharide">дисахариды</sc_element></b> (такие, как <b><sc_element sys_idtf="sucrose">сахароза</sc_element></b>, мальтоза, лактоза), <b><sc_element sys_idtf="oligosaccharide">олигосахариды</sc_element></b> и полисахариды (такие, как <b><sc_element sys_idtf="cellulose">целлюлоза</sc_element></b> и <b><sc_element sys_idtf="starch">крахмал</sc_element></b>), содержат <b><sc_element sys_idtf="hydroxyl_group">гидроксильные группы</sc_element></b> и альдегидную (альдозы) или кетогруппу (кетозы)).](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="poison">Monosaccharides</sc_element></b> - the building blocks from which <b><sc_element sys_idtf="disaccharide">disaccharides</sc_element></b> are synthesized (such as <b><sc_element sys_idtf="sucrose">sucrose</sc_element></b>, maltose, lactose), <b><sc_element sys_idtf="oligosaccharide">oligosaccharides</sc_element></b> and polysaccharides (such as <b><sc_element sys_idtf="cellulose">cellulose</sc_element></b> and <b><sc_element sys_idtf="starch">starch</sc_element></b>) contain <b><sc_element sys_idtf="hydroxyl_group">hydroxyl groups</sc_element></b> and aldehyde (aldoses) or ketogroup (ketoses).](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+acetone
+<- sc_node_not_relation;
+=> nrel_main_idtf:[ацетон](* <- lang_ru;; *);
+=> nrel_main_idtf:[acetone](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (ацетон)](* <- lang_ru;; *);
+		[Def. (acetone)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> acetone;;
+        -> substance;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="acetone">ацетон</sc_element></b> - это органическое <b><sc_element sys_idtf="substance">вещество</sc_element></b>, простейший представитель насыщенных кетонов.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="acetone">Acetone</sc_element></b> is a organic <b><sc_element sys_idtf="substance">matter</sc_element></b>, the simplest representative of saturated ketones.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (ацетон)](* <- lang_ru;; *);
+		[Stat. (acetone)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="acetone">Ацетон</sc_element></b> — <b><sc_element sys_idtf="no_color">бесцветная</sc_element></b> подвижная летучая <b><sc_element sys_idtf="liquid">жидкость</sc_element></b> с характерным резким <b><sc_element sys_idtf="smell">запахом</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="acetone">Acetone</sc_element></b> is a <b><sc_element sys_idtf="no_color">colorless</sc_element></b> mobile volatile <b><sc_element sys_idtf="liquid">liquid</sc_element></b> with a characteristic strong <b><sc_element sys_idtf="smell">odor</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+aldose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[альдозы](* <- lang_ru;; *);
+=> nrel_main_idtf:[aldose](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (альдозы)](* <- lang_ru;; *);
+		[Def. (aldose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> aldose;;
+		-> monosaccharide;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="aldose">Альдозы</sc_element></b> -  <b><sc_element sys_idtf="monosaccharide">моносахариды</sc_element></b>, содержащие альдегидную группу в открытой форме.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="aldose">aldose</sc_element></b> is <b><sc_element sys_idtf="monosaccharide">monosaccharides</sc_element></b> containing the aldehyde group in the open form.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (альдозы)](* <- lang_ru;; *);
+		[Stat. (aldose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="aldose">Альдозы</sc_element></b> являются <b><sc_element sys_idtf="crystal_substance">кристаллическими веществами</sc_element></b> <b><sc_element sys_idtf="sweet">сладкого вкуса</sc_element></b>, растворимыми в воде.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="aldose">Aldoses</sc_element></b> are <b><sc_element sys_idtf="crystal_substance">crystalline substances</sc_element></b> of <b><sc_element sys_idtf="sweet">sweet taste</sc_element></b>, soluble in water.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+carbohydrate_metabolism
+<- sc_node_not_relation;
+=> nrel_main_idtf:[углеводный обмен](* <- lang_ru;; *);
+=> nrel_main_idtf:[carbohydrate metabolism](* <- lang_en;; *);
+=> nrel_idtf:[метаболизм углеводов](* <- lang_ru;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (углеводный обмен)](* <- lang_ru;; *);
+		[Def. (carbohydrate metabolism)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> carbohydrate_metabolism;;
+        -> metabolism;;
+        -> carbohydrate;;
+        -> organism;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="carbohydrate_metabolism">Углеводный обмен</sc_element></b> - <b><sc_element sys_idtf="metabolism">метаболизм</sc_element></b> <b><sc_element sys_idtf="carbohydrate">углеводов</sc_element></b> в <b><sc_element sys_idtf="organism">организмах</sc_element></b> животных и человека.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="carbohydrate_metabolism">Carbohydrate metabolism</sc_element></b> is a <b><sc_element sys_idtf="carbohydrate">carbohydrate</sc_element></b> <b><sc_element sys_idtf="metabolism">metabolism</sc_element></b> in animals and humans.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (углеводный обмен)](* <- lang_ru;; *);
+		[Stat. (carbohydrate metabolism)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="carbohydrate_metabolism">Углеводный обмен</sc_element></b> в <b><sc_element sys_idtf="organism">организмах</sc_element></b> человека состоит из семи процессов.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[The <b><sc_element sys_idtf="carbohydrate_metabolism">carbohydrate metabolism</sc_element></b> in the human body consists of seven processes.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+crystal_substance
+<- sc_node_not_relation;
+=> nrel_main_idtf:[кристаллическое вещество](* <- lang_ru;; *);
+=> nrel_main_idtf:[crystal substance](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (кристаллическое вещество)](* <- lang_ru;; *);
+		[Def. (crystal substance)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> crystal_substance;;
+		-> solid;;
+		-> atom;;
+		-> molecule;;
+		-> crystal_cell;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="crystal_substance">Кристаллическое вещество</sc_element></b> - <b><sc_element sys_idtf="solid">твердое вещество</sc_element></b>, у которого <b><sc_element sys_idtf="atom">атомы</sc_element></b> или <b><sc_element sys_idtf="molecule">молекулы</sc_element></b> образуют правильную упорядоченную <b><sc_element sys_idtf="crystal_cell">кристаллическую решетку</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="crystal_substance">Crystal substance</sc_element></b> is a <b><sc_element sys_idtf="solid">solid</sc_element></b> whose <b><sc_element sys_idtf="atom">atoms</sc_element></b> or <b><sc_element sys_idtf="molecule">molecules</sc_element></b> form a regular ordered <b><sc_element sys_idtf="crystal_cell">crystal cell</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (кристаллическое вещество)](* <- lang_ru;; *);
+		[Stat. (crystal ubstance)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Большинство <b><sc_element sys_idtf="solid">твердых веществ</sc_element></b> существует в кристаллическом состоянии, которое отличается повышенной стабильностью, но это не означает, что они имеют <b><sc_element sys_idtf="crystall">кристаллы</sc_element></b> в прямом смысле этого слова.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Most <b><sc_element sys_idtf="solid">solids</sc_element></b> exist in a crystalline state, which is highly stable, but this does not mean that they have <b><sc_element sys_idtf="crystall">crystals</sc_element></b> in the direct sense of the word.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+formalin
+  <- sc_node_not_relation;
+
+  => nrel_main_idtf:
+    [формалин] (* <- lang_ru;; *);
+    [formalin] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (формалин)] (* <- lang_ru;; *);
+      [Def. (formalin)] (* <- lang_en;; *);;
+    <= nrel_using_constants: ... (*
+      -> formalin;;
+      -> methanol;;
+    *);;
+    <= nrel_sc_text_translation: ... (*
+      -> [<b><sc_element sys_idtf="formalin">Формалин</b></sc_element> - водный раствор формальдегида, стабилизированный <b><sc_element sys_idtf="methanol">метанолом</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> [<b><sc_element sys_idtf="formalin">Formalin</b></sc_element> is a formalin - aqueous solution stabilized with <b><sc_element sys_idtf="methanol">methanol</b></sc_element>.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (формалин)] (* <- lang_ru;; *);
+      [Exp. (formalin] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> [<b><sc_element sys_idtf="formalin">Формалин</b></sc_element> - <b><sc_element sys_idtf="no_color">бесцветная</b></sc_element> <b><sc_element sys_idtf="liquid">жидкость</b></sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+      -> [<b><sc_element sys_idtf="formalin">Formalin</b></sc_element> is a <b><sc_element sys_idtf="no_color">colorless</b></sc_element> <b><sc_element sys_idtf="liquid">liquid</b></sc_element>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+    *);;
+  *);;
+
+galactose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[галактоза](* <- lang_ru;; *);
+=> nrel_main_idtf:[galactose](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (галактоза)](* <- lang_ru;; *);
+		[Def. (galactose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> monosaccharide;;
+		-> galactose;;
+		-> hexose;;
+		-> disaccharide;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="galactose">Галактоза</sc_element></b> - <b><sc_element sys_idtf="monosaccharide">моносахарид</sc_element></b> класса <b><sc_element sys_idtf="hexose">гексоз</sc_element></b>, который есть в составе <b><sc_element sys_idtf="disaccharide">дисахарида</sc_element></b> лактозы и других полисахаридов.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="galactose">Galactose</sc_element></b>  is a <b><sc_element sys_idtf="monosaccharide">monosaccharide</sc_element></b> of the <b><sc_element sys_idtf="hexose">hexose</sc_element></b> class, which is in the composition of the lactose <b><sc_element sys_idtf="disaccharide">disaccharide</sc_element></b> and other polysaccharides.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (галактоза)](* <- lang_ru;; *);
+		[Stat. (galactose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="galactose">Галактоза</sc_element></b> не является незаменимым питательным веществом.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="natural_poison">Galactose</sc_element></b> is not an essential nutrient.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+glucose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[глюкоза](* <- lang_ru;; *);
+=> nrel_main_idtf:[glucose](* <- lang_en;; *);
+=> nrel_idtf:[декстроза](* <- lang_ru;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (глюкоза)](* <- lang_ru;; *);
+		[Def. (glucose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> monosaccharide;;
+		-> glucose;;
+		-> nrel_hydrolysis;;
+		-> disaccharide;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="glucose">Глюкоза</sc_element></b> – <b><sc_element sys_idtf="monosaccharide">моносахарид</sc_element></b>, являющийся универсальным источником энергии для человека. Это конечный продукт <b><sc_element sys_idtf="nrel_hydrolysis">гидролиза</sc_element></b> <b><sc_element sys_idtf="disaccharide">ди</sc_element></b> – и полисахаридов.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="glucose">Glucose </sc_element></b> is a <b><sc_element sys_idtf="monosaccharide">monosaccharide</sc_element></b>, which is a universal source of energy for humans. This is the end product of the <b><sc_element sys_idtf="nrel_hydrolysis">hydrolysis</sc_element></b> of <b><sc_element sys_idtf="disaccharide">di</sc_element></b> - and polysaccharides..](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (glucose)](* <- lang_ru;; *);
+		[Stat. (glucose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="galactose">Галактоза</sc_element></b> не является незаменимым питательным веществом.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="natural_poison">Galactose</sc_element></b> is not an essential nutrient.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+glycogen
+<- sc_node_not_relation;
+=> nrel_main_idtf:[гликоген](* <- lang_ru;; *);
+=> nrel_main_idtf:[glycogen](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (гликоген)](* <- lang_ru;; *);
+		[Def. (glycogen)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> glycogen;;
+		-> glucose;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="glycogen">Гликоген</sc_element></b> - полисахарид состава, образованный остатками <b><sc_element sys_idtf="glucose">глюкозы</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="glycogen">Glycogen</sc_element></b> is a polysaccharide, formed by <b><sc_element sys_idtf="glucose">glucose</sc_element></b> residues.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (гликоген)](* <- lang_ru;; *);
+		[Stat. (glycogen)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[В b><sc_element sys_idtf="cell">клетках</sc_element></b> животных <b><sc_element sys_idtf="glycogen">гликоген</sc_element></b> служит основным запасным <b><sc_element sys_idtf="carbohydrate">углеводом</sc_element></b> и основной формой хранения <b><sc_element sys_idtf="glucose">глюкозы</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[In animal b><sc_element sys_idtf="cell">cells</sc_element></b>, <b><sc_element sys_idtf="glycogen">glycogen</sc_element></b> serves as the main storage <b><sc_element sys_idtf="carbohydrate">carbohydrate</sc_element></b> and the main form of <b><sc_element sys_idtf="glucose">glucose</sc_element></b> storage.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+heptose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[гептозы](* <- lang_ru;; *);
+=> nrel_main_idtf:[heptose](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (гептозы)](* <- lang_ru;; *);
+		[Def. (heptose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> monosaccharide;;
+		-> heptose;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="heptose">Гептозы</sc_element></b> - класс семиуглеродных <b><sc_element sys_idtf="monosaccharide">моносахаридов</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="heptose">Heptose</sc_element></b> is seven carbon <b><sc_element sys_idtf="monosaccharide">monosaccharide</sc_element></b> class.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (Гептозы)](* <- lang_ru;; *);
+		[Stat. (heptose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Некоторые <b><sc_element sys_idtf="heptose">гептозы</sc_element></b> (например, седогептулоза, манногептулоза) являются промежуточными продуктами в биосинтезе липидов.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Some <b><sc_element sys_idtf="heptose">heptoses</sc_element></b> (for example, sedoheptulose, mannoheptulose) are intermediate products in lipid biosynthesis.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+hexose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[гексозы](* <- lang_ru;; *);
+=> nrel_main_idtf:[hexose](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (гексозы)](* <- lang_ru;; *);
+		[Def. (hexose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> monosaccharide;;
+		-> hexose;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="hexose">Гексозы</sc_element></b> - класс шестиуглеродных <b><sc_element sys_idtf="monosaccharide">моносахаридов</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="hexose">Hexose</sc_element></b> is six carbon <b><sc_element sys_idtf="monosaccharide">monosaccharide</sc_element></b> class.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (гексозы)](* <- lang_ru;; *);
+		[Stat. (hexose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="hexose">Гексозы</sc_element></b> служат сырьём для многих видов микробиологической промышленности (производство молочной <b><sc_element sys_idtf="definition_of_acid">кислоты</sc_element></b>, ацетона, <b><sc_element sys_idtf="glycerol">глицерина</sc_element></b> и др.).](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="hexose">Hexoses</sc_element></b> serve as raw materials for many types of microbiological industry (production of lactic <b><sc_element sys_idtf="definition_of_acid">acid</sc_element></b>, acetone, <b><sc_element sys_idtf="glycerol">glycerin</sc_element></b>, etc.).](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+ketose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[кетозы](* <- lang_ru;; *);
+=> nrel_main_idtf:[ketose](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (кетозы)](* <- lang_ru;; *);
+		[Def. (ketose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> monosaccharide;;
+		-> ketose;;
+		-> ketone;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="ketose">Кетозы</sc_element></b> - <b><sc_element sys_idtf="monosaccharide">моносахариды</sc_element></b>, содержащие <b><sc_element sys_idtf="ketone">кетогруппу</sc_element></b> в открытой форме.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="ketose">ketose</sc_element></b> is <b><sc_element sys_idtf="monosaccharide">monosaccharides</sc_element></b> containing the <b><sc_element sys_idtf="ketone">ketone group</sc_element></b> in the open form.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (кетозы)](* <- lang_ru;; *);
+		[Stat. (ketose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Наиболее распространенной <b><sc_element sys_idtf="ketose">кетозой</sc_element></b> в природе является фруктоза.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[The most common <b><sc_element sys_idtf="ketose">ketosis</sc_element></b> in nature is fructose.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+lactic_acid
+<- sc_node_not_relation;
+=> nrel_main_idtf:[Молочная кислота](* <- lang_ru;; *);
+=> nrel_main_idtf:[lactic_acid](* <- lang_en;; *);
+=> nrel_idtf:[лактат](* <- lang_ru;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (Молочная кислота)](* <- lang_ru;; *);
+		[Def. (lactic acid)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> lactic_acid;;
+        -> substance;;
+        -> carbonate;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="lactic_acid">Молочная кислота</sc_element></b> - это <b><sc_element sys_idtf="substance">вещество</sc_element></b> из <b><sc_element sys_idtf="carbonate">карбоновой</sc_element></b> группы.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="lactic_acid">Carbohydrate metabolism</sc_element></b> is a this <b><sc_element sys_idtf="substance">substance</sc_element></b> from the <b><sc_element sys_idtf="carbonate">carboxylic</sc_element></b> group.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (Молочная кислота)](* <- lang_ru;; *);
+		[Stat. (lactic acid)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="lactic_acid">Молочная кислота</sc_element></b> образуется при молочнокислом брожении сахаров, в частности, в прокисшем молоке, при брожении вина и пива.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="lactic_acid">Lactic acid</sc_element></b> is formed during the lactic fermentation of sugars, in particular, in sour milk, during fermentation of wine and beer.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+maltose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[мальтоза](* <- lang_ru;; *);
+=> nrel_main_idtf:[maltose](* <- lang_en;; *);
+=> nrel_idtf:[солодовый сахар](* <- lang_ru;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (мальтоза)](* <- lang_ru;; *);
+		[Def. (maltose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> natural_disaccharide;;
+		-> maltose;;
+		-> glucose;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="maltose">мальтоза</sc_element></b> - <b><sc_element sys_idtf="natural_disaccharide">природный дисахарид</sc_element></b>, состоящий из двух остатков <b><sc_element sys_idtf="glucose">глюкозы</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="maltose">maltose</sc_element></b> is <b><sc_element sys_idtf="natural_disaccharide">natural disaccharide</sc_element></b> consisting of two <b><sc_element sys_idtf="glucose">glucose</sc_element></b> residues.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (мальтоза)](* <- lang_ru;; *);
+		[Stat. (maltose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[В животном и растительном <b><sc_element sys_idtf="organism">организмах</sc_element></b> <b><sc_element sys_idtf="maltose">мальтоза</sc_element></b> образуется при <b><sc_element sys_idtf="enzyme">ферментативном</sc_element></b> расщеплении <b><sc_element sys_idtf="starch">крахмала</sc_element></b> и гликогена.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[In animal and plant <b><sc_element sys_idtf="organism">organisms</sc_element></b>, <b><sc_element sys_idtf="maltose">maltose</sc_element></b> is formed by <b><sc_element sys_idtf="enzyme">enzymatic</sc_element></b> breakdown of <b><sc_element sys_idtf="starch">starch</sc_element></b> and glycogen.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+natural_disaccharide
+<- sc_node_not_relation;
+=> nrel_main_idtf:[природный дисахарид](* <- lang_ru;; *);
+=> nrel_main_idtf:[natural disaccharide](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (природный дисахарид)](* <- lang_ru;; *);
+		[Def. (natural disaccharide)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> natural_disaccharide;;
+		-> disaccharide;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="natural_disaccharide">Природный дисахарид</sc_element></b> - <b><sc_element sys_idtf="disaccharide">дисахарид</sc_element></b>, встречающийся в природе.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="natural_disaccharide">natural_disaccharide</sc_element></b> is  naturally occuring <b><sc_element sys_idtf="disaccharide">disaccharide</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (природный дисахарид)](* <- lang_ru;; *);
+		[Stat. (natural disaccharide)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Обычно <b><sc_element sys_idtf="disaccharide">дисахарид</sc_element></b> получают из природных источников (например, <b><sc_element sys_idtf="sucrose">сахарозу</sc_element></b> — из сахарной свёклы или сахарного тростника, лактозу — из молока животных).](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="disaccharide">Disaccharides</sc_element></b> are usually obtained from natural sources (for example, <b><sc_element sys_idtf="sucrose">sucrose</sc_element></b> - from sugar beet or sugar cane, lactose - from animal milk).](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+nrel_isomer
+  <- sc_node_norole_relation;
+  <- binary_relation;
+  <- antireflexive_relation;
+  <- symmetric_relation;
+  <- transitive_relation;
+
+  => nrel_first_domain: hydrocarbon;
+  => nrel_second_domain: hydrocarbon;
+
+  => nrel_main_idtf:
+    [(изомер*)] (* <- lang_ru;; *);
+    [(isomer*)] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (изомер*)] (* <- lang_ru;; *);
+      [Def. (isomer*)] (* <- lang_en;; *);;
+    <= nrel_using_constants: ... (*
+      -> molecule;;
+      -> nrel_object_structure;;
+      -> molecular_mass;;
+      -> atom;;
+    *);;
+    <= nrel_sc_text_translation: ... (*
+      -> [<b><sc_element sys_idtf="nrel_isomer">Изомеры</b></sc_element> - <b><sc_element sys_idtf="molecule">молекулы</sc_element></b> или ионы, имеющие одинаковый <b><sc_element sys_idtf="nrel_object_structure">состав</sc_element></b> и <b><sc_element sys_idtf="molecular_mass">молекулярную массу</sc_element></b>, но различающиеся строение или расположением <b><sc_element sys_idtf="atom">атомов</b></sc_element> в пространстве.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> [<b><sc_element sys_idtf="nrel_isomer">Isomers</b></sc_element> are <b><sc_element sys_idtf="molecule">molecules</sc_element></b> or ions having the same <b><sc_element sys_idtf="nrel_object_structure">composition</sc_element></b> and <b><sc_element sys_idtf="molecular_mass">molecular weight</sc_element></b>, but differing in structure or arrangement of <b><sc_element sys_idtf="atom">atoms</b></sc_element> in space.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (изомер*, пространственный_изомер*, структурный_изомер*)] (* <- lang_ru;; *);
+      [Exp. (isomer*, nrel_spatial_isomerism*, nrel_structural_isomerism*)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> [<b><sc_element sys_idtf="nrel_isomer">Изомерия</b></sc_element> бывает <b><sc_element sys_idtf="nrel_spatial_isomerism">пространственной</b></sc_element> и <b><sc_element sys_idtf="nrel_structural_isomerism">структурной</b></sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+      -> [There are two main forms of <b><sc_element sys_idtf="nrel_isomer">isomerism</b></sc_element>: <b><sc_element sys_idtf="nrel_structural_isomerism">structural isomerism</b></sc_element> and <b><sc_element sys_idtf="nrel_spatial_isomerism">stereoisomerism</b></sc_element>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+    *);;
+  *);;
+
+octose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[октозы](* <- lang_ru;; *);
+=> nrel_main_idtf:[octose](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (октозы)](* <- lang_ru;; *);
+		[Def. (octose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> monosaccharide;;
+		-> octose;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="octose">Октозы</sc_element></b> - класс восьмиуглеродных <b><sc_element sys_idtf="monosaccharide">моносахаридов</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="octose">Octose</sc_element></b> is eight carbon <b><sc_element sys_idtf="monosaccharide">monosaccharide</sc_element></b> class.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (октозы)](* <- lang_ru;; *);
+		[Stat. (octose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="octose">Октозы</sc_element></b>, ноиозы и лекозы получены из <b><sc_element sys_idtf="hexose">гексоз</sc_element></b> ( <b><sc_element sys_idtf="galactose">глюкозы</sc_element></b> и маннозы) путем последовательного применения реакции удлинения углеродной цепи.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="octose">Octose</sc_element></b>, noosi and leukoses are derived from <b><sc_element sys_idtf="hexose">hexose</sc_element></b> (<b><sc_element sys_idtf="galactose">glucose</sc_element></b> and mannose) by sequentially applying the carbon chain lengthening reaction.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+pentose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[пентозы](* <- lang_ru;; *);
+=> nrel_main_idtf:[pentose](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (пентозы)](* <- lang_ru;; *);
+		[Def. (pentose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> pentose;;
+		-> monosaccharide;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="pentose">пентозы</sc_element></b> - класс пятиуглеродных <b><sc_element sys_idtf="monosaccharide">моносахаридов</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="pentose">pentose</sc_element></b> is five carbon <b><sc_element sys_idtf="monosaccharide">monosaccharide</sc_element></b> class.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (пентозы)](* <- lang_ru;; *);
+		[Stat. (pentose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[В виде <b><sc_element sys_idtf="phosphate">фосфатов</sc_element></b> некоторые <b><sc_element sys_idtf="pentose">пентозы</sc_element></b> (например, рибулоза) участвуют в углеводом обмене.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[In the form of <b><sc_element sys_idtf="phosphate">phosphates</sc_element></b>, some <b><sc_element sys_idtf="pentose">pentoses</sc_element></b> (for example, ribulose) are involved in carbohydrate metabolism.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+ribulose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[рибулоза](* <- lang_ru;; *);
+=> nrel_main_idtf:[ribulose](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (рибулоза)](* <- lang_ru;; *);
+		[Def. (ribulose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> ribulose;;
+        -> monosaccharide;;
+        -> pentose;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="ribulose">Рибулоза</sc_element></b> - <b><sc_element sys_idtf="monosaccharide">моносахарид</sc_element></b>, относящийся к группе <b><sc_element sys_idtf="pentose">пентоз</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="ribulose">Carbohydrate metabolism</sc_element></b> is a <b><sc_element sys_idtf="monosaccharide">monosaccharide</sc_element></b> of the <b><sc_element sys_idtf="pentose">pentose</sc_element></b> group.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (рибулоза)](* <- lang_ru;; *);
+		[Stat. (ribulose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="ribulose">Рибулозу</sc_element></b> можно получить действием <b><sc_element sys_idtf="alkali">щёлочи</sc_element></b> на арабинозу.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[The <b><sc_element sys_idtf="ribulose">Ribulose</sc_element></b> can be obtained by the <b><sc_element sys_idtf="alkali">action</sc_element></b> of alkali on arabinose.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+tetrose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[тетрозы](* <- lang_ru;; *);
+=> nrel_main_idtf:[tetrose](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (тетрозы)](* <- lang_ru;; *);
+		[Def. (tetrose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> monosaccharide;;
+		-> tetrose;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="tetrose">тетрозы</sc_element></b> - класс четырехуглеродных <b><sc_element sys_idtf="monosaccharide">моносахаридов</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="tetrose">tetrose</sc_element></b> is four carbon <b><sc_element sys_idtf="monosaccharide">monosaccharide</sc_element></b> class.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (тетрозы)](* <- lang_ru;; *);
+		[Stat. (tetrose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[В виде <b><sc_element sys_idtf="phosphate">фосфатов</sc_element></b> некоторые <b><sc_element sys_idtf="tetrose">тетрозы</sc_element></b> (например, эритроза) являются важными промежуточными компонентами в углеводном обмене.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[In the form of <b><sc_element sys_idtf="phosphate">phosphates</sc_element></b>, some <b><sc_element sys_idtf="tetrose">tetroses</sc_element></b> (for example, erythrosis) are important intermediate components in carbohydrate metabolism.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+triose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[триозы](* <- lang_ru;; *);
+=> nrel_main_idtf:[triose](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (триозы)](* <- lang_ru;; *);
+		[Def. (triose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> monosaccharide;;
+		-> triose;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="triose">триозы</sc_element></b> - класс трехуглеродных <b><sc_element sys_idtf="monosaccharide">моносахаридов</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="triose">triose</sc_element></b> is three carbon <b><sc_element sys_idtf="monosaccharide">monosaccharide</sc_element></b> class.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (триозы)](* <- lang_ru;; *);
+		[Stat. (triose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="triose">Триозы</sc_element></b> и их производные (<b><sc_element sys_idtf="phosphate">фосфаты</sc_element></b>) — важные промежуточные <b><sc_element sys_idtf="product">продукты</sc_element></b> <b><sc_element sys_idtf="metabolism">обмена веществ</sc_element></b> у всех живых <b><sc_element sys_idtf="organism">организмов</sc_element></b>, играющие важную роль в <b><sc_element sys_idtf="cell">клеточном</sc_element></b> дыхании.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="triose">Trioses</sc_element></b> and their derivatives (<b><sc_element sys_idtf="phosphate">phosphates</sc_element></b>) are important intermediate <b><sc_element sys_idtf="product">products</sc_element></b> of <b><sc_element sys_idtf="metabolism">metabolism</sc_element></b> in all living <b><sc_element sys_idtf="organism">organisms</sc_element></b>, playing an important role in <b><sc_element sys_idtf="cell">cellular</sc_element> respiration.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;

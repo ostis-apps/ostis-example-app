@@ -1,0 +1,2274 @@
+subject_domain_of_food_supplements
+	=> nrel_main_idtf:[Предметная область пищевых добавок](* <- lang_ru;; *);
+	=> nrel_main_idtf:[Subject domain of food supplements](* <- lang_en;; *);
+<- subject_domain;
+-> rrel_maximum_studied_object_class: food_supplement;
+-> rrel_not_maximum_studied_object_class:
+	forbidden_supplement;
+	not_allowed_supplement;
+	allowed_supplement;
+	natural_food_supplement;
+	synthetic_food_supplement;
+	artificial_food_supplement;
+	synthesized_food_supplement;
+	food_colourant;
+	preservative;
+	antioxidant;
+	stabilizer;
+	emulsifier;
+	flavor_enhancer;
+	defoaming_agent;;
+
+
+food_supplement
+<- sc_node_not_relation;
+=> nrel_main_idtf:[пищевая добавка](* <- lang_ru;; *);
+=> nrel_main_idtf:[food_supplement](* <- lang_en;; *);
+=> nrel_idtf:[пищевая добавка](* <- lang_ru;; *);
+
+<= nrel_subdividing:
+...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку разрешенности употребления](* <- lang_ru;; *);;
+	-> forbidden_supplement;;
+	-> not_allowed_supplement;;
+	-> allowed_supplement;;
+*);
+
+<= nrel_subdividing:
+...
+(*
+	=> nrel_main_idtf:[Разбиение по признаку происхождения](* <- lang_ru;; *);;
+	-> natural_food_supplement;;
+	-> synthetic_food_supplement;;
+*);
+
+
+<= nrel_subdividing:
+...
+(*
+	=> nrel_main_idtf:[Разбиение по категории](* <- lang_ru;; *);;
+	-> food_colourant;;
+	-> preservative;;
+	-> antioxidant;;
+	-> stabilizer;;
+	-> emulsifier;;
+	-> flavor_enhancer;;
+	-> defoaming_agent;;
+
+*);
+
+<- rrel_key_sc_element:
+Definition_of_food_supplement
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (пищевая добавка)](* <- lang_ru;; *);
+		[Def. (food_supplement)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> chemical_substance;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="food_supplement">Пищевая добавка</sc_element></b> - <b><sc_element sys_idtf="chemical_substance">вещества</sc_element></b>, добавляемые в технологических целях в пищевые продукты в процессе производства, упаковки, транспортировки или хранения для придания им желаемых свойств, например, определённого аромата, цвета, длительности хранения, вкуса, консистенции и так далее.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="food_supplement">Food supplement</sc_element></b> - <b><sc_element sys_idtf="chemical_substance">substance</sc_element></b> added to food to preserve flavor or enhance its taste, appearance, or other qualities. ](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf:
+		[Рис. (пищевая добавка)](* <- lang_ru;; *);
+		[Pic. (food_supplement)](* <- lang_en;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: "file://image/food_supplement.png"(* => nrel_format: format_png;;*);;
+		*);;
+*);;
+
+
+
+forbidden_supplement
+<- sc_node_not_relation;
+=> nrel_main_idtf:[запрещенная добавка](* <- lang_ru;; *);
+=> nrel_main_idtf:[forbidden supplement](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (запрещенная добавка)](* <- lang_ru;; *);
+		[Def. (forbidden supplement)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="forbidden_supplement">Запрещенная добавка</sc_element></b> - <b><sc_element sys_idtf="food_supplement">пищевая добавка</sc_element></b>, запрещенная к использованию.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="forbidden_supplement">Forbidden supplement</sc_element></b> - <b><sc_element sys_idtf="food_supplement">food supplement</sc_element></b> that is prohibited to use.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+not_allowed_supplement
+<- sc_node_not_relation;
+=> nrel_main_idtf:[неразрешенная добавка](* <- lang_ru;; *);
+=> nrel_main_idtf:[not allowed supplement](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (неразрешенная добавка)](* <- lang_ru;; *);
+		[Def. (not allowed supplement)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="not_allowed_supplement">Неразрешенная добавка</sc_element></b> - <b><sc_element sys_idtf="food_supplement">пищевая добавка</sc_element></b>, не разрешенная к использованию.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="not_allowed_supplement">Not allowed supplement</sc_element></b> - <b><sc_element sys_idtf="food_supplement">food supplement</sc_element></b> that is not allowed to use.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+allowed_supplement
+<- sc_node_not_relation;
+=> nrel_main_idtf:[разрешенная добавка](* <- lang_ru;; *);
+=> nrel_main_idtf:[allowed supplement](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (разрешенная добавка)](* <- lang_ru;; *);
+		[Def. (allowed supplement)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="allowed_supplement">Разрешенная добавка</sc_element></b> - <b><sc_element sys_idtf="food_supplement">пищевая добавка</sc_element></b>, разрешенная к употреблению.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="allowed_supplement">Allowed supplement</sc_element></b> - <b><sc_element sys_idtf="food_supplement">food supplement</sc_element></b> that is allowed to use.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+natural_food_supplement
+<- sc_node_not_relation;
+=> nrel_main_idtf:[натуральная пищевая добавка](* <- lang_ru;; *);
+=> nrel_main_idtf:[natural food supplement](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (натуральная пищевая добавка)](* <- lang_ru;; *);
+		[Def. (natural food supplement)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="natural_food_supplement">Натуральная пищевая добавка</sc_element></b> - <b><sc_element sys_idtf="food_supplement">пищевая добавка</sc_element></b>, натурального происхождения.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="natural_food_supplement">Natural food supplement</sc_element></b> - <b><sc_element sys_idtf="food_supplement">food supplement</sc_element></b> that is of natural origin.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+synthetic_food_supplement
+<- sc_node_not_relation;
+=> nrel_main_idtf:[синтетическая пищевая добавка](* <- lang_ru;; *);
+=> nrel_main_idtf:[synthetic food supplement](* <- lang_en;; *);
+<= nrel_subdividing:...
+(*
+	-> artificial_food_supplement;;
+	-> synthesized_food_supplement;;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (синтетическая пищевая добавка)](* <- lang_ru;; *);
+		[Def. (synthetic food supplement)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="synthetic_food_supplement">Синтетическая пищевая добавка</sc_element></b> - <b><sc_element sys_idtf="food_supplement">пищевая добавка</sc_element></b>, созданная искусственным образом.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="synthetic_food_supplement">Synthetic food supplement</sc_element></b> - <b><sc_element sys_idtf="food_supplement">food supplement</sc_element></b> that was made in synthetic way.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+artificial_food_supplement
+<- sc_node_not_relation;
+=> nrel_main_idtf:[искусственная пищевая добавка](* <- lang_ru;; *);
+=> nrel_main_idtf:[artificial food supplement](* <- lang_en;; *);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (искусственная пищевая добавка)](* <- lang_ru;; *);
+		[Def. (artificial food supplement)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="artificial_food_supplement">Искусственная пищевая добавка</sc_element></b> - <b><sc_element sys_idtf="food_supplement">пищевая добавка</sc_element></b>, созданная искусственным путем.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="artificial_food_supplement">Artificial food supplement</sc_element></b> - <b><sc_element sys_idtf="food_supplement">food supplement</sc_element></b> that is made artificially.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+synthesized_food_supplement
+<- sc_node_not_relation;
+=> nrel_main_idtf:[синтезированная пищевая добавка](* <- lang_ru;; *);
+=> nrel_main_idtf:[synthesized food supplement](* <- lang_en;; *);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (синтезированная пищевая добавка)](* <- lang_ru;; *);
+		[Def. (synthesized food supplement)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="synthesized_food_supplement">Синтезированная пищевая добавка</sc_element></b> - <b><sc_element sys_idtf="food_supplement">пищевая добавка</sc_element></b>, синтезированная химическим или биологическим путем.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="synthesized_food_supplement">Synthesized food supplement</sc_element></b> - <b><sc_element sys_idtf="food_supplement">food supplement</sc_element></b> that was synthesized.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+food_colourant
+<- sc_node_not_relation;
+=> nrel_main_idtf:[пищевой краситель](* <- lang_ru;; *);
+=> nrel_main_idtf:[food_colourant](* <- lang_en;; *);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (пищевой краситель)](* <- lang_ru;; *);
+		[Def. (food_colourant)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="food_colourant">Краситель</sc_element></b> - <b><sc_element sys_idtf="food_supplement">пищевая добавка</sc_element></b>, придающая продуктам цвет.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="food_colourant">Food colourant</sc_element></b> - <b><sc_element sys_idtf="food_supplement">food supplement</sc_element></b> that gives colour to the food.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+preservative
+<- sc_node_not_relation;
+=> nrel_main_idtf:[консервант](* <- lang_ru;; *);
+=> nrel_main_idtf:[preservative](* <- lang_en;; *);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (консервант)](* <- lang_ru;; *);
+		[Def. (preservative)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="preservative">Консервант</sc_element></b> - <b><sc_element sys_idtf="food_supplement">пищевая добавка</sc_element></b>, продлевающая срок годности продуктов.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="preservative">Preservative</sc_element></b> - <b><sc_element sys_idtf="food_supplement">food supplement</sc_element></b> that is used to make products be fresh longer.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+antioxidant
+<- sc_node_not_relation;
+=> nrel_main_idtf:[антиоксидант](* <- lang_ru;; *);
+=> nrel_main_idtf:[antioxidant](* <- lang_en;; *);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (антиоксидант)](* <- lang_ru;; *);
+		[Def. (antioxidant)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="antioxidant">Антиоксидант</sc_element></b> - <b><sc_element sys_idtf="food_supplement">пищевая добавка</sc_element></b>, которая предотвращает оксиление продуктов.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="antioxidant">Antioxidant</sc_element></b> - <b><sc_element sys_idtf="food_supplement">food supplement</sc_element></b> that prevents product from oxidation.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+stabilizer
+<- sc_node_not_relation;
+=> nrel_main_idtf:[стабилизатор](* <- lang_ru;; *);
+=> nrel_main_idtf:[stabilizer](* <- lang_en;; *);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (стабилизатор)](* <- lang_ru;; *);
+		[Def. (stabilizer)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="stabilizer">Стабилизатор</sc_element></b> - <b><sc_element sys_idtf="food_supplement">пищевая добавка</sc_element></b>, которая стабилизирует состояние продукта.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="stabilizer">Stabilizer</sc_element></b> - <b><sc_element sys_idtf="food_supplement">food supplement</sc_element></b> that help to preserve its structure.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+emulsifier
+<- sc_node_not_relation;
+=> nrel_main_idtf:[эмульгатор](* <- lang_ru;; *);
+=> nrel_main_idtf:[emulsifier](* <- lang_en;; *);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (эмульгатор)](* <- lang_ru;; *);
+		[Def. (emulsifier)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="emulsifier">Эмульгатор</sc_element></b> - <b><sc_element sys_idtf="food_supplement">пищевая добавка</sc_element></b>, обеспечивающая создание эмульсий из несмешивающихся жидкостей.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="emulsifier">Emulsifier</sc_element></b> - <b><sc_element sys_idtf="food_supplement">food supplement</sc_element></b> that stabilizes an emulsion.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+flavor_enhancer
+<- sc_node_not_relation;
+=> nrel_main_idtf:[усилитель вкуса](* <- lang_ru;; *);
+=> nrel_main_idtf:[flavor enhancer](* <- lang_en;; *);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (усилитель вкуса)](* <- lang_ru;; *);
+		[Def. (flavor_enhancer)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="flavor_enhancer">Усилитель вкуса</sc_element></b> - <b><sc_element sys_idtf="food_supplement">пищевая добавка</sc_element></b>, которая улучшает вкусовые качества продукта.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="flavor_enhancer">Flavor enhancer</sc_element></b> - <b><sc_element sys_idtf="food_supplement">food supplement</sc_element></b> that enhances the flavour of the food.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+defoaming_agent
+<- sc_node_not_relation;
+=> nrel_main_idtf:[пеногаситель](* <- lang_ru;; *);
+=> nrel_main_idtf:[defoaming agent](* <- lang_en;; *);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (пеногаситель)](* <- lang_ru;; *);
+		[Def. (defoaming_agent)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="defoaming_agent">Пеногаситель</sc_element></b> - <b><sc_element sys_idtf="food_supplement">пищевая добавка</sc_element></b>, которая предотвращает образование пены.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="defoaming_agent">Defoaming agent</sc_element></b> - <b><sc_element sys_idtf="food_supplement">food supplement</sc_element></b> that reduces the formation of foam.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+curcumin
+<- sc_node_not_relation;
+<- food_colourant;
+<- natural_food_supplement;
+=> nrel_main_idtf:[куркумин](* <- lang_ru;; *);
+=> nrel_main_idtf:[curcumin](* <- lang_en;; *);
+=> nrel_label:[e100](* <- lang_en;; *);
+<= nrel_color: color_yellow;
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (куркумин, химическая формула, атом углерода, атом водорода, атом кислорода)](*<-lang_ru;;*);
+		[Exp. (curcumin, chemical formula, hydrogen atom, oxygen atom, carbon atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="curcumin">куркумина</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>21</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>20</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>6</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="curcumin">curcumin</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>21</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>20</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>6</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (куркумин)](* <- lang_ru;; *);
+		[Def. (curcumin)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="curcumin">Куркумин</sc_element></b> - ярко-желтые натуральные красители, получаемые из растения куркумы (Curcuma longa).](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="curcumin">Curcumin</sc_element></b> - bright yellow natural food colourant derived from the turmeric plant (Curcuma longa).](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+riboflavin
+<- sc_node_not_relation;
+<- food_colourant;
+<- natural_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[рибофлавин](* <- lang_ru;; *);
+=> nrel_main_idtf:[riboflavin](* <- lang_en;; *);
+=> nrel_label:[e101](* <- lang_en;; *);
+<= nrel_color: color_yellow;
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (рибофлавин, химическая формула, атом углерода, атом водорода, атом кислорода, атом азота)](*<-lang_ru;;*);
+		[Exp. (riboflavin, chemical formula, hydrogen atom, oxygen atom, carbon atom, nitrogen atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="riboflavin">рибофлавина</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>17</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>20</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>4</sub><b><sc_element
+		sys_idtf="elem_O">O</sc_element><b><sub>6</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="riboflavin">riboflavin</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>17</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>20</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>4</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>6</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (рибофлавин)](* <- lang_ru;; *);
+		[Def. (riboflavin)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="riboflavin">Рибофлавин</sc_element></b> - один из важнейших витаминов, являющийся коферментом многих биологических процессов.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="riboflavin">Riboflavin</sc_element></b> - one of the most important vitamins, which is a coenzyme of many biological processes.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+tartrazine
+<- sc_node_not_relation;
+<- food_colourant;
+<- artificial_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[тартразин](* <- lang_ru;; *);
+=> nrel_main_idtf:[tartrazine](* <- lang_en;; *);
+=> nrel_label:[e102](* <- lang_en;; *);
+<= nrel_color: color_yellow;
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (тартразин, химическая формула, атом углерода, атом водорода, атом кислорода, атом азота)](*<-lang_ru;;*);
+		[Exp. (tartrazine, chemical formula, hydrogen atom, oxygen atom, carbon atom, nitrogen atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="tartrazine">тартразина</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>16</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>9</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>4</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>3</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element
+		sys_idtf="elem_O">O</sc_element><b><sub>9</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="tartrazine">tartrazine</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>16</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>9</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>4</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>3</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>9</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (тартразин)](* <- lang_ru;; *);
+		[Def. (tartrazine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="tartrazine">Тартразин</sc_element></b> добывается из отходов производства — каменноугольного дегтя.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="tartrazine">Tartrazine</sc_element></b> extracted from industrial waste - coal tar.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+alkanine
+<- sc_node_not_relation;
+<- food_colourant;
+<- natural_food_supplement;
+<- not_allowed_supplement;
+=> nrel_main_idtf:[алканин](* <- lang_ru;; *);
+=> nrel_main_idtf:[alkanine](* <- lang_en;; *);
+=> nrel_label:[e103](* <- lang_en;; *);
+<= nrel_color: color_red;
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (алканин, химическая формула, атом углерода, атом водорода, атом кислорода, атом азота, атом серы, атом натрия)](*<-lang_ru;;*);
+		[Exp. (alkanine, chemical formula, hydrogen atom, oxygen atom, carbon atom, nitrogen atom, sodium atom, natrium atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="alkanine">алканина</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>12</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>9</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>3</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>1</sub><b><sc_element
+		sys_idtf="elem_O">O</sc_element><b><sub>5</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="alkanine">alkanine</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>12</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>9</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>3</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>1</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>5</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (алканин)](* <- lang_ru;; *);
+		[Def. (alkanine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="alkanine">Алканин</sc_element></b> - красящее вещество от золотого до бордового (темно-красного) цвета.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="alkanine">Alkanine</sc_element></b> - dye from gold to burgundy (dark red) color.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+yellow_quinoline
+<- sc_node_not_relation;
+<- food_colourant;
+<- natural_food_supplement;
+<- not_allowed_supplement;
+=> nrel_main_idtf:[желтый хиолиновый](* <- lang_ru;; *);
+=> nrel_main_idtf:[yellow_quinoline](* <- lang_en;; *);
+=> nrel_label:[e104](* <- lang_en;; *);
+<= nrel_color: color_yellow;
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (желтый хиолиновый, химическая формула, атом углерода, атом водорода, атом кислорода, атом азота, атом серы, атом натрия)](*<-lang_ru;;*);
+		[Exp. (yellow_quinoline, chemical formula, hydrogen atom, oxygen atom, carbon atom, nitrogen atom, sodium atom, natrium atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="yellow_quinoline">желтого хиолинового</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>18</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>9</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>1</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element
+		sys_idtf="elem_O">O</sc_element><b><sub>8</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="yellow_quinoline">yellow quinoline</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>18</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>9</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>1</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>8</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (желтый хиолиновый)](* <- lang_ru;; *);
+		[Def. (yellow_quinoline)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="yellow_quinoline">Желтый хиолиновый</sc_element></b> синтетический азокраситель желто-зеленого цвета.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="yellow_quinoline">Yellow quinoline</sc_element></b> - yellow-green synthetic azo dye.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+AB_yellow
+<- sc_node_not_relation;
+<- food_colourant;
+<- artificial_food_supplement;
+<- forbidden_supplement;
+=> nrel_main_idtf:[желтый прочный AB](* <- lang_ru;; *);
+=> nrel_main_idtf:[AB_yellow](* <- lang_en;; *);
+=> nrel_label:[e105](* <- lang_en;; *);
+<= nrel_color: color_yellow;
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (желтый прочный AB, химическая формула, атом углерода, атом водорода, атом кислорода, атом азота, атом серы, атом натрия)](*<-lang_ru;;*);
+		[Exp. (AB_yellow, chemical formula, hydrogen atom, oxygen atom, carbon atom, nitrogen atom, sodium atom, natrium atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="AB_yellow">желтого прочного AB</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>12</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>11</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>3</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element
+		sys_idtf="elem_O">O</sc_element><b><sub>6</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="AB_yellow">yellow AB</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>12</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>11</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>3</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>6</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (желтый прочный AB)](* <- lang_ru;; *);
+		[Def. (AB_yellow)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="AB_yellow">Желтый прочный AB</sc_element></b> синтетический краситель желтого цвета.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="AB_yellow">AB yellow</sc_element></b> - yellow synthetic food_colourant.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+flavin_mononucleotide_sodium_salt
+<- sc_node_not_relation;
+<- food_colourant;
+<- artificial_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[натриевая соль рибофлавин-5′-фосфата](* <- lang_ru;; *);
+=> nrel_main_idtf:[flavin mononucleotide sodium salt](* <- lang_en;; *);
+=> nrel_label:[e106](* <- lang_en;; *);
+<= nrel_color: color_yellow;
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (натриевая соль рибофлавин-5′-фосфата, химическая формула, атом углерода, атом водорода, атом кислорода, атом азота, атом серы, атом натрия)](*<-lang_ru;;*);
+		[Exp. (flavin_mononucleotide_sodium_salt, chemical formula, hydrogen atom, oxygen atom, carbon atom, nitrogen atom, sodium atom, natrium atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="flavin_mononucleotide_sodium_salt">Натриевой соли рибофлавин-5′-фосфата</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>17</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>20</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>4</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>1</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element
+		sys_idtf="elem_O">O</sc_element><b><sub>9</sub><sc_element
+		sys_idtf="elem_P">P</sc_element><b><sub>9</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="flavin_mononucleotide_sodium_salt">Flavin mononucleotide sodium salt</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>17</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>20</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>4</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>1</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>9</sub><sc_element
+		sys_idtf="elem_P">P</sc_element><b><sub>9</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (натриевая соль рибофлавин-5′-фосфата)](* <- lang_ru;; *);
+		[Def. (flavin_mononucleotide_sodium_salt)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="flavin_mononucleotide_sodium_salt">Рибофлавин-5'-фосфат натрия</sc_element></b> - окрашивает пищевые продукты в желтый цвет.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="flavin_mononucleotide_sodium_salt">Flavin mononucleotide sodium salt</sc_element></b> - yellow synthetic dye.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+yellow_2G
+<- sc_node_not_relation;
+<- food_colourant;
+<- artificial_food_supplement;
+<- forbidden_supplement;
+=> nrel_main_idtf:[жёлтый 2G](* <- lang_ru;; *);
+=> nrel_main_idtf:[yellow 2G](* <- lang_en;; *);
+=> nrel_label:[e107](* <- lang_en;; *);
+<= nrel_color: color_yellow;
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (жёлтый 2G, химическая формула, атом углерода, атом водорода, атом кислорода, атом азота, атом серы, атом натрия)](*<-lang_ru;;*);
+		[Exp. (yellow_2G, chemical formula, hydrogen atom, oxygen atom, carbon atom, nitrogen atom, sodium atom, natrium atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="yellow_2G">Жёлтого 2G</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>17</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>20</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>4</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>1</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element
+		sys_idtf="elem_O">O</sc_element><b><sub>9</sub><sc_element
+		sys_idtf="elem_P">P</sc_element><b><sub>9</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="yellow_2G">Yellow 2G</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>17</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>20</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>4</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>1</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>9</sub><sc_element
+		sys_idtf="elem_P">P</sc_element><b><sub>9</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (Жёлтый 2G)](* <- lang_ru;; *);
+		[Def. (yellow 2G)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="yellow_2G">Желтый 2G</sc_element></b> представляет собой краситель желтого цвета, произведенный методом синтезирования.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="yellow_2G">Yellow 2G</sc_element></b> - is a yellow food_colourant produced by the method of synthesizing.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+sunset_yellow_FCF
+<- sc_node_not_relation;
+<- food_colourant;
+<- artificial_food_supplement;
+<- forbidden_supplement;
+=> nrel_main_idtf:[жёлтый «солнечный закат»](* <- lang_ru;; *);
+=> nrel_main_idtf:[Sunset Yellow FCF](* <- lang_en;; *);
+=> nrel_label:[e110](* <- lang_en;; *);
+<= nrel_color: color_yellow;
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (жёлтый «солнечный закат», химическая формула, атом углерода, атом водорода, атом кислорода, атом азота, атом серы, атом натрия)](*<-lang_ru;;*);
+		[Exp. (sunset_yellow_FCF, chemical formula, hydrogen atom, oxygen atom, carbon atom, nitrogen atom, sodium atom, natrium atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="sunset_yellow_FCF">жёлтого «солнечный закат»</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>16</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>10</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element
+		sys_idtf="elem_O">O</sc_element><b><sub>7</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="sunset_yellow_FCF">Sunset Yellow FCF</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>16</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>10</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>7</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (Жёлтый «солнечный закат»)](* <- lang_ru;; *);
+		[Def. (Sunset Yellow FCF)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="sunset_yellow_FCF">Жёлтый «солнечный закат»</sc_element></b> относится к группе водорастворимых красителей.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="sunset_yellow_FCF">Sunset yellow FCF</sc_element></b> belongs to the group of water soluble dyes.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+orange_GGN
+<- sc_node_not_relation;
+<- food_colourant;
+<- artificial_food_supplement;
+<- forbidden_supplement;
+=> nrel_main_idtf:[Оранжевый GGN](* <- lang_ru;; *);
+=> nrel_main_idtf:[Orange GGN](* <- lang_en;; *);
+=> nrel_label:[e111](* <- lang_en;; *);
+<= nrel_color: color_orange;
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (жёлтый «солнечный закат», химическая формула, атом углерода, атом водорода, атом кислорода, атом азота, атом серы, атом натрия)](*<-lang_ru;;*);
+		[Exp. (orange_GGN, chemical formula, hydrogen atom, oxygen atom, carbon atom, nitrogen atom, sodium atom, natrium atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="orange_GGN">Оранжевого GGN</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>16</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>10</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element
+		sys_idtf="elem_O">O</sc_element><b><sub>7</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="orange_GGN">Orange GGN</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>16</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>10</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>7</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (Оранжевый GGN)](* <- lang_ru;; *);
+		[Def. (Orange GGN)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="orange_GGN">Оранжевый GGN</sc_element></b> - краситель оранжевого цвета.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="orange_GGN">Orange GGN</sc_element></b> - food colourant of orange colour.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+carmine
+<- sc_node_not_relation;
+<- food_colourant;
+<- natural_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[кармин](* <- lang_ru;; *);
+=> nrel_main_idtf:[carmine](* <- lang_en;; *);
+=> nrel_label:[e120](* <- lang_en;; *);
+<= nrel_color: color_red;
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (Кармин)](* <- lang_ru;; *);
+		[Def. (Carmines)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="carmine">Кармин</sc_element></b> - красящее вещество красновато-пурпурного цвета.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="carmine">Carmine</sc_element></b> - food colourant reddish-purple.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+azorubine
+<- sc_node_not_relation;
+<- food_colourant;
+<- artificial_food_supplement;
+<- not_allowed_supplement;
+=> nrel_main_idtf:[азорубин](* <- lang_ru;; *);
+=> nrel_main_idtf:[azorubine](* <- lang_en;; *);
+=> nrel_label:[e122](* <- lang_en;; *);
+<= nrel_color: color_red;
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (азорубин, химическая формула, атом углерода, атом водорода, атом кислорода, атом азота, атом серы, атом натрия)](*<-lang_ru;;*);
+		[Exp. (azorubine, chemical formula, hydrogen atom, oxygen atom, carbon atom, nitrogen atom, sodium atom, natrium atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="azorubine">азорубина</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>20</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>12</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element
+		sys_idtf="elem_O">O</sc_element><b><sub>7</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="azorubine">сarmine</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>20</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>12</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>7</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (азорубин)](* <- lang_ru;; *);
+		[Def. (azorubines)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="azorubine">Азорубин</sc_element></b> - принадлежит к группе азокрасителей — синтетических красителей красных оттенков.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="azorubine">Azorubine</sc_element></b> belongs to the group of azo dyes - synthetic dyes red shades.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+amaranth
+<- sc_node_not_relation;
+<- food_colourant;
+<- artificial_food_supplement;
+<- forbidden_supplement;
+=> nrel_main_idtf:[амарант](* <- lang_ru;; *);
+=> nrel_main_idtf:[amaranth](* <- lang_en;; *);
+=> nrel_label:[e123](* <- lang_en;; *);
+<= nrel_color: color_red;
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (амарант, химическая формула, атом углерода, атом водорода, атом кислорода, атом азота, атом серы, атом натрия)](*<-lang_ru;;*);
+		[Exp. (amaranth, chemical formula, hydrogen atom, oxygen atom, carbon atom, nitrogen atom, sodium atom, natrium atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="amaranth">амаранта</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>20</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>11</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>10</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>3</sub><b><sc_element
+		sys_idtf="elem_O">O</sc_element><b><sub>3</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="amaranth">сarmine</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>20</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>11</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>10</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>3</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>3</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (амарант)](* <- lang_ru;; *);
+		[Def. (amaranths)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="amaranth">Амарант</sc_element></b> - это химическое вещество синтетического происхождения — азокраситель, синевато-красного, красно-коричневого, или красно-фиолетового цвета, получаемый из каменноугольной смолы.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="amaranth">Amaranth</sc_element></b> is a chemical substance of synthetic origin - azo dye, bluish-red, red-brown, or red-violet, obtained from coal tar.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ponceau_4R
+<- sc_node_not_relation;
+<- food_colourant;
+<- artificial_food_supplement;
+<- not_allowed_supplement;
+=> nrel_main_idtf:[пунцовый 4R](* <- lang_ru;; *);
+=> nrel_main_idtf:[ponceau 4R](* <- lang_en;; *);
+=> nrel_label:[e124](* <- lang_en;; *);
+<= nrel_color: color_pink;
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (пунцовый 4R, химическая формула, атом углерода, атом водорода, атом кислорода, атом азота, атом серы, атом натрия)](*<-lang_ru;;*);
+		[Exp. (Ponceau 4R, chemical formula, hydrogen atom, oxygen atom, carbon atom, nitrogen atom, sodium atom, natrium atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="ponceau_4R">пунцового 4Rа</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>20</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>11</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>10</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>3</sub><b><sc_element
+		sys_idtf="elem_O">O</sc_element><b><sub>3</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="ponceau_4R">Ponceau 4R</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>20</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>11</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>10</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>3</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>3</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (пунцовый 4R)](* <- lang_ru;; *);
+		[Def. (Ponceau 4R)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="ponceau_4R">Пунцовый 4R</sc_element></b> - краситель синтетического происхождения, имеющий пунцовый цвет.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="ponceau_4R">Ponceau 4R</sc_element></b> dye of synthetic origin, having crimson color.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ponceau_6R
+<- sc_node_not_relation;
+<- food_colourant;
+<- artificial_food_supplement;
+<- not_allowed_supplement;
+=> nrel_main_idtf:[понсо 6R](* <- lang_ru;; *);
+=> nrel_main_idtf:[ponceau 6R](* <- lang_en;; *);
+=> nrel_label:[e126](* <- lang_en;; *);
+<= nrel_color: color_red;
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (понсо 6R, химическая формула, атом углерода, атом водорода, атом кислорода, атом азота, атом серы, атом натрия)](*<-lang_ru;;*);
+		[Exp. (ponceau 6R, chemical formula, hydrogen atom, oxygen atom, carbon atom, nitrogen atom, sodium atom, natrium atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="ponceau_6R">понсо 6R</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>20</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>10</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>4</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>4</sub><b><sc_element
+		sys_idtf="elem_O">O</sc_element><b><sub>14</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="ponceau_6R">ponceau 6R</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>20</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>10</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>4</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>4</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>14</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (понсо 6R)](* <- lang_ru;; *);
+		[Def. (ponceau 6R)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="ponceau_6R">Понсо 6R</sc_element></b> относится к группе азокрасителей и схожа по своей структуре и свойствам с более популярным красителем Амарант.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="ponceau_6R">Ponceau 6R</sc_element></b> belongs to the group of azo dyes and is similar in its structure and properties with the more popular dye Amaranth.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+allura_red_AC
+<- sc_node_not_relation;
+<- food_colourant;
+<- artificial_food_supplement;
+<- not_allowed_supplement;
+=> nrel_main_idtf:[Красный очаровательный АС](* <- lang_ru;; *);
+=> nrel_main_idtf:[Allura Red AC](* <- lang_en;; *);
+=> nrel_label:[e129](* <- lang_en;; *);
+<= nrel_color: color_red;
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (Красный очаровательный АС, химическая формула, атом углерода, атом водорода, атом кислорода, атом азота, атом серы, атом натрия)](*<-lang_ru;;*);
+		[Exp. (Allura Red AC, chemical formula, hydrogen atom, oxygen atom, carbon atom, nitrogen atom, sodium atom, natrium atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="allura_red_AC">Красный очаровательный АС</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>18</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>14</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element
+		sys_idtf="elem_O">O</sc_element><b><sub>8</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="allura_red_AC">Allura Red AC</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>18</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>14</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>8</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (Красный очаровательный АС)](* <- lang_ru;; *);
+		[Def. (Allura Red AC)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="allura_red_AC">Красный очаровательный АС</sc_element></b> - порошок темно-красного цвета, первоначально получаемый из каменноугольной смолы.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="allura_red_AC">Allura Red AC</sc_element></b> -  dark red powder originally obtained from coal tar.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+patent_blue_V
+<- sc_node_not_relation;
+<- food_colourant;
+<- artificial_food_supplement;
+<- not_allowed_supplement;
+=> nrel_main_idtf:[Синий патентованный V](* <- lang_ru;; *);
+=> nrel_main_idtf:[Patent Blue V](* <- lang_en;; *);
+=> nrel_label:[e131](* <- lang_en;; *);
+<= nrel_color: color_blue;
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (Синий патентованный V, химическая формула, атом углерода, атом водорода, атом кислорода, атом азота, атом серы, атом кальция)](*<-lang_ru;;*);
+		[Exp. (Patent Blue V, chemical formula, hydrogen atom, oxygen atom, carbon atom, nitrogen atom, sodium atom, calcium atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="patent_blue_V">Синий патентованный V</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>54</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>62</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>4</sub><b><sc_element sys_idtf="elem_Ca">Ca</sc_element><b><sub>1</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>4</sub><b><sc_element
+		sys_idtf="elem_O">O</sc_element><b><sub>8</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="patent_blue_V">Patent Blue V</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>54</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>62</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>4</sub><b><sc_element sys_idtf="elem_Ca">Ca</sc_element><b><sub>1</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>4</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>14</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (Синий патентованный V)](* <- lang_ru;; *);
+		[Def. (Patent Blue V)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="patent_blue_V">Синий патентованный V</sc_element></b> - азокраситель синтетического происхождения, имеющий темный голубовато-фиолетовый цвет.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="patent_blue_V">Patent Blue V</sc_element></b> - azo dye of synthetic origin, having a dark bluish-purple color.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+indigo_carmine
+<- sc_node_not_relation;
+<- food_colourant;
+<- artificial_food_supplement;
+<- not_allowed_supplement;
+=> nrel_main_idtf:[Индигокармин](* <- lang_ru;; *);
+=> nrel_main_idtf:[Indigo carmine](* <- lang_en;; *);
+=> nrel_label:[e132](* <- lang_en;; *);
+<= nrel_color: color_blue;
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (Индигокармин, химическая формула, атом углерода, атом водорода, атом кислорода, атом азота, атом серы, атом натрия)](*<-lang_ru;;*);
+		[Exp. (Indigo carmine, chemical formula, hydrogen atom, oxygen atom, carbon atom, nitrogen atom, sodium atom, natrium atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="indigo_carmine">Индигокармин</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>16</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>8</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element
+		sys_idtf="elem_O">O</sc_element><b><sub>8</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="indigo_carmine">Indigo carmine</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>16</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>8</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>8</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (Индигокармин)](* <- lang_ru;; *);
+		[Def. (Indigo carmine)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="indigo_carmine">Индигокармин</sc_element></b> - хорошо растворимая в воде соль синего цвета, обладающая свойствами кислотно-основного индикатора.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="indigo_carmine">Indigo carmine</sc_element></b> - blue water-soluble salt with acid-base indicator properties.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+brilliant_blue_FCF
+<- sc_node_not_relation;
+<- food_colourant;
+<- artificial_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[Синий блестящий FCF](* <- lang_ru;; *);
+=> nrel_main_idtf:[brilliant blue FCF](* <- lang_en;; *);
+=> nrel_label:[e133](* <- lang_en;; *);
+<= nrel_color: color_blue;
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (Синий блестящий FCF, химическая формула, атом углерода, атом водорода, атом кислорода, атом азота, атом серы, атом натрия)](*<-lang_ru;;*);
+		[Exp. (brilliant blue FCF, chemical formula, hydrogen atom, oxygen atom, carbon atom, nitrogen atom, sodium atom, natrium atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="brilliant_blue_FCF">Синий блестящий FCF</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>37</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>34</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>3</sub><b><sc_element
+		sys_idtf="elem_O">O</sc_element><b><sub>9</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="brilliant_blue_FCF">brilliant blue FCF</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>37</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>34</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>3</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>9</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (Синий блестящий FCF)](* <- lang_ru;; *);
+		[Def. (brilliant blue FCF)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="brilliant_blue_FCF">Синий блестящий FCF</sc_element></b> - риарилметановый краситель, получаемый из каменноугольной смолы методом органического синтеза.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="brilliant_blue_FCF">Brilliant blue FCF</sc_element></b> - riarylmethane dye obtained from coal tar by the method of organic synthesis.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fast_green
+<- sc_node_not_relation;
+<- food_colourant;
+<- artificial_food_supplement;
+<- forbidden_supplement;
+=> nrel_main_idtf:[быстрый зеленый](* <- lang_ru;; *);
+=> nrel_main_idtf:[fast green](* <- lang_en;; *);
+=> nrel_label:[e134](* <- lang_en;; *);
+<= nrel_color: color_green;
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (быстрый зеленый)](* <- lang_ru;; *);
+		[Def. (fast green)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="fast_green">Быстрый зеленый</sc_element></b> - это краситель бирюзового цвета.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="fast_green">Fast green</sc_element></b> - turquoise dye.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+chlorophyll
+<- sc_node_not_relation;
+<- food_colourant;
+<- natural_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[хлорофилл](* <- lang_ru;; *);
+=> nrel_main_idtf:[chlorophyll](* <- lang_en;; *);
+=> nrel_label:[e140](* <- lang_en;; *);
+<= nrel_color: color_green;
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (хлорофилл, химическая формула, атом углерода, атом водорода, атом кислорода, атом азота, атом серы, атом магния)](*<-lang_ru;;*);
+		[Exp. (chlorophyll, chemical formula, hydrogen atom, oxygen atom, carbon atom, nitrogen atom, sodium atom, magnesium atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="chlorophyll">хлорофилл</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>55</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>72</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>4</sub><b><sc_element sys_idtf="elem_Mg">Mg</sc_element><b><sub>1</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>3</sub><b><sc_element
+		sys_idtf="elem_O">O</sc_element><b><sub>5</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="chlorophyll">chlorophyll</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>55</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>72</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>4</sub><b><sc_element sys_idtf="elem_Mg">Mg</sc_element><b><sub>1</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>3</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>5</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (хлорофилл)](* <- lang_ru;; *);
+		[Def. (chlorophyll)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chlorophyll">Хлорофилл</sc_element></b> - натуральный краситель, обладающий зеленым цветом.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chlorophyll">Chlorophyll</sc_element></b> - natural dye with green color.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+chlorophyll_copper_complex
+<- sc_node_not_relation;
+<- food_colourant;
+<- natural_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[хлорофилла медные комплексы](* <- lang_ru;; *);
+=> nrel_main_idtf:[chlorophyll_copper_complex](* <- lang_en;; *);
+=> nrel_label:[e141](* <- lang_en;; *);
+<= nrel_color: color_green;
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (хлорофилла медные комплексы)](* <- lang_ru;; *);
+		[Def. (chlorophyll copper complex)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="chlorophyll_copper_complex">Хлорофилла медные комплексы</sc_element></b> - натуральный краситель зеленого цвета.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="chlorophyll_copper_complex">Chlorophyll copper complex</sc_element></b> - natural food_colourant of green colour.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+green_S
+<- sc_node_not_relation;
+<- food_colourant;
+<- artificial_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[зеленый S](* <- lang_ru;; *);
+=> nrel_main_idtf:[green S](* <- lang_en;; *);
+=> nrel_label:[e142](* <- lang_en;; *);
+<= nrel_color: color_green;
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (зеленый S, химическая формула, атом углерода, атом водорода, атом кислорода, атом азота, атом серы, атом натрия)](*<-lang_ru;;*);
+		[Exp. (green S, chemical formula, hydrogen atom, oxygen atom, carbon atom, nitrogen atom, sodium atom, natrium atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="green_S">зеленый S</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>27</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>25</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>1</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element
+		sys_idtf="elem_O">O</sc_element><b><sub>7</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="green_S">green_S</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>27</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>25</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>1</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>7</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (зеленый S)](* <- lang_ru;; *);
+		[Def. (green S)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="green_S">Зеленый S</sc_element></b> - синтетическое вещество, которое является натриевой солью, получаемой из каменноугольной смолы.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="green_S">Green S</sc_element></b> - synthetic substance which is sodium salt derived from coal tar.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+plain_caramel
+<- sc_node_not_relation;
+<- food_colourant;
+<- natural_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[сахарный колер](* <- lang_ru;; *);
+=> nrel_main_idtf:[Plain caramel](* <- lang_en;; *);
+=> nrel_label:[e150](* <- lang_en;; *);
+<= nrel_color: color_orange;
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (сахарный колер)](* <- lang_ru;; *);
+		[Def. (Plain caramel)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="plain_caramel">Сахарный колер</sc_element></b> - более известная в обиходе как карамель или жженый сахар – является водорастворимым пищевым красителем.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="plain_caramel">Plain caramel</sc_element></b> - more commonly known as caramel or burnt sugar - is a water-soluble food coloring.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+black_7984
+<- sc_node_not_relation;
+<- food_colourant;
+<- artificial_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[уголь](* <- lang_ru;; *);
+=> nrel_main_idtf:[Black 7984](* <- lang_en;; *);
+=> nrel_label:[e152](* <- lang_en;; *);
+<= nrel_color: color_black;
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (уголь, химическая формула, атом углерода, атом водорода, атом кислорода, атом азота, атом серы, атом натрия)](*<-lang_ru;;*);
+		[Exp. (Black 7984, chemical formula, hydrogen atom, oxygen atom, carbon atom, nitrogen atom, sodium atom, natrium atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="black_7984">уголь</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>26</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>19</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>5</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>4</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>4</sub><b><sc_element
+		sys_idtf="elem_O">O</sc_element><b><sub>13</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="black_7984">black_7984</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>26</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>19</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>5</sub><b><sc_element sys_idtf="elem_Na">Na</sc_element><b><sub>4</sub><b><sc_element sys_idtf="elem_S">S</sc_element><b><sub>4</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>13</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (уголь)](* <- lang_ru;; *);
+		[Def. (Black 7984)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="black_7984">Уголь</sc_element></b> - синтетический краситель от коричневого до черного цвета.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="black_7984">Black 7984</sc_element></b> - synthetic dye from brown to black.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+carbon_black
+<- sc_node_not_relation;
+<- food_colourant;
+<- artificial_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[уголь растительный](* <- lang_ru;; *);
+=> nrel_main_idtf:[carbon black](* <- lang_en;; *);
+=> nrel_label:[e153](* <- lang_en;; *);
+<= nrel_color: color_black;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (уголь растительный)](* <- lang_ru;; *);
+		[Def. (Carbon black)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="carbon_black">Уголь растительный</sc_element></b> - ископаемое органическое вещество, которое образуется под землей из древних растений.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="carbon_black">Carbon black</sc_element></b> - fossil organic matter that is formed underground from ancient plants.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+carotene
+<- sc_node_not_relation;
+<- colourant;
+<- artificial_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[каротин](* <- lang_ru;; *);
+=> nrel_main_idtf:[carotene](* <- lang_en;; *);
+=> nrel_label:[e160a](* <- lang_en;; *);
+
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (каротин, химическая формула, атом углерода, атом водорода)](*<-lang_ru;;*);
+		[Exp. (carotine, chemical formula, hydrogen atom, carbon atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="carotene">каротин</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>40</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>56</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="carotene">carotene</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>40</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>56</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (каротин)](* <- lang_ru;; *);
+		[Def. (carotene)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="carotene">Каротин</sc_element></b> - оранжевый пигмент, образуемый в результате фотосинтеза растений.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="carotene">Carotene</sc_element></b> - orange pigment formed by photosynthesis of plants.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+annatto_extract
+<- sc_node_not_relation;
+<- colourant;
+<- natural_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[аннато экстракт](* <- lang_ru;; *);
+=> nrel_main_idtf:[annatto extract](* <- lang_en;; *);
+=> nrel_label:[e160b](* <- lang_en;; *);
+
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (аннато экстракт, химическая формула, атом углерода, атом водорода)](*<-lang_ru;;*);
+		[Exp. (annatto extract, chemical formula, hydrogen atom, carbon atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="annatto_extract">аннато экстракта</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>25</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>30</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>4</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="annatto_extract">annatto extract</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>25</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>30</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>4</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (аннато экстракт)](* <- lang_ru;; *);
+		[Def. (annatto extract)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="annatto_extract">Аннато экстракт</sc_element></b> - это краситель растительного происхождения от желтого до темно-оранжевого цвета.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="annatto_extract">Annatto extract</sc_element></b> - vegetable color dye from yellow to dark orange.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+paprika_oil
+<- sc_node_not_relation;
+<- colourant;
+<- natural_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[маслосмолы паприки](* <- lang_ru;; *);
+=> nrel_main_idtf:[paprika oil](* <- lang_en;; *);
+=> nrel_label:[e160c](* <- lang_en;; *);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (маслосмолы паприки)](* <- lang_ru;; *);
+		[Def. (paprika oil)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="paprika_oil">Маслосмолы паприки</sc_element></b> получают из натуральной паприки — красного стручкового перца (чили), который относится к растениям рода Capsicum.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="paprika_oil">Paprika oil</sc_element></b> is produced from natural paprika - red capsicum (chili), which belongs to the plants of the genus Capsicum.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+lutein
+<- sc_node_not_relation;
+<- colourant;
+<- natural_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[лютеин](* <- lang_ru;; *);
+=> nrel_main_idtf:[lutein](* <- lang_en;; *);
+=> nrel_label:[e161b](* <- lang_en;; *);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (лютеин)](* <- lang_ru;; *);
+		[Def. (lutein)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="lutein">Лютеин</sc_element></b> - это пигмент, относящийся к ксантофиллам — группе кислородосодержащих каротиноидов.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="lutein">Lutein</sc_element></b> is a xanthophyll pigment - a group of oxygen-containing carotenoids.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+red_beetroot
+<- sc_node_not_relation;
+<- colourant;
+<- natural_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[красный свекольный](* <- lang_ru;; *);
+=> nrel_main_idtf:[red_beetroot](* <- lang_en;; *);
+=> nrel_label:[e162](* <- lang_en;; *);
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (красный свекольный, химическая формула, атом углерода, атом водорода, атом кислорода)](*<-lang_ru;;*);
+		[Exp. (red_beetroot, chemical formula, hydrogen atom, oxygen atom, carbon atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="red_beetroot">красного свекольного</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>24</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>27</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>13</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="red_beetroot">red beetroot</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>24</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>27</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>13</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (красный свекольный)](* <- lang_ru;; *);
+		[Def. (red beetroot)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="red_beetroot">Красный свекольный</sc_element></b> - алкалоидоподобное соединение, получаемое из пищевой свеклы, чаще из экстракта ее сока.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="red_beetroot">Red beetroot</sc_element></b> - alkaloid-like compound derived from edible beets, more often from the extract of its juice.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+nrel_label <- sc_node_norole_relation;
+
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_main_idtf:
+    [label*](*<- lang_en;;*);
+    [маркировка*](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (маркировка)](* <- lang_ru;; *);
+		[Def. (label)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="nrel_label">Маркировка</sc_element></b> это название <b><sc_element sys_idtf="food_supplement">пищевой добавки</sc_element></b> по системе INS.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="nrel_label">Label</sc_element></b> - name of <b><sc_element sys_idtf="food_supplement">food supplement</sc_element></b> according to INS.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+=> nrel_first_domain: food_dupplement;
+=> nrel_definitional_domain: food_supplement;;
+
+
+
+
+
+
+
+anthocyanin
+<- sc_node_not_relation;
+<- colourant;
+<- natural_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[антоциан](* <- lang_ru;; *);
+=> nrel_main_idtf:[anthocyanin](* <- lang_en;; *);
+=> nrel_label:[e163](* <- lang_en;; *);
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (антоциан)](* <- lang_ru;; *);
+		[Def. (anthocyanin)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="anthocyanin">Антоцианы</sc_element></b> — водорастворимые пигменты вакуолей растений, которые могут быть красных, фиолетовых или синих цветов и их оттенков в зависимости о кислотности.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="anthocyanin">Anthocyanin</sc_element></b> - water soluble pigments of plant vacuoles, which can be red, purple or blue colors and their shades depending on the acidity.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+saffron
+<- sc_node_not_relation;
+<- colourant;
+<- natural_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[шафран](* <- lang_ru;; *);
+=> nrel_main_idtf:[saffron](* <- lang_en;; *);
+=> nrel_label:[e164](* <- lang_en;; *);
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (шафран)](* <- lang_ru;; *);
+		[Def. (saffron)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="saffron">Шафраны</sc_element></b> — древняя пряность оранжевого цвета, получаемая из высушенных цветков шафрана посевного.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="saffron">Saffron</sc_element></b> - ancient orange spice obtained from dried saffron flowers.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+calcium_carbonates
+<- sc_node_not_relation;
+<- colourant;
+<- natural_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[карбонаты кальция](* <- lang_ru;; *);
+=> nrel_main_idtf:[calcium carbonates](* <- lang_en;; *);
+=> nrel_label:[e170](* <- lang_en;; *);
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (карбонаты кальция)](* <- lang_ru;; *);
+		[Def. (calcium carbonates)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="calcium_carbonates">Карбонаты кальция</sc_element></b> — хорошо известны как обычный белый мел.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="calcium_carbonates">Calcium carbonates</sc_element></b> is well known as ordinary white chalk.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+titanium_dioxide
+<- sc_node_not_relation;
+<- colourant;
+<- artificial_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[диоксид титана](* <- lang_ru;; *);
+=> nrel_main_idtf:[titanium dioxide](* <- lang_en;; *);
+=> nrel_label:[e171](* <- lang_en;; *);
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (диоксид титана, химическая формула, атом титана, атом кислорода)](*<-lang_ru;;*);
+		[Exp. (titanium dioxide, chemical formula, titanium atom, oxygen atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="titanium_dioxide">диоксида титана</sc_element></b> - <b><sc_element sys_idtf="elem_Ti">Ti</sc_element><b><sub>1</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>2</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="titanium_dioxide">titanium dioxide</sc_element></b> - <b><sc_element sys_idtf="elem_Ti">Ti</sc_element><b><sub>1</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>2</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (диоксид титана)](* <- lang_ru;; *);
+		[Def. (titanium dioxide)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="titanium_dioxide">Диоксид титана</sc_element></b> — представляет собой бесцветные кристаллы, желтеющие при нагревании.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="titanium_dioxide">Titanium dioxide</sc_element></b> is a colorless crystals, turning yellow when heated.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+iron_oxides
+<- sc_node_not_relation;
+<- colourant;
+<- artificial_food_supplement;
+<- allowed_supplement;
+=> nrel_main_idtf:[оксиды железа](* <- lang_ru;; *);
+=> nrel_main_idtf:[iron oxides](* <- lang_en;; *);
+=> nrel_label:[e172](* <- lang_en;; *);
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (оксиды железа, химическая формула, атом железа, атом кислорода)](*<-lang_ru;;*);
+		[Exp. (iron oxides, chemical formula, iron atom, oxygen atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="iron_oxides">оксида железа(I)</sc_element></b> - <b><sc_element sys_idtf="elem_Fe">Fe</sc_element><b><sub>3</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>4</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="iron_oxides">iron oxides</sc_element></b> - <b><sc_element sys_idtf="elem_Fe">Fe</sc_element><b><sub>3</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>4</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (оксиды железа, химическая формула, атом железа, атом кислорода)](*<-lang_ru;;*);
+		[Exp. (iron oxides, chemical formula, iron atom, oxygen atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="iron_oxides">оксида железа(II)</sc_element></b> - <b><sc_element sys_idtf="elem_Fe">Fe</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>3</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="iron_oxides">iron oxides</sc_element></b> - <b><sc_element sys_idtf="elem_Fe">Fe</sc_element><b><sub>2</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>3</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (оксиды железа, химическая формула, атом железа, атом кислорода)](*<-lang_ru;;*);
+		[Exp. (iron oxides, chemical formula, iron atom, oxygen atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="iron_oxides">оксида железа(III)</sc_element></b> - <b><sc_element sys_idtf="elem_Fe">Fe</sc_element><b><sub>1</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>1</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="iron_oxides">iron oxides</sc_element></b> - <b><sc_element sys_idtf="elem_Fe">Fe</sc_element><b><sub>1</sub><b><sc_element sys_idtf="elem_O">O</sc_element><b><sub>1</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (оксиды железа)](* <- lang_ru;; *);
+		[Def. (iron oxides)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> food_supplement;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="iron_oxides">Оксиды железа</sc_element></b> — используется в качестве красителя для окраски пищевых продуктов в желтые, оранжевые, красные, коричневые и черные цвета.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="iron_oxides">Iron oxides</sc_element></b> are used as a dye for coloring food in yellow, orange, red, brown and black colors.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;

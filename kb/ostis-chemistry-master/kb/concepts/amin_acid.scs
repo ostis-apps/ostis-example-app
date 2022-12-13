@@ -1,0 +1,90 @@
+amino_acid
+=> nrel_main_idtf:
+	[аминокислота](* <- lang_ru;; *);
+	[amino acid](* <- lang_en;; *);
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(аминокислота)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://html/amin_acid_definition.html"
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->molecule;;
+		->organic_compound;;
+	*);;
+*);
+
+<= nrel_subdividing:
+	amino_acid_radical
+  (* 
+    -> non_polar_amino_acid;;
+    -> polar_uncharged_amino_acid;;
+	-> polar_positive_charged_amino_acid;;
+	-> polar_negative_charged_amino_acid;;
+    -> aromatic_amino_acid;;
+	*);
+
+<= nrel_subdividing:
+	amino_acid_functional_group
+  (* 
+    -> alifatic_amino_acid;;
+    -> aromatic_amino_acid;;
+    -> geterocyclic_amino_acid;;
+	-> imino_acid;;
+	*);
+
+
+<= nrel_subdividing:
+	amino_acid_production
+  (* 
+    -> replaceable_amino_acid;;
+    -> irreplaceable_amino_acid;;
+	*);
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(аминокислота, карбоновая кислота, атом водорода, замещение*, аминогруппа)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Аминокислоты могут рассматриваться как производные карбоновых кислот, в которых один или несколько атомов водорода заменены на аминогруппы.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: carboxylic_acid;;
+	-> rrel_key_sc_element: elem_H;;
+	-> rrel_key_sc_element: nrel_substitution;amino_group;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(аминокислота, кислота, щелочь)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://html/amin_acid_interaction_with_alkali_and_acids.html"(* <-lang_ru;; =>nrel_format: format_html;; *);;
+	*);;
+	-> rrel_key_sc_element: acid;alkali;;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+
+	=>nrel_main_idtf: [Утв.(аминокислота, этерификация*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			"file://html/amin_acid_esterification.html"(* <-lang_ru;; =>nrel_format: format_html;; *);;
+	*);;
+	-> rrel_key_sc_element: nrel_esterification;;
+*);;

@@ -1,0 +1,6 @@
+sc_text_agent_find_elem_valencies
+-> rrel_key_sc_element:
+	agent_find_elem_valencies;
+<- scp_program_sc_text;;
+
+sc_text_agent_find_elem_valencies = [*^"file://agent_find_elem_valencies.scsi"*];;

@@ -1,0 +1,341 @@
+subject_domain_of_chemical_sciences
+    => nrel_main_idtf: [Предметная область химических наук](* <- lang_ru;; *);
+    [Subject domain of chemical sciences](* <- lang_en;; *);
+    
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+chemical_sciences;
+
+-> rrel_not_maximum_studied_class:
+physical_chemistry;
+chemical_physics;
+electrochemistry;
+chemistry_high_molecular_compounds;
+chemistry_of_organoelement_compounds;
+high_energy_chemistry;
+bioorganic_chemistry;
+colloid_chemistry;
+bioneorganic_chemistry;
+petrochemistry;
+radiochemistry;
+solid_state_chemistry;
+biochemistry;
+biogeochemistry;
+agrochemistry;
+analytical_chemistry;
+medical_chemistry;
+mathematical_chemistry;
+quantum_chemistry;
+computational_chemistry;
+computer_chemistry;
+cosmochemistry;
+organometallic_chemistry;
+nanochemistry;
+general_chemistry;
+nuclear_chemistry;
+ecological_chemistry;
+toxicological_chemistry;
+theoretical_chemistry;
+thermochemistry;
+photochemistry;
+
+<= nrel_sc_text_translation:...(*
+    ->rrel_example: "file://html/chemical_sciences.html"(* <-lang_ru;; *);;
+*);
+<=nrel_sc_text_translation:...(*
+    ->rrel_sxample: "file://html/chemical_sciences_en.html"(* <-lang.en;; *);;
+*);;
+
+chemical_sciences
+=>nrel_main_idtf:
+[химические науки](* <-lang_ru;;*);
+    [chemical_sciences](* <-lang_en;;*);
+
+<=nrel_subdividing:
+    subdividing_by_object
+(*
+->physical_chemistry;;
+->chemical_physics;;
+->electrochemistry;;
+->chemistry_high_molecular_compounds;;
+->chemistry_of_organoelement_compounds;;
+->high_energy_chemistry;;
+->bioorganic_chemistry;;
+->colloid_chemistry;;
+->bioneorganic_chemistry;;
+->petrochemistry;;
+->radiochemistry;;
+->solid_state_chemistry;;
+->biochemistry;;
+->biogeochemistry;;
+->agrochemistry;;
+->analytical_chemistry;;
+->medical_chemistry;;
+->mathematical_chemistry;;
+->quantum_chemistry;;
+->computational_chemistry;;
+->computer_chemistry;;
+->cosmochemistry;;
+->organometallic_chemistry;;
+->nanochemistry;;
+->general_chemistry;;
+->nuclear_chemistry;;
+->ecological_chemistry;;
+->toxicological_chemistry;;
+->theoretical_chemistry;;
+->photochemistry;;
+->thermochemistry;;
+*);;
+
+subdividing_by_object
+=>nrel_main_idtf:
+    [Разбиение по предмету изучения]
+    (* <-lang_ru;; *);
+    [Partitioning by subject]
+    (* <-lang_en;; *);;
+
+subdividing_by_object_and_methods_of_research
+=>nrel_main_idtf:
+    [Разбиение по объектам и методам исследования, по методологическим особенностям и используемому аппарату]
+    (* <-lang_ru;; *);
+    [Partitioning by objects and methods of research, according to methodological peculiarities and used apparatus]
+    (* <-lang_en;; *);;
+
+chemical_physics
+=>nrel_main_idtf:
+[химическая физика](* <-lang_ru;;*);
+    [chemical physics](* <-lang_en;;*);
+
+<= nrel_intersection:...
+(*
+    ->chemistry; physics;;
+*);
+
+<- rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->chemical_physics;;
+            ->science;;
+            ->chemistry;;
+            ->task;;
+        *);;
+        => nrel_main_idtf:
+        [Опр.(химическая физика)](* <- lang_ru;;*);
+        [Def.(chemical physics)](* <- lang_en;;	*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://html/chemical_physics.html"(* <-lang_ru;; *);; 
+        -> rrel_example: "file://html/chemical_physics_en.html"(* <-lang_en;; *);;
+    *);;
+*);;
+
+electrochemistry
+=>nrel_main_idtf:
+[электрохимия](* <-lang_ru;;*);
+    [electrochemistry](* <-lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->electrochemistry;;
+            ->chemical_sciences;;
+            ->nrel_charge;;
+            ->particle;;
+        *);;
+        => nrel_main_idtf:
+    [Опр.(электрохимия)](* <- lang_ru;;	*);
+    [Def.(electrochemistry)](* <- lang_en;;	*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://html/electrochemistry.html"(* <-lang_ru;; *);; 
+        -> rrel_example: "file://html/electrochemistry_en.html"(* <-lang_en;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    ion;
+    solution;;
+	=>nrel_main_idtf:
+	[Утв. (ион, раствор)](* <-lang_ru;;*);
+	[Expl. (ion, solution)](* <-lang_en;;*);;
+	-> rrel_example: "file://html/electrochemistry_1.html"(* <-lang_ru;;*);;
+	-> rrel_example: "file://html/electrochemistry_1_en.html"(* <-lang.en;; *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    ion;
+    metal;
+    semiconductor;
+    dielectric;;
+	=>nrel_main_idtf:
+	[Утв. (ион, метал, полупроводник, диэлектрик)](* <-lang_ru;;*);
+	[Expl. (ion, metal, semiconductor, dielectric)](* <-lang_en;;*);;
+	-> rrel_example: "file://html/electrochemistry_2.html"(* <-lang_ru;;*);;
+	-> rrel_example: "file://html/electrochemistry_2_en.html"(* <-lang.en;; *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    ion;
+    process;;
+	=>nrel_main_idtf:
+	[Утв. (ион, процесс)](* <-lang_ru;;*);
+	[Expl. (ion, process)](* <-lang_en;;*);;
+	-> rrel_example: "file://html/electrochemistry_3.html"(* <-lang_ru;;*);;
+	-> rrel_example: "file://html/electrochemistry_3_en.html"(* <-lang.en;; *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    electron;
+    mathematical_chemistry;
+    quantum_chemistry;
+    particle;;
+	=>nrel_main_idtf:
+	[Утв. (электрон, математическая химия,квантовая химия, частица)](* <-lang_ru;;*);
+	[Expl. (electron, mathematical chemistry, quantum chemistry, particle)](* <-lang_en;;*);;
+	-> rrel_example: "file://html/electrochemistry_4.html"(* <-lang_ru;;*);;
+	-> rrel_example: "file://html/electrochemistry_4_en.html"(* <-lang_en;;*);;
+*);;
+
+bioorganic_chemistry
+=>nrel_main_idtf:
+[биоорганическая химия](* <-lang_ru;;*);
+    [bioorganic_chemistry](* <-lang_en;;*);
+
+<= nrel_intersection:...
+(* 
+    -> biochemistry; organic_chemistry;;
+*);
+
+<- rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->bioorganic_chemistry;;
+            ->science;;
+            ->organic_compound;;
+        *);;
+        => nrel_main_idtf:
+        [Опр.(биоорганическая химия)](* <- lang_ru;;*);
+        [Def.(bioorganic chemistry)](* <- lang_en;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://html/bioorganic_chemistry.html"(* <-lang_ru;; *);; 
+        -> rrel_example: "file://html/bioorganic_chemistry_en.html"(* <-lang_en;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    chemical_compound;
+    science;
+    biochemistry;
+    organic_chemistry;
+    chemical_industry;;
+	=>nrel_main_idtf:
+	[Утв. (химическое соединение, наука, биохимия, органическая химия, химическая индустрия)](* <-lang_ru;;*);
+	[Expl. (chemical compound, science, biochemistry, organic chemistry, chemical industry)](* <-lang_en;;*);;
+	-> rrel_example: "file://html/bioorganic_chemistry_1.html"(* <-lang_ru;; *);; 
+	-> rrel_example: "file://html/bioorganic_chemistry_1_en.html"(* <-lang_en;; *);;
+*);;
+
+colloid_chemistry
+=>nrel_main_idtf:
+[коллоидная химия](* <-lang_ru;;*);
+    [colloid_chemistry](* <-lang_en;;*);
+
+<= nrel_intersection:...
+(* 
+    -> chemistry; biology; physics;;
+*);
+
+<- rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->colloid_chemistry;;
+            ->sciecne;;
+            ->dispersion;;
+            => nrel_main_idtf:
+    [Опр.(коллоидная химия)](* <- lang_ru;;*);
+    [Def.(colloid_chemistry)](* <- lang_en;;*);;
+        *);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://html/colloid_chemistry.html"(* <-lang_ru;; *);; 
+        -> rrel_example: "file://html/colloid_chemistry_en.html"(* <-lang_en;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    adsorption;
+    dispersion;
+    medicine;;
+    =>nrel_main_idtf:
+	[Утв. (адсорбция, дисперсная система, медицина)](* <-lang_ru;;*);
+	[Expl. (adsorption, dispersion system, medicine)](* <-lang_en;;*);;
+	-> rrel_example: "file://html/colloid_chemistry_1.html"(* <-lang_ru;;*);;
+	-> rrel_example: "file://html/colloid_chemistry_1_en.html"(* <-lang_en;;*);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    lang_en;
+    science;;
+    =>nrel_main_idtf:
+	[Утв. (Англоязычный, наука)](* <-lang_ru;;*);
+	[Expl. (English-language, science)](* <-lang_en;;*);;
+	-> rrel_example: "file://html/colloid_chemistry_2.html"(* <-lang_ru;; *);;
+	-> rrel_example: "file://html/colloid_chemistry_2_en.html"(* <-lang_en;; *);;
+*);;
+
+bioneorganic_chemistry
+=>nrel_main_idtf:
+[бионеорганическая химия](* <-lang_ru;;*);
+    [bioneorganic_chemistry](* <-lang_en;;*);
+
+<= nrel_intersection:...
+(* 
+    -> biochemistry; inorganic_chemistry;;
+*);
+
+<- rrel_key_sc_element:...
+(*
+    <-definition;;
+        <=nrel_using_constants:...(*
+            ->bioneorganic_chemistry;;
+            ->science;;
+            ->substance;;
+            ->ion;;
+            ->metal;;
+            ->organism;;
+        *);;
+        => nrel_main_idtf:
+    [Опр.(бионеорганическая химия)](* <- lang_ru;;*);
+    [Def.(bioneorganic_chemistry)](* <- lang_en;;*);;
+        <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://html/bioneorganic_chemistry.html"(* <-lang_ru;; *);; 
+        -> rrel_example: "file://html/bioneorganic_chemistry_en.html"(* <-lang_en;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-explanation;;
+	->rrel_key_sc_element:
+    enzyme;;
+    =>nrel_main_idtf:
+	[Утв. (ион, фермент)](* <-lang_ru;;*);
+	[Expl. (ion, enzyme)](* <-lang_en;;*);;
+	-> rrel_example: "file://html/bioneorganic_chemistry_1.html"(* <-lang_ru;; *);;
+	-> rrel_example: "file://html/bioneorganic_chemistry_1_en.html"(* <-lang_en;; *);;
+*);;

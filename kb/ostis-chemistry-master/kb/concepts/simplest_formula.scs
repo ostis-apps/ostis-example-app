@@ -1,0 +1,39 @@
+simplest_formula <= nrel_inclusion: chemical_formula;;
+simplest_formula
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[простейшая формула]
+	(* <- lang_ru;;	*);
+	[the simplest formula]
+	(* <- lang_en;;	*);;
+simplest_formula
+<- rrel_key_sc_element:
+	Definition_of_simplest_formula
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/simplest_formula.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				substance;
+				atomic_mass
+			};;
+	
+
+Definition_of_simplest_formula
+=> nrel_main_idtf:
+	[Опр.(простейшая формула)]
+	(* <- lang_ru;;	*);;
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+subject_domain_of_cyclic_hydrocarbons
+=> nrel_main_idtf: 
+	[Предметная область циклических углеводородов]
+	(* <- lang_ru;;*);
+	[Subject domain of cyclic hydrocarbons]
+	(* <- lang_en;; *);
+
+<- subject_domain;;

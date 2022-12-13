@@ -1,0 +1,69 @@
+cathinone<-sc_node_not_relation;;
+cathinone=> nrel_main_idtf:[катинон](* <- lang_ru;; *);;
+cathinone=> nrel_main_idtf:[cathinone](* <- lang_en;; *);;
+cathinone=> nrel_idtf:[C9H11NO](* <- lang_en;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: cathinone;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Катинон — <b><sc_element sys_idtf="protoalkaloids">протоалкалоид</b></sc_element>, содержащийся в кате (Catha edulis) — кустарнике семейства Бересклетовые, произрастающем в Восточной Африке и на Аравийском полуострове,по действию на организм близок к <b><sc_element sys_idtf="ephedrine">эфедрину</b></sc_element> и амфетамину. ]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Определение (катинон)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		{
+		protoalkaloids;
+		ephedrine
+		};;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element:cathinone;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[По сравнению с амфетамином катинон показывает более низкий уровень возбудительных и токсических свойст.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утверждение(катинон)](*<- lang_ru;;*);;
+	
+*);;
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element:cathinone;;
+	<= nrel_sc_text_translation: ...(*->"file://images/сathinone.png";;*);;
+	=> nrel_main_idtf: [Рисунок(катинон,структурная формула)](*<- lang_ru;;*);;
+*);;
+illustration -> ...
+(*
+	->rrel_key_sc_element: cathinone;;
+	<= nrel_sc_text_translation: ...(*->"file://images/сathinone2.png";;*);;
+	=> nrel_main_idtf: [Рисунок(катинон,трехмерная модель молекулы)](*<- lang_ru;;*);;
+*);;
+
+
+solid_matter=>nrel_inclusion:cathinone;;
+protoalkaloids=>nrel_inclusion:cathinone;;
+toxin=>nrel_inclusion:cathinone;;
+molar_mass->...
+(* 
+
+	<- sc_node_not_relation;;
+	-> cathinone;;
+	=> nrel_measurement_in_gramms_per_mole: [149,19]
+	(*
+		<-number;;
+	*);;
+*);;
+
+
+
+
+

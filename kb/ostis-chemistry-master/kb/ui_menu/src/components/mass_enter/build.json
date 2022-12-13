@@ -1,0 +1,11 @@
+{
+     "sources": [
+        
+        "src/mass_enter-common.js",
+        "src/mass_enter-paintPanel.js"
+    ],
+
+    "component": "src/mass_enter-component.js",
+
+    "target": "static/components/js/chemistry_components/mass_enter.js"
+}

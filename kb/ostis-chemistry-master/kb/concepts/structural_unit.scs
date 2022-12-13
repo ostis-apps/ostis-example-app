@@ -1,0 +1,38 @@
+structural_unit
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[структурная единица]
+	(* <- lang_ru;;	*);
+	[structural unit]
+	(* <- lang_en;;	*);;
+structural_unit
+<- rrel_key_sc_element:
+	Definition_of_structural_unit
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/structural_unit.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				substance;
+				atom
+			};;
+
+
+
+Definition_of_structural_unit
+=> nrel_main_idtf:
+	[Опр.(Структурная единица)]
+	(* <- lang_ru;;	*);;
+
+
+
+
+
+
+

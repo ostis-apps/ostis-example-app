@@ -1,0 +1,43 @@
+chemical_element
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[химический элемент](* <- lang_ru;; *);
+	[chemical element](* <- lang_en;; *);;
+
+chemical_element
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: 
+		[Опр. (химический элемент)] (* <- lang_ru;; *);
+		[Def. (chemical element)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/chemical_element.html"(* <- lang_ru;; *);;
+		-> rrel_example:"file://html/chemical_element_en.html"(* <- lang_en;; *);;
+    *);;
+    <= nrel_using_constants:...
+	(*
+		-> atom;;
+		-> nrel_charge;;
+		-> nucleus;;
+		-> electron;;
+		-> electron_shell;;
+		-> elementary_substance;;
+	*);;
+*);
+	
+<- rrel_key_sc_element:...
+(* 
+	<- explanation;;
+	-> rrel_key_sc_element: chemical_substance;;
+	=> nrel_main_idtf: 
+		[Утв.(химическое вещество, химический элемент)] (* <- lang_ru;; *);
+		[Expl.(chemical substance, chemical element)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+	(* 
+		-> rrel_example: 
+			[Химические вещества могут состоять как из одного химического элемента, так и из разных.] (* <-lang_ru;; *);
+			[Chemical substances can consist of a single or different chemical elements.] (* <-lang_en;; *);;
+	*);;
+*);;

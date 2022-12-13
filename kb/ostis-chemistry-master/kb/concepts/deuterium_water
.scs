@@ -1,0 +1,99 @@
+deuterium
+=> nrel_main_idtf:
+        [дейтерий](* <-lang_ru;; *);
+	[deuterium](* <-lang_en;; *);;
+
+deuterium_water
+=> nrel_main_idtf:
+	[deuterium water](* <-lang_en;; *);
+	[дейтериевая вода](* <- lang_ru;; *);
+=> nrel_idtf:
+        [D2O](* <-lang_en;; *);
+        [тяжёлая вода](* <-lang_ru;; *);
+        [оксид дейтерия](* <-lang_ru;; *);
+        [тяжёловодородная вода ](* <-lang_ru;; *);
+
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(дейтериевая вода)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[<b>Дейтериевая вода</b> - <sc_element sys_idtf = "water">вода</sc_element>, в <sc_element sys_idtf = "molecule">молекулах</sc_element> которой <sc_element sys_idtf = "atom">атомы</sc_element> <sc_element sys_idtf = "protie">протия</sc_element> замещены <sc_element sys_idtf = "atom">атомами</sc_element> <sc_element sys_idtf = "deuterium">дейтерия</sc_element>.]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->water;;
+		->atom;;
+		->hydrogen;;
+		->deuterium;;
+              
+	*);;
+*);
+
+// иллюстрация
+//<- rrel_key_sc_element:...
+//(*
+//	<-illustration;;
+//	=>nrel_main_idtf: [Рис. (дейтериевая вода, структурная формула молекулы)](* <-lang_ru;; *);;
+//	<=nrel_sc_text_translation:...
+//	(*
+//		->rrel_example:"file://image/deuterium_water.jpg"
+//		(*
+//			=>nrel_format: format_jpg;;
+//		*);;
+//	*);;
+//*);
+
+
+//утверждения
+<- rrel_key_sc_element: statement_formula_de
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(химическая формула, дейтериевая вода)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Формула дейтериевой воды обычно записывается как <b>D<sub>2</sub>O</b> или <b><sup>2</sup>H<sub>2</sub>O</b>.]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	-> rrel_key_sc_element: chemical_formula;;
+        -> rrel_key_sc_element: deuterium_water;;
+	<- rrel_axiom:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+
+<- rrel_key_sc_element: statement_fiz_sv
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(дейтериевая вода, жидкость, без вкуса,без запаха)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Внешне дейтериевая вода выглядит как обычная — бесцветная жидкость без вкуса и запаха.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: deuterium_water;;
+	-> rrel_key_sc_element: liquid;;
+	-> rrel_key_sc_element: no_taste;;
+	-> rrel_key_sc_element: no_smell;;
+	<- rrel_axiom:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);;
+
+

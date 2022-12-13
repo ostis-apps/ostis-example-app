@@ -1,0 +1,74 @@
+subst_rhombic_S
+<= nrel_inclusion: chemical_substance;
+<- sc_node_not_relation;
+=> nrel_main_idtf: [ромбическая сера] (* <- lang_ru;; *);
+=> nrel_main_idtf: [rhombic sulfur] (* <- lang_en;; *);
+=> nrel_idtf: [S8](*<- lang_en;;*);
+=> nrel_idtf: [альфа сера](*<- lang_ru;;*);
+=> nrel_idtf: [alfa sulfur](*<- lang_en;;*);
+
+<- rrel_key_sc_element: definition_of_subst_rhombic_S
+(* 
+	=> nrel_main_idtf: [Опр.(Ромбическая сера)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Ромбическая сера</b> - хрупкое кристаллическое <sc_element sys_idtf = "chemical_substance">вещество</sc_element> желтого цвета. Является аллотропной модификацией <sc_element sys_idtf = "subst_S">серы</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_substance ;;
+		-> subst_S;;
+	*);;
+*);
+
+<- solid;
+<- color_yellow;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(Ромбическая сера)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Pic.(Rhombic sulfur)] (* <- lang_en;;	*);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://image/subst_rhombic_S.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [2,07] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [112,8] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;
+
+atomic_multiplicity_eight -> (subst_rhombic_S -> elem_S);;

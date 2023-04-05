@@ -39,7 +39,7 @@ After that launch sc-web interface:
 
 ```sh
 cd ostis-example-app/scripts
-./run_scweb.sh
+./run_sc_web.sh
 ```
 
 To check that everything is fine open localhost:8000 in your browser.

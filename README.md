@@ -6,7 +6,7 @@
 
 OSTIS example app is an ostis-system based on [**ostis-web-platform**](https://github.com/ostis-ai/ostis-web-platform) and designed with [OSTIS Technology](https://github.com/ostis-ai).
 
-0.7.0 version allows communication with the knowledge base via [JSON-based Websocket protocol](http://ostis-dev.github.io/sc-machine/http/websocket/).
+0.8.0 version allows communication with the knowledge base via [JSON-based Websocket protocol](http://ostis-dev.github.io/sc-machine/http/websocket/).
 
 
 ## Installation
@@ -14,8 +14,8 @@ OSTIS example app is an ostis-system based on [**ostis-web-platform**](https://g
 For Ubuntu/Debian based distros:
 ```sh
 git clone https://github.com/ostis-apps/ostis-example-app.git
-cd ostis-example-app/scripts
-./install_ostis.sh
+cd ostis-example-app
+./scripts/install.sh
 ```
 
 ## Build knowledge base
@@ -23,23 +23,20 @@ cd ostis-example-app/scripts
 Before first launch or after changes in KB you should build knowledge base. 
 
 ```sh
-cd ostis-example-app/scripts
-./build_kb.sh
+./scripts/build_kb.sh
 ```
 
 ## Usage
 
 To launch system you should start sc-server:
 ```sh
-cd ostis-example-app/scripts
-./run_sc_server.sh
+./scripts/run_sc_server.sh
 ```
 
 After that launch sc-web interface:
 
 ```sh
-cd ostis-example-app/scripts
-./run_sc_web.sh
+./scripts/run_sc_web.sh
 ```
 
 To check that everything is fine open localhost:8000 in your browser.
@@ -56,12 +53,11 @@ To check that everything is fine open localhost:8000 in your browser.
 `problem-solver` is the place for the problem solver of your app. Put your agents here. After changes in problem-solver you should rebuild it:
 
 *Use **scp_stable** branch for the development of agents on SCP.*  
-*Use **0.5.0**, **0.6.0** or **0.7.0** branch for the development of agents on C++. You can see an example module with a C++ agent [here](problem-solver/cxx/exampleModule/README.md)*  
+*Use **0.5.0**, **0.6.0**, **0.7.0** or **0.8.0** branch for the development of agents on C++. You can see an example module with a C++ agent [here](problem-solver/cxx/exampleModule/README.md)*  
 
 After updating your C++ code you need to rebuild `problem-solver`:  
 ```sh
-cd ostis-example-app/scripts
-./build_problem_solver.sh
+./scripts/build_problem_solver.sh
 ```
 
 To enable DEBUG set fields in ostis-example-app.ini:
@@ -86,7 +82,7 @@ To learn more about creating web components for the new web interface version fo
 
 Build the problem-solver of your app. Use an argument *-f* or *--full* for a complete rebuild of the problem-solver with the deleting of the *ostis-web-platform/sc-machine/bin* and *ostis-web-platform/sc-machine/build* folders.
 
-* install_ostis.sh
+* install_submodules.sh
 
 Install or update the OSTIS platform.
 

@@ -61,7 +61,8 @@ void IsomorphicSearchAgent::formSearchResults(ScAddr const & scTemplateNode, ScA
 
   if (searchResults.empty())
   {
-    m_memoryCtx.CreateEdge(ScType::EdgeAccessConstPosPerm, Keynodes::empty_set, resultsSet);
+    ScAddr const & accessArc = m_memoryCtx.CreateEdge(ScType::EdgeAccessConstPosPerm, Keynodes::empty_set, resultsSet);
+    answerElements.insert(answerElements.end(), {accessArc, Keynodes::empty_set});
     SC_LOG_DEBUG("IsomorphicSearchAgent: structures have not been found");
   }
   else

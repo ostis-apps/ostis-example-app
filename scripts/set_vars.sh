@@ -17,6 +17,7 @@ export SC_MACHINE_REPO="https://github.com/ostis-ai/sc-machine.git"
 export SC_MACHINE_BRANCH="0.8.0-Fusion"
 export SC_MACHINE_COMMIT=""
 export SC_MACHINE_PATH="${PLATFORM_PATH}/sc-machine"
+export ROOT_CMAKE_PATH="${APP_ROOT_PATH}"
 
 export SC_WEB_REPO="https://github.com/ostis-ai/sc-web.git"
 export SC_WEB_BRANCH="0.8.0-Fusion"

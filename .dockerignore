@@ -1,0 +1,10 @@
+docker-compose.yml
+Dockerfile
+.dockerignore
+.git
+.gitignore
+interface
+kb
+LICENSE
+README.md
+subsystems.txt

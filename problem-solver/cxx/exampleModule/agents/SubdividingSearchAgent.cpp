@@ -7,6 +7,7 @@
 #include <sc-agents-common/utils/GenerationUtils.hpp>
 #include <sc-agents-common/utils/AgentUtils.hpp>
 #include <sc-agents-common/utils/IteratorUtils.hpp>
+#include <sc-agents-common/keynodes/coreKeynodes.hpp>
 
 #include "SubdividingSearchAgent.hpp"
 
@@ -22,7 +23,7 @@ SC_AGENT_IMPLEMENTATION(SubdividingSearchAgent)
     return SC_RESULT_ERROR;
 
   ScAddr questionNode = ms_context->GetEdgeTarget(edgeAddr);
-  ScAddr param = IteratorUtils::getFirstFromSet(ms_context.get(), questionNode);
+  ScAddr param = IteratorUtils::getAnyFromSet(ms_context.get(), questionNode);
   if (!param.IsValid())
     return SC_RESULT_ERROR_INVALID_PARAMS;
 
@@ -40,7 +41,10 @@ SC_AGENT_IMPLEMENTATION(SubdividingSearchAgent)
     GenerationUtils::addSetToOutline(ms_context.get(), sheaf, answer);
   }
 
-  AgentUtils::finishAgentWork(ms_context.get(), questionNode, answer);
+  ScAddr edgeToAnswer = ms_context->CreateEdge(ScType::EdgeDCommonConst, questionNode, answer);
+  ms_context->CreateEdge(ScType::EdgeAccessConstPosPerm, scAgentsCommon::CoreKeynodes::nrel_answer, edgeToAnswer);
+
+  AgentUtils::finishAgentWork(ms_context.get(), questionNode);
   return SC_RESULT_OK;
 }
 }

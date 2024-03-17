@@ -82,7 +82,6 @@ fi
 
 if (( install_platform || update_submodules ))
   then
-    update_flag="--update"
     echo "Install ostis-web-platform submodules"
     "${PLATFORM_PATH}/scripts/install_submodules.sh" "${update_submodules:+${update_flag}}"
   else

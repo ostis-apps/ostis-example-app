@@ -19,7 +19,7 @@ SC_AGENT_IMPLEMENTATION(IsomorphicSearchAgent)
   SC_LOG_DEBUG("IsomorphicSearchAgent: started");
   ScAddr actionNode = otherAddr;
 
-  ScAddr scTemplateNode = IteratorUtils::getAnyFromSet(ms_context.get(), actionNode);
+  ScAddr scTemplateNode = IteratorUtils::getAnyFromSet(&m_memoryCtx, actionNode);
 
   if (!scTemplateNode.IsValid())
   {
@@ -40,7 +40,7 @@ SC_AGENT_IMPLEMENTATION(IsomorphicSearchAgent)
     return SC_RESULT_ERROR;
   }
 
-  utils::AgentUtils::finishAgentWork(ms_context.get(), actionNode, answerElements, true);
+  utils::AgentUtils::finishAgentWork(&m_memoryCtx, actionNode, answerElements, true);
   SC_LOG_DEBUG("IsomorphicSearchAgent: finished");
   return SC_RESULT_OK;
 }
@@ -50,12 +50,12 @@ void IsomorphicSearchAgent::formSearchResults(ScAddr const & scTemplateNode, ScA
   clearPreviousSearchResults(scTemplateNode);
 
   ScTemplate scTemplate;
-  ms_context->HelperBuildTemplate(scTemplate, scTemplateNode);
+  m_memoryCtx.HelperBuildTemplate(scTemplate, scTemplateNode);
 
   ScAddr const & resultsSet = formNewResultsSetConstruction(scTemplateNode, answerElements);
 
   ScAddrVector searchResults;
-  ms_context->HelperSearchTemplate(scTemplate, [&searchResults, this](ScTemplateSearchResultItem const & item) {
+  m_memoryCtx.HelperSearchTemplate(scTemplate, [&searchResults, this](ScTemplateSearchResultItem const & item) {
     searchResults.push_back(emplaceItemElementsInStructure(item));
   });
 

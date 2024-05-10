@@ -1,0 +1,3 @@
+[submodule "subsystems/scl-machine"]
+	path = subsystems/scl-machine
+	url = https://github.com/ostis-ai/scl-machine.git

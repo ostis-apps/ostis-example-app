@@ -31,7 +31,7 @@ delete_platform() {
 }
 
 install_platform() {
-  git clone "${PLATFORM_REPO}" --branch "${PLATFORM_BRANCH}" --single-branch "${PLATFORM_PATH}" --recursive
+  git clone "${PLATFORM_REPO}" --branch "${PLATFORM_BRANCH}" --single-branch "${PLATFORM_PATH}"
   if [ -n "${PLATFORM_COMMIT}" ]
     then
       cd "${PLATFORM_PATH}"

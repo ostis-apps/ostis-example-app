@@ -1,3 +1,6 @@
 [submodule "subsystems/scl-machine"]
 	path = subsystems/scl-machine
 	url = https://github.com/ostis-ai/scl-machine.git
+[submodule "problem-solver/cxx/reusable-components/ostis-ps-lib"]
+	path = problem-solver/cxx/reusable-components/ostis-ps-lib
+	url = https://github.com/ostis-ai/ostis-ps-lib.git

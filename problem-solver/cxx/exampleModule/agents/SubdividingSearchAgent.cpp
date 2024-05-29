@@ -22,29 +22,29 @@ SC_AGENT_IMPLEMENTATION(SubdividingSearchAgent)
   if (!edgeAddr.IsValid())
     return SC_RESULT_ERROR;
 
-  ScAddr questionNode = ms_context->GetEdgeTarget(edgeAddr);
-  ScAddr param = IteratorUtils::getAnyFromSet(ms_context.get(), questionNode);
+  ScAddr questionNode = m_memoryCtx.GetEdgeTarget(edgeAddr);
+  ScAddr param = IteratorUtils::getAnyFromSet(&m_memoryCtx, questionNode);
   if (!param.IsValid())
     return SC_RESULT_ERROR_INVALID_PARAMS;
 
-  ScAddr answer = ms_context->CreateNode(ScType::NodeConstStruct);
-  ms_context->CreateEdge(ScType::EdgeAccessConstPosPerm, answer, param);
-  ms_context->CreateEdge(ScType::EdgeAccessConstPosPerm, answer, Keynodes::nrel_subdividing);
+  ScAddr answer = m_memoryCtx.CreateNode(ScType::NodeConstStruct);
+  m_memoryCtx.CreateEdge(ScType::EdgeAccessConstPosPerm, answer, param);
+  m_memoryCtx.CreateEdge(ScType::EdgeAccessConstPosPerm, answer, Keynodes::nrel_subdividing);
 
-  ScIterator5Ptr iterator5 = IteratorUtils::getIterator5(ms_context.get(), param, Keynodes::nrel_subdividing, false);
+  ScIterator5Ptr iterator5 = IteratorUtils::getIterator5(&m_memoryCtx, param, Keynodes::nrel_subdividing, false);
   while (iterator5->Next())
   {
     ScAddr sheaf = iterator5->Get(0);
-    ms_context->CreateEdge(ScType::EdgeAccessConstPosPerm, answer, iterator5->Get(1));
-    ms_context->CreateEdge(ScType::EdgeAccessConstPosPerm, answer, sheaf);
-    ms_context->CreateEdge(ScType::EdgeAccessConstPosPerm, answer, iterator5->Get(3));
-    GenerationUtils::addSetToOutline(ms_context.get(), sheaf, answer);
+    m_memoryCtx.CreateEdge(ScType::EdgeAccessConstPosPerm, answer, iterator5->Get(1));
+    m_memoryCtx.CreateEdge(ScType::EdgeAccessConstPosPerm, answer, sheaf);
+    m_memoryCtx.CreateEdge(ScType::EdgeAccessConstPosPerm, answer, iterator5->Get(3));
+    GenerationUtils::addSetToOutline(&m_memoryCtx, sheaf, answer);
   }
 
-  ScAddr edgeToAnswer = ms_context->CreateEdge(ScType::EdgeDCommonConst, questionNode, answer);
-  ms_context->CreateEdge(ScType::EdgeAccessConstPosPerm, scAgentsCommon::CoreKeynodes::nrel_answer, edgeToAnswer);
+  ScAddr edgeToAnswer = m_memoryCtx.CreateEdge(ScType::EdgeDCommonConst, questionNode, answer);
+  m_memoryCtx.CreateEdge(ScType::EdgeAccessConstPosPerm, scAgentsCommon::CoreKeynodes::nrel_answer, edgeToAnswer);
 
-  AgentUtils::finishAgentWork(ms_context.get(), questionNode);
+  AgentUtils::finishAgentWork(&m_memoryCtx, questionNode);
   return SC_RESULT_OK;
 }
 }

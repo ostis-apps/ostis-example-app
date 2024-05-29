@@ -54,6 +54,7 @@ To check that everything is fine open localhost:8000 in your browser.
 
 *Use **scp_stable** branch for the development of agents on SCP.*  
 *Use **0.5.0**, **0.6.0**, **0.7.0**, **0.8.0** or **0.9.0** branch for the development of agents on C++. You can see an example module with a C++ agent [here](problem-solver/cxx/exampleModule/README.md)*  
+*Use **prerelease-0.10.0** branch for the latest versions of ubuntu and macOS.*
 
 After updating your C++ code you need to rebuild `problem-solver`:  
 ```sh

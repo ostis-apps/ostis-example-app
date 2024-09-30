@@ -7,32 +7,14 @@
 #pragma once
 
 #include <sc-memory/sc_addr.hpp>
-#include <sc-memory/sc_object.hpp>
+#include <sc-memory/sc_keynodes.hpp>
 
-#include "keynodes.generated.hpp"
-
-namespace exampleModule
+class Keynodes : public ScKeynodes
 {
-class Keynodes : public ScObject
-{
-  SC_CLASS()
-  SC_GENERATED_BODY()
-
 public:
-  SC_PROPERTY(Keynode("question_find_subdividing"), ForceCreate)
-  static ScAddr question_find_subdividing;
-
-  SC_PROPERTY(Keynode("nrel_subdividing"), ForceCreate)
-  static ScAddr nrel_subdividing;
-
-  SC_PROPERTY(Keynode("question_find_isomorphic_structures"), ForceCreate)
-  static ScAddr question_find_isomorphic_structures;
-
-  SC_PROPERTY(Keynode("nrel_search_result"), ForceCreate)
-  static ScAddr nrel_search_result;
-
-  SC_PROPERTY(Keynode("empty_set"), ForceCreate)
-  static ScAddr empty_set;
+  static inline ScKeynode const action_search_subdividing{"action_search_subdividing", ScType::NodeConstClass};
+  static inline ScKeynode const nrel_subdividing{"nrel_subdividing", ScType::NodeConstNoRole};
+  static inline ScKeynode const action_search_isomorphic_structures{"action_search_isomorphic_structures", ScType::NodeConstClass};
+  static inline ScKeynode const nrel_search_result{"nrel_search_result", ScType::NodeConstNoRole};
+  static inline ScKeynode const empty_set{"empty_set", ScType::NodeConstClass};
 };
-
-}  // namespace exampleModule

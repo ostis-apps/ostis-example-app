@@ -1,16 +1,21 @@
+/*
+ * This source file is part of an OSTIS project. For the latest info, see
+ * http://ostis.net Distributed under the MIT License (See accompanying file
+ * COPYING.MIT or copy at http://opensource.org/licenses/MIT)
+ */
+
 #pragma once
 
-#include <sc-memory/kpm/sc_agent.hpp>
+#include <sc-memory/sc_agent.hpp>
 
 #include "keynodes/keynodes.hpp"
-#include "IsomorphicSearchAgent.generated.hpp"
 
-namespace exampleModule
+class IsomorphicSearchAgent : public ScActionInitiatedAgent
 {
-class IsomorphicSearchAgent : public ScAgent
-{
-  SC_CLASS(Agent, Event(Keynodes::question_find_isomorphic_structures, ScEvent::Type::AddOutputEdge))
-  SC_GENERATED_BODY()
+public:
+  ScAddr GetActionClass() const;
+
+  ScResult DoProgram(ScAction & action);
 
   void formSearchResults(ScAddr const & scTemplateNode, ScAddrVector & answerElements);
 
@@ -20,5 +25,3 @@ class IsomorphicSearchAgent : public ScAgent
 
   ScAddr emplaceItemElementsInStructure(ScTemplateSearchResultItem const & item);
 };
-
-}  // namespace exampleModule

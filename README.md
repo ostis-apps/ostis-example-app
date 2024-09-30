@@ -14,6 +14,7 @@ OSTIS example app is an ostis-system based on [**ostis-web-platform**](https://g
 For Ubuntu/Debian based distros:
 ```sh
 git clone https://github.com/ostis-apps/ostis-example-app.git
+git checkout prerelease-0.10.0
 cd ostis-example-app
 ./scripts/install.sh
 ```

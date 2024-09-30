@@ -19,11 +19,11 @@ ui_menu_subdividing_search
 
 ui_menu_subdividing_search => ui_nrel_command_template:
 	[*
-		question_find_subdividing _-> ._question_find_subdividing_instance
+		action_search_subdividing _-> ._action_search_subdividing_instance
 			(*
-				_-> ui_arg_1;;
+				_-> rrel_1:: ui_arg_1;;
 			*);;
-		._question_find_subdividing_instance _<- question;;
+		._action_search_subdividing_instance _<- action;;
 	*];;
 
 ui_menu_subdividing_search => ui_nrel_command_lang_template: [На что разбивается $ui_arg_1] (* <- lang_ru;; *);;

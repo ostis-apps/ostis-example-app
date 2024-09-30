@@ -1,5 +1,5 @@
-project (ostis-example-app)
-cmake_minimum_required (VERSION 2.8)
+cmake_minimum_required(VERSION 3.11)
+project(ostis-example-app)
 
 set(SC_MACHINE_PATH "${CMAKE_CURRENT_LIST_DIR}/ostis-web-platform/sc-machine")
 include("${SC_MACHINE_PATH}/CMakeLists.txt")

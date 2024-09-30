@@ -4,47 +4,44 @@
 * (See accompanying file COPYING.MIT or copy at http://opensource.org/licenses/MIT)
 */
 
-#include <sc-agents-common/utils/GenerationUtils.hpp>
-#include <sc-agents-common/utils/AgentUtils.hpp>
-#include <sc-agents-common/utils/IteratorUtils.hpp>
-#include <sc-agents-common/keynodes/coreKeynodes.hpp>
-
 #include "SubdividingSearchAgent.hpp"
+
+#include <sc-agents-common/utils/GenerationUtils.hpp>
+#include <sc-agents-common/utils/IteratorUtils.hpp>
 
 using namespace std;
 using namespace utils;
 
-namespace exampleModule
+ScAddr SubdividingSearchAgent::GetActionClass() const
 {
+  return Keynodes::action_search_subdividing;
+}
 
-SC_AGENT_IMPLEMENTATION(SubdividingSearchAgent)
+ScResult SubdividingSearchAgent::DoProgram(ScAction & action)
 {
-  if (!edgeAddr.IsValid())
-    return SC_RESULT_ERROR;
+  auto const & [paramAddr] = action.GetArguments<1>();
+  if (!paramAddr.IsValid())
+    return action.FinishWithError();
 
-  ScAddr questionNode = m_memoryCtx.GetEdgeTarget(edgeAddr);
-  ScAddr param = IteratorUtils::getAnyFromSet(&m_memoryCtx, questionNode);
-  if (!param.IsValid())
-    return SC_RESULT_ERROR_INVALID_PARAMS;
+  ScStructure result = m_context.GenerateStructure();
+  result << paramAddr << Keynodes::nrel_subdividing;
 
-  ScAddr answer = m_memoryCtx.CreateNode(ScType::NodeConstStruct);
-  m_memoryCtx.CreateEdge(ScType::EdgeAccessConstPosPerm, answer, param);
-  m_memoryCtx.CreateEdge(ScType::EdgeAccessConstPosPerm, answer, Keynodes::nrel_subdividing);
-
-  ScIterator5Ptr iterator5 = IteratorUtils::getIterator5(&m_memoryCtx, param, Keynodes::nrel_subdividing, false);
+  ScIterator5Ptr const iterator5 = m_context.CreateIterator5(
+    ScType::Unknown, 
+    ScType::Unknown, 
+    paramAddr, 
+    ScType::Unknown, 
+    Keynodes::nrel_subdividing);
   while (iterator5->Next())
   {
-    ScAddr sheaf = iterator5->Get(0);
-    m_memoryCtx.CreateEdge(ScType::EdgeAccessConstPosPerm, answer, iterator5->Get(1));
-    m_memoryCtx.CreateEdge(ScType::EdgeAccessConstPosPerm, answer, sheaf);
-    m_memoryCtx.CreateEdge(ScType::EdgeAccessConstPosPerm, answer, iterator5->Get(3));
-    GenerationUtils::addSetToOutline(&m_memoryCtx, sheaf, answer);
+    ScAddr const & tupleAddr = iterator5->Get(0);
+    result << iterator5->Get(1) << tupleAddr << iterator5->Get(3);
+    
+    ScIterator3Ptr iterator3 = m_context.CreateIterator3(tupleAddr, ScType::EdgeAccessConstPosPerm, ScType::Unknown);
+    while (iterator3->Next())
+      result << iterator3->Get(1) << iterator3->Get(2);
   }
 
-  ScAddr edgeToAnswer = m_memoryCtx.CreateEdge(ScType::EdgeDCommonConst, questionNode, answer);
-  m_memoryCtx.CreateEdge(ScType::EdgeAccessConstPosPerm, scAgentsCommon::CoreKeynodes::nrel_answer, edgeToAnswer);
-
-  AgentUtils::finishAgentWork(&m_memoryCtx, questionNode);
-  return SC_RESULT_OK;
-}
+  action.SetResult(result);
+  return action.FinishSuccessfully();
 }

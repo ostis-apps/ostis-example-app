@@ -15,13 +15,13 @@ export PLATFORM_PATH="${APP_ROOT_PATH}/ostis-web-platform"
 
 export SC_MACHINE_REPO="https://github.com/ostis-ai/sc-machine.git"
 export SC_MACHINE_BRANCH="main"
-export SC_MACHINE_COMMIT="2c95b984b9db3d62b07c340bf88907a10a42283c"
+export SC_MACHINE_COMMIT="56ea89145a8e86f2240784ebf18753bf03fcacc9"
 export SC_MACHINE_PATH="${PLATFORM_PATH}/sc-machine"
 export ROOT_CMAKE_PATH="${APP_ROOT_PATH}"
 
 export SC_WEB_REPO="https://github.com/ostis-ai/sc-web.git"
 export SC_WEB_BRANCH="main"
-export SC_WEB_COMMIT="c2c3532efac3865f0c840bb62f600a68f15b84da"
+export SC_WEB_COMMIT="c86b5a81162839ae0167781d65e8ca622555a9e4"
 export SC_WEB_PATH="${PLATFORM_PATH}/sc-web"
 
 if [ -d "${PLATFORM_PATH}" ];

@@ -19,11 +19,11 @@ ui_menu_isomorphic_search
 
 ui_menu_isomorphic_search => ui_nrel_command_template:
 	[*
-		question_find_isomorphic_structures _-> ._question_find_isomorphic_structures_instance
+		action_search_isomorphic_structures _-> ._action_search_isomorphic_structures_instance
 			(*
 				_-> ui_arg_1;;
 			*);;
-		._question_find_isomorphic_structures_instance _<- question;;
+		._action_search_isomorphic_structures_instance _<- action;;
 	*];;
 
 ui_menu_isomorphic_search => ui_nrel_command_lang_template: [Какие структуры соответствуют заданному шаблону $ui_arg_1?] (* <- lang_ru;; *);;

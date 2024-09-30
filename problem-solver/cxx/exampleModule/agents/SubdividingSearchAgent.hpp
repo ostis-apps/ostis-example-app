@@ -6,18 +6,15 @@
 
 #pragma once
 
-#include <sc-memory/kpm/sc_agent.hpp>
+#include <sc-memory/sc_agent.hpp>
 
 #include "keynodes/keynodes.hpp"
-#include "SubdividingSearchAgent.generated.hpp"
 
-namespace exampleModule
+class SubdividingSearchAgent : public ScActionInitiatedAgent
 {
+public:
+  ScAddr GetActionClass() const;
 
-class SubdividingSearchAgent : public ScAgent
-{
-  SC_CLASS(Agent, Event(Keynodes::question_find_subdividing, ScEvent::Type::AddOutputEdge))
-  SC_GENERATED_BODY()
+  ScResult DoProgram(ScAction & action);
 };
 
-} // namespace exampleModule

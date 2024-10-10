@@ -2,7 +2,9 @@ project (ostis-example-app)
 cmake_minimum_required (VERSION 2.8)
 
 set(SC_MACHINE_PATH "${CMAKE_CURRENT_LIST_DIR}/ostis-web-platform/sc-machine")
-include("${SC_MACHINE_PATH}/CMakeLists.txt")
+add_subdirectory("${SC_MACHINE_PATH}")
+set(SC_MEMORY_PATH "${SC_MACHINE_PATH}/sc-memory/sc-memory/include")
+set(SC_AGENTS_COMMON_PATH "${SC_MACHINE_PATH}/sc-kpm/sc-agents-common/include")
 
 # platform doesn't support multi-extensions. Have to put project binaries to sc-machine extensions
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_CURRENT_LIST_DIR}/bin/extensions")

@@ -1,5 +1,5 @@
 sheaf
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[связь]
 	(* <- lang_ru;; *);
@@ -23,7 +23,7 @@ sheaf
 	};;
 
 binary_sheaf
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[бинарная связь]
 	(* <- lang_ru;; *);
@@ -36,7 +36,7 @@ binary_sheaf
 };;
 
 sc_connector
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[sc-коннектор]
 	(* <- lang_ru;; *);
@@ -47,7 +47,7 @@ sc_connector
 	(* <- lang_ru;; *);;
 
 non_atomic_binary_sheaf
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[неатомарная бинарная связь]
 		(* <- lang_ru;; *);
@@ -55,7 +55,7 @@ non_atomic_binary_sheaf
 	(* <- lang_en;; *);;
 
 non_binary_sheaf
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[небинарная связь]
 		(* <- lang_ru;; *);
@@ -63,7 +63,7 @@ non_binary_sheaf
 	(* <- lang_en;; *);;
 
 non_oriented_sheaf
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[неориентированная связь]
 		(* <- lang_ru;; *);
@@ -72,7 +72,7 @@ non_oriented_sheaf
 => nrel_strict_inclusion: non_oriented_set;;
 
 oriented_sheaf
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[ориентированная связь]
 		(* <- lang_ru;; *);
@@ -81,7 +81,7 @@ oriented_sheaf
 => nrel_strict_inclusion: oriented_set;;
 
 relation
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[отношение]
 	(* <- lang_ru;; *);

@@ -6,33 +6,22 @@
 
 #pragma once
 
-#include <sc-memory/sc_addr.hpp>
-#include <sc-memory/sc_object.hpp>
-
-#include "keynodes.generated.hpp"
+#include <sc-memory/sc_keynodes.hpp>
 
 namespace exampleModule
 {
-class Keynodes : public ScObject
+class Keynodes : public ScKeynodes
 {
-  SC_CLASS()
-  SC_GENERATED_BODY()
-
 public:
-  SC_PROPERTY(Keynode("question_find_subdividing"), ForceCreate)
-  static ScAddr question_find_subdividing;
+  static inline ScKeynode const action_find_subdividing{"action_find_subdividing"};
 
-  SC_PROPERTY(Keynode("nrel_subdividing"), ForceCreate)
-  static ScAddr nrel_subdividing;
+  static inline ScKeynode const nrel_subdividing{"nrel_subdividing"};
 
-  SC_PROPERTY(Keynode("question_find_isomorphic_structures"), ForceCreate)
-  static ScAddr question_find_isomorphic_structures;
+  static inline ScKeynode const action_find_isomorphic_structures{"action_find_isomorphic_structures"};
 
-  SC_PROPERTY(Keynode("nrel_search_result"), ForceCreate)
-  static ScAddr nrel_search_result;
+  static inline ScKeynode const nrel_search_result{"nrel_search_result"};
 
-  SC_PROPERTY(Keynode("empty_set"), ForceCreate)
-  static ScAddr empty_set;
+  static inline ScKeynode const empty_set{"empty_set"};
 };
 
 }  // namespace exampleModule

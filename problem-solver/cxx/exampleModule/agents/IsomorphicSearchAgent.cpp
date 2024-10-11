@@ -27,32 +27,33 @@ ScResult IsomorphicSearchAgent::DoProgram(ScAction & action)
 
   if (!scTemplateNode.IsValid())
   {
-    SC_AGENT_LOG_ERROR("IsomorphicSearchAgent: template argument is not found");
+    SC_AGENT_LOG_ERROR("Template argument is not found");
     return action.FinishWithError();
   }
 
-  ScAddrVector answerElements;
+  ScStructure result = m_context.GenerateStructure();
   try
   {
-    formSearchResults(scTemplateNode, answerElements);
+    formSearchResults(scTemplateNode, result);
   }
   catch (ScException const & exception)
   {
-    SC_AGENT_LOG_ERROR("IsomorphicSearchAgent: " << exception.Message());
+    SC_AGENT_LOG_ERROR(exception.Message());
     return action.FinishWithError();
   }
 
+  action.SetResult(result);
   return action.FinishSuccessfully();
 }
 
-void IsomorphicSearchAgent::formSearchResults(ScAddr const & scTemplateNode, ScAddrVector & answerElements)
+void IsomorphicSearchAgent::formSearchResults(ScAddr const & scTemplateNode, ScStructure & result)
 {
   clearPreviousSearchResults(scTemplateNode);
 
   ScTemplate scTemplate;
   m_context.BuildTemplate(scTemplate, scTemplateNode);
 
-  ScAddr const & resultsSet = formNewResultsSetConstruction(scTemplateNode, answerElements);
+  ScAddr const & resultsSet = formNewResultsSetConstruction(scTemplateNode, result);
 
   ScAddrVector searchResults;
   m_context.SearchByTemplate(scTemplate, [&searchResults, this](ScTemplateSearchResultItem const & item) {
@@ -62,17 +63,17 @@ void IsomorphicSearchAgent::formSearchResults(ScAddr const & scTemplateNode, ScA
   if (searchResults.empty())
   {
     ScAddr const & accessArc = m_context.GenerateConnector(ScType::EdgeAccessConstPosPerm, Keynodes::empty_set, resultsSet);
-    answerElements.insert(answerElements.end(), {accessArc, Keynodes::empty_set});
-    SC_AGENT_LOG_DEBUG("IsomorphicSearchAgent: structures have not been found");
+    result << accessArc << Keynodes::empty_set;
+    SC_AGENT_LOG_DEBUG("Structures have not been found");
   }
   else
   {
-    for (auto const & result : searchResults)
+    for (auto const & resultAddr : searchResults)
     {
       ScAddr const & accessArc = m_context.GenerateConnector(ScType::EdgeAccessConstPosPerm, resultsSet, result);
-      answerElements.insert(answerElements.end(), {accessArc, result});
+      result << accessArc << resultAddr;
     }
-    SC_AGENT_LOG_DEBUG("IsomorphicSearchAgent: structures have been found");
+    SC_AGENT_LOG_DEBUG("Structures have been found");
   }
 }
 
@@ -98,7 +99,7 @@ void IsomorphicSearchAgent::clearPreviousSearchResults(ScAddr const & scTemplate
 
 ScAddr IsomorphicSearchAgent::formNewResultsSetConstruction(
     ScAddr const & scTemplateNode,
-    ScAddrVector & answerElements)
+    ScStructure & result)
 {
   ScAddr const & resultsSetTuple = m_context.GenerateNode(ScType::NodeConstTuple);
   ScAddr const & searchResultRelationPair =
@@ -106,8 +107,7 @@ ScAddr IsomorphicSearchAgent::formNewResultsSetConstruction(
   ScAddr const & relationAccessArc =
       m_context.GenerateConnector(ScType::EdgeAccessConstPosPerm, Keynodes::nrel_search_result, searchResultRelationPair);
 
-  answerElements.insert(answerElements.end(), {resultsSetTuple, searchResultRelationPair, relationAccessArc});
-
+  result << resultsSetTuple << searchResultRelationPair << relationAccessArc;
   return resultsSetTuple;
 }
 

@@ -1,22 +1,21 @@
 #pragma once
 
-#include <sc-memory/kpm/sc_agent.hpp>
-
-#include "keynodes/keynodes.hpp"
-#include "IsomorphicSearchAgent.generated.hpp"
+#include <sc-memory/sc_agent.hpp>
 
 namespace exampleModule
 {
-class IsomorphicSearchAgent : public ScAgent
+class IsomorphicSearchAgent : public ScActionInitiatedAgent
 {
-  SC_CLASS(Agent, Event(Keynodes::question_find_isomorphic_structures, ScEvent::Type::AddOutputEdge))
-  SC_GENERATED_BODY()
+public:
+  ScAddr GetActionClass() const override;
 
-  void formSearchResults(ScAddr const & scTemplateNode, ScAddrVector & answerElements);
+  ScResult DoProgram(ScAction & action) override;
+
+  void formSearchResults(ScAddr const & scTemplateNode, ScStructure & result);
 
   void clearPreviousSearchResults(ScAddr const & scTemplate);
 
-  ScAddr formNewResultsSetConstruction(ScAddr const & scTemplate, ScAddrVector & answerElements);
+  ScAddr formNewResultsSetConstruction(ScAddr const & scTemplate, ScStructure & result);
 
   ScAddr emplaceItemElementsInStructure(ScTemplateSearchResultItem const & item);
 };

@@ -3,13 +3,12 @@
 * Distributed under the MIT License
 * (See accompanying file COPYING.MIT or copy at http://opensource.org/licenses/MIT)
 */
+#include "SubdividingSearchAgent.hpp"
+
+#include "keynodes/keynodes.hpp"
 
 #include <sc-agents-common/utils/GenerationUtils.hpp>
-#include <sc-agents-common/utils/AgentUtils.hpp>
 #include <sc-agents-common/utils/IteratorUtils.hpp>
-#include <sc-agents-common/keynodes/coreKeynodes.hpp>
-
-#include "SubdividingSearchAgent.hpp"
 
 using namespace std;
 using namespace utils;
@@ -17,34 +16,31 @@ using namespace utils;
 namespace exampleModule
 {
 
-SC_AGENT_IMPLEMENTATION(SubdividingSearchAgent)
+ScResult SubdividingSearchAgent::DoProgram(ScAction & action)
 {
-  if (!edgeAddr.IsValid())
-    return SC_RESULT_ERROR;
-
-  ScAddr questionNode = ms_context->GetEdgeTarget(edgeAddr);
-  ScAddr param = IteratorUtils::getAnyFromSet(ms_context.get(), questionNode);
+  ScAddr param = IteratorUtils::getAnyFromSet(&m_context, action);
   if (!param.IsValid())
-    return SC_RESULT_ERROR_INVALID_PARAMS;
+    return action.FinishUnsuccessfully();
 
-  ScAddr answer = ms_context->CreateNode(ScType::NodeConstStruct);
-  ms_context->CreateEdge(ScType::EdgeAccessConstPosPerm, answer, param);
-  ms_context->CreateEdge(ScType::EdgeAccessConstPosPerm, answer, Keynodes::nrel_subdividing);
+  ScStructure result = m_context.GenerateStructure();
+  m_context.GenerateConnector(ScType::ConstPermPosArc, result, param);
+  m_context.GenerateConnector(ScType::ConstPermPosArc, result, Keynodes::nrel_subdividing);
 
-  ScIterator5Ptr iterator5 = IteratorUtils::getIterator5(ms_context.get(), param, Keynodes::nrel_subdividing, false);
+  ScIterator5Ptr iterator5 = IteratorUtils::getIterator5(&m_context, param, Keynodes::nrel_subdividing, false);
   while (iterator5->Next())
   {
     ScAddr sheaf = iterator5->Get(0);
-    ms_context->CreateEdge(ScType::EdgeAccessConstPosPerm, answer, iterator5->Get(1));
-    ms_context->CreateEdge(ScType::EdgeAccessConstPosPerm, answer, sheaf);
-    ms_context->CreateEdge(ScType::EdgeAccessConstPosPerm, answer, iterator5->Get(3));
-    GenerationUtils::addSetToOutline(ms_context.get(), sheaf, answer);
+    result << iterator5->Get(1) << sheaf << iterator5->Get(3);
+    GenerationUtils::addSetToOutline(&m_context, sheaf, result);
   }
 
-  ScAddr edgeToAnswer = ms_context->CreateEdge(ScType::EdgeDCommonConst, questionNode, answer);
-  ms_context->CreateEdge(ScType::EdgeAccessConstPosPerm, scAgentsCommon::CoreKeynodes::nrel_answer, edgeToAnswer);
+  action.SetResult(result);
 
-  AgentUtils::finishAgentWork(ms_context.get(), questionNode);
-  return SC_RESULT_OK;
+  return action.FinishSuccessfully();
+}
+
+ScAddr SubdividingSearchAgent::GetActionClass() const
+{
+  return Keynodes::action_find_subdividing;
 }
 }

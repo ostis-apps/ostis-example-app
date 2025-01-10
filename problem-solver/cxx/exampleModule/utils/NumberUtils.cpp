@@ -1,0 +1,51 @@
+#include "utils/NumberUtils.hpp"
+
+#include "keynodes/Keynodes.hpp"
+
+namespace utils
+{
+
+bool NumberUtils::isNumber(std::string const & str)
+{
+  return !str.empty()
+         && std::find_if(
+                str.begin(),
+                str.end(),
+                [](unsigned char c)
+                {
+                  return !std::isdigit(c);
+                })
+                == str.end();
+}
+
+ScAddr NumberUtils::resolveNumber(ScMemoryContext & context, unsigned const value)
+{
+  ScAddrSet const & links = context.SearchLinksByContent(value);
+
+  ScAddr numberNode;
+  for (auto const & link : links)
+  {
+    ScIterator5Ptr nodesIterator = context.CreateIterator5(
+        ScType::ConstNode, ScType::ConstCommonArc, link, ScType::ConstPermPosArc, Keynodes::nrel_idtf);
+
+    if (nodesIterator->Next())
+    {
+      numberNode = nodesIterator->Get(0);
+      break;
+    }
+  }
+
+  if (!numberNode.IsValid())
+  {
+    numberNode = context.GenerateNode(ScType::ConstNode);
+    ScAddr const & link = context.GenerateLink(ScType::ConstNodeLink);
+    std::string valueStr = std::to_string(value);
+    context.SetLinkContent(link, valueStr);
+    ScAddr idtfRelationPair = context.GenerateConnector(ScType::ConstCommonArc, numberNode, link);
+    context.GenerateConnector(ScType::ConstPermPosArc, Keynodes::nrel_idtf, idtfRelationPair);
+  }
+
+  return numberNode;
+}
+
+}  // namespace utils

@@ -6,8 +6,15 @@
 
 #pragma once
 
-#include <sc-memory/sc_module.hpp>
+#include <sc-memory/sc_memory.hpp>
 
-class ExampleModule : public ScModule
+namespace utils
 {
+class NumberUtils
+{
+public:
+  static bool isNumber(std::string const & str);
+
+  static ScAddr resolveNumber(ScMemoryContext & context, unsigned value);
 };
+}  // namespace utils

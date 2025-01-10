@@ -15,6 +15,10 @@ target_include_directories(exampleModule
     PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
+if(${SC_CLANG_FORMAT_CODE})
+    target_clangformat_setup(exampleModule)
+endif()
+
 if (${SC_BUILD_TESTS})
     include(${CMAKE_CURRENT_LIST_DIR}/test/tests.cmake)
 endif ()

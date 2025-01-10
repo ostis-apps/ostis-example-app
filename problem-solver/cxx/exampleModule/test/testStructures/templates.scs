@@ -21,5 +21,3 @@ road_weight_template
   <- concept_connector_weight_template;
   -> rrel_1: rrel_key_sc_element: _road;
   -> rrel_2: rrel_key_sc_element: _X_number;;
- 
- 

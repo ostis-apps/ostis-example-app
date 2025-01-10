@@ -5,4 +5,3 @@ test_action
     -> rrel_3: city_d;
     -> rrel_4: road_connector_template;
     -> rrel_5: road_weight_template;;
-

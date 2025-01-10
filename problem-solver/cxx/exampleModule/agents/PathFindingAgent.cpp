@@ -28,31 +28,31 @@ ScResult PathFindingAgent::DoProgram(ScAction & action)
 
   if (!graph.IsValid())
   {
-    SC_AGENT_LOG_ERROR("PathFindingAgent: graph argument is not found");
+    SC_AGENT_LOG_ERROR("Graph argument is not found");
     return action.FinishWithError();
   }
 
   if (!startNode.IsValid())
   {
-    SC_AGENT_LOG_ERROR("PathFindingAgent: start node argument is not found");
+    SC_AGENT_LOG_ERROR("Start node argument is not found");
     return action.FinishWithError();
   }
 
   if (!endNode.IsValid())
   {
-    SC_AGENT_LOG_ERROR("PathFindingAgent: end node argument is not found");
+    SC_AGENT_LOG_ERROR("End node argument is not found");
     return action.FinishWithError();
   }
 
   if (!connectorTemplateAddr.IsValid())
   {
-    SC_AGENT_LOG_ERROR("PathFindingAgent: connector template argument is not found");
+    SC_AGENT_LOG_ERROR("Connector template argument is not found");
     return action.FinishWithError();
   }
 
   if (!connectorWeightTemplateAddr.IsValid())
   {
-    SC_AGENT_LOG_ERROR("PathFindingAgent: connector weight template  argument is not found");
+    SC_AGENT_LOG_ERROR("Connector weight template  argument is not found");
     return action.FinishWithError();
   }
 

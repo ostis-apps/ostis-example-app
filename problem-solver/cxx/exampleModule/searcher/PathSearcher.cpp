@@ -136,7 +136,7 @@ unsigned PathSearcher::getConnectorWeights(
       });
 
   if (!isFound)
-    SC_THROW_EXCEPTION(utils::ExceptionItemNotFound, "connector weight is not found");
+    SC_THROW_EXCEPTION(utils::ExceptionItemNotFound, "Connector weight is not found");
 
   return weight;
 }
@@ -154,5 +154,5 @@ unsigned PathSearcher::getNumberValue(ScAddr const & number)
       return atoi(idtfString.c_str());
   }
 
-  SC_THROW_EXCEPTION(utils::ExceptionItemNotFound, "connector weight value is not found");
+  SC_THROW_EXCEPTION(utils::ExceptionItemNotFound, "Connector weight value is not found");
 }

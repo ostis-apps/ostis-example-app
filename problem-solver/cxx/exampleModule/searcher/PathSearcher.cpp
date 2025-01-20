@@ -36,7 +36,7 @@ void PathSearcher::findPath(
     vertexesToCheck.pop();
 
     ScAddrToValueUnorderedMap<unsigned> neighborsWithPathLength;
-    getUnusedNeighborsWithConnectorInfo(
+    getNeighborsWithConnectorsLength(
         graph, currentVertex, connectorTemplateInfo, weightTemplateInfo, neighborsWithPathLength);
 
     for (auto const & neighborWithPathLength : neighborsWithPathLength)
@@ -78,12 +78,12 @@ void PathSearcher::findPath(
   path.insert(path.end(), pathsToVertexes[endNode].begin(), pathsToVertexes[endNode].end());
 }
 
-void PathSearcher::getUnusedNeighborsWithConnectorInfo(
+void PathSearcher::getNeighborsWithConnectorsLength(
     ScAddr const & graph,
     ScAddr const & startNode,
     ConnectorTemplateInfo const & connectorTemplateInfo,
     WeightTemplateInfo const & weightTemplateInfo,
-    ScAddrToValueUnorderedMap<unsigned> & neighborsWithConnectorInfo) const
+    ScAddrToValueUnorderedMap<unsigned> & neighborsWithConnectorLength) const
 {
   ScTemplateParams connectorTemplateParams;
   connectorTemplateParams.Add(connectorTemplateInfo.connectorStartVariable, startNode);
@@ -99,7 +99,9 @@ void PathSearcher::getUnusedNeighborsWithConnectorInfo(
         ScAddr const & neighbor = item[connectorTemplateInfo.connectorEndVariable];
         unsigned const connectorWeight = getConnectorWeight(connector, weightTemplateInfo);
 
-        neighborsWithConnectorInfo[neighbor] = connectorWeight;
+        if (neighborsWithConnectorLength.find(neighbor) == neighborsWithConnectorLength.cend()
+            || neighborsWithConnectorLength[neighbor] > connectorWeight)
+          neighborsWithConnectorLength[neighbor] = connectorWeight;
       },
       [this, &graph](ScAddr const & elementAddr) -> bool
       {

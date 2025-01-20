@@ -28,12 +28,12 @@ public:
 private:
   ScMemoryContext * context;
 
-  void getUnusedNeighborsWithConnectorInfo(
+  void getNeighborsWithConnectorsLength(
       ScAddr const & graph,
       ScAddr const & startNode,
       ConnectorTemplateInfo const & connectorTemplateInfo,
       WeightTemplateInfo const & weightTemplateInfo,
-      ScAddrToValueUnorderedMap<unsigned> & neighborsWithConnectorInfo) const;
+      ScAddrToValueUnorderedMap<unsigned> & neighborsWithConnectorsLength) const;
 
   unsigned getConnectorWeight(ScAddr const & connector, WeightTemplateInfo const & weightTemplateInfo) const;
 

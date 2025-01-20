@@ -24,19 +24,20 @@ void PathSearcher::findPath(
     ScAddrVector & path) const
 {
   ScAddrQueue vertexesToCheck;
-  std::map<ScAddr, unsigned, ScAddrLessFunc> pathLengthToVertexes;
-  std::map<ScAddr, ScAddrVector, ScAddrLessFunc> pathsToVertexes;
+  ScAddrToValueUnorderedMap<unsigned> pathLengthToVertexes;
+  pathLengthToVertexes[startNode] =0;
+  ScAddrToValueUnorderedMap<ScAddrVector> pathsToVertexes;
 
   vertexesToCheck.emplace(startNode);
 
   while (!vertexesToCheck.empty())
   {
-    ScAddr const & currnetVertex = vertexesToCheck.front();
+    ScAddr const & currentVertex = vertexesToCheck.front();
     vertexesToCheck.pop();
 
     ScAddrToValueUnorderedMap<unsigned> neighborsWithPathLength;
     getUnusedNeighborsWithConnectorInfo(
-        graph, currnetVertex, connectorTemplateInfo, weightTemplateInfo, neighborsWithPathLength);
+        graph, currentVertex, connectorTemplateInfo, weightTemplateInfo, neighborsWithPathLength);
 
     for (auto const & neighborWithPathLength : neighborsWithPathLength)
     {
@@ -45,21 +46,21 @@ void PathSearcher::findPath(
 
       if (pathLengthToVertexes.find(neighbor) == pathLengthToVertexes.cend())
       {
-        pathLengthToVertexes[neighbor] = pathLengthToVertexes[currnetVertex] + connectorWeight;
+        pathLengthToVertexes[neighbor] = pathLengthToVertexes[currentVertex] + connectorWeight;
 
-        pathsToVertexes[neighbor] = pathsToVertexes[currnetVertex];
+        pathsToVertexes[neighbor] = pathsToVertexes[currentVertex];
         pathsToVertexes[neighbor].emplace_back(neighbor);
 
         vertexesToCheck.emplace(neighbor);
       }
       else
       {
-        unsigned newPathLength = pathLengthToVertexes[currnetVertex] + connectorWeight;
+        unsigned newPathLength = pathLengthToVertexes[currentVertex] + connectorWeight;
         if (newPathLength < pathLengthToVertexes[neighbor])
         {
           pathLengthToVertexes[neighbor] = newPathLength;
 
-          pathsToVertexes[neighbor] = pathsToVertexes[currnetVertex];
+          pathsToVertexes[neighbor] = pathsToVertexes[currentVertex];
           pathsToVertexes[neighbor].emplace_back(neighbor);
 
           vertexesToCheck.emplace(neighbor);
@@ -96,8 +97,7 @@ void PathSearcher::getUnusedNeighborsWithConnectorInfo(
         ScAddr const & connector = item[connectorTemplateInfo.connectorVariable];
 
         ScAddr const & neighbor = item[connectorTemplateInfo.connectorEndVariable];
-        unsigned const connectorWeight =
-            getConnectorWeights(connector, weightTemplateInfo);
+        unsigned const connectorWeight = getConnectorWeight(connector, weightTemplateInfo);
 
         neighborsWithConnectorInfo[neighbor] = connectorWeight;
       },
@@ -107,7 +107,7 @@ void PathSearcher::getUnusedNeighborsWithConnectorInfo(
       });
 }
 
-unsigned PathSearcher::getConnectorWeights(
+unsigned PathSearcher::getConnectorWeight(
     ScAddr const & connector,
     WeightTemplateInfo const & weightTemplateInfo) const
 {
@@ -131,7 +131,7 @@ unsigned PathSearcher::getConnectorWeights(
       });
 
   if (!isFound)
-    SC_THROW_EXCEPTION(utils::ExceptionItemNotFound, "Connector weight is not found");
+    SC_THROW_EXCEPTION(utils::ExceptionItemNotFound, "Connector " << connector.Hash() << " weight is not found");
 
   return weight;
 }
@@ -149,5 +149,5 @@ unsigned PathSearcher::getNumberValue(ScAddr const & number) const
       return atoi(idtfString.c_str());
   }
 
-  SC_THROW_EXCEPTION(utils::ExceptionItemNotFound, "Connector weight value is not found");
+  SC_THROW_EXCEPTION(utils::ExceptionItemNotFound, "Number " << number.Hash() << " numeric idtf is not found");
 }

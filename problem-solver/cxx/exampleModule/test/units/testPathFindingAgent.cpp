@@ -61,7 +61,7 @@ void checkResultAndGetPathWithLength(
       });
   ASSERT_EQ(amountOfResults, 1);
 
-  ASSERT_EQ(utils::TestUtils::getAmountOfOutgoingAccessArcs(context, result), expectedAmountOfElements);
+  ASSERT_EQ(utils::TestUtils::getAmountOfOutgoingMembershipArcs(context, result), expectedAmountOfElements);
 
   std::string lengthNumberIdtf;
   utils::TestUtils::getSoleIdtf(context, lengthNumberAddr, lengthNumberIdtf);
@@ -98,7 +98,7 @@ void checkPathStructure(
       });
   ASSERT_EQ(amountOfResults, 1);
 
-  ASSERT_EQ(utils::TestUtils::getAmountOfOutgoingAccessArcs(context, pathAddr), expectedAmountOfElements);
+  ASSERT_EQ(utils::TestUtils::getAmountOfOutgoingMembershipArcs(context, pathAddr), expectedAmountOfElements);
 }
 
 void successfulPathfindingTestBody(
@@ -133,9 +133,9 @@ void successfulPathfindingTestBody(
   ScAddr pathCheckTemplateAddr = context.SearchElementBySystemIdentifier(expectedPathTemplateIdtf);
   ASSERT_TRUE(pathCheckTemplateAddr.IsValid());
 
-  // unlike the roadWeightTemplate above, this check template doesn't have duplicating access arcs
+  // unlike the roadWeightTemplate above, this check template doesn't have duplicating membership arcs
   unsigned expectedAmountOfElementsInPath =
-      utils::TestUtils::getAmountOfOutgoingAccessArcs(context, pathCheckTemplateAddr);
+      utils::TestUtils::getAmountOfOutgoingMembershipArcs(context, pathCheckTemplateAddr);
   checkPathStructure(context, pathAddr, pathCheckTemplateAddr, expectedAmountOfElementsInPath);
 }
 

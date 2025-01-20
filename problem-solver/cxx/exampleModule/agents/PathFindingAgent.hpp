@@ -9,8 +9,8 @@
 #include <sc-memory/sc_agent.hpp>
 
 #include "keynodes/Keynodes.hpp"
-#include "structures/ConnectorTemplateInfo.hpp"
-#include "structures/WeightTemplateInfo.hpp"
+#include "templateInformationStructures/ConnectorTemplateInfo.hpp"
+#include "templateInformationStructures/WeightTemplateInfo.hpp"
 
 class PathFindingAgent : public ScActionInitiatedAgent
 {
@@ -24,17 +24,17 @@ private:
       ScAddrVector const & path,
       unsigned pathLength,
       ConnectorTemplateInfo const & connectorTemplateInfo,
-      WeightTemplateInfo const & weightTemplateInfo);
+      WeightTemplateInfo const & weightTemplateInfo) const;
 
   void addConnectionIntoStructure(
       ScAddr const & first,
       ScAddr const & second,
       ConnectorTemplateInfo const & connectorTemplateInfo,
-      ScStructure & structure);
+      ScStructure & structure) const;
 
-  void addPathWeightIntoStrucutre(
+  void addPathWeightIntoStructure(
       ScAddr const & pathAddr,
       WeightTemplateInfo const & weightTemplateInfo,
       unsigned const length,
-      ScStructure & structure);
+      ScStructure & structure) const;
 };

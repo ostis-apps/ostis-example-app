@@ -11,7 +11,7 @@
 namespace utils
 {
 
-bool NumberUtils::isNumber(std::string const & str)
+bool NumberUtils::isPositiveInteger(std::string const & str)
 {
   return !str.empty()
          && std::find_if(

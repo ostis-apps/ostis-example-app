@@ -11,7 +11,7 @@ void TestUtils::getSoleIdtf(
     ScMemoryContext & context, ScAddr const & element, std::string & idtf)
 {
   ScIterator5Ptr idtfIterator = context.CreateIterator5(
-      element, ScType::CommonArc, ScType::ConstNodeLink, ScType::ConstPermPosArc, Keynodes::nrel_idtf);
+      element, ScType::ConstCommonArc, ScType::ConstNodeLink, ScType::ConstPermPosArc, Keynodes::nrel_idtf);
   ScAddr idtfLink;
   if (idtfIterator->Next())
     idtfLink = idtfIterator->Get(2);
@@ -24,7 +24,7 @@ void TestUtils::getSoleIdtf(
 }
 
 //context.GetElementEdgesAndIncomingArcsCount does not filter common arcs
-unsigned TestUtils::getAmountOfOutgoingAccessArcs(
+unsigned TestUtils::getAmountOfOutgoingMembershipArcs(
     ScMemoryContext & context, ScAddr const & element)
 {
   unsigned outgoingArcsAmount = 0;

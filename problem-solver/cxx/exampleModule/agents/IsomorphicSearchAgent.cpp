@@ -65,16 +65,16 @@ void IsomorphicSearchAgent::formSearchResults(ScAddr const & scTemplateNode, ScS
 
   if (searchResults.empty())
   {
-    ScAddr const & accessArc = m_context.GenerateConnector(ScType::ConstPermPosArc, Keynodes::empty_set, resultsSet);
-    result << accessArc << Keynodes::empty_set;
+    ScAddr const & membershipArc = m_context.GenerateConnector(ScType::ConstPermPosArc, Keynodes::empty_set, resultsSet);
+    result << membershipArc << Keynodes::empty_set;
     SC_AGENT_LOG_DEBUG("Structures have not been found");
   }
   else
   {
     for (auto const & resultAddr : searchResults)
     {
-      ScAddr const & accessArc = m_context.GenerateConnector(ScType::ConstPermPosArc, resultsSet, resultAddr);
-      result << accessArc << resultAddr;
+      ScAddr const & membershipArc = m_context.GenerateConnector(ScType::ConstPermPosArc, resultsSet, resultAddr);
+      result << membershipArc << resultAddr;
     }
     SC_AGENT_LOG_DEBUG("Structures have been found");
   }
@@ -101,10 +101,10 @@ ScAddr IsomorphicSearchAgent::formNewResultsSetConstruction(ScAddr const & scTem
   ScAddr const & resultsSetTuple = m_context.GenerateNode(ScType::ConstNodeTuple);
   ScAddr const & searchResultRelationPair =
       m_context.GenerateConnector(ScType::ConstCommonArc, scTemplateNode, resultsSetTuple);
-  ScAddr const & relationAccessArc =
+  ScAddr const & relationMembershipArc =
       m_context.GenerateConnector(ScType::ConstPermPosArc, Keynodes::nrel_search_result, searchResultRelationPair);
 
-  result << resultsSetTuple << searchResultRelationPair << relationAccessArc;
+  result << resultsSetTuple << searchResultRelationPair << relationMembershipArc;
   return resultsSetTuple;
 }
 

@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include "string"
+#include <sc-memory/sc_addr.hpp>
 
 struct WeightTemplateInfo
 {

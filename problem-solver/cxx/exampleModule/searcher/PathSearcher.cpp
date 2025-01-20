@@ -18,15 +18,12 @@ void PathSearcher::findPath(
     ScAddr const & graph,
     ScAddr const & startNode,
     ScAddr const & endNode,
-    ScAddr const & connectorTemplateAddr,
-    ConnectorTemplateKeyElements const & connectorTemplateKeyElements,
-    ScAddr const & connectorWeightTemplateAddr,
-    WeightTemplateKeyElements const & weightTemplateKeyElements,
+    ConnectorTemplateInfo const & connectorTemplateInfo,
+    WeightTemplateInfo const & weightTemplateInfo,
     unsigned & pathLength,
-    ScAddrVector & path)
+    ScAddrVector & path) const
 {
   ScAddrQueue vertexesToCheck;
-  ScAddrSet usedConnectors;
   std::map<ScAddr, unsigned, ScAddrLessFunc> pathLengthToVertexes;
   std::map<ScAddr, ScAddrVector, ScAddrLessFunc> pathsToVertexes;
 
@@ -37,18 +34,14 @@ void PathSearcher::findPath(
     ScAddr const & currnetVertex = vertexesToCheck.front();
     vertexesToCheck.pop();
 
-    ScAddrToValueUnorderedMap<ScAddr> neighborsWithConnectors =
-        getNeighborsWithConnectors(graph, currnetVertex, connectorTemplateAddr, connectorTemplateKeyElements);
+    ScAddrToValueUnorderedMap<unsigned> neighborsWithPathLength;
+    getUnusedNeighborsWithConnectorInfo(
+        graph, currnetVertex, connectorTemplateInfo, weightTemplateInfo, neighborsWithPathLength);
 
-    for (auto const & neighborWithConnector : neighborsWithConnectors)
+    for (auto const & neighborWithPathLength : neighborsWithPathLength)
     {
-      ScAddr const & connector = neighborWithConnector.second;
-      if (usedConnectors.find(connector) != usedConnectors.cend())
-        continue;
-
-      ScAddr const & neighbor = neighborWithConnector.first;
-      unsigned const connectorWeight =
-          getConnectorWeights(connector, connectorWeightTemplateAddr, weightTemplateKeyElements);
+      ScAddr const & neighbor = neighborWithPathLength.first;
+      unsigned const connectorWeight = neighborWithPathLength.second;
 
       if (pathLengthToVertexes.find(neighbor) == pathLengthToVertexes.cend())
       {
@@ -56,6 +49,8 @@ void PathSearcher::findPath(
 
         pathsToVertexes[neighbor] = pathsToVertexes[currnetVertex];
         pathsToVertexes[neighbor].emplace_back(neighbor);
+
+        vertexesToCheck.emplace(neighbor);
       }
       else
       {
@@ -66,10 +61,10 @@ void PathSearcher::findPath(
 
           pathsToVertexes[neighbor] = pathsToVertexes[currnetVertex];
           pathsToVertexes[neighbor].emplace_back(neighbor);
+
+          vertexesToCheck.emplace(neighbor);
         }
       }
-      vertexesToCheck.emplace(neighbor);
-      usedConnectors.emplace(connector);
     }
   }
 
@@ -82,55 +77,55 @@ void PathSearcher::findPath(
   path.insert(path.end(), pathsToVertexes[endNode].begin(), pathsToVertexes[endNode].end());
 }
 
-ScAddrToValueUnorderedMap<ScAddr> PathSearcher::getNeighborsWithConnectors(
+void PathSearcher::getUnusedNeighborsWithConnectorInfo(
     ScAddr const & graph,
     ScAddr const & startNode,
-    ScAddr const & connectorTemplateAddr,
-    ConnectorTemplateKeyElements const & connectorTemplateKeyElements)
+    ConnectorTemplateInfo const & connectorTemplateInfo,
+    WeightTemplateInfo const & weightTemplateInfo,
+    ScAddrToValueUnorderedMap<unsigned>  & neighborsWithConnectorInfo) const
 {
   ScTemplateParams connectorTemplateParams;
-  connectorTemplateParams.Add(connectorTemplateKeyElements.connectorStartVariable, startNode);
+  connectorTemplateParams.Add(connectorTemplateInfo.connectorStartVariable, startNode);
   ScTemplate connectorTemplate;
-  context->BuildTemplate(connectorTemplate, connectorTemplateAddr, connectorTemplateParams);
-
-  ScAddrToValueUnorderedMap<ScAddr> neighborsWithStepWeights;
+  context->BuildTemplate(connectorTemplate, connectorTemplateInfo.templateAddr, connectorTemplateParams);
 
   context->SearchByTemplate(
       connectorTemplate,
       [&](ScTemplateResultItem const & item)
       {
-        ScAddr const & neighbor = item[connectorTemplateKeyElements.connectorEndVariable];
-        ScAddr const & connector = item[connectorTemplateKeyElements.connectorVariable];
-        neighborsWithStepWeights[neighbor] = connector;
+        ScAddr const & connector = item[connectorTemplateInfo.connectorVariable];
+
+        ScAddr const & neighbor = item[connectorTemplateInfo.connectorEndVariable];
+        unsigned const connectorWeight =
+            getConnectorWeights(connector, weightTemplateInfo);
+
+        neighborsWithConnectorInfo[neighbor] = connectorWeight;
       },
       [this, &graph](ScAddr const & elementAddr) -> bool
       {
         return context->CheckConnector(graph, elementAddr, ScType::ConstPermPosArc);
       });
-
-  return neighborsWithStepWeights;
 }
 
 unsigned PathSearcher::getConnectorWeights(
     ScAddr const & connector,
-    ScAddr const & connectorWeightTemplateAddr,
-    WeightTemplateKeyElements const & weightTemplateKeyElements)
+    WeightTemplateInfo const & weightTemplateInfo) const
 {
   ScTemplateParams connectorWeightTemplateParams;
-  connectorWeightTemplateParams.Add(weightTemplateKeyElements.measuredObjectVariable, connector);
+  connectorWeightTemplateParams.Add(weightTemplateInfo.measuredObjectVariable, connector);
   ScTemplate connectorWeightTemplate;
-  context->BuildTemplate(connectorWeightTemplate, connectorWeightTemplateAddr, connectorWeightTemplateParams);
+  context->BuildTemplate(connectorWeightTemplate, weightTemplateInfo.templateAddr, connectorWeightTemplateParams);
 
   unsigned weight;
   bool isFound = false;
   context->SearchByTemplateInterruptibly(
       connectorWeightTemplate,
-      [this, &isFound, &weightTemplateKeyElements, &weight](
+      [this, &isFound, &weightTemplateInfo, &weight](
           ScTemplateResultItem const & item) -> ScTemplateSearchRequest
       {
         isFound = true;
 
-        weight = getNumberValue(item[weightTemplateKeyElements.numberVariable]);
+        weight = getNumberValue(item[weightTemplateInfo.numberVariable]);
 
         return ScTemplateSearchRequest::STOP;
       });
@@ -141,7 +136,7 @@ unsigned PathSearcher::getConnectorWeights(
   return weight;
 }
 
-unsigned PathSearcher::getNumberValue(ScAddr const & number)
+unsigned PathSearcher::getNumberValue(ScAddr const & number) const
 {
   ScIterator5Ptr idtfsIterator = context->CreateIterator5(
       number, ScType::ConstCommonArc, ScType::ConstNodeLink, ScType::ConstPermPosArc, Keynodes::nrel_idtf);

@@ -58,13 +58,11 @@ ScResult PathFindingAgent::DoProgram(ScAction & action)
 
   try
   {
-    ConnectorTemplateKeyElements connectorTemplateKeyElements;
-    utils::TemplateUtils::getConnectorTemplateKeyElements(
-        m_context, connectorTemplateAddr, connectorTemplateKeyElements);
+    ConnectorTemplateInfo connectorTemplateInfo;
+    utils::TemplateUtils::getConnectorTemplateInfo(m_context, connectorTemplateAddr, connectorTemplateInfo);
 
-    WeightTemplateKeyElements weightTemplateKeyElements;
-    utils::TemplateUtils::getWeightTemplateKeyElements(
-        m_context, connectorWeightTemplateAddr, weightTemplateKeyElements);
+    WeightTemplateInfo weightTemplateInfo;
+    utils::TemplateUtils::getWeightTemplateInfo(m_context, connectorWeightTemplateAddr, weightTemplateInfo);
 
     unsigned pathLength;
     ScAddrVector path;
@@ -74,20 +72,16 @@ ScResult PathFindingAgent::DoProgram(ScAction & action)
         graph,
         startNode,
         endNode,
-        connectorTemplateAddr,
-        connectorTemplateKeyElements,
-        connectorWeightTemplateAddr,
-        weightTemplateKeyElements,
+        connectorTemplateInfo,
+        weightTemplateInfo,
         pathLength,
         path);
 
     ScStructure const & result = formResult(
         path,
         pathLength,
-        connectorTemplateAddr,
-        connectorTemplateKeyElements,
-        connectorWeightTemplateAddr,
-        weightTemplateKeyElements);
+        connectorTemplateInfo,
+        weightTemplateInfo);
     action.SetResult(result);
   }
   catch (ScException const & exception)
@@ -102,10 +96,8 @@ ScResult PathFindingAgent::DoProgram(ScAction & action)
 ScStructure PathFindingAgent::formResult(
     ScAddrVector const & path,
     unsigned pathLength,
-    ScAddr const & connectorTemplateAddr,
-    ConnectorTemplateKeyElements const & connectorTemplateKeyElements,
-    ScAddr const & connectorWeightTemplateAddr,
-    WeightTemplateKeyElements const & weightTemplateKeyElements)
+    ConnectorTemplateInfo const & connectorTemplateInfo,
+    WeightTemplateInfo const & weightTemplateInfo)
 {
   ScAddr const & resultStructureAddr = m_context.GenerateNode(ScType::ConstNode);
   ScStructure resultStructure = m_context.ConvertToStructure(resultStructureAddr);
@@ -118,11 +110,11 @@ ScStructure PathFindingAgent::formResult(
     ScAddr const & first = *(it - 1);
     ScAddr const & second = *it;
 
-    addConnectionIntoStructure(first, second, connectorTemplateAddr, connectorTemplateKeyElements, pathStructure);
+    addConnectionIntoStructure(first, second, connectorTemplateInfo, pathStructure);
   }
 
   addPathWeightIntoStrucutre(
-      pathStructure, connectorWeightTemplateAddr, weightTemplateKeyElements, pathLength, resultStructure);
+      pathStructure, weightTemplateInfo, pathLength, resultStructure);
 
   return resultStructure;
 }
@@ -130,16 +122,15 @@ ScStructure PathFindingAgent::formResult(
 void PathFindingAgent::addConnectionIntoStructure(
     ScAddr const & first,
     ScAddr const & second,
-    ScAddr const & connectorTemplateAddr,
-    ConnectorTemplateKeyElements const & connectorTemplateKeyElements,
+    ConnectorTemplateInfo const & connectorTemplateInfo,
     ScStructure & structure)
 {
   ScTemplateParams connectorTemplateParams;
-  connectorTemplateParams.Add(connectorTemplateKeyElements.connectorStartVariable, first);
-  connectorTemplateParams.Add(connectorTemplateKeyElements.connectorEndVariable, second);
+  connectorTemplateParams.Add(connectorTemplateInfo.connectorStartVariable, first);
+  connectorTemplateParams.Add(connectorTemplateInfo.connectorEndVariable, second);
 
   ScTemplate connectorTemplate;
-  m_context.BuildTemplate(connectorTemplate, connectorTemplateAddr, connectorTemplateParams);
+  m_context.BuildTemplate(connectorTemplate, connectorTemplateInfo.templateAddr, connectorTemplateParams);
 
   bool isFound = false;
 
@@ -161,19 +152,18 @@ void PathFindingAgent::addConnectionIntoStructure(
 
 void PathFindingAgent::addPathWeightIntoStrucutre(
     ScAddr const & pathAddr,
-    ScAddr const & connectorWeightTemplateAddr,
-    WeightTemplateKeyElements const & weightTemplateKeyElements,
+    WeightTemplateInfo const & weightTemplateInfo,
     unsigned const length,
     ScStructure & structure)
 {
   ScAddr const & numberAddr = utils::NumberUtils::resolveNumber(m_context, length);
 
   ScTemplateParams connectorTemplateParams;
-  connectorTemplateParams.Add(weightTemplateKeyElements.measuredObjectVariable, pathAddr);
-  connectorTemplateParams.Add(weightTemplateKeyElements.numberVariable, numberAddr);
+  connectorTemplateParams.Add(weightTemplateInfo.measuredObjectVariable, pathAddr);
+  connectorTemplateParams.Add(weightTemplateInfo.numberVariable, numberAddr);
 
   ScTemplate connectorWeightTemplate;
-  m_context.BuildTemplate(connectorWeightTemplate, connectorWeightTemplateAddr, connectorTemplateParams);
+  m_context.BuildTemplate(connectorWeightTemplate, weightTemplateInfo.templateAddr, connectorTemplateParams);
   ScTemplateGenResult genResult;
   m_context.GenerateByTemplate(connectorWeightTemplate, genResult);
 

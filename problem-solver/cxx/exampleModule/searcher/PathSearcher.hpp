@@ -8,8 +8,8 @@
 
 #include "sc-memory/sc_memory.hpp"
 
-#include "structures/ConnectorTemplateKeyElements.hpp"
-#include "structures/WeightTemplateKeyElements.hpp"
+#include "structures/ConnectorTemplateInfo.hpp"
+#include "structures/WeightTemplateInfo.hpp"
 
 class PathSearcher
 {
@@ -20,26 +20,24 @@ public:
       ScAddr const & graph,
       ScAddr const & startNode,
       ScAddr const & endNode,
-      ScAddr const & connectorTemplateAddr,
-      ConnectorTemplateKeyElements const & connectorTemplateKeyElements,
-      ScAddr const & connectorWeightTemplateAddr,
-      WeightTemplateKeyElements const & weightTemplateKeyElements,
+      ConnectorTemplateInfo const & connectorTemplateInfo,
+      WeightTemplateInfo const & weightTemplateInfo,
       unsigned & pathLength,
-      ScAddrVector & path);
+      ScAddrVector & path) const;
 
 private:
   ScMemoryContext * context;
 
-  ScAddrToValueUnorderedMap<ScAddr> getNeighborsWithConnectors(
+  void getUnusedNeighborsWithConnectorInfo(
       ScAddr const & graph,
       ScAddr const & startNode,
-      ScAddr const & connectorTemplateAddr,
-      ConnectorTemplateKeyElements const & connectorTemplateKeyElements);
+      ConnectorTemplateInfo const & connectorTemplateInfo,
+      WeightTemplateInfo const & weightTemplateInfo,
+      ScAddrToValueUnorderedMap<unsigned> & neighborsWithConnectorInfo) const;
 
   unsigned getConnectorWeights(
       ScAddr const & connector,
-      ScAddr const & connectorWeightTemplateAddr,
-      WeightTemplateKeyElements const & weightTemplateKeyElements);
+      WeightTemplateInfo const & weightTemplateInfo) const;
 
-  unsigned getNumberValue(ScAddr const & number);
+  unsigned getNumberValue(ScAddr const & number) const;
 };

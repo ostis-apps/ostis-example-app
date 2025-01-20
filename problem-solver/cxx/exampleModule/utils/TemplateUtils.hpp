@@ -8,22 +8,22 @@
 
 #include <sc-memory/sc_memory.hpp>
 
-#include "structures/ConnectorTemplateKeyElements.hpp"
-#include "structures/WeightTemplateKeyElements.hpp"
+#include "structures/ConnectorTemplateInfo.hpp"
+#include "structures/WeightTemplateInfo.hpp"
 
 namespace utils
 {
 class TemplateUtils
 {
 public:
-  static void getConnectorTemplateKeyElements(
+  static void getConnectorTemplateInfo(
       ScMemoryContext & context,
       ScAddr const & connectorTemplateAddr,
-      ConnectorTemplateKeyElements & elements);
+      ConnectorTemplateInfo & templateInfo);
 
-  static void getWeightTemplateKeyElements(
+  static void getWeightTemplateInfo(
       ScMemoryContext & context,
       ScAddr const & connectorWeightTemplateAddr,
-      WeightTemplateKeyElements & elements);
+      WeightTemplateInfo & templateInfo);
 };
 }  // namespace utils

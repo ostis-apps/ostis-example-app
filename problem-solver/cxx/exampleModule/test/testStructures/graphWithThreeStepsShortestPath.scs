@@ -17,6 +17,12 @@ network = [*
     -> city_c;
     -> city_d;;
 
+  road_a_c
+   <- concept_road;
+   -> rrel_end: city_a;
+   -> rrel_end: city_c;
+   <- 250_km (* <- concept_length;; *);;
+
   road_a_b
    <- concept_road;
    -> rrel_end: city_a;
@@ -28,12 +34,6 @@ network = [*
    -> rrel_end: city_b;
    -> rrel_end: city_c;
    <- 50_km (* <- concept_length;; *);;
-
-  road_a_c
-   <- concept_road;
-   -> rrel_end: city_a;
-   -> rrel_end: city_c;
-   <- 250_km (* <- concept_length;; *);;
 
   road_c_d
    <- concept_road;

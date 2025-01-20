@@ -13,37 +13,39 @@
 namespace utils
 {
 
-void TemplateUtils::getConnectorTemplateKeyElements(
+void TemplateUtils::getConnectorTemplateInfo(
     ScMemoryContext & context,
     ScAddr const & connectorTemplateAddr,
-    ConnectorTemplateKeyElements & elements)
+    ConnectorTemplateInfo & templateInfo)
 {
-  elements.connectorStartVariable =
+  templateInfo.templateAddr = connectorTemplateAddr;
+  templateInfo.connectorStartVariable =
       IteratorUtils::getAnyByOutRelation(&context, connectorTemplateAddr, Keynodes::GetRrelIndex(1));
-  if(!elements.connectorStartVariable.IsValid())
+  if(!templateInfo.connectorStartVariable.IsValid())
     SC_THROW_EXCEPTION(utils::ExceptionItemNotFound, "Incorrect connector template - connector start variable is not found.");
-  elements.connectorEndVariable =
+  templateInfo.connectorEndVariable =
       IteratorUtils::getAnyByOutRelation(&context, connectorTemplateAddr, Keynodes::GetRrelIndex(2));
-  if(!elements.connectorEndVariable.IsValid())
+  if(!templateInfo.connectorEndVariable.IsValid())
     SC_THROW_EXCEPTION(utils::ExceptionItemNotFound, "Incorrect connector template - connector end variable is not found.");
-  elements.connectorVariable =
+  templateInfo.connectorVariable =
       IteratorUtils::getAnyByOutRelation(&context, connectorTemplateAddr, Keynodes::GetRrelIndex(3));
-  if(!elements.connectorVariable.IsValid())
+  if(!templateInfo.connectorVariable.IsValid())
     SC_THROW_EXCEPTION(utils::ExceptionItemNotFound, "Incorrect connector template - connector variable is not found.");
 }
 
-void TemplateUtils::getWeightTemplateKeyElements(
+void TemplateUtils::getWeightTemplateInfo(
     ScMemoryContext & context,
     ScAddr const & connectorWeightTemplateAddr,
-    WeightTemplateKeyElements & elements)
+    WeightTemplateInfo & templateInfo)
 {
-  elements.measuredObjectVariable =
+  templateInfo.templateAddr = connectorWeightTemplateAddr;
+  templateInfo.measuredObjectVariable =
       IteratorUtils::getAnyByOutRelation(&context, connectorWeightTemplateAddr, Keynodes::GetRrelIndex(1));
-  if(!elements.measuredObjectVariable.IsValid())
+  if(!templateInfo.measuredObjectVariable.IsValid())
     SC_THROW_EXCEPTION(utils::ExceptionItemNotFound, "Incorrect connector weight template - measured object is not found.");
-  elements.numberVariable =
+  templateInfo.numberVariable =
       IteratorUtils::getAnyByOutRelation(&context, connectorWeightTemplateAddr, Keynodes::GetRrelIndex(2));
-  if(!elements.numberVariable.IsValid())
+  if(!templateInfo.numberVariable.IsValid())
     SC_THROW_EXCEPTION(utils::ExceptionItemNotFound, "Incorrect connector weight template - number variable is not found.");
 }
 

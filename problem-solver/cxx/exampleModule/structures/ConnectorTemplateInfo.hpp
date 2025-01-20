@@ -8,8 +8,10 @@
 
 #include "string"
 
-struct WeightTemplateKeyElements
+struct ConnectorTemplateInfo
 {
-  ScAddr measuredObjectVariable;
-  ScAddr numberVariable;
+  ScAddr templateAddr;
+  ScAddr connectorStartVariable;
+  ScAddr connectorEndVariable;
+  ScAddr connectorVariable;
 };

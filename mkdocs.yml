@@ -1,0 +1,24 @@
+site_name: ostis-example-app
+
+extra_css:
+  - _assets/main.css
+extra_javascript:
+  - _assets/scg.min.js
+  - _assets/main.js
+
+nav:
+  - Home: index.md
+  - Development:
+    - Codestyle: dev/codestyle.md
+    - Project structure: dev/project_structure.md
+
+  - Ostis-example-app agents:
+    - Path finding agent: agents/path_finding_agent.md
+
+theme: material
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.details
+  - pymdownx.superfences

@@ -1,8 +1,8 @@
 /*
-* This source file is part of an OSTIS project. For the latest info, see
-* http://ostis.net Distributed under the MIT License (See accompanying file
-* COPYING.MIT or copy at http://opensource.org/licenses/MIT)
-*/
+ * This source file is part of an OSTIS project. For the latest info, see
+ * http://ostis.net Distributed under the MIT License (See accompanying file
+ * COPYING.MIT or copy at http://opensource.org/licenses/MIT)
+ */
 
 #include "PathSearcher.hpp"
 
@@ -25,7 +25,7 @@ void PathSearcher::findPath(
 {
   ScAddrQueue vertexesToCheck;
   ScAddrToValueUnorderedMap<unsigned> pathLengthToVertexes;
-  pathLengthToVertexes[startNode] =0;
+  pathLengthToVertexes[startNode] = 0;
   ScAddrToValueUnorderedMap<ScAddrVector> pathsToVertexes;
 
   vertexesToCheck.emplace(startNode);
@@ -83,7 +83,7 @@ void PathSearcher::getUnusedNeighborsWithConnectorInfo(
     ScAddr const & startNode,
     ConnectorTemplateInfo const & connectorTemplateInfo,
     WeightTemplateInfo const & weightTemplateInfo,
-    ScAddrToValueUnorderedMap<unsigned>  & neighborsWithConnectorInfo) const
+    ScAddrToValueUnorderedMap<unsigned> & neighborsWithConnectorInfo) const
 {
   ScTemplateParams connectorTemplateParams;
   connectorTemplateParams.Add(connectorTemplateInfo.connectorStartVariable, startNode);
@@ -107,9 +107,7 @@ void PathSearcher::getUnusedNeighborsWithConnectorInfo(
       });
 }
 
-unsigned PathSearcher::getConnectorWeight(
-    ScAddr const & connector,
-    WeightTemplateInfo const & weightTemplateInfo) const
+unsigned PathSearcher::getConnectorWeight(ScAddr const & connector, WeightTemplateInfo const & weightTemplateInfo) const
 {
   ScTemplateParams connectorWeightTemplateParams;
   connectorWeightTemplateParams.Add(weightTemplateInfo.measuredObjectVariable, connector);
@@ -120,8 +118,7 @@ unsigned PathSearcher::getConnectorWeight(
   bool isFound = false;
   context->SearchByTemplateInterruptibly(
       connectorWeightTemplate,
-      [this, &isFound, &weightTemplateInfo, &weight](
-          ScTemplateResultItem const & item) -> ScTemplateSearchRequest
+      [this, &isFound, &weightTemplateInfo, &weight](ScTemplateResultItem const & item) -> ScTemplateSearchRequest
       {
         isFound = true;
 

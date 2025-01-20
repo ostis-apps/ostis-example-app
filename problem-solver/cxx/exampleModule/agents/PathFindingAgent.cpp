@@ -74,20 +74,9 @@ ScResult PathFindingAgent::DoProgram(ScAction & action)
     ScAddrVector path;
 
     PathSearcher searcher(&m_context);
-    searcher.findPath(
-        graph,
-        startNode,
-        endNode,
-        connectorTemplateInfo,
-        weightTemplateInfo,
-        pathLength,
-        path);
+    searcher.findPath(graph, startNode, endNode, connectorTemplateInfo, weightTemplateInfo, pathLength, path);
 
-    ScStructure const & result = formResult(
-        path,
-        pathLength,
-        connectorTemplateInfo,
-        weightTemplateInfo);
+    ScStructure const & result = formResult(path, pathLength, connectorTemplateInfo, weightTemplateInfo);
     action.SetResult(result);
   }
   catch (ScException const & exception)

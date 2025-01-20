@@ -26,7 +26,9 @@ bool NumberUtils::isPositiveInteger(std::string const & str)
 
 ScAddr NumberUtils::resolveNumber(ScMemoryContext & context, unsigned const value)
 {
-  ScAddrSet const & links = context.SearchLinksByContent(value);
+  std::string valueStr = std::to_string(value);
+
+  ScAddrSet const & links = context.SearchLinksByContent(valueStr);
 
   ScAddr numberNode;
   for (auto const & link : links)
@@ -45,7 +47,6 @@ ScAddr NumberUtils::resolveNumber(ScMemoryContext & context, unsigned const valu
   {
     numberNode = context.GenerateNode(ScType::ConstNode);
     ScAddr const & link = context.GenerateLink(ScType::ConstNodeLink);
-    std::string valueStr = std::to_string(value);
     context.SetLinkContent(link, valueStr);
     ScAddr idtfRelationPair = context.GenerateConnector(ScType::ConstCommonArc, numberNode, link);
     context.GenerateConnector(ScType::ConstPermPosArc, Keynodes::nrel_idtf, idtfRelationPair);

@@ -142,7 +142,7 @@ unsigned PathSearcher::getNumberValue(ScAddr const & number) const
     ScAddr const & idtfLink = idtfsIterator->Get(2);
     std::string idtfString;
     context->GetLinkContent(idtfLink, idtfString);
-    if (utils::NumberUtils::isNumber(idtfString))
+    if (utils::NumberUtils::isPositiveInteger(idtfString))
       return atoi(idtfString.c_str());
   }
 

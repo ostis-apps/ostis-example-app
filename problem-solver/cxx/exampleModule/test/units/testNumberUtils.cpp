@@ -18,12 +18,14 @@ std::string const EXAMPLE_MODULE_TEST_FILES_DIR_PATH = EXAMPLE_MODULE_TEST_SRC_P
 
 using NumberUtilsTest = ScMemoryTest;
 
-TEST_F(NumberUtilsTest, isNumberTest)
+TEST_F(NumberUtilsTest, isPositiveIntegerTest)
 {
-  std::string const & numberStr = "250";
-  ASSERT_TRUE(utils::NumberUtils::isNumber(numberStr));
+  std::string const & positiveNumberStr = "250";
+  ASSERT_TRUE(utils::NumberUtils::isPositiveInteger(positiveNumberStr));
   std::string const & notANumberStr = "number_250";
-  ASSERT_TRUE(utils::NumberUtils::isNumber(notANumberStr));
+  ASSERT_FALSE(utils::NumberUtils::isPositiveInteger(notANumberStr));
+  std::string const & notAPositiveNumberStr = "-250";
+  ASSERT_FALSE(utils::NumberUtils::isPositiveInteger(notAPositiveNumberStr));
 }
 
 TEST_F(NumberUtilsTest, resolveEistingNumberTest)

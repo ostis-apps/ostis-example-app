@@ -66,7 +66,7 @@ void checkResultAndGetPathWithLength(
   std::string lengthNumberIdtf;
   utils::TestUtils::getSoleIdtf(context, lengthNumberAddr, lengthNumberIdtf);
 
-  ASSERT_TRUE(utils::NumberUtils::isNumber(lengthNumberIdtf));
+  ASSERT_TRUE(utils::NumberUtils::isPositiveInteger(lengthNumberIdtf));
 
   length = atoi(lengthNumberIdtf.c_str());
 }
@@ -158,7 +158,7 @@ TEST_F(PathFindingAgentTest, shortestPathByStepsIsShortestBySteps)
   shutdown(context);
 }
 
-TEST_F(PathFindingAgentTest, shortestPathByStepsIsNotShrotestBySteps)
+TEST_F(PathFindingAgentTest, shortestPathByStepsIsNotShortestBySteps)
 {
   ScAgentContext & context = *m_ctx;
 

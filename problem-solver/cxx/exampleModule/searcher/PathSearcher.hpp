@@ -8,8 +8,10 @@
 
 #include "sc-memory/sc_memory.hpp"
 
-#include "templateInformationStructures/ConnectorTemplateInfo.hpp"
-#include "templateInformationStructures/WeightTemplateInfo.hpp"
+#include "dataStructures/ConnectorTemplateInfo.hpp"
+#include "dataStructures/WeightTemplateInfo.hpp"
+#include "dataStructures/ConnectorInfo.hpp"
+#include "dataStructures/PathInfo.hpp"
 
 class PathSearcher
 {
@@ -22,18 +24,17 @@ public:
       ScAddr const & endNode,
       ConnectorTemplateInfo const & connectorTemplateInfo,
       WeightTemplateInfo const & weightTemplateInfo,
-      unsigned & pathLength,
-      ScAddrVector & path) const;
+      PathInfo & pathInfo) const;
 
 private:
   ScMemoryContext * context;
 
-  void getNeighborsWithConnectorsLength(
+  void getNeighborsWithConnectorsInfo(
       ScAddr const & graph,
       ScAddr const & startNode,
       ConnectorTemplateInfo const & connectorTemplateInfo,
       WeightTemplateInfo const & weightTemplateInfo,
-      ScAddrToValueUnorderedMap<unsigned> & neighborsWithConnectorsLength) const;
+      ScAddrToValueUnorderedMap<ConnectorInfo> & neighborsWithConnectorsInfo) const;
 
   unsigned getConnectorWeight(ScAddr const & connector, WeightTemplateInfo const & weightTemplateInfo) const;
 

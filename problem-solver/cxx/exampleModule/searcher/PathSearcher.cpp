@@ -20,13 +20,13 @@ void PathSearcher::findPath(
     ScAddr const & endNode,
     ConnectorTemplateInfo const & connectorTemplateInfo,
     WeightTemplateInfo const & weightTemplateInfo,
-    unsigned & pathLength,
-    ScAddrVector & path) const
+    PathInfo & pathInfo) const
 {
   ScAddrQueue vertexesToCheck;
   ScAddrToValueUnorderedMap<unsigned> pathLengthToVertexes;
   pathLengthToVertexes[startNode] = 0;
-  ScAddrToValueUnorderedMap<ScAddrVector> pathsToVertexes;
+  ScAddrToValueUnorderedMap<ScAddrVector> pathToVertexVertexes;
+  ScAddrToValueUnorderedMap<ScAddrVector> pathToVertexConnectors;
 
   vertexesToCheck.emplace(startNode);
 
@@ -35,36 +35,29 @@ void PathSearcher::findPath(
     ScAddr const & currentVertex = vertexesToCheck.front();
     vertexesToCheck.pop();
 
-    ScAddrToValueUnorderedMap<unsigned> neighborsWithPathLength;
-    getNeighborsWithConnectorsLength(
-        graph, currentVertex, connectorTemplateInfo, weightTemplateInfo, neighborsWithPathLength);
+    ScAddrToValueUnorderedMap<ConnectorInfo> neighborsWithConnectorsInfor;
+    getNeighborsWithConnectorsInfo(
+        graph, currentVertex, connectorTemplateInfo, weightTemplateInfo, neighborsWithConnectorsInfor);
 
-    for (auto const & neighborWithPathLength : neighborsWithPathLength)
+    for (auto const & neighborWithPathLength : neighborsWithConnectorsInfor)
     {
       ScAddr const & neighbor = neighborWithPathLength.first;
-      unsigned const connectorWeight = neighborWithPathLength.second;
+      ScAddr const & connector = neighborWithPathLength.second.addr;
+      unsigned const connectorWeight = neighborWithPathLength.second.weight;
 
-      if (pathLengthToVertexes.find(neighbor) == pathLengthToVertexes.cend())
+      unsigned newPathLength = pathLengthToVertexes[currentVertex] + connectorWeight;
+      if (pathLengthToVertexes.find(neighbor) == pathLengthToVertexes.cend()
+          || newPathLength < pathLengthToVertexes[neighbor])
       {
-        pathLengthToVertexes[neighbor] = pathLengthToVertexes[currentVertex] + connectorWeight;
+        pathLengthToVertexes[neighbor] = newPathLength;
 
-        pathsToVertexes[neighbor] = pathsToVertexes[currentVertex];
-        pathsToVertexes[neighbor].emplace_back(neighbor);
+        pathToVertexVertexes[neighbor] = pathToVertexVertexes[currentVertex];
+        pathToVertexVertexes[neighbor].emplace_back(neighbor);
+
+        pathToVertexConnectors[neighbor] = pathToVertexConnectors[currentVertex];
+        pathToVertexConnectors[neighbor].emplace_back(connector);
 
         vertexesToCheck.emplace(neighbor);
-      }
-      else
-      {
-        unsigned newPathLength = pathLengthToVertexes[currentVertex] + connectorWeight;
-        if (newPathLength < pathLengthToVertexes[neighbor])
-        {
-          pathLengthToVertexes[neighbor] = newPathLength;
-
-          pathsToVertexes[neighbor] = pathsToVertexes[currentVertex];
-          pathsToVertexes[neighbor].emplace_back(neighbor);
-
-          vertexesToCheck.emplace(neighbor);
-        }
       }
     }
   }
@@ -72,18 +65,21 @@ void PathSearcher::findPath(
   if (pathLengthToVertexes.find(endNode) == pathLengthToVertexes.end())
     SC_THROW_EXCEPTION(utils::ExceptionItemNotFound, "Target vertex not reached");
 
-  pathLength = pathLengthToVertexes[endNode];
-  path.clear();
-  path.emplace_back(startNode);
-  path.insert(path.end(), pathsToVertexes[endNode].begin(), pathsToVertexes[endNode].end());
+  pathInfo.length = pathLengthToVertexes[endNode];
+  pathInfo.vertexes.clear();
+  pathInfo.vertexes.emplace_back(startNode);
+  pathInfo.vertexes.insert(
+      pathInfo.vertexes.end(), pathToVertexVertexes[endNode].begin(), pathToVertexVertexes[endNode].end());
+
+  pathInfo.connectors = pathToVertexConnectors[endNode];
 }
 
-void PathSearcher::getNeighborsWithConnectorsLength(
+void PathSearcher::getNeighborsWithConnectorsInfo(
     ScAddr const & graph,
     ScAddr const & startNode,
     ConnectorTemplateInfo const & connectorTemplateInfo,
     WeightTemplateInfo const & weightTemplateInfo,
-    ScAddrToValueUnorderedMap<unsigned> & neighborsWithConnectorLength) const
+    ScAddrToValueUnorderedMap<ConnectorInfo> & neighborsWithConnectorsInfo) const
 {
   ScTemplateParams connectorTemplateParams;
   connectorTemplateParams.Add(connectorTemplateInfo.connectorStartVariable, startNode);
@@ -99,9 +95,9 @@ void PathSearcher::getNeighborsWithConnectorsLength(
         ScAddr const & neighbor = item[connectorTemplateInfo.connectorEndVariable];
         unsigned const connectorWeight = getConnectorWeight(connector, weightTemplateInfo);
 
-        if (neighborsWithConnectorLength.find(neighbor) == neighborsWithConnectorLength.cend()
-            || neighborsWithConnectorLength[neighbor] > connectorWeight)
-          neighborsWithConnectorLength[neighbor] = connectorWeight;
+        if (neighborsWithConnectorsInfo.find(neighbor) == neighborsWithConnectorsInfo.cend()
+            || neighborsWithConnectorsInfo[neighbor].weight > connectorWeight)
+          neighborsWithConnectorsInfo[neighbor] = {connector, connectorWeight};
       },
       [this, &graph](ScAddr const & elementAddr) -> bool
       {

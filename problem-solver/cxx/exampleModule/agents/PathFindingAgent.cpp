@@ -70,13 +70,12 @@ ScResult PathFindingAgent::DoProgram(ScAction & action)
     WeightTemplateInfo weightTemplateInfo;
     utils::TemplateUtils::getWeightTemplateInfo(m_context, connectorWeightTemplateAddr, weightTemplateInfo);
 
-    unsigned pathLength;
-    ScAddrVector path;
+    PathInfo pathInfo;
 
     PathSearcher searcher(&m_context);
-    searcher.findPath(graph, startNode, endNode, connectorTemplateInfo, weightTemplateInfo, pathLength, path);
+    searcher.findPath(graph, startNode, endNode, connectorTemplateInfo, weightTemplateInfo, pathInfo);
 
-    ScStructure const & result = formResult(path, pathLength, connectorTemplateInfo, weightTemplateInfo);
+    ScStructure const & result = formResult(pathInfo, connectorTemplateInfo, weightTemplateInfo);
     action.SetResult(result);
   }
   catch (ScException const & exception)
@@ -89,23 +88,30 @@ ScResult PathFindingAgent::DoProgram(ScAction & action)
 }
 
 ScStructure PathFindingAgent::formResult(
-    ScAddrVector const & path,
-    unsigned pathLength,
+    PathInfo const & pathInfo,
     ConnectorTemplateInfo const & connectorTemplateInfo,
     WeightTemplateInfo const & weightTemplateInfo) const
 {
   ScStructure resultStructure = m_context.GenerateStructure();
   ScStructure pathStructure = m_context.GenerateStructure();
 
-  for (auto it = path.begin() + 1; it != path.end(); ++it)
-  {
-    ScAddr const & first = *(it - 1);
-    ScAddr const & second = *it;
+  ScAddrVector const & pathVertexes = pathInfo.vertexes;
+  ScAddrVector const & pathConnectors = pathInfo.connectors;
 
-    addConnectionIntoStructure(first, second, connectorTemplateInfo, pathStructure);
+  auto connectorsIt = pathConnectors.begin();
+  for (auto vertexesIt = pathVertexes.begin() + 1; vertexesIt != pathVertexes.end(); ++vertexesIt)
+  {
+    ScAddr const & first = *(vertexesIt - 1);
+    ScAddr const & second = *vertexesIt;
+
+    ScAddr const & connector = *connectorsIt;
+
+    addConnectionIntoStructure(first, second, connector, connectorTemplateInfo, pathStructure);
+
+    ++connectorsIt;
   }
 
-  addPathWeightIntoStructure(pathStructure, weightTemplateInfo, pathLength, resultStructure);
+  addPathWeightIntoStructure(pathStructure, weightTemplateInfo, pathInfo.length, resultStructure);
 
   return resultStructure;
 }
@@ -113,12 +119,14 @@ ScStructure PathFindingAgent::formResult(
 void PathFindingAgent::addConnectionIntoStructure(
     ScAddr const & first,
     ScAddr const & second,
+    ScAddr const & connector,
     ConnectorTemplateInfo const & connectorTemplateInfo,
     ScStructure & structure) const
 {
   ScTemplateParams connectorTemplateParams;
   connectorTemplateParams.Add(connectorTemplateInfo.connectorStartVariable, first);
   connectorTemplateParams.Add(connectorTemplateInfo.connectorEndVariable, second);
+  connectorTemplateParams.Add(connectorTemplateInfo.connectorVariable, connector);
 
   ScTemplate connectorTemplate;
   m_context.BuildTemplate(connectorTemplate, connectorTemplateInfo.templateAddr, connectorTemplateParams);

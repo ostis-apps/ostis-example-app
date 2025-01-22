@@ -35,7 +35,13 @@ network = [*
    -> rrel_end: city_c;
    <- 150_km (* <- concept_length;; *);;
 
-  road_c_d
+  road_c_d_1
+   <- concept_road;
+   -> rrel_end: city_c;
+   -> rrel_end: city_d;
+   <- 350_km (* <- concept_length;; *);;
+
+  road_c_d_2
    <- concept_road;
    -> rrel_end: city_c;
    -> rrel_end: city_d;
@@ -50,6 +56,9 @@ network = [*
   300_km
     => nrel_measurment_in_km: number_300 (* <- concept_number;; *);;
 
+  350_km
+    => nrel_measurment_in_km: number_350 (* <- concept_number;; *);;
+
   150_km
     => nrel_measurment_in_km: number_150 (* <- concept_number;; *);;
 
@@ -61,6 +70,7 @@ network = [*
 *];;
 
 number_300 => nrel_idtf: [300];;
+number_350 => nrel_idtf: [350];;
 number_150 => nrel_idtf: [150];;
 number_100 => nrel_idtf: [100];;
 number_200 => nrel_idtf: [200];;

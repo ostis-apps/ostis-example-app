@@ -4,7 +4,7 @@ two_step_path_template = [*
    _-> rrel_end:: city_a;
    _-> rrel_end:: city_c;;
 
-  road_c_d
+  road_c_d_2
    <-_ concept_road;
    _-> rrel_end:: city_c;
    _-> rrel_end:: city_d;;

@@ -6,11 +6,11 @@
 
 #pragma once
 
-#include <sc-memory/sc_addr.hpp>
+#include "sc-memory/sc_addr.hpp"
 
-struct WeightTemplateInfo
+struct PathInfo
 {
-  ScAddr templateAddr;
-  ScAddr measuredObjectVariable;
-  ScAddr numberVariable;
+  unsigned length;
+  ScAddrVector vertexes;
+  ScAddrVector connectors;
 };

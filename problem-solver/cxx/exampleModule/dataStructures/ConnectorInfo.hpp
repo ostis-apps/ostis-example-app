@@ -6,12 +6,10 @@
 
 #pragma once
 
-#include <sc-memory/sc_addr.hpp>
+#include "sc-memory/sc_addr.hpp"
 
-struct ConnectorTemplateInfo
+struct ConnectorInfo
 {
-  ScAddr templateAddr;
-  ScAddr connectorStartVariable;
-  ScAddr connectorEndVariable;
-  ScAddr connectorVariable;
+  ScAddr addr;
+  unsigned weight;
 };

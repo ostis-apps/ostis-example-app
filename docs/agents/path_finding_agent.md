@@ -20,8 +20,8 @@ This is an agent that searches minimal path between two nodes of weighted graph.
     * Variable representing connector itself (connected with rrel_3).
 
 * Connector weight template should contain 2 key elements variables connected to it with rrel_1 and rrel_2 relations:
-  * Variable representing connector (connected with rrel_1);
-  * Variable representing number with connector weight (connected with rrel_2). Note that This agent does not perform conversion of measurement units and depends on the fact that numbers found by via this template are represent measurement in the same units for each connector.
+    * Variable representing connector (connected with rrel_1);
+    * Variable representing number with connector weight (connected with rrel_2). Note that This agent does not perform conversion of measurement units and depends on the fact that numbers found by via this template are represent measurement in the same units for each connector.
 
 * Result of this agent work is a path for start to end node with its weight if such path exists. See example below.
 
@@ -124,5 +124,5 @@ C++
 
 Possible result codes:
 
-* `sc_result_ok`- addition completed;
+* `sc_result_ok`- path found;
 * `sc_result_error`- internal error.

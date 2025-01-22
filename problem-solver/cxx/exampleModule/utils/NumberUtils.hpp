@@ -6,14 +6,15 @@
 
 #pragma once
 
-#include <sc-memory/sc_agent.hpp>
+#include <sc-memory/sc_memory.hpp>
 
-#include "keynodes/Keynodes.hpp"
-
-class SubdividingSearchAgent : public ScActionInitiatedAgent
+namespace utils
+{
+class NumberUtils
 {
 public:
-  ScAddr GetActionClass() const;
+  static bool isPositiveInteger(std::string const & str);
 
-  ScResult DoProgram(ScAction & action);
+  static ScAddr resolveNumber(ScMemoryContext & context, unsigned value);
 };
+}  // namespace utils

@@ -1,0 +1,62 @@
+sc_node_class
+  -> concept_city;
+  -> concept_road;
+  -> concept_length;
+  -> 100_km;
+  -> 150_km;
+  -> 200_km;
+  -> 300_km;;
+
+sc_node_role_relation
+  -> rrel_end;;
+
+network = [*
+  concept_city
+    -> city_a;
+    -> city_b;
+    -> city_c;
+    -> city_d;;
+
+  road_a_c
+   <- concept_road;
+   -> rrel_end: city_a;
+   -> rrel_end: city_c;
+   <- 250_km (* <- concept_length;; *);;
+
+  road_a_b
+   <- concept_road;
+   -> rrel_end: city_a;
+   -> rrel_end: city_b;
+   <- 100_km (* <- concept_length;; *);;
+
+  road_b_c
+   <- concept_road;
+   -> rrel_end: city_b;
+   -> rrel_end: city_c;
+   <- 50_km (* <- concept_length;; *);;
+
+  road_c_d
+   <- concept_road;
+   -> rrel_end: city_c;
+   -> rrel_end: city_d;
+   <- 100_km (* <- concept_length;; *);;
+
+  sc_node_class
+    -> concept_number;;
+
+  sc_node_non_role_relation
+    -> nrel_measurment_in_km;;
+
+  50_km
+    => nrel_measurment_in_km: number_50 (* <- concept_number;; *);;
+
+  100_km
+    => nrel_measurment_in_km: number_100 (* <- concept_number;; *);;
+
+  250_km
+    => nrel_measurment_in_km: number_250 (* <- concept_number;; *);;
+*];;
+
+number_50 => nrel_idtf: [50];;
+number_100 => nrel_idtf: [100];;
+number_250 => nrel_idtf: [250];;

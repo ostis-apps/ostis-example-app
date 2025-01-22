@@ -1,0 +1,28 @@
+two_step_path_template = [*
+  road_a_c
+   <-_ concept_road;
+   _-> rrel_end:: city_a;
+   _-> rrel_end:: city_c;;
+
+  road_c_d_2
+   <-_ concept_road;
+   _-> rrel_end:: city_c;
+   _-> rrel_end:: city_d;;
+*];;
+
+three_step_path_template = [*
+  road_a_b
+   <-_ concept_road;
+   _-> rrel_end:: city_a;
+   _-> rrel_end:: city_b;;
+
+  road_b_c
+   <-_ concept_road;
+   _-> rrel_end:: city_b;
+   _-> rrel_end:: city_c;;
+
+  road_c_d
+   <-_ concept_road;
+   _-> rrel_end:: city_c;
+   _-> rrel_end:: city_d;;
+*];;

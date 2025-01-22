@@ -1,0 +1,23 @@
+road_connector_template = [*
+  _road
+    <-_ concept_road;
+    _-> rrel_end:: _current_city;
+    _-> rrel_end:: _next_city;;
+*];;
+road_connector_template
+  <- concept_connector_template;
+  -> rrel_1: rrel_key_sc_element: _current_city;
+  -> rrel_2: rrel_key_sc_element: _next_city;
+  -> rrel_3: rrel_key_sc_element: _road;;
+
+road_weight_template = [*
+  _road
+    <-_ _Xkm (* <-_ concept_length;; *);;
+    
+  _Xkm
+    _=> nrel_measurment_in_km:: _X_number (* <-_ concept_number;; *);;
+*];;
+road_weight_template
+  <- concept_connector_weight_template;
+  -> rrel_1: rrel_key_sc_element: _road;
+  -> rrel_2: rrel_key_sc_element: _X_number;;

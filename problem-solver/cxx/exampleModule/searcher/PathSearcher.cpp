@@ -35,11 +35,11 @@ void PathSearcher::findPath(
     ScAddr const & currentVertex = vertexesToCheck.front();
     vertexesToCheck.pop();
 
-    ScAddrToValueUnorderedMap<ConnectorInfo> neighborsWithConnectorsInfor;
+    ScAddrToValueUnorderedMap<ConnectorInfo> neighborsWithConnectorsInfo;
     getNeighborsWithConnectorsInfo(
-        graph, currentVertex, connectorTemplateInfo, weightTemplateInfo, neighborsWithConnectorsInfor);
+        graph, currentVertex, connectorTemplateInfo, weightTemplateInfo, neighborsWithConnectorsInfo);
 
-    for (auto const & neighborWithPathLength : neighborsWithConnectorsInfor)
+    for (auto const & neighborWithPathLength : neighborsWithConnectorsInfo)
     {
       ScAddr const & neighbor = neighborWithPathLength.first;
       ScAddr const & connector = neighborWithPathLength.second.addr;

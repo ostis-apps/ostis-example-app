@@ -76,6 +76,14 @@ Docker simplifies setup and provides a consistent environment.
 
     This command stops and removes the containers created by `docker compose up`.
 
+7. **Remove ostis-system containers:**
+
+    ```sh
+    docker compose down
+    ```
+
+    This command stops and removes the containers created by `docker compose up`. Use this command if you want to completely remove the containers and free up system resources.
+
     *Important: Rebuild the knowledge base (step 4) after any changes to the knowledge base files.*
 
 ## Native Installation

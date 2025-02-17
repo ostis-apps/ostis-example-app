@@ -9,8 +9,8 @@ export CONFIG_PATH="${APP_ROOT_PATH}/ostis-example-app.ini"
 export REPO_PATH="${APP_ROOT_PATH}/repo.path"
 
 export PLATFORM_REPO="https://github.com/ostis-ai/ostis-web-platform.git"
-export PLATFORM_BRANCH="develop"
-export PLATFORM_COMMIT="07b04bf543369d40c0b8b14220d98bc4b7865f76"
+export PLATFORM_BRANCH="mfis_practicum"
+export PLATFORM_COMMIT=""
 export PLATFORM_PATH="${APP_ROOT_PATH}/ostis-web-platform"
 
 export SC_MACHINE_REPO="https://github.com/ostis-ai/sc-machine.git"

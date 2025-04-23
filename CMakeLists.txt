@@ -18,11 +18,11 @@ endforeach(OUTPUT_CONFIG CMAKE_CONFIGURATION_TYPES)
 set(CMAKE_SCRIPTS_FOLDER "${CMAKE_CURRENT_LIST_DIR}/cmake")
 include(${CMAKE_SCRIPTS_FOLDER}/common.cmake)
 
+set(SUBSYSTEMS_PATH "${CMAKE_CURRENT_LIST_DIR}/subsystems")
+set(SCL_MACHINE_PS_PATH "${SUBSYSTEMS_PATH}/scl-machine/problem-solver")
+set(INFERENCE_MODULE_PATH "${SCL_MACHINE_PS_PATH}/cxx/inferenceModule")
+
+add_subdirectory(${SCL_MACHINE_PS_PATH}/)
+
 add_subdirectory(problem-solver)
 
-set(SUBSYSTEMS_PATH "${CMAKE_CURRENT_LIST_DIR}/subsystems")
-subdir_list(SUBDIRS ${SUBSYSTEMS_PATH})
-
-foreach(SUBDIR ${SUBDIRS})
-    add_subdirectory(${SUBSYSTEMS_PATH}/${SUBDIR}/problem-solver)
-endforeach()

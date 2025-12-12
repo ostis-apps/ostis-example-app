@@ -29,7 +29,7 @@ This is an agent that searches minimal path between two nodes of weighted graph.
 
 Example of an input structure:
 
-![input structure:](path_search_agent_input.jpg)
+![input structure:](../images/path_search_agent_input.jpg)
 
 Example of an output structure:
 

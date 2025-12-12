@@ -2,7 +2,8 @@
 
 Welcome to the [ostis-example-app](https://github.com/ostis-apps/ostis-example-app) documentation!
 
-!!! note
+# !!! Note:
+
     This documentation is still under development and contains only partial information. For more information please refer to [README](https://github.com/ostis-apps/ostis-example-app/blob/0.10.0/README.md).
 
 ## What is ostis-example-app?
